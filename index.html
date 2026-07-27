@@ -49,6 +49,7 @@ ul{list-style:none;}
 .nav-menu .btn-nav{border:1px solid var(--gold);padding:9px 18px;border-radius:2px;opacity:1;}
 .nav-menu .btn-nav:hover{background:var(--gold);color:var(--black);}
 .has-dropdown{position:relative;}
+.has-dropdown::before{content:'';position:absolute;top:100%;left:0;right:0;height:14px;}
 .mega-dropdown{position:absolute;top:calc(100% + 14px);left:0;display:none;background:var(--navy);border:1px solid rgba(201,162,75,0.3);border-radius:8px;box-shadow:0 20px 44px rgba(0,0,0,.55);overflow:hidden;}
 [dir="rtl"] .mega-dropdown{left:auto;right:0;}
 .has-dropdown:hover .mega-dropdown,.has-dropdown.open-dropdown .mega-dropdown{display:flex;}
