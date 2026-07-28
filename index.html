@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants | Dubai Law Firm</title>
 <meta name="description" content="Ismail Ibrahim Alhosani Advocates & Legal Consultants — trusted advocates and legal consultants in Dubai, UAE. Family, criminal, civil, commercial and real estate law.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,10 @@
   --black:#0c0c0d; --black2:#151517; --navy:#12213a;
   --gold:#c9a24b; --gold-light:#e8cd82; --cream:#f5f1e8; --grey:#a9a6a0;
   --blue:#3f7dd6; --red:#d1495b;
+  --ink:#0c0c0d; --text-strong:#f5f1e8; --text-muted-strong:#b9b6af;
+}
+:root[data-theme="light"]{
+  --black:#ffffff; --black2:#f2efe6; --cream:#1c1a17; --grey:#5c584f;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -34,9 +39,11 @@ ul{list-style:none;}
 .lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
 .lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
 .flag{font-size:13px;}
+.theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
+.theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
 
 /* Navbar */
-.navbar{position:sticky;top:0;z-index:100;background:rgba(12,12,13,0.97);border-bottom:1px solid rgba(201,162,75,0.25);backdrop-filter:blur(6px);}
+.navbar{position:sticky;top:0;z-index:100;background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);}
 .navbar-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:relative;}
 .logo{font-family:'Cinzel',serif;font-size:19px;letter-spacing:.5px;color:var(--gold-light);}
 .logo span{color:var(--cream);font-weight:400;}
@@ -47,7 +54,7 @@ ul{list-style:none;}
 .nav-menu a{font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--cream);opacity:.85;}
 .nav-menu a:hover{opacity:1;color:var(--gold-light);}
 .nav-menu .btn-nav{border:1px solid var(--gold);padding:9px 18px;border-radius:2px;opacity:1;}
-.nav-menu .btn-nav:hover{background:var(--gold);color:var(--black);}
+.nav-menu .btn-nav:hover{background:var(--gold);color:var(--ink);}
 .has-dropdown{position:relative;}
 .has-dropdown::before{content:'';position:absolute;top:100%;left:0;right:0;height:14px;}
 .mega-dropdown{position:absolute;top:calc(100% + 14px);left:0;display:none;background:var(--navy);border:1px solid rgba(201,162,75,0.3);border-radius:8px;box-shadow:0 20px 44px rgba(0,0,0,.55);overflow:hidden;}
@@ -56,7 +63,7 @@ ul{list-style:none;}
 .mega-col{padding:14px 0;}
 .mega-col-left{min-width:250px;border-inline-end:1px solid rgba(201,162,75,0.2);}
 .mega-col-right{min-width:290px;background:rgba(0,0,0,0.15);}
-.mega-col li a{display:block;padding:10px 22px;font-size:12.5px;text-transform:none;letter-spacing:.2px;opacity:.85;color:var(--cream);white-space:nowrap;}
+.mega-col li a{display:block;padding:10px 22px;font-size:12.5px;text-transform:none;letter-spacing:.2px;opacity:.85;color:var(--text-strong);white-space:nowrap;}
 .mega-col-left li.active a,.mega-col li a:hover{background:rgba(201,162,75,0.14);color:var(--gold-light);opacity:1;}
 .mega-col-left li a{display:flex;align-items:center;justify-content:space-between;gap:24px;}
 .mega-col-left li a::after{content:'\276F';font-size:11px;opacity:.55;}
@@ -69,14 +76,14 @@ ul{list-style:none;}
 .hero-slides{position:relative;width:100%;}
 .hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;display:flex;align-items:center;min-height:78vh;}
 .hero-slide.active{opacity:1;position:relative;}
-.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 20%, #1c2a44 0%, var(--navy) 55%, var(--black) 100%);z-index:0;}
+.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 20%, #1c2a44 0%, var(--navy) 55%, var(--ink) 100%);z-index:0;}
 .hero-content{position:relative;z-index:1;text-align:center;width:100%;}
 .hero-content h1{font-family:'Cinzel',serif;font-size:clamp(28px,5vw,46px);color:var(--gold-light);margin-bottom:16px;}
-.hero-tagline{font-size:16px;color:var(--grey);max-width:600px;margin:0 auto 28px;}
-.btn-primary{display:inline-block;padding:13px 30px;background:var(--gold);color:var(--black);border-radius:2px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;}
+.hero-tagline{font-size:16px;color:var(--text-muted-strong);max-width:600px;margin:0 auto 28px;}
+.btn-primary{display:inline-block;padding:13px 30px;background:var(--gold);color:var(--ink);border-radius:2px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;}
 .btn-primary:hover{background:var(--gold-light);}
 .btn-outline{display:inline-block;padding:12px 26px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-top:8px;}
-.btn-outline:hover{background:var(--gold);color:var(--black);}
+.btn-outline:hover{background:var(--gold);color:var(--ink);}
 .hero-dots{position:absolute;bottom:22px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:2;}
 .hero-dots span{width:9px;height:9px;border-radius:50%;background:rgba(201,162,75,0.35);cursor:pointer;}
 .hero-dots span.active{background:var(--gold);}
@@ -126,10 +133,10 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
 .award-card p{color:var(--grey);font-size:13.5px;}
 
 /* CTA banner */
-.cta-banner{background:linear-gradient(120deg,var(--navy),var(--black));border-top:1px solid rgba(201,162,75,0.2);border-bottom:1px solid rgba(201,162,75,0.2);padding:50px 24px;}
+.cta-banner{background:linear-gradient(120deg,var(--navy),var(--ink));border-top:1px solid rgba(201,162,75,0.2);border-bottom:1px solid rgba(201,162,75,0.2);padding:50px 24px;}
 .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;max-width:1080px;margin:0 auto;}
 .cta-inner h2{text-align:left;margin-bottom:6px;}
-.cta-inner p{color:var(--grey);font-size:14.5px;}
+.cta-inner p{color:var(--text-muted-strong);font-size:14.5px;}
 
 /* Our approach */
 .stories-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
@@ -237,6 +244,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
         <button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
         <button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
       </div>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
     </div>
   </div>
 </div>
@@ -1436,7 +1444,25 @@ function renderMegaSubs(practiceKey){
   });
 }
 
+function applyTheme(theme){
+  document.documentElement.setAttribute('data-theme', theme);
+  try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+  var btn = document.getElementById('themeToggle');
+  if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+
 document.addEventListener('DOMContentLoaded', function(){
+
+  var savedTheme = 'dark';
+  try{ savedTheme = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+  applyTheme(savedTheme);
+  var themeToggle = document.getElementById('themeToggle');
+  if(themeToggle){
+    themeToggle.addEventListener('click', function(){
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'light' ? 'dark' : 'light');
+    });
+  }
 
   var saved = 'en';
   try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
