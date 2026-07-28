@@ -144,7 +144,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
 
 /* Expertise */
 .expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.expertise-card{background:var(--black2);border:1px solid rgba(201,162,75,0.18);padding:26px 22px;border-radius:6px;transition:.25s;}
+.expertise-card{display:block;background:var(--black2);border:1px solid rgba(201,162,75,0.18);padding:26px 22px;border-radius:6px;transition:.25s;}
 .expertise-card:hover{border-color:var(--gold);transform:translateY(-4px);}
 .expertise-card h3{font-family:'Cinzel',serif;color:var(--gold-light);font-size:16px;margin-bottom:10px;}
 .expertise-card p{color:var(--grey);font-size:13.5px;}
@@ -265,20 +265,20 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
           <a href="#expertise" data-i18n="nav_expertise">Practice Areas</a>
           <div class="mega-dropdown">
             <ul class="mega-col mega-col-left" id="megaLeft">
-              <li data-practice="7"><a href="#practice-7" data-i18n="practice_7">Arbitration</a></li>
-              <li data-practice="11"><a href="#practice-11" data-i18n="practice_11">Banking Law</a></li>
-              <li data-practice="3"><a href="#practice-3" data-i18n="practice_3">Civil Law</a></li>
-              <li data-practice="4"><a href="#practice-4" data-i18n="practice_4">Commercial &amp; Corporate Law</a></li>
-              <li data-practice="9"><a href="#practice-9" data-i18n="practice_9">Company Formation</a></li>
-              <li data-practice="10"><a href="#practice-10" data-i18n="practice_10">Construction Law</a></li>
-              <li data-practice="2"><a href="#practice-2" data-i18n="practice_2">Criminal Law</a></li>
-              <li data-practice="1" class="active"><a href="#practice-1" data-i18n="practice_1">Family Law</a></li>
-              <li data-practice="8"><a href="#practice-8" data-i18n="practice_8">Inheritance Law</a></li>
-              <li data-practice="12"><a href="#practice-12" data-i18n="practice_12">Intellectual Property Law</a></li>
-              <li data-practice="6"><a href="#practice-6" data-i18n="practice_6">Labor &amp; Employment Law</a></li>
-              <li data-practice="13"><a href="#practice-13" data-i18n="practice_13">Maritime Law</a></li>
-              <li data-practice="5"><a href="#practice-5" data-i18n="practice_5">Real Estate Law</a></li>
-              <li data-practice="14"><a href="#practice-14" data-i18n="practice_14">Sports Law</a></li>
+              <li data-practice="7"><a href="arbitration.html" data-i18n="practice_7">Arbitration</a></li>
+              <li data-practice="11"><a href="banking-law.html" data-i18n="practice_11">Banking Law</a></li>
+              <li data-practice="3"><a href="civil-law.html" data-i18n="practice_3">Civil Law</a></li>
+              <li data-practice="4"><a href="commercial-corporate-law.html" data-i18n="practice_4">Commercial &amp; Corporate Law</a></li>
+              <li data-practice="9"><a href="company-formation.html" data-i18n="practice_9">Company Formation</a></li>
+              <li data-practice="10"><a href="construction-law.html" data-i18n="practice_10">Construction Law</a></li>
+              <li data-practice="2"><a href="criminal-law.html" data-i18n="practice_2">Criminal Law</a></li>
+              <li data-practice="1" class="active"><a href="family-law.html" data-i18n="practice_1">Family Law</a></li>
+              <li data-practice="8"><a href="inheritance-law.html" data-i18n="practice_8">Inheritance Law</a></li>
+              <li data-practice="12"><a href="intellectual-property-law.html" data-i18n="practice_12">Intellectual Property Law</a></li>
+              <li data-practice="6"><a href="labor-employment-law.html" data-i18n="practice_6">Labor &amp; Employment Law</a></li>
+              <li data-practice="13"><a href="maritime-law.html" data-i18n="practice_13">Maritime Law</a></li>
+              <li data-practice="5"><a href="real-estate-law.html" data-i18n="practice_5">Real Estate Law</a></li>
+              <li data-practice="14"><a href="sports-law.html" data-i18n="practice_14">Sports Law</a></li>
             </ul>
             <ul class="mega-col mega-col-right" id="megaRight"></ul>
           </div>
@@ -425,20 +425,20 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
     <h2 data-i18n="expertise_title">Areas of Expertise</h2>
     <div class="divider center"></div>
     <div class="expertise-grid">
-      <div class="expertise-card" id="practice-1"><h3 data-i18n="practice_1">Family Law</h3><p data-i18n="practice_1_desc">Divorce, custody, alimony, and marriage contracts under UAE personal status law.</p></div>
-      <div class="expertise-card" id="practice-2"><h3 data-i18n="practice_2">Criminal Law</h3><p data-i18n="practice_2_desc">Defense and representation in criminal proceedings before UAE courts.</p></div>
-      <div class="expertise-card" id="practice-3"><h3 data-i18n="practice_3">Civil Law</h3><p data-i18n="practice_3_desc">Contract disputes, torts, and civil litigation across the Emirates.</p></div>
-      <div class="expertise-card" id="practice-4"><h3 data-i18n="practice_4">Commercial &amp; Corporate Law</h3><p data-i18n="practice_4_desc">Company structuring, contracts, and commercial dispute resolution.</p></div>
-      <div class="expertise-card" id="practice-5"><h3 data-i18n="practice_5">Real Estate Law</h3><p data-i18n="practice_5_desc">Property transactions, developer disputes, and tenancy matters.</p></div>
-      <div class="expertise-card" id="practice-6"><h3 data-i18n="practice_6">Labor &amp; Employment Law</h3><p data-i18n="practice_6_desc">Employment contracts, termination disputes, and labor claims.</p></div>
-      <div class="expertise-card" id="practice-7"><h3 data-i18n="practice_7">Arbitration</h3><p data-i18n="practice_7_desc">Alternative dispute resolution before UAE and international arbitration centers.</p></div>
-      <div class="expertise-card" id="practice-8"><h3 data-i18n="practice_8">Inheritance Law</h3><p data-i18n="practice_8_desc">Wills, succession, and estate distribution under UAE law.</p></div>
-      <div class="expertise-card" id="practice-9"><h3 data-i18n="practice_9">Company Formation</h3><p data-i18n="practice_9_desc">Business setup, licensing, and registration for local and foreign investors.</p></div>
-      <div class="expertise-card" id="practice-10"><h3 data-i18n="practice_10">Construction Law</h3><p data-i18n="practice_10_desc">Contract drafting, delay claims, and dispute resolution for construction and infrastructure projects.</p></div>
-      <div class="expertise-card" id="practice-11"><h3 data-i18n="practice_11">Banking Law</h3><p data-i18n="practice_11_desc">Advice on banking disputes, loan agreements, guarantees, and regulatory compliance matters.</p></div>
-      <div class="expertise-card" id="practice-12"><h3 data-i18n="practice_12">Intellectual Property Law</h3><p data-i18n="practice_12_desc">Trademark, copyright, and patent protection and enforcement under UAE law.</p></div>
-      <div class="expertise-card" id="practice-13"><h3 data-i18n="practice_13">Maritime Law</h3><p data-i18n="practice_13_desc">Vessel arrest, cargo claims, and maritime contract disputes across UAE ports.</p></div>
-      <div class="expertise-card" id="practice-14"><h3 data-i18n="practice_14">Sports Law</h3><p data-i18n="practice_14_desc">Player contracts, sponsorship agreements, and sports governance matters in the UAE.</p></div>
+      <a class="expertise-card" id="practice-1" href="family-law.html"><h3 data-i18n="practice_1">Family Law</h3><p data-i18n="practice_1_desc">Divorce, custody, alimony, and marriage contracts under UAE personal status law.</p></a>
+      <a class="expertise-card" id="practice-2" href="criminal-law.html"><h3 data-i18n="practice_2">Criminal Law</h3><p data-i18n="practice_2_desc">Defense and representation in criminal proceedings before UAE courts.</p></a>
+      <a class="expertise-card" id="practice-3" href="civil-law.html"><h3 data-i18n="practice_3">Civil Law</h3><p data-i18n="practice_3_desc">Contract disputes, torts, and civil litigation across the Emirates.</p></a>
+      <a class="expertise-card" id="practice-4" href="commercial-corporate-law.html"><h3 data-i18n="practice_4">Commercial &amp; Corporate Law</h3><p data-i18n="practice_4_desc">Company structuring, contracts, and commercial dispute resolution.</p></a>
+      <a class="expertise-card" id="practice-5" href="real-estate-law.html"><h3 data-i18n="practice_5">Real Estate Law</h3><p data-i18n="practice_5_desc">Property transactions, developer disputes, and tenancy matters.</p></a>
+      <a class="expertise-card" id="practice-6" href="labor-employment-law.html"><h3 data-i18n="practice_6">Labor &amp; Employment Law</h3><p data-i18n="practice_6_desc">Employment contracts, termination disputes, and labor claims.</p></a>
+      <a class="expertise-card" id="practice-7" href="arbitration.html"><h3 data-i18n="practice_7">Arbitration</h3><p data-i18n="practice_7_desc">Alternative dispute resolution before UAE and international arbitration centers.</p></a>
+      <a class="expertise-card" id="practice-8" href="inheritance-law.html"><h3 data-i18n="practice_8">Inheritance Law</h3><p data-i18n="practice_8_desc">Wills, succession, and estate distribution under UAE law.</p></a>
+      <a class="expertise-card" id="practice-9" href="company-formation.html"><h3 data-i18n="practice_9">Company Formation</h3><p data-i18n="practice_9_desc">Business setup, licensing, and registration for local and foreign investors.</p></a>
+      <a class="expertise-card" id="practice-10" href="construction-law.html"><h3 data-i18n="practice_10">Construction Law</h3><p data-i18n="practice_10_desc">Contract drafting, delay claims, and dispute resolution for construction and infrastructure projects.</p></a>
+      <a class="expertise-card" id="practice-11" href="banking-law.html"><h3 data-i18n="practice_11">Banking Law</h3><p data-i18n="practice_11_desc">Advice on banking disputes, loan agreements, guarantees, and regulatory compliance matters.</p></a>
+      <a class="expertise-card" id="practice-12" href="intellectual-property-law.html"><h3 data-i18n="practice_12">Intellectual Property Law</h3><p data-i18n="practice_12_desc">Trademark, copyright, and patent protection and enforcement under UAE law.</p></a>
+      <a class="expertise-card" id="practice-13" href="maritime-law.html"><h3 data-i18n="practice_13">Maritime Law</h3><p data-i18n="practice_13_desc">Vessel arrest, cargo claims, and maritime contract disputes across UAE ports.</p></a>
+      <a class="expertise-card" id="practice-14" href="sports-law.html"><h3 data-i18n="practice_14">Sports Law</h3><p data-i18n="practice_14_desc">Player contracts, sponsorship agreements, and sports governance matters in the UAE.</p></a>
     </div>
   </div>
 </section>
