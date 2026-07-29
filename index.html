@@ -3,33 +3,248 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="doc_title">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants | [City]</title>
-<meta name="description" data-i18n-content="doc_description" content="Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — trusted lawyers and legal consultants in [City, Country]. Practice areas: [Practice Area 1], [Practice Area 2], [Practice Area 3].">
-<link rel="stylesheet" href="css/style.css">
+<script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants | Dubai Law Firm</title>
+<meta name="description" content="Ismail Ibrahim Alhosani Advocates & Legal Consultants — trusted advocates and legal consultants in Dubai, UAE. Family, criminal, civil, commercial and real estate law.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0c0c0d; --black2:#151517; --navy:#12213a;
+  --gold:#c9a24b; --gold-light:#e8cd82; --cream:#f5f1e8; --grey:#a9a6a0;
+  --blue:#3f7dd6; --red:#d1495b;
+  --ink:#0c0c0d; --text-strong:#f5f1e8; --text-muted-strong:#b9b6af;
+}
+:root[data-theme="light"]{
+  --black:#ffffff; --black2:#f2efe6; --cream:#1c1a17; --grey:#5c584f;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.6;overflow-x:hidden;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+.container{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+/* Topbar */
+.topbar{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.15);font-size:12px;}
+.topbar-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:8px 24px;color:var(--grey);}
+.topbar-links{display:flex;gap:18px;flex-wrap:wrap;}
+.topbar-links a{letter-spacing:.5px;opacity:.85;}
+.topbar-links a:hover{color:var(--gold-light);opacity:1;}
+.topbar-right{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.topbar-contact a{color:var(--gold-light);margin-inline-start:6px;}
+.lang-switch{display:flex;gap:4px;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
+.theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
+.theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:100;background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);}
+.navbar-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:relative;}
+.logo{font-family:'Cinzel',serif;font-size:19px;letter-spacing:.5px;color:var(--gold-light);}
+.logo span{color:var(--cream);font-weight:400;}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+.nav-toggle span{width:24px;height:2px;background:var(--gold-light);display:block;}
+.nav-menu > ul{display:flex;align-items:center;gap:28px;}
+.mega-col-left,.mega-col-right{display:flex;flex-direction:column;}
+.nav-menu a{font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--cream);opacity:.85;}
+.nav-menu a:hover{opacity:1;color:var(--gold-light);}
+.nav-menu .btn-nav{border:1px solid var(--gold);padding:9px 18px;border-radius:2px;opacity:1;}
+.nav-menu .btn-nav:hover{background:var(--gold);color:var(--ink);}
+.has-dropdown{position:relative;}
+.has-dropdown::before{content:'';position:absolute;top:100%;left:0;right:0;height:14px;}
+.mega-dropdown{position:absolute;top:calc(100% + 14px);left:0;display:none;background:var(--navy);border:1px solid rgba(201,162,75,0.3);border-radius:8px;box-shadow:0 20px 44px rgba(0,0,0,.55);overflow:hidden;}
+[dir="rtl"] .mega-dropdown{left:auto;right:0;}
+.has-dropdown:hover .mega-dropdown,.has-dropdown.open-dropdown .mega-dropdown{display:flex;}
+.mega-col{padding:14px 0;}
+.mega-col-left{min-width:250px;border-inline-end:1px solid rgba(201,162,75,0.2);}
+.mega-col-right{min-width:290px;background:rgba(0,0,0,0.15);}
+.mega-col li a{display:block;padding:10px 22px;font-size:12.5px;text-transform:none;letter-spacing:.2px;opacity:.85;color:var(--text-strong);white-space:nowrap;}
+.mega-col-left li.active a,.mega-col li a:hover{background:rgba(201,162,75,0.14);color:var(--gold-light);opacity:1;}
+.mega-col-left li a{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.mega-col-left li a::after{content:'\276F';font-size:11px;opacity:.55;}
+[dir="rtl"] .mega-col-left li a::after{content:'\276E';}
+.mega-col-right li a{font-size:12px;opacity:.75;border-bottom:1px dashed rgba(201,162,75,0.12);}
+.mega-col-right li:last-child a{border-bottom:none;}
+
+/* Hero */
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;background:var(--navy);overflow:hidden;}
+.hero-slides{position:relative;width:100%;}
+.hero-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;display:flex;align-items:center;min-height:78vh;}
+.hero-slide.active{opacity:1;position:relative;}
+.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 20%, #1c2a44 0%, var(--navy) 55%, var(--ink) 100%);z-index:0;}
+.hero-content{position:relative;z-index:1;text-align:center;width:100%;}
+.hero-content h1{font-family:'Cinzel',serif;font-size:clamp(28px,5vw,46px);color:var(--gold-light);margin-bottom:16px;}
+.hero-tagline{font-size:16px;color:var(--text-muted-strong);max-width:600px;margin:0 auto 28px;}
+.btn-primary{display:inline-block;padding:13px 30px;background:var(--gold);color:var(--ink);border-radius:2px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;}
+.btn-primary:hover{background:var(--gold-light);}
+.btn-outline{display:inline-block;padding:12px 26px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-top:8px;}
+.btn-outline:hover{background:var(--gold);color:var(--ink);}
+.hero-dots{position:absolute;bottom:22px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:2;}
+.hero-dots span{width:9px;height:9px;border-radius:50%;background:rgba(201,162,75,0.35);cursor:pointer;}
+.hero-dots span.active{background:var(--gold);}
+
+/* Stats */
+.stats{background:var(--black2);padding:34px 0;}
+.stats-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;text-align:center;}
+.stat{border-top:3px solid var(--gold);padding-top:14px;}
+.stat:nth-child(1){border-color:#3f7dd6;}
+.stat:nth-child(2){border-color:#5ea0e8;}
+.stat:nth-child(3){border-color:#d1495b;}
+.stat:nth-child(4){border-color:#e08a3c;}
+.stat:nth-child(5){border-color:#d9b23c;}
+.stat:nth-child(6){border-color:#4caf7d;}
+.stat-num{display:block;font-family:'Cinzel',serif;font-size:26px;color:var(--gold-light);}
+.stat-label{font-size:12.5px;color:var(--grey);}
+
+/* Chat widget */
+.chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;display:flex;flex-direction:column;align-items:flex-start;gap:10px;}
+.chat-qr{background:#fff;border:3px solid #25D366;border-radius:8px;padding:10px;display:none;flex-direction:column;align-items:center;gap:6px;box-shadow:0 10px 26px rgba(0,0,0,.4);}
+.chat-qr span{font-size:11px;color:#111;font-weight:600;letter-spacing:.3px;}
+.chat-widget:hover .chat-qr{display:flex;}
+.chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
+@media(max-width:600px){.chat-widget{left:12px;bottom:12px;}.chat-qr{display:none !important;}}
+
+section{padding:76px 24px;}
+h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-light);text-align:center;margin-bottom:14px;}
+.divider{width:60px;height:2px;background:var(--gold);margin:0 auto 30px;}
+.divider.center{margin:0 auto 40px;}
+.section-intro{text-align:center;color:var(--grey);max-width:640px;margin:0 auto 40px;font-size:15px;}
+
+/* About */
+.about{background:var(--black2);}
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:46px;align-items:center;max-width:1080px;margin:0 auto;}
+.about-text h2{text-align:left;}
+.about-text .divider{margin:0 0 24px;}
+.pull-quote{font-size:17px;color:var(--gold-light);border-inline-start:3px solid var(--gold);padding-inline-start:16px;margin-bottom:20px;font-style:italic;}
+.about-text p{color:var(--grey);font-size:15px;margin-bottom:16px;}
+.about-photo-placeholder{aspect-ratio:3/4;border:1px dashed rgba(201,162,75,0.4);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--grey);font-size:13px;text-align:center;padding:20px;background:var(--black);}
+
+/* Awards / Why choose us */
+.awards-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.award-card{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:8px;padding:28px 22px;text-align:center;}
+#why .award-card{background:var(--black);}
+.award-icon{font-size:28px;margin-bottom:12px;}
+.award-card h3{font-family:'Cinzel',serif;color:var(--gold-light);font-size:15.5px;margin-bottom:10px;}
+.award-card p{color:var(--grey);font-size:13.5px;}
+
+/* CTA banner */
+.cta-banner{background:linear-gradient(120deg,var(--navy),var(--ink));border-top:1px solid rgba(201,162,75,0.2);border-bottom:1px solid rgba(201,162,75,0.2);padding:50px 24px;}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;max-width:1080px;margin:0 auto;}
+.cta-inner h2{text-align:left;margin-bottom:6px;}
+.cta-inner p{color:var(--text-muted-strong);font-size:14.5px;}
+
+/* Our approach */
+.stories-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+.stories-list li{background:var(--black2);border-inline-start:3px solid var(--gold);padding:16px 20px;border-radius:4px;color:var(--grey);font-size:14.5px;}
+
+/* Expertise */
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.expertise-card{display:block;background:var(--black2);border:1px solid rgba(201,162,75,0.18);padding:26px 22px;border-radius:6px;transition:.25s;}
+.expertise-card:hover{border-color:var(--gold);transform:translateY(-4px);}
+.expertise-card h3{font-family:'Cinzel',serif;color:var(--gold-light);font-size:16px;margin-bottom:10px;}
+.expertise-card p{color:var(--grey);font-size:13.5px;}
+
+/* Testimonials */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1080px;margin:0 auto;}
+.testimonial-card{background:var(--black2);border:1px solid rgba(201,162,75,0.18);padding:24px 22px;border-radius:6px;}
+.testimonial-card p{color:var(--grey);font-size:14px;margin-bottom:12px;font-style:italic;}
+.testimonial-card cite{color:var(--gold-light);font-size:13px;font-style:normal;}
+
+/* FAQ */
+.faq-list{max-width:820px;margin:0 auto;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
+
+/* Contact */
+.contact{background:var(--black2);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:980px;margin:0 auto;align-items:start;}
+.contact-info h2{text-align:left;}
+.contact-info .divider{margin:0 0 20px;}
+.contact-info p{color:var(--grey);font-size:14.5px;margin-bottom:14px;}
+.contact-info a{color:var(--gold-light);}
+.contact-form{display:flex;flex-direction:column;gap:14px;}
+.contact-form input,.contact-form textarea{background:var(--black);border:1px solid rgba(201,162,75,0.3);color:var(--cream);padding:13px 16px;border-radius:4px;font-family:inherit;font-size:14px;}
+.contact-form textarea{resize:vertical;}
+.contact-form button{cursor:pointer;border:none;}
+
+/* Footer */
+.footer{border-top:1px solid rgba(201,162,75,0.2);}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;padding:50px 24px 30px;}
+.footer-logo{display:block;margin-bottom:12px;}
+.footer-grid p{color:var(--grey);font-size:13.5px;}
+.footer-grid h4{font-family:'Cinzel',serif;color:var(--gold-light);font-size:14px;margin-bottom:14px;}
+.footer-grid ul li{margin-bottom:9px;}
+.footer-grid ul li a{color:var(--grey);font-size:13.5px;}
+.footer-grid ul li a:hover{color:var(--gold-light);}
+.footer-bottom{border-top:1px solid rgba(201,162,75,0.12);padding:18px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
+
+@media(max-width:900px){
+  .nav-toggle{display:flex;}
+  .nav-menu{position:absolute;top:100%;left:0;right:0;background:var(--black2);border-top:1px solid rgba(201,162,75,0.2);display:none;}
+  .nav-menu.open{display:block;}
+  .nav-menu > ul{flex-direction:column;align-items:flex-start;padding:16px 24px;gap:14px;}
+  .mega-dropdown{position:static;flex-direction:column;background:none;border:none;box-shadow:none;display:none;}
+  .has-dropdown.open-dropdown .mega-dropdown{display:flex;}
+  .mega-col{border:none !important;background:none !important;padding:4px 0 4px 14px;}
+  .mega-col-right{display:none;}
+  .about-grid,.contact-grid{grid-template-columns:1fr;}
+  .awards-grid{grid-template-columns:repeat(2,1fr);}
+  .expertise-grid{grid-template-columns:repeat(2,1fr);}
+  .testimonials-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:repeat(3,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .cta-inner{flex-direction:column;text-align:center;}
+  .cta-inner h2{text-align:center;}
+}
+@media(max-width:520px){
+  .expertise-grid,.awards-grid,.footer-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+}
+</style>
 </head>
 <body data-lang="en">
+
+<!-- ===== WHATSAPP + QR CHAT WIDGET ===== -->
+<div class="chat-widget">
+  <div class="chat-qr" id="chatQr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=https://wa.me/971547125676" alt="WhatsApp QR code" width="120" height="120">
+    <span data-i18n="chat_scan">Scan to chat</span>
+  </div>
+  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+</div>
 
 <!-- ===== TOP BAR ===== -->
 <div class="topbar">
   <div class="container topbar-inner">
     <div class="topbar-links">
-      <a href="#awards" data-i18n="tb_awards">Awards &amp; Accolades</a>
+      <a href="#why" data-i18n="tb_why">Why Choose Us</a>
       <a href="#testimonials" data-i18n="tb_testimonials">Testimonials</a>
-      <a href="#success-stories" data-i18n="tb_success">Success Stories</a>
-      <a href="#media" data-i18n="tb_media">Media</a>
+      <a href="#approach" data-i18n="tb_approach">Our Approach</a>
     </div>
     <div class="topbar-right">
       <div class="topbar-contact">
         <span data-i18n="tb_contact_label">Contact us now:</span>
-        <a href="tel:+00000000000">[City 1]: +0 000 000 0000</a>
-        <a href="tel:+00000000000">[City 2]: +0 000 000 0000</a>
+        <a href="tel:+971547125676">Dubai: +971 54 712 5676</a>
       </div>
       <div class="lang-switch" id="langSwitch">
-        <button type="button" data-lang-btn="en" class="active">EN</button>
-        <button type="button" data-lang-btn="ar">AR</button>
-        <button type="button" data-lang-btn="zh">中文</button>
-        <button type="button" data-lang-btn="ru">RU</button>
+        <button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+        <button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+        <button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+        <button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+        <button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
       </div>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
     </div>
   </div>
 </div>
@@ -37,11 +252,7 @@
 <!-- ===== MAIN NAV ===== -->
 <header class="navbar">
   <div class="container navbar-inner">
-    <a href="#" class="logo logo-video">
-      <video autoplay muted playsinline poster="assets/logo-final.png" aria-label="Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants">
-        <source src="assets/logo-animation.mp4" type="video/mp4">
-      </video>
-    </a>
+    <a href="#home" class="logo">Alhosani<span>Advocates</span></a>
 
     <button class="nav-toggle" id="navToggle" data-i18n-aria="aria_toggle_menu" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -51,19 +262,30 @@
       <ul>
         <li><a href="#home" data-i18n="nav_home">Home</a></li>
         <li class="has-dropdown">
-          <a href="#expertise" data-i18n="nav_expertise">Expertise</a>
-          <ul class="dropdown">
-            <li><a href="#" data-i18n="ph_practice_1">[Practice Area 1]</a></li>
-            <li><a href="#" data-i18n="ph_practice_2">[Practice Area 2]</a></li>
-            <li><a href="#" data-i18n="ph_practice_3">[Practice Area 3]</a></li>
-            <li><a href="#" data-i18n="ph_practice_4">[Practice Area 4]</a></li>
-            <li><a href="#" data-i18n="ph_practice_5">[Practice Area 5]</a></li>
-            <li><a href="#" data-i18n="ph_practice_6">[Practice Area 6]</a></li>
-          </ul>
+          <a href="#expertise" data-i18n="nav_expertise">Practice Areas</a>
+          <div class="mega-dropdown">
+            <ul class="mega-col mega-col-left" id="megaLeft">
+              <li data-practice="7"><a href="arbitration.html" data-i18n="practice_7">Arbitration</a></li>
+              <li data-practice="11"><a href="banking-law.html" data-i18n="practice_11">Banking Law</a></li>
+              <li data-practice="3"><a href="civil-law.html" data-i18n="practice_3">Civil Law</a></li>
+              <li data-practice="4"><a href="commercial-corporate-law.html" data-i18n="practice_4">Commercial &amp; Corporate Law</a></li>
+              <li data-practice="9"><a href="company-formation.html" data-i18n="practice_9">Company Formation</a></li>
+              <li data-practice="10"><a href="construction-law.html" data-i18n="practice_10">Construction Law</a></li>
+              <li data-practice="2"><a href="criminal-law.html" data-i18n="practice_2">Criminal Law</a></li>
+              <li data-practice="1" class="active"><a href="family-law.html" data-i18n="practice_1">Family Law</a></li>
+              <li data-practice="8"><a href="inheritance-law.html" data-i18n="practice_8">Inheritance Law</a></li>
+              <li data-practice="12"><a href="intellectual-property-law.html" data-i18n="practice_12">Intellectual Property Law</a></li>
+              <li data-practice="6"><a href="labor-employment-law.html" data-i18n="practice_6">Labor &amp; Employment Law</a></li>
+              <li data-practice="13"><a href="maritime-law.html" data-i18n="practice_13">Maritime Law</a></li>
+              <li data-practice="5"><a href="real-estate-law.html" data-i18n="practice_5">Real Estate Law</a></li>
+              <li data-practice="14"><a href="sports-law.html" data-i18n="practice_14">Sports Law</a></li>
+            </ul>
+            <ul class="mega-col mega-col-right" id="megaRight"></ul>
+          </div>
         </li>
-        <li><a href="#success-stories" data-i18n="nav_success">Success Stories</a></li>
-        <li><a href="#articles" data-i18n="nav_articles">Legal Articles</a></li>
-        <li><a href="#ask" data-i18n="nav_ask">Ask a Lawyer</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#approach" data-i18n="nav_approach">Our Approach</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
         <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">Contact</a></li>
       </ul>
     </nav>
@@ -73,28 +295,28 @@
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
   <div class="hero-slides">
-    <div class="hero-slide hero-slide-1 active">
+    <div class="hero-slide active">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1>[Firm Name]</h1>
-        <p class="hero-tagline" data-i18n="hero1_tagline">Trusted legal counsel in [City, Country] for [X]+ years</p>
+        <h1>Ismail Ibrahim Alhosani</h1>
+        <p class="hero-tagline" data-i18n="hero1_tagline">Trusted advocates &amp; legal consultants in Dubai, UAE</p>
         <a href="#contact" class="btn-primary" data-i18n="hero1_cta">Book a Consultation</a>
       </div>
     </div>
-    <div class="hero-slide hero-slide-2">
+    <div class="hero-slide">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 data-i18n="hero2_title">[Practice Area 1] Specialists</h1>
+        <h1 data-i18n="hero2_title">Full-Service Legal Practice</h1>
         <p class="hero-tagline" data-i18n="hero2_tagline">Practical, results-driven representation you can rely on</p>
-        <a href="#contact" class="btn-primary" data-i18n="hero2_cta">Speak to a Lawyer</a>
+        <a href="#contact" class="btn-primary" data-i18n="hero2_cta">Speak to an Advocate</a>
       </div>
     </div>
-    <div class="hero-slide hero-slide-3">
+    <div class="hero-slide">
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <h1 data-i18n="testimonials_title">What Our Clients Say</h1>
-        <blockquote class="hero-quote" data-i18n="ph_testimonial_hero">"[Placeholder testimonial quote goes here — replace with a real client quote.]"</blockquote>
-        <p class="hero-quote-author" data-i18n="ph_client_name_title">— [Client Name / Title]</p>
+        <h1 data-i18n="hero3_title">Multilingual Legal Support</h1>
+        <p class="hero-tagline" data-i18n="hero3_tagline">Serving clients in Arabic, English, Chinese, Russian, and German</p>
+        <a href="#contact" class="btn-primary" data-i18n="hero3_cta">Book a Consultation</a>
       </div>
     </div>
   </div>
@@ -106,9 +328,10 @@
   <div class="container stats-grid">
     <div class="stat"><span class="stat-num">[X]+</span><span class="stat-label" data-i18n="stats_years">years in practice</span></div>
     <div class="stat"><span class="stat-num">[X]+</span><span class="stat-label" data-i18n="stats_cases">cases handled</span></div>
-    <div class="stat"><span class="stat-num">[X]+</span><span class="stat-label" data-i18n="stats_awards">awards received</span></div>
-    <div class="stat"><span class="stat-num">[X]</span><span class="stat-label" data-i18n="stats_offices">office locations</span></div>
-    <div class="stat"><span class="stat-num">[X]+</span><span class="stat-label" data-i18n="stats_clients">satisfied clients</span></div>
+    <div class="stat"><span class="stat-num">5</span><span class="stat-label" data-i18n="stats_languages">languages spoken</span></div>
+    <div class="stat"><span class="stat-num">1</span><span class="stat-label" data-i18n="stats_offices">Dubai office</span></div>
+    <div class="stat"><span class="stat-num">✓</span><span class="stat-label" data-i18n="stats_licensed">Ministry of Justice licensed</span></div>
+    <div class="stat"><span class="stat-num">✓</span><span class="stat-label" data-i18n="stats_courts">DIFC &amp; onshore courts</span></div>
   </div>
 </section>
 
@@ -116,54 +339,55 @@
 <section class="about" id="about">
   <div class="container about-grid">
     <div class="about-text">
-      <h2 data-i18n="about_title">About [Lawyer / Founder Name]</h2>
+      <h2 data-i18n="about_title">About Ismail Ibrahim Alhosani</h2>
       <div class="divider"></div>
       <blockquote class="pull-quote" data-i18n="about_pullquote">
-        [Short, punchy summary of the lawyer's credentials and specialty — name, title, city, and practice focus.]
+        Advocate and legal consultant based in Dubai, providing representation and legal advice across the United Arab Emirates.
       </blockquote>
       <p data-i18n="about_para1">
-        [Paragraph — background, years of experience, key practice areas, notable case types, professional
-        memberships, and what makes this lawyer/firm different.]
+        Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants advises individuals and businesses on family, criminal,
+        civil, commercial, and real estate matters across the UAE. The firm is registered with the UAE Ministry of Justice
+        and handles cases before local courts as well as DIFC courts.
       </p>
       <p data-i18n="about_para2">
-        [Optional paragraph — education, languages spoken, media mentions, speaking engagements, or
-        community involvement.]
+        Consultations are available in Arabic, English, Chinese, Russian, and German, allowing the firm to serve UAE
+        nationals, expatriates, and international clients directly, without relying on intermediaries.
       </p>
       <a href="#contact" class="btn-outline" data-i18n="btn_contact_me">Contact Me Now</a>
     </div>
     <div class="about-media">
       <div class="about-photo-placeholder">
-        <span data-i18n="ph_lawyer_photo">Lawyer photo</span>
+        <span data-i18n="ph_lawyer_photo">[Advocate photo — add when available]</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== AWARDS ===== -->
-<section class="awards" id="awards">
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="awards" id="why">
   <div class="container">
-    <h2 data-i18n="awards_title">Awards &amp; Recognition</h2>
+    <h2 data-i18n="why_title">Why Choose Us</h2>
     <div class="divider center"></div>
     <div class="awards-grid">
       <div class="award-card">
-        <div class="award-icon">🏆</div>
-        <h3 data-i18n="ph_award_name_year">[Award Name] [Year]</h3>
-        <p data-i18n="ph_award_desc">[One-sentence description of the award and issuing organization.]</p>
+        <div class="award-icon">⚖</div>
+        <h3 data-i18n="why1_title">Ministry of Justice Licensed</h3>
+        <p data-i18n="why1_desc">Registered advocate authorized to practice before UAE courts.</p>
       </div>
       <div class="award-card">
-        <div class="award-icon">🏆</div>
-        <h3 data-i18n="ph_award_name_year">[Award Name] [Year]</h3>
-        <p data-i18n="ph_award_desc">[One-sentence description of the award and issuing organization.]</p>
+        <div class="award-icon">🌐</div>
+        <h3 data-i18n="why2_title">Multilingual Service</h3>
+        <p data-i18n="why2_desc">Consultations in Arabic, English, Chinese, Russian, and German.</p>
       </div>
       <div class="award-card">
-        <div class="award-icon">🏆</div>
-        <h3 data-i18n="ph_award_name_year">[Award Name] [Year]</h3>
-        <p data-i18n="ph_award_desc">[One-sentence description of the award and issuing organization.]</p>
+        <div class="award-icon">🤝</div>
+        <h3 data-i18n="why3_title">Direct Attention</h3>
+        <p data-i18n="why3_desc">You work directly with your advocate, not a rotating case handler.</p>
       </div>
       <div class="award-card">
-        <div class="award-icon">🏆</div>
-        <h3 data-i18n="ph_award_name_year">[Award Name] [Year]</h3>
-        <p data-i18n="ph_award_desc">[One-sentence description of the award and issuing organization.]</p>
+        <div class="award-icon">🔒</div>
+        <h3 data-i18n="why4_title">Discretion &amp; Integrity</h3>
+        <p data-i18n="why4_desc">Confidential handling of sensitive family, criminal, and commercial matters.</p>
       </div>
     </div>
   </div>
@@ -174,24 +398,23 @@
   <div class="container cta-inner">
     <div>
       <h2 data-i18n="cta_title">Need legal advice?</h2>
-      <p data-i18n="cta_text">Speak directly with our team — most enquiries are answered within 24 hours.</p>
+      <p data-i18n="cta_text">Speak directly with your advocate — we respond promptly to every inquiry.</p>
     </div>
     <a href="#contact" class="btn-primary" data-i18n="btn_contact_me">Contact Me Now</a>
   </div>
 </section>
 
-<!-- ===== SUCCESS STORIES ===== -->
-<section class="success-stories" id="success-stories">
+<!-- ===== OUR APPROACH ===== -->
+<section class="success-stories" id="approach">
   <div class="container">
-    <h2 data-i18n="success_title">Success Stories</h2>
+    <h2 data-i18n="approach_title">Our Approach</h2>
     <div class="divider center"></div>
-    <p class="section-intro" data-i18n="success_intro">[Short intro sentence: e.g. "A few of the cases we're proud to have resolved for our clients."]</p>
+    <p class="section-intro" data-i18n="approach_intro">How we work with every client, from first call to resolution.</p>
     <ul class="stories-list">
-      <li><a href="#" data-i18n="ph_case_1">[Case result headline #1 — e.g. "Client wins Dh1.3 million dispute"]</a></li>
-      <li><a href="#" data-i18n="ph_case_2">[Case result headline #2]</a></li>
-      <li><a href="#" data-i18n="ph_case_3">[Case result headline #3]</a></li>
-      <li><a href="#" data-i18n="ph_case_4">[Case result headline #4]</a></li>
-      <li><a href="#" data-i18n="ph_case_5">[Case result headline #5]</a></li>
+      <li data-i18n="approach_1">A clear, upfront explanation of your legal options and the fee structure before any work begins.</li>
+      <li data-i18n="approach_2">Direct communication with your advocate in the language you're most comfortable in.</li>
+      <li data-i18n="approach_3">Strategy tailored to UAE law and your specific circumstances — no generic templates.</li>
+      <li data-i18n="approach_4">Regular updates as your case progresses through negotiation, filing, or court proceedings.</li>
     </ul>
   </div>
 </section>
@@ -202,30 +425,20 @@
     <h2 data-i18n="expertise_title">Areas of Expertise</h2>
     <div class="divider center"></div>
     <div class="expertise-grid">
-      <div class="expertise-card">
-        <h3 data-i18n="ph_practice_1">[Practice Area 1]</h3>
-        <p data-i18n="ph_practice_desc">[One or two sentences describing this practice area and how the firm helps clients.]</p>
-      </div>
-      <div class="expertise-card">
-        <h3 data-i18n="ph_practice_2">[Practice Area 2]</h3>
-        <p data-i18n="ph_practice_desc">[One or two sentences describing this practice area and how the firm helps clients.]</p>
-      </div>
-      <div class="expertise-card">
-        <h3 data-i18n="ph_practice_3">[Practice Area 3]</h3>
-        <p data-i18n="ph_practice_desc">[One or two sentences describing this practice area and how the firm helps clients.]</p>
-      </div>
-      <div class="expertise-card">
-        <h3 data-i18n="ph_practice_4">[Practice Area 4]</h3>
-        <p data-i18n="ph_practice_desc">[One or two sentences describing this practice area and how the firm helps clients.]</p>
-      </div>
-      <div class="expertise-card">
-        <h3 data-i18n="ph_practice_5">[Practice Area 5]</h3>
-        <p data-i18n="ph_practice_desc">[One or two sentences describing this practice area and how the firm helps clients.]</p>
-      </div>
-      <div class="expertise-card">
-        <h3 data-i18n="ph_practice_6">[Practice Area 6]</h3>
-        <p data-i18n="ph_practice_desc">[One or two sentences describing this practice area and how the firm helps clients.]</p>
-      </div>
+      <a class="expertise-card" id="practice-1" href="family-law.html"><h3 data-i18n="practice_1">Family Law</h3><p data-i18n="practice_1_desc">Divorce, custody, alimony, and marriage contracts under UAE personal status law.</p></a>
+      <a class="expertise-card" id="practice-2" href="criminal-law.html"><h3 data-i18n="practice_2">Criminal Law</h3><p data-i18n="practice_2_desc">Defense and representation in criminal proceedings before UAE courts.</p></a>
+      <a class="expertise-card" id="practice-3" href="civil-law.html"><h3 data-i18n="practice_3">Civil Law</h3><p data-i18n="practice_3_desc">Contract disputes, torts, and civil litigation across the Emirates.</p></a>
+      <a class="expertise-card" id="practice-4" href="commercial-corporate-law.html"><h3 data-i18n="practice_4">Commercial &amp; Corporate Law</h3><p data-i18n="practice_4_desc">Company structuring, contracts, and commercial dispute resolution.</p></a>
+      <a class="expertise-card" id="practice-5" href="real-estate-law.html"><h3 data-i18n="practice_5">Real Estate Law</h3><p data-i18n="practice_5_desc">Property transactions, developer disputes, and tenancy matters.</p></a>
+      <a class="expertise-card" id="practice-6" href="labor-employment-law.html"><h3 data-i18n="practice_6">Labor &amp; Employment Law</h3><p data-i18n="practice_6_desc">Employment contracts, termination disputes, and labor claims.</p></a>
+      <a class="expertise-card" id="practice-7" href="arbitration.html"><h3 data-i18n="practice_7">Arbitration</h3><p data-i18n="practice_7_desc">Alternative dispute resolution before UAE and international arbitration centers.</p></a>
+      <a class="expertise-card" id="practice-8" href="inheritance-law.html"><h3 data-i18n="practice_8">Inheritance Law</h3><p data-i18n="practice_8_desc">Wills, succession, and estate distribution under UAE law.</p></a>
+      <a class="expertise-card" id="practice-9" href="company-formation.html"><h3 data-i18n="practice_9">Company Formation</h3><p data-i18n="practice_9_desc">Business setup, licensing, and registration for local and foreign investors.</p></a>
+      <a class="expertise-card" id="practice-10" href="construction-law.html"><h3 data-i18n="practice_10">Construction Law</h3><p data-i18n="practice_10_desc">Contract drafting, delay claims, and dispute resolution for construction and infrastructure projects.</p></a>
+      <a class="expertise-card" id="practice-11" href="banking-law.html"><h3 data-i18n="practice_11">Banking Law</h3><p data-i18n="practice_11_desc">Advice on banking disputes, loan agreements, guarantees, and regulatory compliance matters.</p></a>
+      <a class="expertise-card" id="practice-12" href="intellectual-property-law.html"><h3 data-i18n="practice_12">Intellectual Property Law</h3><p data-i18n="practice_12_desc">Trademark, copyright, and patent protection and enforcement under UAE law.</p></a>
+      <a class="expertise-card" id="practice-13" href="maritime-law.html"><h3 data-i18n="practice_13">Maritime Law</h3><p data-i18n="practice_13_desc">Vessel arrest, cargo claims, and maritime contract disputes across UAE ports.</p></a>
+      <a class="expertise-card" id="practice-14" href="sports-law.html"><h3 data-i18n="practice_14">Sports Law</h3><p data-i18n="practice_14_desc">Player contracts, sponsorship agreements, and sports governance matters in the UAE.</p></a>
     </div>
   </div>
 </section>
@@ -235,19 +448,25 @@
   <div class="container">
     <h2 data-i18n="testimonials_title">What Our Clients Say</h2>
     <div class="divider center"></div>
+    <p class="section-intro" data-i18n="testimonials_note">[Add real, permission-cleared client quotes here once available.]</p>
     <div class="testimonials-grid">
-      <blockquote class="testimonial-card">
-        <p data-i18n="ph_testimonial_1">"[Placeholder testimonial #1 — replace with a real, permission-cleared client quote.]"</p>
-        <cite data-i18n="ph_client_name">— [Client Name]</cite>
-      </blockquote>
-      <blockquote class="testimonial-card">
-        <p data-i18n="ph_testimonial_2">"[Placeholder testimonial #2.]"</p>
-        <cite data-i18n="ph_client_name">— [Client Name]</cite>
-      </blockquote>
-      <blockquote class="testimonial-card">
-        <p data-i18n="ph_testimonial_3">"[Placeholder testimonial #3.]"</p>
-        <cite data-i18n="ph_client_name">— [Client Name]</cite>
-      </blockquote>
+      <blockquote class="testimonial-card"><p data-i18n="ph_testimonial_1">[Client testimonial placeholder #1]</p><cite data-i18n="ph_client_name">— [Client Name]</cite></blockquote>
+      <blockquote class="testimonial-card"><p data-i18n="ph_testimonial_2">[Client testimonial placeholder #2]</p><cite data-i18n="ph_client_name">— [Client Name]</cite></blockquote>
+      <blockquote class="testimonial-card"><p data-i18n="ph_testimonial_3">[Client testimonial placeholder #3]</p><cite data-i18n="ph_client_name">— [Client Name]</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="container">
+    <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+    <div class="divider center"></div>
+    <div class="faq-list">
+      <details><summary data-i18n="faq_q1">What areas of law do you practice?</summary><p data-i18n="faq_a1">Family, criminal, civil, commercial, real estate, labor, inheritance, and arbitration matters across the UAE.</p></details>
+      <details><summary data-i18n="faq_q2">Do you represent both individuals and companies?</summary><p data-i18n="faq_a2">Yes — private individuals as well as local and foreign companies operating in the UAE.</p></details>
+      <details><summary data-i18n="faq_q3">What languages do you serve clients in?</summary><p data-i18n="faq_a3">Arabic, English, Chinese, Russian, and German.</p></details>
+      <details><summary data-i18n="faq_q4">How do I book a consultation?</summary><p data-i18n="faq_a4">Call, email, or use the contact form below and we will respond promptly.</p></details>
     </div>
   </div>
 </section>
@@ -258,18 +477,17 @@
     <div class="contact-info">
       <h2 data-i18n="contact_title">Get in Touch</h2>
       <div class="divider"></div>
-      <p>Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants<br><span data-i18n="ph_street_address">[Street Address]</span><br><span data-i18n="ph_city_country">[City, Country]</span></p>
-      <p><strong data-i18n="contact_phone_label">Phone:</strong> <a href="tel:+00000000000">+0 000 000 0000</a></p>
-      <p><strong data-i18n="contact_email_label">Email:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
-      <p><strong data-i18n="contact_hours_label">Office Hours:</strong> <span data-i18n="ph_days_hours">[Days], [Hours]</span></p>
+      <p>Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants<br><span data-i18n="ph_street_address">[Building / street name — confirm exact address]</span><br><span data-i18n="office_city">Office 317, Dubai, UAE</span></p>
+      <p><strong data-i18n="contact_phone_label">Phone:</strong> <a href="tel:+971547125676">+971 54 712 5676</a></p>
+      <p><strong data-i18n="contact_email_label">Email:</strong> <a href="mailto:alhosaniadvocate@gmail.com">alhosaniadvocate@gmail.com</a></p>
+      <p><strong data-i18n="contact_hours_label">Office Hours:</strong> <span data-i18n="ph_days_hours">[Days], [Hours] — confirm with client]</span></p>
     </div>
-    <form class="contact-form">
-      <input type="text" data-i18n-placeholder="form_name" placeholder="Full Name" required>
-      <input type="email" data-i18n-placeholder="form_email" placeholder="Email Address" required>
-      <input type="tel" data-i18n-placeholder="form_phone" placeholder="Phone Number">
-      <textarea rows="5" data-i18n-placeholder="form_message" placeholder="How can we help you?" required></textarea>
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="name" data-i18n-placeholder="form_name" placeholder="Full Name" required>
+      <input type="email" name="email" data-i18n-placeholder="form_email" placeholder="Email Address" required>
+      <input type="tel" name="phone" data-i18n-placeholder="form_phone" placeholder="Phone Number">
+      <textarea rows="5" name="message" data-i18n-placeholder="form_message" placeholder="How can we help you?" required></textarea>
       <button type="submit" class="btn-primary" data-i18n="form_submit">Send Message</button>
-      <p class="form-note" data-i18n="form_note">Note: this form is a placeholder — connect it to an email service (e.g. Formspree, Netlify Forms) before going live.</p>
     </form>
   </div>
 </section>
@@ -278,45 +496,1051 @@
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <a href="#" class="logo footer-logo">
-        <img src="assets/logo-final.png" alt="Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants">
-      </a>
-      <p data-i18n="ph_footer_tagline">[Short one-line firm description / tagline.]</p>
+      <a href="#home" class="logo footer-logo">Alhosani<span>Advocates</span></a>
+      <p data-i18n="footer_tagline">Advocates &amp; legal consultants serving Dubai and the UAE.</p>
     </div>
     <div>
       <h4 data-i18n="footer_quicklinks">Quick Links</h4>
       <ul>
-        <li><a href="#about" data-i18n="about_title_short">About</a></li>
-        <li><a href="#expertise" data-i18n="nav_expertise">Expertise</a></li>
-        <li><a href="#success-stories" data-i18n="nav_success">Success Stories</a></li>
-        <li><a href="#contact" data-i18n="nav_contact_plain">Contact</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#expertise" data-i18n="nav_expertise">Practice Areas</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
     </div>
     <div>
       <h4 data-i18n="footer_practice_areas">Practice Areas</h4>
       <ul>
-        <li><a href="#" data-i18n="ph_practice_1">[Practice Area 1]</a></li>
-        <li><a href="#" data-i18n="ph_practice_2">[Practice Area 2]</a></li>
-        <li><a href="#" data-i18n="ph_practice_3">[Practice Area 3]</a></li>
+        <li><a href="#expertise" data-i18n="practice_1">Family Law</a></li>
+        <li><a href="#expertise" data-i18n="practice_2">Criminal Law</a></li>
+        <li><a href="#expertise" data-i18n="practice_4">Commercial &amp; Corporate Law</a></li>
       </ul>
     </div>
     <div>
       <h4 data-i18n="footer_follow">Follow Us</h4>
       <ul class="social-links">
         <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Facebook</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>&copy; <span id="year"></span> <span data-i18n="footer_copyright_rest">[Firm Name]. All rights reserved. This is placeholder content — replace before publishing.</span></p>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer_copyright_rest">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants. All rights reserved.</span></p>
     </div>
   </div>
 </footer>
 
-<script src="js/i18n.js"></script>
-<script src="js/script.js"></script>
+<script>
+const I18N = {
+en: {
+  dir:'ltr',
+  tb_why:"Why Choose Us", tb_testimonials:"Testimonials", tb_approach:"Our Approach", tb_contact_label:"Contact us now:",
+  nav_home:"Home", nav_expertise:"Practice Areas", nav_about:"About", nav_approach:"Our Approach", nav_faq:"FAQ", nav_contact:"Contact",
+  aria_toggle_menu:"Toggle menu",
+  practice_1:"Family Law", practice_2:"Criminal Law", practice_3:"Civil Law", practice_4:"Commercial & Corporate Law",
+  practice_5:"Real Estate Law", practice_6:"Labor & Employment Law", practice_7:"Arbitration", practice_8:"Inheritance Law", practice_9:"Company Formation",
+  practice_10:"Construction Law", practice_11:"Banking Law", practice_12:"Intellectual Property Law", practice_13:"Maritime Law", practice_14:"Sports Law",
+  practice_1_desc:"Divorce, custody, alimony, and marriage contracts under UAE personal status law.",
+  practice_2_desc:"Defense and representation in criminal proceedings before UAE courts.",
+  practice_3_desc:"Contract disputes, torts, and civil litigation across the Emirates.",
+  practice_4_desc:"Company structuring, contracts, and commercial dispute resolution.",
+  practice_5_desc:"Property transactions, developer disputes, and tenancy matters.",
+  practice_6_desc:"Employment contracts, termination disputes, and labor claims.",
+  practice_7_desc:"Alternative dispute resolution before UAE and international arbitration centers.",
+  practice_8_desc:"Wills, succession, and estate distribution under UAE law.",
+  practice_9_desc:"Business setup, licensing, and registration for local and foreign investors.",
+  practice_10_desc:"Contract drafting, delay claims, and dispute resolution for construction and infrastructure projects.",
+  practice_11_desc:"Advice on banking disputes, loan agreements, guarantees, and regulatory compliance matters.",
+  practice_12_desc:"Trademark, copyright, and patent protection and enforcement under UAE law.",
+  practice_13_desc:"Vessel arrest, cargo claims, and maritime contract disputes across UAE ports.",
+  practice_14_desc:"Player contracts, sponsorship agreements, and sports governance matters in the UAE.",
+  hero1_tagline:"Trusted advocates & legal consultants in Dubai, UAE", hero1_cta:"Book a Consultation",
+  hero2_title:"Full-Service Legal Practice", hero2_tagline:"Practical, results-driven representation you can rely on", hero2_cta:"Speak to an Advocate",
+  hero3_title:"Multilingual Legal Support", hero3_tagline:"Serving clients in Arabic, English, Chinese, Russian, and German", hero3_cta:"Book a Consultation",
+  stats_years:"years in practice", stats_cases:"cases handled", stats_languages:"languages spoken", stats_offices:"Dubai office", stats_licensed:"Ministry of Justice licensed", stats_courts:"DIFC & onshore courts",
+  chat_scan:"Scan to chat",
+  about_title:"About Ismail Ibrahim Alhosani",
+  about_pullquote:"Advocate and legal consultant based in Dubai, providing representation and legal advice across the United Arab Emirates.",
+  about_para1:"Ismail Ibrahim Alhosani Advocates & Legal Consultants advises individuals and businesses on family, criminal, civil, commercial, and real estate matters across the UAE. The firm is registered with the UAE Ministry of Justice and handles cases before local courts as well as DIFC courts.",
+  about_para2:"Consultations are available in Arabic, English, Chinese, Russian, and German, allowing the firm to serve UAE nationals, expatriates, and international clients directly, without relying on intermediaries.",
+  btn_contact_me:"Contact Me Now", ph_lawyer_photo:"[Advocate photo — add when available]",
+  why_title:"Why Choose Us",
+  why1_title:"Ministry of Justice Licensed", why1_desc:"Registered advocate authorized to practice before UAE courts.",
+  why2_title:"Multilingual Service", why2_desc:"Consultations in Arabic, English, Chinese, Russian, and German.",
+  why3_title:"Direct Attention", why3_desc:"You work directly with your advocate, not a rotating case handler.",
+  why4_title:"Discretion & Integrity", why4_desc:"Confidential handling of sensitive family, criminal, and commercial matters.",
+  cta_title:"Need legal advice?", cta_text:"Speak directly with your advocate — we respond promptly to every inquiry.",
+  approach_title:"Our Approach", approach_intro:"How we work with every client, from first call to resolution.",
+  approach_1:"A clear, upfront explanation of your legal options and the fee structure before any work begins.",
+  approach_2:"Direct communication with your advocate in the language you're most comfortable in.",
+  approach_3:"Strategy tailored to UAE law and your specific circumstances — no generic templates.",
+  approach_4:"Regular updates as your case progresses through negotiation, filing, or court proceedings.",
+  expertise_title:"Areas of Expertise",
+  testimonials_title:"What Our Clients Say", testimonials_note:"[Add real, permission-cleared client quotes here once available.]",
+  ph_testimonial_1:"[Client testimonial placeholder #1]", ph_testimonial_2:"[Client testimonial placeholder #2]", ph_testimonial_3:"[Client testimonial placeholder #3]",
+  ph_client_name:"— [Client Name]",
+  faq_title:"Frequently Asked Questions",
+  faq_q1:"What areas of law do you practice?", faq_a1:"Family, criminal, civil, commercial, real estate, labor, inheritance, and arbitration matters across the UAE.",
+  faq_q2:"Do you represent both individuals and companies?", faq_a2:"Yes — private individuals as well as local and foreign companies operating in the UAE.",
+  faq_q3:"What languages do you serve clients in?", faq_a3:"Arabic, English, Chinese, Russian, and German.",
+  faq_q4:"How do I book a consultation?", faq_a4:"Call, email, or use the contact form below and we will respond promptly.",
+  contact_title:"Get in Touch", ph_street_address:"[Building / street name — confirm exact address]", office_city:"Office 317, Dubai, UAE",
+  contact_phone_label:"Phone:", contact_email_label:"Email:", contact_hours_label:"Office Hours:", ph_days_hours:"[Days], [Hours] — confirm with client]",
+  form_name:"Full Name", form_email:"Email Address", form_phone:"Phone Number", form_message:"How can we help you?", form_submit:"Send Message",
+  footer_tagline:"Advocates & legal consultants serving Dubai and the UAE.",
+  footer_quicklinks:"Quick Links", footer_practice_areas:"Practice Areas", footer_follow:"Follow Us",
+  footer_copyright_rest:"Ismail Ibrahim Alhosani Advocates & Legal Consultants. All rights reserved."
+},
+ar: {
+  dir:'rtl',
+  tb_why:"لماذا تختارنا", tb_testimonials:"آراء العملاء", tb_approach:"منهجنا", tb_contact_label:"اتصل بنا الآن:",
+  nav_home:"الرئيسية", nav_expertise:"مجالات الممارسة", nav_about:"من نحن", nav_approach:"منهجنا", nav_faq:"الأسئلة الشائعة", nav_contact:"اتصل بنا",
+  aria_toggle_menu:"فتح القائمة",
+  practice_1:"قانون الأسرة", practice_2:"القانون الجنائي", practice_3:"القانون المدني", practice_4:"القانون التجاري والشركات",
+  practice_5:"القانون العقاري", practice_6:"قانون العمل", practice_7:"التحكيم", practice_8:"قانون الميراث", practice_9:"تأسيس الشركات",
+  practice_10:"قانون البناء والتشييد", practice_11:"القانون المصرفي", practice_12:"قانون الملكية الفكرية", practice_13:"القانون البحري", practice_14:"القانون الرياضي",
+  practice_1_desc:"الطلاق، الحضانة، النفقة، وعقود الزواج بموجب قانون الأحوال الشخصية الإماراتي.",
+  practice_2_desc:"الدفاع والتمثيل في الدعاوى الجنائية أمام المحاكم الإماراتية.",
+  practice_3_desc:"منازعات العقود، والأضرار، والدعاوى المدنية في جميع الإمارات.",
+  practice_4_desc:"تأسيس الشركات، والعقود، وتسوية المنازعات التجارية.",
+  practice_5_desc:"معاملات العقارات، ومنازعات المطورين، ومسائل الإيجار.",
+  practice_6_desc:"عقود العمل، ومنازعات الفصل، ومطالبات العمال.",
+  practice_7_desc:"حل المنازعات البديل أمام مراكز التحكيم الإماراتية والدولية.",
+  practice_8_desc:"الوصايا، والإرث، وتوزيع التركات بموجب القانون الإماراتي.",
+  practice_9_desc:"تأسيس الأعمال، والتراخيص، والتسجيل للمستثمرين المحليين والأجانب.",
+  practice_10_desc:"صياغة العقود، ومطالبات التأخير، وحل المنازعات لمشاريع البناء والبنية التحتية.",
+  practice_11_desc:"استشارات في المنازعات المصرفية، واتفاقيات القروض، والضمانات، ومسائل الامتثال التنظيمي.",
+  practice_12_desc:"حماية وإنفاذ العلامات التجارية وحقوق النشر وبراءات الاختراع بموجب القانون الإماراتي.",
+  practice_13_desc:"حجز السفن، ومطالبات الشحن، ومنازعات العقود البحرية في موانئ الإمارات.",
+  practice_14_desc:"عقود اللاعبين، واتفاقيات الرعاية، ومسائل الحوكمة الرياضية في الإمارات.",
+  hero1_tagline:"محامون واستشاريون قانونيون موثوقون في دبي، الإمارات", hero1_cta:"احجز استشارة",
+  hero2_title:"خدمات قانونية شاملة", hero2_tagline:"تمثيل عملي يركز على النتائج يمكنك الاعتماد عليه", hero2_cta:"تحدث مع محامٍ",
+  hero3_title:"دعم قانوني متعدد اللغات", hero3_tagline:"نخدم العملاء بالعربية والإنجليزية والصينية والروسية والألمانية", hero3_cta:"احجز استشارة",
+  stats_years:"سنوات من الممارسة", stats_cases:"قضية تمت معالجتها", stats_languages:"لغات نتحدث بها", stats_offices:"مكتب في دبي", stats_licensed:"مرخص من وزارة العدل", stats_courts:"محاكم دبي المحلية و DIFC",
+  chat_scan:"امسح للمحادثة",
+  about_title:"عن اسماعيل ابراهيم الحوسني",
+  about_pullquote:"محامٍ ومستشار قانوني مقره دبي، يقدم التمثيل والاستشارات القانونية في جميع أنحاء دولة الإمارات.",
+  about_para1:"يقدم مكتب اسماعيل ابراهيم الحوسني للمحاماة والاستشارات القانونية الاستشارة للأفراد والشركات في قضايا الأسرة والجنائية والمدنية والتجارية والعقارية في جميع أنحاء الإمارات. المكتب مسجل لدى وزارة العدل الإماراتية ويتولى القضايا أمام المحاكم المحلية ومحاكم مركز دبي المالي العالمي.",
+  about_para2:"تتوفر الاستشارات بالعربية والإنجليزية والصينية والروسية والألمانية، مما يتيح للمكتب خدمة المواطنين والمقيمين والعملاء الدوليين مباشرة دون وسطاء.",
+  btn_contact_me:"تواصل معي الآن", ph_lawyer_photo:"[صورة المحامي — تُضاف عند توفرها]",
+  why_title:"لماذا تختارنا",
+  why1_title:"مرخص من وزارة العدل", why1_desc:"محامٍ مسجل ومخول بالممارسة أمام المحاكم الإماراتية.",
+  why2_title:"خدمة متعددة اللغات", why2_desc:"استشارات بالعربية والإنجليزية والصينية والروسية والألمانية.",
+  why3_title:"اهتمام مباشر", why3_desc:"تتعامل مباشرة مع محاميك وليس مع موظف قضايا متغير.",
+  why4_title:"السرية والنزاهة", why4_desc:"تعامل سري مع قضايا الأسرة والجنائية والتجارية الحساسة.",
+  cta_title:"بحاجة لاستشارة قانونية؟", cta_text:"تحدث مباشرة مع محاميك — نرد بسرعة على كل استفسار.",
+  approach_title:"منهجنا", approach_intro:"كيف نتعامل مع كل عميل، من الاتصال الأول حتى الحل.",
+  approach_1:"شرح واضح ومسبق لخياراتك القانونية وهيكل الأتعاب قبل بدء أي عمل.",
+  approach_2:"تواصل مباشر مع محاميك باللغة التي تفضلها.",
+  approach_3:"استراتيجية مصممة خصيصًا لقانون الإمارات وظروفك الخاصة — بدون قوالب عامة.",
+  approach_4:"تحديثات منتظمة أثناء تقدم قضيتك عبر التفاوض أو التقديم أو إجراءات المحكمة.",
+  expertise_title:"مجالات الخبرة",
+  testimonials_title:"ماذا يقول عملاؤنا", testimonials_note:"[أضف اقتباسات حقيقية من العملاء بعد الحصول على إذنهم عند توفرها.]",
+  ph_testimonial_1:"[نص تجريبي لرأي عميل رقم ١]", ph_testimonial_2:"[نص تجريبي لرأي عميل رقم ٢]", ph_testimonial_3:"[نص تجريبي لرأي عميل رقم ٣]",
+  ph_client_name:"— [اسم العميل]",
+  faq_title:"الأسئلة الشائعة",
+  faq_q1:"ما هي مجالات القانون التي تمارسونها؟", faq_a1:"قضايا الأسرة والجنائية والمدنية والتجارية والعقارية والعمالية والميراث والتحكيم في جميع أنحاء الإمارات.",
+  faq_q2:"هل تمثلون الأفراد والشركات؟", faq_a2:"نعم — الأفراد وكذلك الشركات المحلية والأجنبية العاملة في الإمارات.",
+  faq_q3:"بأي لغات تقدمون الخدمة؟", faq_a3:"العربية والإنجليزية والصينية والروسية والألمانية.",
+  faq_q4:"كيف يمكنني حجز استشارة؟", faq_a4:"اتصل، راسلنا، أو استخدم نموذج الاتصال أدناه وسنرد بسرعة.",
+  contact_title:"تواصل معنا", ph_street_address:"[اسم المبنى / الشارع — يُؤكد مع العميل]", office_city:"مكتب 317، دبي، الإمارات",
+  contact_phone_label:"الهاتف:", contact_email_label:"البريد الإلكتروني:", contact_hours_label:"ساعات العمل:", ph_days_hours:"[الأيام]، [الساعات] — يُؤكد مع العميل]",
+  form_name:"الاسم الكامل", form_email:"البريد الإلكتروني", form_phone:"رقم الهاتف", form_message:"كيف يمكننا مساعدتك؟", form_submit:"إرسال الرسالة",
+  footer_tagline:"محامون ومستشارون قانونيون نخدم دبي والإمارات.",
+  footer_quicklinks:"روابط سريعة", footer_practice_areas:"مجالات الممارسة", footer_follow:"تابعنا",
+  footer_copyright_rest:"اسماعيل ابراهيم الحوسني للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة."
+},
+zh: {
+  dir:'ltr',
+  tb_why:"选择我们的理由", tb_testimonials:"客户评价", tb_approach:"我们的方法", tb_contact_label:"立即联系我们:",
+  nav_home:"首页", nav_expertise:"业务领域", nav_about:"关于我们", nav_approach:"我们的方法", nav_faq:"常见问题", nav_contact:"联系我们",
+  aria_toggle_menu:"切换菜单",
+  practice_1:"家庭法", practice_2:"刑法", practice_3:"民法", practice_4:"商业与公司法",
+  practice_5:"房地产法", practice_6:"劳动法", practice_7:"仲裁", practice_8:"继承法", practice_9:"公司注册",
+  practice_10:"建筑法", practice_11:"银行法", practice_12:"知识产权法", practice_13:"海事法", practice_14:"体育法",
+  practice_1_desc:"根据阿联酋属人法处理离婚、监护权、赡养费及婚姻合同事宜。",
+  practice_2_desc:"在阿联酋法院的刑事诉讼中提供辩护与代理。",
+  practice_3_desc:"处理阿联酋各酋长国的合同纠纷、侵权及民事诉讼。",
+  practice_4_desc:"公司架构设立、合同拟定及商业纠纷解决。",
+  practice_5_desc:"房产交易、开发商纠纷及租赁事务。",
+  practice_6_desc:"劳动合同、解雇纠纷及劳工索赔。",
+  practice_7_desc:"在阿联酋及国际仲裁中心进行替代性争议解决。",
+  practice_8_desc:"根据阿联酋法律处理遗嘱、继承及遗产分配。",
+  practice_9_desc:"为本地及外国投资者提供企业设立、许可及注册服务。",
+  practice_10_desc:"为建筑和基础设施项目提供合同起草、延误索赔及争议解决服务。",
+  practice_11_desc:"就银行纠纷、贷款协议、担保及监管合规事宜提供咨询。",
+  practice_12_desc:"根据阿联酋法律提供商标、版权和专利的保护与维权服务。",
+  practice_13_desc:"处理阿联酋各港口的船舶扣押、货物索赔及海事合同纠纷。",
+  practice_14_desc:"处理阿联酋境内的球员合同、赞助协议及体育治理事务。",
+  hero1_tagline:"值得信赖的迪拜律师与法律顾问", hero1_cta:"预约咨询",
+  hero2_title:"全方位法律服务", hero2_tagline:"务实、注重结果、值得信赖的法律代理", hero2_cta:"咨询律师",
+  hero3_title:"多语言法律支持", hero3_tagline:"提供阿拉伯语、英语、中文、俄语和德语服务", hero3_cta:"预约咨询",
+  stats_years:"执业年数", stats_cases:"处理案件数", stats_languages:"提供语言数", stats_offices:"迪拜办公室", stats_licensed:"获司法部认证", stats_courts:"迪拜法院与DIFC法院",
+  chat_scan:"扫码聊天",
+  about_title:"关于 Ismail Ibrahim Alhosani",
+  about_pullquote:"总部位于迪拜的律师与法律顾问,为阿联酋各地提供法律代理与咨询服务。",
+  about_para1:"Ismail Ibrahim Alhosani 律师事务所为阿联酋各地的个人和企业提供家庭、刑事、民事、商业及房地产事务方面的咨询。事务所已在阿联酋司法部注册,并可在本地法院及DIFC法院处理案件。",
+  about_para2:"咨询服务提供阿拉伯语、英语、中文、俄语和德语,使事务所能够直接为阿联酋公民、外籍人士及国际客户提供服务,无需中间人。",
+  btn_contact_me:"立即联系我", ph_lawyer_photo:"[律师照片 — 待补充]",
+  why_title:"选择我们的理由",
+  why1_title:"获司法部认证执业", why1_desc:"注册律师,获授权在阿联酋法院执业。",
+  why2_title:"多语言服务", why2_desc:"提供阿拉伯语、英语、中文、俄语和德语咨询。",
+  why3_title:"直接关注", why3_desc:"您将直接与您的律师沟通,而非不断更换的案件经办人。",
+  why4_title:"保密与诚信", why4_desc:"谨慎处理敏感的家庭、刑事及商业事务。",
+  cta_title:"需要法律建议?", cta_text:"直接与您的律师沟通 — 我们会及时回应每一次咨询。",
+  approach_title:"我们的方法", approach_intro:"从首次联系到问题解决,我们如何为每位客户服务。",
+  approach_1:"在开始任何工作前,清楚地说明您的法律选择及收费结构。",
+  approach_2:"使用您最熟悉的语言与您的律师直接沟通。",
+  approach_3:"根据阿联酋法律及您的具体情况量身定制策略 — 而非通用模板。",
+  approach_4:"在协商、提交文件或法庭程序推进过程中提供定期更新。",
+  expertise_title:"专业领域",
+  testimonials_title:"客户评价", testimonials_note:"[待获得客户授权后,在此添加真实评价。]",
+  ph_testimonial_1:"[客户评价占位符 #1]", ph_testimonial_2:"[客户评价占位符 #2]", ph_testimonial_3:"[客户评价占位符 #3]",
+  ph_client_name:"— [客户姓名]",
+  faq_title:"常见问题",
+  faq_q1:"你们从事哪些法律领域?", faq_a1:"我们处理阿联酋境内的家庭、刑事、民事、商业、房地产、劳动、继承及仲裁事务。",
+  faq_q2:"你们是否同时代理个人和公司客户?", faq_a2:"是的 — 我们为个人客户以及在阿联酋经营的本地和外国公司提供服务。",
+  faq_q3:"你们提供哪些语言的服务?", faq_a3:"阿拉伯语、英语、中文、俄语和德语。",
+  faq_q4:"如何预约咨询?", faq_a4:"请致电、发送电子邮件,或使用下方联系表单,我们会尽快回复。",
+  contact_title:"联系我们", ph_street_address:"[建筑物/街道名称 — 待与客户确认]", office_city:"317室,迪拜,阿联酋",
+  contact_phone_label:"电话:", contact_email_label:"电子邮箱:", contact_hours_label:"办公时间:", ph_days_hours:"[工作日]、[时间] — 待与客户确认]",
+  form_name:"姓名", form_email:"电子邮箱", form_phone:"电话号码", form_message:"我们能为您提供什么帮助?", form_submit:"发送信息",
+  footer_tagline:"服务于迪拜及阿联酋的律师与法律顾问。",
+  footer_quicklinks:"快速链接", footer_practice_areas:"业务领域", footer_follow:"关注我们",
+  footer_copyright_rest:"Ismail Ibrahim Alhosani 律师事务所与法律顾问。版权所有。"
+},
+ru: {
+  dir:'ltr',
+  tb_why:"Почему мы", tb_testimonials:"Отзывы", tb_approach:"Наш подход", tb_contact_label:"Свяжитесь с нами:",
+  nav_home:"Главная", nav_expertise:"Практика", nav_about:"О нас", nav_approach:"Наш подход", nav_faq:"Вопросы и ответы", nav_contact:"Контакты",
+  aria_toggle_menu:"Открыть меню",
+  practice_1:"Семейное право", practice_2:"Уголовное право", practice_3:"Гражданское право", practice_4:"Коммерческое и корпоративное право",
+  practice_5:"Право недвижимости", practice_6:"Трудовое право", practice_7:"Арбитраж", practice_8:"Наследственное право", practice_9:"Регистрация компаний",
+  practice_10:"Строительное право", practice_11:"Банковское право", practice_12:"Право интеллектуальной собственности", practice_13:"Морское право", practice_14:"Спортивное право",
+  practice_1_desc:"Развод, опека, алименты и брачные договоры по личному статусному праву ОАЭ.",
+  practice_2_desc:"Защита и представительство в уголовных делах в судах ОАЭ.",
+  practice_3_desc:"Договорные споры, деликты и гражданские иски по всем эмиратам.",
+  practice_4_desc:"Структурирование компаний, договоры и разрешение коммерческих споров.",
+  practice_5_desc:"Сделки с недвижимостью, споры с застройщиками и арендные вопросы.",
+  practice_6_desc:"Трудовые договоры, споры об увольнении и трудовые претензии.",
+  practice_7_desc:"Альтернативное разрешение споров в арбитражных центрах ОАЭ и международных центрах.",
+  practice_8_desc:"Завещания, наследование и распределение имущества по законам ОАЭ.",
+  practice_9_desc:"Открытие бизнеса, лицензирование и регистрация для местных и иностранных инвесторов.",
+  practice_10_desc:"Составление договоров, претензии по срокам и разрешение споров по строительным и инфраструктурным проектам.",
+  practice_11_desc:"Консультации по банковским спорам, кредитным договорам, гарантиям и вопросам соответствия нормативным требованиям.",
+  practice_12_desc:"Защита и обеспечение прав на товарные знаки, авторские права и патенты по законодательству ОАЭ.",
+  practice_13_desc:"Арест судов, грузовые претензии и споры по морским контрактам в портах ОАЭ.",
+  practice_14_desc:"Контракты игроков, спонсорские соглашения и вопросы спортивного управления в ОАЭ.",
+  hero1_tagline:"Надёжные адвокаты и юридические консультанты в Дубае, ОАЭ", hero1_cta:"Записаться на консультацию",
+  hero2_title:"Юридические услуги полного цикла", hero2_tagline:"Практичное представительство, ориентированное на результат", hero2_cta:"Поговорить с адвокатом",
+  hero3_title:"Юридическая поддержка на разных языках", hero3_tagline:"Обслуживаем клиентов на арабском, английском, китайском, русском и немецком", hero3_cta:"Записаться на консультацию",
+  stats_years:"лет практики", stats_cases:"рассмотренных дел", stats_languages:"языков обслуживания", stats_offices:"офис в Дубае", stats_licensed:"Лицензия Минюста", stats_courts:"Суды Дубая и DIFC",
+  chat_scan:"Сканируйте для чата",
+  about_title:"О Ismail Ibrahim Alhosani",
+  about_pullquote:"Адвокат и юридический консультант, базирующийся в Дубае, предоставляет представительство и консультации по всему ОАЭ.",
+  about_para1:"Ismail Ibrahim Alhosani Advocates & Legal Consultants консультирует частных лиц и компании по семейным, уголовным, гражданским, коммерческим и земельным вопросам по всему ОАЭ. Компания зарегистрирована в Министерстве юстиции ОАЭ и ведёт дела в местных судах, а также в судах DIFC.",
+  about_para2:"Консультации доступны на арабском, английском, китайском, русском и немецком языках, что позволяет компании напрямую обслуживать граждан ОАЭ, экспатов и международных клиентов без посредников.",
+  btn_contact_me:"Связаться со мной", ph_lawyer_photo:"[Фото адвоката — добавить позже]",
+  why_title:"Почему выбирают нас",
+  why1_title:"Лицензия Министерства юстиции", why1_desc:"Зарегистрированный адвокат с правом практики в судах ОАЭ.",
+  why2_title:"Многоязычное обслуживание", why2_desc:"Консультации на арабском, английском, китайском, русском и немецком.",
+  why3_title:"Личное внимание", why3_desc:"Вы работаете напрямую со своим адвокатом, а не со сменяющимися сотрудниками.",
+  why4_title:"Конфиденциальность и честность", why4_desc:"Конфиденциальная работа с деликатными семейными, уголовными и коммерческими делами.",
+  cta_title:"Нужна юридическая консультация?", cta_text:"Поговорите напрямую с вашим адвокатом — мы оперативно отвечаем на все запросы.",
+  approach_title:"Наш подход", approach_intro:"Как мы работаем с каждым клиентом — от первого звонка до решения вопроса.",
+  approach_1:"Чёткое объяснение ваших юридических вариантов и структуры оплаты до начала любой работы.",
+  approach_2:"Прямое общение с вашим адвокатом на удобном вам языке.",
+  approach_3:"Стратегия, разработанная с учётом законов ОАЭ и ваших конкретных обстоятельств — без шаблонов.",
+  approach_4:"Регулярные обновления по мере продвижения вашего дела — переговоры, подача документов или судебные заседания.",
+  expertise_title:"Области практики",
+  testimonials_title:"Отзывы наших клиентов", testimonials_note:"[Добавьте реальные отзывы клиентов с их согласия, когда они появятся.]",
+  ph_testimonial_1:"[Отзыв клиента — заполнитель №1]", ph_testimonial_2:"[Отзыв клиента — заполнитель №2]", ph_testimonial_3:"[Отзыв клиента — заполнитель №3]",
+  ph_client_name:"— [Имя клиента]",
+  faq_title:"Часто задаваемые вопросы",
+  faq_q1:"В каких областях права вы практикуете?", faq_a1:"Семейные, уголовные, гражданские, коммерческие, земельные, трудовые, наследственные дела и арбитраж по всему ОАЭ.",
+  faq_q2:"Вы представляете как физических лиц, так и компании?", faq_a2:"Да — частных лиц, а также местные и иностранные компании, работающие в ОАЭ.",
+  faq_q3:"На каких языках вы обслуживаете клиентов?", faq_a3:"Арабском, английском, китайском, русском и немецком.",
+  faq_q4:"Как записаться на консультацию?", faq_a4:"Позвоните, напишите на почту или воспользуйтесь формой ниже — мы оперативно ответим.",
+  contact_title:"Свяжитесь с нами", ph_street_address:"[Название здания / улицы — уточнить у клиента]", office_city:"Офис 317, Дубай, ОАЭ",
+  contact_phone_label:"Телефон:", contact_email_label:"Эл. почта:", contact_hours_label:"Часы работы:", ph_days_hours:"[Дни], [Часы] — уточнить у клиента]",
+  form_name:"Имя", form_email:"Эл. почта", form_phone:"Номер телефона", form_message:"Чем мы можем вам помочь?", form_submit:"Отправить",
+  footer_tagline:"Адвокаты и юридические консультанты, работающие в Дубае и ОАЭ.",
+  footer_quicklinks:"Быстрые ссылки", footer_practice_areas:"Практика", footer_follow:"Мы в соцсетях",
+  footer_copyright_rest:"Ismail Ibrahim Alhosani Advocates & Legal Consultants. Все права защищены."
+},
+de: {
+  dir:'ltr',
+  tb_why:"Warum wir", tb_testimonials:"Referenzen", tb_approach:"Unser Ansatz", tb_contact_label:"Kontaktieren Sie uns:",
+  nav_home:"Startseite", nav_expertise:"Rechtsgebiete", nav_about:"Über uns", nav_approach:"Unser Ansatz", nav_faq:"FAQ", nav_contact:"Kontakt",
+  aria_toggle_menu:"Menü öffnen",
+  practice_1:"Familienrecht", practice_2:"Strafrecht", practice_3:"Zivilrecht", practice_4:"Handels- und Gesellschaftsrecht",
+  practice_5:"Immobilienrecht", practice_6:"Arbeitsrecht", practice_7:"Schiedsverfahren", practice_8:"Erbrecht", practice_9:"Unternehmensgründung",
+  practice_10:"Baurecht", practice_11:"Bankrecht", practice_12:"Recht des geistigen Eigentums", practice_13:"Seerecht", practice_14:"Sportrecht",
+  practice_1_desc:"Scheidung, Sorgerecht, Unterhalt und Eheverträge nach dem Personalstatutsrecht der VAE.",
+  practice_2_desc:"Verteidigung und Vertretung in Strafverfahren vor Gerichten der VAE.",
+  practice_3_desc:"Vertragsstreitigkeiten, unerlaubte Handlungen und Zivilprozesse in den Emiraten.",
+  practice_4_desc:"Unternehmensstrukturierung, Verträge und Beilegung von Handelsstreitigkeiten.",
+  practice_5_desc:"Immobilientransaktionen, Bauträgerstreitigkeiten und Mietangelegenheiten.",
+  practice_6_desc:"Arbeitsverträge, Kündigungsstreitigkeiten und arbeitsrechtliche Ansprüche.",
+  practice_7_desc:"Alternative Streitbeilegung vor Schiedszentren in den VAE und international.",
+  practice_8_desc:"Testamente, Erbfolge und Nachlassverteilung nach dem Recht der VAE.",
+  practice_9_desc:"Geschäftsgründung, Lizenzierung und Registrierung für lokale und ausländische Investoren.",
+  practice_10_desc:"Vertragsgestaltung, Verzögerungsansprüche und Streitbeilegung für Bau- und Infrastrukturprojekte.",
+  practice_11_desc:"Beratung zu Bankstreitigkeiten, Kreditverträgen, Garantien und regulatorischen Compliance-Fragen.",
+  practice_12_desc:"Schutz und Durchsetzung von Marken-, Urheber- und Patentrechten nach dem Recht der VAE.",
+  practice_13_desc:"Schiffsarrest, Frachtansprüche und Streitigkeiten aus Seeverkehrsverträgen in den Häfen der VAE.",
+  practice_14_desc:"Spielerverträge, Sponsoringvereinbarungen und Fragen der Sport-Governance in den VAE.",
+  hero1_tagline:"Vertrauenswürdige Anwälte und Rechtsberater in Dubai, VAE", hero1_cta:"Beratungstermin vereinbaren",
+  hero2_title:"Umfassende Rechtsberatung", hero2_tagline:"Praxisnahe, ergebnisorientierte Vertretung, auf die Sie sich verlassen können", hero2_cta:"Mit einem Anwalt sprechen",
+  hero3_title:"Mehrsprachige Rechtsberatung", hero3_tagline:"Wir betreuen Mandanten auf Arabisch, Englisch, Chinesisch, Russisch und Deutsch", hero3_cta:"Beratungstermin vereinbaren",
+  stats_years:"Jahre Praxiserfahrung", stats_cases:"bearbeitete Fälle", stats_languages:"angebotene Sprachen", stats_offices:"Büro in Dubai", stats_licensed:"Lizenziert vom Justizministerium", stats_courts:"Gerichte in Dubai & DIFC",
+  chat_scan:"Zum Chatten scannen",
+  about_title:"Über Ismail Ibrahim Alhosani",
+  about_pullquote:"In Dubai ansässiger Anwalt und Rechtsberater, der Vertretung und Rechtsberatung in den gesamten VAE anbietet.",
+  about_para1:"Ismail Ibrahim Alhosani Advocates & Legal Consultants berät Privatpersonen und Unternehmen in Familien-, Straf-, Zivil-, Handels- und Immobilienangelegenheiten in den gesamten VAE. Die Kanzlei ist beim Justizministerium der VAE registriert und vertritt Mandanten vor lokalen Gerichten sowie den DIFC-Gerichten.",
+  about_para2:"Beratungen sind auf Arabisch, Englisch, Chinesisch, Russisch und Deutsch verfügbar, sodass die Kanzlei Staatsangehörige der VAE, Expatriates und internationale Mandanten direkt betreuen kann — ohne Vermittler.",
+  btn_contact_me:"Jetzt kontaktieren", ph_lawyer_photo:"[Foto des Anwalts — später ergänzen]",
+  why_title:"Warum uns wählen",
+  why1_title:"Lizenziert vom Justizministerium", why1_desc:"Registrierter Anwalt mit Zulassung zur Praxis vor Gerichten der VAE.",
+  why2_title:"Mehrsprachiger Service", why2_desc:"Beratung auf Arabisch, Englisch, Chinesisch, Russisch und Deutsch.",
+  why3_title:"Persönliche Betreuung", why3_desc:"Sie arbeiten direkt mit Ihrem Anwalt, nicht mit wechselndem Personal.",
+  why4_title:"Diskretion & Integrität", why4_desc:"Vertrauliche Bearbeitung sensibler Familien-, Straf- und Handelsangelegenheiten.",
+  cta_title:"Brauchen Sie Rechtsberatung?", cta_text:"Sprechen Sie direkt mit Ihrem Anwalt — wir antworten umgehend auf jede Anfrage.",
+  approach_title:"Unser Ansatz", approach_intro:"So arbeiten wir mit jedem Mandanten — vom ersten Anruf bis zur Lösung.",
+  approach_1:"Eine klare, vorherige Erklärung Ihrer rechtlichen Optionen und der Honorarstruktur, bevor die Arbeit beginnt.",
+  approach_2:"Direkte Kommunikation mit Ihrem Anwalt in der Sprache, die Ihnen am angenehmsten ist.",
+  approach_3:"Auf das Recht der VAE und Ihre individuelle Situation zugeschnittene Strategie — keine generischen Vorlagen.",
+  approach_4:"Regelmäßige Updates während Ihr Fall durch Verhandlung, Einreichung oder Gerichtsverfahren fortschreitet.",
+  expertise_title:"Fachgebiete",
+  testimonials_title:"Das sagen unsere Mandanten", testimonials_note:"[Fügen Sie hier echte, freigegebene Mandantenstimmen hinzu, sobald verfügbar.]",
+  ph_testimonial_1:"[Platzhalter für Mandantenstimme #1]", ph_testimonial_2:"[Platzhalter für Mandantenstimme #2]", ph_testimonial_3:"[Platzhalter für Mandantenstimme #3]",
+  ph_client_name:"— [Name des Mandanten]",
+  faq_title:"Häufig gestellte Fragen",
+  faq_q1:"Welche Rechtsgebiete decken Sie ab?", faq_a1:"Familien-, Straf-, Zivil-, Handels-, Immobilien-, Arbeits-, Erbschafts- und Schiedsverfahren in den gesamten VAE.",
+  faq_q2:"Vertreten Sie sowohl Privatpersonen als auch Unternehmen?", faq_a2:"Ja — Privatpersonen sowie lokale und ausländische Unternehmen, die in den VAE tätig sind.",
+  faq_q3:"In welchen Sprachen bieten Sie Beratung an?", faq_a3:"Arabisch, Englisch, Chinesisch, Russisch und Deutsch.",
+  faq_q4:"Wie kann ich einen Beratungstermin vereinbaren?", faq_a4:"Rufen Sie an, schreiben Sie eine E-Mail oder nutzen Sie das Kontaktformular unten — wir antworten umgehend.",
+  contact_title:"Kontaktieren Sie uns", ph_street_address:"[Gebäude-/Straßenname — mit Mandant bestätigen]", office_city:"Büro 317, Dubai, VAE",
+  contact_phone_label:"Telefon:", contact_email_label:"E-Mail:", contact_hours_label:"Bürozeiten:", ph_days_hours:"[Tage], [Uhrzeiten] — mit Mandant bestätigen]",
+  form_name:"Vollständiger Name", form_email:"E-Mail-Adresse", form_phone:"Telefonnummer", form_message:"Wie können wir Ihnen helfen?", form_submit:"Nachricht senden",
+  footer_tagline:"Anwälte und Rechtsberater in Dubai und den VAE.",
+  footer_quicklinks:"Schnellzugriff", footer_practice_areas:"Rechtsgebiete", footer_follow:"Folgen Sie uns",
+  footer_copyright_rest:"Ismail Ibrahim Alhosani Advocates & Legal Consultants. Alle Rechte vorbehalten."
+}
+};
+
+const SUBS_HREFS = {
+  1:["divorce-lawyer-dubai.html", "child-custody-lawyer-dubai.html", "alimony-maintenance-lawyer-dubai.html", "child-custody-visitation-lawyer-dubai.html", "child-support-lawyer-dubai.html", "domestic-violence-lawyer-dubai.html", "expat-family-lawyer-dubai.html", "family-appeal-lawyer-dubai.html", "family-judgment-enforcement-lawyer-dubai.html", "family-mediation-lawyer-dubai.html", "guardianship-parental-rights-lawyer-dubai.html", "inheritance-probate-lawyer-dubai.html", "marriage-contracts-prenuptial-lawyer-dubai.html", "wills-lawyer-dubai.html"],
+  2:["criminal-defense-lawyer-dubai.html", "bail-release-lawyer-dubai.html", "white-collar-crime-lawyer-dubai.html", "criminal-appeal-lawyer-dubai.html", "criminal-complaint-lawyer-dubai.html", "criminal-litigation-lawyer-dubai.html", "cybercrime-lawyer-dubai.html", "defamation-lawyer-dubai.html", "drug-offences-lawyer-dubai.html", "fraud-breach-of-trust-lawyer-dubai.html", "theft-assault-lawyer-dubai.html", "travel-ban-lawyer-dubai.html"],
+  3:["civil-litigation-lawyer-dubai.html", "contractual-dispute-lawyer-dubai.html", "debt-recovery-lawyer-dubai.html", "appeals-cassation-lawyer-dubai.html", "civil-appeal-lawyer-dubai.html", "compensation-damages-lawyer-dubai.html", "judgment-enforcement-execution-lawyer-dubai.html", "labour-employment-litigation-lawyer-dubai.html", "professional-negligence-lawyer-dubai.html", "personal-injury-lawyer-dubai.html", "property-real-estate-dispute-lawyer-dubai.html"],
+  4:["company-formation-lawyer-dubai.html", "shareholder-dispute-lawyer-dubai.html", "commercial-contract-lawyer-dubai.html", "commercial-litigation-lawyer-dubai.html"],
+  5:["property-dispute-lawyer-dubai.html", "tenancy-dispute-lawyer-dubai.html", "developer-dispute-lawyer-dubai.html", "landlord-tenant-lawyer-dubai.html", "property-registration-title-lawyer-dubai.html", "property-sale-purchase-agreement-lawyer-dubai.html", "real-estate-due-diligence-lawyer-dubai.html", "real-estate-lawyer-dubai.html", "mortgage-financing-lawyer-dubai.html", "owners-association-strata-lawyer-dubai.html"],
+  6:["employment-dispute-lawyer-dubai.html", "wrongful-termination-lawyer-dubai.html", "labor-claim-lawyer-dubai.html", "employment-contract-lawyer-dubai.html", "end-of-service-gratuity-lawyer-dubai.html"],
+  7:["difc-lcia-arbitration-lawyer-dubai.html", "diac-arbitration-lawyer-dubai.html", "arbitration-award-enforcement-lawyer-dubai.html", "arbitration-clause-contract-drafting-lawyer-dubai.html", "emergency-interim-measures-lawyer-dubai.html", "international-arbitration-lawyer-dubai.html", "institutional-adhoc-arbitration-lawyer-dubai.html"],
+  8:["will-drafting-lawyer-dubai.html", "estate-distribution-lawyer-dubai.html", "succession-dispute-lawyer-dubai.html", "probate-lawyer-dubai.html", "guardianship-of-estate-lawyer-dubai.html"],
+  9:["mainland-company-setup-dubai.html", "freezone-company-setup-dubai.html", "business-license-renewal-dubai.html"],
+  10:["construction-arbitration-lawyer-dubai.html", "construction-contract-lawyer-dubai.html", "construction-contract-termination-lawyer-dubai.html", "construction-defects-liability-lawyer-dubai.html", "construction-litigation-lawyer-dubai.html", "construction-payment-variation-lawyer-dubai.html", "engineering-consultant-liability-lawyer-dubai.html", "fidic-contract-lawyer-dubai.html", "infrastructure-megaproject-lawyer-dubai.html", "project-delay-disruption-lawyer-dubai.html"],
+  11:["banking-finance-litigation-lawyer-dubai.html", "bank-guarantee-lawyer-dubai.html", "loan-default-recovery-lawyer-dubai.html", "trade-finance-lawyer-dubai.html", "islamic-banking-finance-lawyer-dubai.html"],
+  12:["brand-protection-anticounterfeiting-lawyer-dubai.html", "copyright-lawyer-dubai.html", "industrial-design-lawyer-dubai.html", "ip-due-diligence-lawyer-dubai.html", "ip-infringement-enforcement-lawyer-dubai.html", "ip-licensing-assignment-lawyer-dubai.html", "ip-litigation-dispute-lawyer-dubai.html", "patent-lawyer-dubai.html", "technology-software-ip-lawyer-dubai.html", "trademark-lawyer-dubai.html"],
+  13:["ship-arrest-lawyer-dubai.html", "maritime-cargo-claims-lawyer-dubai.html", "charterparty-dispute-lawyer-dubai.html", "marine-insurance-lawyer-dubai.html", "vessel-collision-pollution-lawyer-dubai.html"],
+  14:["broadcasting-media-rights-lawyer-dubai.html", "player-athlete-contract-lawyer-dubai.html", "sponsorship-commercial-agreement-lawyer-dubai.html", "sports-arbitration-dispute-lawyer-dubai.html", "sports-governance-regulations-lawyer-dubai.html"]
+};
+
+const SUB_LABELS = {
+  en:{
+    "divorce-lawyer-dubai.html":"Divorce Lawyer in Dubai",
+    "child-custody-lawyer-dubai.html":"Child Custody Lawyer in Dubai",
+    "alimony-maintenance-lawyer-dubai.html":"Alimony & Maintenance Lawyer in Dubai",
+    "child-custody-visitation-lawyer-dubai.html":"Child Custody & Visitation Lawyer in Dubai",
+    "child-support-lawyer-dubai.html":"Child Support Lawyer in Dubai",
+    "domestic-violence-lawyer-dubai.html":"Domestic Violence Lawyer in Dubai",
+    "expat-family-lawyer-dubai.html":"Expat Family Lawyer in Dubai",
+    "family-appeal-lawyer-dubai.html":"Family Appeal Lawyer in Dubai",
+    "family-judgment-enforcement-lawyer-dubai.html":"Family Judgment Enforcement Lawyer in Dubai",
+    "family-mediation-lawyer-dubai.html":"Family Mediation Lawyer in Dubai",
+    "guardianship-parental-rights-lawyer-dubai.html":"Guardianship & Parental Rights Lawyer in Dubai",
+    "inheritance-probate-lawyer-dubai.html":"Inheritance & Probate Lawyer in Dubai",
+    "marriage-contracts-prenuptial-lawyer-dubai.html":"Marriage Contracts & Prenuptial Agreements Lawyer in Dubai",
+    "wills-lawyer-dubai.html":"Wills Lawyer in Dubai",
+    "criminal-defense-lawyer-dubai.html":"Criminal Defense Lawyer in Dubai",
+    "bail-release-lawyer-dubai.html":"Bail & Release Lawyer in Dubai",
+    "white-collar-crime-lawyer-dubai.html":"White-Collar Crime Lawyer in Dubai",
+    "criminal-appeal-lawyer-dubai.html":"Criminal Appeal Lawyer in Dubai",
+    "criminal-complaint-lawyer-dubai.html":"Criminal Complaint Lawyer in Dubai",
+    "criminal-litigation-lawyer-dubai.html":"Criminal Litigation Lawyer in Dubai",
+    "cybercrime-lawyer-dubai.html":"Cybercrime Lawyer in Dubai",
+    "defamation-lawyer-dubai.html":"Defamation Lawyer in Dubai",
+    "drug-offences-lawyer-dubai.html":"Drug Offences Lawyer in Dubai",
+    "fraud-breach-of-trust-lawyer-dubai.html":"Fraud & Breach of Trust Lawyer in Dubai",
+    "theft-assault-lawyer-dubai.html":"Theft & Assault Lawyer in Dubai",
+    "travel-ban-lawyer-dubai.html":"Travel Ban Lawyer in Dubai",
+    "civil-litigation-lawyer-dubai.html":"Civil Litigation Lawyer in Dubai",
+    "contractual-dispute-lawyer-dubai.html":"Contractual Dispute Lawyer in Dubai",
+    "debt-recovery-lawyer-dubai.html":"Debt Recovery Lawyer in Dubai",
+    "appeals-cassation-lawyer-dubai.html":"Appeals & Cassation Lawyer in Dubai",
+    "civil-appeal-lawyer-dubai.html":"Civil Appeal Lawyer in Dubai",
+    "compensation-damages-lawyer-dubai.html":"Compensation & Damages Lawyer in Dubai",
+    "judgment-enforcement-execution-lawyer-dubai.html":"Judgment Enforcement & Execution Lawyer in Dubai",
+    "labour-employment-litigation-lawyer-dubai.html":"Labour & Employment Litigation Lawyer in Dubai",
+    "professional-negligence-lawyer-dubai.html":"Lawyer for Professional Negligence Claims in Dubai",
+    "personal-injury-lawyer-dubai.html":"Personal Injury Lawyer in Dubai",
+    "property-real-estate-dispute-lawyer-dubai.html":"Property & Real Estate Dispute Lawyer in Dubai",
+    "company-formation-lawyer-dubai.html":"Company Formation Lawyer in Dubai",
+    "shareholder-dispute-lawyer-dubai.html":"Shareholder Dispute Lawyer in Dubai",
+    "commercial-contract-lawyer-dubai.html":"Commercial Contract Lawyer in Dubai",
+    "commercial-litigation-lawyer-dubai.html":"Commercial Litigation Lawyer in Dubai",
+    "property-dispute-lawyer-dubai.html":"Property Dispute Lawyer in Dubai",
+    "tenancy-dispute-lawyer-dubai.html":"Tenancy Dispute Lawyer in Dubai",
+    "developer-dispute-lawyer-dubai.html":"Developer Dispute Lawyer in Dubai",
+    "landlord-tenant-lawyer-dubai.html":"Landlord & Tenant Lawyer in Dubai",
+    "property-registration-title-lawyer-dubai.html":"Property Registration & Title Lawyer in Dubai",
+    "property-sale-purchase-agreement-lawyer-dubai.html":"Property Sale & Purchase Agreement Lawyer in Dubai",
+    "real-estate-due-diligence-lawyer-dubai.html":"Real Estate Due Diligence Lawyer in Dubai",
+    "real-estate-lawyer-dubai.html":"Real Estate Lawyer in Dubai",
+    "mortgage-financing-lawyer-dubai.html":"Mortgage & Financing Lawyer in Dubai",
+    "owners-association-strata-lawyer-dubai.html":"Owners Association & Strata Lawyer in Dubai",
+    "employment-dispute-lawyer-dubai.html":"Employment Dispute Lawyer in Dubai",
+    "wrongful-termination-lawyer-dubai.html":"Wrongful Termination Lawyer in Dubai",
+    "labor-claim-lawyer-dubai.html":"Labor Claim Lawyer in Dubai",
+    "employment-contract-lawyer-dubai.html":"Employment Contract Lawyer in Dubai",
+    "end-of-service-gratuity-lawyer-dubai.html":"End-of-Service Gratuity Lawyer in Dubai",
+    "difc-lcia-arbitration-lawyer-dubai.html":"DIFC-LCIA Arbitration Lawyer in Dubai",
+    "diac-arbitration-lawyer-dubai.html":"DIAC Arbitration Lawyer in Dubai",
+    "arbitration-award-enforcement-lawyer-dubai.html":"Arbitration Award Enforcement Lawyer in Dubai",
+    "arbitration-clause-contract-drafting-lawyer-dubai.html":"Arbitration Clause & Contract Drafting Lawyer in Dubai",
+    "emergency-interim-measures-lawyer-dubai.html":"Emergency & Interim Measures Lawyer in Dubai",
+    "international-arbitration-lawyer-dubai.html":"International Arbitration Lawyer in Dubai",
+    "institutional-adhoc-arbitration-lawyer-dubai.html":"Institutional & Ad Hoc Arbitration Lawyer in Dubai",
+    "will-drafting-lawyer-dubai.html":"Will Drafting Lawyer in Dubai",
+    "estate-distribution-lawyer-dubai.html":"Estate Distribution Lawyer in Dubai",
+    "succession-dispute-lawyer-dubai.html":"Succession Dispute Lawyer in Dubai",
+    "probate-lawyer-dubai.html":"Probate Lawyer in Dubai",
+    "guardianship-of-estate-lawyer-dubai.html":"Guardianship of Estate Lawyer in Dubai",
+    "mainland-company-setup-dubai.html":"Mainland Company Setup in Dubai",
+    "freezone-company-setup-dubai.html":"Free Zone Company Setup in Dubai",
+    "business-license-renewal-dubai.html":"Business License Renewal in Dubai",
+    "construction-arbitration-lawyer-dubai.html":"Construction Arbitration Lawyer in Dubai",
+    "construction-contract-lawyer-dubai.html":"Construction Contract Lawyer in Dubai",
+    "construction-contract-termination-lawyer-dubai.html":"Construction Contract Termination Lawyer in Dubai",
+    "construction-defects-liability-lawyer-dubai.html":"Construction Defects & Liability Lawyer in Dubai",
+    "construction-litigation-lawyer-dubai.html":"Construction Litigation Lawyer in Dubai",
+    "construction-payment-variation-lawyer-dubai.html":"Construction Payment & Variation Lawyer in Dubai",
+    "engineering-consultant-liability-lawyer-dubai.html":"Engineering & Consultant Liability Lawyer in Dubai",
+    "fidic-contract-lawyer-dubai.html":"FIDIC Contract Lawyer in Dubai",
+    "infrastructure-megaproject-lawyer-dubai.html":"Infrastructure & Mega Project Lawyer in Dubai",
+    "project-delay-disruption-lawyer-dubai.html":"Project Delay & Disruption Lawyer in Dubai",
+    "banking-finance-litigation-lawyer-dubai.html":"Banking & Finance Litigation Lawyer in Dubai",
+    "bank-guarantee-lawyer-dubai.html":"Bank Guarantee Lawyer in Dubai",
+    "loan-default-recovery-lawyer-dubai.html":"Loan Default & Recovery Lawyer in Dubai",
+    "trade-finance-lawyer-dubai.html":"Trade Finance Lawyer in Dubai",
+    "islamic-banking-finance-lawyer-dubai.html":"Islamic Banking & Finance Lawyer in Dubai",
+    "brand-protection-anticounterfeiting-lawyer-dubai.html":"Brand Protection & Anti-Counterfeiting Lawyer in Dubai",
+    "copyright-lawyer-dubai.html":"Copyright Lawyer in Dubai",
+    "industrial-design-lawyer-dubai.html":"Industrial Design Lawyer in Dubai",
+    "ip-due-diligence-lawyer-dubai.html":"IP Due Diligence Lawyer in Dubai",
+    "ip-infringement-enforcement-lawyer-dubai.html":"IP Infringement & Enforcement Lawyer in Dubai",
+    "ip-licensing-assignment-lawyer-dubai.html":"IP Licensing & Assignment Lawyer in Dubai",
+    "ip-litigation-dispute-lawyer-dubai.html":"IP Litigation & Dispute Resolution Lawyer in Dubai",
+    "patent-lawyer-dubai.html":"Patent Lawyer in Dubai",
+    "technology-software-ip-lawyer-dubai.html":"Technology & Software Lawyer in Dubai",
+    "trademark-lawyer-dubai.html":"Trademark Lawyer in Dubai",
+    "ship-arrest-lawyer-dubai.html":"Ship Arrest Lawyer in Dubai",
+    "maritime-cargo-claims-lawyer-dubai.html":"Maritime Cargo Claims Lawyer in Dubai",
+    "charterparty-dispute-lawyer-dubai.html":"Charterparty Dispute Lawyer in Dubai",
+    "marine-insurance-lawyer-dubai.html":"Marine Insurance Lawyer in Dubai",
+    "vessel-collision-pollution-lawyer-dubai.html":"Vessel Collision & Pollution Lawyer in Dubai",
+    "broadcasting-media-rights-lawyer-dubai.html":"Broadcasting & Media Rights Lawyer in Dubai",
+    "player-athlete-contract-lawyer-dubai.html":"Player & Athlete Contract Lawyer in Dubai",
+    "sponsorship-commercial-agreement-lawyer-dubai.html":"Sponsorship & Commercial Agreement Lawyer in Dubai",
+    "sports-arbitration-dispute-lawyer-dubai.html":"Sports Arbitration & Dispute Resolution Lawyer in Dubai",
+    "sports-governance-regulations-lawyer-dubai.html":"Sports Governance & Regulations Lawyer in Dubai"
+  },
+  ar:{
+    "divorce-lawyer-dubai.html":"محامي طلاق في دبي",
+    "child-custody-lawyer-dubai.html":"محامي حضانة الأطفال في دبي",
+    "alimony-maintenance-lawyer-dubai.html":"محامي نفقة في دبي",
+    "child-custody-visitation-lawyer-dubai.html":"محامي حضانة وزيارة الأطفال في دبي",
+    "child-support-lawyer-dubai.html":"محامي نفقة الأطفال في دبي",
+    "domestic-violence-lawyer-dubai.html":"محامي العنف الأسري في دبي",
+    "expat-family-lawyer-dubai.html":"محامي الأسرة للوافدين في دبي",
+    "family-appeal-lawyer-dubai.html":"محامي استئناف الأحوال الشخصية في دبي",
+    "family-judgment-enforcement-lawyer-dubai.html":"محامي تنفيذ أحكام الأسرة في دبي",
+    "family-mediation-lawyer-dubai.html":"محامي وساطة أسرية في دبي",
+    "guardianship-parental-rights-lawyer-dubai.html":"محامي الوصاية وحقوق الوالدين في دبي",
+    "inheritance-probate-lawyer-dubai.html":"محامي الميراث والتركات في دبي",
+    "marriage-contracts-prenuptial-lawyer-dubai.html":"محامي عقود الزواج واتفاقيات ما قبل الزواج في دبي",
+    "wills-lawyer-dubai.html":"محامي الوصايا في دبي",
+    "criminal-defense-lawyer-dubai.html":"محامي دفاع جنائي في دبي",
+    "bail-release-lawyer-dubai.html":"محامي كفالة وإفراج في دبي",
+    "white-collar-crime-lawyer-dubai.html":"محامي جرائم الياقات البيضاء في دبي",
+    "criminal-appeal-lawyer-dubai.html":"محامي استئناف جنائي في دبي",
+    "criminal-complaint-lawyer-dubai.html":"محامي الشكاوى الجنائية في دبي",
+    "criminal-litigation-lawyer-dubai.html":"محامي التقاضي الجنائي في دبي",
+    "cybercrime-lawyer-dubai.html":"محامي الجرائم الإلكترونية في دبي",
+    "defamation-lawyer-dubai.html":"محامي القذف والتشهير في دبي",
+    "drug-offences-lawyer-dubai.html":"محامي قضايا المخدرات في دبي",
+    "fraud-breach-of-trust-lawyer-dubai.html":"محامي الاحتيال وخيانة الأمانة في دبي",
+    "theft-assault-lawyer-dubai.html":"محامي السرقة والاعتداء في دبي",
+    "travel-ban-lawyer-dubai.html":"محامي حظر السفر في دبي",
+    "civil-litigation-lawyer-dubai.html":"محامي تقاضي مدني في دبي",
+    "contractual-dispute-lawyer-dubai.html":"محامي منازعات عقود في دبي",
+    "debt-recovery-lawyer-dubai.html":"محامي تحصيل ديون في دبي",
+    "appeals-cassation-lawyer-dubai.html":"محامي الاستئناف والنقض في دبي",
+    "civil-appeal-lawyer-dubai.html":"محامي الاستئناف المدني في دبي",
+    "compensation-damages-lawyer-dubai.html":"محامي التعويضات والأضرار في دبي",
+    "judgment-enforcement-execution-lawyer-dubai.html":"محامي تنفيذ الأحكام في دبي",
+    "labour-employment-litigation-lawyer-dubai.html":"محامي التقاضي العمالي في دبي",
+    "professional-negligence-lawyer-dubai.html":"محامي مطالبات الإهمال المهني في دبي",
+    "personal-injury-lawyer-dubai.html":"محامي الإصابات الشخصية في دبي",
+    "property-real-estate-dispute-lawyer-dubai.html":"محامي منازعات الملكية والعقارات في دبي",
+    "company-formation-lawyer-dubai.html":"محامي تأسيس شركات في دبي",
+    "shareholder-dispute-lawyer-dubai.html":"محامي نزاعات الشركاء في دبي",
+    "commercial-contract-lawyer-dubai.html":"محامي عقود تجارية في دبي",
+    "commercial-litigation-lawyer-dubai.html":"محامي التقاضي التجاري في دبي",
+    "property-dispute-lawyer-dubai.html":"محامي نزاعات عقارية في دبي",
+    "tenancy-dispute-lawyer-dubai.html":"محامي نزاعات إيجار في دبي",
+    "developer-dispute-lawyer-dubai.html":"محامي نزاعات المطورين في دبي",
+    "landlord-tenant-lawyer-dubai.html":"محامي المؤجر والمستأجر في دبي",
+    "property-registration-title-lawyer-dubai.html":"محامي تسجيل الملكية والسند في دبي",
+    "property-sale-purchase-agreement-lawyer-dubai.html":"محامي عقود بيع وشراء العقارات في دبي",
+    "real-estate-due-diligence-lawyer-dubai.html":"محامي العناية الواجبة العقارية في دبي",
+    "real-estate-lawyer-dubai.html":"محامي عقاري في دبي",
+    "mortgage-financing-lawyer-dubai.html":"محامي الرهن العقاري والتمويل في دبي",
+    "owners-association-strata-lawyer-dubai.html":"محامي جمعية الملاك والملكية المشتركة في دبي",
+    "employment-dispute-lawyer-dubai.html":"محامي نزاعات عمالية في دبي",
+    "wrongful-termination-lawyer-dubai.html":"محامي فصل تعسفي في دبي",
+    "labor-claim-lawyer-dubai.html":"محامي مطالبات عمالية في دبي",
+    "employment-contract-lawyer-dubai.html":"محامي عقود العمل في دبي",
+    "end-of-service-gratuity-lawyer-dubai.html":"محامي مكافأة نهاية الخدمة في دبي",
+    "difc-lcia-arbitration-lawyer-dubai.html":"محامي تحكيم DIFC-LCIA في دبي",
+    "diac-arbitration-lawyer-dubai.html":"محامي تحكيم مركز دبي للتحكيم في دبي",
+    "arbitration-award-enforcement-lawyer-dubai.html":"محامي تنفيذ أحكام التحكيم في دبي",
+    "arbitration-clause-contract-drafting-lawyer-dubai.html":"محامي صياغة بنود وعقود التحكيم في دبي",
+    "emergency-interim-measures-lawyer-dubai.html":"محامي الإجراءات الطارئة والمؤقتة في دبي",
+    "international-arbitration-lawyer-dubai.html":"محامي التحكيم الدولي في دبي",
+    "institutional-adhoc-arbitration-lawyer-dubai.html":"محامي التحكيم المؤسسي والمخصص في دبي",
+    "will-drafting-lawyer-dubai.html":"محامي صياغة الوصايا في دبي",
+    "estate-distribution-lawyer-dubai.html":"محامي توزيع التركات في دبي",
+    "succession-dispute-lawyer-dubai.html":"محامي نزاعات الميراث في دبي",
+    "probate-lawyer-dubai.html":"محامي إثبات الوصية والتركات في دبي",
+    "guardianship-of-estate-lawyer-dubai.html":"محامي الوصاية على التركة في دبي",
+    "mainland-company-setup-dubai.html":"تأسيس شركة في البر الرئيسي بدبي",
+    "freezone-company-setup-dubai.html":"تأسيس شركة في المنطقة الحرة بدبي",
+    "business-license-renewal-dubai.html":"تجديد الرخصة التجارية في دبي",
+    "construction-arbitration-lawyer-dubai.html":"محامي تحكيم إنشائي في دبي",
+    "construction-contract-lawyer-dubai.html":"محامي عقود البناء في دبي",
+    "construction-contract-termination-lawyer-dubai.html":"محامي إنهاء عقود البناء في دبي",
+    "construction-defects-liability-lawyer-dubai.html":"محامي عيوب البناء والمسؤولية في دبي",
+    "construction-litigation-lawyer-dubai.html":"محامي التقاضي الإنشائي في دبي",
+    "construction-payment-variation-lawyer-dubai.html":"محامي مدفوعات وتغييرات البناء في دبي",
+    "engineering-consultant-liability-lawyer-dubai.html":"محامي مسؤولية الاستشاريين الهندسيين في دبي",
+    "fidic-contract-lawyer-dubai.html":"محامي عقود فيديك في دبي",
+    "infrastructure-megaproject-lawyer-dubai.html":"محامي البنية التحتية والمشاريع الكبرى في دبي",
+    "project-delay-disruption-lawyer-dubai.html":"محامي تأخير وتعطيل المشاريع في دبي",
+    "banking-finance-litigation-lawyer-dubai.html":"محامي التقاضي المصرفي والمالي في دبي",
+    "bank-guarantee-lawyer-dubai.html":"محامي الضمانات المصرفية في دبي",
+    "loan-default-recovery-lawyer-dubai.html":"محامي التعثر في القروض واستردادها في دبي",
+    "trade-finance-lawyer-dubai.html":"محامي التمويل التجاري في دبي",
+    "islamic-banking-finance-lawyer-dubai.html":"محامي الصيرفة والتمويل الإسلامي في دبي",
+    "brand-protection-anticounterfeiting-lawyer-dubai.html":"محامي حماية العلامة التجارية ومكافحة التقليد في دبي",
+    "copyright-lawyer-dubai.html":"محامي حقوق النشر في دبي",
+    "industrial-design-lawyer-dubai.html":"محامي التصاميم الصناعية في دبي",
+    "ip-due-diligence-lawyer-dubai.html":"محامي العناية الواجبة للملكية الفكرية في دبي",
+    "ip-infringement-enforcement-lawyer-dubai.html":"محامي انتهاك وإنفاذ الملكية الفكرية في دبي",
+    "ip-licensing-assignment-lawyer-dubai.html":"محامي ترخيص وتنازل الملكية الفكرية في دبي",
+    "ip-litigation-dispute-lawyer-dubai.html":"محامي التقاضي وتسوية منازعات الملكية الفكرية في دبي",
+    "patent-lawyer-dubai.html":"محامي براءات الاختراع في دبي",
+    "technology-software-ip-lawyer-dubai.html":"محامي التكنولوجيا والبرمجيات في دبي",
+    "trademark-lawyer-dubai.html":"محامي العلامات التجارية في دبي",
+    "ship-arrest-lawyer-dubai.html":"محامي حجز السفن في دبي",
+    "maritime-cargo-claims-lawyer-dubai.html":"محامي مطالبات الشحن البحري في دبي",
+    "charterparty-dispute-lawyer-dubai.html":"محامي منازعات عقود إيجار السفن في دبي",
+    "marine-insurance-lawyer-dubai.html":"محامي التأمين البحري في دبي",
+    "vessel-collision-pollution-lawyer-dubai.html":"محامي تصادم السفن والتلوث البحري في دبي",
+    "broadcasting-media-rights-lawyer-dubai.html":"محامي حقوق البث والإعلام في دبي",
+    "player-athlete-contract-lawyer-dubai.html":"محامي عقود اللاعبين والرياضيين في دبي",
+    "sponsorship-commercial-agreement-lawyer-dubai.html":"محامي اتفاقيات الرعاية والاتفاقيات التجارية في دبي",
+    "sports-arbitration-dispute-lawyer-dubai.html":"محامي التحكيم الرياضي وتسوية المنازعات في دبي",
+    "sports-governance-regulations-lawyer-dubai.html":"محامي حوكمة ولوائح الرياضة في دبي"
+  },
+  zh:{
+    "divorce-lawyer-dubai.html":"迪拜离婚律师",
+    "child-custody-lawyer-dubai.html":"迪拜子女监护律师",
+    "alimony-maintenance-lawyer-dubai.html":"迪拜赡养费律师",
+    "child-custody-visitation-lawyer-dubai.html":"迪拜子女监护与探视律师",
+    "child-support-lawyer-dubai.html":"迪拜子女抚养费律师",
+    "domestic-violence-lawyer-dubai.html":"迪拜家庭暴力律师",
+    "expat-family-lawyer-dubai.html":"迪拜外籍人士家庭律师",
+    "family-appeal-lawyer-dubai.html":"迪拜家庭案件上诉律师",
+    "family-judgment-enforcement-lawyer-dubai.html":"迪拜家庭判决执行律师",
+    "family-mediation-lawyer-dubai.html":"迪拜家庭调解律师",
+    "guardianship-parental-rights-lawyer-dubai.html":"迪拜监护与父母权利律师",
+    "inheritance-probate-lawyer-dubai.html":"迪拜遗产继承与遗嘱认证律师",
+    "marriage-contracts-prenuptial-lawyer-dubai.html":"迪拜婚姻合同与婚前协议律师",
+    "wills-lawyer-dubai.html":"迪拜遗嘱律师",
+    "criminal-defense-lawyer-dubai.html":"迪拜刑事辩护律师",
+    "bail-release-lawyer-dubai.html":"迪拜保释律师",
+    "white-collar-crime-lawyer-dubai.html":"迪拜白领犯罪律师",
+    "criminal-appeal-lawyer-dubai.html":"迪拜刑事上诉律师",
+    "criminal-complaint-lawyer-dubai.html":"迪拜刑事控告律师",
+    "criminal-litigation-lawyer-dubai.html":"迪拜刑事诉讼律师",
+    "cybercrime-lawyer-dubai.html":"迪拜网络犯罪律师",
+    "defamation-lawyer-dubai.html":"迪拜诽谤案件律师",
+    "drug-offences-lawyer-dubai.html":"迪拜毒品犯罪律师",
+    "fraud-breach-of-trust-lawyer-dubai.html":"迪拜诈骗与背信罪律师",
+    "theft-assault-lawyer-dubai.html":"迪拜盗窃与人身伤害律师",
+    "travel-ban-lawyer-dubai.html":"迪拜旅行禁令律师",
+    "civil-litigation-lawyer-dubai.html":"迪拜民事诉讼律师",
+    "contractual-dispute-lawyer-dubai.html":"迪拜合同纠纷律师",
+    "debt-recovery-lawyer-dubai.html":"迪拜债务追讨律师",
+    "appeals-cassation-lawyer-dubai.html":"迪拜上诉与终审律师",
+    "civil-appeal-lawyer-dubai.html":"迪拜民事上诉律师",
+    "compensation-damages-lawyer-dubai.html":"迪拜赔偿与损害律师",
+    "judgment-enforcement-execution-lawyer-dubai.html":"迪拜判决执行律师",
+    "labour-employment-litigation-lawyer-dubai.html":"迪拜劳动诉讼律师",
+    "professional-negligence-lawyer-dubai.html":"迪拜专业过失索赔律师",
+    "personal-injury-lawyer-dubai.html":"迪拜人身伤害律师",
+    "property-real-estate-dispute-lawyer-dubai.html":"迪拜财产与房地产纠纷律师",
+    "company-formation-lawyer-dubai.html":"迪拜公司注册律师",
+    "shareholder-dispute-lawyer-dubai.html":"迪拜股东纠纷律师",
+    "commercial-contract-lawyer-dubai.html":"迪拜商业合同律师",
+    "commercial-litigation-lawyer-dubai.html":"迪拜商业诉讼律师",
+    "property-dispute-lawyer-dubai.html":"迪拜房产纠纷律师",
+    "tenancy-dispute-lawyer-dubai.html":"迪拜租赁纠纷律师",
+    "developer-dispute-lawyer-dubai.html":"迪拜开发商纠纷律师",
+    "landlord-tenant-lawyer-dubai.html":"迪拜房东与租客律师",
+    "property-registration-title-lawyer-dubai.html":"迪拜产权登记律师",
+    "property-sale-purchase-agreement-lawyer-dubai.html":"迪拜房产买卖合同律师",
+    "real-estate-due-diligence-lawyer-dubai.html":"迪拜房地产尽职调查律师",
+    "real-estate-lawyer-dubai.html":"迪拜房地产律师",
+    "mortgage-financing-lawyer-dubai.html":"迪拜按揭与融资律师",
+    "owners-association-strata-lawyer-dubai.html":"迪拜业主协会与共管物业律师",
+    "employment-dispute-lawyer-dubai.html":"迪拜劳资纠纷律师",
+    "wrongful-termination-lawyer-dubai.html":"迪拜非法解雇律师",
+    "labor-claim-lawyer-dubai.html":"迪拜劳工索赔律师",
+    "employment-contract-lawyer-dubai.html":"迪拜劳动合同律师",
+    "end-of-service-gratuity-lawyer-dubai.html":"迪拜离职补偿金律师",
+    "difc-lcia-arbitration-lawyer-dubai.html":"迪拜DIFC-LCIA仲裁律师",
+    "diac-arbitration-lawyer-dubai.html":"迪拜DIAC仲裁律师",
+    "arbitration-award-enforcement-lawyer-dubai.html":"迪拜仲裁裁决执行律师",
+    "arbitration-clause-contract-drafting-lawyer-dubai.html":"迪拜仲裁条款与合同起草律师",
+    "emergency-interim-measures-lawyer-dubai.html":"迪拜紧急与临时措施律师",
+    "international-arbitration-lawyer-dubai.html":"迪拜国际仲裁律师",
+    "institutional-adhoc-arbitration-lawyer-dubai.html":"迪拜机构仲裁与临时仲裁律师",
+    "will-drafting-lawyer-dubai.html":"迪拜遗嘱起草律师",
+    "estate-distribution-lawyer-dubai.html":"迪拜遗产分配律师",
+    "succession-dispute-lawyer-dubai.html":"迪拜继承纠纷律师",
+    "probate-lawyer-dubai.html":"迪拜遗嘱认证律师",
+    "guardianship-of-estate-lawyer-dubai.html":"迪拜遗产监护律师",
+    "mainland-company-setup-dubai.html":"迪拜大陆区公司注册",
+    "freezone-company-setup-dubai.html":"迪拜自贸区公司注册",
+    "business-license-renewal-dubai.html":"迪拜营业执照续签",
+    "construction-arbitration-lawyer-dubai.html":"迪拜建筑仲裁律师",
+    "construction-contract-lawyer-dubai.html":"迪拜建筑合同律师",
+    "construction-contract-termination-lawyer-dubai.html":"迪拜建筑合同终止律师",
+    "construction-defects-liability-lawyer-dubai.html":"迪拜建筑缺陷与责任律师",
+    "construction-litigation-lawyer-dubai.html":"迪拜建筑诉讼律师",
+    "construction-payment-variation-lawyer-dubai.html":"迪拜建筑付款与变更律师",
+    "engineering-consultant-liability-lawyer-dubai.html":"迪拜工程顾问责任律师",
+    "fidic-contract-lawyer-dubai.html":"迪拜FIDIC合同律师",
+    "infrastructure-megaproject-lawyer-dubai.html":"迪拜基础设施与大型项目律师",
+    "project-delay-disruption-lawyer-dubai.html":"迪拜项目延误与干扰律师",
+    "banking-finance-litigation-lawyer-dubai.html":"迪拜银行与金融诉讼律师",
+    "bank-guarantee-lawyer-dubai.html":"迪拜银行担保律师",
+    "loan-default-recovery-lawyer-dubai.html":"迪拜贷款违约与追偿律师",
+    "trade-finance-lawyer-dubai.html":"迪拜贸易融资律师",
+    "islamic-banking-finance-lawyer-dubai.html":"迪拜伊斯兰银行与金融律师",
+    "brand-protection-anticounterfeiting-lawyer-dubai.html":"迪拜品牌保护与反假冒律师",
+    "copyright-lawyer-dubai.html":"迪拜版权律师",
+    "industrial-design-lawyer-dubai.html":"迪拜工业设计律师",
+    "ip-due-diligence-lawyer-dubai.html":"迪拜知识产权尽职调查律师",
+    "ip-infringement-enforcement-lawyer-dubai.html":"迪拜知识产权侵权与维权律师",
+    "ip-licensing-assignment-lawyer-dubai.html":"迪拜知识产权许可与转让律师",
+    "ip-litigation-dispute-lawyer-dubai.html":"迪拜知识产权诉讼与争议解决律师",
+    "patent-lawyer-dubai.html":"迪拜专利律师",
+    "technology-software-ip-lawyer-dubai.html":"迪拜科技与软件律师",
+    "trademark-lawyer-dubai.html":"迪拜商标律师",
+    "ship-arrest-lawyer-dubai.html":"迪拜船舶扣押律师",
+    "maritime-cargo-claims-lawyer-dubai.html":"迪拜海事货物索赔律师",
+    "charterparty-dispute-lawyer-dubai.html":"迪拜租船合同纠纷律师",
+    "marine-insurance-lawyer-dubai.html":"迪拜海事保险律师",
+    "vessel-collision-pollution-lawyer-dubai.html":"迪拜船舶碰撞与污染律师",
+    "broadcasting-media-rights-lawyer-dubai.html":"迪拜广播与媒体权利律师",
+    "player-athlete-contract-lawyer-dubai.html":"迪拜球员与运动员合同律师",
+    "sponsorship-commercial-agreement-lawyer-dubai.html":"迪拜赞助与商业协议律师",
+    "sports-arbitration-dispute-lawyer-dubai.html":"迪拜体育仲裁与争议解决律师",
+    "sports-governance-regulations-lawyer-dubai.html":"迪拜体育治理与法规律师"
+  },
+  ru:{
+    "divorce-lawyer-dubai.html":"Адвокат по разводам в Дубае",
+    "child-custody-lawyer-dubai.html":"Адвокат по опеке над детьми в Дубае",
+    "alimony-maintenance-lawyer-dubai.html":"Адвокат по алиментам в Дубае",
+    "child-custody-visitation-lawyer-dubai.html":"Адвокат по опеке и посещению детей в Дубае",
+    "child-support-lawyer-dubai.html":"Адвокат по алиментам на детей в Дубае",
+    "domestic-violence-lawyer-dubai.html":"Адвокат по делам о домашнем насилии в Дубае",
+    "expat-family-lawyer-dubai.html":"Адвокат по семейным делам экспатов в Дубае",
+    "family-appeal-lawyer-dubai.html":"Адвокат по апелляциям в семейных делах в Дубае",
+    "family-judgment-enforcement-lawyer-dubai.html":"Адвокат по исполнению решений по семейным делам в Дубае",
+    "family-mediation-lawyer-dubai.html":"Адвокат по семейной медиации в Дубае",
+    "guardianship-parental-rights-lawyer-dubai.html":"Адвокат по опекунству и родительским правам в Дубае",
+    "inheritance-probate-lawyer-dubai.html":"Адвокат по наследованию и оформлению наследства в Дубае",
+    "marriage-contracts-prenuptial-lawyer-dubai.html":"Адвокат по брачным договорам и контрактам в Дубае",
+    "wills-lawyer-dubai.html":"Адвокат по завещаниям в Дубае",
+    "criminal-defense-lawyer-dubai.html":"Адвокат по уголовным делам в Дубае",
+    "bail-release-lawyer-dubai.html":"Адвокат по освобождению под залог в Дубае",
+    "white-collar-crime-lawyer-dubai.html":"Адвокат по экономическим преступлениям в Дубае",
+    "criminal-appeal-lawyer-dubai.html":"Адвокат по уголовным апелляциям в Дубае",
+    "criminal-complaint-lawyer-dubai.html":"Адвокат по уголовным жалобам в Дубае",
+    "criminal-litigation-lawyer-dubai.html":"Адвокат по уголовным судебным разбирательствам в Дубае",
+    "cybercrime-lawyer-dubai.html":"Адвокат по киберпреступлениям в Дубае",
+    "defamation-lawyer-dubai.html":"Адвокат по делам о клевете в Дубае",
+    "drug-offences-lawyer-dubai.html":"Адвокат по делам о наркотиках в Дубае",
+    "fraud-breach-of-trust-lawyer-dubai.html":"Адвокат по мошенничеству и злоупотреблению доверием в Дубае",
+    "theft-assault-lawyer-dubai.html":"Адвокат по делам о краже и нападении в Дубае",
+    "travel-ban-lawyer-dubai.html":"Адвокат по запрету на выезд в Дубае",
+    "civil-litigation-lawyer-dubai.html":"Адвокат по гражданским делам в Дубае",
+    "contractual-dispute-lawyer-dubai.html":"Адвокат по договорным спорам в Дубае",
+    "debt-recovery-lawyer-dubai.html":"Адвокат по взысканию долгов в Дубае",
+    "appeals-cassation-lawyer-dubai.html":"Адвокат по апелляциям и кассациям в Дубае",
+    "civil-appeal-lawyer-dubai.html":"Адвокат по гражданским апелляциям в Дубае",
+    "compensation-damages-lawyer-dubai.html":"Адвокат по компенсациям и убыткам в Дубае",
+    "judgment-enforcement-execution-lawyer-dubai.html":"Адвокат по исполнению судебных решений в Дубае",
+    "labour-employment-litigation-lawyer-dubai.html":"Адвокат по трудовым судебным спорам в Дубае",
+    "professional-negligence-lawyer-dubai.html":"Адвокат по искам о профессиональной халатности в Дубае",
+    "personal-injury-lawyer-dubai.html":"Адвокат по делам о телесных повреждениях в Дубае",
+    "property-real-estate-dispute-lawyer-dubai.html":"Адвокат по спорам о собственности и недвижимости в Дубае",
+    "company-formation-lawyer-dubai.html":"Адвокат по регистрации компаний в Дубае",
+    "shareholder-dispute-lawyer-dubai.html":"Адвокат по спорам между акционерами в Дубае",
+    "commercial-contract-lawyer-dubai.html":"Адвокат по коммерческим контрактам в Дубае",
+    "commercial-litigation-lawyer-dubai.html":"Адвокат по коммерческим судебным спорам в Дубае",
+    "property-dispute-lawyer-dubai.html":"Адвокат по спорам о недвижимости в Дубае",
+    "tenancy-dispute-lawyer-dubai.html":"Адвокат по арендным спорам в Дубае",
+    "developer-dispute-lawyer-dubai.html":"Адвокат по спорам с застройщиками в Дубае",
+    "landlord-tenant-lawyer-dubai.html":"Адвокат по вопросам арендодателей и арендаторов в Дубае",
+    "property-registration-title-lawyer-dubai.html":"Адвокат по регистрации собственности и титулу в Дубае",
+    "property-sale-purchase-agreement-lawyer-dubai.html":"Адвокат по договорам купли-продажи недвижимости в Дубае",
+    "real-estate-due-diligence-lawyer-dubai.html":"Адвокат по due diligence в сфере недвижимости в Дубае",
+    "real-estate-lawyer-dubai.html":"Адвокат по недвижимости в Дубае",
+    "mortgage-financing-lawyer-dubai.html":"Адвокат по ипотеке и финансированию в Дубае",
+    "owners-association-strata-lawyer-dubai.html":"Адвокат по ассоциациям собственников в Дубае",
+    "employment-dispute-lawyer-dubai.html":"Адвокат по трудовым спорам в Дубае",
+    "wrongful-termination-lawyer-dubai.html":"Адвокат по незаконным увольнениям в Дубае",
+    "labor-claim-lawyer-dubai.html":"Адвокат по трудовым претензиям в Дубае",
+    "employment-contract-lawyer-dubai.html":"Адвокат по трудовым договорам в Дубае",
+    "end-of-service-gratuity-lawyer-dubai.html":"Адвокат по выходным пособиям в Дубае",
+    "difc-lcia-arbitration-lawyer-dubai.html":"Адвокат по арбитражу DIFC-LCIA в Дубае",
+    "diac-arbitration-lawyer-dubai.html":"Адвокат по арбитражу DIAC в Дубае",
+    "arbitration-award-enforcement-lawyer-dubai.html":"Адвокат по исполнению арбитражных решений в Дубае",
+    "arbitration-clause-contract-drafting-lawyer-dubai.html":"Адвокат по составлению арбитражных оговорок в Дубае",
+    "emergency-interim-measures-lawyer-dubai.html":"Адвокат по экстренным и обеспечительным мерам в Дубае",
+    "international-arbitration-lawyer-dubai.html":"Адвокат по международному арбитражу в Дубае",
+    "institutional-adhoc-arbitration-lawyer-dubai.html":"Адвокат по институциональному и разовому арбитражу в Дубае",
+    "will-drafting-lawyer-dubai.html":"Адвокат по составлению завещаний в Дубае",
+    "estate-distribution-lawyer-dubai.html":"Адвокат по распределению наследства в Дубае",
+    "succession-dispute-lawyer-dubai.html":"Адвокат по наследственным спорам в Дубае",
+    "probate-lawyer-dubai.html":"Адвокат по делам о наследстве в Дубае",
+    "guardianship-of-estate-lawyer-dubai.html":"Адвокат по опеке над наследственным имуществом в Дубае",
+    "mainland-company-setup-dubai.html":"Регистрация компании на материковой части Дубая",
+    "freezone-company-setup-dubai.html":"Регистрация компании в свободной зоне Дубая",
+    "business-license-renewal-dubai.html":"Продление лицензии на бизнес в Дубае",
+    "construction-arbitration-lawyer-dubai.html":"Адвокат по строительному арбитражу в Дубае",
+    "construction-contract-lawyer-dubai.html":"Адвокат по строительным договорам в Дубае",
+    "construction-contract-termination-lawyer-dubai.html":"Адвокат по расторжению строительных договоров в Дубае",
+    "construction-defects-liability-lawyer-dubai.html":"Адвокат по строительным дефектам и ответственности в Дубае",
+    "construction-litigation-lawyer-dubai.html":"Адвокат по строительным судебным спорам в Дубае",
+    "construction-payment-variation-lawyer-dubai.html":"Адвокат по строительным платежам и изменениям в Дубае",
+    "engineering-consultant-liability-lawyer-dubai.html":"Адвокат по ответственности инженеров-консультантов в Дубае",
+    "fidic-contract-lawyer-dubai.html":"Адвокат по контрактам FIDIC в Дубае",
+    "infrastructure-megaproject-lawyer-dubai.html":"Адвокат по инфраструктурным и мегапроектам в Дубае",
+    "project-delay-disruption-lawyer-dubai.html":"Адвокат по задержкам и срывам проектов в Дубае",
+    "banking-finance-litigation-lawyer-dubai.html":"Адвокат по банковским и финансовым спорам в Дубае",
+    "bank-guarantee-lawyer-dubai.html":"Адвокат по банковским гарантиям в Дубае",
+    "loan-default-recovery-lawyer-dubai.html":"Адвокат по невозврату кредитов и взысканию в Дубае",
+    "trade-finance-lawyer-dubai.html":"Адвокат по торговому финансированию в Дубае",
+    "islamic-banking-finance-lawyer-dubai.html":"Адвокат по исламскому банкингу и финансированию в Дубае",
+    "brand-protection-anticounterfeiting-lawyer-dubai.html":"Адвокат по защите бренда и борьбе с контрафактом в Дубае",
+    "copyright-lawyer-dubai.html":"Адвокат по авторскому праву в Дубае",
+    "industrial-design-lawyer-dubai.html":"Адвокат по промышленным образцам в Дубае",
+    "ip-due-diligence-lawyer-dubai.html":"Адвокат по due diligence в сфере ИС в Дубае",
+    "ip-infringement-enforcement-lawyer-dubai.html":"Адвокат по нарушениям и защите прав ИС в Дубае",
+    "ip-licensing-assignment-lawyer-dubai.html":"Адвокат по лицензированию и передаче прав ИС в Дубае",
+    "ip-litigation-dispute-lawyer-dubai.html":"Адвокат по судебным спорам в сфере ИС в Дубае",
+    "patent-lawyer-dubai.html":"Адвокат по патентам в Дубае",
+    "technology-software-ip-lawyer-dubai.html":"Адвокат по технологиям и программному обеспечению в Дубае",
+    "trademark-lawyer-dubai.html":"Адвокат по товарным знакам в Дубае",
+    "ship-arrest-lawyer-dubai.html":"Адвокат по аресту судов в Дубае",
+    "maritime-cargo-claims-lawyer-dubai.html":"Адвокат по морским грузовым претензиям в Дубае",
+    "charterparty-dispute-lawyer-dubai.html":"Адвокат по спорам по чартер-партиям в Дубае",
+    "marine-insurance-lawyer-dubai.html":"Адвокат по морскому страхованию в Дубае",
+    "vessel-collision-pollution-lawyer-dubai.html":"Адвокат по столкновениям судов и загрязнению в Дубае",
+    "broadcasting-media-rights-lawyer-dubai.html":"Адвокат по правам на вещание и СМИ в Дубае",
+    "player-athlete-contract-lawyer-dubai.html":"Адвокат по контрактам игроков и спортсменов в Дубае",
+    "sponsorship-commercial-agreement-lawyer-dubai.html":"Адвокат по спонсорским и коммерческим соглашениям в Дубае",
+    "sports-arbitration-dispute-lawyer-dubai.html":"Адвокат по спортивному арбитражу и разрешению споров в Дубае",
+    "sports-governance-regulations-lawyer-dubai.html":"Адвокат по спортивному управлению и регламентам в Дубае"
+  },
+  de:{
+    "divorce-lawyer-dubai.html":"Scheidungsanwalt in Dubai",
+    "child-custody-lawyer-dubai.html":"Sorgerechtsanwalt in Dubai",
+    "alimony-maintenance-lawyer-dubai.html":"Unterhaltsanwalt in Dubai",
+    "child-custody-visitation-lawyer-dubai.html":"Anwalt für Sorge- und Umgangsrecht in Dubai",
+    "child-support-lawyer-dubai.html":"Anwalt für Kindesunterhalt in Dubai",
+    "domestic-violence-lawyer-dubai.html":"Anwalt für häusliche Gewalt in Dubai",
+    "expat-family-lawyer-dubai.html":"Anwalt für Familienrecht für Expats in Dubai",
+    "family-appeal-lawyer-dubai.html":"Anwalt für Berufungen im Familienrecht in Dubai",
+    "family-judgment-enforcement-lawyer-dubai.html":"Anwalt für Vollstreckung familienrechtlicher Urteile in Dubai",
+    "family-mediation-lawyer-dubai.html":"Anwalt für Familienmediation in Dubai",
+    "guardianship-parental-rights-lawyer-dubai.html":"Anwalt für Vormundschaft und Elternrechte in Dubai",
+    "inheritance-probate-lawyer-dubai.html":"Anwalt für Erbschaft und Nachlassverfahren in Dubai",
+    "marriage-contracts-prenuptial-lawyer-dubai.html":"Anwalt für Eheverträge und Ehevereinbarungen in Dubai",
+    "wills-lawyer-dubai.html":"Anwalt für Testamente in Dubai",
+    "criminal-defense-lawyer-dubai.html":"Strafverteidiger in Dubai",
+    "bail-release-lawyer-dubai.html":"Anwalt für Kautionsfreilassung in Dubai",
+    "white-collar-crime-lawyer-dubai.html":"Anwalt für Wirtschaftskriminalität in Dubai",
+    "criminal-appeal-lawyer-dubai.html":"Anwalt für Strafberufungen in Dubai",
+    "criminal-complaint-lawyer-dubai.html":"Anwalt für Strafanzeigen in Dubai",
+    "criminal-litigation-lawyer-dubai.html":"Anwalt für Strafprozesse in Dubai",
+    "cybercrime-lawyer-dubai.html":"Anwalt für Cyberkriminalität in Dubai",
+    "defamation-lawyer-dubai.html":"Anwalt für Verleumdung in Dubai",
+    "drug-offences-lawyer-dubai.html":"Anwalt für Drogendelikte in Dubai",
+    "fraud-breach-of-trust-lawyer-dubai.html":"Anwalt für Betrug und Vertrauensbruch in Dubai",
+    "theft-assault-lawyer-dubai.html":"Anwalt für Diebstahl und Körperverletzung in Dubai",
+    "travel-ban-lawyer-dubai.html":"Anwalt für Reiseverbote in Dubai",
+    "civil-litigation-lawyer-dubai.html":"Anwalt für Zivilprozesse in Dubai",
+    "contractual-dispute-lawyer-dubai.html":"Anwalt für Vertragsstreitigkeiten in Dubai",
+    "debt-recovery-lawyer-dubai.html":"Anwalt für Forderungseinzug in Dubai",
+    "appeals-cassation-lawyer-dubai.html":"Anwalt für Berufung und Kassation in Dubai",
+    "civil-appeal-lawyer-dubai.html":"Anwalt für Zivilberufungen in Dubai",
+    "compensation-damages-lawyer-dubai.html":"Anwalt für Entschädigung und Schadensersatz in Dubai",
+    "judgment-enforcement-execution-lawyer-dubai.html":"Anwalt für Urteilsvollstreckung in Dubai",
+    "labour-employment-litigation-lawyer-dubai.html":"Anwalt für Arbeitsrechtsprozesse in Dubai",
+    "professional-negligence-lawyer-dubai.html":"Anwalt für Ansprüche wegen beruflicher Fahrlässigkeit in Dubai",
+    "personal-injury-lawyer-dubai.html":"Anwalt für Personenschäden in Dubai",
+    "property-real-estate-dispute-lawyer-dubai.html":"Anwalt für Eigentums- und Immobilienstreitigkeiten in Dubai",
+    "company-formation-lawyer-dubai.html":"Anwalt für Unternehmensgründung in Dubai",
+    "shareholder-dispute-lawyer-dubai.html":"Anwalt für Gesellschafterstreitigkeiten in Dubai",
+    "commercial-contract-lawyer-dubai.html":"Anwalt für Handelsverträge in Dubai",
+    "commercial-litigation-lawyer-dubai.html":"Anwalt für Handelsstreitigkeiten in Dubai",
+    "property-dispute-lawyer-dubai.html":"Anwalt für Immobilienstreitigkeiten in Dubai",
+    "tenancy-dispute-lawyer-dubai.html":"Anwalt für Mietstreitigkeiten in Dubai",
+    "developer-dispute-lawyer-dubai.html":"Anwalt für Bauträgerstreitigkeiten in Dubai",
+    "landlord-tenant-lawyer-dubai.html":"Anwalt für Vermieter- und Mieterrecht in Dubai",
+    "property-registration-title-lawyer-dubai.html":"Anwalt für Grundbucheintragung und Eigentumstitel in Dubai",
+    "property-sale-purchase-agreement-lawyer-dubai.html":"Anwalt für Immobilienkauf- und -verkaufsverträge in Dubai",
+    "real-estate-due-diligence-lawyer-dubai.html":"Anwalt für Immobilien-Due-Diligence in Dubai",
+    "real-estate-lawyer-dubai.html":"Anwalt für Immobilienrecht in Dubai",
+    "mortgage-financing-lawyer-dubai.html":"Anwalt für Hypotheken und Finanzierung in Dubai",
+    "owners-association-strata-lawyer-dubai.html":"Anwalt für Eigentümergemeinschaften in Dubai",
+    "employment-dispute-lawyer-dubai.html":"Anwalt für Arbeitsstreitigkeiten in Dubai",
+    "wrongful-termination-lawyer-dubai.html":"Anwalt für unrechtmäßige Kündigung in Dubai",
+    "labor-claim-lawyer-dubai.html":"Anwalt für Arbeitsansprüche in Dubai",
+    "employment-contract-lawyer-dubai.html":"Anwalt für Arbeitsverträge in Dubai",
+    "end-of-service-gratuity-lawyer-dubai.html":"Anwalt für Abfindungsansprüche in Dubai",
+    "difc-lcia-arbitration-lawyer-dubai.html":"Anwalt für DIFC-LCIA-Schiedsverfahren in Dubai",
+    "diac-arbitration-lawyer-dubai.html":"Anwalt für DIAC-Schiedsverfahren in Dubai",
+    "arbitration-award-enforcement-lawyer-dubai.html":"Anwalt für Vollstreckung von Schiedssprüchen in Dubai",
+    "arbitration-clause-contract-drafting-lawyer-dubai.html":"Anwalt für Schiedsklauseln und Vertragsgestaltung in Dubai",
+    "emergency-interim-measures-lawyer-dubai.html":"Anwalt für Eil- und einstweilige Maßnahmen in Dubai",
+    "international-arbitration-lawyer-dubai.html":"Anwalt für internationale Schiedsverfahren in Dubai",
+    "institutional-adhoc-arbitration-lawyer-dubai.html":"Anwalt für institutionelle und Ad-hoc-Schiedsverfahren in Dubai",
+    "will-drafting-lawyer-dubai.html":"Anwalt für Testamentserstellung in Dubai",
+    "estate-distribution-lawyer-dubai.html":"Anwalt für Nachlassverteilung in Dubai",
+    "succession-dispute-lawyer-dubai.html":"Anwalt für Erbstreitigkeiten in Dubai",
+    "probate-lawyer-dubai.html":"Anwalt für Nachlassverfahren in Dubai",
+    "guardianship-of-estate-lawyer-dubai.html":"Anwalt für Nachlassvormundschaft in Dubai",
+    "mainland-company-setup-dubai.html":"Unternehmensgründung im Festland Dubai",
+    "freezone-company-setup-dubai.html":"Unternehmensgründung in der Freizone Dubai",
+    "business-license-renewal-dubai.html":"Verlängerung der Gewerbelizenz in Dubai",
+    "construction-arbitration-lawyer-dubai.html":"Anwalt für Bauschiedsverfahren in Dubai",
+    "construction-contract-lawyer-dubai.html":"Anwalt für Bauverträge in Dubai",
+    "construction-contract-termination-lawyer-dubai.html":"Anwalt für Kündigung von Bauverträgen in Dubai",
+    "construction-defects-liability-lawyer-dubai.html":"Anwalt für Baumängel und Haftung in Dubai",
+    "construction-litigation-lawyer-dubai.html":"Anwalt für Bauprozesse in Dubai",
+    "construction-payment-variation-lawyer-dubai.html":"Anwalt für Baubezahlung und Nachträge in Dubai",
+    "engineering-consultant-liability-lawyer-dubai.html":"Anwalt für Ingenieur- und Beraterhaftung in Dubai",
+    "fidic-contract-lawyer-dubai.html":"Anwalt für FIDIC-Verträge in Dubai",
+    "infrastructure-megaproject-lawyer-dubai.html":"Anwalt für Infrastruktur- und Großprojekte in Dubai",
+    "project-delay-disruption-lawyer-dubai.html":"Anwalt für Projektverzögerungen und Störungen in Dubai",
+    "banking-finance-litigation-lawyer-dubai.html":"Anwalt für Bank- und Finanzprozesse in Dubai",
+    "bank-guarantee-lawyer-dubai.html":"Anwalt für Bankgarantien in Dubai",
+    "loan-default-recovery-lawyer-dubai.html":"Anwalt für Kreditausfall und Rückforderung in Dubai",
+    "trade-finance-lawyer-dubai.html":"Anwalt für Handelsfinanzierung in Dubai",
+    "islamic-banking-finance-lawyer-dubai.html":"Anwalt für islamisches Bank- und Finanzwesen in Dubai",
+    "brand-protection-anticounterfeiting-lawyer-dubai.html":"Anwalt für Markenschutz und Produktpiraterie in Dubai",
+    "copyright-lawyer-dubai.html":"Anwalt für Urheberrecht in Dubai",
+    "industrial-design-lawyer-dubai.html":"Anwalt für Geschmacksmuster in Dubai",
+    "ip-due-diligence-lawyer-dubai.html":"Anwalt für IP-Due-Diligence in Dubai",
+    "ip-infringement-enforcement-lawyer-dubai.html":"Anwalt für IP-Verletzung und Durchsetzung in Dubai",
+    "ip-licensing-assignment-lawyer-dubai.html":"Anwalt für IP-Lizenzierung und -Übertragung in Dubai",
+    "ip-litigation-dispute-lawyer-dubai.html":"Anwalt für IP-Streitigkeiten in Dubai",
+    "patent-lawyer-dubai.html":"Anwalt für Patente in Dubai",
+    "technology-software-ip-lawyer-dubai.html":"Anwalt für Technologie und Software in Dubai",
+    "trademark-lawyer-dubai.html":"Anwalt für Markenrecht in Dubai",
+    "ship-arrest-lawyer-dubai.html":"Anwalt für Schiffsarrest in Dubai",
+    "maritime-cargo-claims-lawyer-dubai.html":"Anwalt für Seefracht- und Ladungsansprüche in Dubai",
+    "charterparty-dispute-lawyer-dubai.html":"Anwalt für Charterpartei-Streitigkeiten in Dubai",
+    "marine-insurance-lawyer-dubai.html":"Anwalt für Seeversicherung in Dubai",
+    "vessel-collision-pollution-lawyer-dubai.html":"Anwalt für Schiffskollisionen und Meeresverschmutzung in Dubai",
+    "broadcasting-media-rights-lawyer-dubai.html":"Anwalt für Übertragungs- und Medienrechte in Dubai",
+    "player-athlete-contract-lawyer-dubai.html":"Anwalt für Spieler- und Athletenverträge in Dubai",
+    "sponsorship-commercial-agreement-lawyer-dubai.html":"Anwalt für Sponsoring- und Handelsverträge in Dubai",
+    "sports-arbitration-dispute-lawyer-dubai.html":"Anwalt für Sportschiedsverfahren und Streitbeilegung in Dubai",
+    "sports-governance-regulations-lawyer-dubai.html":"Anwalt für Sport-Governance und Vorschriften in Dubai"
+  }
+};
+
+var CURRENT_LANG = 'en';
+var ACTIVE_PRACTICE = 1;
+
+function applyLanguage(lang){
+  const dict = I18N[lang];
+  if(!dict) return;
+  CURRENT_LANG = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dir = dict.dir;
+  document.body.setAttribute('data-lang', lang);
+
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(dict[key] !== undefined) el.textContent = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-aria');
+    if(dict[key] !== undefined) el.setAttribute('aria-label', dict[key]);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-placeholder');
+    if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+  });
+
+  document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+    btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+  });
+
+  try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+
+  renderMegaSubs(ACTIVE_PRACTICE);
+}
+
+function renderMegaSubs(practiceKey){
+  var right = document.getElementById('megaRight');
+  var left = document.getElementById('megaLeft');
+  if(!right || !left) return;
+  var hrefs = SUBS_HREFS[practiceKey] || [];
+  var labels = SUB_LABELS[CURRENT_LANG] || SUB_LABELS.en;
+  var subs = hrefs.map(function(href){ return [labels[href] || href, href]; });
+  right.innerHTML = '';
+  subs.forEach(function(pair){
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = pair[1] || ('index.html#practice-' + practiceKey);
+    a.textContent = pair[0];
+    li.appendChild(a);
+    right.appendChild(li);
+  });
+  Array.prototype.forEach.call(left.children, function(li){
+    li.classList.toggle('active', li.getAttribute('data-practice') === String(practiceKey));
+  });
+}
+
+function applyTheme(theme){
+  document.documentElement.setAttribute('data-theme', theme);
+  try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+  var btn = document.getElementById('themeToggle');
+  if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+
+  var savedTheme = 'dark';
+  try{ savedTheme = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+  applyTheme(savedTheme);
+  var themeToggle = document.getElementById('themeToggle');
+  if(themeToggle){
+    themeToggle.addEventListener('click', function(){
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'light' ? 'dark' : 'light');
+    });
+  }
+
+  var saved = 'en';
+  try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+  applyLanguage(saved);
+
+  document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      applyLanguage(btn.getAttribute('data-lang-btn'));
+    });
+  });
+
+  document.querySelectorAll('#megaLeft > li').forEach(function(li){
+    li.addEventListener('mouseenter', function(){
+      ACTIVE_PRACTICE = li.getAttribute('data-practice');
+      renderMegaSubs(ACTIVE_PRACTICE);
+    });
+  });
+  renderMegaSubs(ACTIVE_PRACTICE);
+
+  var navToggle = document.getElementById('navToggle');
+  var navMenu = document.getElementById('navMenu');
+  if(navToggle){
+    navToggle.addEventListener('click', function(){
+      navMenu.classList.toggle('open');
+    });
+  }
+  document.querySelectorAll('.nav-menu a').forEach(function(a){
+    a.addEventListener('click', function(){
+      navMenu.classList.remove('open');
+    });
+  });
+  document.querySelectorAll('.has-dropdown > a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      if(window.innerWidth <= 900){
+        e.preventDefault();
+        a.parentElement.classList.toggle('open-dropdown');
+      }
+    });
+  });
+
+  var slides = document.querySelectorAll('.hero-slide');
+  var dotsWrap = document.getElementById('heroDots');
+  var current = 0;
+
+  slides.forEach(function(_, i){
+    var dot = document.createElement('span');
+    if(i === 0) dot.classList.add('active');
+    dot.addEventListener('click', function(){ goToSlide(i); });
+    dotsWrap.appendChild(dot);
+  });
+
+  function goToSlide(i){
+    slides[current].classList.remove('active');
+    dotsWrap.children[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+    dotsWrap.children[current].classList.add('active');
+  }
+  function nextSlide(){
+    goToSlide((current + 1) % slides.length);
+  }
+  if(slides.length > 1){
+    setInterval(nextSlide, 6000);
+  }
+
+  var yearEl = document.getElementById('year');
+  if(yearEl) yearEl.textContent = new Date().getFullYear();
+
+  var form = document.getElementById('contactForm');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name = form.name.value, email = form.email.value, phone = form.phone.value, msg = form.message.value;
+      var body = msg + '\n\n' + name + ' | ' + email + (phone ? ' | ' + phone : '');
+      window.location.href = 'mailto:alhosaniadvocate@gmail.com?subject=' + encodeURIComponent('Consultation Request') + '&body=' + encodeURIComponent(body);
+    });
+  }
+});
+</script>
 </body>
 </html>
