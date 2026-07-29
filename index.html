@@ -1393,7 +1393,7 @@ const SUB_LABELS = {
 var CURRENT_LANG = 'en';
 var ACTIVE_PRACTICE = 1;
 
-function wrapStatLetters(){document.querySelectorAll('.stats-grid .stat-num, .stats-grid .stat-label').forEach(function(el){var text=el.textContent;el.setAttribute('aria-label',text);el.innerHTML='';for(var i=0;i<text.length;i++){var span=document.createElement('span');span.className='wght-letter';span.style.setProperty('--i',i);span.setAttribute('aria-hidden','true');span.textContent=text[i];el.appendChild(span);}});}function applyLanguage(lang){
+function wrapStatLetters(){document.querySelectorAll('.stats-grid .stat-num, .stats-grid .stat-label').forEach(function(el){var text=el.textContent;el.setAttribute('aria-label',text);el.innerHTML='';var words=text.split(' ');var idx=0;words.forEach(function(word,wi){var wordSpan=document.createElement('span');wordSpan.style.display='inline-block';for(var i=0;i<word.length;i++){var span=document.createElement('span');span.className='wght-letter';span.style.setProperty('--i',idx++);span.setAttribute('aria-hidden','true');span.textContent=word[i];wordSpan.appendChild(span);}el.appendChild(wordSpan);if(wi<words.length-1){el.appendChild(document.createTextNode(' '));idx++;}});});}function applyLanguage(lang){
   const dict = I18N[lang];
   if(!dict) return;
   CURRENT_LANG = lang;
