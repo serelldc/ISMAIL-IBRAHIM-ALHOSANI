@@ -209,7 +209,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
   .expertise-grid,.awards-grid,.footer-grid{grid-template-columns:1fr;}
   .stats-grid{grid-template-columns:1fr 1fr;}
 }
-</style>
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);}
 </head>
 <body data-lang="en">
 
@@ -1393,7 +1393,7 @@ const SUB_LABELS = {
 var CURRENT_LANG = 'en';
 var ACTIVE_PRACTICE = 1;
 
-function wrapStatLetters(){document.querySelectorAll('.stats-grid .stat-num, .stats-grid .stat-label').forEach(function(el){var text=el.textContent;el.setAttribute('aria-label',text);el.innerHTML='';var words=text.split(' ');var idx=0;words.forEach(function(word,wi){var wordSpan=document.createElement('span');wordSpan.style.display='inline-block';for(var i=0;i<word.length;i++){var span=document.createElement('span');span.className='wght-letter';span.style.setProperty('--i',idx++);span.setAttribute('aria-hidden','true');span.textContent=word[i];wordSpan.appendChild(span);}el.appendChild(wordSpan);if(wi<words.length-1){el.appendChild(document.createTextNode(' '));idx++;}});});}function applyLanguage(lang){
+function wrapLetters(el){var text=el.textContent;el.setAttribute('aria-label',text);el.innerHTML='';var words=text.split(' ');var idx=0;words.forEach(function(word,wi){var wordSpan=document.createElement('span');wordSpan.style.display='inline-block';for(var i=0;i<word.length;i++){var span=document.createElement('span');span.className='wght-letter';span.style.setProperty('--i',idx++);span.setAttribute('aria-hidden','true');span.textContent=word[i];wordSpan.appendChild(span);}el.appendChild(wordSpan);if(wi<words.length-1){el.appendChild(document.createTextNode(' '));idx++;}});}function applyLanguage(lang){
   const dict = I18N[lang];
   if(!dict) return;
   CURRENT_LANG = lang;
@@ -1466,11 +1466,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var saved = 'en';
   try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
-  applyLanguage(saved);wrapStatLetters();
+  applyLanguage(saved);wrapStatLetters('.stats-grid .stat-label');initReveal();initExpertiseMarquee();initTestimonialSlider();
 
   document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
     btn.addEventListener('click', function(){
-      applyLanguage(btn.getAttribute('data-lang-btn'));wrapStatLetters();
+      applyLanguage(btn.getAttribute('data-lang-btn'));wrapStatLetters('.stats-grid .stat-label');
     });
   });
 
