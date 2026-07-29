@@ -45,7 +45,7 @@ ul{list-style:none;}
 /* Navbar */
 .navbar{position:sticky;top:0;z-index:100;background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);}
 .navbar-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;position:relative;}
-.logo{font-family:'Cinzel',serif;font-size:19px;letter-spacing:.5px;color:var(--gold-light);}
+.logo{font-family:'Cinzel',serif;font-size:19px;letter-spacing:.5px;color:var(--gold-light);display:flex;align-items:center;}.logo-img{height:42px;width:auto;display:block;}
 .logo span{color:var(--cream);font-weight:400;}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
 .nav-toggle span{width:24px;height:2px;background:var(--gold-light);display:block;}
@@ -252,7 +252,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
 <!-- ===== MAIN NAV ===== -->
 <header class="navbar">
   <div class="container navbar-inner">
-    <a href="#home" class="logo">Alhosani<span>Advocates</span></a>
+    <a href="#home" class="logo"><img src="assets/logo.png" alt="Ismail Ibrahim Alhosani Advocates & Legal Consultants" class="logo-img"></a>
 
     <button class="nav-toggle" id="navToggle" data-i18n-aria="aria_toggle_menu" aria-label="Toggle menu">
       <span></span><span></span><span></span>
