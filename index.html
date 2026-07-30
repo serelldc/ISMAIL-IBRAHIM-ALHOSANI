@@ -485,7 +485,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
     <form class="contact-form" id="contactForm">
       <input type="text" name="name" data-i18n-placeholder="form_name" placeholder="Full Name" required>
       <input type="email" name="email" data-i18n-placeholder="form_email" placeholder="Email Address" required>
-      <input type="tel" name="phone" data-i18n-placeholder="form_phone" placeholder="Phone Number"><select name="case_category" required><option value="" disabled selected>Case Category</option><option value="Family Law">Family Law</option><option value="Criminal Law">Criminal Law</option><option value="Civil Law">Civil Law</option><option value="Commercial &amp; Corporate Law">Commercial &amp; Corporate Law</option><option value="Real Estate Law">Real Estate Law</option><option value="Labor &amp; Employment Law">Labor &amp; Employment Law</option><option value="Arbitration">Arbitration</option><option value="Inheritance Law">Inheritance Law</option><option value="Company Formation">Company Formation</option><option value="Construction Law">Construction Law</option><option value="Banking Law">Banking Law</option><option value="Intellectual Property Law">Intellectual Property Law</option><option value="Maritime Law">Maritime Law</option><option value="Sports Law">Sports Law</option><option value="Other">Other</option></select>
+      <input type="tel" name="phone" data-i18n-placeholder="form_phone" placeholder="Phone Number"><select name="case_category" required><option value="" disabled selected data-i18n="case_category_label">Case Category</option><option value="Family Law" data-i18n="practice_1">Family Law</option><option value="Criminal Law" data-i18n="practice_2">Criminal Law</option><option value="Civil Law" data-i18n="practice_3">Civil Law</option><option value="Commercial &amp; Corporate Law" data-i18n="practice_4">Commercial &amp; Corporate Law</option><option value="Real Estate Law" data-i18n="practice_5">Real Estate Law</option><option value="Labor &amp; Employment Law" data-i18n="practice_6">Labor &amp; Employment Law</option><option value="Arbitration" data-i18n="practice_7">Arbitration</option><option value="Inheritance Law" data-i18n="practice_8">Inheritance Law</option><option value="Company Formation" data-i18n="practice_9">Company Formation</option><option value="Construction Law" data-i18n="practice_10">Construction Law</option><option value="Banking Law" data-i18n="practice_11">Banking Law</option><option value="Intellectual Property Law" data-i18n="practice_12">Intellectual Property Law</option><option value="Maritime Law" data-i18n="practice_13">Maritime Law</option><option value="Sports Law" data-i18n="practice_14">Sports Law</option><option value="Other" data-i18n="option_other">Other</option></select>
       <textarea rows="5" name="message" data-i18n-placeholder="form_message" placeholder="How can we help you?" required></textarea>
       <button type="submit" class="btn-primary" data-i18n="form_submit">Send Message</button>
     </form>
@@ -587,7 +587,7 @@ en: {
   faq_q4:"How do I book a consultation?", faq_a4:"Call, email, or use the contact form below and we will respond promptly.",
   contact_title:"Get in Touch", ph_street_address:"[Building / street name — confirm exact address]", office_city:"Office 317, Dubai, UAE",
   contact_phone_label:"Phone:", contact_email_label:"Email:", contact_hours_label:"Office Hours:", ph_days_hours:"[Days], [Hours] — confirm with client]",
-  form_name:"Full Name", form_email:"Email Address", form_phone:"Phone Number", form_message:"How can we help you?", form_submit:"Send Message",
+  form_name:"Full Name", form_email:"Email Address", form_phone:"Phone Number", form_message:"How can we help you?", form_submit:"Send Message",case_category_label:"Case Category",option_other:"Other",
   footer_tagline:"Advocates & legal consultants serving Dubai and the UAE.",
   footer_quicklinks:"Quick Links", footer_practice_areas:"Practice Areas", footer_follow:"Follow Us",
   footer_copyright_rest:"Ismail Ibrahim Alhosani Advocates & Legal Consultants. All rights reserved."
@@ -646,7 +646,7 @@ ar: {
   faq_q4:"كيف يمكنني حجز استشارة؟", faq_a4:"اتصل، راسلنا، أو استخدم نموذج الاتصال أدناه وسنرد بسرعة.",
   contact_title:"تواصل معنا", ph_street_address:"[اسم المبنى / الشارع — يُؤكد مع العميل]", office_city:"مكتب 317، دبي، الإمارات",
   contact_phone_label:"الهاتف:", contact_email_label:"البريد الإلكتروني:", contact_hours_label:"ساعات العمل:", ph_days_hours:"[الأيام]، [الساعات] — يُؤكد مع العميل]",
-  form_name:"الاسم الكامل", form_email:"البريد الإلكتروني", form_phone:"رقم الهاتف", form_message:"كيف يمكننا مساعدتك؟", form_submit:"إرسال الرسالة",
+  form_name:"الاسم الكامل", form_email:"البريد الإلكتروني", form_phone:"رقم الهاتف", form_message:"كيف يمكننا مساعدتك؟", form_submit:"إرسال الرسالة",case_category_label:"فئة القضية",option_other:"أخرى",
   footer_tagline:"محامون ومستشارون قانونيون نخدم دبي والإمارات.",
   footer_quicklinks:"روابط سريعة", footer_practice_areas:"مجالات الممارسة", footer_follow:"تابعنا",
   footer_copyright_rest:"اسماعيل ابراهيم الحوسني للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة."
@@ -705,7 +705,7 @@ zh: {
   faq_q4:"如何预约咨询?", faq_a4:"请致电、发送电子邮件,或使用下方联系表单,我们会尽快回复。",
   contact_title:"联系我们", ph_street_address:"[建筑物/街道名称 — 待与客户确认]", office_city:"317室,迪拜,阿联酋",
   contact_phone_label:"电话:", contact_email_label:"电子邮箱:", contact_hours_label:"办公时间:", ph_days_hours:"[工作日]、[时间] — 待与客户确认]",
-  form_name:"姓名", form_email:"电子邮箱", form_phone:"电话号码", form_message:"我们能为您提供什么帮助?", form_submit:"发送信息",
+  form_name:"姓名", form_email:"电子邮箱", form_phone:"电话号码", form_message:"我们能为您提供什么帮助?", form_submit:"发送信息",case_category_label:"案件类别",option_other:"其他",
   footer_tagline:"服务于迪拜及阿联酋的律师与法律顾问。",
   footer_quicklinks:"快速链接", footer_practice_areas:"业务领域", footer_follow:"关注我们",
   footer_copyright_rest:"Ismail Ibrahim Alhosani 律师事务所与法律顾问。版权所有。"
@@ -764,7 +764,7 @@ ru: {
   faq_q4:"Как записаться на консультацию?", faq_a4:"Позвоните, напишите на почту или воспользуйтесь формой ниже — мы оперативно ответим.",
   contact_title:"Свяжитесь с нами", ph_street_address:"[Название здания / улицы — уточнить у клиента]", office_city:"Офис 317, Дубай, ОАЭ",
   contact_phone_label:"Телефон:", contact_email_label:"Эл. почта:", contact_hours_label:"Часы работы:", ph_days_hours:"[Дни], [Часы] — уточнить у клиента]",
-  form_name:"Имя", form_email:"Эл. почта", form_phone:"Номер телефона", form_message:"Чем мы можем вам помочь?", form_submit:"Отправить",
+  form_name:"Имя", form_email:"Эл. почта", form_phone:"Номер телефона", form_message:"Чем мы можем вам помочь?", form_submit:"Отправить",case_category_label:"Категория дела",option_other:"Другое",
   footer_tagline:"Адвокаты и юридические консультанты, работающие в Дубае и ОАЭ.",
   footer_quicklinks:"Быстрые ссылки", footer_practice_areas:"Практика", footer_follow:"Мы в соцсетях",
   footer_copyright_rest:"Ismail Ibrahim Alhosani Advocates & Legal Consultants. Все права защищены."
@@ -823,7 +823,7 @@ de: {
   faq_q4:"Wie kann ich einen Beratungstermin vereinbaren?", faq_a4:"Rufen Sie an, schreiben Sie eine E-Mail oder nutzen Sie das Kontaktformular unten — wir antworten umgehend.",
   contact_title:"Kontaktieren Sie uns", ph_street_address:"[Gebäude-/Straßenname — mit Mandant bestätigen]", office_city:"Büro 317, Dubai, VAE",
   contact_phone_label:"Telefon:", contact_email_label:"E-Mail:", contact_hours_label:"Bürozeiten:", ph_days_hours:"[Tage], [Uhrzeiten] — mit Mandant bestätigen]",
-  form_name:"Vollständiger Name", form_email:"E-Mail-Adresse", form_phone:"Telefonnummer", form_message:"Wie können wir Ihnen helfen?", form_submit:"Nachricht senden",
+  form_name:"Vollständiger Name", form_email:"E-Mail-Adresse", form_phone:"Telefonnummer", form_message:"Wie können wir Ihnen helfen?", form_submit:"Nachricht senden",case_category_label:"Fallkategorie",option_other:"Sonstiges",
   footer_tagline:"Anwälte und Rechtsberater in Dubai und den VAE.",
   footer_quicklinks:"Schnellzugriff", footer_practice_areas:"Rechtsgebiete", footer_follow:"Folgen Sie uns",
   footer_copyright_rest:"Ismail Ibrahim Alhosani Advocates & Legal Consultants. Alle Rechte vorbehalten."
