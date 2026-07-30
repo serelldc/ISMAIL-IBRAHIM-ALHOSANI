@@ -172,7 +172,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
 .contact-info p{color:var(--grey);font-size:14.5px;margin-bottom:14px;}
 .contact-info a{color:var(--gold-light);}
 .contact-form{display:flex;flex-direction:column;gap:14px;}
-.contact-form input,.contact-form textarea{background:var(--black);border:1px solid rgba(201,162,75,0.3);color:var(--cream);padding:13px 16px;border-radius:4px;font-family:inherit;font-size:14px;}
+.contact-form select{-webkit-appearance:none;appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9a24b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px;padding-inline-end:40px;}.contact-form input,.contact-form select,.contact-form textarea{background:var(--black);border:1px solid rgba(201,162,75,0.3);color:var(--cream);padding:13px 16px;border-radius:4px;font-family:inherit;font-size:14px;}
 .contact-form textarea{resize:vertical;}
 .contact-form button{cursor:pointer;border:none;}
 
@@ -485,7 +485,7 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
     <form class="contact-form" id="contactForm">
       <input type="text" name="name" data-i18n-placeholder="form_name" placeholder="Full Name" required>
       <input type="email" name="email" data-i18n-placeholder="form_email" placeholder="Email Address" required>
-      <input type="tel" name="phone" data-i18n-placeholder="form_phone" placeholder="Phone Number">
+      <input type="tel" name="phone" data-i18n-placeholder="form_phone" placeholder="Phone Number"><select name="case_category" required><option value="" disabled selected>Case Category</option><option value="Family Law">Family Law</option><option value="Criminal Law">Criminal Law</option><option value="Civil Law">Civil Law</option><option value="Commercial &amp; Corporate Law">Commercial &amp; Corporate Law</option><option value="Real Estate Law">Real Estate Law</option><option value="Labor &amp; Employment Law">Labor &amp; Employment Law</option><option value="Arbitration">Arbitration</option><option value="Inheritance Law">Inheritance Law</option><option value="Company Formation">Company Formation</option><option value="Construction Law">Construction Law</option><option value="Banking Law">Banking Law</option><option value="Intellectual Property Law">Intellectual Property Law</option><option value="Maritime Law">Maritime Law</option><option value="Sports Law">Sports Law</option><option value="Other">Other</option></select>
       <textarea rows="5" name="message" data-i18n-placeholder="form_message" placeholder="How can we help you?" required></textarea>
       <button type="submit" class="btn-primary" data-i18n="form_submit">Send Message</button>
     </form>
