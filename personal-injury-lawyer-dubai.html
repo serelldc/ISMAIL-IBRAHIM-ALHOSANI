@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Personal Injury Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Personal injury claims in the UAE require clear medical and factual documentation from the outset.">
+<meta name="description" content="Pursuing compensation for road traffic, workplace, and premises accidents in Dubai, including medical evidence, insurance coordination, and diya claims.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,386 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="civil-law.html">Civil Law</a> &rsaquo; Personal Injury Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="civil-law.html" data-i18n="civil_law">Civil Law</a> &rsaquo; <span data-i18n="page_title">Personal Injury Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Personal Injury Lawyer in Dubai</h1>
-  <p class="lead">Personal injury claims in the UAE require clear medical and factual documentation from the outset.</p>
-  <div class="box">This covers compensation claims arising from accidents and injuries caused by another party's conduct.</div>
-  <p class="body-p">The firm represents injured clients in pursuing compensation for medical costs, lost income, and related losses.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Personal Injury Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">An accident that leaves you injured creates both a medical recovery to manage and a legal claim to prove — and the two run on very different timelines.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A personal injury lawyer in Dubai pursues compensation on behalf of individuals injured in road traffic accidents, workplace accidents, and other incidents caused by another party's fault, working alongside the medical and insurance processes that follow.</div>
+
+<p class="body-p" data-i18n="p1">Personal injury claims in the UAE often begin with a police report, particularly for road traffic and workplace accidents, and that report frequently becomes central evidence in both any criminal or administrative process and the separate civil claim for compensation. Medical documentation — treatment records, specialist assessments, and where relevant, a permanent disability rating — is equally central, since compensation is tied directly to the nature and extent of the injury.</p>
+<p class="body-p" data-i18n="p2">Where a vehicle or employer's insurance is involved, the claim frequently proceeds partly through the insurer and partly through the courts, and understanding how those two tracks interact is often decisive in how quickly and fully a claim is resolved. In cases of death or serious permanent injury, UAE law also recognises diya and related compensation concepts alongside ordinary civil damages, adding a further layer to how the claim is structured.</p>
+<p class="body-p" data-i18n="p3">Because medical treatment is often ongoing at the time a claim is being assessed, timing matters: pursuing a claim too early can undervalue an injury whose full extent is not yet known, while waiting too long risks running into limitation periods. Getting this balance right, together with securing the right medical and, where needed, accident-reconstruction evidence, shapes the outcome as much as the underlying facts of the accident itself.</p>
+
+<h2 data-i18n="h2_how">How Personal Injury Claims Are Handled</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Accident & Police Report Review</strong><span data-i18n="step1_d">The circumstances of the accident and any police or incident report are reviewed to establish fault and the sequence of events.</span></li>
+<li><strong data-i18n="step2_t">Medical Evidence Gathering</strong><span data-i18n="step2_d">Treatment records, specialist assessments, and disability ratings are gathered to document the nature and extent of the injury.</span></li>
+<li><strong data-i18n="step3_t">Insurance Coordination</strong><span data-i18n="step3_d">Where vehicle or employer insurance is involved, the claim is coordinated with the insurer alongside any separate civil proceedings.</span></li>
+<li><strong data-i18n="step4_t">Claim Valuation</strong><span data-i18n="step4_d">The claim is valued based on medical evidence, lost income, and, in appropriate cases, diya or related compensation concepts.</span></li>
+<li><strong data-i18n="step5_t">Filing & Court Proceedings</strong><span data-i18n="step5_d">Where the matter is not resolved through insurance or negotiation, the claim is filed and proceeds through the civil courts.</span></li>
+<li><strong data-i18n="step6_t">Judgment & Recovery</strong><span data-i18n="step6_d">Following judgment or settlement, compensation is pursued through payment or, where necessary, execution proceedings.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Personal Injury Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You were injured in a road traffic accident caused by another driver.</li>
+<li data-i18n="sc2">You were injured in a workplace accident and need to understand your compensation options.</li>
+<li data-i18n="sc3">You suffered an injury on someone else's property due to unsafe conditions.</li>
+<li data-i18n="sc4">You are unsure whether to accept an insurer's settlement offer for your injury.</li>
+<li data-i18n="sc5">You have a permanent disability resulting from an accident and need it properly valued.</li>
+<li data-i18n="sc6">A family member has died or been seriously injured in an accident and you need advice on diya and compensation.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Assessment of fault and liability following an accident</li>
+<li data-i18n="sv2">Coordination with medical providers to document injury and disability</li>
+<li data-i18n="sv3">Liaison with insurers on motor and employer liability claims</li>
+<li data-i18n="sv4">Valuation of personal injury claims, including diya where applicable</li>
+<li data-i18n="sv5">Negotiation of settlements with insurers and opposing parties</li>
+<li data-i18n="sv6">Filing and pursuing personal injury claims through the civil courts</li>
+<li data-i18n="sv7">Enforcement of judgments and settlement agreements</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Do I need a police report to bring a personal injury claim?</summary>
+<p data-i18n="faq1_a">For road traffic and many workplace accidents, a police or incident report is important evidence and is usually the starting point for both any related process and the civil claim.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Should I accept the insurer's first settlement offer?</summary>
+<p data-i18n="faq2_a">Not necessarily — an early offer may not reflect the full extent of the injury, especially where treatment or a disability assessment is still ongoing.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What is diya and when does it apply?</summary>
+<p data-i18n="faq3_a">Diya is a compensation concept recognised under UAE law in cases of death or serious injury, applied alongside ordinary civil damages in appropriate cases.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">How is a permanent disability valued in a claim?</summary>
+<p data-i18n="faq4_a">A formal disability assessment or rating is generally required, and this rating plays a significant role in how the overall claim is valued.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Is there a time limit to bring a personal injury claim?</summary>
+<p data-i18n="faq5_a">Yes — limitation periods apply, so it is important not to delay too long while treatment or negotiations are ongoing.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",civil_law:"Civil Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Personal Injury Lawyer in Dubai",
+lead:"An accident that leaves you injured creates both a medical recovery to manage and a legal claim to prove — and the two run on very different timelines.",
+box:"A personal injury lawyer in Dubai pursues compensation on behalf of individuals injured in road traffic accidents, workplace accidents, and other incidents caused by another party's fault, working alongside the medical and insurance processes that follow.",
+p1:"Personal injury claims in the UAE often begin with a police report, particularly for road traffic and workplace accidents, and that report frequently becomes central evidence in both any criminal or administrative process and the separate civil claim for compensation. Medical documentation — treatment records, specialist assessments, and where relevant, a permanent disability rating — is equally central, since compensation is tied directly to the nature and extent of the injury.",
+p2:"Where a vehicle or employer's insurance is involved, the claim frequently proceeds partly through the insurer and partly through the courts, and understanding how those two tracks interact is often decisive in how quickly and fully a claim is resolved. In cases of death or serious permanent injury, UAE law also recognises diya and related compensation concepts alongside ordinary civil damages, adding a further layer to how the claim is structured.",
+p3:"Because medical treatment is often ongoing at the time a claim is being assessed, timing matters: pursuing a claim too early can undervalue an injury whose full extent is not yet known, while waiting too long risks running into limitation periods. Getting this balance right, together with securing the right medical and, where needed, accident-reconstruction evidence, shapes the outcome as much as the underlying facts of the accident itself.",
+h2_how:"How Personal Injury Claims Are Handled",
+step1_t:"Accident & Police Report Review",step1_d:"The circumstances of the accident and any police or incident report are reviewed to establish fault and the sequence of events.",
+step2_t:"Medical Evidence Gathering",step2_d:"Treatment records, specialist assessments, and disability ratings are gathered to document the nature and extent of the injury.",
+step3_t:"Insurance Coordination",step3_d:"Where vehicle or employer insurance is involved, the claim is coordinated with the insurer alongside any separate civil proceedings.",
+step4_t:"Claim Valuation",step4_d:"The claim is valued based on medical evidence, lost income, and, in appropriate cases, diya or related compensation concepts.",
+step5_t:"Filing & Court Proceedings",step5_d:"Where the matter is not resolved through insurance or negotiation, the claim is filed and proceeds through the civil courts.",
+step6_t:"Judgment & Recovery",step6_d:"Following judgment or settlement, compensation is pursued through payment or, where necessary, execution proceedings.",
+h2_when:"When You Need a Personal Injury Lawyer",
+sc1:"You were injured in a road traffic accident caused by another driver.",
+sc2:"You were injured in a workplace accident and need to understand your compensation options.",
+sc3:"You suffered an injury on someone else's property due to unsafe conditions.",
+sc4:"You are unsure whether to accept an insurer's settlement offer for your injury.",
+sc5:"You have a permanent disability resulting from an accident and need it properly valued.",
+sc6:"A family member has died or been seriously injured in an accident and you need advice on diya and compensation.",
+h2_services:"Services We Provide",
+sv1:"Assessment of fault and liability following an accident",
+sv2:"Coordination with medical providers to document injury and disability",
+sv3:"Liaison with insurers on motor and employer liability claims",
+sv4:"Valuation of personal injury claims, including diya where applicable",
+sv5:"Negotiation of settlements with insurers and opposing parties",
+sv6:"Filing and pursuing personal injury claims through the civil courts",
+sv7:"Enforcement of judgments and settlement agreements",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Do I need a police report to bring a personal injury claim?",faq1_a:"For road traffic and many workplace accidents, a police or incident report is important evidence and is usually the starting point for both any related process and the civil claim.",
+faq2_q:"Should I accept the insurer's first settlement offer?",faq2_a:"Not necessarily — an early offer may not reflect the full extent of the injury, especially where treatment or a disability assessment is still ongoing.",
+faq3_q:"What is diya and when does it apply?",faq3_a:"Diya is a compensation concept recognised under UAE law in cases of death or serious injury, applied alongside ordinary civil damages in appropriate cases.",
+faq4_q:"How is a permanent disability valued in a claim?",faq4_a:"A formal disability assessment or rating is generally required, and this rating plays a significant role in how the overall claim is valued.",
+faq5_q:"Is there a time limit to bring a personal injury claim?",faq5_a:"Yes — limitation periods apply, so it is important not to delay too long while treatment or negotiations are ongoing."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",civil_law:"القانون المدني",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي الإصابات الشخصية في دبي",
+lead:"الحادث الذي يخلف إصابة يخلق تعافيًا طبيًا يجب إدارته ومطالبة قانونية يجب إثباتها — وكلاهما يسير وفق جداول زمنية مختلفة تمامًا.",
+box:"يتابع محامي الإصابات الشخصية في دبي التعويض نيابة عن الأفراد المصابين في حوادث المرور، وحوادث العمل، وغيرها من الحوادث الناجمة عن خطأ طرف آخر، بالتنسيق مع العمليات الطبية والتأمينية التي تليها.",
+p1:"غالبًا ما تبدأ مطالبات الإصابات الشخصية في الإمارات بمحضر شرطة، لا سيما في حوادث المرور والعمل، ويصبح ذلك المحضر غالبًا دليلاً محوريًا في أي إجراء جنائي أو إداري وفي دعوى التعويض المدنية المنفصلة على حد سواء. والتوثيق الطبي — سجلات العلاج، وتقييمات الأخصائيين، وحيثما ينطبق، نسبة العجز الدائم — لا يقل أهمية، إذ يرتبط التعويض ارتباطًا مباشرًا بطبيعة الإصابة ومداها.",
+p2:"عندما يكون تأمين مركبة أو صاحب عمل معنيًا، غالبًا ما تسير المطالبة جزئيًا عبر شركة التأمين وجزئيًا عبر المحاكم، وفهم كيفية تفاعل هذين المسارين غالبًا ما يكون حاسمًا في مدى سرعة واكتمال حل المطالبة. وفي حالات الوفاة أو الإصابة الدائمة الجسيمة، يقر القانون الإماراتي أيضًا بمفهوم الدية ومفاهيم التعويض ذات الصلة إلى جانب التعويضات المدنية العادية، مما يضيف طبقة أخرى إلى كيفية هيكلة المطالبة.",
+p3:"نظرًا لأن العلاج الطبي غالبًا ما يكون مستمرًا وقت تقييم المطالبة، فإن التوقيت مهم: فمتابعة المطالبة مبكرًا جدًا قد يقلل من قيمة إصابة لم يُعرف مداها الكامل بعد، في حين أن الانتظار طويلاً قد يعرضك لخطر انقضاء مدد التقادم. وتحقيق هذا التوازن الصحيح، إلى جانب تأمين الأدلة الطبية المناسبة، وعند الحاجة، أدلة إعادة بناء الحادث، يشكل النتيجة بقدر ما تشكلها وقائع الحادث الأساسية نفسها.",
+h2_how:"كيف تُدار مطالبات الإصابات الشخصية",
+step1_t:"مراجعة الحادث ومحضر الشرطة",step1_d:"تُراجع ظروف الحادث وأي محضر شرطة أو حادث لإثبات الخطأ وتسلسل الأحداث.",
+step2_t:"جمع الأدلة الطبية",step2_d:"تُجمع سجلات العلاج وتقييمات الأخصائيين ونسب العجز لتوثيق طبيعة الإصابة ومداها.",
+step3_t:"التنسيق مع التأمين",step3_d:"عندما يكون تأمين مركبة أو صاحب عمل معنيًا، تُنسَّق المطالبة مع شركة التأمين إلى جانب أي إجراءات مدنية منفصلة.",
+step4_t:"تقدير المطالبة",step4_d:"تُقيَّم المطالبة بناءً على الأدلة الطبية والدخل الفائت، وفي الحالات المناسبة، الدية أو مفاهيم التعويض ذات الصلة.",
+step5_t:"التقديم والإجراءات القضائية",step5_d:"حيثما لا تُحل المسألة عبر التأمين أو التفاوض، تُقدَّم المطالبة وتسير عبر المحاكم المدنية.",
+step6_t:"الحكم والتحصيل",step6_d:"عقب صدور الحكم أو التسوية، يُتابع التعويض من خلال السداد أو، عند الضرورة، إجراءات التنفيذ.",
+h2_when:"متى تحتاج إلى محامي إصابات شخصية",
+sc1:"أُصبت في حادث مروري تسبب فيه سائق آخر.",
+sc2:"أُصبت في حادث عمل وتحتاج إلى فهم خيارات التعويض المتاحة لك.",
+sc3:"تعرضت لإصابة في ممتلكات شخص آخر بسبب ظروف غير آمنة.",
+sc4:"لست متأكدًا مما إذا كنت ستقبل عرض تسوية شركة التأمين عن إصابتك.",
+sc5:"لديك عجز دائم ناتج عن حادث وتحتاج إلى تقييمه بشكل صحيح.",
+sc6:"توفي أحد أفراد عائلتك أو أُصيب إصابة بالغة في حادث وتحتاج إلى المشورة بشأن الدية والتعويض.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تقييم الخطأ والمسؤولية عقب الحادث",
+sv2:"التنسيق مع مقدمي الرعاية الطبية لتوثيق الإصابة والعجز",
+sv3:"التواصل مع شركات التأمين بشأن مطالبات مسؤولية المركبات وأصحاب العمل",
+sv4:"تقدير مطالبات الإصابات الشخصية، بما في ذلك الدية حيثما انطبقت",
+sv5:"التفاوض على التسويات مع شركات التأمين والأطراف الخصمة",
+sv6:"تقديم ومتابعة مطالبات الإصابات الشخصية أمام المحاكم المدنية",
+sv7:"تنفيذ الأحكام واتفاقيات التسوية",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل أحتاج إلى محضر شرطة لرفع مطالبة إصابة شخصية؟",faq1_a:"بالنسبة لحوادث المرور والعديد من حوادث العمل، يُعد محضر الشرطة أو الحادث دليلاً مهمًا وعادةً ما يكون نقطة البداية لكل من أي إجراء ذي صلة والدعوى المدنية.",
+faq2_q:"هل ينبغي أن أقبل عرض التسوية الأول من شركة التأمين؟",faq2_a:"ليس بالضرورة — فالعرض المبكر قد لا يعكس المدى الكامل للإصابة، خاصةً إذا كان العلاج أو تقييم العجز لا يزال جاريًا.",
+faq3_q:"ما هي الدية ومتى تنطبق؟",faq3_a:"الدية مفهوم تعويضي يقر به القانون الإماراتي في حالات الوفاة أو الإصابة البالغة، ويُطبَّق إلى جانب التعويضات المدنية العادية في الحالات المناسبة.",
+faq4_q:"كيف يُقيَّم العجز الدائم في المطالبة؟",faq4_a:"يُطلب عمومًا تقييم أو نسبة عجز رسمية، وتلعب هذه النسبة دورًا كبيرًا في كيفية تقييم المطالبة الإجمالية.",
+faq5_q:"هل هناك مدة زمنية محددة لرفع مطالبة إصابة شخصية؟",faq5_a:"نعم — تُطبَّق مدد تقادم، لذا من المهم عدم التأخر كثيرًا أثناء استمرار العلاج أو المفاوضات."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",civil_law:"民法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜人身伤害索赔律师",
+lead:"一场造成伤害的事故，既带来需要处理的医疗康复问题，也带来需要证明的法律索赔——而这两者遵循着截然不同的时间线。",
+box:"迪拜人身伤害索赔律师代表因道路交通事故、工伤事故及其他因他方过错造成的事故而受伤的个人追讨赔偿，并配合随之而来的医疗及保险程序开展工作。",
+p1:"阿联酋的人身伤害索赔通常始于一份警方报告，尤其是道路交通事故和工伤事故，该报告往往成为任何相关刑事或行政程序以及单独的民事赔偿索赔中的核心证据。医疗记录——治疗记录、专科评估，以及在相关情况下的永久伤残评级——同样至关重要，因为赔偿金额与伤害的性质及程度直接挂钩。",
+p2:"当涉及车辆或雇主保险时，索赔往往部分通过保险公司、部分通过法院进行，理解这两条途径如何相互作用，通常是决定索赔能否迅速且充分解决的关键。在死亡或严重永久伤害的情况下，阿联酋法律还承认迪亚（血金）及相关赔偿概念，与普通民事损害赔偿并行适用，为索赔的结构增添了另一层内容。",
+p3:"由于在评估索赔时医疗治疗往往仍在进行中，时机至关重要：过早提出索赔可能低估一项尚未完全显现的伤害价值，而拖延过久则可能面临时效期限的风险。妥善把握这一平衡，连同获取恰当的医疗证据，以及必要时的事故重建证据，对结果的影响不亚于事故本身的事实情况。",
+h2_how:"人身伤害索赔的处理流程",
+step1_t:"事故与警方报告审查",step1_d:"审查事故的具体情况及任何警方或事故报告，以确定过错及事件经过。",
+step2_t:"医疗证据收集",step2_d:"收集治疗记录、专科评估及伤残评级，以记录伤害的性质及程度。",
+step3_t:"保险协调",step3_d:"在涉及车辆或雇主保险的情况下，索赔将与保险公司协调进行，同时兼顾任何单独的民事诉讼程序。",
+step4_t:"索赔估值",step4_d:"根据医疗证据、收入损失，以及在适当情况下的迪亚或相关赔偿概念，对索赔进行估值。",
+step5_t:"提起诉讼与法院程序",step5_d:"若未能通过保险或协商解决，索赔将被提交并经过民事法院程序。",
+step6_t:"判决与追偿",step6_d:"判决或和解达成后，将通过付款或必要时的强制执行程序追讨赔偿。",
+h2_when:"何时需要人身伤害索赔律师",
+sc1:"您在由另一名司机造成的道路交通事故中受伤。",
+sc2:"您在工伤事故中受伤，需要了解可获得的赔偿选择。",
+sc3:"您因他人房产上的不安全状况而受伤。",
+sc4:"您不确定是否应接受保险公司就您的伤害提出的和解方案。",
+sc5:"您因事故导致永久伤残，需要对其进行妥善评估。",
+sc6:"您的家庭成员在事故中身亡或受重伤，您需要就迪亚及赔偿事宜获取法律意见。",
+h2_services:"我们提供的服务",
+sv1:"事故发生后的过错与责任评估",
+sv2:"与医疗机构协调以记录伤害及伤残情况",
+sv3:"就车辆及雇主责任索赔与保险公司联络",
+sv4:"人身伤害索赔的估值，包括适用情况下的迪亚",
+sv5:"与保险公司及对方当事人进行和解谈判",
+sv6:"通过民事法院提起并推进人身伤害索赔",
+sv7:"判决及和解协议的执行",
+h2_faq:"常见问题",
+faq1_q:"我需要警方报告才能提起人身伤害索赔吗？",faq1_a:"对于道路交通事故及许多工伤事故而言，警方或事故报告是重要证据，通常也是任何相关程序及民事索赔的起点。",
+faq2_q:"我应该接受保险公司的首次和解方案吗？",faq2_a:"不一定——早期方案可能未能反映伤害的全部程度，尤其是在治疗或伤残评估仍在进行时。",
+faq3_q:"什么是迪亚，何时适用？",faq3_a:"迪亚是阿联酋法律在死亡或严重伤害情况下所承认的一种赔偿概念，在适当情况下与普通民事损害赔偿并行适用。",
+faq4_q:"索赔中永久伤残如何评估？",faq4_a:"通常需要一份正式的伤残评估或评级，该评级在整体索赔的估值中发挥重要作用。",
+faq5_q:"提起人身伤害索赔有时间限制吗？",faq5_a:"有——适用时效期限，因此在治疗或谈判仍在进行时，不宜拖延过久。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",civil_law:"Гражданское право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по искам о причинении вреда здоровью в Дубае",
+lead:"Несчастный случай, повлёкший травму, порождает как медицинское восстановление, которым нужно управлять, так и правовое требование, которое нужно доказать, — и эти два процесса развиваются по совершенно разным срокам.",
+box:"Адвокат по искам о причинении вреда здоровью в Дубае добивается компенсации для лиц, пострадавших в дорожно-транспортных происшествиях, несчастных случаях на производстве и иных инцидентах, произошедших по вине другой стороны, работая параллельно с последующими медицинскими и страховыми процедурами.",
+p1:"Иски о причинении вреда здоровью в ОАЭ часто начинаются с полицейского протокола, особенно в случае дорожно-транспортных происшествий и несчастных случаев на производстве, и этот протокол часто становится центральным доказательством как в любом уголовном или административном процессе, так и в отдельном гражданском иске о компенсации. Медицинская документация — записи о лечении, заключения специалистов и, где применимо, оценка степени стойкой утраты трудоспособности — не менее важна, поскольку компенсация напрямую связана с характером и степенью травмы.",
+p2:"Когда речь идёт о страховании транспортного средства или работодателя, иск часто продвигается частично через страховщика, а частично через суды, и понимание того, как эти два пути взаимодействуют, зачастую является решающим для того, насколько быстро и полно будет урегулирован иск. В случаях смерти или тяжёлого стойкого увечья законодательство ОАЭ также признаёт дийю и связанные с ней концепции компенсации наряду с обычным гражданским возмещением вреда, добавляя ещё один уровень к структуре требования.",
+p3:"Поскольку медицинское лечение часто продолжается на момент оценки иска, важен выбор времени: слишком раннее предъявление иска может занизить стоимость травмы, полный масштаб которой ещё не известен, тогда как слишком долгое ожидание рискует столкнуться со сроками исковой давности. Правильный баланс, наряду с обеспечением надлежащих медицинских доказательств и, при необходимости, доказательств реконструкции происшествия, определяет исход дела не в меньшей степени, чем сами фактические обстоятельства аварии.",
+h2_how:"Как рассматриваются иски о причинении вреда здоровью",
+step1_t:"Анализ происшествия и полицейского протокола",step1_d:"Обстоятельства происшествия и любой полицейский протокол или отчёт об инциденте анализируются для установления вины и последовательности событий.",
+step2_t:"Сбор медицинских доказательств",step2_d:"Собираются записи о лечении, заключения специалистов и оценки степени утраты трудоспособности для документирования характера и степени травмы.",
+step3_t:"Координация со страховщиком",step3_d:"В случаях, связанных со страхованием транспортного средства или работодателя, иск координируется со страховщиком наряду с любым отдельным гражданским производством.",
+step4_t:"Оценка иска",step4_d:"Иск оценивается на основе медицинских доказательств, утраченного дохода и, в соответствующих случаях, дийи или связанных концепций компенсации.",
+step5_t:"Подача иска и судебное разбирательство",step5_d:"Если вопрос не урегулирован через страхование или переговоры, иск подаётся и рассматривается в гражданских судах.",
+step6_t:"Решение и взыскание",step6_d:"После вынесения решения или заключения мирового соглашения компенсация взыскивается посредством оплаты или, при необходимости, исполнительного производства.",
+h2_when:"Когда вам нужен адвокат по искам о причинении вреда здоровью",
+sc1:"Вы получили травму в дорожно-транспортном происшествии по вине другого водителя.",
+sc2:"Вы получили травму в результате несчастного случая на производстве и хотите узнать о вариантах компенсации.",
+sc3:"Вы получили травму на чужой территории из-за небезопасных условий.",
+sc4:"Вы не уверены, стоит ли принимать предложение страховщика по урегулированию вашей травмы.",
+sc5:"У вас стойкая утрата трудоспособности в результате несчастного случая, и её необходимо надлежащим образом оценить.",
+sc6:"Член вашей семьи погиб или получил тяжёлую травму в результате несчастного случая, и вам нужна консультация по дийе и компенсации.",
+h2_services:"Наши услуги",
+sv1:"Оценка вины и ответственности после происшествия",
+sv2:"Координация с медицинскими учреждениями для документирования травмы и утраты трудоспособности",
+sv3:"Взаимодействие со страховщиками по искам об ответственности транспортных средств и работодателей",
+sv4:"Оценка исков о причинении вреда здоровью, включая дийю, где это применимо",
+sv5:"Переговоры об урегулировании со страховщиками и противоположными сторонами",
+sv6:"Подача и ведение исков о причинении вреда здоровью в гражданских судах",
+sv7:"Исполнение решений и соглашений об урегулировании",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Нужен ли мне полицейский протокол для подачи иска о причинении вреда здоровью?",faq1_a:"Для дорожно-транспортных происшествий и многих несчастных случаев на производстве полицейский протокол или отчёт об инциденте является важным доказательством и обычно служит отправной точкой как для любого связанного процесса, так и для гражданского иска.",
+faq2_q:"Стоит ли мне принимать первое предложение страховщика об урегулировании?",faq2_a:"Не обязательно — раннее предложение может не отражать полную степень травмы, особенно если лечение или оценка утраты трудоспособности ещё продолжаются.",
+faq3_q:"Что такое дийя и когда она применяется?",faq3_a:"Дийя — это концепция компенсации, признанная законодательством ОАЭ в случаях смерти или тяжёлой травмы, применяемая наряду с обычным гражданским возмещением вреда в соответствующих случаях.",
+faq4_q:"Как оценивается стойкая утрата трудоспособности в иске?",faq4_a:"Как правило, требуется официальная оценка или классификация степени утраты трудоспособности, и эта оценка играет значительную роль в определении общей стоимости иска.",
+faq5_q:"Существует ли срок для подачи иска о причинении вреда здоровью?",faq5_a:"Да — применяются сроки исковой давности, поэтому важно не затягивать слишком долго, пока продолжается лечение или переговоры."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",civil_law:"Zivilrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Personenschäden in Dubai",
+lead:"Ein Unfall, der Sie verletzt zurücklässt, schafft sowohl eine medizinische Genesung, die bewältigt werden muss, als auch einen rechtlichen Anspruch, der bewiesen werden muss — und beide folgen sehr unterschiedlichen Zeitplänen.",
+box:"Ein Anwalt für Personenschäden in Dubai verfolgt Entschädigungsansprüche im Namen von Personen, die bei Verkehrsunfällen, Arbeitsunfällen und anderen durch das Verschulden einer anderen Partei verursachten Vorfällen verletzt wurden, und arbeitet dabei mit den nachfolgenden medizinischen und versicherungsrechtlichen Verfahren zusammen.",
+p1:"Ansprüche wegen Personenschäden in den VAE beginnen oft mit einem Polizeibericht, insbesondere bei Verkehrs- und Arbeitsunfällen, und dieser Bericht wird häufig zum zentralen Beweismittel sowohl in einem etwaigen straf- oder verwaltungsrechtlichen Verfahren als auch im gesonderten zivilrechtlichen Entschädigungsanspruch. Die medizinische Dokumentation — Behandlungsunterlagen, fachärztliche Beurteilungen und, sofern relevant, eine Einstufung einer dauerhaften Behinderung — ist ebenso zentral, da die Entschädigung unmittelbar an Art und Ausmaß der Verletzung geknüpft ist.",
+p2:"Wenn eine Fahrzeug- oder Arbeitgeberversicherung beteiligt ist, verläuft der Anspruch häufig teils über den Versicherer und teils über die Gerichte, und das Verständnis dafür, wie diese beiden Wege zusammenwirken, ist oft entscheidend dafür, wie schnell und vollständig ein Anspruch geklärt wird. Bei Tod oder schwerer dauerhafter Verletzung erkennt das Recht der VAE zudem Diya und verwandte Entschädigungskonzepte neben dem gewöhnlichen zivilrechtlichen Schadensersatz an, was der Struktur des Anspruchs eine weitere Ebene hinzufügt.",
+p3:"Da die medizinische Behandlung zum Zeitpunkt der Bewertung eines Anspruchs oft noch andauert, spielt das Timing eine wichtige Rolle: Wird ein Anspruch zu früh verfolgt, kann eine Verletzung unterbewertet werden, deren volles Ausmaß noch nicht bekannt ist, während zu langes Warten das Risiko birgt, in Verjährungsfristen zu geraten. Dieses Gleichgewicht richtig zu treffen, zusammen mit der Sicherung der richtigen medizinischen und, falls erforderlich, unfallrekonstruktiven Beweise, prägt das Ergebnis ebenso stark wie die zugrunde liegenden Tatsachen des Unfalls selbst.",
+h2_how:"So werden Personenschadensansprüche behandelt",
+step1_t:"Prüfung von Unfall & Polizeibericht",step1_d:"Die Umstände des Unfalls und ein etwaiger Polizei- oder Vorfallbericht werden geprüft, um Verschulden und Geschehensablauf festzustellen.",
+step2_t:"Sammlung medizinischer Beweise",step2_d:"Behandlungsunterlagen, fachärztliche Beurteilungen und Behinderungseinstufungen werden gesammelt, um Art und Ausmaß der Verletzung zu dokumentieren.",
+step3_t:"Koordination mit der Versicherung",step3_d:"Ist eine Fahrzeug- oder Arbeitgeberversicherung beteiligt, wird der Anspruch mit dem Versicherer koordiniert, parallel zu etwaigen gesonderten Zivilverfahren.",
+step4_t:"Anspruchsbewertung",step4_d:"Der Anspruch wird auf Grundlage medizinischer Beweise, entgangenen Einkommens und, in geeigneten Fällen, Diya oder verwandter Entschädigungskonzepte bewertet.",
+step5_t:"Klageerhebung & Gerichtsverfahren",step5_d:"Wird die Angelegenheit nicht durch Versicherung oder Verhandlung gelöst, wird der Anspruch eingereicht und durchläuft die Zivilgerichte.",
+step6_t:"Urteil & Beitreibung",step6_d:"Nach Urteil oder Vergleich wird die Entschädigung durch Zahlung oder, falls erforderlich, durch Vollstreckungsverfahren beigetrieben.",
+h2_when:"Wann Sie einen Anwalt für Personenschäden brauchen",
+sc1:"Sie wurden bei einem Verkehrsunfall verletzt, der von einem anderen Fahrer verursacht wurde.",
+sc2:"Sie wurden bei einem Arbeitsunfall verletzt und möchten Ihre Entschädigungsmöglichkeiten verstehen.",
+sc3:"Sie haben sich auf dem Grundstück einer anderen Person aufgrund unsicherer Bedingungen verletzt.",
+sc4:"Sie sind unsicher, ob Sie das Vergleichsangebot eines Versicherers für Ihre Verletzung annehmen sollten.",
+sc5:"Sie haben eine dauerhafte Behinderung infolge eines Unfalls und benötigen deren ordnungsgemäße Bewertung.",
+sc6:"Ein Familienmitglied ist bei einem Unfall gestorben oder schwer verletzt worden, und Sie benötigen Beratung zu Diya und Entschädigung.",
+h2_services:"Unsere Leistungen",
+sv1:"Bewertung von Verschulden und Haftung nach einem Unfall",
+sv2:"Koordination mit medizinischen Anbietern zur Dokumentation von Verletzung und Behinderung",
+sv3:"Verbindung mit Versicherern zu Kfz- und Arbeitgeberhaftungsansprüchen",
+sv4:"Bewertung von Personenschadensansprüchen, einschließlich Diya, sofern zutreffend",
+sv5:"Verhandlung von Vergleichen mit Versicherern und Gegenparteien",
+sv6:"Einreichung und Verfolgung von Personenschadensansprüchen vor den Zivilgerichten",
+sv7:"Vollstreckung von Urteilen und Vergleichsvereinbarungen",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Brauche ich einen Polizeibericht, um einen Personenschadensanspruch geltend zu machen?",faq1_a:"Bei Verkehrsunfällen und vielen Arbeitsunfällen ist ein Polizei- oder Vorfallbericht ein wichtiges Beweismittel und in der Regel der Ausgangspunkt sowohl für ein etwaiges damit verbundenes Verfahren als auch für den zivilrechtlichen Anspruch.",
+faq2_q:"Sollte ich das erste Vergleichsangebot des Versicherers annehmen?",faq2_a:"Nicht unbedingt — ein frühes Angebot spiegelt möglicherweise nicht das volle Ausmaß der Verletzung wider, insbesondere wenn die Behandlung oder eine Behinderungsbewertung noch andauert.",
+faq3_q:"Was ist Diya und wann findet sie Anwendung?",faq3_a:"Diya ist ein im Recht der VAE anerkanntes Entschädigungskonzept bei Tod oder schwerer Verletzung, das in geeigneten Fällen neben dem gewöhnlichen zivilrechtlichen Schadensersatz angewendet wird.",
+faq4_q:"Wie wird eine dauerhafte Behinderung in einem Anspruch bewertet?",faq4_a:"In der Regel ist eine formelle Behinderungsbewertung oder -einstufung erforderlich, und diese Einstufung spielt eine erhebliche Rolle dabei, wie der Gesamtanspruch bewertet wird.",
+faq5_q:"Gibt es eine Frist für die Geltendmachung eines Personenschadensanspruchs?",faq5_a:"Ja — es gelten Verjährungsfristen, daher ist es wichtig, nicht zu lange zu warten, während Behandlung oder Verhandlungen noch andauern."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
