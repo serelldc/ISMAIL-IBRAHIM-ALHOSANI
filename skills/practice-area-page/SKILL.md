@@ -1,6 +1,6 @@
 ---
 name: practice-area-page
-description: Standard for building a new single-topic practice-area landing page (e.g. an Arbitration sub-topic, or a new practice area sub-topic in another category) for the Ismail Ibrahim Alhosani Advocates & Legal Consultants website (serelldc.github.io/ISMAIL-IBRAHIM-ALHOSANI). Based on the completed pattern used for the 7 Arbitration pages: DIFC-LCIA, DIAC, Award Enforcement, Clause Drafting, Emergency Measures, International Arbitration, Institutional & Ad Hoc. Read this file BEFORE creating a new practice-area page. Update this file whenever the shared structure changes.
+description: "Standard for building a new single-topic practice-area landing page (e.g. an Arbitration sub-topic, or a new practice area sub-topic in another category) for the Ismail Ibrahim Alhosani Advocates & Legal Consultants website (serelldc.github.io/ISMAIL-IBRAHIM-ALHOSANI). Based on the completed pattern used for the 7 Arbitration pages (DIFC-LCIA, DIAC, Award Enforcement, Clause Drafting, Emergency Measures, International Arbitration, Institutional & Ad Hoc). Read this file BEFORE creating a new practice-area page. Update this file whenever the shared structure changes."
 ---
 
 # Practice-Area Page Skill
