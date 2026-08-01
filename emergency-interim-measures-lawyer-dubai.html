@@ -7,12 +7,14 @@
 <title>Emergency & Interim Measures Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
 <meta name="description" content="Some disputes need urgent protective measures before an arbitral tribunal is even fully constituted.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,386 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971547125676">+971 54 712 5676</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="arbitration.html">Arbitration</a> &rsaquo; Emergency & Interim Measures Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="arbitration.html" data-i18n="arbitration">Arbitration</a> &rsaquo; <span data-i18n="page_title">Emergency & Interim Measures Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Emergency & Interim Measures Lawyer in Dubai</h1>
-  <p class="lead">Some disputes need urgent protective measures before an arbitral tribunal is even fully constituted.</p>
-  <div class="box">This covers applications for emergency arbitrator relief and interim measures pending a full arbitration.</div>
-  <p class="body-p">The firm applies for urgent interim relief to preserve a client's position while arbitration proceeds.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Emergency & Interim Measures Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Some disputes need urgent protective measures before an arbitral tribunal is even fully constituted.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">This covers applications for emergency arbitrator relief and interim measures pending a full arbitration.</div>
+
+<p class="body-p" data-i18n="p1">The firm applies for urgent interim relief to preserve a client's position while arbitration proceeds.</p>
+<p class="body-p" data-i18n="p2">Emergency arbitrator provisions, now standard under most institutional rules including DIAC and DIFC-LCIA, allow a party to obtain binding interim relief within days of filing — often before the main tribunal has even been constituted.</p>
+<p class="body-p" data-i18n="p3">The firm also seeks interim measures from the UAE courts in support of arbitration, including freezing orders and orders preserving evidence, where speed or the nature of the relief sought makes court intervention more appropriate than an emergency arbitrator application.</p>
+
+<h2 data-i18n="h2_how">How Emergency & Interim Relief Works</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Assessing Urgency</strong><span data-i18n="step1_d">The firm evaluates whether the situation genuinely requires emergency relief and which mechanism — emergency arbitrator or court application — is best suited to the facts.</span></li>
+<li><strong data-i18n="step2_t">Filing the Application</strong><span data-i18n="step2_d">An application for emergency relief or interim measures is filed, setting out the harm to be prevented and the relief sought.</span></li>
+<li><strong data-i18n="step3_t">Emergency Arbitrator Appointment</strong><span data-i18n="step3_d">Where filed with an institution, an emergency arbitrator is typically appointed within one to two business days to hear the application.</span></li>
+<li><strong data-i18n="step4_t">Expedited Hearing</strong><span data-i18n="step4_d">A short hearing or written procedure follows, often within days, given the urgency of the relief sought.</span></li>
+<li><strong data-i18n="step5_t">Interim Order Issued</strong><span data-i18n="step5_d">The emergency arbitrator or court issues a binding interim order, which may include freezing assets, preserving evidence, or maintaining the status quo.</span></li>
+<li><strong data-i18n="step6_t">Transition to Full Tribunal</strong><span data-i18n="step6_d">Once the full arbitral tribunal is constituted, it reviews and may confirm, modify, or vacate the emergency measures granted.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need Emergency or Interim Relief</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">A counterparty is dissipating or moving assets before a claim can be filed.</li>
+<li data-i18n="sc2">Evidence relevant to a dispute is at risk of being destroyed or altered.</li>
+<li data-i18n="sc3">You need to preserve the status quo while an arbitration is being organized.</li>
+<li data-i18n="sc4">A contract breach is causing ongoing harm that cannot wait for a full arbitration to resolve.</li>
+<li data-i18n="sc5">You need to restrain a party from taking an action, such as calling a bank guarantee, pending the outcome of arbitration.</li>
+<li data-i18n="sc6">The arbitral tribunal has not yet been constituted but urgent protective measures are needed now.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Emergency arbitrator applications under DIAC, DIFC-LCIA, and other institutional rules</li>
+<li data-i18n="sv2">Applications for interim measures before UAE courts in support of arbitration</li>
+<li data-i18n="sv3">Freezing orders and asset preservation applications</li>
+<li data-i18n="sv4">Applications to preserve or secure evidence</li>
+<li data-i18n="sv5">Injunctions restraining calls on bank guarantees or performance bonds</li>
+<li data-i18n="sv6">Advice on the interaction between court-ordered and tribunal-ordered interim relief</li>
+<li data-i18n="sv7">Representation at expedited emergency arbitrator or court hearings</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What is the difference between emergency arbitrator relief and interim measures from a court?</summary>
+<p data-i18n="faq1_a">Emergency arbitrator relief is granted by an arbitrator appointed under institutional rules before the full tribunal is formed, while court-ordered interim measures come from the UAE courts and are often used when speed, enforceability against third parties, or the nature of the relief makes court intervention more suitable.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">How fast can emergency relief be obtained?</summary>
+<p data-i18n="faq2_a">Emergency arbitrator applications are typically decided within days of filing. Urgent court applications can, in some cases, be heard even faster, depending on the nature of the relief sought.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Is emergency arbitrator relief binding?</summary>
+<p data-i18n="faq3_a">Yes, though it is provisional — the full tribunal, once constituted, may later confirm, modify, or vacate the emergency arbitrator's order.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Can I get interim relief before filing the main arbitration?</summary>
+<p data-i18n="faq4_a">Yes. Most institutional rules and UAE court procedures allow interim or emergency relief to be sought before or alongside the commencement of the main arbitration proceedings.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Will seeking court-ordered interim measures affect my right to arbitrate?</summary>
+<p data-i18n="faq5_a">No. Seeking interim measures from a court in support of arbitration is generally not considered a waiver of the arbitration agreement under UAE law and most institutional rules.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE.</span> <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",arbitration:"Arbitration",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE.",footer_back:"Back to homepage",
+page_title:"Emergency & Interim Measures Lawyer in Dubai",
+lead:"Some disputes need urgent protective measures before an arbitral tribunal is even fully constituted.",
+box:"This covers applications for emergency arbitrator relief and interim measures pending a full arbitration.",
+p1:"The firm applies for urgent interim relief to preserve a client's position while arbitration proceeds.",
+p2:"Emergency arbitrator provisions, now standard under most institutional rules including DIAC and DIFC-LCIA, allow a party to obtain binding interim relief within days of filing — often before the main tribunal has even been constituted.",
+p3:"The firm also seeks interim measures from the UAE courts in support of arbitration, including freezing orders and orders preserving evidence, where speed or the nature of the relief sought makes court intervention more appropriate than an emergency arbitrator application.",
+h2_how:"How Emergency & Interim Relief Works",
+step1_t:"Assessing Urgency",step1_d:"The firm evaluates whether the situation genuinely requires emergency relief and which mechanism — emergency arbitrator or court application — is best suited to the facts.",
+step2_t:"Filing the Application",step2_d:"An application for emergency relief or interim measures is filed, setting out the harm to be prevented and the relief sought.",
+step3_t:"Emergency Arbitrator Appointment",step3_d:"Where filed with an institution, an emergency arbitrator is typically appointed within one to two business days to hear the application.",
+step4_t:"Expedited Hearing",step4_d:"A short hearing or written procedure follows, often within days, given the urgency of the relief sought.",
+step5_t:"Interim Order Issued",step5_d:"The emergency arbitrator or court issues a binding interim order, which may include freezing assets, preserving evidence, or maintaining the status quo.",
+step6_t:"Transition to Full Tribunal",step6_d:"Once the full arbitral tribunal is constituted, it reviews and may confirm, modify, or vacate the emergency measures granted.",
+h2_when:"When You Need Emergency or Interim Relief",
+sc1:"A counterparty is dissipating or moving assets before a claim can be filed.",
+sc2:"Evidence relevant to a dispute is at risk of being destroyed or altered.",
+sc3:"You need to preserve the status quo while an arbitration is being organized.",
+sc4:"A contract breach is causing ongoing harm that cannot wait for a full arbitration to resolve.",
+sc5:"You need to restrain a party from taking an action, such as calling a bank guarantee, pending the outcome of arbitration.",
+sc6:"The arbitral tribunal has not yet been constituted but urgent protective measures are needed now.",
+h2_services:"Services We Provide",
+sv1:"Emergency arbitrator applications under DIAC, DIFC-LCIA, and other institutional rules",
+sv2:"Applications for interim measures before UAE courts in support of arbitration",
+sv3:"Freezing orders and asset preservation applications",
+sv4:"Applications to preserve or secure evidence",
+sv5:"Injunctions restraining calls on bank guarantees or performance bonds",
+sv6:"Advice on the interaction between court-ordered and tribunal-ordered interim relief",
+sv7:"Representation at expedited emergency arbitrator or court hearings",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What is the difference between emergency arbitrator relief and interim measures from a court?",faq1_a:"Emergency arbitrator relief is granted by an arbitrator appointed under institutional rules before the full tribunal is formed, while court-ordered interim measures come from the UAE courts and are often used when speed, enforceability against third parties, or the nature of the relief makes court intervention more suitable.",
+faq2_q:"How fast can emergency relief be obtained?",faq2_a:"Emergency arbitrator applications are typically decided within days of filing. Urgent court applications can, in some cases, be heard even faster, depending on the nature of the relief sought.",
+faq3_q:"Is emergency arbitrator relief binding?",faq3_a:"Yes, though it is provisional — the full tribunal, once constituted, may later confirm, modify, or vacate the emergency arbitrator's order.",
+faq4_q:"Can I get interim relief before filing the main arbitration?",faq4_a:"Yes. Most institutional rules and UAE court procedures allow interim or emergency relief to be sought before or alongside the commencement of the main arbitration proceedings.",
+faq5_q:"Will seeking court-ordered interim measures affect my right to arbitrate?",faq5_a:"No. Seeking interim measures from a court in support of arbitration is generally not considered a waiver of the arbitration agreement under UAE law and most institutional rules."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",arbitration:"التحكيم",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي الإجراءات الطارئة والمؤقتة في دبي",
+lead:"بعض النزاعات تتطلب تدابير حماية عاجلة حتى قبل تشكيل هيئة التحكيم بشكل كامل.",
+box:"يشمل ذلك تقديم طلبات الحصول على إجراءات طارئة من محكّم الطوارئ وتدابير مؤقتة ريثما يبدأ التحكيم الكامل.",
+p1:"يتقدم المكتب بطلبات للحصول على إجراءات مؤقتة عاجلة للحفاظ على موقف العميل أثناء سير إجراءات التحكيم.",
+p2:"أصبحت أحكام محكّم الطوارئ اليوم معيارًا في معظم القواعد المؤسسية بما في ذلك DIAC وDIFC-LCIA، إذ تتيح للطرف الحصول على إجراء مؤقت ملزم في غضون أيام من التقديم — غالبًا قبل تشكيل هيئة التحكيم الرئيسية.",
+p3:"يسعى المكتب أيضًا للحصول على تدابير مؤقتة من محاكم دولة الإمارات دعمًا للتحكيم، بما في ذلك أوامر التجميد وأوامر الحفاظ على الأدلة، حيثما تجعل السرعة أو طبيعة الإجراء المطلوب تدخل المحكمة أكثر ملاءمة من طلب محكّم الطوارئ.",
+h2_how:"كيف تعمل الإجراءات الطارئة والمؤقتة",
+step1_t:"تقييم الاستعجال",step1_d:"يقيّم المكتب ما إذا كان الوضع يتطلب فعليًا إجراءً طارئًا وأي آلية — محكّم الطوارئ أم طلب قضائي — هي الأنسب للوقائع.",
+step2_t:"تقديم الطلب",step2_d:"يُقدَّم طلب للحصول على إجراء طارئ أو تدابير مؤقتة، مع بيان الضرر المراد منعه والإجراء المطلوب.",
+step3_t:"تعيين محكّم الطوارئ",step3_d:"عند التقديم إلى مؤسسة تحكيمية، يُعيَّن عادةً محكّم طوارئ في غضون يوم إلى يومي عمل للنظر في الطلب.",
+step4_t:"جلسة استماع معجّلة",step4_d:"تلي ذلك جلسة استماع قصيرة أو إجراءات كتابية، غالبًا في غضون أيام، نظرًا لاستعجال الإجراء المطلوب.",
+step5_t:"صدور الأمر المؤقت",step5_d:"يصدر محكّم الطوارئ أو المحكمة أمرًا مؤقتًا ملزمًا، قد يشمل تجميد الأصول أو الحفاظ على الأدلة أو الإبقاء على الوضع الراهن.",
+step6_t:"الانتقال إلى هيئة التحكيم الكاملة",step6_d:"بمجرد تشكيل هيئة التحكيم الكاملة، تراجع الإجراءات الطارئة الممنوحة وقد تؤكدها أو تعدلها أو تلغيها.",
+h2_when:"متى تحتاج إلى إجراء طارئ أو مؤقت",
+sc1:"يقوم الطرف الآخر بتبديد أو نقل الأصول قبل أن تتمكن من تقديم الدعوى.",
+sc2:"الأدلة ذات الصلة بالنزاع معرضة لخطر الإتلاف أو التعديل.",
+sc3:"تحتاج إلى الحفاظ على الوضع الراهن أثناء تنظيم إجراءات التحكيم.",
+sc4:"يسبب إخلال بالعقد ضررًا مستمرًا لا يمكن الانتظار حتى انتهاء التحكيم الكامل لمعالجته.",
+sc5:"تحتاج إلى منع طرف من اتخاذ إجراء، مثل المطالبة بضمان بنكي، ريثما تظهر نتيجة التحكيم.",
+sc6:"لم تُشكَّل هيئة التحكيم بعد لكن هناك حاجة لتدابير حماية عاجلة الآن.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"طلبات محكّم الطوارئ بموجب قواعد DIAC وDIFC-LCIA وغيرها من القواعد المؤسسية",
+sv2:"طلبات التدابير المؤقتة أمام محاكم الإمارات دعمًا للتحكيم",
+sv3:"طلبات أوامر التجميد والحفاظ على الأصول",
+sv4:"طلبات الحفاظ على الأدلة أو تأمينها",
+sv5:"أوامر زجرية تمنع المطالبة بالضمانات البنكية أو سندات الأداء",
+sv6:"تقديم المشورة بشأن التفاعل بين الإجراءات المؤقتة الصادرة عن المحكمة وتلك الصادرة عن هيئة التحكيم",
+sv7:"التمثيل في جلسات الاستماع المعجّلة أمام محكّم الطوارئ أو المحكمة",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما الفرق بين إجراء محكّم الطوارئ والتدابير المؤقتة الصادرة عن المحكمة؟",faq1_a:"يُمنح إجراء محكّم الطوارئ من قِبل محكّم يُعيَّن بموجب القواعد المؤسسية قبل تشكيل هيئة التحكيم الكاملة، بينما تصدر التدابير المؤقتة القضائية عن محاكم الإمارات وغالبًا ما تُستخدم عندما تجعل السرعة أو قابلية التنفيذ تجاه الأطراف الثالثة أو طبيعة الإجراء تدخل المحكمة أكثر ملاءمة.",
+faq2_q:"ما مدى سرعة الحصول على إجراء طارئ؟",faq2_a:"عادةً ما يُبت في طلبات محكّم الطوارئ في غضون أيام من التقديم. وقد يُنظر في الطلبات القضائية العاجلة بشكل أسرع في بعض الحالات، حسب طبيعة الإجراء المطلوب.",
+faq3_q:"هل إجراء محكّم الطوارئ ملزم؟",faq3_a:"نعم، رغم أنه مؤقت — إذ يجوز لهيئة التحكيم الكاملة، بمجرد تشكيلها، أن تؤكد أو تعدل أو تلغي لاحقًا أمر محكّم الطوارئ.",
+faq4_q:"هل يمكنني الحصول على إجراء مؤقت قبل تقديم دعوى التحكيم الرئيسية؟",faq4_a:"نعم. تسمح معظم القواعد المؤسسية وإجراءات محاكم الإمارات بطلب الإجراءات المؤقتة أو الطارئة قبل بدء إجراءات التحكيم الرئيسية أو بالتزامن معها.",
+faq5_q:"هل سيؤثر طلب تدابير مؤقتة قضائية على حقي في اللجوء إلى التحكيم؟",faq5_a:"لا. لا يُعتبر طلب التدابير المؤقتة من محكمة دعمًا للتحكيم، بشكل عام، تنازلاً عن اتفاقية التحكيم بموجب القانون الإماراتي ومعظم القواعد المؤسسية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",arbitration:"仲裁",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜。",footer_back:"返回首页",
+page_title:"迪拜紧急与临时措施律师",
+lead:"有些争议需要在仲裁庭尚未完全组成之前就采取紧急保护措施。",
+box:"这涉及申请紧急仲裁员救济以及在正式仲裁启动前的临时措施。",
+p1:"本所申请紧急临时救济，以便在仲裁进行期间维护客户的权益地位。",
+p2:"紧急仲裁员条款目前已成为包括DIAC和DIFC-LCIA在内的大多数机构规则的标准内容，使当事人能够在提交申请后数日内获得具有约束力的临时救济——往往早于主仲裁庭的组成。",
+p3:"在速度要求或所寻求救济的性质使法院介入比申请紧急仲裁员更为适宜的情况下，本所也会向阿联酋法院申请支持仲裁的临时措施，包括冻结令及证据保全令。",
+h2_how:"紧急与临时救济的运作方式",
+step1_t:"评估紧急程度",step1_d:"本所评估情况是否确实需要紧急救济，以及紧急仲裁员申请或法院申请中哪种机制最适合相关事实。",
+step2_t:"提交申请",step2_d:"提交紧急救济或临时措施申请，说明拟防止的损害及所寻求的救济。",
+step3_t:"紧急仲裁员的委任",step3_d:"若向仲裁机构提交申请，通常会在一至两个工作日内委任紧急仲裁员以审理该申请。",
+step4_t:"加速审理",step4_d:"鉴于所寻求救济的紧急性，随后通常在数日内进行简短的庭审或书面程序。",
+step5_t:"作出临时命令",step5_d:"紧急仲裁员或法院作出具有约束力的临时命令，可能包括冻结资产、保全证据或维持现状。",
+step6_t:"过渡至正式仲裁庭",step6_d:"正式仲裁庭一经组成，将审查已授予的紧急措施，并可能予以确认、修改或撤销。",
+h2_when:"何时需要紧急或临时救济",
+sc1:"对方正在转移或处置资产，而您尚无法提交索赔。",
+sc2:"与争议相关的证据存在被销毁或篡改的风险。",
+sc3:"您需要在仲裁程序组织期间维持现状。",
+sc4:"违约行为正造成持续损害，无法等待完整仲裁程序解决。",
+sc5:"您需要在仲裁结果出来之前限制对方采取某项行动，例如要求兑现银行保函。",
+sc6:"仲裁庭尚未组成，但现在就需要采取紧急保护措施。",
+h2_services:"我们提供的服务",
+sv1:"根据DIAC、DIFC-LCIA及其他机构规则提出紧急仲裁员申请",
+sv2:"向阿联酋法院提出支持仲裁的临时措施申请",
+sv3:"冻结令及资产保全申请",
+sv4:"证据保全或固定申请",
+sv5:"限制兑现银行保函或履约保证金的禁令",
+sv6:"就法院命令与仲裁庭命令的临时救济之间的相互关系提供意见",
+sv7:"在加速紧急仲裁员或法院庭审中提供代理",
+h2_faq:"常见问题",
+faq1_q:"紧急仲裁员救济与法院临时措施有何区别？",faq1_a:"紧急仲裁员救济由根据机构规则委任的仲裁员在正式仲裁庭组成之前作出，而法院命令的临时措施则来自阿联酋法院，通常在速度、对第三方的可执行性或救济性质使法院介入更为适宜时采用。",
+faq2_q:"紧急救济能多快获得？",faq2_a:"紧急仲裁员申请通常在提交后数日内作出决定。视所寻求救济的性质而定，紧急法院申请在某些情况下甚至可以更快获得审理。",
+faq3_q:"紧急仲裁员的救济具有约束力吗？",faq3_a:"是的，不过其性质是临时性的——正式仲裁庭一经组成，日后可对紧急仲裁员的命令予以确认、修改或撤销。",
+faq4_q:"我可以在提交主仲裁申请之前获得临时救济吗？",faq4_a:"可以。大多数机构规则及阿联酋法院程序均允许在主仲裁程序启动之前或同时申请临时或紧急救济。",
+faq5_q:"申请法院临时措施会影响我的仲裁权利吗？",faq5_a:"不会。根据阿联酋法律及大多数机构规则，向法院申请支持仲裁的临时措施通常不被视为放弃仲裁协议。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",arbitration:"Арбитраж",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по срочным и обеспечительным мерам в Дубае",
+lead:"Некоторые споры требуют срочных обеспечительных мер ещё до того, как третейский суд будет полностью сформирован.",
+box:"Это охватывает заявления о вынесении решения чрезвычайным арбитром и о принятии обеспечительных мер до начала полноценного арбитражного разбирательства.",
+p1:"Фирма подаёт заявления о срочных обеспечительных мерах для защиты позиции клиента на время арбитражного разбирательства.",
+p2:"Положения о чрезвычайном арбитре, ставшие стандартом в большинстве институциональных правил, включая DIAC и DIFC-LCIA, позволяют стороне получить обязательную обеспечительную меру в течение нескольких дней после подачи заявления — зачастую ещё до формирования основного третейского суда.",
+p3:"Фирма также добивается принятия обеспечительных мер со стороны судов ОАЭ в поддержку арбитража, включая приказы о замораживании активов и приказы о сохранении доказательств, когда скорость или характер испрашиваемой меры делают судебное вмешательство более уместным, чем заявление о чрезвычайном арбитре.",
+h2_how:"Как работает срочная и обеспечительная защита",
+step1_t:"Оценка срочности",step1_d:"Фирма оценивает, действительно ли ситуация требует срочных мер, и какой механизм — чрезвычайный арбитр или обращение в суд — лучше всего подходит к обстоятельствам.",
+step2_t:"Подача заявления",step2_d:"Подаётся заявление о срочных или обеспечительных мерах с изложением вреда, который необходимо предотвратить, и испрашиваемой меры.",
+step3_t:"Назначение чрезвычайного арбитра",step3_d:"При подаче в институт чрезвычайный арбитр, как правило, назначается в течение одного-двух рабочих дней для рассмотрения заявления.",
+step4_t:"Ускоренное слушание",step4_d:"Затем следует короткое слушание или письменная процедура, зачастую в течение нескольких дней, учитывая срочность испрашиваемой меры.",
+step5_t:"Вынесение обеспечительного приказа",step5_d:"Чрезвычайный арбитр или суд выносит обязательный обеспечительный приказ, который может включать заморозку активов, сохранение доказательств или поддержание статус-кво.",
+step6_t:"Переход к полному составу третейского суда",step6_d:"После формирования полного состава третейского суда он рассматривает предоставленные срочные меры и может подтвердить, изменить или отменить их.",
+h2_when:"Когда вам нужна срочная или обеспечительная защита",
+sc1:"Контрагент выводит или перемещает активы до того, как вы можете подать иск.",
+sc2:"Доказательства, относящиеся к спору, находятся под угрозой уничтожения или изменения.",
+sc3:"Вам необходимо сохранить статус-кво на время организации арбитражного разбирательства.",
+sc4:"Нарушение договора причиняет длящийся вред, который не может ждать разрешения в рамках полноценного арбитража.",
+sc5:"Вам необходимо запретить стороне совершать определённые действия, например требовать выплаты по банковской гарантии, до окончания арбитража.",
+sc6:"Третейский суд ещё не сформирован, но срочные обеспечительные меры необходимы уже сейчас.",
+h2_services:"Наши услуги",
+sv1:"Заявления о назначении чрезвычайного арбитра согласно правилам DIAC, DIFC-LCIA и других институтов",
+sv2:"Заявления об обеспечительных мерах в судах ОАЭ в поддержку арбитража",
+sv3:"Приказы о заморозке активов и заявления об их сохранении",
+sv4:"Заявления о сохранении или обеспечении доказательств",
+sv5:"Судебные запреты на предъявление требований по банковским гарантиям или гарантиям исполнения",
+sv6:"Консультирование по взаимодействию между судебными и арбитражными обеспечительными мерами",
+sv7:"Представительство на ускоренных слушаниях у чрезвычайного арбитра или в суде",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"В чём разница между решением чрезвычайного арбитра и обеспечительными мерами суда?",faq1_a:"Решение чрезвычайного арбитра выносится арбитром, назначенным согласно институциональным правилам до формирования полного состава третейского суда, тогда как обеспечительные меры суда исходят от судов ОАЭ и часто применяются, когда скорость, исполнимость в отношении третьих лиц или характер меры делают судебное вмешательство более подходящим.",
+faq2_q:"Как быстро можно получить срочную защиту?",faq2_a:"Заявления о назначении чрезвычайного арбитра обычно рассматриваются в течение нескольких дней после подачи. Срочные судебные заявления в некоторых случаях могут быть рассмотрены даже быстрее, в зависимости от характера испрашиваемой меры.",
+faq3_q:"Является ли решение чрезвычайного арбитра обязательным?",faq3_a:"Да, хотя оно носит предварительный характер — полный состав третейского суда, после его формирования, может впоследствии подтвердить, изменить или отменить приказ чрезвычайного арбитра.",
+faq4_q:"Могу ли я получить обеспечительную меру до подачи основного арбитражного иска?",faq4_a:"Да. Большинство институциональных правил и судебных процедур ОАЭ допускают получение срочной или обеспечительной защиты до начала основного арбитражного разбирательства или одновременно с ним.",
+faq5_q:"Повлияет ли обращение за судебными обеспечительными мерами на моё право на арбитраж?",faq5_a:"Нет. Обращение за обеспечительными мерами в суд в поддержку арбитража, как правило, не считается отказом от арбитражного соглашения согласно законодательству ОАЭ и большинству институциональных правил."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",arbitration:"Schiedsverfahren",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Eil- und einstweilige Maßnahmen in Dubai",
+lead:"Manche Streitigkeiten erfordern dringende Schutzmaßnahmen, noch bevor ein Schiedsgericht überhaupt vollständig gebildet ist.",
+box:"Dies umfasst Anträge auf Eilschiedsrichter-Maßnahmen und einstweilige Maßnahmen bis zur Einleitung eines vollständigen Schiedsverfahrens.",
+p1:"Die Kanzlei beantragt dringenden vorläufigen Rechtsschutz, um die Position eines Mandanten während des laufenden Schiedsverfahrens zu sichern.",
+p2:"Bestimmungen zum Eilschiedsrichter, die inzwischen bei den meisten institutionellen Regelwerken, einschließlich DIAC und DIFC-LCIA, Standard sind, ermöglichen es einer Partei, innerhalb weniger Tage nach Antragstellung verbindlichen einstweiligen Rechtsschutz zu erhalten — häufig noch bevor das Hauptschiedsgericht überhaupt gebildet wurde.",
+p3:"Die Kanzlei beantragt zudem einstweilige Maßnahmen bei den Gerichten der VAE zur Unterstützung des Schiedsverfahrens, einschließlich Arrestbeschlüssen und Anordnungen zur Beweissicherung, wenn Dringlichkeit oder die Art des begehrten Rechtsschutzes ein gerichtliches Eingreifen geeigneter erscheinen lassen als einen Antrag auf einen Eilschiedsrichter.",
+h2_how:"So funktioniert Eil- und einstweiliger Rechtsschutz",
+step1_t:"Beurteilung der Dringlichkeit",step1_d:"Die Kanzlei prüft, ob die Situation tatsächlich Eilrechtsschutz erfordert und welcher Mechanismus — Eilschiedsrichter oder Gerichtsantrag — dem Sachverhalt am besten entspricht.",
+step2_t:"Einreichung des Antrags",step2_d:"Ein Antrag auf Eilrechtsschutz oder einstweilige Maßnahmen wird eingereicht, in dem der zu verhindernde Schaden und der begehrte Rechtsschutz dargelegt werden.",
+step3_t:"Bestellung des Eilschiedsrichters",step3_d:"Bei Einreichung bei einer Institution wird in der Regel innerhalb von ein bis zwei Werktagen ein Eilschiedsrichter zur Anhörung des Antrags bestellt.",
+step4_t:"Beschleunigte Anhörung",step4_d:"Angesichts der Dringlichkeit des begehrten Rechtsschutzes folgt häufig innerhalb weniger Tage eine kurze Anhörung oder ein schriftliches Verfahren.",
+step5_t:"Erlass der einstweiligen Anordnung",step5_d:"Der Eilschiedsrichter oder das Gericht erlässt eine verbindliche einstweilige Anordnung, die die Einfrierung von Vermögenswerten, die Sicherung von Beweismitteln oder die Aufrechterhaltung des Status quo umfassen kann.",
+step6_t:"Übergang zum vollständigen Schiedsgericht",step6_d:"Sobald das vollständige Schiedsgericht gebildet ist, prüft es die gewährten Eilmaßnahmen und kann diese bestätigen, ändern oder aufheben.",
+h2_when:"Wann Sie Eil- oder einstweiligen Rechtsschutz benötigen",
+sc1:"Ein Vertragspartner verlagert oder verschiebt Vermögenswerte, bevor eine Klage eingereicht werden kann.",
+sc2:"Für den Streit relevante Beweismittel drohen vernichtet oder verändert zu werden.",
+sc3:"Sie müssen den Status quo aufrechterhalten, während das Schiedsverfahren organisiert wird.",
+sc4:"Eine Vertragsverletzung verursacht fortlaufenden Schaden, der nicht bis zum Abschluss eines vollständigen Schiedsverfahrens warten kann.",
+sc5:"Sie müssen eine Partei daran hindern, eine Handlung vorzunehmen, etwa den Abruf einer Bankgarantie, bis der Ausgang des Schiedsverfahrens feststeht.",
+sc6:"Das Schiedsgericht ist noch nicht gebildet, dringende Schutzmaßnahmen sind jedoch bereits jetzt erforderlich.",
+h2_services:"Unsere Leistungen",
+sv1:"Anträge auf Eilschiedsrichter nach den Regelwerken von DIAC, DIFC-LCIA und anderen Institutionen",
+sv2:"Anträge auf einstweilige Maßnahmen bei den Gerichten der VAE zur Unterstützung des Schiedsverfahrens",
+sv3:"Arrestbeschlüsse und Anträge auf Sicherung von Vermögenswerten",
+sv4:"Anträge auf Sicherung oder Beweiserhaltung",
+sv5:"Einstweilige Verfügungen zur Verhinderung des Abrufs von Bankgarantien oder Erfüllungsbürgschaften",
+sv6:"Beratung zum Zusammenspiel zwischen gerichtlich und schiedsgerichtlich angeordnetem einstweiligem Rechtsschutz",
+sv7:"Vertretung bei beschleunigten Anhörungen vor Eilschiedsrichtern oder Gerichten",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist der Unterschied zwischen Eilschiedsrichter-Rechtsschutz und gerichtlichen einstweiligen Maßnahmen?",faq1_a:"Eilschiedsrichter-Rechtsschutz wird von einem nach institutionellen Regeln bestellten Schiedsrichter gewährt, bevor das vollständige Schiedsgericht gebildet ist, während gerichtlich angeordnete einstweilige Maßnahmen von den Gerichten der VAE stammen und häufig eingesetzt werden, wenn Dringlichkeit, die Durchsetzbarkeit gegenüber Dritten oder die Art des Rechtsschutzes ein gerichtliches Eingreifen geeigneter erscheinen lassen.",
+faq2_q:"Wie schnell kann Eilrechtsschutz erlangt werden?",faq2_a:"Anträge auf einen Eilschiedsrichter werden in der Regel innerhalb weniger Tage nach Einreichung entschieden. Dringende Gerichtsanträge können, je nach Art des begehrten Rechtsschutzes, in manchen Fällen sogar noch schneller verhandelt werden.",
+faq3_q:"Ist der Rechtsschutz durch einen Eilschiedsrichter verbindlich?",faq3_a:"Ja, wenngleich vorläufiger Natur — das vollständige Schiedsgericht kann, sobald es gebildet ist, die Anordnung des Eilschiedsrichters später bestätigen, ändern oder aufheben.",
+faq4_q:"Kann ich einstweiligen Rechtsschutz erhalten, bevor ich das Hauptschiedsverfahren einleite?",faq4_a:"Ja. Die meisten institutionellen Regelwerke und gerichtlichen Verfahren der VAE erlauben es, einstweiligen oder Eilrechtsschutz vor oder gleichzeitig mit der Einleitung des Hauptschiedsverfahrens zu beantragen.",
+faq5_q:"Beeinträchtigt die Beantragung gerichtlicher einstweiliger Maßnahmen mein Recht auf ein Schiedsverfahren?",faq5_a:"Nein. Die Beantragung einstweiliger Maßnahmen bei einem Gericht zur Unterstützung eines Schiedsverfahrens gilt nach dem Recht der VAE und den meisten institutionellen Regelwerken in der Regel nicht als Verzicht auf die Schiedsvereinbarung."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
