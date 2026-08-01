@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Loan Default & Recovery Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Recovering on a defaulted loan usually requires both a court judgment and follow-through on execution.">
+<meta name="description" content="Advice for banks and lenders on default notices, payment order proceedings, asset attachment, and enforcement against collateral and guarantors in Dubai.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,386 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="banking-law.html">Banking Law</a> &rsaquo; Loan Default & Recovery Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="banking-law.html" data-i18n="banking_law">Banking Law</a> &rsaquo; <span data-i18n="page_title">Loan Default & Recovery Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Loan Default & Recovery Lawyer in Dubai</h1>
-  <p class="lead">Recovering on a defaulted loan usually requires both a court judgment and follow-through on execution.</p>
-  <div class="box">This covers pursuing and defending claims arising from loan default in the UAE.</div>
-  <p class="body-p">The firm represents lenders and borrowers in disputes over defaulted loan facilities.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Loan Default & Recovery Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">When a borrower stops paying, how quickly and how firmly you move often decides how much of the debt is actually recovered.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A loan default and recovery lawyer in Dubai acts for banks, financial institutions, and private lenders pursuing unpaid loans — from the first default notice through payment order proceedings, asset attachment, enforcement against collateral and guarantors, and insolvency proceedings where necessary.</div>
+
+<p class="body-p" data-i18n="p1">UAE law gives lenders several routes to recover a defaulted loan, and the right one depends on how the debt is documented. A liquidated debt evidenced by clear supporting documents can often be pursued through the payment order (أمر الأداء) procedure, a faster summary process than ordinary litigation, while disputed or more complex debts proceed through standard civil proceedings.</p>
+<p class="body-p" data-i18n="p2">Recovery is rarely just about winning a judgment — it is about turning that judgment into cash. That means identifying and attaching the borrower's bank accounts and assets, enforcing against any mortgaged property or pledged security, and pursuing guarantors where the borrower's own assets fall short.</p>
+<p class="body-p" data-i18n="p3">Where a corporate borrower is genuinely insolvent, recovery may instead run through formal bankruptcy or restructuring proceedings, which change both the available remedies and the timeline. Assessing early which route actually fits the borrower's financial position saves time that a straightforward but wrong strategy would otherwise waste.</p>
+
+<h2 data-i18n="h2_how">How Loan Recovery Is Handled</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Default Assessment & Documentation Review</strong><span data-i18n="step1_d">The loan agreement, security documents, and payment history are reviewed to confirm the default, quantify the outstanding debt, and identify the fastest available recovery route.</span></li>
+<li><strong data-i18n="step2_t">Formal Default Notice</strong><span data-i18n="step2_d">A default notice is issued setting out the amount owed and a deadline to remedy, both to trigger contractual remedies and to support any later court application.</span></li>
+<li><strong data-i18n="step3_t">Payment Order or Civil Claim</strong><span data-i18n="step3_d">Depending on how the debt is documented, proceedings are filed either through the payment order procedure for liquidated debts or through a standard civil claim.</span></li>
+<li><strong data-i18n="step4_t">Asset Tracing & Attachment</strong><span data-i18n="step4_d">The borrower's bank accounts, real estate, and other assets are identified and precautionary attachment orders are sought to secure them ahead of judgment.</span></li>
+<li><strong data-i18n="step5_t">Enforcement Against Collateral & Guarantors</strong><span data-i18n="step5_d">Judgment is enforced against mortgaged property or pledged security, and claims are pursued against any guarantors of the loan.</span></li>
+<li><strong data-i18n="step6_t">Insolvency Proceedings (Where Applicable)</strong><span data-i18n="step6_d">Where the borrower is insolvent, recovery is pursued through formal bankruptcy or restructuring proceedings alongside or instead of ordinary enforcement.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Loan Default & Recovery Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">A borrower has stopped making payments on a loan facility you extended.</li>
+<li data-i18n="sc2">You need to issue a formal default notice before pursuing legal action.</li>
+<li data-i18n="sc3">You are considering the payment order procedure to recover a liquidated debt quickly.</li>
+<li data-i18n="sc4">A judgment has been obtained but the borrower's assets need to be identified and attached.</li>
+<li data-i18n="sc5">You need to enforce against mortgaged property, pledged shares, or other collateral securing the loan.</li>
+<li data-i18n="sc6">A corporate borrower may be insolvent and you need advice on bankruptcy or restructuring proceedings.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Default notices and pre-action demand letters</li>
+<li data-i18n="sv2">Payment order (أمر الأداء) applications for liquidated debts</li>
+<li data-i18n="sv3">Civil claims for loan and credit facility recovery</li>
+<li data-i18n="sv4">Precautionary attachment of bank accounts and assets</li>
+<li data-i18n="sv5">Enforcement against mortgaged property and pledged security</li>
+<li data-i18n="sv6">Claims against guarantors and co-borrowers</li>
+<li data-i18n="sv7">Advice on insolvency and restructuring proceedings against defaulting borrowers</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What is the payment order procedure and when can I use it?</summary>
+<p data-i18n="faq1_a">It's a summary court procedure for recovering a liquidated debt evidenced by clear documentation, such as a loan agreement and statement of account — it moves faster than a standard civil claim.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Can I freeze a borrower's bank account before getting a judgment?</summary>
+<p data-i18n="faq2_a">Yes, in appropriate cases a precautionary attachment order can be obtained to freeze bank accounts or other assets while proceedings are ongoing, to prevent the borrower dissipating funds.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What happens if the borrower doesn't have enough assets to cover the debt?</summary>
+<p data-i18n="faq3_a">Claims can be pursued against any guarantors or co-borrowers, and where the borrower is a company, insolvency proceedings may allow recovery through a broader restructuring or liquidation process.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Is a default notice legally required before suing?</summary>
+<p data-i18n="faq4_a">It is generally advisable and often contractually required — it creates a clear record of default and gives the borrower a final opportunity to pay before formal proceedings begin.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">How long does loan recovery typically take?</summary>
+<p data-i18n="faq5_a">It depends on the route: payment order proceedings for undisputed liquidated debts are relatively fast, while disputed claims, asset enforcement, or insolvency proceedings take longer.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",banking_law:"Banking Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Loan Default & Recovery Lawyer in Dubai",
+lead:"When a borrower stops paying, how quickly and how firmly you move often decides how much of the debt is actually recovered.",
+box:"A loan default and recovery lawyer in Dubai acts for banks, financial institutions, and private lenders pursuing unpaid loans — from the first default notice through payment order proceedings, asset attachment, enforcement against collateral and guarantors, and insolvency proceedings where necessary.",
+p1:"UAE law gives lenders several routes to recover a defaulted loan, and the right one depends on how the debt is documented. A liquidated debt evidenced by clear supporting documents can often be pursued through the payment order (أمر الأداء) procedure, a faster summary process than ordinary litigation, while disputed or more complex debts proceed through standard civil proceedings.",
+p2:"Recovery is rarely just about winning a judgment — it is about turning that judgment into cash. That means identifying and attaching the borrower's bank accounts and assets, enforcing against any mortgaged property or pledged security, and pursuing guarantors where the borrower's own assets fall short.",
+p3:"Where a corporate borrower is genuinely insolvent, recovery may instead run through formal bankruptcy or restructuring proceedings, which change both the available remedies and the timeline. Assessing early which route actually fits the borrower's financial position saves time that a straightforward but wrong strategy would otherwise waste.",
+h2_how:"How Loan Recovery Is Handled",
+step1_t:"Default Assessment & Documentation Review",step1_d:"The loan agreement, security documents, and payment history are reviewed to confirm the default, quantify the outstanding debt, and identify the fastest available recovery route.",
+step2_t:"Formal Default Notice",step2_d:"A default notice is issued setting out the amount owed and a deadline to remedy, both to trigger contractual remedies and to support any later court application.",
+step3_t:"Payment Order or Civil Claim",step3_d:"Depending on how the debt is documented, proceedings are filed either through the payment order procedure for liquidated debts or through a standard civil claim.",
+step4_t:"Asset Tracing & Attachment",step4_d:"The borrower's bank accounts, real estate, and other assets are identified and precautionary attachment orders are sought to secure them ahead of judgment.",
+step5_t:"Enforcement Against Collateral & Guarantors",step5_d:"Judgment is enforced against mortgaged property or pledged security, and claims are pursued against any guarantors of the loan.",
+step6_t:"Insolvency Proceedings (Where Applicable)",step6_d:"Where the borrower is insolvent, recovery is pursued through formal bankruptcy or restructuring proceedings alongside or instead of ordinary enforcement.",
+h2_when:"When You Need a Loan Default & Recovery Lawyer",
+sc1:"A borrower has stopped making payments on a loan facility you extended.",
+sc2:"You need to issue a formal default notice before pursuing legal action.",
+sc3:"You are considering the payment order procedure to recover a liquidated debt quickly.",
+sc4:"A judgment has been obtained but the borrower's assets need to be identified and attached.",
+sc5:"You need to enforce against mortgaged property, pledged shares, or other collateral securing the loan.",
+sc6:"A corporate borrower may be insolvent and you need advice on bankruptcy or restructuring proceedings.",
+h2_services:"Services We Provide",
+sv1:"Default notices and pre-action demand letters",
+sv2:"Payment order (أمر الأداء) applications for liquidated debts",
+sv3:"Civil claims for loan and credit facility recovery",
+sv4:"Precautionary attachment of bank accounts and assets",
+sv5:"Enforcement against mortgaged property and pledged security",
+sv6:"Claims against guarantors and co-borrowers",
+sv7:"Advice on insolvency and restructuring proceedings against defaulting borrowers",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What is the payment order procedure and when can I use it?",faq1_a:"It's a summary court procedure for recovering a liquidated debt evidenced by clear documentation, such as a loan agreement and statement of account — it moves faster than a standard civil claim.",
+faq2_q:"Can I freeze a borrower's bank account before getting a judgment?",faq2_a:"Yes, in appropriate cases a precautionary attachment order can be obtained to freeze bank accounts or other assets while proceedings are ongoing, to prevent the borrower dissipating funds.",
+faq3_q:"What happens if the borrower doesn't have enough assets to cover the debt?",faq3_a:"Claims can be pursued against any guarantors or co-borrowers, and where the borrower is a company, insolvency proceedings may allow recovery through a broader restructuring or liquidation process.",
+faq4_q:"Is a default notice legally required before suing?",faq4_a:"It is generally advisable and often contractually required — it creates a clear record of default and gives the borrower a final opportunity to pay before formal proceedings begin.",
+faq5_q:"How long does loan recovery typically take?",faq5_a:"It depends on the route: payment order proceedings for undisputed liquidated debts are relatively fast, while disputed claims, asset enforcement, or insolvency proceedings take longer."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",banking_law:"القانون المصرفي",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي التعثر في سداد القروض واسترداد الديون في دبي",
+lead:"عندما يتوقف المقترض عن السداد، فإن سرعة وحزم تحركك غالبًا ما يحددان مقدار الدين الذي سيتم استرداده فعليًا.",
+box:"يمثل محامي التعثر في سداد القروض واسترداد الديون في دبي البنوك والمؤسسات المالية والمقرضين الخاصين في استرداد القروض غير المسددة — بدءًا من إشعار التعثر الأول، مرورًا بإجراءات أمر الأداء، وحجز الأصول، والتنفيذ على الضمانات والكفلاء، وصولًا إلى إجراءات الإفلاس عند الضرورة.",
+p1:"يتيح القانون الإماراتي للمقرضين عدة مسارات لاسترداد قرض متعثر، ويعتمد المسار المناسب على طريقة توثيق الدين. فالدين السائل المدعوم بمستندات واضحة يمكن غالبًا متابعته من خلال إجراء أمر الأداء، وهو إجراء موجز أسرع من التقاضي العادي، بينما تُتابع الديون المتنازع عليها أو الأكثر تعقيدًا من خلال الدعاوى المدنية العادية.",
+p2:"نادرًا ما يقتصر الاسترداد على الفوز بحكم قضائي — بل يتعلق بتحويل ذلك الحكم إلى نقد فعلي. وهذا يعني تحديد وحجز حسابات المقترض المصرفية وأصوله، والتنفيذ على أي عقار مرهون أو ضمان مرهون، ومتابعة الكفلاء عندما لا تكفي أصول المقترض نفسه.",
+p3:"عندما يكون المقترض (الشركة) معسرًا بالفعل، فقد يتم الاسترداد بدلاً من ذلك من خلال إجراءات الإفلاس أو إعادة الهيكلة الرسمية، والتي تغيّر كلاً من سبل الانتصاف المتاحة والجدول الزمني. إن تقييم أي مسار يناسب فعليًا الوضع المالي للمقترض في وقت مبكر يوفر الوقت الذي قد تهدره استراتيجية بسيطة لكنها خاطئة.",
+h2_how:"كيف تُدار عملية استرداد القروض",
+step1_t:"تقييم التعثر ومراجعة المستندات",step1_d:"تُراجع اتفاقية القرض ومستندات الضمان وسجل السداد لتأكيد التعثر وتحديد مبلغ الدين المستحق وتحديد أسرع مسار متاح للاسترداد.",
+step2_t:"إشعار التعثر الرسمي",step2_d:"يُصدر إشعار تعثر يحدد المبلغ المستحق ومهلة للمعالجة، وذلك لتفعيل سبل الانتصاف التعاقدية ودعم أي طلب قضائي لاحق.",
+step3_t:"أمر الأداء أو الدعوى المدنية",step3_d:"بحسب طريقة توثيق الدين، تُرفع الدعوى إما من خلال إجراء أمر الأداء للديون السائلة أو من خلال دعوى مدنية عادية.",
+step4_t:"تتبع الأصول وحجزها",step4_d:"تُحدد حسابات المقترض المصرفية وعقاراته وأصوله الأخرى، وتُطلب أوامر حجز تحفظي لتأمينها قبل صدور الحكم.",
+step5_t:"التنفيذ على الضمانات والكفلاء",step5_d:"يُنفَّذ الحكم على العقار المرهون أو الضمان المرهون، وتُتابع المطالبات ضد أي كفلاء للقرض.",
+step6_t:"إجراءات الإفلاس (عند الاقتضاء)",step6_d:"عندما يكون المقترض معسرًا، يُتابع الاسترداد من خلال إجراءات الإفلاس أو إعادة الهيكلة الرسمية، إلى جانب أو بدلاً من التنفيذ العادي.",
+h2_when:"متى تحتاج إلى محامي تعثر في سداد القروض واسترداد ديون",
+sc1:"توقف مقترض عن سداد الدفعات على تسهيل قرض قدمته.",
+sc2:"تحتاج إلى إصدار إشعار تعثر رسمي قبل اتخاذ إجراء قانوني.",
+sc3:"تفكر في اللجوء إلى إجراء أمر الأداء لاسترداد دين سائل بسرعة.",
+sc4:"تم الحصول على حكم قضائي، لكن يجب تحديد أصول المقترض وحجزها.",
+sc5:"تحتاج إلى التنفيذ على عقار مرهون أو أسهم مرهونة أو ضمانات أخرى تكفل القرض.",
+sc6:"قد يكون المقترض (شركة) معسرًا وتحتاج إلى المشورة بشأن إجراءات الإفلاس أو إعادة الهيكلة.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"إشعارات التعثر وخطابات المطالبة قبل التقاضي",
+sv2:"طلبات أمر الأداء للديون السائلة",
+sv3:"الدعاوى المدنية لاسترداد القروض وتسهيلات الائتمان",
+sv4:"الحجز التحفظي على الحسابات المصرفية والأصول",
+sv5:"التنفيذ على العقارات المرهونة والضمانات المرهونة",
+sv6:"المطالبات ضد الكفلاء والمقترضين المشتركين",
+sv7:"المشورة بشأن إجراءات الإفلاس وإعادة الهيكلة ضد المقترضين المتعثرين",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما هو إجراء أمر الأداء ومتى يمكنني استخدامه؟",faq1_a:"هو إجراء قضائي موجز لاسترداد دين سائل مدعوم بمستندات واضحة، مثل اتفاقية القرض وكشف الحساب — وهو أسرع من الدعوى المدنية العادية.",
+faq2_q:"هل يمكنني تجميد حساب المقترض المصرفي قبل الحصول على حكم قضائي؟",faq2_a:"نعم، في الحالات المناسبة يمكن الحصول على أمر حجز تحفظي لتجميد الحسابات المصرفية أو الأصول الأخرى أثناء سير الدعوى، لمنع المقترض من تبديد الأموال.",
+faq3_q:"ماذا يحدث إذا لم تكن لدى المقترض أصول كافية لتغطية الدين؟",faq3_a:"يمكن متابعة المطالبات ضد أي كفلاء أو مقترضين مشتركين، وعندما يكون المقترض شركة، قد تتيح إجراءات الإفلاس الاسترداد من خلال عملية إعادة هيكلة أو تصفية أوسع نطاقًا.",
+faq4_q:"هل إشعار التعثر مطلوب قانونًا قبل رفع الدعوى؟",faq4_a:"يُنصح به بشكل عام وغالبًا ما يكون مطلوبًا تعاقديًا — فهو يوثق التعثر بوضوح ويمنح المقترض فرصة أخيرة للسداد قبل بدء الإجراءات الرسمية.",
+faq5_q:"كم من الوقت يستغرق استرداد القرض عادةً؟",faq5_a:"يعتمد ذلك على المسار المتبع: إجراءات أمر الأداء للديون السائلة غير المتنازع عليها سريعة نسبيًا، بينما تستغرق المطالبات المتنازع عليها أو التنفيذ على الأصول أو إجراءات الإفلاس وقتًا أطول."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",banking_law:"银行法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜贷款违约与追偿律师",
+lead:"当借款人停止还款时，您行动的速度和力度往往决定了最终能追回多少债务。",
+box:"迪拜贷款违约与追偿律师代表银行、金融机构及私人贷款人追讨未偿还贷款——从最初的违约通知，到支付令程序、资产查封，再到对担保物及担保人的强制执行，必要时还包括破产程序。",
+p1:"阿联酋法律为贷款人提供了多种追讨违约贷款的途径，具体选择取决于债务的记录方式。若有明确证明文件支持的确定债务，通常可通过支付令（أمر الأداء）程序追讨，这是一种比普通诉讼更快的简易程序；而存在争议或较为复杂的债务则通过标准民事诉讼程序处理。",
+p2:"追偿工作很少止步于胜诉判决——关键在于将判决转化为实际现金。这意味着要查明并查封借款人的银行账户和资产，对任何抵押物或质押担保强制执行，并在借款人自身资产不足时向担保人追偿。",
+p3:"如果企业借款人确实资不抵债，追偿则可能转而通过正式的破产或重组程序进行，这会改变可用的救济方式和时间表。及早评估哪条途径真正适合借款人的财务状况，可以节省因采用简单但错误的策略而白白浪费的时间。",
+h2_how:"贷款追偿处理流程",
+step1_t:"违约评估与文件审查",step1_d:"审查贷款协议、担保文件及还款记录，以确认违约情况、量化欠款金额，并确定最快的可用追偿途径。",
+step2_t:"正式违约通知",step2_d:"发出违约通知，列明欠款金额及补救期限，既触发合同项下的救济措施，也为日后的法院申请提供支持。",
+step3_t:"支付令或民事诉讼",step3_d:"根据债务的记录方式，通过支付令程序（针对确定债务）或标准民事诉讼提起程序。",
+step4_t:"资产追踪与查封",step4_d:"查明借款人的银行账户、不动产及其他资产，并申请诉前财产保全查封令，以在判决前予以保全。",
+step5_t:"对担保物及担保人强制执行",step5_d:"对抵押不动产或质押担保强制执行判决，并向贷款的任何担保人追偿。",
+step6_t:"破产程序（如适用）",step6_d:"若借款人资不抵债，将结合或替代常规强制执行，通过正式破产或重组程序追偿。",
+h2_when:"何时需要贷款违约与追偿律师",
+sc1:"借款人已停止偿还您提供的贷款融资。",
+sc2:"您需要在采取法律行动前发出正式违约通知。",
+sc3:"您正考虑通过支付令程序快速追讨一笔确定债务。",
+sc4:"已获得判决，但需要查明并查封借款人的资产。",
+sc5:"您需要对抵押不动产、质押股份或其他担保贷款的抵押物强制执行。",
+sc6:"某企业借款人可能已资不抵债，您需要就破产或重组程序获取法律意见。",
+h2_services:"我们提供的服务",
+sv1:"违约通知及诉前催款函",
+sv2:"针对确定债务的支付令申请",
+sv3:"贷款及信贷融资追偿民事诉讼",
+sv4:"银行账户及资产的诉前保全查封",
+sv5:"对抵押不动产及质押担保的强制执行",
+sv6:"针对担保人及共同借款人的索赔",
+sv7:"就针对违约借款人的破产及重组程序提供法律意见",
+h2_faq:"常见问题",
+faq1_q:"什么是支付令程序？我何时可以使用它？",faq1_a:"这是一种简易法院程序，用于追讨有明确文件（如贷款协议及账户对账单）证明的确定债务——其速度快于标准民事诉讼。",
+faq2_q:"我能在获得判决前冻结借款人的银行账户吗？",faq2_a:"可以，在适当情形下可申请诉前保全查封令，在诉讼进行期间冻结银行账户或其他资产，以防止借款人转移资金。",
+faq3_q:"如果借款人的资产不足以偿还债务怎么办？",faq3_a:"可以向任何担保人或共同借款人追偿；若借款人为公司，破产程序可能允许通过更广泛的重组或清算程序进行追偿。",
+faq4_q:"起诉前是否法律上必须发出违约通知？",faq4_a:"通常建议发出，且合同中往往有此要求——这能清楚记录违约事实，并在正式程序开始前给予借款人最后的还款机会。",
+faq5_q:"贷款追偿通常需要多长时间？",faq5_a:"这取决于所采取的途径：针对无争议确定债务的支付令程序相对较快，而有争议的索赔、资产强制执行或破产程序则需要更长时间。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",banking_law:"Банковское право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по взысканию задолженности по кредитам в Дубае",
+lead:"Когда заёмщик перестаёт платить, то, насколько быстро и решительно вы действуете, часто определяет, какую часть долга удастся реально взыскать.",
+box:"Адвокат по взысканию задолженности по кредитам в Дубае представляет интересы банков, финансовых организаций и частных кредиторов при взыскании непогашенных кредитов — от первого уведомления о просрочке до приказного производства, ареста активов, обращения взыскания на обеспечение и поручителей, а при необходимости — до процедур несостоятельности.",
+p1:"Законодательство ОАЭ предоставляет кредиторам несколько путей взыскания просроченного кредита, и выбор подходящего зависит от того, как оформлена задолженность. Ликвидная задолженность, подтверждённая чёткими документами, часто может быть взыскана через приказное производство (أمر الأداء) — упрощённую процедуру, более быструю, чем обычное судебное разбирательство, тогда как спорные или более сложные долги рассматриваются в порядке обычного гражданского судопроизводства.",
+p2:"Взыскание редко ограничивается получением судебного решения — важно превратить это решение в реальные деньги. Это означает выявление и арест банковских счетов и активов заёмщика, обращение взыскания на заложенное имущество или обеспечение, а также предъявление требований к поручителям, если собственных активов заёмщика недостаточно.",
+p3:"Если корпоративный заёмщик действительно неплатёжеспособен, взыскание может вестись через официальные процедуры банкротства или реструктуризации, которые меняют как доступные средства защиты, так и сроки. Ранняя оценка того, какой путь реально соответствует финансовому положению заёмщика, экономит время, которое иначе было бы потрачено на простую, но ошибочную стратегию.",
+h2_how:"Как ведётся взыскание задолженности по кредиту",
+step1_t:"Оценка просрочки и анализ документов",step1_d:"Изучаются кредитный договор, обеспечительная документация и история платежей, чтобы подтвердить факт просрочки, определить сумму задолженности и выбрать наиболее быстрый доступный путь взыскания.",
+step2_t:"Официальное уведомление о просрочке",step2_d:"Направляется уведомление о просрочке с указанием суммы долга и срока для его погашения — это активирует договорные средства защиты и служит основанием для последующего обращения в суд.",
+step3_t:"Приказное производство или гражданский иск",step3_d:"В зависимости от того, как оформлена задолженность, дело возбуждается либо в порядке приказного производства по ликвидным долгам, либо путём подачи обычного гражданского иска.",
+step4_t:"Розыск и арест активов",step4_d:"Выявляются банковские счета, недвижимость и иные активы заёмщика, подаются заявления об обеспечительном аресте для их сохранения до вынесения решения.",
+step5_t:"Обращение взыскания на обеспечение и поручителей",step5_d:"Решение суда исполняется в отношении заложенного имущества или обеспечения, а требования предъявляются к любым поручителям по кредиту.",
+step6_t:"Процедуры несостоятельности (при необходимости)",step6_d:"Если заёмщик неплатёжеспособен, взыскание ведётся через официальные процедуры банкротства или реструктуризации наряду с обычным исполнительным производством или вместо него.",
+h2_when:"Когда вам нужен адвокат по взысканию задолженности по кредитам",
+sc1:"Заёмщик прекратил платежи по предоставленному вами кредиту.",
+sc2:"Вам нужно направить официальное уведомление о просрочке перед обращением в суд.",
+sc3:"Вы рассматриваете приказное производство для быстрого взыскания ликвидного долга.",
+sc4:"Судебное решение получено, но необходимо выявить и арестовать активы заёмщика.",
+sc5:"Вам нужно обратить взыскание на заложенную недвижимость, акции в залоге или иное обеспечение кредита.",
+sc6:"Корпоративный заёмщик может быть неплатёжеспособен, и вам нужна консультация по процедурам банкротства или реструктуризации.",
+h2_services:"Наши услуги",
+sv1:"Уведомления о просрочке и досудебные претензионные письма",
+sv2:"Заявления в порядке приказного производства по ликвидным долгам",
+sv3:"Гражданские иски о взыскании задолженности по кредитам и кредитным линиям",
+sv4:"Обеспечительный арест банковских счетов и активов",
+sv5:"Обращение взыскания на заложенную недвижимость и обеспечение",
+sv6:"Требования к поручителям и созаёмщикам",
+sv7:"Консультирование по процедурам банкротства и реструктуризации в отношении неплатёжеспособных заёмщиков",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Что такое приказное производство и когда его можно использовать?",faq1_a:"Это упрощённая судебная процедура для взыскания ликвидного долга, подтверждённого чёткой документацией, например кредитным договором и выпиской по счёту — она проходит быстрее, чем обычный гражданский иск.",
+faq2_q:"Могу ли я заморозить банковский счёт заёмщика до получения судебного решения?",faq2_a:"Да, в подходящих случаях можно получить определение об обеспечительном аресте для заморозки банковских счетов или иных активов на время разбирательства, чтобы предотвратить вывод средств заёмщиком.",
+faq3_q:"Что произойдёт, если у заёмщика недостаточно активов для покрытия долга?",faq3_a:"Требования могут быть предъявлены к любым поручителям или созаёмщикам, а если заёмщиком является компания, процедуры несостоятельности могут позволить взыскание через более широкий процесс реструктуризации или ликвидации.",
+faq4_q:"Обязательно ли по закону направлять уведомление о просрочке перед подачей иска?",faq4_a:"Как правило, это рекомендуется и часто требуется по договору — оно чётко фиксирует факт просрочки и даёт заёмщику последнюю возможность погасить долг до начала официального разбирательства.",
+faq5_q:"Сколько обычно занимает взыскание задолженности по кредиту?",faq5_a:"Это зависит от выбранного пути: приказное производство по неоспариваемым ликвидным долгам проходит относительно быстро, тогда как спорные требования, обращение взыскания на активы или процедуры несостоятельности занимают больше времени."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",banking_law:"Bankrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Kreditausfall & Forderungseinzug in Dubai",
+lead:"Wenn ein Kreditnehmer die Zahlungen einstellt, entscheidet oft die Geschwindigkeit und Entschlossenheit Ihres Vorgehens darüber, wie viel der Forderung tatsächlich beigetrieben werden kann.",
+box:"Ein Anwalt für Kreditausfall und Forderungseinzug in Dubai vertritt Banken, Finanzinstitute und private Kreditgeber bei der Beitreibung notleidender Kredite — von der ersten Mahnung über das Mahnbescheidsverfahren, die Pfändung von Vermögenswerten und die Vollstreckung gegen Sicherheiten und Bürgen bis hin zu Insolvenzverfahren, wo erforderlich.",
+p1:"Das Recht der VAE bietet Kreditgebern mehrere Wege zur Beitreibung eines notleidenden Kredits, wobei der richtige Weg davon abhängt, wie die Forderung dokumentiert ist. Eine liquide, durch klare Unterlagen belegte Forderung kann häufig im Mahnbescheidsverfahren (أمر الأداء) verfolgt werden, einem schnelleren summarischen Verfahren als das ordentliche Klageverfahren, während strittige oder komplexere Forderungen im ordentlichen Zivilverfahren behandelt werden.",
+p2:"Bei der Beitreibung geht es selten nur um den Erhalt eines Urteils — entscheidend ist, dieses Urteil tatsächlich in Geld umzuwandeln. Das bedeutet, die Bankkonten und Vermögenswerte des Kreditnehmers zu ermitteln und zu pfänden, gegen belastete Immobilien oder verpfändete Sicherheiten zu vollstrecken und Bürgen in Anspruch zu nehmen, wenn das eigene Vermögen des Kreditnehmers nicht ausreicht.",
+p3:"Ist ein Unternehmenskreditnehmer tatsächlich zahlungsunfähig, kann die Beitreibung stattdessen über förmliche Insolvenz- oder Restrukturierungsverfahren erfolgen, die sowohl die verfügbaren Rechtsmittel als auch den Zeitrahmen verändern. Frühzeitig zu bewerten, welcher Weg tatsächlich zur finanziellen Lage des Kreditnehmers passt, spart Zeit, die eine einfache, aber falsche Strategie sonst verschwenden würde.",
+h2_how:"So läuft der Forderungseinzug bei Kreditausfall ab",
+step1_t:"Bewertung des Zahlungsausfalls & Prüfung der Unterlagen",step1_d:"Der Kreditvertrag, die Sicherheitendokumente und die Zahlungshistorie werden geprüft, um den Zahlungsausfall zu bestätigen, die ausstehende Forderung zu beziffern und den schnellsten verfügbaren Weg zur Beitreibung zu ermitteln.",
+step2_t:"Förmliche Mahnung",step2_d:"Es wird eine Mahnung ausgesprochen, die den geschuldeten Betrag und eine Frist zur Behebung festlegt — dies löst vertragliche Rechtsbehelfe aus und stützt einen späteren gerichtlichen Antrag.",
+step3_t:"Mahnbescheid oder Zivilklage",step3_d:"Je nachdem, wie die Forderung dokumentiert ist, wird das Verfahren entweder im Mahnbescheidsverfahren für liquide Forderungen oder im Wege einer ordentlichen Zivilklage eingeleitet.",
+step4_t:"Vermögensermittlung & Pfändung",step4_d:"Die Bankkonten, Immobilien und sonstigen Vermögenswerte des Kreditnehmers werden ermittelt, und es werden einstweilige Pfändungsbeschlüsse beantragt, um diese vor dem Urteil zu sichern.",
+step5_t:"Vollstreckung gegen Sicherheiten & Bürgen",step5_d:"Das Urteil wird gegen belastete Immobilien oder verpfändete Sicherheiten vollstreckt, und Ansprüche werden gegen etwaige Bürgen des Kredits verfolgt.",
+step6_t:"Insolvenzverfahren (soweit anwendbar)",step6_d:"Ist der Kreditnehmer zahlungsunfähig, wird die Beitreibung neben oder anstelle der ordentlichen Vollstreckung über förmliche Insolvenz- oder Restrukturierungsverfahren verfolgt.",
+h2_when:"Wann Sie einen Anwalt für Kreditausfall & Forderungseinzug brauchen",
+sc1:"Ein Kreditnehmer hat die Zahlungen für eine von Ihnen gewährte Kreditfazilität eingestellt.",
+sc2:"Sie müssen vor der Einleitung rechtlicher Schritte eine förmliche Mahnung aussprechen.",
+sc3:"Sie erwägen das Mahnbescheidsverfahren, um eine liquide Forderung schnell beizutreiben.",
+sc4:"Ein Urteil wurde erwirkt, aber die Vermögenswerte des Kreditnehmers müssen noch ermittelt und gepfändet werden.",
+sc5:"Sie müssen gegen belastete Immobilien, verpfändete Aktien oder andere Sicherheiten des Kredits vollstrecken.",
+sc6:"Ein Unternehmenskreditnehmer könnte zahlungsunfähig sein, und Sie benötigen Beratung zu Insolvenz- oder Restrukturierungsverfahren.",
+h2_services:"Unsere Leistungen",
+sv1:"Mahnungen und außergerichtliche Zahlungsaufforderungen",
+sv2:"Anträge im Mahnbescheidsverfahren (أمر الأداء) für liquide Forderungen",
+sv3:"Zivilklagen zur Beitreibung von Krediten und Kreditfazilitäten",
+sv4:"Einstweilige Pfändung von Bankkonten und Vermögenswerten",
+sv5:"Vollstreckung gegen belastete Immobilien und verpfändete Sicherheiten",
+sv6:"Ansprüche gegen Bürgen und Mitkreditnehmer",
+sv7:"Beratung zu Insolvenz- und Restrukturierungsverfahren gegen säumige Kreditnehmer",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist das Mahnbescheidsverfahren und wann kann ich es nutzen?",faq1_a:"Es handelt sich um ein summarisches Gerichtsverfahren zur Beitreibung einer liquiden, durch klare Unterlagen wie Kreditvertrag und Kontoauszug belegten Forderung — es verläuft schneller als eine ordentliche Zivilklage.",
+faq2_q:"Kann ich ein Bankkonto des Kreditnehmers einfrieren lassen, bevor ich ein Urteil erwirke?",faq2_a:"Ja, in geeigneten Fällen kann ein einstweiliger Pfändungsbeschluss erwirkt werden, um Bankkonten oder andere Vermögenswerte während des laufenden Verfahrens einzufrieren und zu verhindern, dass der Kreditnehmer Mittel beiseiteschafft.",
+faq3_q:"Was passiert, wenn der Kreditnehmer nicht über ausreichende Vermögenswerte verfügt, um die Forderung zu decken?",faq3_a:"Ansprüche können gegen etwaige Bürgen oder Mitkreditnehmer verfolgt werden, und wenn der Kreditnehmer ein Unternehmen ist, kann ein Insolvenzverfahren eine Beitreibung im Rahmen eines umfassenderen Restrukturierungs- oder Liquidationsprozesses ermöglichen.",
+faq4_q:"Ist eine Mahnung vor einer Klage gesetzlich vorgeschrieben?",faq4_a:"Sie ist in der Regel ratsam und häufig vertraglich vorgeschrieben — sie dokumentiert den Zahlungsausfall eindeutig und gibt dem Kreditnehmer eine letzte Gelegenheit zur Zahlung, bevor ein förmliches Verfahren beginnt.",
+faq5_q:"Wie lange dauert die Beitreibung eines Kredits in der Regel?",faq5_a:"Das hängt vom gewählten Weg ab: Das Mahnbescheidsverfahren für unstrittige, liquide Forderungen verläuft vergleichsweise schnell, während strittige Ansprüche, die Vollstreckung gegen Vermögenswerte oder Insolvenzverfahren mehr Zeit in Anspruch nehmen."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
