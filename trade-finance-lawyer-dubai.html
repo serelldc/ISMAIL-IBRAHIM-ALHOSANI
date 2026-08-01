@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Trade Finance Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Trade finance instruments carry their own set of rules distinct from ordinary lending.">
+<meta name="description" content="Advice for importers, exporters, and banks on letter of credit disputes, discrepancies, wrongful dishonour, and the fraud exception under UCP 600 in Dubai.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,386 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="banking-law.html">Banking Law</a> &rsaquo; Trade Finance Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="banking-law.html" data-i18n="banking_law">Banking Law</a> &rsaquo; <span data-i18n="page_title">Trade Finance Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Trade Finance Lawyer in Dubai</h1>
-  <p class="lead">Trade finance instruments carry their own set of rules distinct from ordinary lending.</p>
-  <div class="box">This covers disputes and advisory work involving letters of credit and other trade finance instruments.</div>
-  <p class="body-p">The firm advises on trade finance documentation and represents clients in related disputes.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Trade Finance Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">A letter of credit is only as reliable as the paperwork behind it — a single discrepancy can be enough for a bank to refuse payment on a shipment that has already left port.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A trade finance lawyer in Dubai advises importers, exporters, issuing and confirming banks on letters of credit, documentary collections, and other trade finance instruments used to move goods and money across the UAE's ports and free zones.</div>
+
+<p class="body-p" data-i18n="p1">Letters of credit and documentary collections are governed by internationally recognized rules — principally UCP 600 for letters of credit — which UAE banks and courts apply alongside domestic law. Payment under a letter of credit depends on strict compliance: documents presented must match the credit's terms exactly, and even minor discrepancies give the bank grounds to refuse payment.</p>
+<p class="body-p" data-i18n="p2">Disputes typically arise at the point of presentation, when a bank rejects documents for discrepancies the beneficiary considers immaterial, or later, when a buyer alleges fraud in the underlying transaction and seeks to block payment despite compliant documents. The firm advises both beneficiaries seeking payment and applicants or banks resisting or contesting it.</p>
+<p class="body-p" data-i18n="p3">Because trade finance instruments move quickly and payment deadlines are short, disputes over discrepancies, wrongful dishonour, or fraud need to be assessed and acted on within days, not weeks, to preserve the available remedies.</p>
+
+<h2 data-i18n="h2_how">How Trade Finance Disputes Are Handled</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Instrument & Document Review</strong><span data-i18n="step1_d">The letter of credit, documentary collection instructions, and the presented shipping and commercial documents are reviewed against the applicable rules to assess compliance.</span></li>
+<li><strong data-i18n="step2_t">Discrepancy Assessment</strong><span data-i18n="step2_d">Where a bank has rejected documents for discrepancies, the rejection is tested against UCP 600 and the credit's actual terms to determine whether it is properly grounded.</span></li>
+<li><strong data-i18n="step3_t">Wrongful Dishonour Claims</strong><span data-i18n="step3_d">Where documents were compliant and payment was wrongly refused, a claim is pursued against the issuing or confirming bank to compel payment.</span></li>
+<li><strong data-i18n="step4_t">Fraud Exception Applications</strong><span data-i18n="step4_d">Where an applicant alleges fraud in the underlying transaction, the narrow fraud exception to the independence of the credit is assessed, including any urgent application to restrain or compel payment.</span></li>
+<li><strong data-i18n="step5_t">Bills of Lading & Shipping Document Disputes</strong><span data-i18n="step5_d">Disputes over bills of lading, certificates of origin, and other trade documents are handled where they affect payment or title to goods.</span></li>
+<li><strong data-i18n="step6_t">Recovery Under Confirmed & Unconfirmed Credits</strong><span data-i18n="step6_d">Recovery routes are pursued against the relevant bank depending on whether the credit is confirmed, unconfirmed, or transferable.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Trade Finance Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">A bank has rejected your export documents for alleged discrepancies and refused payment under a letter of credit.</li>
+<li data-i18n="sc2">You are an issuing or confirming bank facing a claim over a disputed letter of credit.</li>
+<li data-i18n="sc3">A buyer is alleging fraud to try to block payment under a letter of credit despite compliant documents.</li>
+<li data-i18n="sc4">You need a letter of credit or documentary collection reviewed before goods are shipped.</li>
+<li data-i18n="sc5">There is a dispute over a bill of lading or other shipping document affecting payment or delivery.</li>
+<li data-i18n="sc6">You need to recover payment wrongfully withheld under a confirmed or unconfirmed letter of credit.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Review of letters of credit and documentary collection instructions before shipment</li>
+<li data-i18n="sv2">Discrepancy disputes and document compliance assessments under UCP 600</li>
+<li data-i18n="sv3">Wrongful dishonour claims against issuing and confirming banks</li>
+<li data-i18n="sv4">Fraud exception applications and defences in letter of credit disputes</li>
+<li data-i18n="sv5">Bills of lading and shipping document disputes</li>
+<li data-i18n="sv6">Advice on confirmed, unconfirmed, and transferable letters of credit</li>
+<li data-i18n="sv7">Advice on trade finance structures including forfaiting and receivables discounting</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What happens if a bank finds a discrepancy in my export documents?</summary>
+<p data-i18n="faq1_a">The bank can refuse payment and must notify the presenter of the specific discrepancies within a set timeframe — whether the rejection is valid depends on whether the discrepancies genuinely deviate from the credit's terms.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Can a bank refuse payment just because the buyer disputes the goods?</summary>
+<p data-i18n="faq2_a">Generally no — a letter of credit is independent of the underlying sale contract, and a bank must pay against compliant documents regardless of disputes over the goods themselves, subject only to the narrow fraud exception.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What is the fraud exception to a letter of credit?</summary>
+<p data-i18n="faq3_a">It allows a court to restrain payment where there is clear evidence of fraud in the underlying transaction or the documents themselves — it is applied narrowly and is not a route to reopen ordinary commercial disputes.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">What's the difference between a confirmed and unconfirmed letter of credit?</summary>
+<p data-i18n="faq4_a">A confirmed credit carries an additional independent payment undertaking from a second bank, typically in the beneficiary's country, giving the beneficiary recourse against that bank as well as the issuing bank.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">How quickly do I need to act if my documents are rejected?</summary>
+<p data-i18n="faq5_a">Very quickly — presentation and rejection are governed by strict time limits under UCP 600, and delay can affect both your ability to correct discrepancies and any later claim.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",banking_law:"Banking Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Trade Finance Lawyer in Dubai",
+lead:"A letter of credit is only as reliable as the paperwork behind it — a single discrepancy can be enough for a bank to refuse payment on a shipment that has already left port.",
+box:"A trade finance lawyer in Dubai advises importers, exporters, issuing and confirming banks on letters of credit, documentary collections, and other trade finance instruments used to move goods and money across the UAE's ports and free zones.",
+p1:"Letters of credit and documentary collections are governed by internationally recognized rules — principally UCP 600 for letters of credit — which UAE banks and courts apply alongside domestic law. Payment under a letter of credit depends on strict compliance: documents presented must match the credit's terms exactly, and even minor discrepancies give the bank grounds to refuse payment.",
+p2:"Disputes typically arise at the point of presentation, when a bank rejects documents for discrepancies the beneficiary considers immaterial, or later, when a buyer alleges fraud in the underlying transaction and seeks to block payment despite compliant documents. The firm advises both beneficiaries seeking payment and applicants or banks resisting or contesting it.",
+p3:"Because trade finance instruments move quickly and payment deadlines are short, disputes over discrepancies, wrongful dishonour, or fraud need to be assessed and acted on within days, not weeks, to preserve the available remedies.",
+h2_how:"How Trade Finance Disputes Are Handled",
+step1_t:"Instrument & Document Review",step1_d:"The letter of credit, documentary collection instructions, and the presented shipping and commercial documents are reviewed against the applicable rules to assess compliance.",
+step2_t:"Discrepancy Assessment",step2_d:"Where a bank has rejected documents for discrepancies, the rejection is tested against UCP 600 and the credit's actual terms to determine whether it is properly grounded.",
+step3_t:"Wrongful Dishonour Claims",step3_d:"Where documents were compliant and payment was wrongly refused, a claim is pursued against the issuing or confirming bank to compel payment.",
+step4_t:"Fraud Exception Applications",step4_d:"Where an applicant alleges fraud in the underlying transaction, the narrow fraud exception to the independence of the credit is assessed, including any urgent application to restrain or compel payment.",
+step5_t:"Bills of Lading & Shipping Document Disputes",step5_d:"Disputes over bills of lading, certificates of origin, and other trade documents are handled where they affect payment or title to goods.",
+step6_t:"Recovery Under Confirmed & Unconfirmed Credits",step6_d:"Recovery routes are pursued against the relevant bank depending on whether the credit is confirmed, unconfirmed, or transferable.",
+h2_when:"When You Need a Trade Finance Lawyer",
+sc1:"A bank has rejected your export documents for alleged discrepancies and refused payment under a letter of credit.",
+sc2:"You are an issuing or confirming bank facing a claim over a disputed letter of credit.",
+sc3:"A buyer is alleging fraud to try to block payment under a letter of credit despite compliant documents.",
+sc4:"You need a letter of credit or documentary collection reviewed before goods are shipped.",
+sc5:"There is a dispute over a bill of lading or other shipping document affecting payment or delivery.",
+sc6:"You need to recover payment wrongfully withheld under a confirmed or unconfirmed letter of credit.",
+h2_services:"Services We Provide",
+sv1:"Review of letters of credit and documentary collection instructions before shipment",
+sv2:"Discrepancy disputes and document compliance assessments under UCP 600",
+sv3:"Wrongful dishonour claims against issuing and confirming banks",
+sv4:"Fraud exception applications and defences in letter of credit disputes",
+sv5:"Bills of lading and shipping document disputes",
+sv6:"Advice on confirmed, unconfirmed, and transferable letters of credit",
+sv7:"Advice on trade finance structures including forfaiting and receivables discounting",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What happens if a bank finds a discrepancy in my export documents?",faq1_a:"The bank can refuse payment and must notify the presenter of the specific discrepancies within a set timeframe — whether the rejection is valid depends on whether the discrepancies genuinely deviate from the credit's terms.",
+faq2_q:"Can a bank refuse payment just because the buyer disputes the goods?",faq2_a:"Generally no — a letter of credit is independent of the underlying sale contract, and a bank must pay against compliant documents regardless of disputes over the goods themselves, subject only to the narrow fraud exception.",
+faq3_q:"What is the fraud exception to a letter of credit?",faq3_a:"It allows a court to restrain payment where there is clear evidence of fraud in the underlying transaction or the documents themselves — it is applied narrowly and is not a route to reopen ordinary commercial disputes.",
+faq4_q:"What's the difference between a confirmed and unconfirmed letter of credit?",faq4_a:"A confirmed credit carries an additional independent payment undertaking from a second bank, typically in the beneficiary's country, giving the beneficiary recourse against that bank as well as the issuing bank.",
+faq5_q:"How quickly do I need to act if my documents are rejected?",faq5_a:"Very quickly — presentation and rejection are governed by strict time limits under UCP 600, and delay can affect both your ability to correct discrepancies and any later claim."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",banking_law:"القانون المصرفي",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي التمويل التجاري في دبي",
+lead:"لا يكون خطاب الاعتماد موثوقًا إلا بقدر موثوقية المستندات التي يستند إليها — فقد تكفي مخالفة واحدة ليرفض البنك الدفع عن شحنة غادرت الميناء بالفعل.",
+box:"يقدم محامي التمويل التجاري في دبي الاستشارة للمستوردين والمصدرين والبنوك المُصدرة والمؤكِّدة بشأن خطابات الاعتماد والتحصيل المستندي وأدوات التمويل التجاري الأخرى المستخدمة لنقل البضائع والأموال عبر موانئ ومناطق دبي الحرة.",
+p1:"تخضع خطابات الاعتماد والتحصيل المستندي لقواعد معترف بها دوليًا — أبرزها القواعد والأعراف الموحدة للاعتمادات المستندية (UCP 600) بالنسبة لخطابات الاعتماد — والتي تطبقها البنوك والمحاكم الإماراتية إلى جانب القانون المحلي. ويعتمد الدفع بموجب خطاب الاعتماد على المطابقة الدقيقة: يجب أن تتطابق المستندات المقدمة تمامًا مع شروط الاعتماد، وحتى المخالفات البسيطة تمنح البنك أساسًا لرفض الدفع.",
+p2:"عادةً ما تنشأ النزاعات عند تقديم المستندات، عندما يرفض بنك المستندات بسبب مخالفات يعتبرها المستفيد غير جوهرية، أو لاحقًا، عندما يدّعي المشتري وجود احتيال في المعاملة الأساسية ويسعى لمنع الدفع رغم مطابقة المستندات. ويقدم المكتب الاستشارة لكل من المستفيدين الساعين للحصول على الدفع، ومقدمي الطلبات أو البنوك التي تمانع في الدفع أو تعترض عليه.",
+p3:"نظرًا لأن أدوات التمويل التجاري تتحرك بسرعة وأن مواعيد الدفع قصيرة، يجب تقييم النزاعات المتعلقة بالمخالفات أو الرفض غير المبرر أو الاحتيال واتخاذ إجراء بشأنها في غضون أيام، لا أسابيع، للحفاظ على سبل الانتصاف المتاحة.",
+h2_how:"كيف تُدار نزاعات التمويل التجاري",
+step1_t:"مراجعة الأداة والمستندات",step1_d:"تُراجع خطاب الاعتماد أو تعليمات التحصيل المستندي، والمستندات الشحنية والتجارية المقدمة، في ضوء القواعد المعمول بها لتقييم مدى المطابقة.",
+step2_t:"تقييم المخالفات",step2_d:"عندما يرفض بنك المستندات بسبب مخالفات، يُختبر الرفض في ضوء القواعد الموحدة للاعتمادات المستندية وشروط الاعتماد الفعلية لتحديد ما إذا كان مبررًا.",
+step3_t:"مطالبات الرفض غير المبرر",step3_d:"عندما تكون المستندات مطابقة وقد رُفض الدفع خطأً، تُتابع مطالبة ضد البنك المُصدر أو المؤكِّد لإلزامه بالدفع.",
+step4_t:"طلبات استثناء الاحتيال",step4_d:"عندما يدّعي مقدم الطلب وجود احتيال في المعاملة الأساسية، يُقيَّم استثناء الاحتيال الضيق من مبدأ استقلالية الاعتماد، بما في ذلك أي طلب عاجل لمنع الدفع أو إلزام به.",
+step5_t:"نزاعات سندات الشحن والمستندات الشحنية",step5_d:"تُعالج النزاعات المتعلقة بسندات الشحن وشهادات المنشأ والمستندات التجارية الأخرى عندما تؤثر على الدفع أو ملكية البضائع.",
+step6_t:"الاسترداد بموجب الاعتمادات المؤكَّدة وغير المؤكَّدة",step6_d:"تُتابع سبل الاسترداد ضد البنك المعني وفقًا لما إذا كان الاعتماد مؤكَّدًا أو غير مؤكَّد أو قابلاً للتحويل.",
+h2_when:"متى تحتاج إلى محامي تمويل تجاري",
+sc1:"رفض بنك مستندات التصدير الخاصة بك بدعوى وجود مخالفات ورفض الدفع بموجب خطاب اعتماد.",
+sc2:"أنت بنك مُصدر أو مؤكِّد تواجه مطالبة بشأن خطاب اعتماد متنازع عليه.",
+sc3:"يدّعي مشترٍ وجود احتيال في محاولة لمنع الدفع بموجب خطاب اعتماد رغم مطابقة المستندات.",
+sc4:"تحتاج إلى مراجعة خطاب اعتماد أو تعليمات تحصيل مستندي قبل شحن البضائع.",
+sc5:"هناك نزاع حول سند شحن أو مستند شحني آخر يؤثر على الدفع أو التسليم.",
+sc6:"تحتاج إلى استرداد مبلغ محتجز خطأً بموجب خطاب اعتماد مؤكَّد أو غير مؤكَّد.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"مراجعة خطابات الاعتماد وتعليمات التحصيل المستندي قبل الشحن",
+sv2:"نزاعات المخالفات وتقييم مطابقة المستندات بموجب القواعد الموحدة للاعتمادات المستندية",
+sv3:"مطالبات الرفض غير المبرر ضد البنوك المُصدرة والمؤكِّدة",
+sv4:"طلبات ودفوع استثناء الاحتيال في نزاعات خطابات الاعتماد",
+sv5:"نزاعات سندات الشحن والمستندات الشحنية",
+sv6:"المشورة بشأن خطابات الاعتماد المؤكَّدة وغير المؤكَّدة والقابلة للتحويل",
+sv7:"المشورة بشأن هياكل التمويل التجاري بما في ذلك خصم الذمم وشراء الفواتير",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ماذا يحدث إذا وجد البنك مخالفة في مستندات التصدير الخاصة بي؟",faq1_a:"يمكن للبنك رفض الدفع، ويجب عليه إخطار مقدم المستندات بالمخالفات المحددة خلال مهلة زمنية محددة — وتعتمد صحة الرفض على ما إذا كانت المخالفات تنحرف فعليًا عن شروط الاعتماد.",
+faq2_q:"هل يمكن للبنك رفض الدفع لمجرد اعتراض المشتري على البضائع؟",faq2_a:"لا، بشكل عام — فخطاب الاعتماد مستقل عن عقد البيع الأساسي، ويجب على البنك الدفع مقابل مستندات مطابقة بصرف النظر عن أي نزاع حول البضائع نفسها، باستثناء استثناء الاحتيال الضيق.",
+faq3_q:"ما هو استثناء الاحتيال من خطاب الاعتماد؟",faq3_a:"يسمح للمحكمة بمنع الدفع عند وجود دليل واضح على الاحتيال في المعاملة الأساسية أو في المستندات نفسها — ويُطبَّق بشكل ضيق وليس وسيلة لإعادة فتح النزاعات التجارية العادية.",
+faq4_q:"ما الفرق بين خطاب الاعتماد المؤكَّد وغير المؤكَّد؟",faq4_a:"يحمل الاعتماد المؤكَّد التزام دفع إضافي مستقل من بنك ثانٍ، عادةً في بلد المستفيد، مما يمنح المستفيد حق الرجوع على ذلك البنك بالإضافة إلى البنك المُصدر.",
+faq5_q:"ما مدى سرعة التصرف المطلوبة إذا رُفضت مستنداتي؟",faq5_a:"بسرعة كبيرة — إذ تخضع عملية التقديم والرفض لمهل زمنية صارمة بموجب القواعد الموحدة للاعتمادات المستندية، وقد يؤثر التأخير على قدرتك على تصحيح المخالفات وعلى أي مطالبة لاحقة."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",banking_law:"银行法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜贸易融资律师",
+lead:"信用证的可靠性取决于其背后单据的可靠性——哪怕只有一处不符点，银行也足以拒绝为已经离港的货物付款。",
+box:"迪拜贸易融资律师为进出口商、开证行及保兑行就信用证、跟单托收及其他用于阿联酋港口与自贸区货物与资金流转的贸易融资工具提供法律意见。",
+p1:"信用证和跟单托收受国际公认规则约束——主要是适用于信用证的《跟单信用证统一惯例》（UCP 600）——阿联酋银行与法院将其与国内法一并适用。信用证项下的付款取决于严格相符原则：所提交单据必须与信用证条款完全一致，即使是轻微不符点也足以使银行有权拒付。",
+p2:"争议通常出现在交单环节——银行以受益人认为并非实质性的不符点为由拒绝单据；或在其后出现——买方声称基础交易存在欺诈，试图阻止对相符单据的付款。本所同时为寻求付款的受益人以及拒付或抗辩付款的申请人或银行提供法律意见。",
+p3:"由于贸易融资工具流转迅速、付款期限短，因此针对不符点、错误拒付或欺诈的争议必须在数日而非数周内评估并采取行动，以保全可用的救济手段。",
+h2_how:"贸易融资争议处理流程",
+step1_t:"单证审查",step1_d:"依据适用规则审查信用证、跟单托收指示以及所提交的运输及商业单据，以评估其相符性。",
+step2_t:"不符点评估",step2_d:"当银行以不符点为由拒绝单据时，将依据《跟单信用证统一惯例》及信用证的实际条款审查该拒付是否具有正当依据。",
+step3_t:"错误拒付索赔",step3_d:"若单据相符但付款被错误拒绝，将向开证行或保兑行提起索赔以要求其付款。",
+step4_t:"欺诈例外申请",step4_d:"若申请人声称基础交易存在欺诈，将评估信用证独立性原则下狭窄的欺诈例外情形，包括申请紧急禁令以阻止或要求付款。",
+step5_t:"提单及运输单据争议",step5_d:"处理涉及提单、原产地证书及其他贸易单据的争议，前提是这些争议影响付款或货物所有权。",
+step6_t:"保兑与非保兑信用证项下的追偿",step6_d:"根据信用证是保兑、非保兑还是可转让性质，向相关银行追讨款项。",
+h2_when:"何时需要贸易融资律师",
+sc1:"银行以存在不符点为由拒绝了您的出口单据，并拒绝在信用证项下付款。",
+sc2:"您是开证行或保兑行，正面临一项有关争议信用证的索赔。",
+sc3:"买方声称存在欺诈，试图阻止在单据相符的情况下依信用证付款。",
+sc4:"您需要在装运货物前审查一份信用证或跟单托收指示。",
+sc5:"存在关于提单或其他运输单据的争议，影响付款或交付。",
+sc6:"您需要追讨在保兑或非保兑信用证项下被错误扣留的款项。",
+h2_services:"我们提供的服务",
+sv1:"装运前审查信用证及跟单托收指示",
+sv2:"依据《跟单信用证统一惯例》处理不符点争议及单据相符性评估",
+sv3:"针对开证行及保兑行的错误拒付索赔",
+sv4:"信用证争议中的欺诈例外申请及抗辩",
+sv5:"提单及运输单据争议",
+sv6:"就保兑、非保兑及可转让信用证提供法律意见",
+sv7:"就包括福费廷及应收账款贴现在内的贸易融资结构提供法律意见",
+h2_faq:"常见问题",
+faq1_q:"如果银行在我的出口单据中发现不符点会怎样？",faq1_a:"银行可以拒绝付款，并须在规定期限内将具体不符点通知交单人——拒付是否有效取决于该不符点是否确实偏离了信用证条款。",
+faq2_q:"银行能仅因买方对货物有异议而拒绝付款吗？",faq2_a:"一般不能——信用证独立于基础买卖合同，只要单据相符，银行即须付款，而不论货物本身是否存在争议，唯一例外是狭窄的欺诈例外情形。",
+faq3_q:"什么是信用证的欺诈例外？",faq3_a:"当有明确证据表明基础交易或单据本身存在欺诈时，法院可据此禁止付款——该例外适用范围极窄，并非用来重启普通商业争议的途径。",
+faq4_q:"保兑信用证与非保兑信用证有何区别？",faq4_a:"保兑信用证附加了第二家银行（通常位于受益人所在国）作出的独立付款承诺，使受益人除开证行外还可向该保兑行追索。",
+faq5_q:"如果我的单据被拒收，我需要多快采取行动？",faq5_a:"必须非常迅速——交单及拒付均受《跟单信用证统一惯例》规定的严格时限约束，延误可能影响您更正不符点的能力，也可能影响日后的索赔。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",banking_law:"Банковское право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по торговому финансированию в Дубае",
+lead:"Аккредитив надёжен ровно настолько, насколько надёжны документы, лежащие в его основе, — одного расхождения может быть достаточно, чтобы банк отказал в оплате уже отгруженного товара.",
+box:"Адвокат по торговому финансированию в Дубае консультирует импортёров, экспортёров, банки-эмитенты и подтверждающие банки по аккредитивам, документарному инкассо и другим инструментам торгового финансирования, используемым для перемещения товаров и денежных средств через порты и свободные зоны ОАЭ.",
+p1:"Аккредитивы и документарное инкассо регулируются международно признанными правилами — прежде всего UCP 600 для аккредитивов, — которые банки и суды ОАЭ применяют наряду с национальным правом. Оплата по аккредитиву зависит от принципа строгого соответствия: представленные документы должны точно соответствовать условиям аккредитива, и даже незначительные расхождения дают банку основание отказать в оплате.",
+p2:"Споры обычно возникают в момент представления документов, когда банк отклоняет их по расхождениям, которые бенефициар считает несущественными, либо позже, когда покупатель заявляет о мошенничестве в базовой сделке и пытается заблокировать оплату, несмотря на соответствие документов. Фирма консультирует как бенефициаров, добивающихся оплаты, так и приказодателей или банки, оспаривающие или отказывающие в ней.",
+p3:"Поскольку инструменты торгового финансирования оборачиваются быстро, а сроки оплаты коротки, споры о расхождениях, неправомерном отказе в акцепте или мошенничестве необходимо оценивать и действовать по ним в течение дней, а не недель, чтобы сохранить доступные средства защиты.",
+h2_how:"Как рассматриваются споры в сфере торгового финансирования",
+step1_t:"Анализ инструмента и документов",step1_d:"Аккредитив, инструкции по документарному инкассо и представленные отгрузочные и коммерческие документы анализируются на соответствие применимым правилам.",
+step2_t:"Оценка расхождений",step2_d:"Если банк отклонил документы по расхождениям, обоснованность отказа проверяется на соответствие UCP 600 и фактическим условиям аккредитива.",
+step3_t:"Требования о неправомерном отказе в акцепте",step3_d:"Если документы были соответствующими, а в оплате было неправомерно отказано, к банку-эмитенту или подтверждающему банку предъявляется требование о понуждении к оплате.",
+step4_t:"Заявления о мошенническом исключении",step4_d:"Если приказодатель заявляет о мошенничестве в базовой сделке, оценивается узкое исключение из принципа независимости аккредитива, включая срочное заявление о запрете или понуждении к оплате.",
+step5_t:"Споры по коносаментам и отгрузочным документам",step5_d:"Рассматриваются споры по коносаментам, сертификатам происхождения и иным торговым документам, если они затрагивают оплату или право собственности на товар.",
+step6_t:"Взыскание по подтверждённым и неподтверждённым аккредитивам",step6_d:"Пути взыскания определяются в зависимости от того, является ли аккредитив подтверждённым, неподтверждённым или переводным.",
+h2_when:"Когда вам нужен адвокат по торговому финансированию",
+sc1:"Банк отклонил ваши экспортные документы по заявленным расхождениям и отказал в оплате по аккредитиву.",
+sc2:"Вы являетесь банком-эмитентом или подтверждающим банком и столкнулись с требованием по спорному аккредитиву.",
+sc3:"Покупатель заявляет о мошенничестве, пытаясь заблокировать оплату по аккредитиву, несмотря на соответствие документов.",
+sc4:"Вам нужно проверить аккредитив или инструкции по документарному инкассо перед отгрузкой товара.",
+sc5:"Возник спор по коносаменту или иному отгрузочному документу, влияющий на оплату или поставку.",
+sc6:"Вам нужно взыскать средства, неправомерно удержанные по подтверждённому или неподтверждённому аккредитиву.",
+h2_services:"Наши услуги",
+sv1:"Проверка аккредитивов и инструкций по документарному инкассо перед отгрузкой",
+sv2:"Споры по расхождениям и оценка соответствия документов согласно UCP 600",
+sv3:"Требования о неправомерном отказе в акцепте к банкам-эмитентам и подтверждающим банкам",
+sv4:"Заявления и возражения по мошенническому исключению в спорах по аккредитивам",
+sv5:"Споры по коносаментам и отгрузочным документам",
+sv6:"Консультирование по подтверждённым, неподтверждённым и переводным аккредитивам",
+sv7:"Консультирование по структурам торгового финансирования, включая форфейтинг и дисконтирование дебиторской задолженности",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Что произойдёт, если банк обнаружит расхождение в моих экспортных документах?",faq1_a:"Банк может отказать в оплате и обязан уведомить представившую сторону о конкретных расхождениях в установленный срок — правомерность отказа зависит от того, действительно ли расхождения отклоняются от условий аккредитива.",
+faq2_q:"Может ли банк отказать в оплате только потому, что покупатель оспаривает товар?",faq2_a:"Как правило, нет — аккредитив независим от базового договора купли-продажи, и банк обязан оплатить против соответствующих документов независимо от споров по самому товару, за исключением узкого мошеннического исключения.",
+faq3_q:"Что такое мошенническое исключение применительно к аккредитиву?",faq3_a:"Оно позволяет суду запретить оплату при наличии явных доказательств мошенничества в базовой сделке или в самих документах — применяется узко и не служит способом возобновления обычных коммерческих споров.",
+faq4_q:"В чём разница между подтверждённым и неподтверждённым аккредитивом?",faq4_a:"Подтверждённый аккредитив содержит дополнительное независимое обязательство об оплате со стороны второго банка, как правило, в стране бенефициара, что даёт бенефициару право требования как к этому банку, так и к банку-эмитенту.",
+faq5_q:"Как быстро нужно действовать, если мои документы отклонены?",faq5_a:"Очень быстро — представление и отклонение документов регулируются строгими сроками согласно UCP 600, и промедление может повлиять как на возможность исправить расхождения, так и на последующее требование."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",banking_law:"Bankrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Handelsfinanzierung in Dubai",
+lead:"Ein Akkreditiv ist nur so verlässlich wie die zugrunde liegenden Dokumente — eine einzige Diskrepanz kann ausreichen, damit eine Bank die Zahlung für eine bereits verschiffte Lieferung verweigert.",
+box:"Ein Anwalt für Handelsfinanzierung in Dubai berät Importeure, Exporteure sowie eröffnende und bestätigende Banken zu Akkreditiven, Dokumenteninkasso und anderen Handelsfinanzierungsinstrumenten, die Waren und Zahlungen über die Häfen und Freizonen der VAE bewegen.",
+p1:"Akkreditive und Dokumenteninkasso unterliegen international anerkannten Regelwerken — vor allem den ERA 600 (UCP 600) für Akkreditive —, die Banken und Gerichte der VAE neben dem nationalen Recht anwenden. Die Zahlung unter einem Akkreditiv hängt vom Grundsatz der strengen Übereinstimmung ab: Die vorgelegten Dokumente müssen den Akkreditivbedingungen exakt entsprechen, und selbst geringfügige Abweichungen geben der Bank Grund, die Zahlung zu verweigern.",
+p2:"Streitigkeiten entstehen typischerweise bei der Dokumentenvorlage, wenn eine Bank Dokumente wegen Abweichungen zurückweist, die der Begünstigte für unwesentlich hält, oder später, wenn ein Käufer Betrug im Grundgeschäft behauptet und trotz konformer Dokumente versucht, die Zahlung zu blockieren. Die Kanzlei berät sowohl Begünstigte, die Zahlung anstreben, als auch Antragsteller oder Banken, die sich dagegen wehren oder sie anfechten.",
+p3:"Da sich Handelsfinanzierungsinstrumente schnell bewegen und Zahlungsfristen kurz sind, müssen Streitigkeiten über Abweichungen, unberechtigte Zahlungsverweigerung oder Betrug innerhalb von Tagen, nicht Wochen, bewertet und behandelt werden, um die verfügbaren Rechtsmittel zu erhalten.",
+h2_how:"So werden Streitigkeiten in der Handelsfinanzierung behandelt",
+step1_t:"Prüfung des Instruments & der Dokumente",step1_d:"Das Akkreditiv, die Dokumenteninkasso-Anweisungen und die vorgelegten Versand- und Handelsdokumente werden anhand der geltenden Regeln auf Übereinstimmung geprüft.",
+step2_t:"Bewertung von Abweichungen",step2_d:"Hat eine Bank Dokumente wegen Abweichungen zurückgewiesen, wird die Zurückweisung anhand der ERA 600 und der tatsächlichen Akkreditivbedingungen geprüft, um festzustellen, ob sie begründet ist.",
+step3_t:"Ansprüche wegen unberechtigter Zahlungsverweigerung",step3_d:"Waren die Dokumente konform und wurde die Zahlung zu Unrecht verweigert, wird ein Anspruch gegen die eröffnende oder bestätigende Bank verfolgt, um die Zahlung durchzusetzen.",
+step4_t:"Anträge zur Betrugsausnahme",step4_d:"Behauptet ein Antragsteller Betrug im Grundgeschäft, wird die eng gefasste Betrugsausnahme vom Abstraktionsgrundsatz des Akkreditivs geprüft, einschließlich eines dringenden Antrags zur Untersagung oder Durchsetzung der Zahlung.",
+step5_t:"Streitigkeiten über Konnossemente & Versanddokumente",step5_d:"Streitigkeiten über Konnossemente, Ursprungszeugnisse und andere Handelsdokumente werden behandelt, soweit sie Zahlung oder Eigentum an den Waren betreffen.",
+step6_t:"Durchsetzung bei bestätigten & unbestätigten Akkreditiven",step6_d:"Je nachdem, ob das Akkreditiv bestätigt, unbestätigt oder übertragbar ist, werden die entsprechenden Durchsetzungswege gegenüber der zuständigen Bank verfolgt.",
+h2_when:"Wann Sie einen Anwalt für Handelsfinanzierung brauchen",
+sc1:"Eine Bank hat Ihre Exportdokumente wegen angeblicher Abweichungen zurückgewiesen und die Zahlung unter einem Akkreditiv verweigert.",
+sc2:"Sie sind eine eröffnende oder bestätigende Bank und sehen sich einem Anspruch aus einem strittigen Akkreditiv gegenüber.",
+sc3:"Ein Käufer behauptet Betrug, um trotz konformer Dokumente die Zahlung unter einem Akkreditiv zu blockieren.",
+sc4:"Sie benötigen die Prüfung eines Akkreditivs oder von Dokumenteninkasso-Anweisungen vor dem Versand der Waren.",
+sc5:"Es besteht ein Streit über ein Konnossement oder ein anderes Versanddokument, das Zahlung oder Lieferung betrifft.",
+sc6:"Sie müssen zu Unrecht einbehaltene Zahlungen unter einem bestätigten oder unbestätigten Akkreditiv zurückfordern.",
+h2_services:"Unsere Leistungen",
+sv1:"Prüfung von Akkreditiven und Dokumenteninkasso-Anweisungen vor dem Versand",
+sv2:"Abweichungsstreitigkeiten und Prüfung der Dokumentenkonformität nach ERA 600",
+sv3:"Ansprüche wegen unberechtigter Zahlungsverweigerung gegen eröffnende und bestätigende Banken",
+sv4:"Anträge und Verteidigung im Rahmen der Betrugsausnahme bei Akkreditivstreitigkeiten",
+sv5:"Streitigkeiten über Konnossemente und Versanddokumente",
+sv6:"Beratung zu bestätigten, unbestätigten und übertragbaren Akkreditiven",
+sv7:"Beratung zu Handelsfinanzierungsstrukturen einschließlich Forfaitierung und Forderungsdiskontierung",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was passiert, wenn eine Bank eine Abweichung in meinen Exportdokumenten feststellt?",faq1_a:"Die Bank kann die Zahlung verweigern und muss den Vorlegenden innerhalb einer festgelegten Frist über die konkreten Abweichungen informieren — ob die Zurückweisung berechtigt ist, hängt davon ab, ob die Abweichungen tatsächlich von den Akkreditivbedingungen abweichen.",
+faq2_q:"Kann eine Bank die Zahlung allein deshalb verweigern, weil der Käufer die Waren beanstandet?",faq2_a:"In der Regel nein — ein Akkreditiv ist unabhängig vom zugrunde liegenden Kaufvertrag, und eine Bank muss gegen konforme Dokumente zahlen, unabhängig von Streitigkeiten über die Waren selbst, vorbehaltlich nur der eng gefassten Betrugsausnahme.",
+faq3_q:"Was ist die Betrugsausnahme bei einem Akkreditiv?",faq3_a:"Sie erlaubt einem Gericht, die Zahlung zu untersagen, wenn eindeutige Beweise für Betrug im Grundgeschäft oder in den Dokumenten selbst vorliegen — sie wird eng ausgelegt und dient nicht dazu, gewöhnliche Handelsstreitigkeiten wiederzueröffnen.",
+faq4_q:"Was ist der Unterschied zwischen einem bestätigten und einem unbestätigten Akkreditiv?",faq4_a:"Ein bestätigtes Akkreditiv enthält eine zusätzliche unabhängige Zahlungsverpflichtung einer zweiten Bank, in der Regel im Land des Begünstigten, wodurch der Begünstigte sowohl gegen diese Bank als auch gegen die eröffnende Bank vorgehen kann.",
+faq5_q:"Wie schnell muss ich handeln, wenn meine Dokumente zurückgewiesen werden?",faq5_a:"Sehr schnell — Vorlage und Zurückweisung unterliegen nach den ERA 600 strengen Fristen, und Verzögerungen können sowohl Ihre Möglichkeit, Abweichungen zu korrigieren, als auch einen späteren Anspruch beeinträchtigen."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
