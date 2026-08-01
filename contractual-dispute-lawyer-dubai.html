@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Contractual Dispute Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Most contractual disputes in the UAE turn on the precise wording of the agreement and the conduct of the parties.">
+<meta name="description" content="Advice on breach of contract claims and defences, penalty clauses, force majeure, termination, and remedies under UAE contract law.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,386 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="civil-law.html">Civil Law</a> &rsaquo; Contractual Dispute Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="civil-law.html" data-i18n="civil_law">Civil Law</a> &rsaquo; <span data-i18n="page_title">Contractual Dispute Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Contractual Dispute Lawyer in Dubai</h1>
-  <p class="lead">Most contractual disputes in the UAE turn on the precise wording of the agreement and the conduct of the parties.</p>
-  <div class="box">A contractual dispute lawyer in Dubai advises on breach of contract, non-performance, and termination claims across commercial and personal agreements.</div>
-  <p class="body-p">The firm reviews the underlying contract and supporting correspondence before advising on the merits of a claim or defense.</p>
-  <p class="body-p">Where possible, the firm pursues negotiated settlement before proceeding to formal litigation.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Contractual Dispute Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">A contract that looked airtight on the page can still fall apart in practice — the real dispute is often not about what the contract says, but about whether what actually happened counts as compliance with it.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A contractual dispute lawyer in Dubai advises individuals and businesses on breach of contract claims and defences, covering interpretation, remedies, termination, and disputes over penalty clauses and force majeure under UAE contract law.</div>
+
+<p class="body-p" data-i18n="p1">UAE contract law follows the civil law tradition, meaning the written contract is read together with statutory good-faith and fair-dealing obligations that can affect how its terms are interpreted and enforced. Disputes often turn less on whether a breach occurred in a technical sense, and more on how the contract's terms are properly interpreted against the parties' actual conduct.</p>
+<p class="body-p" data-i18n="p2">A notable feature of UAE law is that courts retain the power to adjust a contractual penalty or liquidated damages clause if it is disproportionate to the actual loss suffered — meaning a penalty clause that looks decisive on paper may not be applied exactly as written. Force majeure and hardship arguments can also excuse or delay performance in defined circumstances, and are frequently contested in disputes over non-performance.</p>
+<p class="body-p" data-i18n="p3">Whether pursuing a claim for breach or defending one, the available remedies range from damages and specific performance to contract termination, and choosing the right remedy — and pursuing it through the right procedure — often has as much impact on the outcome as the merits of the underlying breach.</p>
+
+<h2 data-i18n="h2_how">How Contractual Disputes Are Handled</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Contract & Breach Review</strong><span data-i18n="step1_d">The contract terms, correspondence, and conduct of both parties are reviewed to assess whether a breach occurred and what remedies are realistically available.</span></li>
+<li><strong data-i18n="step2_t">Notice & Cure Period</strong><span data-i18n="step2_d">Where the contract requires formal notice of breach or an opportunity to cure before further action, that notice is prepared and issued to preserve the client's position.</span></li>
+<li><strong data-i18n="step3_t">Negotiation & Settlement Attempt</strong><span data-i18n="step3_d">Before litigation, a negotiated resolution is often pursued, particularly where an ongoing commercial relationship makes a court battle costly on both sides.</span></li>
+<li><strong data-i18n="step4_t">Filing or Defending the Claim</strong><span data-i18n="step4_d">Where negotiation fails, a claim for breach is filed, or a defence prepared, addressing interpretation, breach, and any penalty clause or force majeure arguments raised.</span></li>
+<li><strong data-i18n="step5_t">Evidence & Expert Input</strong><span data-i18n="step5_d">Contractual performance disputes often involve technical or financial questions, addressed through documentary evidence and, where needed, expert examination.</span></li>
+<li><strong data-i18n="step6_t">Remedy & Enforcement</strong><span data-i18n="step6_d">Once liability is established, the appropriate remedy — damages, specific performance, or termination — is pursued and, where necessary, enforced.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Contractual Dispute Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">The other party to a contract has failed to perform their obligations as agreed.</li>
+<li data-i18n="sc2">You have been accused of breaching a contract and need to prepare a defence.</li>
+<li data-i18n="sc3">A penalty or liquidated damages clause is being enforced against you and you believe it is disproportionate.</li>
+<li data-i18n="sc4">You want to invoke force majeure or hardship to excuse delayed or non-performance.</li>
+<li data-i18n="sc5">You need to terminate a contract for the other party's breach and want to do so correctly.</li>
+<li data-i18n="sc6">You need a contract or set of contract terms reviewed before a dispute escalates.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Breach of contract claims and defences</li>
+<li data-i18n="sv2">Contract interpretation disputes</li>
+<li data-i18n="sv3">Challenges to disproportionate penalty and liquidated damages clauses</li>
+<li data-i18n="sv4">Force majeure and hardship claims and defences</li>
+<li data-i18n="sv5">Advice on lawful contract termination</li>
+<li data-i18n="sv6">Negotiated settlement of contractual disputes</li>
+<li data-i18n="sv7">Claims for damages and specific performance</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Can a court reduce a penalty clause in my contract?</summary>
+<p data-i18n="faq1_a">Yes — under UAE law, courts can adjust a contractual penalty if it is shown to be disproportionate to the actual loss suffered, even if the clause is clearly worded.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">What counts as force majeure under a UAE contract?</summary>
+<p data-i18n="faq2_a">It depends on how the contract defines it and the surrounding circumstances, but generally covers events beyond a party's control that make performance impossible, not merely more difficult or expensive.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Do I need to give notice before terminating a contract for breach?</summary>
+<p data-i18n="faq3_a">Often yes — many contracts, and general principles of good faith, require notice and an opportunity to remedy the breach before termination is treated as valid.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">What remedies are available if the other party breaches?</summary>
+<p data-i18n="faq4_a">Depending on the breach, remedies can include damages, specific performance (compelling the other party to perform), or termination of the contract — the right choice depends on the facts and what outcome is actually achievable.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Is it worth trying to settle before going to court?</summary>
+<p data-i18n="faq5_a">Often yes — settlement avoids the cost and delay of litigation and preserves commercial relationships, and courts generally expect parties to have attempted resolution where practical.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",civil_law:"Civil Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Contractual Dispute Lawyer in Dubai",
+lead:"A contract that looked airtight on the page can still fall apart in practice — the real dispute is often not about what the contract says, but about whether what actually happened counts as compliance with it.",
+box:"A contractual dispute lawyer in Dubai advises individuals and businesses on breach of contract claims and defences, covering interpretation, remedies, termination, and disputes over penalty clauses and force majeure under UAE contract law.",
+p1:"UAE contract law follows the civil law tradition, meaning the written contract is read together with statutory good-faith and fair-dealing obligations that can affect how its terms are interpreted and enforced. Disputes often turn less on whether a breach occurred in a technical sense, and more on how the contract's terms are properly interpreted against the parties' actual conduct.",
+p2:"A notable feature of UAE law is that courts retain the power to adjust a contractual penalty or liquidated damages clause if it is disproportionate to the actual loss suffered — meaning a penalty clause that looks decisive on paper may not be applied exactly as written. Force majeure and hardship arguments can also excuse or delay performance in defined circumstances, and are frequently contested in disputes over non-performance.",
+p3:"Whether pursuing a claim for breach or defending one, the available remedies range from damages and specific performance to contract termination, and choosing the right remedy — and pursuing it through the right procedure — often has as much impact on the outcome as the merits of the underlying breach.",
+h2_how:"How Contractual Disputes Are Handled",
+step1_t:"Contract & Breach Review",step1_d:"The contract terms, correspondence, and conduct of both parties are reviewed to assess whether a breach occurred and what remedies are realistically available.",
+step2_t:"Notice & Cure Period",step2_d:"Where the contract requires formal notice of breach or an opportunity to cure before further action, that notice is prepared and issued to preserve the client's position.",
+step3_t:"Negotiation & Settlement Attempt",step3_d:"Before litigation, a negotiated resolution is often pursued, particularly where an ongoing commercial relationship makes a court battle costly on both sides.",
+step4_t:"Filing or Defending the Claim",step4_d:"Where negotiation fails, a claim for breach is filed, or a defence prepared, addressing interpretation, breach, and any penalty clause or force majeure arguments raised.",
+step5_t:"Evidence & Expert Input",step5_d:"Contractual performance disputes often involve technical or financial questions, addressed through documentary evidence and, where needed, expert examination.",
+step6_t:"Remedy & Enforcement",step6_d:"Once liability is established, the appropriate remedy — damages, specific performance, or termination — is pursued and, where necessary, enforced.",
+h2_when:"When You Need a Contractual Dispute Lawyer",
+sc1:"The other party to a contract has failed to perform their obligations as agreed.",
+sc2:"You have been accused of breaching a contract and need to prepare a defence.",
+sc3:"A penalty or liquidated damages clause is being enforced against you and you believe it is disproportionate.",
+sc4:"You want to invoke force majeure or hardship to excuse delayed or non-performance.",
+sc5:"You need to terminate a contract for the other party's breach and want to do so correctly.",
+sc6:"You need a contract or set of contract terms reviewed before a dispute escalates.",
+h2_services:"Services We Provide",
+sv1:"Breach of contract claims and defences",
+sv2:"Contract interpretation disputes",
+sv3:"Challenges to disproportionate penalty and liquidated damages clauses",
+sv4:"Force majeure and hardship claims and defences",
+sv5:"Advice on lawful contract termination",
+sv6:"Negotiated settlement of contractual disputes",
+sv7:"Claims for damages and specific performance",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Can a court reduce a penalty clause in my contract?",faq1_a:"Yes — under UAE law, courts can adjust a contractual penalty if it is shown to be disproportionate to the actual loss suffered, even if the clause is clearly worded.",
+faq2_q:"What counts as force majeure under a UAE contract?",faq2_a:"It depends on how the contract defines it and the surrounding circumstances, but generally covers events beyond a party's control that make performance impossible, not merely more difficult or expensive.",
+faq3_q:"Do I need to give notice before terminating a contract for breach?",faq3_a:"Often yes — many contracts, and general principles of good faith, require notice and an opportunity to remedy the breach before termination is treated as valid.",
+faq4_q:"What remedies are available if the other party breaches?",faq4_a:"Depending on the breach, remedies can include damages, specific performance (compelling the other party to perform), or termination of the contract — the right choice depends on the facts and what outcome is actually achievable.",
+faq5_q:"Is it worth trying to settle before going to court?",faq5_a:"Often yes — settlement avoids the cost and delay of litigation and preserves commercial relationships, and courts generally expect parties to have attempted resolution where practical."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",civil_law:"القانون المدني",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي المنازعات التعاقدية في دبي",
+lead:"قد يبدو العقد محكمًا على الورق، لكنه قد ينهار عمليًا — فالنزاع الحقيقي غالبًا لا يكون حول ما ينص عليه العقد، بل حول ما إذا كان ما حدث فعليًا يُعد امتثالاً له.",
+box:"يقدم محامي المنازعات التعاقدية في دبي الاستشارة للأفراد والشركات بشأن دعاوى ودفوع الإخلال بالعقد، ويغطي التفسير وسبل الانتصاف والإنهاء والنزاعات حول شروط الغرامة والقوة القاهرة بموجب قانون العقود الإماراتي.",
+p1:"يتبع قانون العقود الإماراتي تقليد القانون المدني، مما يعني أن العقد المكتوب يُقرأ إلى جانب الالتزامات القانونية بحسن النية والتعامل العادل التي قد تؤثر على كيفية تفسير شروطه وتنفيذها. وغالبًا ما تتمحور النزاعات ليس حول ما إذا كان هناك إخلال بالمعنى الفني، بل حول كيفية التفسير الصحيح لشروط العقد في ضوء السلوك الفعلي للأطراف.",
+p2:"من السمات اللافتة للقانون الإماراتي أن المحاكم تحتفظ بسلطة تعديل شرط الغرامة التعاقدية أو التعويض المتفق عليه إذا ثبت أنه غير متناسب مع الضرر الفعلي المتكبد — مما يعني أن شرط الغرامة الذي يبدو حاسمًا على الورق قد لا يُطبَّق تمامًا كما هو مكتوب. كما يمكن لحجج القوة القاهرة والظروف الطارئة أن تعفي من التنفيذ أو تؤخره في ظروف محددة، وهي كثيرًا ما تكون محل نزاع في قضايا عدم التنفيذ.",
+p3:"سواء كنت تسعى لرفع دعوى إخلال أو الدفاع ضدها، تتراوح سبل الانتصاف المتاحة من التعويض والتنفيذ العيني إلى إنهاء العقد، واختيار سبيل الانتصاف الصحيح — ومتابعته من خلال الإجراء الصحيح — غالبًا ما يكون له تأثير على النتيجة يعادل تأثير موضوع الإخلال نفسه.",
+h2_how:"كيف تُدار المنازعات التعاقدية",
+step1_t:"مراجعة العقد والإخلال",step1_d:"تُراجع شروط العقد والمراسلات وسلوك الطرفين لتقييم ما إذا كان قد وقع إخلال وما هي سبل الانتصاف المتاحة فعليًا.",
+step2_t:"الإشعار ومهلة المعالجة",step2_d:"عندما يتطلب العقد إشعارًا رسميًا بالإخلال أو فرصة لمعالجته قبل اتخاذ إجراء آخر، يُعَد هذا الإشعار ويُقدَّم للحفاظ على موقف العميل.",
+step3_t:"التفاوض ومحاولة التسوية",step3_d:"قبل التقاضي، غالبًا ما تُتابع تسوية عبر التفاوض، خاصة عندما تجعل العلاقة التجارية المستمرة معركة قضائية مكلفة لكلا الطرفين.",
+step4_t:"رفع الدعوى أو الدفاع عنها",step4_d:"عندما يفشل التفاوض، تُرفع دعوى الإخلال أو يُعَد الدفاع، مع معالجة التفسير والإخلال وأي حجج تتعلق بشرط الغرامة أو القوة القاهرة.",
+step5_t:"الأدلة ورأي الخبير",step5_d:"غالبًا ما تنطوي منازعات تنفيذ العقود على مسائل فنية أو مالية، تُعالَج من خلال الأدلة المستندية، وعند الحاجة، الفحص الخبروي.",
+step6_t:"سبيل الانتصاف والتنفيذ",step6_d:"بمجرد إثبات المسؤولية، تُتابع سبل الانتصاف المناسبة — التعويض أو التنفيذ العيني أو الإنهاء — وتُنفَّذ عند الضرورة.",
+h2_when:"متى تحتاج إلى محامي منازعات تعاقدية",
+sc1:"لم يقم الطرف الآخر في العقد بتنفيذ التزاماته وفقًا للمتفق عليه.",
+sc2:"تم اتهامك بالإخلال بعقد وتحتاج إلى إعداد دفاع.",
+sc3:"يجري تنفيذ شرط غرامة أو تعويض متفق عليه ضدك وتعتقد أنه غير متناسب.",
+sc4:"تريد الاحتجاج بالقوة القاهرة أو الظروف الطارئة لتبرير تأخر أو عدم التنفيذ.",
+sc5:"تحتاج إلى إنهاء عقد بسبب إخلال الطرف الآخر وتريد القيام بذلك بشكل صحيح.",
+sc6:"تحتاج إلى مراجعة عقد أو مجموعة من الشروط التعاقدية قبل تصاعد النزاع.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"دعاوى ودفوع الإخلال بالعقد",
+sv2:"منازعات تفسير العقود",
+sv3:"الطعن في شروط الغرامة والتعويض المتفق عليه غير المتناسبة",
+sv4:"دعاوى ودفوع القوة القاهرة والظروف الطارئة",
+sv5:"المشورة بشأن الإنهاء القانوني للعقود",
+sv6:"التسوية التفاوضية للمنازعات التعاقدية",
+sv7:"دعاوى التعويض والتنفيذ العيني",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل يمكن للمحكمة تخفيض شرط الغرامة في عقدي؟",faq1_a:"نعم — بموجب القانون الإماراتي، يمكن للمحاكم تعديل الغرامة التعاقدية إذا ثبت أنها غير متناسبة مع الضرر الفعلي المتكبد، حتى لو كان الشرط واضح الصياغة.",
+faq2_q:"ما الذي يُعد قوة قاهرة بموجب عقد إماراتي؟",faq2_a:"يعتمد ذلك على كيفية تعريف العقد لها والظروف المحيطة، لكنها تشمل عمومًا أحداثًا خارجة عن سيطرة الطرف تجعل التنفيذ مستحيلاً، لا مجرد أصعب أو أكثر تكلفة.",
+faq3_q:"هل يجب أن أوجه إشعارًا قبل إنهاء عقد بسبب الإخلال؟",faq3_a:"غالبًا نعم — تتطلب العديد من العقود، ومبادئ حسن النية العامة، إشعارًا وفرصة لمعالجة الإخلال قبل أن يُعتبر الإنهاء صحيحًا.",
+faq4_q:"ما هي سبل الانتصاف المتاحة إذا أخل الطرف الآخر بالعقد؟",faq4_a:"بحسب طبيعة الإخلال، يمكن أن تشمل سبل الانتصاف التعويض أو التنفيذ العيني (إلزام الطرف الآخر بالتنفيذ) أو إنهاء العقد — ويعتمد الاختيار الصحيح على الوقائع والنتيجة القابلة للتحقيق فعليًا.",
+faq5_q:"هل يستحق الأمر محاولة التسوية قبل اللجوء إلى المحكمة؟",faq5_a:"غالبًا نعم — فالتسوية تتجنب تكلفة وتأخير التقاضي وتحافظ على العلاقات التجارية، وعادة ما تتوقع المحاكم أن يكون الأطراف قد حاولوا التوصل إلى حل عندما يكون ذلك ممكنًا عمليًا."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",civil_law:"民法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜合同纠纷律师",
+lead:"一份看似天衣无缝的合同，在实践中仍可能出现问题——真正的争议往往不在于合同写了什么，而在于实际发生的事情是否构成对合同的遵守。",
+box:"迪拜合同纠纷律师为个人及企业就违约索赔及抗辩提供法律意见，涵盖合同解释、救济方式、终止，以及阿联酋合同法下有关罚金条款及不可抗力的争议。",
+p1:"阿联酋合同法遵循大陆法传统，这意味着书面合同须与法定的诚信及公平交易义务一并解读，而这些义务会影响合同条款的解释及执行方式。争议往往不在于是否存在技术意义上的违约，而更多在于应如何根据双方的实际行为正确解释合同条款。",
+p2:"阿联酋法律的一个显著特点是，法院保留调整合同罚金或约定赔偿条款的权力，只要该条款被证明与实际遭受的损失不成比例——这意味着一项在纸面上看似决定性的罚金条款，未必会被完全按字面执行。不可抗力及情势变更的抗辩也可以在特定情形下免除或推迟履行，并在未履行争议中经常成为争论焦点。",
+p3:"无论是提出违约索赔还是进行抗辩，可用的救济方式从损害赔偿、实际履行到合同终止不等，而选择正确的救济方式——并通过正确的程序主张它——对结果的影响往往不亚于违约本身的是非曲直。",
+h2_how:"合同纠纷处理流程",
+step1_t:"合同与违约审查",step1_d:"审查合同条款、往来函件及双方的实际行为，以评估是否存在违约以及现实中可获得的救济方式。",
+step2_t:"通知及补救期",step2_d:"若合同要求在采取进一步行动前正式通知违约或给予补救机会，将准备并发出该通知，以保全客户的地位。",
+step3_t:"协商与和解尝试",step3_d:"在诉讼之前，通常会先寻求协商解决，尤其是在持续的商业关系使得诉讼对双方而言代价高昂的情况下。",
+step4_t:"提起或抗辩诉讼",step4_d:"若协商未果，将提起违约诉讼或准备抗辩，处理合同解释、违约本身以及任何有关罚金条款或不可抗力的主张。",
+step5_t:"证据及专家意见",step5_d:"合同履行争议往往涉及技术或财务问题，通过书面证据以及必要时的专家鉴定加以处理。",
+step6_t:"救济与执行",step6_d:"一旦确定责任，将寻求适当的救济方式——损害赔偿、实际履行或合同终止——并在必要时予以执行。",
+h2_when:"何时需要合同纠纷律师",
+sc1:"合同的另一方未按约定履行其义务。",
+sc2:"您被指控违反合同，需要准备抗辩。",
+sc3:"对方正在向您主张罚金或约定赔偿条款，而您认为该条款不成比例。",
+sc4:"您希望援引不可抗力或情势变更以免除迟延履行或不履行的责任。",
+sc5:"您需要因对方违约而终止合同，并希望以正确的方式进行。",
+sc6:"您需要在争议升级之前审查一份合同或一系列合同条款。",
+h2_services:"我们提供的服务",
+sv1:"违约索赔及抗辩",
+sv2:"合同解释争议",
+sv3:"对不成比例的罚金及约定赔偿条款提出异议",
+sv4:"不可抗力及情势变更的主张与抗辩",
+sv5:"就合法终止合同提供法律意见",
+sv6:"合同争议的协商和解",
+sv7:"损害赔偿及实际履行请求",
+h2_faq:"常见问题",
+faq1_q:"法院能否降低我合同中的罚金条款？",faq1_a:"可以——根据阿联酋法律，若能证明合同罚金与实际遭受的损失不成比例，即使条款措辞明确，法院也可对其进行调整。",
+faq2_q:"在阿联酋合同下，什么构成不可抗力？",faq2_a:"这取决于合同对其的定义及具体情形，但通常涵盖当事方无法控制、使履行成为不可能（而非仅仅更困难或代价更高）的事件。",
+faq3_q:"因违约终止合同前是否需要发出通知？",faq3_a:"通常需要——许多合同以及诚信原则通常要求在终止被视为有效之前，先发出通知并给予补救违约的机会。",
+faq4_q:"若对方违约，有哪些救济方式可用？",faq4_a:"根据违约的性质，救济方式可包括损害赔偿、实际履行（要求对方履行）或终止合同——正确的选择取决于具体事实及实际可实现的结果。",
+faq5_q:"在诉诸法院之前尝试和解是否值得？",faq5_a:"通常值得——和解可避免诉讼的成本及延误，并维护商业关系，而法院通常也期望双方在切实可行的情况下已尝试解决争议。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",civil_law:"Гражданское право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по договорным спорам в Дубае",
+lead:"Договор, который на бумаге выглядел безупречным, на практике может дать сбой — реальный спор часто сводится не к тому, что написано в договоре, а к тому, считается ли произошедшее фактическим исполнением его условий.",
+box:"Адвокат по договорным спорам в Дубае консультирует физических лиц и компании по искам и возражениям в связи с нарушением договора, охватывая толкование условий, средства правовой защиты, расторжение, а также споры о штрафных санкциях и форс-мажоре по договорному праву ОАЭ.",
+p1:"Договорное право ОАЭ следует традиции континентального (гражданского) права, а значит, письменный договор толкуется вместе с законодательными обязанностями действовать добросовестно и справедливо, которые могут влиять на то, как толкуются и исполняются его условия. Споры часто касаются не столько того, было ли нарушение в техническом смысле, сколько того, как условия договора должны толковаться применительно к фактическому поведению сторон.",
+p2:"Заметная особенность права ОАЭ заключается в том, что суды сохраняют право скорректировать договорную неустойку или заранее оценённые убытки, если доказано, что они несоразмерны фактически понесённому ущербу, — а значит, штрафное условие, которое на бумаге выглядит однозначным, может применяться не совсем так, как оно записано. Форс-мажор и существенное изменение обстоятельств также могут освобождать от исполнения или откладывать его при определённых условиях и часто становятся предметом спора при неисполнении обязательств.",
+p3:"Независимо от того, заявляется ли иск о нарушении или готовится защита, доступные средства правовой защиты варьируются от возмещения убытков и реального исполнения до расторжения договора, а выбор правильного средства защиты — и его реализация через надлежащую процедуру — часто влияет на исход не меньше, чем существо самого нарушения.",
+h2_how:"Как рассматриваются договорные споры",
+step1_t:"Анализ договора и нарушения",step1_d:"Условия договора, переписка и поведение обеих сторон анализируются, чтобы оценить, было ли нарушение и какие средства правовой защиты реально доступны.",
+step2_t:"Уведомление и срок для устранения нарушения",step2_d:"Если договор требует официального уведомления о нарушении или возможности его устранить перед дальнейшими действиями, такое уведомление готовится и направляется для сохранения позиции клиента.",
+step3_t:"Переговоры и попытка урегулирования",step3_d:"До обращения в суд часто предпринимается попытка урегулирования путём переговоров, особенно если продолжающиеся деловые отношения делают судебное разбирательство затратным для обеих сторон.",
+step4_t:"Подача иска или подготовка защиты",step4_d:"Если переговоры не дали результата, подаётся иск о нарушении или готовится защита, охватывающая толкование, само нарушение и любые доводы о штрафном условии или форс-мажоре.",
+step5_t:"Доказательства и экспертное заключение",step5_d:"Споры об исполнении договора часто связаны с техническими или финансовыми вопросами, которые решаются на основе документальных доказательств и, при необходимости, экспертизы.",
+step6_t:"Средство правовой защиты и исполнение",step6_d:"После установления ответственности реализуется соответствующее средство правовой защиты — возмещение убытков, реальное исполнение или расторжение — и при необходимости обеспечивается его принудительное исполнение.",
+h2_when:"Когда вам нужен адвокат по договорным спорам",
+sc1:"Другая сторона договора не исполнила свои обязательства, как это было согласовано.",
+sc2:"Вас обвиняют в нарушении договора, и вам нужно подготовить защиту.",
+sc3:"К вам применяется штрафное условие или условие о заранее оценённых убытках, которое вы считаете несоразмерным.",
+sc4:"Вы хотите сослаться на форс-мажор или существенное изменение обстоятельств, чтобы оправдать задержку или неисполнение.",
+sc5:"Вам нужно расторгнуть договор из-за нарушения другой стороной и сделать это правильно.",
+sc6:"Вам нужно проверить договор или набор договорных условий до того, как спор обострится.",
+h2_services:"Наши услуги",
+sv1:"Иски и возражения по нарушению договора",
+sv2:"Споры о толковании договора",
+sv3:"Оспаривание несоразмерных штрафных условий и условий о заранее оценённых убытках",
+sv4:"Заявления и возражения по форс-мажору и существенному изменению обстоятельств",
+sv5:"Консультирование по правомерному расторжению договора",
+sv6:"Урегулирование договорных споров путём переговоров",
+sv7:"Иски о возмещении убытков и реальном исполнении",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Может ли суд уменьшить штрафное условие в моём договоре?",faq1_a:"Да — по праву ОАЭ суды могут скорректировать договорную неустойку, если доказано, что она несоразмерна фактически понесённому ущербу, даже если условие сформулировано однозначно.",
+faq2_q:"Что считается форс-мажором по договору в ОАЭ?",faq2_a:"Это зависит от того, как форс-мажор определён в договоре, и от сопутствующих обстоятельств, но в целом он охватывает события вне контроля стороны, делающие исполнение невозможным, а не просто более сложным или дорогостоящим.",
+faq3_q:"Нужно ли направлять уведомление перед расторжением договора за нарушение?",faq3_a:"Часто да — многие договоры, а также общие принципы добросовестности требуют уведомления и возможности устранить нарушение, прежде чем расторжение будет считаться действительным.",
+faq4_q:"Какие средства правовой защиты доступны, если другая сторона нарушает договор?",faq4_a:"В зависимости от характера нарушения средства защиты могут включать возмещение убытков, реальное исполнение (принуждение другой стороны к исполнению) или расторжение договора — правильный выбор зависит от фактов и того, какой результат реально достижим.",
+faq5_q:"Стоит ли пытаться урегулировать спор до обращения в суд?",faq5_a:"Часто да — урегулирование позволяет избежать затрат и задержек, связанных с судебным разбирательством, и сохранить деловые отношения, а суды, как правило, ожидают, что стороны предприняли попытку урегулирования, когда это практически возможно."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",civil_law:"Zivilrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Vertragsstreitigkeiten in Dubai",
+lead:"Ein Vertrag, der auf dem Papier wasserdicht wirkte, kann in der Praxis dennoch scheitern — der eigentliche Streit dreht sich oft nicht darum, was der Vertrag sagt, sondern darum, ob das tatsächlich Geschehene als Erfüllung dieses Vertrags gilt.",
+box:"Ein Anwalt für Vertragsstreitigkeiten in Dubai berät Einzelpersonen und Unternehmen zu Ansprüchen und Verteidigungen wegen Vertragsverletzung und behandelt Auslegung, Rechtsbehelfe, Kündigung sowie Streitigkeiten über Vertragsstrafen und höhere Gewalt nach dem Vertragsrecht der VAE.",
+p1:"Das Vertragsrecht der VAE folgt der zivilrechtlichen Tradition, was bedeutet, dass der schriftliche Vertrag zusammen mit gesetzlichen Pflichten zu Treu und Glauben und fairem Geschäftsgebaren gelesen wird, die beeinflussen können, wie seine Bedingungen ausgelegt und durchgesetzt werden. Streitigkeiten drehen sich oft weniger darum, ob im technischen Sinne eine Vertragsverletzung vorliegt, sondern vielmehr darum, wie die Vertragsbedingungen im Verhältnis zum tatsächlichen Verhalten der Parteien richtig auszulegen sind.",
+p2:"Ein bemerkenswertes Merkmal des VAE-Rechts ist, dass Gerichte befugt bleiben, eine vertragliche Vertragsstrafe oder pauschalierten Schadensersatz anzupassen, wenn sich zeigt, dass sie unverhältnismäßig zum tatsächlich erlittenen Schaden ist — das bedeutet, dass eine Vertragsstrafenklausel, die auf dem Papier eindeutig wirkt, möglicherweise nicht genau so angewendet wird, wie sie formuliert ist. Höhere Gewalt und wesentliche Störung der Geschäftsgrundlage können unter bestimmten Umständen ebenfalls die Erfüllung entschuldigen oder verzögern und werden in Streitigkeiten über Nichterfüllung häufig bestritten.",
+p3:"Ob eine Klage wegen Vertragsverletzung verfolgt oder eine solche verteidigt wird — die verfügbaren Rechtsbehelfe reichen von Schadensersatz über Erfüllungsklagen bis hin zur Vertragskündigung, und die Wahl des richtigen Rechtsbehelfs — sowie dessen Durchsetzung im richtigen Verfahren — hat oft ebenso großen Einfluss auf das Ergebnis wie die Begründetheit der zugrunde liegenden Vertragsverletzung selbst.",
+h2_how:"So werden Vertragsstreitigkeiten behandelt",
+step1_t:"Prüfung von Vertrag & Vertragsverletzung",step1_d:"Die Vertragsbedingungen, der Schriftverkehr und das Verhalten beider Parteien werden geprüft, um zu bewerten, ob eine Vertragsverletzung vorliegt und welche Rechtsbehelfe realistisch zur Verfügung stehen.",
+step2_t:"Mahnung & Nachfrist",step2_d:"Verlangt der Vertrag eine förmliche Mahnung wegen Vertragsverletzung oder eine Gelegenheit zur Abhilfe vor weiteren Schritten, wird diese Mahnung vorbereitet und ausgesprochen, um die Position des Mandanten zu sichern.",
+step3_t:"Verhandlung & Vergleichsversuch",step3_d:"Vor einem Rechtsstreit wird häufig eine verhandelte Lösung angestrebt, insbesondere wenn eine fortbestehende Geschäftsbeziehung einen Gerichtsstreit für beide Seiten kostspielig macht.",
+step4_t:"Klageeinreichung oder Verteidigung",step4_d:"Scheitert die Verhandlung, wird eine Klage wegen Vertragsverletzung eingereicht oder eine Verteidigung vorbereitet, die Auslegung, Vertragsverletzung sowie etwaige Argumente zu Vertragsstrafen oder höherer Gewalt behandelt.",
+step5_t:"Beweise & Sachverständigenbeitrag",step5_d:"Streitigkeiten über die Vertragserfüllung betreffen häufig technische oder finanzielle Fragen, die durch Urkundenbeweise und, soweit erforderlich, sachverständige Prüfung behandelt werden.",
+step6_t:"Rechtsbehelf & Durchsetzung",step6_d:"Sobald die Haftung feststeht, wird der geeignete Rechtsbehelf — Schadensersatz, Erfüllung oder Kündigung — verfolgt und, soweit erforderlich, durchgesetzt.",
+h2_when:"Wann Sie einen Anwalt für Vertragsstreitigkeiten brauchen",
+sc1:"Die andere Vertragspartei hat ihre Verpflichtungen nicht wie vereinbart erfüllt.",
+sc2:"Ihnen wird eine Vertragsverletzung vorgeworfen, und Sie müssen eine Verteidigung vorbereiten.",
+sc3:"Eine Vertragsstrafe oder ein pauschalierter Schadensersatz wird gegen Sie geltend gemacht, und Sie halten dies für unverhältnismäßig.",
+sc4:"Sie möchten sich auf höhere Gewalt oder eine wesentliche Störung der Geschäftsgrundlage berufen, um verzögerte oder ausbleibende Erfüllung zu entschuldigen.",
+sc5:"Sie müssen einen Vertrag wegen Vertragsverletzung der Gegenseite kündigen und dies korrekt tun.",
+sc6:"Sie benötigen die Prüfung eines Vertrags oder bestimmter Vertragsbedingungen, bevor ein Streit eskaliert.",
+h2_services:"Unsere Leistungen",
+sv1:"Ansprüche und Verteidigungen wegen Vertragsverletzung",
+sv2:"Streitigkeiten über die Vertragsauslegung",
+sv3:"Anfechtung unverhältnismäßiger Vertragsstrafen und pauschalierter Schadensersatzklauseln",
+sv4:"Ansprüche und Verteidigungen wegen höherer Gewalt und wesentlicher Störung der Geschäftsgrundlage",
+sv5:"Beratung zur rechtmäßigen Vertragskündigung",
+sv6:"Verhandelte Beilegung von Vertragsstreitigkeiten",
+sv7:"Klagen auf Schadensersatz und Erfüllung",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Kann ein Gericht eine Vertragsstrafe in meinem Vertrag herabsetzen?",faq1_a:"Ja — nach dem Recht der VAE können Gerichte eine vertragliche Vertragsstrafe anpassen, wenn nachgewiesen wird, dass sie unverhältnismäßig zum tatsächlich erlittenen Schaden ist, selbst wenn die Klausel eindeutig formuliert ist.",
+faq2_q:"Was gilt nach einem VAE-Vertrag als höhere Gewalt?",faq2_a:"Das hängt davon ab, wie der Vertrag sie definiert, und von den Begleitumständen, umfasst aber im Allgemeinen Ereignisse außerhalb der Kontrolle einer Partei, die die Erfüllung unmöglich machen — nicht lediglich schwieriger oder teurer.",
+faq3_q:"Muss ich vor einer Kündigung wegen Vertragsverletzung eine Mahnung aussprechen?",faq3_a:"Oft ja — viele Verträge sowie allgemeine Grundsätze von Treu und Glauben verlangen eine Mahnung und eine Gelegenheit zur Abhilfe, bevor eine Kündigung als wirksam gilt.",
+faq4_q:"Welche Rechtsbehelfe stehen zur Verfügung, wenn die andere Partei den Vertrag verletzt?",faq4_a:"Je nach Art der Vertragsverletzung können Rechtsbehelfe Schadensersatz, Erfüllung (Zwang zur Leistung der anderen Partei) oder Vertragskündigung umfassen — die richtige Wahl hängt von den Tatsachen und dem tatsächlich erreichbaren Ergebnis ab.",
+faq5_q:"Lohnt es sich, vor einem Gerichtsverfahren eine Einigung zu versuchen?",faq5_a:"Oft ja — ein Vergleich vermeidet die Kosten und Verzögerungen eines Rechtsstreits und erhält Geschäftsbeziehungen, und Gerichte erwarten in der Regel, dass die Parteien, soweit praktikabel, eine Einigung versucht haben."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
