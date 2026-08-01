@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Civil Appeal Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Not every civil judgment gets it right the first time.">
+<meta name="description" content="Representation before the Court of Appeal, re-examining both facts and law from a Court of First Instance judgment, including new evidence and appeal deadlines.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,386 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="civil-law.html">Civil Law</a> &rsaquo; Civil Appeal Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="civil-law.html" data-i18n="civil_law">Civil Law</a> &rsaquo; <span data-i18n="page_title">Civil Appeal Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Civil Appeal Lawyer in Dubai</h1>
-  <p class="lead">Not every civil judgment gets it right the first time.</p>
-  <div class="box">This covers appeals of civil court judgments in contract, tort, and general civil matters.</div>
-  <p class="body-p">The firm handles civil appeals from drafting the grounds of appeal through the appellate hearing.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Civil Appeal Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">A Court of First Instance judgment is not the end of the road — a civil appeal reopens both the facts and the law for a fresh look by a higher panel of judges.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A civil appeal lawyer in Dubai represents clients before the Court of Appeal, seeking a full re-examination of a Court of First Instance judgment on both factual and legal grounds.</div>
+
+<p class="body-p" data-i18n="p1">Unlike cassation, a civil appeal is a genuine second look at the case. The Court of Appeal can revisit the evidence, reassess witness credibility and expert findings, and reach its own conclusions on the facts, in addition to reviewing whether the Court of First Instance applied the law correctly.</p>
+<p class="body-p" data-i18n="p2">An appeal is not simply a repeat of the first hearing. It is built around specific grounds of appeal — errors in evaluating evidence, an incorrect application of the law, or a procedural irregularity that affected the outcome — supported by a memorandum that explains precisely how the lower court's judgment was wrong and what different outcome is sought.</p>
+<p class="body-p" data-i18n="p3">In defined circumstances, new evidence or arguments not raised at first instance may be introduced on appeal, but this is not automatic and depends on the circumstances and timing of the case. Appeal deadlines run from the date the first-instance judgment is notified, and missing them converts an otherwise winnable judgment into a final one.</p>
+
+<h2 data-i18n="h2_how">How Civil Appeals Are Handled</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Judgment & Case File Review</strong><span data-i18n="step1_d">The Court of First Instance judgment and full case file are reviewed to identify the strongest grounds of appeal on both fact and law.</span></li>
+<li><strong data-i18n="step2_t">Appeal Deadline & Filing</strong><span data-i18n="step2_d">The applicable appeal deadline is calculated, and the notice of appeal is filed to preserve the right to challenge the judgment.</span></li>
+<li><strong data-i18n="step3_t">Grounds of Appeal Memorandum</strong><span data-i18n="step3_d">A detailed memorandum is prepared setting out the grounds of appeal, addressing both the factual findings and the legal reasoning of the first-instance judgment.</span></li>
+<li><strong data-i18n="step4_t">New Evidence & Argument Assessment</strong><span data-i18n="step4_d">Where appropriate, additional evidence or arguments are assessed for introduction at the appeal stage, within the limits the court allows.</span></li>
+<li><strong data-i18n="step5_t">Hearings Before the Court of Appeal</strong><span data-i18n="step5_d">The appeal proceeds through hearings and submissions before the Court of Appeal panel, responding to the opposing party's position.</span></li>
+<li><strong data-i18n="step6_t">Appeal Judgment & Next Steps</strong><span data-i18n="step6_d">Following the Court of Appeal's judgment — whether upholding, reversing, or varying the first-instance decision — next steps, including cassation, are assessed.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Civil Appeal Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You have received a Court of First Instance judgment and believe the facts were wrongly assessed.</li>
+<li data-i18n="sc2">You believe the first-instance court misapplied the law or reached the wrong legal conclusion.</li>
+<li data-i18n="sc3">The other party has filed an appeal against a judgment in your favour and you need to respond.</li>
+<li data-i18n="sc4">You have additional evidence that was not available or presented at the first hearing.</li>
+<li data-i18n="sc5">You need an urgent assessment of whether your appeal deadline is still open.</li>
+<li data-i18n="sc6">You want a realistic assessment of your prospects before committing to an appeal.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Review of first-instance judgments to assess appeal prospects</li>
+<li data-i18n="sv2">Calculation and management of appeal filing deadlines</li>
+<li data-i18n="sv3">Drafting grounds of appeal and supporting memoranda</li>
+<li data-i18n="sv4">Responding to appeals filed by an opposing party</li>
+<li data-i18n="sv5">Assessment and introduction of new evidence on appeal, where permitted</li>
+<li data-i18n="sv6">Representation before the Court of Appeal</li>
+<li data-i18n="sv7">Advice on further recourse to the Court of Cassation following an appeal judgment</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What is the difference between an appeal and cassation?</summary>
+<p data-i18n="faq1_a">An appeal before the Court of Appeal re-examines both the facts and the law of a first-instance judgment, while cassation is limited to reviewing points of law already decided by the Court of Appeal.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Can I introduce new evidence at the appeal stage?</summary>
+<p data-i18n="faq2_a">In certain circumstances new evidence or arguments can be introduced on appeal, though this is not automatic and depends on the specifics of the case and timing.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">How long do I have to file an appeal?</summary>
+<p data-i18n="faq3_a">The appeal deadline runs from the date the first-instance judgment is notified and is strictly enforced, so it should be calculated immediately.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Will the Court of Appeal simply repeat the first hearing?</summary>
+<p data-i18n="faq4_a">No — the appeal is built around specific grounds identifying what was wrong with the first-instance judgment, rather than an unstructured re-argument of the whole case.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What happens if I lose at the Court of Appeal?</summary>
+<p data-i18n="faq5_a">Depending on the grounds available, a further challenge before the Court of Cassation may be possible, limited to points of law.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",civil_law:"Civil Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Civil Appeal Lawyer in Dubai",
+lead:"A Court of First Instance judgment is not the end of the road — a civil appeal reopens both the facts and the law for a fresh look by a higher panel of judges.",
+box:"A civil appeal lawyer in Dubai represents clients before the Court of Appeal, seeking a full re-examination of a Court of First Instance judgment on both factual and legal grounds.",
+p1:"Unlike cassation, a civil appeal is a genuine second look at the case. The Court of Appeal can revisit the evidence, reassess witness credibility and expert findings, and reach its own conclusions on the facts, in addition to reviewing whether the Court of First Instance applied the law correctly.",
+p2:"An appeal is not simply a repeat of the first hearing. It is built around specific grounds of appeal — errors in evaluating evidence, an incorrect application of the law, or a procedural irregularity that affected the outcome — supported by a memorandum that explains precisely how the lower court's judgment was wrong and what different outcome is sought.",
+p3:"In defined circumstances, new evidence or arguments not raised at first instance may be introduced on appeal, but this is not automatic and depends on the circumstances and timing of the case. Appeal deadlines run from the date the first-instance judgment is notified, and missing them converts an otherwise winnable judgment into a final one.",
+h2_how:"How Civil Appeals Are Handled",
+step1_t:"Judgment & Case File Review",step1_d:"The Court of First Instance judgment and full case file are reviewed to identify the strongest grounds of appeal on both fact and law.",
+step2_t:"Appeal Deadline & Filing",step2_d:"The applicable appeal deadline is calculated, and the notice of appeal is filed to preserve the right to challenge the judgment.",
+step3_t:"Grounds of Appeal Memorandum",step3_d:"A detailed memorandum is prepared setting out the grounds of appeal, addressing both the factual findings and the legal reasoning of the first-instance judgment.",
+step4_t:"New Evidence & Argument Assessment",step4_d:"Where appropriate, additional evidence or arguments are assessed for introduction at the appeal stage, within the limits the court allows.",
+step5_t:"Hearings Before the Court of Appeal",step5_d:"The appeal proceeds through hearings and submissions before the Court of Appeal panel, responding to the opposing party's position.",
+step6_t:"Appeal Judgment & Next Steps",step6_d:"Following the Court of Appeal's judgment — whether upholding, reversing, or varying the first-instance decision — next steps, including cassation, are assessed.",
+h2_when:"When You Need a Civil Appeal Lawyer",
+sc1:"You have received a Court of First Instance judgment and believe the facts were wrongly assessed.",
+sc2:"You believe the first-instance court misapplied the law or reached the wrong legal conclusion.",
+sc3:"The other party has filed an appeal against a judgment in your favour and you need to respond.",
+sc4:"You have additional evidence that was not available or presented at the first hearing.",
+sc5:"You need an urgent assessment of whether your appeal deadline is still open.",
+sc6:"You want a realistic assessment of your prospects before committing to an appeal.",
+h2_services:"Services We Provide",
+sv1:"Review of first-instance judgments to assess appeal prospects",
+sv2:"Calculation and management of appeal filing deadlines",
+sv3:"Drafting grounds of appeal and supporting memoranda",
+sv4:"Responding to appeals filed by an opposing party",
+sv5:"Assessment and introduction of new evidence on appeal, where permitted",
+sv6:"Representation before the Court of Appeal",
+sv7:"Advice on further recourse to the Court of Cassation following an appeal judgment",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What is the difference between an appeal and cassation?",faq1_a:"An appeal before the Court of Appeal re-examines both the facts and the law of a first-instance judgment, while cassation is limited to reviewing points of law already decided by the Court of Appeal.",
+faq2_q:"Can I introduce new evidence at the appeal stage?",faq2_a:"In certain circumstances new evidence or arguments can be introduced on appeal, though this is not automatic and depends on the specifics of the case and timing.",
+faq3_q:"How long do I have to file an appeal?",faq3_a:"The appeal deadline runs from the date the first-instance judgment is notified and is strictly enforced, so it should be calculated immediately.",
+faq4_q:"Will the Court of Appeal simply repeat the first hearing?",faq4_a:"No — the appeal is built around specific grounds identifying what was wrong with the first-instance judgment, rather than an unstructured re-argument of the whole case.",
+faq5_q:"What happens if I lose at the Court of Appeal?",faq5_a:"Depending on the grounds available, a further challenge before the Court of Cassation may be possible, limited to points of law."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",civil_law:"القانون المدني",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي الاستئناف المدني في دبي",
+lead:"حكم محكمة أول درجة ليس نهاية المطاف — فالاستئناف المدني يعيد فتح باب النظر في الوقائع والقانون معًا أمام هيئة قضائية أعلى.",
+box:"يمثل محامي الاستئناف المدني في دبي العملاء أمام محكمة الاستئناف، سعيًا لإعادة نظر كاملة في حكم محكمة أول درجة على أسس وقائعية وقانونية معًا.",
+p1:"على عكس النقض، يُعد الاستئناف المدني نظرة ثانية حقيقية في القضية. فيمكن لمحكمة الاستئناف إعادة النظر في الأدلة، وإعادة تقييم مصداقية الشهود ونتائج الخبراء، والوصول إلى استنتاجاتها الخاصة بشأن الوقائع، بالإضافة إلى مراجعة ما إذا كانت محكمة أول درجة قد طبقت القانون بشكل صحيح.",
+p2:"الاستئناف ليس مجرد تكرار للجلسة الأولى. فهو يُبنى على أسباب استئناف محددة — أخطاء في تقييم الأدلة، أو تطبيق غير صحيح للقانون، أو مخالفة إجرائية أثرت في النتيجة — تُدعم بمذكرة توضح بدقة كيف كان حكم المحكمة الأدنى خاطئًا وما هي النتيجة المختلفة المطلوبة.",
+p3:"في ظروف محددة، يمكن تقديم أدلة أو حجج جديدة لم تُطرح في الدرجة الأولى أثناء الاستئناف، لكن ذلك ليس تلقائيًا ويعتمد على ظروف القضية وتوقيتها. تبدأ مواعيد الاستئناف من تاريخ إعلان حكم الدرجة الأولى، وقد يؤدي تفويتها إلى تحويل حكم كان يمكن كسبه إلى حكم نهائي.",
+h2_how:"كيف تُدار قضايا الاستئناف المدني",
+step1_t:"مراجعة الحكم وملف القضية",step1_d:"تُراجع حكم محكمة أول درجة وملف القضية بالكامل لتحديد أقوى أسباب الاستئناف على مستوى الوقائع والقانون معًا.",
+step2_t:"موعد الاستئناف وتقديمه",step2_d:"يُحسب موعد الاستئناف المعمول به، وتُقدَّم صحيفة الاستئناف للحفاظ على الحق في الطعن في الحكم.",
+step3_t:"مذكرة أسباب الاستئناف",step3_d:"تُعَد مذكرة تفصيلية توضح أسباب الاستئناف، معالجةً كلًا من الاستنتاجات الوقائعية والتسبيب القانوني لحكم الدرجة الأولى.",
+step4_t:"تقييم الأدلة والحجج الجديدة",step4_d:"عند الاقتضاء، تُقيَّم الأدلة أو الحجج الإضافية لتقديمها في مرحلة الاستئناف، ضمن الحدود التي تسمح بها المحكمة.",
+step5_t:"جلسات أمام محكمة الاستئناف",step5_d:"يسير الاستئناف عبر جلسات ومذكرات أمام هيئة محكمة الاستئناف، ردًا على موقف الطرف الخصم.",
+step6_t:"حكم الاستئناف والخطوات التالية",step6_d:"عقب صدور حكم محكمة الاستئناف — سواء بتأييد قرار الدرجة الأولى أو نقضه أو تعديله — تُقيَّم الخطوات التالية، بما في ذلك النقض.",
+h2_when:"متى تحتاج إلى محامي استئناف مدني",
+sc1:"تلقيت حكمًا من محكمة أول درجة وتعتقد أن الوقائع قُيِّمت بشكل خاطئ.",
+sc2:"تعتقد أن محكمة الدرجة الأولى أخطأت في تطبيق القانون أو توصلت إلى استنتاج قانوني خاطئ.",
+sc3:"قدّم الطرف الآخر استئنافًا ضد حكم لصالحك وتحتاج إلى الرد عليه.",
+sc4:"لديك أدلة إضافية لم تكن متاحة أو لم تُقدَّم في الجلسة الأولى.",
+sc5:"تحتاج إلى تقييم عاجل لما إذا كان موعد استئنافك لا يزال مفتوحًا.",
+sc6:"تريد تقييمًا واقعيًا لفرصك قبل الالتزام بالاستئناف.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"مراجعة أحكام الدرجة الأولى لتقييم فرص الاستئناف",
+sv2:"حساب وإدارة مواعيد تقديم الاستئناف",
+sv3:"صياغة أسباب الاستئناف والمذكرات الداعمة",
+sv4:"الرد على الاستئنافات المقدمة من الطرف الخصم",
+sv5:"تقييم وتقديم الأدلة الجديدة في الاستئناف، حيثما يُسمح بذلك",
+sv6:"التمثيل أمام محكمة الاستئناف",
+sv7:"المشورة بشأن اللجوء إلى محكمة النقض عقب صدور حكم الاستئناف",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما الفرق بين الاستئناف والنقض؟",faq1_a:"يعيد الاستئناف أمام محكمة الاستئناف النظر في الوقائع والقانون معًا لحكم الدرجة الأولى، بينما يقتصر النقض على مراجعة المسائل القانونية التي سبق أن فصلت فيها محكمة الاستئناف.",
+faq2_q:"هل يمكنني تقديم أدلة جديدة في مرحلة الاستئناف؟",faq2_a:"في ظروف معينة يمكن تقديم أدلة أو حجج جديدة في الاستئناف، لكن ذلك ليس تلقائيًا ويعتمد على خصوصيات القضية وتوقيتها.",
+faq3_q:"كم من الوقت لدي لتقديم الاستئناف؟",faq3_a:"يبدأ موعد الاستئناف من تاريخ إعلان حكم الدرجة الأولى ويُطبَّق بصرامة، لذا ينبغي حسابه فورًا.",
+faq4_q:"هل ستكرر محكمة الاستئناف الجلسة الأولى ببساطة؟",faq4_a:"لا — يُبنى الاستئناف على أسباب محددة توضح ما كان خاطئًا في حكم الدرجة الأولى، بدلاً من إعادة جدل غير منظم للقضية بأكملها.",
+faq5_q:"ماذا يحدث إذا خسرت أمام محكمة الاستئناف؟",faq5_a:"اعتمادًا على الأسباب المتاحة، قد يكون هناك طعن إضافي أمام محكمة النقض، يقتصر على المسائل القانونية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",civil_law:"民法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜民事上诉律师",
+lead:"一审法院的判决并非终点——民事上诉会让更高层级的合议庭对事实和法律重新进行全面审视。",
+box:"迪拜民事上诉律师代表当事人出席上诉法院，就一审法院的判决在事实和法律两方面寻求全面重新审查。",
+p1:"与向最高法院申诉不同，民事上诉是对案件的真正二次审视。上诉法院可以重新审查证据、重新评估证人的可信度和专家意见，并就事实问题得出自己的结论，同时审查一审法院是否正确适用了法律。",
+p2:"上诉并非对第一次庭审的简单重复。它围绕具体的上诉理由展开——包括证据评估错误、法律适用不当，或影响结果的程序瑕疵——并辅以一份备忘录，精确说明下级法院判决错在何处，以及寻求何种不同的结果。",
+p3:"在特定情况下，未在一审中提出的新证据或论点可以在上诉阶段提出，但这并非自动允许，取决于案件的具体情况和时机。上诉期限自一审判决送达之日起算，一旦错过，原本可能胜诉的判决就会转为终局判决。",
+h2_how:"民事上诉案件处理流程",
+step1_t:"判决与案卷审查",step1_d:"审查一审法院的判决及完整案卷，以确定在事实和法律两方面最有力的上诉理由。",
+step2_t:"上诉期限与提交",step2_d:"计算适用的上诉期限，并提交上诉通知以保留质疑判决的权利。",
+step3_t:"上诉理由备忘录",step3_d:"准备一份详细备忘录，阐明上诉理由，同时针对一审判决的事实认定和法律推理进行论述。",
+step4_t:"新证据与新论点评估",step4_d:"在适当情况下，评估在上诉阶段提交额外证据或论点的可能性，须在法院允许的范围内进行。",
+step5_t:"上诉法院庭审",step5_d:"上诉案件将经过上诉法院合议庭的庭审与陈述程序，回应对方当事人的立场。",
+step6_t:"上诉判决与后续步骤",step6_d:"上诉法院作出判决后——无论是维持、推翻还是变更一审裁决——将评估包括向最高法院申诉在内的后续步骤。",
+h2_when:"何时需要民事上诉律师",
+sc1:"您收到了一审法院的判决，并认为事实认定有误。",
+sc2:"您认为一审法院错误适用了法律或得出了错误的法律结论。",
+sc3:"对方已就一项对您有利的判决提起上诉，您需要作出答辩。",
+sc4:"您有在第一次庭审中未能提供或未能获得的额外证据。",
+sc5:"您需要紧急评估您的上诉期限是否仍然有效。",
+sc6:"在决定提起上诉之前，您希望获得对胜诉前景的现实评估。",
+h2_services:"我们提供的服务",
+sv1:"审查一审判决以评估上诉前景",
+sv2:"上诉提交期限的计算与管理",
+sv3:"起草上诉理由及支持性备忘录",
+sv4:"对对方提起的上诉进行答辩",
+sv5:"在允许的范围内评估并提交上诉阶段的新证据",
+sv6:"上诉法院出庭代理",
+sv7:"就上诉判决后进一步向最高法院申诉提供法律意见",
+h2_faq:"常见问题",
+faq1_q:"上诉与向最高法院申诉有什么区别？",faq1_a:"上诉法院的上诉会对一审判决的事实和法律两方面重新审查，而向最高法院申诉仅限于审查上诉法院已裁定的法律问题。",
+faq2_q:"我可以在上诉阶段提交新证据吗？",faq2_a:"在特定情况下可以在上诉阶段提交新证据或论点，但这并非自动允许，取决于案件的具体情况和时机。",
+faq3_q:"我有多长时间可以提起上诉？",faq3_a:"上诉期限自一审判决送达之日起算，并被严格执行，因此应立即计算。",
+faq4_q:"上诉法院会简单地重复第一次庭审吗？",faq4_a:"不会——上诉围绕具体理由展开，指出一审判决中的错误之处，而不是对整个案件进行无组织的重新辩论。",
+faq5_q:"如果我在上诉法院败诉会怎样？",faq5_a:"根据可用的理由，可能可以向最高法院提起进一步申诉，但仅限于法律问题。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",civil_law:"Гражданское право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по гражданским апелляциям в Дубае",
+lead:"Решение суда первой инстанции — не конец пути: гражданская апелляция вновь открывает как факты, так и право для нового рассмотрения более высокой коллегией судей.",
+box:"Адвокат по гражданским апелляциям в Дубае представляет клиентов в Апелляционном суде, добиваясь полного пересмотра решения суда первой инстанции как по фактическим, так и по правовым основаниям.",
+p1:"В отличие от кассации, апелляция — это подлинный повторный взгляд на дело. Апелляционный суд может заново рассмотреть доказательства, переоценить достоверность показаний свидетелей и выводы экспертов и прийти к собственным выводам по фактам, а также проверить, правильно ли суд первой инстанции применил закон.",
+p2:"Апелляция — это не простое повторение первого слушания. Она строится вокруг конкретных оснований для апелляции — ошибок в оценке доказательств, неправильного применения закона или процессуального нарушения, повлиявшего на исход дела, — подкреплённых меморандумом, точно объясняющим, в чём заключалась ошибка решения нижестоящего суда и какой иной результат требуется.",
+p3:"В определённых обстоятельствах на стадии апелляции могут быть представлены новые доказательства или доводы, не заявленные в суде первой инстанции, однако это не происходит автоматически и зависит от обстоятельств и сроков дела. Сроки подачи апелляции исчисляются с даты уведомления о решении суда первой инстанции, и их пропуск превращает потенциально выигрышное решение в окончательное.",
+h2_how:"Как рассматриваются гражданские апелляции",
+step1_t:"Анализ решения и материалов дела",step1_d:"Решение суда первой инстанции и полные материалы дела анализируются для выявления наиболее веских оснований для апелляции как по фактам, так и по праву.",
+step2_t:"Срок апелляции и подача",step2_d:"Рассчитывается применимый срок подачи апелляции, и подаётся уведомление об апелляции для сохранения права оспорить решение.",
+step3_t:"Меморандум с основаниями апелляции",step3_d:"Готовится подробный меморандум с изложением оснований апелляции, затрагивающий как фактические выводы, так и правовую мотивировку решения суда первой инстанции.",
+step4_t:"Оценка новых доказательств и доводов",step4_d:"При необходимости оцениваются дополнительные доказательства или доводы для представления на стадии апелляции, в пределах, допускаемых судом.",
+step5_t:"Заседания в Апелляционном суде",step5_d:"Апелляция проходит через заседания и представление позиций перед коллегией Апелляционного суда, с ответом на позицию противоположной стороны.",
+step6_t:"Решение по апелляции и дальнейшие шаги",step6_d:"После вынесения решения Апелляционным судом — будь то оставление в силе, отмена или изменение решения суда первой инстанции — оцениваются дальнейшие шаги, включая кассацию.",
+h2_when:"Когда вам нужен адвокат по гражданским апелляциям",
+sc1:"Вы получили решение суда первой инстанции и считаете, что факты были оценены неверно.",
+sc2:"Вы считаете, что суд первой инстанции неправильно применил закон или пришёл к неверному правовому выводу.",
+sc3:"Другая сторона подала апелляцию на решение, вынесенное в вашу пользу, и вам необходимо ответить.",
+sc4:"У вас есть дополнительные доказательства, которые не были доступны или представлены на первом слушании.",
+sc5:"Вам нужна срочная оценка того, остаётся ли ваш срок подачи апелляции открытым.",
+sc6:"Вы хотите получить реалистичную оценку своих перспектив, прежде чем принимать решение об апелляции.",
+h2_services:"Наши услуги",
+sv1:"Анализ решений суда первой инстанции для оценки перспектив апелляции",
+sv2:"Расчёт и контроль сроков подачи апелляции",
+sv3:"Составление оснований апелляции и подтверждающих меморандумов",
+sv4:"Ответы на апелляции, поданные противоположной стороной",
+sv5:"Оценка и представление новых доказательств на стадии апелляции, где это допустимо",
+sv6:"Представительство в Апелляционном суде",
+sv7:"Консультирование о дальнейшем обращении в Кассационный суд после решения по апелляции",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"В чём разница между апелляцией и кассацией?",faq1_a:"Апелляция в Апелляционном суде заново рассматривает как факты, так и право решения суда первой инстанции, тогда как кассация ограничена проверкой правовых вопросов, уже решённых Апелляционным судом.",
+faq2_q:"Могу ли я представить новые доказательства на стадии апелляции?",faq2_a:"В определённых обстоятельствах на стадии апелляции можно представить новые доказательства или доводы, однако это происходит не автоматически и зависит от специфики дела и сроков.",
+faq3_q:"Сколько у меня времени на подачу апелляции?",faq3_a:"Срок подачи апелляции исчисляется с даты уведомления о решении суда первой инстанции и строго соблюдается, поэтому его следует рассчитать незамедлительно.",
+faq4_q:"Апелляционный суд просто повторит первое слушание?",faq4_a:"Нет — апелляция строится вокруг конкретных оснований, указывающих на ошибки в решении суда первой инстанции, а не на неструктурированное повторное обсуждение всего дела.",
+faq5_q:"Что произойдёт, если я проиграю в Апелляционном суде?",faq5_a:"В зависимости от имеющихся оснований возможно дальнейшее обращение в Кассационный суд, ограниченное правовыми вопросами."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",civil_law:"Zivilrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Zivilberufung in Dubai",
+lead:"Ein Urteil des Gerichts erster Instanz ist nicht das Ende des Weges — eine Zivilberufung eröffnet sowohl die Tatsachen als auch das Recht erneut für eine frische Prüfung durch ein höheres Richtergremium.",
+box:"Ein Anwalt für Zivilberufung in Dubai vertritt Mandanten vor dem Berufungsgericht und strebt eine vollständige Neuprüfung eines erstinstanzlichen Urteils sowohl in tatsächlicher als auch in rechtlicher Hinsicht an.",
+p1:"Anders als die Kassation ist eine Berufung ein echter zweiter Blick auf den Fall. Das Berufungsgericht kann die Beweise erneut prüfen, die Glaubwürdigkeit von Zeugen und Sachverständigenfeststellungen neu bewerten und zu eigenen Schlussfolgerungen zu den Tatsachen gelangen, zusätzlich zur Prüfung, ob das Gericht erster Instanz das Recht korrekt angewendet hat.",
+p2:"Eine Berufung ist nicht einfach eine Wiederholung der ersten Verhandlung. Sie stützt sich auf spezifische Berufungsgründe — Fehler bei der Beweiswürdigung, eine fehlerhafte Rechtsanwendung oder eine Verfahrensunregelmäßigkeit, die das Ergebnis beeinflusst hat — untermauert durch ein Memorandum, das präzise darlegt, worin der Fehler des Urteils der Vorinstanz bestand und welches abweichende Ergebnis angestrebt wird.",
+p3:"Unter bestimmten Umständen können in der Berufung neue Beweise oder Argumente eingeführt werden, die in erster Instanz nicht vorgebracht wurden, doch dies geschieht nicht automatisch und hängt von den Umständen und dem Zeitpunkt des Falls ab. Die Berufungsfristen laufen ab dem Datum der Zustellung des erstinstanzlichen Urteils, und ihre Versäumung macht aus einem sonst gewinnbaren Urteil ein endgültiges.",
+h2_how:"So werden Zivilberufungen behandelt",
+step1_t:"Prüfung von Urteil & Akte",step1_d:"Das Urteil des Gerichts erster Instanz und die vollständige Akte werden geprüft, um die stärksten Berufungsgründe sowohl in tatsächlicher als auch in rechtlicher Hinsicht zu ermitteln.",
+step2_t:"Berufungsfrist & Einreichung",step2_d:"Die geltende Berufungsfrist wird berechnet, und die Berufungsschrift wird eingereicht, um das Recht zur Anfechtung des Urteils zu wahren.",
+step3_t:"Memorandum der Berufungsgründe",step3_d:"Ein detailliertes Memorandum wird erstellt, das die Berufungsgründe darlegt und sowohl die tatsächlichen Feststellungen als auch die rechtliche Begründung des erstinstanzlichen Urteils behandelt.",
+step4_t:"Bewertung neuer Beweise & Argumente",step4_d:"Wo angemessen, werden zusätzliche Beweise oder Argumente für die Einführung im Berufungsverfahren bewertet, innerhalb der vom Gericht zugelassenen Grenzen.",
+step5_t:"Verhandlungen vor dem Berufungsgericht",step5_d:"Die Berufung durchläuft Verhandlungen und Schriftsätze vor dem Berufungsgericht, wobei auf die Position der Gegenseite eingegangen wird.",
+step6_t:"Berufungsurteil & nächste Schritte",step6_d:"Nach dem Urteil des Berufungsgerichts — sei es Bestätigung, Aufhebung oder Änderung der erstinstanzlichen Entscheidung — werden nächste Schritte, einschließlich der Kassation, bewertet.",
+h2_when:"Wann Sie einen Anwalt für Zivilberufung brauchen",
+sc1:"Sie haben ein Urteil des Gerichts erster Instanz erhalten und glauben, dass die Tatsachen falsch bewertet wurden.",
+sc2:"Sie glauben, dass das erstinstanzliche Gericht das Recht falsch angewendet oder eine falsche rechtliche Schlussfolgerung gezogen hat.",
+sc3:"Die Gegenseite hat Berufung gegen ein zu Ihren Gunsten ergangenes Urteil eingelegt, und Sie müssen darauf reagieren.",
+sc4:"Sie verfügen über zusätzliche Beweise, die bei der ersten Verhandlung nicht verfügbar waren oder nicht vorgelegt wurden.",
+sc5:"Sie benötigen eine dringende Bewertung, ob Ihre Berufungsfrist noch offen ist.",
+sc6:"Sie möchten eine realistische Einschätzung Ihrer Erfolgsaussichten, bevor Sie sich zu einer Berufung entschließen.",
+h2_services:"Unsere Leistungen",
+sv1:"Prüfung erstinstanzlicher Urteile zur Bewertung der Berufungsaussichten",
+sv2:"Berechnung und Verwaltung von Berufungsfristen",
+sv3:"Verfassen von Berufungsgründen und unterstützenden Memoranden",
+sv4:"Erwiderung auf von der Gegenseite eingelegte Berufungen",
+sv5:"Bewertung und Einführung neuer Beweise in der Berufung, soweit zulässig",
+sv6:"Vertretung vor dem Berufungsgericht",
+sv7:"Beratung zu weiteren Rechtsmitteln vor dem Kassationsgericht nach einem Berufungsurteil",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist der Unterschied zwischen einer Berufung und einer Kassation?",faq1_a:"Eine Berufung vor dem Berufungsgericht prüft sowohl die Tatsachen als auch das Recht eines erstinstanzlichen Urteils erneut, während sich die Kassation auf die Prüfung von Rechtsfragen beschränkt, über die das Berufungsgericht bereits entschieden hat.",
+faq2_q:"Kann ich in der Berufung neue Beweise vorlegen?",faq2_a:"Unter bestimmten Umständen können in der Berufung neue Beweise oder Argumente eingeführt werden, dies geschieht jedoch nicht automatisch und hängt von den Besonderheiten und dem Zeitpunkt des Falls ab.",
+faq3_q:"Wie viel Zeit habe ich, um Berufung einzulegen?",faq3_a:"Die Berufungsfrist läuft ab dem Datum der Zustellung des erstinstanzlichen Urteils und wird streng durchgesetzt, daher sollte sie sofort berechnet werden.",
+faq4_q:"Wird das Berufungsgericht einfach die erste Verhandlung wiederholen?",faq4_a:"Nein — die Berufung stützt sich auf spezifische Gründe, die aufzeigen, was am erstinstanzlichen Urteil falsch war, statt auf eine unstrukturierte Neuverhandlung des gesamten Falls.",
+faq5_q:"Was passiert, wenn ich vor dem Berufungsgericht verliere?",faq5_a:"Je nach verfügbaren Gründen kann ein weiteres Rechtsmittel vor dem Kassationsgericht möglich sein, das auf Rechtsfragen beschränkt ist."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
