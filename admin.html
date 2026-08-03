@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin — Contact Submissions | Ismail Ibrahim Alhosani Advocates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+  :root{
+    --black:#0c0c0d; --black2:#151517; --navy:#12213a;
+    --gold:#c9a24b; --gold-light:#e8cd82; --cream:#f5f1e8; --grey:#a9a6a0;
+    --blue:#3f7dd6; --red:#d1495b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.6;min-height:100vh;}
+  a{color:inherit;}
+
+  #loginScreen{
+    min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+  }
+  .login-box{
+    background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:8px;
+    padding:40px 36px;max-width:380px;width:100%;
+  }
+  .login-box h1{
+    font-size:20px;font-weight:600;color:var(--gold-light);margin-bottom:6px;text-align:center;
+  }
+  .login-box p.sub{
+    color:var(--grey);font-size:13px;text-align:center;margin-bottom:28px;
+  }
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:12px;color:var(--grey);margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;}
+  .field input{
+    width:100%;padding:11px 14px;background:var(--black);border:1px solid rgba(245,241,232,0.15);
+    border-radius:4px;color:var(--cream);font-family:inherit;font-size:14px;
+  }
+  .field input:focus{outline:none;border-color:var(--gold);}
+  .btn-primary{
+    width:100%;padding:12px;background:var(--gold);color:var(--black);border:none;border-radius:4px;
+    font-family:inherit;font-weight:600;font-size:14px;cursor:pointer;margin-top:8px;transition:background .2s;
+  }
+  .btn-primary:hover{background:var(--gold-light);}
+  .btn-primary:disabled{opacity:.6;cursor:not-allowed;}
+  .login-error{
+    display:none;background:rgba(209,73,91,0.12);border:1px solid var(--red);color:#f0a3ac;
+    padding:10px 12px;border-radius:4px;font-size:13px;margin-bottom:16px;
+  }
+  .login-error.show{display:block;}
+
+  #dashboard{display:none;}
+  .admin-header{
+    background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.15);
+    padding:18px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+  }
+  .admin-header h1{font-size:17px;font-weight:600;color:var(--gold-light);}
+  .admin-header .sub{color:var(--grey);font-size:12.5px;margin-top:2px;}
+  .header-actions{display:flex;gap:10px;align-items:center;}
+  .btn-small{
+    padding:8px 16px;border-radius:4px;font-family:inherit;font-size:13px;cursor:pointer;border:1px solid rgba(245,241,232,0.2);
+    background:transparent;color:var(--cream);transition:border-color .2s;
+  }
+  .btn-small:hover{border-color:var(--gold);}
+  .btn-small.logout{color:#f0a3ac;border-color:rgba(209,73,91,0.4);}
+  .btn-small.logout:hover{border-color:var(--red);}
+
+  .admin-body{padding:24px 28px 60px;max-width:1400px;margin:0 auto;}
+  .stat-bar{display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap;}
+  .stat-card{
+    background:var(--black2);border:1px solid rgba(201,162,75,0.15);border-radius:6px;
+    padding:14px 20px;min-width:140px;
+  }
+  .stat-card .num{font-size:24px;font-weight:700;color:var(--gold-light);}
+  .stat-card .label{font-size:12px;color:var(--grey);text-transform:uppercase;letter-spacing:.03em;}
+
+  .table-wrap{
+    background:var(--black2);border:1px solid rgba(201,162,75,0.15);border-radius:6px;overflow-x:auto;
+  }
+  table{width:100%;border-collapse:collapse;min-width:900px;}
+  thead th{
+    text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--grey);
+    padding:14px 16px;border-bottom:1px solid rgba(245,241,232,0.1);white-space:nowrap;
+  }
+  tbody td{
+    padding:14px 16px;font-size:13.5px;border-bottom:1px solid rgba(245,241,232,0.06);vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:rgba(201,162,75,0.04);}
+  .cell-name{font-weight:600;color:var(--cream);}
+  .cell-msg{max-width:320px;white-space:pre-wrap;color:var(--grey);}
+  .cell-date{white-space:nowrap;color:var(--grey);font-size:12.5px;}
+  .badge{
+    display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;
+    background:rgba(63,125,214,0.15);color:#8fb8ee;text-transform:capitalize;
+  }
+  .empty-state{padding:60px 20px;text-align:center;color:var(--grey);font-size:14px;}
+  .loading-state{padding:60px 20px;text-align:center;color:var(--grey);font-size:14px;}
+  .refresh-note{font-size:12px;color:var(--grey);margin-top:14px;}
+</style>
+</head>
+<body>
+
+<div id="loginScreen">
+  <div class="login-box">
+    <h1>Admin Access</h1>
+    <p class="sub">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</p>
+    <div class="login-error" id="loginError"></div>
+    <form id="loginForm">
+      <div class="field">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="btn-primary" id="loginBtn">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<div id="dashboard">
+  <div class="admin-header">
+    <div>
+      <h1>Contact Submissions</h1>
+      <div class="sub" id="loggedInAs"></div>
+    </div>
+    <div class="header-actions">
+      <button class="btn-small" id="refreshBtn">Refresh</button>
+      <button class="btn-small logout" id="logoutBtn">Log Out</button>
+    </div>
+  </div>
+  <div class="admin-body">
+    <div class="stat-bar">
+      <div class="stat-card"><div class="num" id="statTotal">–</div><div class="label">Total Submissions</div></div>
+      <div class="stat-card"><div class="num" id="statToday">–</div><div class="label">Today</div></div>
+      <div class="stat-card"><div class="num" id="statWeek">–</div><div class="label">Last 7 Days</div></div>
+    </div>
+    <div class="table-wrap">
+      <div id="tableContainer">
+        <div class="loading-state">Loading submissions…</div>
+      </div>
+    </div>
+    <p class="refresh-note">Data is fetched live from Supabase. Click Refresh to check for new submissions.</p>
+  </div>
+</div>
+
+<script>
+var SUPABASE_URL = 'https://qufesvtwvoudcazozice.supabase.co';
+var SUPABASE_KEY = 'sb_publishable_EVXOD3WFSqSLGD_aVSK3Tw_oL0gpe1p';
+var supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+var loginScreen = document.getElementById('loginScreen');
+var dashboard = document.getElementById('dashboard');
+var loginForm = document.getElementById('loginForm');
+var loginError = document.getElementById('loginError');
+var loginBtn = document.getElementById('loginBtn');
+var loggedInAs = document.getElementById('loggedInAs');
+var tableContainer = document.getElementById('tableContainer');
+var statTotal = document.getElementById('statTotal');
+var statToday = document.getElementById('statToday');
+var statWeek = document.getElementById('statWeek');
+
+function escapeHtml(str){
+  if(str === null || str === undefined) return '';
+  return String(str).replace(/[&<>"']/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+  });
+}
+
+function formatDate(iso){
+  var d = new Date(iso);
+  return d.toLocaleString('en-GB', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit' });
+}
+
+function showDashboard(session){
+  loginScreen.style.display = 'none';
+  dashboard.style.display = 'block';
+  loggedInAs.textContent = 'Signed in as ' + (session.user && session.user.email ? session.user.email : '');
+  loadSubmissions();
+}
+
+function showLogin(){
+  dashboard.style.display = 'none';
+  loginScreen.style.display = 'flex';
+}
+
+async function loadSubmissions(){
+  tableContainer.innerHTML = '<div class="loading-state">Loading submissions…</div>';
+  var result = await supabaseClient.from('contact_submissions').select('*').order('created_at', { ascending: false });
+  if(result.error){
+    tableContainer.innerHTML = '<div class="empty-state">Could not load submissions: ' + escapeHtml(result.error.message) + '</div>';
+    return;
+  }
+  var rows = result.data || [];
+  statTotal.textContent = rows.length;
+
+  var now = new Date();
+  var startOfToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var sevenDaysAgo = new Date(now.getTime() - 7*24*60*60*1000);
+  var todayCount = 0, weekCount = 0;
+  rows.forEach(function(r){
+    var d = new Date(r.created_at);
+    if(d >= startOfToday) todayCount++;
+    if(d >= sevenDaysAgo) weekCount++;
+  });
+  statToday.textContent = todayCount;
+  statWeek.textContent = weekCount;
+
+  if(rows.length === 0){
+    tableContainer.innerHTML = '<div class="empty-state">No submissions yet.</div>';
+    return;
+  }
+
+  var html = '<table><thead><tr>' +
+    '<th>Date</th><th>Name</th><th>Email</th><th>Phone</th><th>Practice Area</th><th>Message</th><th>Status</th>' +
+    '</tr></thead><tbody>';
+
+  rows.forEach(function(r){
+    html += '<tr>' +
+      '<td class="cell-date">' + escapeHtml(formatDate(r.created_at)) + '</td>' +
+      '<td class="cell-name">' + escapeHtml(r.name) + '</td>' +
+      '<td><a href="mailto:' + encodeURIComponent(r.email) + '">' + escapeHtml(r.email) + '</a></td>' +
+      '<td>' + (r.phone ? '<a href="tel:' + encodeURIComponent(r.phone) + '">' + escapeHtml(r.phone) + '</a>' : '<span style="color:var(--grey)">—</span>') + '</td>' +
+      '<td>' + (r.practice_area ? escapeHtml(r.practice_area) : '<span style="color:var(--grey)">—</span>') + '</td>' +
+      '<td class="cell-msg">' + escapeHtml(r.message) + '</td>' +
+      '<td><span class="badge">' + escapeHtml(r.status || 'new') + '</span></td>' +
+      '</tr>';
+  });
+
+  html += '</tbody></table>';
+  tableContainer.innerHTML = html;
+}
+
+loginForm.addEventListener('submit', async function(e){
+  e.preventDefault();
+  loginError.classList.remove('show');
+  loginBtn.disabled = true;
+  loginBtn.textContent = 'Signing in…';
+  var email = document.getElementById('loginEmail').value;
+  var password = document.getElementById('loginPassword').value;
+  var result = await supabaseClient.auth.signInWithPassword({ email: email, password: password });
+  loginBtn.disabled = false;
+  loginBtn.textContent = 'Sign In';
+  if(result.error){
+    loginError.textContent = 'Invalid email or password.';
+    loginError.classList.add('show');
+    return;
+  }
+  showDashboard(result.data.session);
+});
+
+document.getElementById('logoutBtn').addEventListener('click', async function(){
+  await supabaseClient.auth.signOut();
+  showLogin();
+});
+
+document.getElementById('refreshBtn').addEventListener('click', function(){
+  loadSubmissions();
+});
+
+(async function init(){
+  var sessionResult = await supabaseClient.auth.getSession();
+  if(sessionResult.data && sessionResult.data.session){
+    showDashboard(sessionResult.data.session);
+  } else {
+    showLogin();
+  }
+})();
+</script>
+</body>
+</html>
