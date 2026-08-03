@@ -98,6 +98,11 @@
   .empty-state{padding:60px 20px;text-align:center;color:var(--grey);font-size:14px;}
   .loading-state{padding:60px 20px;text-align:center;color:var(--grey);font-size:14px;}
   .refresh-note{font-size:12px;color:var(--grey);margin-top:14px;}
+  .debug-box{
+    margin-top:24px;background:var(--black2);border:1px dashed rgba(245,241,232,0.15);border-radius:6px;
+    padding:14px 18px;font-size:12px;color:var(--grey);font-family:monospace;white-space:pre-wrap;line-height:1.7;
+  }
+  .debug-box strong{color:var(--gold-light);}
 </style>
 </head>
 <body>
@@ -144,6 +149,7 @@
       </div>
     </div>
     <p class="refresh-note">Data is fetched live from Supabase. Click Refresh to check for new submissions.</p>
+    <div class="debug-box" id="debugBox">Loading diagnostics…</div>
   </div>
 </div>
 
@@ -162,6 +168,19 @@ var tableContainer = document.getElementById('tableContainer');
 var statTotal = document.getElementById('statTotal');
 var statToday = document.getElementById('statToday');
 var statWeek = document.getElementById('statWeek');
+var debugBox = document.getElementById('debugBox');
+
+function decodeJwt(token){
+  try{
+    var payload = token.split('.')[1];
+    var json = decodeURIComponent(atob(payload.replace(/-/g,'+').replace(/_/g,'/')).split('').map(function(c){
+      return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+    return JSON.parse(json);
+  } catch(e){
+    return null;
+  }
+}
 
 function escapeHtml(str){
   if(str === null || str === undefined) return '';
@@ -187,9 +206,34 @@ function showLogin(){
   loginScreen.style.display = 'flex';
 }
 
+async function runDiagnostics(){
+  var lines = [];
+  var sessionResult = await supabaseClient.auth.getSession();
+  var session = sessionResult.data && sessionResult.data.session;
+  if(session){
+    lines.push('<strong>Session:</strong> active');
+    lines.push('<strong>User:</strong> ' + escapeHtml(session.user.email));
+    var claims = decodeJwt(session.access_token);
+    if(claims){
+      lines.push('<strong>JWT role:</strong> ' + escapeHtml(claims.role || 'unknown'));
+      lines.push('<strong>JWT expires:</strong> ' + escapeHtml(new Date(claims.exp * 1000).toLocaleString()));
+    }
+  } else {
+    lines.push('<strong>Session:</strong> none (not authenticated)');
+  }
+  var userCheck = await supabaseClient.auth.getUser();
+  lines.push('<strong>Server-verified user:</strong> ' + (userCheck.error ? ('ERROR — ' + escapeHtml(userCheck.error.message)) : escapeHtml(userCheck.data.user.email)));
+  debugBox.innerHTML = lines.join('\n');
+  return session;
+}
+
 async function loadSubmissions(){
   tableContainer.innerHTML = '<div class="loading-state">Loading submissions…</div>';
-  var result = await supabaseClient.from('contact_submissions').select('*').order('created_at', { ascending: false });
+  await runDiagnostics();
+  var result = await supabaseClient.from('contact_submissions').select('*', { count: 'exact' }).order('created_at', { ascending: false });
+  debugBox.innerHTML += '\n<strong>Query error:</strong> ' + (result.error ? escapeHtml(result.error.message) + ' (code: ' + escapeHtml(result.error.code || '') + ')' : 'none') +
+    '\n<strong>Query count (exact):</strong> ' + (result.count === null ? 'null' : result.count) +
+    '\n<strong>Rows returned:</strong> ' + (result.data ? result.data.length : 0);
   if(result.error){
     tableContainer.innerHTML = '<div class="empty-state">Could not load submissions: ' + escapeHtml(result.error.message) + '</div>';
     return;
