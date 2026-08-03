@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Free Zone Company Setup in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Free zone structures offer full foreign ownership and are suited to businesses that do not need to trade directly onshore.">
+<meta name="description" content="Legal guidance on free zone company formation in Dubai — choosing the right zone, 100% ownership structures, license types, and the trade-offs against a mainland setup.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="company-formation.html">Company Formation</a> &rsaquo; Free Zone Company Setup in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="company-formation.html" data-i18n="company_formation_cat">Company Formation</a> &rsaquo; <span data-i18n="page_title">Free Zone Company Setup in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Free Zone Company Setup in Dubai</h1>
-  <p class="lead">Free zone structures offer full foreign ownership and are suited to businesses that do not need to trade directly onshore.</p>
-  <div class="box">The firm advises investors on selecting a suitable free zone and completing company registration and licensing.</div>
-  <p class="body-p">Advice covers activity scope, visa allocation, and the differences between free zone jurisdictions relevant to the client's business.</p>
-  <p class="body-p">The firm also assists with the ongoing renewal and compliance requirements once the company is established.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Free Zone Company Setup in Dubai</h1>
+<p class="lead" data-i18n="lead">Dubai has more than twenty free zones, each with its own authority, license categories, and cost structure — the right choice depends on your activity and customer base, not just which zone is best known.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A free zone company is licensed and regulated by an individual free zone authority (such as DMCC, DIFC, JAFZA, DAFZA, or IFZA) rather than the Department of Economy and Tourism. It offers 100% foreign ownership by default, full repatriation of profits, and streamlined setup — in exchange for restrictions on trading directly with the UAE mainland market outside the zone.</div>
+
+<p class="body-p" data-i18n="p1">Each free zone is built around particular industries and license types — DIFC and ADGM for financial services, DMCC for commodities trading, media zones for broadcasting and production, logistics-focused zones near the ports and airport. Choosing the wrong zone for your activity can mean paying for facilities and visa allocations you don't need, or discovering later that your intended activity isn't licensable there at all.</p>
+<p class="body-p" data-i18n="p2">Free zone incorporation also raises structural questions that don't arise on the mainland: which license type (trading, service, industrial, or e-commerce) matches your actual operations, whether a flexi-desk or a full office suits your visa quota needs, and how the zone's specific company regulations handle shareholder changes, share transfers, and liquidation — these vary meaningfully between authorities and are not interchangeable.</p>
+<p class="body-p" data-i18n="p3">We assess your activity and target market against the available zones, handle the application and documentation with the chosen authority, draft the constitutional documents to reflect the real ownership and governance arrangement between founders, and advise on how the entity should sell into the UAE mainland market if that is part of the business plan.</p>
+
+<h2 data-i18n="h2_how">How Free Zone Company Formation Works</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Zone and Licence Selection</strong><span data-i18n="step1_d">We compare the free zones licensing your activity, weighing cost, visa quota, facility requirements, and reputation with banks and clients before recommending one.</span></li>
+<li><strong data-i18n="step2_t">Trade Name and Initial Application</strong><span data-i18n="step2_d">We reserve a trade name with the chosen authority and submit the initial application together with passport copies and business plan documentation where required.</span></li>
+<li><strong data-i18n="step3_t">Licence Package and Facility Selection</strong><span data-i18n="step3_d">We select the license type and facility tier (flexi-desk, shared office, or dedicated unit) that matches your actual visa and operational needs, avoiding over- or under-provisioning.</span></li>
+<li><strong data-i18n="step4_t">Constitutional Documents</strong><span data-i18n="step4_d">We draft the Memorandum and Articles of Association (or equivalent constitutional documents under the zone's regulations) to reflect the founders' actual ownership and governance agreement.</span></li>
+<li><strong data-i18n="step5_t">Licence Issuance and Establishment Card</strong><span data-i18n="step5_d">Once the authority approves the application and documents are signed, the license is issued and we register the establishment card needed for visa processing.</span></li>
+<li><strong data-i18n="step6_t">Visa Processing and Bank Introduction</strong><span data-i18n="step6_d">We coordinate employment and investor visa applications against your allocated quota and introduce the company to banks suited to its activity and shareholder profile.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need Help With Free Zone Setup</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You are comparing multiple free zones and need an assessment of which one actually licenses your specific activity at the right cost.</li>
+<li data-i18n="sc2">Your business is a joint venture or has more than one founder, and you need the constitutional documents to reflect a real shareholder agreement rather than a boilerplate template.</li>
+<li data-i18n="sc3">You plan to sell into the UAE mainland market and need advice on the distributor or dual-licensing structure that makes this possible from a free zone base.</li>
+<li data-i18n="sc4">An existing free zone company needs a shareholder change, share transfer, or amendment to its license that the zone's standard process doesn't clearly address.</li>
+<li data-i18n="sc5">You are relocating an existing offshore or foreign company's operations into a Dubai free zone.</li>
+<li data-i18n="sc6">Your free zone application has stalled because the chosen authority's activity list doesn't clearly match what your business actually does.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Comparative advice on free zone selection based on activity, cost, and visa needs</li>
+<li data-i18n="sv2">Trade name reservation and application preparation with the chosen authority</li>
+<li data-i18n="sv3">Licence type and facility package selection</li>
+<li data-i18n="sv4">Memorandum and Articles of Association / constitutional document drafting</li>
+<li data-i18n="sv5">Shareholder agreements for multi-founder and joint venture structures</li>
+<li data-i18n="sv6">Advice on mainland distribution and dual-licensing arrangements</li>
+<li data-i18n="sv7">Post-licence support: establishment card, visa processing, bank introductions</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Which free zone is best for my business?</summary>
+<p data-i18n="faq1_a">It depends entirely on your activity — DIFC and ADGM suit regulated financial services, DMCC suits commodities and general trading, media-focused zones suit broadcasting and production, and several zones near the airport and ports suit logistics. We compare licensing scope, cost, and visa allocation across the zones relevant to your activity before recommending one.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Can a free zone company sell directly to customers in Dubai or the wider UAE?</summary>
+<p data-i18n="faq2_a">Not directly in most cases — a free zone company generally needs a UAE-registered distributor, a dual license, or a mainland branch to sell directly into the local market outside the zone. We advise on which structure fits your commercial plan before you commit to a particular zone.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">How many visas can I get with a free zone company?</summary>
+<p data-i18n="faq3_a">Visa quota is tied to the facility package you select — a flexi-desk typically allows one to two visas, while a dedicated office allows more, calculated against floor area under the zone's own formula. We size the facility package to your actual hiring plan rather than the cheapest available option.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Is 100% foreign ownership guaranteed in a free zone?</summary>
+<p data-i18n="faq4_a">Yes — free zones have always permitted 100% foreign ownership, which was their original advantage before the 2021 mainland reform extended similar ownership rights to most mainland activities. The difference now lies mainly in market access, not ownership percentage.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What happens if I want to change my free zone company's shareholders later?</summary>
+<p data-i18n="faq5_a">Each free zone authority has its own process and documentation requirements for share transfers and shareholder changes, which can differ significantly from DED's mainland process. We handle the required filings and update the constitutional documents to reflect the new ownership.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",company_formation_cat:"Company Formation",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Free Zone Company Setup in Dubai",
+lead:"Dubai has more than twenty free zones, each with its own authority, license categories, and cost structure — the right choice depends on your activity and customer base, not just which zone is best known.",
+box:"A free zone company is licensed and regulated by an individual free zone authority (such as DMCC, DIFC, JAFZA, DAFZA, or IFZA) rather than the Department of Economy and Tourism. It offers 100% foreign ownership by default, full repatriation of profits, and streamlined setup — in exchange for restrictions on trading directly with the UAE mainland market outside the zone.",
+p1:"Each free zone is built around particular industries and license types — DIFC and ADGM for financial services, DMCC for commodities trading, media zones for broadcasting and production, logistics-focused zones near the ports and airport. Choosing the wrong zone for your activity can mean paying for facilities and visa allocations you don't need, or discovering later that your intended activity isn't licensable there at all.",
+p2:"Free zone incorporation also raises structural questions that don't arise on the mainland: which license type (trading, service, industrial, or e-commerce) matches your actual operations, whether a flexi-desk or a full office suits your visa quota needs, and how the zone's specific company regulations handle shareholder changes, share transfers, and liquidation — these vary meaningfully between authorities and are not interchangeable.",
+p3:"We assess your activity and target market against the available zones, handle the application and documentation with the chosen authority, draft the constitutional documents to reflect the real ownership and governance arrangement between founders, and advise on how the entity should sell into the UAE mainland market if that is part of the business plan.",
+h2_how:"How Free Zone Company Formation Works",
+step1_t:"Zone and Licence Selection",step1_d:"We compare the free zones licensing your activity, weighing cost, visa quota, facility requirements, and reputation with banks and clients before recommending one.",
+step2_t:"Trade Name and Initial Application",step2_d:"We reserve a trade name with the chosen authority and submit the initial application together with passport copies and business plan documentation where required.",
+step3_t:"Licence Package and Facility Selection",step3_d:"We select the license type and facility tier (flexi-desk, shared office, or dedicated unit) that matches your actual visa and operational needs, avoiding over- or under-provisioning.",
+step4_t:"Constitutional Documents",step4_d:"We draft the Memorandum and Articles of Association (or equivalent constitutional documents under the zone's regulations) to reflect the founders' actual ownership and governance agreement.",
+step5_t:"Licence Issuance and Establishment Card",step5_d:"Once the authority approves the application and documents are signed, the license is issued and we register the establishment card needed for visa processing.",
+step6_t:"Visa Processing and Bank Introduction",step6_d:"We coordinate employment and investor visa applications against your allocated quota and introduce the company to banks suited to its activity and shareholder profile.",
+h2_when:"When You Need Help With Free Zone Setup",
+sc1:"You are comparing multiple free zones and need an assessment of which one actually licenses your specific activity at the right cost.",
+sc2:"Your business is a joint venture or has more than one founder, and you need the constitutional documents to reflect a real shareholder agreement rather than a boilerplate template.",
+sc3:"You plan to sell into the UAE mainland market and need advice on the distributor or dual-licensing structure that makes this possible from a free zone base.",
+sc4:"An existing free zone company needs a shareholder change, share transfer, or amendment to its license that the zone's standard process doesn't clearly address.",
+sc5:"You are relocating an existing offshore or foreign company's operations into a Dubai free zone.",
+sc6:"Your free zone application has stalled because the chosen authority's activity list doesn't clearly match what your business actually does.",
+h2_services:"Services We Provide",
+sv1:"Comparative advice on free zone selection based on activity, cost, and visa needs",
+sv2:"Trade name reservation and application preparation with the chosen authority",
+sv3:"Licence type and facility package selection",
+sv4:"Memorandum and Articles of Association / constitutional document drafting",
+sv5:"Shareholder agreements for multi-founder and joint venture structures",
+sv6:"Advice on mainland distribution and dual-licensing arrangements",
+sv7:"Post-licence support: establishment card, visa processing, bank introductions",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Which free zone is best for my business?",faq1_a:"It depends entirely on your activity — DIFC and ADGM suit regulated financial services, DMCC suits commodities and general trading, media-focused zones suit broadcasting and production, and several zones near the airport and ports suit logistics. We compare licensing scope, cost, and visa allocation across the zones relevant to your activity before recommending one.",
+faq2_q:"Can a free zone company sell directly to customers in Dubai or the wider UAE?",faq2_a:"Not directly in most cases — a free zone company generally needs a UAE-registered distributor, a dual license, or a mainland branch to sell directly into the local market outside the zone. We advise on which structure fits your commercial plan before you commit to a particular zone.",
+faq3_q:"How many visas can I get with a free zone company?",faq3_a:"Visa quota is tied to the facility package you select — a flexi-desk typically allows one to two visas, while a dedicated office allows more, calculated against floor area under the zone's own formula. We size the facility package to your actual hiring plan rather than the cheapest available option.",
+faq4_q:"Is 100% foreign ownership guaranteed in a free zone?",faq4_a:"Yes — free zones have always permitted 100% foreign ownership, which was their original advantage before the 2021 mainland reform extended similar ownership rights to most mainland activities. The difference now lies mainly in market access, not ownership percentage.",
+faq5_q:"What happens if I want to change my free zone company's shareholders later?",faq5_a:"Each free zone authority has its own process and documentation requirements for share transfers and shareholder changes, which can differ significantly from DED's mainland process. We handle the required filings and update the constitutional documents to reflect the new ownership."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",company_formation_cat:"تأسيس الشركات",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"تأسيس شركة في منطقة حرة بدبي",
+lead:"تضم دبي أكثر من عشرين منطقة حرة، ولكل منها هيئتها الخاصة وفئات التراخيص وهيكل التكاليف — يعتمد الاختيار الصحيح على نشاطك وقاعدة عملائك، وليس فقط على أي منطقة الأكثر شهرة.",
+box:"شركة المنطقة الحرة مرخصة ومنظمة من قبل هيئة منطقة حرة فردية (مثل DMCC أو DIFC أو JAFZA أو DAFZA أو IFZA) وليس من دائرة الاقتصاد والسياحة. تقدم ملكية أجنبية 100% بشكل افتراضي، وإعادة كاملة للأرباح إلى الخارج، وإجراءات تأسيس مبسطة — مقابل قيود على التعامل التجاري المباشر مع سوق الإمارات البري خارج المنطقة.",
+p1:"كل منطقة حرة مبنية حول صناعات وأنواع تراخيص معينة — DIFC وADGM للخدمات المالية، DMCC لتجارة السلع، مناطق الإعلام للبث والإنتاج، ومناطق تركز على اللوجستيات بالقرب من الموانئ والمطار. اختيار منطقة خاطئة لنشاطك قد يعني دفع تكاليف مرافق وتخصيصات تأشيرات لا تحتاجها، أو اكتشاف لاحقًا أن نشاطك المقصود غير قابل للترخيص هناك على الإطلاق.",
+p2:"التأسيس في منطقة حرة يثير أيضًا أسئلة هيكلية لا تنشأ في البر — أي نوع ترخيص (تجاري، خدمي، صناعي، أو تجارة إلكترونية) يتوافق مع عملياتك الفعلية، وما إذا كان مكتب مرن أو مكتب كامل يناسب احتياجات حصة التأشيرات لديك، وكيف تتعامل لوائح الشركة الخاصة بالمنطقة مع تغييرات المساهمين ونقل الأسهم والتصفية — وهذه تختلف بشكل ملموس بين الهيئات وليست قابلة للتبادل.",
+p3:"نقيّم نشاطك وسوقك المستهدف مقابل المناطق المتاحة، ونتولى الطلب والمستندات مع الهيئة المختارة، ونصيغ وثائق التأسيس لتعكس الترتيب الفعلي للملكية والحوكمة بين المؤسسين، ونقدم المشورة حول كيفية بيع الكيان في سوق الإمارات البري إذا كان ذلك جزءًا من خطة العمل.",
+h2_how:"كيف يتم تأسيس شركة المنطقة الحرة",
+step1_t:"اختيار المنطقة والترخيص",step1_d:"نقارن المناطق الحرة التي ترخص نشاطك، بموازنة التكلفة وحصة التأشيرات ومتطلبات المرافق والسمعة لدى البنوك والعملاء قبل التوصية بواحدة.",
+step2_t:"الاسم التجاري والطلب الأولي",step2_d:"نحجز اسمًا تجاريًا لدى الهيئة المختارة ونقدم الطلب الأولي مع نسخ جوازات السفر ووثائق خطة العمل عند الاقتضاء.",
+step3_t:"اختيار حزمة الترخيص والمرفق",step3_d:"نختار نوع الترخيص ومستوى المرفق (مكتب مرن، مكتب مشترك، أو وحدة مخصصة) الذي يتوافق مع احتياجاتك الفعلية من التأشيرات والتشغيل، تجنبًا للإفراط أو النقص في التوفير.",
+step4_t:"وثائق التأسيس",step4_d:"نصيغ عقد التأسيس والنظام الأساسي (أو وثائق التأسيس المعادلة بموجب لوائح المنطقة) لتعكس اتفاق الملكية والحوكمة الفعلي بين المؤسسين.",
+step5_t:"إصدار الترخيص وبطاقة المنشأة",step5_d:"بمجرد موافقة الهيئة على الطلب وتوقيع المستندات، يُصدر الترخيص ونسجل بطاقة المنشأة اللازمة لمعالجة التأشيرات.",
+step6_t:"معالجة التأشيرات والتعريف بالبنوك",step6_d:"ننسق طلبات تأشيرات التوظيف والمستثمرين مقابل حصتك المخصصة ونعرّف الشركة بالبنوك المناسبة لنشاطها وملف مساهميها.",
+h2_when:"متى تحتاج إلى مساعدة في تأسيس منطقة حرة",
+sc1:"تقارن بين عدة مناطق حرة وتحتاج إلى تقييم لأيها يرخص فعليًا نشاطك المحدد بالتكلفة المناسبة.",
+sc2:"عملك مشروع مشترك أو لديه أكثر من مؤسس واحد، وتحتاج إلى أن تعكس وثائق التأسيس اتفاق مساهمين حقيقي وليس نموذجًا عامًا.",
+sc3:"تخطط للبيع في سوق الإمارات البري وتحتاج إلى مشورة بشأن هيكل الموزع أو الترخيص المزدوج الذي يجعل ذلك ممكنًا من قاعدة منطقة حرة.",
+sc4:"شركة منطقة حرة قائمة تحتاج إلى تغيير مساهمين أو نقل أسهم أو تعديل ترخيص لا تتناوله عملية المنطقة القياسية بوضوح.",
+sc5:"تنقل عمليات شركة أجنبية أو خارجية قائمة إلى منطقة حرة في دبي.",
+sc6:"توقف طلبك في المنطقة الحرة لأن قائمة أنشطة الهيئة المختارة لا تتوافق بوضوح مع ما تقوم به شركتك فعليًا.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"مشورة مقارنة بشأن اختيار المنطقة الحرة بناءً على النشاط والتكلفة واحتياجات التأشيرات",
+sv2:"حجز الاسم التجاري وإعداد الطلب مع الهيئة المختارة",
+sv3:"اختيار نوع الترخيص وحزمة المرفق",
+sv4:"صياغة عقد التأسيس والنظام الأساسي / وثائق التأسيس",
+sv5:"اتفاقيات المساهمين لهياكل المؤسسين المتعددين والمشاريع المشتركة",
+sv6:"مشورة بشأن التوزيع البري وترتيبات الترخيص المزدوج",
+sv7:"دعم ما بعد الترخيص: بطاقة المنشأة، معالجة التأشيرات، التعريف بالبنوك",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما هي أفضل منطقة حرة لعملي؟",faq1_a:"يعتمد ذلك كليًا على نشاطك — DIFC وADGM تناسبان الخدمات المالية المنظمة، DMCC تناسب السلع والتجارة العامة، مناطق الإعلام تناسب البث والإنتاج، وعدة مناطق قرب المطار والموانئ تناسب اللوجستيات. نقارن نطاق الترخيص والتكلفة وتخصيص التأشيرات عبر المناطق ذات الصلة بنشاطك قبل التوصية بواحدة.",
+faq2_q:"هل يمكن لشركة المنطقة الحرة البيع مباشرة لعملاء في دبي أو الإمارات ككل؟",faq2_a:"ليس مباشرة في معظم الحالات — تحتاج شركة المنطقة الحرة عمومًا إلى موزع مسجل في الإمارات، أو ترخيص مزدوج، أو فرع بري للبيع مباشرة في السوق المحلي خارج المنطقة. نقدم المشورة بشأن الهيكل المناسب لخطتك التجارية قبل الالتزام بمنطقة معينة.",
+faq3_q:"كم عدد التأشيرات التي يمكنني الحصول عليها مع شركة منطقة حرة؟",faq3_a:"ترتبط حصة التأشيرات بحزمة المرفق التي تختارها — يسمح المكتب المرن عادة بتأشيرة إلى تأشيرتين، بينما يسمح المكتب المخصص بعدد أكبر، محسوبًا مقابل المساحة وفق صيغة المنطقة الخاصة. نحدد حجم حزمة المرفق وفق خطة التوظيف الفعلية وليس أرخص خيار متاح.",
+faq4_q:"هل الملكية الأجنبية 100% مضمونة في المنطقة الحرة؟",faq4_a:"نعم — سمحت المناطق الحرة دائمًا بالملكية الأجنبية 100%، وكانت هذه ميزتها الأصلية قبل أن يوسع إصلاح البر لعام 2021 حقوق ملكية مماثلة لمعظم الأنشطة البرية. يكمن الفرق الآن بشكل أساسي في الوصول إلى السوق، وليس نسبة الملكية.",
+faq5_q:"ماذا يحدث إذا أردت تغيير مساهمي شركة المنطقة الحرة لاحقًا؟",faq5_a:"لكل هيئة منطقة حرة عمليتها الخاصة ومتطلباتها المستندية لنقل الأسهم وتغيير المساهمين، والتي قد تختلف بشكل كبير عن عملية DED البرية. نتولى الإجراءات المطلوبة ونحدّث وثائق التأسيس لتعكس الملكية الجديدة."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",company_formation_cat:"公司注册",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜自由区公司注册",
+lead:"迪拜拥有二十多个自由区，每个自由区都有各自的管理机构、牌照类别和费用结构——正确的选择取决于您的经营活动和客户群体，而不仅仅是哪个自由区最知名。",
+box:"自由区公司由个别自由区管理机构（如DMCC、DIFC、JAFZA、DAFZA或IFZA）而非经济与旅游局颁发牌照并监管。它默认提供100%外资所有权、利润全额汇出，以及简化的设立流程——作为交换，在区域外直接与阿联酋大陆市场进行贸易会受到限制。",
+p1:"每个自由区都围绕特定行业和牌照类型建立——DIFC和ADGM面向金融服务，DMCC面向大宗商品贸易，媒体区面向广播和制作，靠近港口和机场的物流型区域面向物流业。为您的经营活动选错自由区，可能意味着为不需要的设施和签证配额付费，或后来发现您计划开展的活动根本无法在该区获得牌照。",
+p2:"自由区注册还会引发大陆设立中不会出现的结构性问题：哪种牌照类型（贸易、服务、工业或电子商务）符合您的实际业务，灵活办公桌还是完整办公室更符合您的签证配额需求，以及该区特定的公司法规如何处理股东变更、股份转让和清算——这些在不同管理机构之间差异显著，不能互换。",
+p3:"我们根据可选自由区评估您的经营活动和目标市场，与所选管理机构办理申请和文件手续，起草反映创始人之间真实所有权和治理安排的章程文件，并就该实体若计划进入阿联酋大陆市场应如何销售提供建议。",
+h2_how:"自由区公司注册流程",
+step1_t:"自由区与牌照选择",step1_d:"我们比较可为您的经营活动颁发牌照的各自由区，权衡成本、签证配额、设施要求以及在银行和客户心中的声誉，然后推荐一个自由区。",
+step2_t:"商号预留与初步申请",step2_d:"我们向所选管理机构预留商号，并在需要时连同护照复印件和商业计划文件一并提交初步申请。",
+step3_t:"牌照套餐与设施选择",step3_d:"我们选择符合您实际签证和运营需求的牌照类型及设施等级（灵活办公桌、共享办公室或专属单元），避免配置过度或不足。",
+step4_t:"章程文件",step4_d:"我们起草公司章程（或该自由区法规下的等效章程文件），以反映创始人之间真实的所有权和治理协议。",
+step5_t:"牌照签发与企业卡",step5_d:"管理机构批准申请并签署文件后，牌照即签发，我们随后登记签证办理所需的企业卡。",
+step6_t:"签证办理与银行对接",step6_d:"我们根据您获配的额度协调员工和投资者签证申请，并将公司引荐给适合其经营活动和股东情况的银行。",
+h2_when:"何时需要自由区设立方面的帮助",
+sc1:"您正在比较多个自由区，需要评估哪一个能以合适的成本实际为您的具体经营活动颁发牌照。",
+sc2:"您的企业是合资企业或有多名创始人，需要章程文件反映真实的股东协议，而非通用模板。",
+sc3:"您计划向阿联酋大陆市场销售，需要就如何从自由区基地实现这一目标的分销商或双重牌照结构获得建议。",
+sc4:"现有自由区公司需要股东变更、股份转让或牌照修改，而该自由区的标准流程未明确涵盖这些情形。",
+sc5:"您正将现有离岸或外国公司的业务迁移至迪拜自由区。",
+sc6:"您的自由区申请因所选管理机构的经营活动清单与您企业的实际业务不完全匹配而停滞不前。",
+h2_services:"我们提供的服务",
+sv1:"基于经营活动、成本和签证需求的自由区选择比较建议",
+sv2:"向所选管理机构预留商号并准备申请",
+sv3:"牌照类型与设施套餐选择",
+sv4:"公司章程/章程文件起草",
+sv5:"多创始人及合资企业结构的股东协议",
+sv6:"大陆分销及双重牌照安排建议",
+sv7:"牌照发放后支持：企业卡、签证办理、银行开户对接",
+h2_faq:"常见问题",
+faq1_q:"哪个自由区最适合我的企业？",faq1_a:"这完全取决于您的经营活动——DIFC和ADGM适合受监管的金融服务，DMCC适合大宗商品和一般贸易，媒体类自由区适合广播和制作，靠近机场和港口的多个自由区适合物流业。我们会在推荐之前，比较与您经营活动相关的各自由区的牌照范围、成本和签证配额。",
+faq2_q:"自由区公司可以直接向迪拜或整个阿联酋的客户销售吗？",faq2_a:"在大多数情况下不能直接销售——自由区公司通常需要在阿联酋注册的分销商、双重牌照，或大陆分支机构，才能直接向区域外的本地市场销售。我们会在您选定具体自由区之前，就哪种结构适合您的商业计划提供建议。",
+faq3_q:"自由区公司可以获得多少张签证？",faq3_a:"签证配额与您选择的设施套餐挂钩——灵活办公桌通常允许一到两张签证，而专属办公室根据该区自身的公式按面积计算，允许更多签证。我们会根据您实际的招聘计划来确定设施套餐的规模，而非选择最便宜的可用方案。",
+faq4_q:"自由区是否保证100%外资所有权？",faq4_a:"是的——自由区历来允许100%外资所有权，这曾是其在2021年大陆改革将类似所有权权利扩展至大多数大陆经营活动之前的原始优势。如今的差异主要在于市场准入，而非所有权比例。",
+faq5_q:"如果我以后想更改自由区公司的股东怎么办？",faq5_a:"每个自由区管理机构都有各自的股份转让和股东变更流程及文件要求，这可能与DED的大陆流程有显著差异。我们会办理所需的申报手续，并更新章程文件以反映新的所有权情况。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",company_formation_cat:"Регистрация компаний",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Регистрация компании в свободной зоне Дубая",
+lead:"В Дубае более двадцати свободных зон, каждая со своей администрацией, категориями лицензий и структурой затрат — правильный выбор зависит от вашей деятельности и клиентской базы, а не только от того, какая зона наиболее известна.",
+box:"Компания свободной зоны лицензируется и регулируется отдельной администрацией свободной зоны (такой как DMCC, DIFC, JAFZA, DAFZA или IFZA), а не Департаментом экономики и туризма. Она по умолчанию предлагает 100% иностранное владение, полную репатриацию прибыли и упрощённую регистрацию — в обмен на ограничения на прямую торговлю с материковым рынком ОАЭ за пределами зоны.",
+p1:"Каждая свободная зона ориентирована на определённые отрасли и типы лицензий — DIFC и ADGM для финансовых услуг, DMCC для торговли сырьевыми товарами, медиазоны для вещания и производства, логистически ориентированные зоны вблизи портов и аэропорта. Выбор неподходящей зоны для вашей деятельности может означать оплату помещений и визовых квот, которые вам не нужны, либо последующее обнаружение того, что предполагаемая деятельность там вообще не лицензируется.",
+p2:"Регистрация в свободной зоне также поднимает структурные вопросы, которые не возникают на материке: какой тип лицензии (торговая, сервисная, промышленная или электронная коммерция) соответствует вашей фактической деятельности, подходит ли для ваших визовых потребностей флекси-деск или полноценный офис, и как специфические регламенты зоны регулируют изменение состава акционеров, передачу долей и ликвидацию — эти правила существенно различаются между администрациями и не являются взаимозаменяемыми.",
+p3:"Мы оцениваем вашу деятельность и целевой рынок относительно доступных зон, ведём заявку и документацию с выбранной администрацией, составляем учредительные документы, отражающие реальную договорённость учредителей о собственности и управлении, и консультируем о том, как компании продавать на материковый рынок ОАЭ, если это часть бизнес-плана.",
+h2_how:"Как проходит регистрация компании в свободной зоне",
+step1_t:"Выбор зоны и лицензии",step1_d:"Мы сравниваем свободные зоны, лицензирующие вашу деятельность, взвешивая стоимость, визовую квоту, требования к помещениям и репутацию у банков и клиентов, прежде чем рекомендовать одну из них.",
+step2_t:"Торговое наименование и первичная заявка",step2_d:"Мы резервируем торговое наименование у выбранной администрации и подаём первичную заявку вместе с копиями паспортов и документацией бизнес-плана, если это требуется.",
+step3_t:"Выбор лицензионного пакета и помещения",step3_d:"Мы выбираем тип лицензии и уровень помещения (флекси-деск, общий офис или выделенное помещение), соответствующий вашим фактическим визовым и операционным потребностям, избегая избыточного или недостаточного обеспечения.",
+step4_t:"Учредительные документы",step4_d:"Мы составляем Учредительный договор и Устав (или эквивалентные учредительные документы согласно регламенту зоны), отражающие реальную договорённость учредителей о собственности и управлении.",
+step5_t:"Выдача лицензии и карта предприятия",step5_d:"После одобрения заявки администрацией и подписания документов лицензия выдаётся, и мы регистрируем карту предприятия, необходимую для оформления виз.",
+step6_t:"Оформление виз и представление в банке",step6_d:"Мы координируем подачу заявок на рабочие и инвесторские визы в рамках вашей выделенной квоты и представляем компанию банкам, подходящим для её деятельности и профиля акционеров.",
+h2_when:"Когда нужна помощь с регистрацией в свободной зоне",
+sc1:"Вы сравниваете несколько свободных зон и нуждаетесь в оценке того, какая из них реально лицензирует вашу конкретную деятельность по приемлемой цене.",
+sc2:"Ваш бизнес представляет собой совместное предприятие или имеет более одного учредителя, и вам нужно, чтобы учредительные документы отражали реальное соглашение акционеров, а не типовой шаблон.",
+sc3:"Вы планируете продавать на материковый рынок ОАЭ и нуждаетесь в консультации по структуре дистрибьютора или двойного лицензирования, которая делает это возможным из базы в свободной зоне.",
+sc4:"Существующей компании свободной зоны требуется изменение состава акционеров, передача долей или поправка к лицензии, которую стандартный процесс зоны чётко не регулирует.",
+sc5:"Вы переносите деятельность существующей офшорной или иностранной компании в свободную зону Дубая.",
+sc6:"Ваша заявка в свободную зону застопорилась, потому что перечень видов деятельности выбранной администрации явно не соответствует тому, чем фактически занимается ваш бизнес.",
+h2_services:"Наши услуги",
+sv1:"Сравнительная консультация по выбору свободной зоны на основе деятельности, стоимости и визовых потребностей",
+sv2:"Резервирование торгового наименования и подготовка заявки у выбранной администрации",
+sv3:"Выбор типа лицензии и пакета помещения",
+sv4:"Составление Учредительного договора и Устава / учредительных документов",
+sv5:"Соглашения акционеров для структур с несколькими учредителями и совместных предприятий",
+sv6:"Консультация по материковой дистрибуции и договорённостям о двойном лицензировании",
+sv7:"Поддержка после получения лицензии: карта предприятия, оформление виз, представление в банках",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Какая свободная зона лучше всего подходит для моего бизнеса?",faq1_a:"Это полностью зависит от вашей деятельности — DIFC и ADGM подходят для регулируемых финансовых услуг, DMCC — для сырьевых товаров и общей торговли, медиазоны — для вещания и производства, а несколько зон вблизи аэропорта и портов — для логистики. Мы сравниваем сферу лицензирования, стоимость и визовые квоты по зонам, относящимся к вашей деятельности, прежде чем рекомендовать одну из них.",
+faq2_q:"Может ли компания свободной зоны продавать напрямую клиентам в Дубае или в остальных ОАЭ?",faq2_a:"В большинстве случаев не напрямую — компании свободной зоны обычно требуется зарегистрированный в ОАЭ дистрибьютор, двойная лицензия или материковый филиал для прямых продаж на местном рынке за пределами зоны. Мы консультируем о том, какая структура подходит вашему коммерческому плану, прежде чем вы определитесь с конкретной зоной.",
+faq3_q:"Сколько виз я могу получить с компанией в свободной зоне?",faq3_a:"Визовая квота привязана к выбранному вами пакету помещения — флекси-деск обычно позволяет одну-две визы, тогда как выделенный офис позволяет больше, рассчитываясь исходя из площади по формуле самой зоны. Мы подбираем размер пакета помещения под ваш фактический план найма, а не самый дешёвый доступный вариант.",
+faq4_q:"Гарантировано ли 100% иностранное владение в свободной зоне?",faq4_a:"Да — свободные зоны всегда допускали 100% иностранное владение, что было их изначальным преимуществом до того, как реформа материка 2021 года распространила аналогичные права собственности на большинство материковых видов деятельности. Разница теперь заключается главным образом в доступе к рынку, а не в доле собственности.",
+faq5_q:"Что произойдёт, если я захочу позже изменить акционеров своей компании в свободной зоне?",faq5_a:"У каждой администрации свободной зоны есть собственный процесс и требования к документации для передачи долей и изменения состава акционеров, которые могут существенно отличаться от материкового процесса DED. Мы занимаемся необходимыми подачами и обновляем учредительные документы, отражая новую структуру собственности."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",company_formation_cat:"Unternehmensgründung",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Freizonengründung eines Unternehmens in Dubai",
+lead:"Dubai verfügt über mehr als zwanzig Freizonen, jede mit eigener Behörde, Lizenzkategorien und Kostenstruktur — die richtige Wahl hängt von Ihrer Tätigkeit und Ihrem Kundenstamm ab, nicht nur davon, welche Zone am bekanntesten ist.",
+box:"Ein Freizonenunternehmen wird von einer einzelnen Freizonenbehörde (wie DMCC, DIFC, JAFZA, DAFZA oder IFZA) lizenziert und reguliert, nicht vom Department of Economy and Tourism. Es bietet standardmäßig 100% ausländisches Eigentum, vollständige Gewinnrückführung und ein vereinfachtes Setup — im Austausch gegen Einschränkungen beim direkten Handel mit dem VAE-Festlandmarkt außerhalb der Zone.",
+p1:"Jede Freizone ist auf bestimmte Branchen und Lizenztypen ausgerichtet — DIFC und ADGM für Finanzdienstleistungen, DMCC für den Rohstoffhandel, Medienzonen für Rundfunk und Produktion, logistikorientierte Zonen in der Nähe von Häfen und Flughafen. Die falsche Zone für Ihre Tätigkeit zu wählen, kann bedeuten, für Einrichtungen und Visumszuteilungen zu zahlen, die Sie nicht benötigen, oder später festzustellen, dass Ihre beabsichtigte Tätigkeit dort überhaupt nicht lizenzierbar ist.",
+p2:"Die Freizonengründung wirft zudem strukturelle Fragen auf, die auf dem Festland nicht entstehen: welcher Lizenztyp (Handel, Dienstleistung, Industrie oder E-Commerce) Ihrer tatsächlichen Tätigkeit entspricht, ob ein Flexi-Desk oder ein vollständiges Büro Ihrem Visumskontingentbedarf entspricht, und wie die spezifischen Unternehmensvorschriften der Zone mit Gesellschafterwechseln, Anteilsübertragungen und Liquidation umgehen — diese unterscheiden sich erheblich zwischen den Behörden und sind nicht austauschbar.",
+p3:"Wir bewerten Ihre Tätigkeit und Ihren Zielmarkt anhand der verfügbaren Zonen, bearbeiten den Antrag und die Unterlagen mit der gewählten Behörde, verfassen die Gründungsdokumente entsprechend der tatsächlichen Eigentums- und Governance-Vereinbarung zwischen den Gründern und beraten dazu, wie das Unternehmen in den VAE-Festlandmarkt verkaufen sollte, falls dies Teil des Geschäftsplans ist.",
+h2_how:"So läuft die Freizonengründung ab",
+step1_t:"Zonen- und Lizenzauswahl",step1_d:"Wir vergleichen die Freizonen, die Ihre Tätigkeit lizenzieren, und wägen Kosten, Visumskontingent, Anforderungen an Einrichtungen sowie Ansehen bei Banken und Kunden ab, bevor wir eine empfehlen.",
+step2_t:"Handelsname und Erstantrag",step2_d:"Wir reservieren einen Handelsnamen bei der gewählten Behörde und reichen den Erstantrag zusammen mit Passkopien und Geschäftsplanunterlagen ein, sofern erforderlich.",
+step3_t:"Lizenzpaket- und Einrichtungsauswahl",step3_d:"Wir wählen den Lizenztyp und die Einrichtungsstufe (Flexi-Desk, Gemeinschaftsbüro oder eigene Einheit), die Ihren tatsächlichen Visums- und Betriebsanforderungen entsprechen, und vermeiden Über- oder Unterversorgung.",
+step4_t:"Gründungsdokumente",step4_d:"Wir verfassen die Gesellschaftssatzung (oder gleichwertige Gründungsdokumente gemäß den Vorschriften der Zone) entsprechend der tatsächlichen Eigentums- und Governance-Vereinbarung der Gründer.",
+step5_t:"Lizenzausstellung und Betriebskarte",step5_d:"Sobald die Behörde den Antrag genehmigt und die Dokumente unterzeichnet sind, wird die Lizenz ausgestellt, und wir registrieren die für die Visabearbeitung erforderliche Betriebskarte.",
+step6_t:"Visabearbeitung und Bankvermittlung",step6_d:"Wir koordinieren Beschäftigungs- und Investorenvisa-Anträge im Rahmen Ihres zugeteilten Kontingents und stellen das Unternehmen Banken vor, die zu seiner Tätigkeit und seinem Gesellschafterprofil passen.",
+h2_when:"Wann Sie Unterstützung bei der Freizonengründung benötigen",
+sc1:"Sie vergleichen mehrere Freizonen und benötigen eine Einschätzung, welche tatsächlich Ihre spezifische Tätigkeit zu angemessenen Kosten lizenziert.",
+sc2:"Ihr Unternehmen ist ein Joint Venture oder hat mehr als einen Gründer, und Sie benötigen Gründungsdokumente, die eine echte Gesellschaftervereinbarung statt einer Standardvorlage widerspiegeln.",
+sc3:"Sie planen den Verkauf in den VAE-Festlandmarkt und benötigen Beratung zur Vertriebs- oder Doppellizenzstruktur, die dies von einer Freizonenbasis aus ermöglicht.",
+sc4:"Ein bestehendes Freizonenunternehmen benötigt einen Gesellschafterwechsel, eine Anteilsübertragung oder eine Lizenzänderung, die der Standardprozess der Zone nicht eindeutig regelt.",
+sc5:"Sie verlagern den Betrieb eines bestehenden Offshore- oder ausländischen Unternehmens in eine Dubaier Freizone.",
+sc6:"Ihr Freizonenantrag stockt, weil die Tätigkeitsliste der gewählten Behörde nicht eindeutig zu dem passt, was Ihr Unternehmen tatsächlich tut.",
+h2_services:"Unsere Leistungen",
+sv1:"Vergleichende Beratung zur Freizonenauswahl basierend auf Tätigkeit, Kosten und Visumsbedarf",
+sv2:"Reservierung des Handelsnamens und Antragsvorbereitung bei der gewählten Behörde",
+sv3:"Auswahl von Lizenztyp und Einrichtungspaket",
+sv4:"Ausarbeitung der Gesellschaftssatzung / Gründungsdokumente",
+sv5:"Gesellschaftervereinbarungen für Strukturen mit mehreren Gründern und Joint Ventures",
+sv6:"Beratung zu Festlandvertrieb und Doppellizenzvereinbarungen",
+sv7:"Unterstützung nach Lizenzerteilung: Betriebskarte, Visabearbeitung, Bankvermittlung",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Welche Freizone ist am besten für mein Unternehmen geeignet?",faq1_a:"Das hängt vollständig von Ihrer Tätigkeit ab — DIFC und ADGM eignen sich für regulierte Finanzdienstleistungen, DMCC für Rohstoffe und allgemeinen Handel, medienorientierte Zonen für Rundfunk und Produktion, und mehrere Zonen in der Nähe von Flughafen und Häfen für Logistik. Wir vergleichen den Lizenzumfang, die Kosten und die Visumszuteilung über die für Ihre Tätigkeit relevanten Zonen, bevor wir eine empfehlen.",
+faq2_q:"Kann ein Freizonenunternehmen direkt an Kunden in Dubai oder den übrigen VAE verkaufen?",faq2_a:"In den meisten Fällen nicht direkt — ein Freizonenunternehmen benötigt in der Regel einen in den VAE registrierten Vertriebspartner, eine Doppellizenz oder eine Festlandniederlassung, um direkt in den lokalen Markt außerhalb der Zone zu verkaufen. Wir beraten dazu, welche Struktur zu Ihrem Geschäftsplan passt, bevor Sie sich auf eine bestimmte Zone festlegen.",
+faq3_q:"Wie viele Visa kann ich mit einem Freizonenunternehmen erhalten?",faq3_a:"Das Visumskontingent ist an das von Ihnen gewählte Einrichtungspaket gekoppelt — ein Flexi-Desk erlaubt typischerweise ein bis zwei Visa, während ein eigenes Büro mehr erlaubt, berechnet nach der Fläche gemäß der zonenspezifischen Formel. Wir bemessen das Einrichtungspaket nach Ihrem tatsächlichen Einstellungsplan und nicht nach der günstigsten verfügbaren Option.",
+faq4_q:"Ist 100% ausländisches Eigentum in einer Freizone garantiert?",faq4_a:"Ja — Freizonen haben schon immer 100% ausländisches Eigentum zugelassen, was ihr ursprünglicher Vorteil war, bevor die Festlandreform von 2021 ähnliche Eigentumsrechte auf die meisten Festlandtätigkeiten ausdehnte. Der Unterschied liegt heute hauptsächlich im Marktzugang, nicht im Eigentumsanteil.",
+faq5_q:"Was passiert, wenn ich später die Gesellschafter meines Freizonenunternehmens ändern möchte?",faq5_a:"Jede Freizonenbehörde hat ihren eigenen Prozess und ihre eigenen Dokumentationsanforderungen für Anteilsübertragungen und Gesellschafterwechsel, die sich erheblich vom Festlandprozess des DED unterscheiden können. Wir übernehmen die erforderlichen Einreichungen und aktualisieren die Gründungsdokumente entsprechend der neuen Eigentümerstruktur."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
