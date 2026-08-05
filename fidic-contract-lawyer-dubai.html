@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>FIDIC Contract Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="FIDIC forms are widely used in the UAE but require careful adaptation to local law.">
+<meta name="description" content="FIDIC Red, Yellow, and Silver Book advisory in Dubai — clause interpretation, particular conditions review, and contract administration under FIDIC forms.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="construction-law.html">Construction Law</a> &rsaquo; FIDIC Contract Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="construction-law.html" data-i18n="construction_cat">Construction Law</a> &rsaquo; <span data-i18n="page_title">FIDIC Contract Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>FIDIC Contract Lawyer in Dubai</h1>
-  <p class="lead">FIDIC forms are widely used in the UAE but require careful adaptation to local law.</p>
-  <div class="box">This covers drafting, amending, and interpreting FIDIC-based construction contracts.</div>
-  <p class="body-p">The firm advises on FIDIC contract terms and represents clients in claims arising under FIDIC-based agreements.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">FIDIC Contract Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">FIDIC forms are the backbone of most major construction projects in the UAE, but the base text is rarely what governs — the Particular Conditions, appendices, and amendments layered on top usually do. Reading a FIDIC contract properly means reading all of it, not just the familiar clause numbers.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">The Red Book (employer-designed works), Yellow Book (contractor-designed works), and Silver Book (EPC/turnkey) allocate risk very differently between employer and contractor — using the wrong form, or amending it without understanding the shift in risk, is a common source of later disputes.</div>
+
+<p class="body-p" data-i18n="p1">FIDIC's clause numbering is standardised, which creates a false sense of familiarity — clause 20 (claims), clause 8 (time for completion), and clause 4 (contractor's obligations) mean something different depending on which book is in use and how the Particular Conditions have amended the General Conditions. Administering the contract correctly requires knowing which version actually applies to your project.</p>
+<p class="body-p" data-i18n="p2">Time-barring provisions are one of the most consequential parts of any FIDIC contract — clause 20.1 (or its 2017 equivalent) requires notice of a claim within a defined period, and missing that window can extinguish an otherwise valid claim regardless of merit. Contract administration on a FIDIC project runs on these deadlines as much as on the underlying facts.</p>
+<p class="body-p" data-i18n="p3">We advise employers, contractors, and consultants on FIDIC contract selection, drafting of Particular Conditions, ongoing contract administration, and disputes arising from FIDIC-based projects — across the 1999 and 2017 editions and their various books.</p>
+
+<h2 data-i18n="h2_how">How We Handle FIDIC Contract Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Form and Edition Identification</strong><span data-i18n="step1_d">We confirm which FIDIC book and edition applies, and how the Particular Conditions have modified the General Conditions, before advising on any specific clause.</span></li>
+<li><strong data-i18n="step2_t">Clause Interpretation</strong><span data-i18n="step2_d">We interpret the relevant clauses — time, payment, variations, claims, or dispute resolution — against both the standard FIDIC wording and any project-specific amendments.</span></li>
+<li><strong data-i18n="step3_t">Notice and Time-Bar Compliance Check</strong><span data-i18n="step3_d">We review the notices given or required under clause 20 (or equivalent), since compliance with these deadlines is often decisive to whether a claim survives.</span></li>
+<li><strong data-i18n="step4_t">Contract Administration Advice</strong><span data-i18n="step4_d">We advise on ongoing administration — engineer's determinations, DAB/DAAB referrals, and the procedural sequence FIDIC requires before a dispute reaches arbitration.</span></li>
+<li><strong data-i18n="step5_t">Particular Conditions Drafting</strong><span data-i18n="step5_d">For new contracts, we draft or review the Particular Conditions to ensure the risk allocation reflects the project's actual commercial position, not just the FIDIC default.</span></li>
+<li><strong data-i18n="step6_t">Dispute Support</strong><span data-i18n="step6_d">Where a FIDIC-based dispute proceeds to DAB, arbitration, or litigation, we build the case on a precise reading of the applicable clauses and the contract's amendment history.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a FIDIC Contract Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You're selecting which FIDIC book to use for a new project and need advice on the risk implications of each.</li>
+<li data-i18n="sc2">Particular Conditions have significantly amended the General Conditions and you need to understand the net effect.</li>
+<li data-i18n="sc3">A clause 20 notice deadline is approaching or may have been missed, and you need urgent advice on your position.</li>
+<li data-i18n="sc4">You're unsure whether the engineer's determination under the contract has been correctly issued or challenged.</li>
+<li data-i18n="sc5">A dispute is heading toward a DAB/DAAB referral and you need the procedural sequence confirmed before proceeding.</li>
+<li data-i18n="sc6">You're interpreting a FIDIC clause differently from the other party and need an independent legal reading.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">FIDIC form selection advice (Red, Yellow, Silver Book) for new projects</li>
+<li data-i18n="sv2">Particular Conditions drafting and review</li>
+<li data-i18n="sv3">Clause interpretation and contract administration advice</li>
+<li data-i18n="sv4">Notice and time-bar compliance review under clause 20</li>
+<li data-i18n="sv5">DAB/DAAB referral and dispute escalation support</li>
+<li data-i18n="sv6">Engineer's determination review and challenge</li>
+<li data-i18n="sv7">Representation in disputes arising from FIDIC-based contracts</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What's the difference between the FIDIC Red, Yellow, and Silver Books?</summary>
+<p data-i18n="faq1_a">Broadly: the Red Book suits employer-designed works with the employer bearing design risk; the Yellow Book suits contractor-designed works; and the Silver Book (EPC/turnkey) places the most risk on the contractor, including for design and unforeseen conditions in most cases.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Does the 2017 FIDIC edition apply automatically to my contract?</summary>
+<p data-i18n="faq2_a">No — the applicable edition is whatever the contract specifies, and many UAE projects still use the 1999 editions or heavily amended versions of either, so confirming the actual governing text is a necessary first step.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What happens if I miss the clause 20 notice deadline?</summary>
+<p data-i18n="faq3_a">Under strict FIDIC wording, a claim can be time-barred entirely for missing the notice period, though how strictly this is enforced can depend on the specific amendment wording and the applicable law — which is why early advice matters more than trying to argue it after the fact.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Can Particular Conditions override the General Conditions entirely?</summary>
+<p data-i18n="faq4_a">Yes, within the bounds of applicable law — Particular Conditions are drafted specifically to amend or replace General Conditions clauses, which is why reviewing them is essential rather than relying on the standard FIDIC text alone.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Is the engineer under FIDIC independent of the employer?</summary>
+<p data-i18n="faq5_a">The engineer has a dual role — administering the contract and, in some functions, acting impartially between the parties — though in practice the engineer is typically engaged and paid by the employer, which is relevant when a determination is being challenged.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",construction_cat:"Construction Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"FIDIC Contract Lawyer in Dubai",
+lead:"FIDIC forms are the backbone of most major construction projects in the UAE, but the base text is rarely what governs — the Particular Conditions, appendices, and amendments layered on top usually do. Reading a FIDIC contract properly means reading all of it, not just the familiar clause numbers.",
+box:"The Red Book (employer-designed works), Yellow Book (contractor-designed works), and Silver Book (EPC/turnkey) allocate risk very differently between employer and contractor — using the wrong form, or amending it without understanding the shift in risk, is a common source of later disputes.",
+p1:"FIDIC's clause numbering is standardised, which creates a false sense of familiarity — clause 20 (claims), clause 8 (time for completion), and clause 4 (contractor's obligations) mean something different depending on which book is in use and how the Particular Conditions have amended the General Conditions. Administering the contract correctly requires knowing which version actually applies to your project.",
+p2:"Time-barring provisions are one of the most consequential parts of any FIDIC contract — clause 20.1 (or its 2017 equivalent) requires notice of a claim within a defined period, and missing that window can extinguish an otherwise valid claim regardless of merit. Contract administration on a FIDIC project runs on these deadlines as much as on the underlying facts.",
+p3:"We advise employers, contractors, and consultants on FIDIC contract selection, drafting of Particular Conditions, ongoing contract administration, and disputes arising from FIDIC-based projects — across the 1999 and 2017 editions and their various books.",
+h2_how:"How We Handle FIDIC Contract Matters",
+step1_t:"Form and Edition Identification",step1_d:"We confirm which FIDIC book and edition applies, and how the Particular Conditions have modified the General Conditions, before advising on any specific clause.",
+step2_t:"Clause Interpretation",step2_d:"We interpret the relevant clauses — time, payment, variations, claims, or dispute resolution — against both the standard FIDIC wording and any project-specific amendments.",
+step3_t:"Notice and Time-Bar Compliance Check",step3_d:"We review the notices given or required under clause 20 (or equivalent), since compliance with these deadlines is often decisive to whether a claim survives.",
+step4_t:"Contract Administration Advice",step4_d:"We advise on ongoing administration — engineer's determinations, DAB/DAAB referrals, and the procedural sequence FIDIC requires before a dispute reaches arbitration.",
+step5_t:"Particular Conditions Drafting",step5_d:"For new contracts, we draft or review the Particular Conditions to ensure the risk allocation reflects the project's actual commercial position, not just the FIDIC default.",
+step6_t:"Dispute Support",step6_d:"Where a FIDIC-based dispute proceeds to DAB, arbitration, or litigation, we build the case on a precise reading of the applicable clauses and the contract's amendment history.",
+h2_when:"When to Bring in a FIDIC Contract Lawyer",
+sc1:"You're selecting which FIDIC book to use for a new project and need advice on the risk implications of each.",
+sc2:"Particular Conditions have significantly amended the General Conditions and you need to understand the net effect.",
+sc3:"A clause 20 notice deadline is approaching or may have been missed, and you need urgent advice on your position.",
+sc4:"You're unsure whether the engineer's determination under the contract has been correctly issued or challenged.",
+sc5:"A dispute is heading toward a DAB/DAAB referral and you need the procedural sequence confirmed before proceeding.",
+sc6:"You're interpreting a FIDIC clause differently from the other party and need an independent legal reading.",
+h2_services:"Services We Provide",
+sv1:"FIDIC form selection advice (Red, Yellow, Silver Book) for new projects",
+sv2:"Particular Conditions drafting and review",
+sv3:"Clause interpretation and contract administration advice",
+sv4:"Notice and time-bar compliance review under clause 20",
+sv5:"DAB/DAAB referral and dispute escalation support",
+sv6:"Engineer's determination review and challenge",
+sv7:"Representation in disputes arising from FIDIC-based contracts",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What's the difference between the FIDIC Red, Yellow, and Silver Books?",faq1_a:"Broadly: the Red Book suits employer-designed works with the employer bearing design risk; the Yellow Book suits contractor-designed works; and the Silver Book (EPC/turnkey) places the most risk on the contractor, including for design and unforeseen conditions in most cases.",
+faq2_q:"Does the 2017 FIDIC edition apply automatically to my contract?",faq2_a:"No — the applicable edition is whatever the contract specifies, and many UAE projects still use the 1999 editions or heavily amended versions of either, so confirming the actual governing text is a necessary first step.",
+faq3_q:"What happens if I miss the clause 20 notice deadline?",faq3_a:"Under strict FIDIC wording, a claim can be time-barred entirely for missing the notice period, though how strictly this is enforced can depend on the specific amendment wording and the applicable law — which is why early advice matters more than trying to argue it after the fact.",
+faq4_q:"Can Particular Conditions override the General Conditions entirely?",faq4_a:"Yes, within the bounds of applicable law — Particular Conditions are drafted specifically to amend or replace General Conditions clauses, which is why reviewing them is essential rather than relying on the standard FIDIC text alone.",
+faq5_q:"Is the engineer under FIDIC independent of the employer?",faq5_a:"The engineer has a dual role — administering the contract and, in some functions, acting impartially between the parties — though in practice the engineer is typically engaged and paid by the employer, which is relevant when a determination is being challenged."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",construction_cat:"قانون البناء والتشييد",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي عقود FIDIC في دبي",
+lead:"نماذج FIDIC هي العمود الفقري لمعظم مشاريع البناء الكبرى في دولة الإمارات، لكن النص الأساسي نادرًا ما يكون هو الحاكم — الشروط الخاصة والملاحق والتعديلات المضافة فوقه هي عادة ما يحكم. قراءة عقد FIDIC بشكل صحيح تعني قراءته بالكامل، لا فقط أرقام البنود المألوفة.",
+box:"يوزع الكتاب الأحمر (أعمال بتصميم صاحب العمل)، والكتاب الأصفر (أعمال بتصميم المقاول)، والكتاب الفضي (EPC/تسليم مفتاح) المخاطر بشكل مختلف جدًا بين صاحب العمل والمقاول — استخدام النموذج الخاطئ، أو تعديله دون فهم التحول في المخاطر، مصدر شائع للمنازعات لاحقًا.",
+p1:"ترقيم بنود FIDIC موحد، مما يخلق شعورًا زائفًا بالألفة — البند 20 (المطالبات)، والبند 8 (مدة الإنجاز)، والبند 4 (التزامات المقاول) تعني أشياء مختلفة حسب أي كتاب مستخدم وكيف عدّلت الشروط الخاصة الشروط العامة. تتطلب إدارة العقد بشكل صحيح معرفة أي نسخة تنطبق فعليًا على مشروعك.",
+p2:"أحكام تحديد المدة الزمنية هي من أكثر أجزاء أي عقد FIDIC أهمية من حيث النتائج — يتطلب البند 20.1 (أو ما يعادله في نسخة 2017) إشعارًا بالمطالبة ضمن فترة محددة، وتفويت تلك النافذة قد يُسقط مطالبة صحيحة أصلًا بغض النظر عن أسسها الموضوعية. تسير إدارة العقد في مشروع FIDIC وفق هذه المواعيد بقدر ما تسير وفق الوقائع الأساسية.",
+p3:"نقدم المشورة لأصحاب العمل والمقاولين والاستشاريين بشأن اختيار عقد FIDIC، وصياغة الشروط الخاصة، وإدارة العقد المستمرة، والمنازعات الناشئة عن مشاريع قائمة على FIDIC — عبر إصدارات 1999 و2017 وكتبها المختلفة.",
+h2_how:"كيف نتعامل مع مسائل عقود FIDIC",
+step1_t:"تحديد النموذج والإصدار",step1_d:"نتحقق من أي كتاب FIDIC وإصدار ينطبق، وكيف عدّلت الشروط الخاصة الشروط العامة، قبل تقديم المشورة بشأن أي بند محدد.",
+step2_t:"تفسير البنود",step2_d:"نفسر البنود ذات الصلة — الوقت، الدفع، التغييرات، المطالبات، أو تسوية المنازعات — مقابل كل من صياغة FIDIC القياسية وأي تعديلات خاصة بالمشروع.",
+step3_t:"التحقق من الامتثال للإشعار وتحديد المدة",step3_d:"نراجع الإشعارات المقدمة أو المطلوبة بموجب البند 20 (أو ما يعادله)، إذ غالبًا ما يكون الامتثال لهذه المواعيد النهائية حاسمًا لما إذا كانت المطالبة تصمد.",
+step4_t:"المشورة بشأن إدارة العقد",step4_d:"نقدم المشورة بشأن الإدارة المستمرة — قرارات المهندس، والإحالات إلى لجنة DAB/DAAB، والتسلسل الإجرائي الذي يتطلبه FIDIC قبل وصول نزاع إلى التحكيم.",
+step5_t:"صياغة الشروط الخاصة",step5_d:"بالنسبة للعقود الجديدة، نصيغ أو نراجع الشروط الخاصة لضمان أن يعكس توزيع المخاطر الموقف التجاري الفعلي للمشروع، لا مجرد الافتراضي في FIDIC.",
+step6_t:"دعم المنازعات",step6_d:"حيث يمضي نزاع قائم على FIDIC إلى لجنة DAB أو التحكيم أو التقاضي، نبني القضية على قراءة دقيقة للبنود المطبقة وتاريخ تعديلات العقد.",
+h2_when:"متى تحتاج إلى محامي عقود FIDIC",
+sc1:"تختار أي كتاب FIDIC تستخدمه لمشروع جديد وتحتاج إلى مشورة بشأن آثار المخاطر لكل منها.",
+sc2:"عدّلت الشروط الخاصة الشروط العامة بشكل كبير وتحتاج إلى فهم الأثر الصافي.",
+sc3:"يقترب موعد إشعار البند 20 النهائي أو ربما فاتك، وتحتاج إلى مشورة عاجلة بشأن موقفك.",
+sc4:"لست متأكدًا مما إذا كان قرار المهندس بموجب العقد قد صدر أو طُعن فيه بشكل صحيح.",
+sc5:"يتجه نزاع نحو إحالة لجنة DAB/DAAB وتحتاج إلى تأكيد التسلسل الإجرائي قبل المضي قدمًا.",
+sc6:"تفسر بندًا في FIDIC بشكل مختلف عن الطرف الآخر وتحتاج إلى قراءة قانونية مستقلة.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"المشورة بشأن اختيار نموذج FIDIC (الأحمر، الأصفر، الفضي) للمشاريع الجديدة",
+sv2:"صياغة ومراجعة الشروط الخاصة",
+sv3:"تفسير البنود والمشورة بشأن إدارة العقد",
+sv4:"مراجعة الامتثال للإشعار وتحديد المدة بموجب البند 20",
+sv5:"دعم الإحالة إلى لجنة DAB/DAAB وتصعيد المنازعات",
+sv6:"مراجعة والطعن في قرار المهندس",
+sv7:"التمثيل في المنازعات الناشئة عن العقود القائمة على FIDIC",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما الفرق بين الكتب الأحمر والأصفر والفضي لـ FIDIC؟",faq1_a:"بشكل عام: يناسب الكتاب الأحمر الأعمال بتصميم صاحب العمل مع تحمل صاحب العمل مخاطر التصميم؛ ويناسب الكتاب الأصفر الأعمال بتصميم المقاول؛ ويضع الكتاب الفضي (EPC/تسليم مفتاح) أكبر قدر من المخاطر على المقاول، بما في ذلك التصميم والظروف غير المتوقعة في معظم الحالات.",
+faq2_q:"هل تنطبق نسخة FIDIC لعام 2017 تلقائيًا على عقدي؟",faq2_a:"لا — النسخة المطبقة هي ما يحدده العقد، ولا تزال العديد من مشاريع الإمارات تستخدم إصدارات 1999 أو نسخًا معدلة بشكل كبير من أي منهما، لذا فإن تأكيد النص الحاكم الفعلي خطوة أولى ضرورية.",
+faq3_q:"ماذا يحدث إذا فاتني موعد إشعار البند 20؟",faq3_a:"بموجب صياغة FIDIC الصارمة، يمكن أن تُسقط المطالبة بالكامل بسبب تفويت فترة الإشعار، رغم أن مدى صرامة تطبيق ذلك قد يعتمد على صياغة التعديل المحددة والقانون المطبق — ولهذا فإن المشورة المبكرة أهم من محاولة الجدال بشأنها بعد فوات الأوان.",
+faq4_q:"هل يمكن للشروط الخاصة أن تلغي الشروط العامة بالكامل؟",faq4_a:"نعم، ضمن حدود القانون المطبق — تُصاغ الشروط الخاصة تحديدًا لتعديل أو استبدال بنود الشروط العامة، ولهذا فإن مراجعتها ضرورية بدلاً من الاعتماد على نص FIDIC القياسي وحده.",
+faq5_q:"هل المهندس بموجب FIDIC مستقل عن صاحب العمل؟",faq5_a:"للمهندس دور مزدوج — إدارة العقد، وفي بعض الوظائف، التصرف بحياد بين الطرفين — رغم أن المهندس في الممارسة العملية يُعيَّن ويُدفع له عادة من قبل صاحب العمل، وهو أمر ذو صلة عند الطعن في قرار."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",construction_cat:"建筑法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜FIDIC合同律师",
+lead:"FIDIC格式合同是阿联酋大多数大型建筑项目的支柱，但真正起支配作用的往往不是基础条款——而是叠加其上的专用条件、附录和修订内容。正确解读FIDIC合同意味着通读全文，而不仅仅是熟悉的条款编号。",
+box:"红皮书（业主设计工程）、黄皮书（承包商设计工程）和银皮书（EPC/交钥匙）在业主与承包商之间的风险分配方式截然不同——使用错误的格式，或在未理解风险转移的情况下对其进行修改，是日后争议的常见根源。",
+p1:"FIDIC的条款编号是标准化的，这营造出一种虚假的熟悉感——第20条（索赔）、第8条（竣工时间）和第4条（承包商义务）的具体含义会因所使用的版本以及专用条件对通用条件的修改方式而不同。正确管理合同需要清楚哪个版本实际适用于您的项目。",
+p2:"时效限制条款是任何FIDIC合同中后果最为重大的部分之一——第20.1条（或其2017版对应条款）要求在规定期限内发出索赔通知，错过该期限可能使原本有效的索赔完全失效，无论其实体依据如何。FIDIC项目的合同管理既取决于基础事实，也同样取决于这些期限。",
+p3:"我们就FIDIC合同的选择、专用条件的起草、持续的合同管理，以及基于FIDIC项目产生的争议，为业主、承包商和顾问提供建议——涵盖1999版和2017版及其各类分册。",
+h2_how:"我们如何处理FIDIC合同事宜",
+step1_t:"确认格式与版本",step1_d:"在就任何具体条款提供建议之前，我们首先确认适用哪一本FIDIC分册及版本，以及专用条件对通用条件作出了怎样的修改。",
+step2_t:"条款解读",step2_d:"我们依据FIDIC标准措辞及任何项目专用修订，对工期、付款、变更、索赔或争议解决等相关条款进行解读。",
+step3_t:"通知与时效合规核查",step3_d:"我们审查依据第20条（或其对应条款）发出或要求的通知，因为遵守这些期限往往是索赔能否成立的决定性因素。",
+step4_t:"合同管理建议",step4_d:"我们就持续的合同管理提供建议——包括工程师的决定、提交DAB/DAAB，以及争议进入仲裁前FIDIC所要求的程序顺序。",
+step5_t:"专用条件起草",step5_d:"对于新合同，我们起草或审查专用条件，确保风险分配反映项目实际的商业地位，而非仅套用FIDIC的默认规定。",
+step6_t:"争议支持",step6_d:"当基于FIDIC的争议进入DAB、仲裁或诉讼阶段时，我们依据对适用条款及合同修订历史的精确解读来构建案件。",
+h2_when:"何时需要FIDIC合同律师",
+sc1:"您正在为新项目选择使用哪一本FIDIC分册，需要就各分册的风险影响获得建议。",
+sc2:"专用条件对通用条件作出了重大修改，您需要了解其净效应。",
+sc3:"第20条通知期限即将届满，或可能已经错过，您需要就自身立场获得紧急建议。",
+sc4:"您不确定合同项下工程师的决定是否已正确作出或提出异议。",
+sc5:"争议正朝提交DAB/DAAB方向发展，您需要在推进前确认程序顺序。",
+sc6:"您与对方对FIDIC某一条款的解读不同，需要独立的法律解读意见。",
+h2_services:"我们提供的服务",
+sv1:"就新项目选择FIDIC格式（红皮书、黄皮书、银皮书）提供建议",
+sv2:"专用条件起草与审查",
+sv3:"条款解读及合同管理建议",
+sv4:"第20条项下的通知及时效合规审查",
+sv5:"DAB/DAAB提交及争议升级支持",
+sv6:"工程师决定的审查与异议",
+sv7:"就基于FIDIC合同产生的争议提供代理",
+h2_faq:"常见问题",
+faq1_q:"FIDIC红皮书、黄皮书和银皮书有何区别？",faq1_a:"概括而言：红皮书适用于业主设计工程，由业主承担设计风险；黄皮书适用于承包商设计工程；银皮书（EPC/交钥匙）则将大部分风险——在多数情况下包括设计及不可预见状况的风险——转移给承包商。",
+faq2_q:"2017版FIDIC是否自动适用于我的合同？",faq2_a:"不会——适用版本以合同规定为准，阿联酋许多项目仍在使用1999版或经大幅修改的两个版本，因此确认实际适用的文本是必要的第一步。",
+faq3_q:"如果我错过了第20条的通知期限会怎样？",faq3_a:"按照FIDIC的严格措辞，索赔可能因错过通知期限而完全失去时效，但这一规定被严格执行的程度可能取决于具体的修订措辞及适用法律——这正是为何应及早获取建议，而非事后再试图争辩。",
+faq4_q:"专用条件能否完全推翻通用条件？",faq4_a:"可以，但须在适用法律的范围内——专用条件正是为修改或替代通用条件条款而起草的，因此审查专用条件至关重要，而不能仅依赖FIDIC标准文本。",
+faq5_q:"FIDIC下的工程师是否独立于业主？",faq5_a:"工程师具有双重角色——管理合同，并在某些职能中在双方之间保持公正——但实践中工程师通常由业主聘用并支付费用，这在对某项决定提出异议时具有相关性。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",construction_cat:"Строительное право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по контрактам FIDIC в Дубае",
+lead:"Формы FIDIC составляют основу большинства крупных строительных проектов в ОАЭ, однако именно базовый текст редко определяет реальное регулирование — как правило, это делают Особые условия, приложения и наслоившиеся поправки. Правильное прочтение контракта FIDIC означает прочтение его целиком, а не только знакомых номеров пунктов.",
+box:"Красная книга (работы по проекту заказчика), Жёлтая книга (работы по проекту подрядчика) и Серебряная книга (EPC/«под ключ») распределяют риски между заказчиком и подрядчиком совершенно по-разному — использование неверной формы или её изменение без понимания сдвига рисков часто становится источником последующих споров.",
+p1:"Нумерация пунктов FIDIC стандартизирована, что создаёт ложное ощущение знакомости — пункт 20 (претензии), пункт 8 (срок завершения) и пункт 4 (обязательства подрядчика) означают разное в зависимости от того, какая книга используется и как Особые условия изменили Общие условия. Правильное администрирование контракта требует понимания того, какая версия фактически применяется к вашему проекту.",
+p2:"Положения об ограничении сроков — одна из наиболее значимых частей любого контракта FIDIC: пункт 20.1 (или его эквивалент в редакции 2017 года) требует уведомления о претензии в установленный срок, и пропуск этого срока может полностью лишить силы иначе обоснованное требование независимо от его существа. Администрирование контракта по проекту FIDIC во многом зависит от соблюдения этих сроков не меньше, чем от самих фактов.",
+p3:"Мы консультируем заказчиков, подрядчиков и консультантов по выбору контракта FIDIC, составлению Особых условий, текущему администрированию контракта и спорам, возникающим по проектам на основе FIDIC — в рамках редакций 1999 и 2017 годов и их различных книг.",
+h2_how:"Как мы работаем с вопросами контрактов FIDIC",
+step1_t:"Определение формы и редакции",step1_d:"Прежде чем консультировать по какому-либо конкретному пункту, мы устанавливаем, какая книга FIDIC и редакция применяется, а также как Особые условия изменили Общие условия.",
+step2_t:"Толкование пунктов",step2_d:"Мы толкуем соответствующие пункты — о сроках, оплате, изменениях, претензиях или разрешении споров — с учётом как стандартной формулировки FIDIC, так и любых поправок, специфичных для проекта.",
+step3_t:"Проверка соблюдения уведомлений и сроков",step3_d:"Мы проверяем уведомления, направленные или требуемые по пункту 20 (или его эквиваленту), поскольку соблюдение этих сроков часто является решающим для того, устоит ли требование.",
+step4_t:"Консультации по администрированию контракта",step4_d:"Мы консультируем по текущему администрированию — определениям инженера, обращениям в DAB/DAAB и процедурной последовательности, которую FIDIC требует до передачи спора в арбитраж.",
+step5_t:"Составление Особых условий",step5_d:"Для новых контрактов мы составляем или проверяем Особые условия, чтобы распределение рисков отражало фактическую коммерческую позицию проекта, а не просто стандартные положения FIDIC.",
+step6_t:"Поддержка при разрешении спора",step6_d:"Когда спор на основе FIDIC переходит в DAB, арбитраж или судебное разбирательство, мы строим дело на точном прочтении применимых пунктов и истории поправок к контракту.",
+h2_when:"Когда обращаться к юристу по контрактам FIDIC",
+sc1:"Вы выбираете, какую книгу FIDIC использовать для нового проекта, и вам нужна консультация о последствиях риска для каждой из них.",
+sc2:"Особые условия существенно изменили Общие условия, и вам нужно понять их совокупный эффект.",
+sc3:"Приближается срок уведомления по пункту 20, либо он мог быть пропущен, и вам нужна срочная консультация по вашей позиции.",
+sc4:"Вы не уверены, было ли определение инженера по контракту вынесено или оспорено правильно.",
+sc5:"Спор движется к обращению в DAB/DAAB, и вам нужно подтвердить процедурную последовательность перед продолжением.",
+sc6:"Вы толкуете пункт FIDIC иначе, чем другая сторона, и вам нужно независимое юридическое заключение.",
+h2_services:"Наши услуги",
+sv1:"Консультации по выбору формы FIDIC (Красная, Жёлтая, Серебряная книга) для новых проектов",
+sv2:"Составление и проверка Особых условий",
+sv3:"Толкование пунктов и консультации по администрированию контракта",
+sv4:"Проверка соблюдения уведомлений и сроков по пункту 20",
+sv5:"Поддержка обращения в DAB/DAAB и эскалации спора",
+sv6:"Проверка и оспаривание определений инженера",
+sv7:"Представительство в спорах, возникающих из контрактов на основе FIDIC",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"В чём разница между Красной, Жёлтой и Серебряной книгами FIDIC?",faq1_a:"В общих чертах: Красная книга подходит для работ по проекту заказчика, при этом заказчик несёт риск проектирования; Жёлтая книга — для работ по проекту подрядчика; а Серебряная книга (EPC/«под ключ») возлагает наибольший риск на подрядчика, включая, в большинстве случаев, проектирование и непредвиденные условия.",
+faq2_q:"Применяется ли редакция FIDIC 2017 года автоматически к моему контракту?",faq2_a:"Нет — применимая редакция определяется тем, что указано в контракте, и многие проекты в ОАЭ по-прежнему используют редакции 1999 года или значительно изменённые версии любой из них, поэтому подтверждение фактически действующего текста является необходимым первым шагом.",
+faq3_q:"Что произойдёт, если я пропущу срок уведомления по пункту 20?",faq3_a:"При строгом толковании формулировок FIDIC требование может полностью утратить силу из-за пропуска срока уведомления, хотя степень строгости применения этого правила может зависеть от конкретной формулировки поправки и применимого права — поэтому раннее консультирование важнее, чем попытка оспорить это постфактум.",
+faq4_q:"Могут ли Особые условия полностью отменять Общие условия?",faq4_a:"Да, в пределах применимого права — Особые условия составляются специально для изменения или замены пунктов Общих условий, поэтому их проверка необходима, а не полагание только на стандартный текст FIDIC.",
+faq5_q:"Независим ли инженер по FIDIC от заказчика?",faq5_a:"Инженер выполняет двойную роль — администрирует контракт и в некоторых функциях действует беспристрастно между сторонами, — хотя на практике инженер обычно нанимается и оплачивается заказчиком, что имеет значение при оспаривании определения."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",construction_cat:"Baurecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für FIDIC-Verträge in Dubai",
+lead:"FIDIC-Formulare bilden das Rückgrat der meisten großen Bauprojekte in den VAE, doch der Basistext ist selten das, was tatsächlich gilt — meist sind es die darüber gelagerten Besonderen Bedingungen, Anhänge und Änderungen. Einen FIDIC-Vertrag richtig zu lesen bedeutet, ihn vollständig zu lesen, nicht nur die vertrauten Klauselnummern.",
+box:"Das Red Book (Bauherren-geplante Leistungen), das Yellow Book (Auftragnehmer-geplante Leistungen) und das Silver Book (EPC/schlüsselfertig) verteilen das Risiko zwischen Bauherrn und Auftragnehmer sehr unterschiedlich — die Verwendung des falschen Formulars oder dessen Änderung ohne Verständnis der Risikoverschiebung ist eine häufige Quelle späterer Streitigkeiten.",
+p1:"Die Klauselnummerierung von FIDIC ist standardisiert, was ein trügerisches Gefühl von Vertrautheit erzeugt — Klausel 20 (Ansprüche), Klausel 8 (Fertigstellungszeit) und Klausel 4 (Pflichten des Auftragnehmers) bedeuten je nach verwendetem Buch und den Änderungen der Allgemeinen Bedingungen durch die Besonderen Bedingungen etwas anderes. Die korrekte Vertragsverwaltung erfordert zu wissen, welche Fassung tatsächlich für Ihr Projekt gilt.",
+p2:"Ausschlussfristen gehören zu den folgenreichsten Bestandteilen jedes FIDIC-Vertrags — Klausel 20.1 (oder ihr Äquivalent in der Fassung von 2017) verlangt eine Anspruchsanzeige innerhalb einer bestimmten Frist, und deren Versäumnis kann einen ansonsten berechtigten Anspruch unabhängig von seiner Begründetheit erlöschen lassen. Die Vertragsverwaltung eines FIDIC-Projekts richtet sich ebenso nach diesen Fristen wie nach den zugrunde liegenden Fakten.",
+p3:"Wir beraten Bauherren, Auftragnehmer und Berater bei der Auswahl des FIDIC-Vertrags, der Ausarbeitung der Besonderen Bedingungen, der laufenden Vertragsverwaltung und bei Streitigkeiten aus FIDIC-basierten Projekten — über die Fassungen von 1999 und 2017 und ihre verschiedenen Bücher hinweg.",
+h2_how:"Wie wir FIDIC-Vertragsangelegenheiten bearbeiten",
+step1_t:"Identifikation von Formular und Fassung",step1_d:"Wir bestätigen, welches FIDIC-Buch und welche Fassung gilt und wie die Besonderen Bedingungen die Allgemeinen Bedingungen geändert haben, bevor wir zu einer bestimmten Klausel beraten.",
+step2_t:"Klauselauslegung",step2_d:"Wir legen die relevanten Klauseln — Zeit, Zahlung, Nachträge, Ansprüche oder Streitbeilegung — sowohl anhand des Standard-FIDIC-Wortlauts als auch etwaiger projektspezifischer Änderungen aus.",
+step3_t:"Prüfung der Anzeige- und Ausschlussfristeneinhaltung",step3_d:"Wir prüfen die nach Klausel 20 (oder ihrem Äquivalent) gegebenen oder erforderlichen Anzeigen, da die Einhaltung dieser Fristen häufig entscheidend dafür ist, ob ein Anspruch bestehen bleibt.",
+step4_t:"Beratung zur Vertragsverwaltung",step4_d:"Wir beraten zur laufenden Verwaltung — Feststellungen des Ingenieurs, DAB/DAAB-Vorlagen und die von FIDIC vorgeschriebene Verfahrensreihenfolge, bevor ein Streit ein Schiedsverfahren erreicht.",
+step5_t:"Ausarbeitung der Besonderen Bedingungen",step5_d:"Bei neuen Verträgen erstellen oder prüfen wir die Besonderen Bedingungen, um sicherzustellen, dass die Risikoverteilung die tatsächliche kommerzielle Position des Projekts widerspiegelt, nicht nur die FIDIC-Standardvorgabe.",
+step6_t:"Unterstützung bei Streitigkeiten",step6_d:"Geht ein FIDIC-basierter Streit an ein DAB, ein Schiedsverfahren oder einen Rechtsstreit, bauen wir den Fall auf einer präzisen Lesart der anwendbaren Klauseln und der Änderungshistorie des Vertrags auf.",
+h2_when:"Wann Sie einen Anwalt für FIDIC-Verträge hinzuziehen sollten",
+sc1:"Sie wählen aus, welches FIDIC-Buch für ein neues Projekt verwendet werden soll, und benötigen Beratung zu den Risikoauswirkungen jedes Formulars.",
+sc2:"Die Besonderen Bedingungen haben die Allgemeinen Bedingungen erheblich geändert, und Sie möchten die Nettoauswirkung verstehen.",
+sc3:"Eine Anzeigefrist nach Klausel 20 steht bevor oder wurde möglicherweise versäumt, und Sie benötigen dringend Beratung zu Ihrer Position.",
+sc4:"Sie sind unsicher, ob die Feststellung des Ingenieurs nach dem Vertrag korrekt erlassen oder angefochten wurde.",
+sc5:"Ein Streit steuert auf eine DAB/DAAB-Vorlage zu, und Sie benötigen eine Bestätigung der Verfahrensreihenfolge, bevor Sie fortfahren.",
+sc6:"Sie legen eine FIDIC-Klausel anders aus als die Gegenpartei und benötigen eine unabhängige rechtliche Einschätzung.",
+h2_services:"Unsere Leistungen",
+sv1:"Beratung zur Auswahl des FIDIC-Formulars (Red, Yellow, Silver Book) für neue Projekte",
+sv2:"Ausarbeitung und Prüfung der Besonderen Bedingungen",
+sv3:"Klauselauslegung und Beratung zur Vertragsverwaltung",
+sv4:"Prüfung der Anzeige- und Ausschlussfristeneinhaltung nach Klausel 20",
+sv5:"Unterstützung bei DAB/DAAB-Vorlage und Streiteskalation",
+sv6:"Prüfung und Anfechtung von Feststellungen des Ingenieurs",
+sv7:"Vertretung bei Streitigkeiten aus FIDIC-basierten Verträgen",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist der Unterschied zwischen FIDIC Red, Yellow und Silver Book?",faq1_a:"Grob gesagt: Das Red Book eignet sich für vom Bauherrn geplante Leistungen, wobei der Bauherr das Planungsrisiko trägt; das Yellow Book eignet sich für vom Auftragnehmer geplante Leistungen; und das Silver Book (EPC/schlüsselfertig) legt das größte Risiko auf den Auftragnehmer, einschließlich in den meisten Fällen für Planung und unvorhergesehene Bedingungen.",
+faq2_q:"Gilt die FIDIC-Fassung von 2017 automatisch für meinen Vertrag?",faq2_a:"Nein — die anwendbare Fassung ist diejenige, die der Vertrag festlegt, und viele Projekte in den VAE verwenden weiterhin die Fassungen von 1999 oder stark geänderte Versionen beider — die Bestätigung des tatsächlich maßgeblichen Textes ist daher ein notwendiger erster Schritt.",
+faq3_q:"Was passiert, wenn ich die Anzeigefrist nach Klausel 20 versäume?",faq3_a:"Nach strengem FIDIC-Wortlaut kann ein Anspruch durch Versäumnis der Anzeigefrist vollständig ausgeschlossen sein, wobei die Strenge der Durchsetzung von der konkreten Änderungsformulierung und dem anwendbaren Recht abhängen kann — deshalb ist frühzeitige Beratung wichtiger, als dies nachträglich zu argumentieren.",
+faq4_q:"Können Besondere Bedingungen die Allgemeinen Bedingungen vollständig außer Kraft setzen?",faq4_a:"Ja, innerhalb der Grenzen des anwendbaren Rechts — Besondere Bedingungen werden speziell erstellt, um Klauseln der Allgemeinen Bedingungen zu ändern oder zu ersetzen, weshalb deren Prüfung unerlässlich ist, statt sich allein auf den FIDIC-Standardtext zu verlassen.",
+faq5_q:"Ist der Ingenieur nach FIDIC unabhängig vom Bauherrn?",faq5_a:"Der Ingenieur hat eine Doppelrolle — er verwaltet den Vertrag und handelt in manchen Funktionen unparteiisch zwischen den Parteien —, wird in der Praxis jedoch typischerweise vom Bauherrn beauftragt und bezahlt, was bei der Anfechtung einer Feststellung relevant ist."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
