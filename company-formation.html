@@ -7,13 +7,14 @@
 <title>Company Formation in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
 <meta name="description" content="Business setup, licensing, and registration for local and foreign investors.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;
---ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
+:root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:900px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -30,8 +31,8 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
-.lead{font-size:16.5px;color:var(--cream);margin-bottom:34px;max-width:700px;}
 h2.sub-title{font-family:'Cinzel',serif;font-size:19px;color:var(--gold-light);margin-bottom:18px;}
+.lead{font-size:16.5px;color:var(--cream);margin-bottom:34px;max-width:700px;}
 .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:36px;}
 .service-card{display:block;background:var(--black2);border:1px solid rgba(201,162,75,0.18);padding:16px 20px;border-radius:6px;font-size:14.5px;color:var(--cream);transition:.2s;}
 .service-card:hover{border-color:var(--gold);color:var(--gold-light);transform:translateY(-2px);}
@@ -44,74 +45,152 @@ footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:ce
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 @media(max-width:600px){.service-grid{grid-template-columns:1fr;}}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; Company Formation
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <span data-i18n="cat">Company Formation</span>
 </div>
 
 <article class="container">
-  <h1>Company Formation in Dubai</h1>
-  <p class="lead">Business setup, licensing, and registration for local and foreign investors.</p>
+<h1 data-i18n="cat">Company Formation</h1>
+<p class="lead" data-i18n="lead">Business setup, licensing, and registration for local and foreign investors.</p>
 
-  <h2 class="sub-title">Services within Company Formation</h2>
-  <div class="service-grid">
-    <a class="service-card" href="mainland-company-setup-dubai.html">Mainland Company Setup in Dubai</a>
-    <a class="service-card" href="freezone-company-setup-dubai.html">Free Zone Company Setup in Dubai</a>
-    <a class="service-card" href="business-license-renewal-dubai.html">Business License Renewal in Dubai</a>
-  </div>
+<h2 class="sub-title" data-i18n="h2_grid">Practice Areas We Cover</h2>
+<div class="service-grid">
+<a class="service-card" href="mainland-company-setup-dubai.html" data-i18n="sv1">Mainland Company Setup in Dubai</a>
+<a class="service-card" href="freezone-company-setup-dubai.html" data-i18n="sv2">Free Zone Company Setup in Dubai</a>
+<a class="service-card" href="business-license-renewal-dubai.html" data-i18n="sv3">Business License Renewal in Dubai</a>
+</div>
 
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",h2_grid:"Practice Areas We Cover",
+cat:"Company Formation",
+lead:"Business setup, licensing, and registration for local and foreign investors.",
+sv1:"Mainland Company Setup in Dubai",
+sv2:"Free Zone Company Setup in Dubai",
+sv3:"Business License Renewal in Dubai"
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",h2_grid:"المجالات التي نغطيها",
+cat:"تأسيس الشركات",
+lead:"تأسيس الأعمال والترخيص والتسجيل للمستثمرين المحليين والأجانب.",
+sv1:"تأسيس الشركات في البر الرئيسي بدبي",
+sv2:"تأسيس الشركات في المناطق الحرة بدبي",
+sv3:"تجديد الرخصة التجارية في دبي"
+},
+zh:{
+home:"首页",practice_areas:"业务领域",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",h2_grid:"我们涵盖的执业领域",
+cat:"公司注册",
+lead:"为本地及外国投资者提供企业设立、许可及注册服务。",
+sv1:"迪拜大陆公司注册",
+sv2:"迪拜自由区公司注册",
+sv3:"迪拜营业执照续期"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",h2_grid:"Направления, которые мы охватываем",
+cat:"Регистрация компаний",
+lead:"Открытие бизнеса, лицензирование и регистрация для местных и иностранных инвесторов.",
+sv1:"Регистрация материковой компании в Дубае",
+sv2:"Регистрация компании в свободной зоне Дубая",
+sv3:"Продление торговой лицензии в Дубае"
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",h2_grid:"Von uns abgedeckte Rechtsgebiete",
+cat:"Unternehmensgründung",
+lead:"Unternehmensgründung, Lizenzierung und Registrierung für lokale und ausländische Investoren.",
+sv1:"Gründung eines Mainland-Unternehmens in Dubai",
+sv2:"Gründung eines Unternehmens in einer Freizone in Dubai",
+sv3:"Verlängerung der Gewerbelizenz in Dubai"
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
