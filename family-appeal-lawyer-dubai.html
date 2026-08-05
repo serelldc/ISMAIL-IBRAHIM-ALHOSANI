@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Family Appeal Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="A first-instance family court ruling is not always the final word.">
+<meta name="description" content="Appeal representation for family court judgments in Dubai — divorce, custody, and maintenance decisions before the Court of Appeal and Court of Cassation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="family-law.html">Family Law</a> &rsaquo; Family Appeal Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="family-law.html" data-i18n="family_cat">Family Law</a> &rsaquo; <span data-i18n="page_title">Family Appeal Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Family Appeal Lawyer in Dubai</h1>
-  <p class="lead">A first-instance family court ruling is not always the final word.</p>
-  <div class="box">This covers appeals of divorce, custody, and maintenance rulings before the UAE appellate courts.</div>
-  <p class="body-p">The firm reviews the original judgment and advises on the merits of an appeal before the relevant filing deadline.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Family Appeal Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Family court judgments — on divorce, custody, or maintenance — can be appealed, but strict deadlines apply, and an appeal succeeds only where a genuine legal or factual error in the original judgment can be shown, not simply because one party disagrees with the outcome.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">Appeals of Personal Status Court judgments proceed through defined stages, with the Court of Appeal generally able to review both facts and law, while further appeal to the Court of Cassation is typically limited to legal error rather than a fresh review of the facts.</div>
+
+<p class="body-p" data-i18n="p1">The appeal window in family matters is short, and missing the deadline generally forecloses the right to challenge the judgment, making prompt engagement with an appeal lawyer important as soon as an unfavorable judgment is received.</p>
+<p class="body-p" data-i18n="p2">Successful appeals typically identify a specific error — whether in how the law was applied, how evidence was weighed, or a procedural irregularity — rather than simply re-arguing the case as it was presented at first instance.</p>
+<p class="body-p" data-i18n="p3">We represent clients appealing unfavorable family court judgments and those defending judgments against appeal, working within the applicable deadlines and building the specific legal arguments the appellate courts require.</p>
+
+<h2 data-i18n="h2_how">How We Handle Family Appeal Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Judgment and Grounds Review</strong><span data-i18n="step1_d">We review the original judgment in detail to identify whether genuine grounds for appeal exist and assess the realistic prospects of success.</span></li>
+<li><strong data-i18n="step2_t">Deadline and Procedural Compliance</strong><span data-i18n="step2_d">We calculate the applicable appeal deadline and ensure all procedural requirements are met to preserve the right to appeal.</span></li>
+<li><strong data-i18n="step3_t">Appeal Preparation</strong><span data-i18n="step3_d">We prepare the appeal, setting out the specific legal or factual errors in the original judgment and the relief being sought.</span></li>
+<li><strong data-i18n="step4_t">Court of Appeal Representation</strong><span data-i18n="step4_d">We represent clients before the Court of Appeal, presenting argument and evidence as permitted at this stage.</span></li>
+<li><strong data-i18n="step5_t">Cassation Assessment and Filing</strong><span data-i18n="step5_d">Where a further appeal to the Court of Cassation may be appropriate, we assess the legal grounds available and file where warranted.</span></li>
+<li><strong data-i18n="step6_t">Judgment Enforcement Following Appeal</strong><span data-i18n="step6_d">We assist with enforcing the final judgment once the appeal process concludes.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a Family Appeal Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You've received an unfavorable family court judgment and want to understand whether grounds for appeal exist.</li>
+<li data-i18n="sc2">You need to act quickly because the appeal deadline for your case is approaching.</li>
+<li data-i18n="sc3">You believe the court made a legal or factual error in deciding your divorce, custody, or maintenance case.</li>
+<li data-i18n="sc4">You're defending a judgment in your favor against an appeal filed by the other party.</li>
+<li data-i18n="sc5">You've exhausted the Court of Appeal and are considering whether cassation is appropriate for your case.</li>
+<li data-i18n="sc6">You need advice on the realistic prospects of an appeal before committing to the process.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Appeal grounds assessment for family court judgments</li>
+<li data-i18n="sv2">Appeal deadline calculation and procedural compliance</li>
+<li data-i18n="sv3">Appeal preparation and filing</li>
+<li data-i18n="sv4">Representation before the Court of Appeal</li>
+<li data-i18n="sv5">Cassation appeal assessment and filing</li>
+<li data-i18n="sv6">Defense of judgments against appeal</li>
+<li data-i18n="sv7">Post-appeal judgment enforcement</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">How long do I have to appeal a family court judgment?</summary>
+<p data-i18n="faq1_a">Appeal deadlines in family matters are generally short and strictly enforced, so it's important to seek advice as soon as possible after receiving an unfavorable judgment.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Can I appeal simply because I disagree with the outcome?</summary>
+<p data-i18n="faq2_a">No, a successful appeal generally requires identifying a specific legal or factual error in the original judgment, not merely disagreement with the result.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What's the difference between the Court of Appeal and the Court of Cassation?</summary>
+<p data-i18n="faq3_a">The Court of Appeal can generally review both the facts and the law of a case, while the Court of Cassation typically reviews questions of law only, without re-examining the underlying facts.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Does filing an appeal pause enforcement of the original judgment?</summary>
+<p data-i18n="faq4_a">Whether enforcement is paused during an appeal depends on the type of judgment and the specific procedural rules that apply, so this should be assessed early in the appeal process.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What are my chances of success on appeal?</summary>
+<p data-i18n="faq5_a">Prospects depend heavily on whether a genuine legal or factual error can be identified in the original judgment, and we provide a realistic assessment after reviewing the judgment and case file.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",family_cat:"Family Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Family Appeal Lawyer in Dubai",
+lead:"Family court judgments — on divorce, custody, or maintenance — can be appealed, but strict deadlines apply, and an appeal succeeds only where a genuine legal or factual error in the original judgment can be shown, not simply because one party disagrees with the outcome.",
+box:"Appeals of Personal Status Court judgments proceed through defined stages, with the Court of Appeal generally able to review both facts and law, while further appeal to the Court of Cassation is typically limited to legal error rather than a fresh review of the facts.",
+p1:"The appeal window in family matters is short, and missing the deadline generally forecloses the right to challenge the judgment, making prompt engagement with an appeal lawyer important as soon as an unfavorable judgment is received.",
+p2:"Successful appeals typically identify a specific error — whether in how the law was applied, how evidence was weighed, or a procedural irregularity — rather than simply re-arguing the case as it was presented at first instance.",
+p3:"We represent clients appealing unfavorable family court judgments and those defending judgments against appeal, working within the applicable deadlines and building the specific legal arguments the appellate courts require.",
+h2_how:"How We Handle Family Appeal Matters",
+step1_t:"Judgment and Grounds Review",step1_d:"We review the original judgment in detail to identify whether genuine grounds for appeal exist and assess the realistic prospects of success.",
+step2_t:"Deadline and Procedural Compliance",step2_d:"We calculate the applicable appeal deadline and ensure all procedural requirements are met to preserve the right to appeal.",
+step3_t:"Appeal Preparation",step3_d:"We prepare the appeal, setting out the specific legal or factual errors in the original judgment and the relief being sought.",
+step4_t:"Court of Appeal Representation",step4_d:"We represent clients before the Court of Appeal, presenting argument and evidence as permitted at this stage.",
+step5_t:"Cassation Assessment and Filing",step5_d:"Where a further appeal to the Court of Cassation may be appropriate, we assess the legal grounds available and file where warranted.",
+step6_t:"Judgment Enforcement Following Appeal",step6_d:"We assist with enforcing the final judgment once the appeal process concludes.",
+h2_when:"When to Bring in a Family Appeal Lawyer",
+sc1:"You've received an unfavorable family court judgment and want to understand whether grounds for appeal exist.",
+sc2:"You need to act quickly because the appeal deadline for your case is approaching.",
+sc3:"You believe the court made a legal or factual error in deciding your divorce, custody, or maintenance case.",
+sc4:"You're defending a judgment in your favor against an appeal filed by the other party.",
+sc5:"You've exhausted the Court of Appeal and are considering whether cassation is appropriate for your case.",
+sc6:"You need advice on the realistic prospects of an appeal before committing to the process.",
+h2_services:"Services We Provide",
+sv1:"Appeal grounds assessment for family court judgments",
+sv2:"Appeal deadline calculation and procedural compliance",
+sv3:"Appeal preparation and filing",
+sv4:"Representation before the Court of Appeal",
+sv5:"Cassation appeal assessment and filing",
+sv6:"Defense of judgments against appeal",
+sv7:"Post-appeal judgment enforcement",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"How long do I have to appeal a family court judgment?",faq1_a:"Appeal deadlines in family matters are generally short and strictly enforced, so it's important to seek advice as soon as possible after receiving an unfavorable judgment.",
+faq2_q:"Can I appeal simply because I disagree with the outcome?",faq2_a:"No, a successful appeal generally requires identifying a specific legal or factual error in the original judgment, not merely disagreement with the result.",
+faq3_q:"What's the difference between the Court of Appeal and the Court of Cassation?",faq3_a:"The Court of Appeal can generally review both the facts and the law of a case, while the Court of Cassation typically reviews questions of law only, without re-examining the underlying facts.",
+faq4_q:"Does filing an appeal pause enforcement of the original judgment?",faq4_a:"Whether enforcement is paused during an appeal depends on the type of judgment and the specific procedural rules that apply, so this should be assessed early in the appeal process.",
+faq5_q:"What are my chances of success on appeal?",faq5_a:"Prospects depend heavily on whether a genuine legal or factual error can be identified in the original judgment, and we provide a realistic assessment after reviewing the judgment and case file."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",family_cat:"قانون الأسرة",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي الاستئناف الأسري في دبي",
+lead:"يمكن استئناف أحكام محكمة الأحوال الشخصية — بشأن الطلاق أو الحضانة أو النفقة — لكن تنطبق مواعيد نهائية صارمة، ولا ينجح الاستئناف إلا حيثما يمكن إثبات خطأ قانوني أو واقعي حقيقي في الحكم الأصلي، وليس لمجرد عدم موافقة أحد الطرفين على النتيجة.",
+box:"تسير استئنافات أحكام محكمة الأحوال الشخصية عبر مراحل محددة، حيث يمكن لمحكمة الاستئناف عمومًا مراجعة الوقائع والقانون، بينما يقتصر الاستئناف الإضافي إلى محكمة النقض عادةً على الخطأ القانوني بدلاً من مراجعة جديدة للوقائع.",
+p1:"نافذة الاستئناف في المسائل الأسرية قصيرة، وتفويت الموعد النهائي يمنع عمومًا حق الطعن في الحكم، مما يجعل التواصل السريع مع محامي استئناف مهمًا بمجرد استلام حكم غير مواتٍ.",
+p2:"عادةً ما تحدد الاستئنافات الناجحة خطأً محددًا — سواء في كيفية تطبيق القانون، أو كيفية ترجيح الأدلة، أو مخالفة إجرائية — بدلاً من مجرد إعادة عرض القضية كما قُدمت في الدرجة الأولى.",
+p3:"نمثل العملاء الذين يستأنفون أحكام محكمة أسرية غير مواتية وأولئك الذين يدافعون عن الأحكام ضد الاستئناف، ونعمل ضمن المواعيد النهائية المنطبقة ونبني الحجج القانونية المحددة التي تتطلبها محاكم الاستئناف.",
+h2_how:"كيف نتعامل مع مسائل الاستئناف الأسري",
+step1_t:"مراجعة الحكم والأسباب",step1_d:"نراجع الحكم الأصلي بالتفصيل لتحديد ما إذا كانت هناك أسباب حقيقية للاستئناف وتقييم احتمالات النجاح الواقعية.",
+step2_t:"الامتثال للموعد النهائي والإجراءات",step2_d:"نحسب موعد الاستئناف النهائي المنطبق ونضمن استيفاء جميع المتطلبات الإجرائية للحفاظ على حق الاستئناف.",
+step3_t:"إعداد الاستئناف",step3_d:"نُعد الاستئناف، موضحين الأخطاء القانونية أو الواقعية المحددة في الحكم الأصلي والإنصاف المنشود.",
+step4_t:"التمثيل أمام محكمة الاستئناف",step4_d:"نمثل العملاء أمام محكمة الاستئناف، ونعرض الحجج والأدلة كما هو مسموح في هذه المرحلة.",
+step5_t:"تقييم وتقديم النقض",step5_d:"حيثما قد يكون استئناف إضافي إلى محكمة النقض مناسبًا، نقيّم الأسباب القانونية المتاحة ونقدم حيثما كان ذلك مبررًا.",
+step6_t:"تنفيذ الحكم بعد الاستئناف",step6_d:"نساعد في تنفيذ الحكم النهائي بمجرد انتهاء عملية الاستئناف.",
+h2_when:"متى تحتاج إلى محامي استئناف أسري",
+sc1:"استلمت حكمًا أسريًا غير موات وتريد فهم ما إذا كانت هناك أسباب للاستئناف.",
+sc2:"تحتاج إلى التصرف بسرعة لأن موعد الاستئناف النهائي لقضيتك يقترب.",
+sc3:"تعتقد أن المحكمة ارتكبت خطأً قانونيًا أو واقعيًا في البت في قضية طلاقك أو حضانتك أو نفقتك.",
+sc4:"تدافع عن حكم لصالحك ضد استئناف قدمه الطرف الآخر.",
+sc5:"استنفدت محكمة الاستئناف وتفكر فيما إذا كان النقض مناسبًا لقضيتك.",
+sc6:"تحتاج إلى مشورة بشأن احتمالات الاستئناف الواقعية قبل الالتزام بالعملية.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تقييم أسباب الاستئناف لأحكام المحكمة الأسرية",
+sv2:"حساب موعد الاستئناف النهائي والامتثال الإجرائي",
+sv3:"إعداد وتقديم الاستئناف",
+sv4:"التمثيل أمام محكمة الاستئناف",
+sv5:"تقييم وتقديم استئناف النقض",
+sv6:"الدفاع عن الأحكام ضد الاستئناف",
+sv7:"تنفيذ الحكم بعد الاستئناف",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"كم من الوقت لدي لاستئناف حكم محكمة أسرية؟",faq1_a:"مواعيد الاستئناف النهائية في المسائل الأسرية قصيرة عمومًا وتُطبق بصرامة، لذا من المهم طلب المشورة في أقرب وقت ممكن بعد استلام حكم غير موات.",
+faq2_q:"هل يمكنني الاستئناف لمجرد عدم موافقتي على النتيجة؟",faq2_a:"لا، يتطلب الاستئناف الناجح عمومًا تحديد خطأ قانوني أو واقعي محدد في الحكم الأصلي، وليس مجرد عدم الموافقة على النتيجة.",
+faq3_q:"ما الفرق بين محكمة الاستئناف ومحكمة النقض؟",faq3_a:"يمكن لمحكمة الاستئناف عمومًا مراجعة وقائع القضية وقانونها، بينما تراجع محكمة النقض عادةً مسائل القانون فقط، دون إعادة فحص الوقائع الأساسية.",
+faq4_q:"هل يوقف تقديم الاستئناف تنفيذ الحكم الأصلي؟",faq4_a:"يعتمد ما إذا كان التنفيذ يتوقف أثناء الاستئناف على نوع الحكم والقواعد الإجرائية المحددة المنطبقة، لذا يجب تقييم ذلك مبكرًا في عملية الاستئناف.",
+faq5_q:"ما هي فرص نجاحي في الاستئناف؟",faq5_a:"تعتمد الاحتمالات بشكل كبير على ما إذا كان يمكن تحديد خطأ قانوني أو واقعي حقيقي في الحكم الأصلي، ونقدم تقييمًا واقعيًا بعد مراجعة الحكم وملف القضية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",family_cat:"家庭法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜家事上诉律师",
+lead:"家事法庭就离婚、监护权或抚养费等作出的判决可以提起上诉，但须遵守严格的期限，且上诉仅在能够证明原判决存在真实的法律或事实错误时才可能成功，而非仅因一方不认同判决结果。",
+box:"属人身份法院判决的上诉需经过明确规定的阶段，上诉法院通常可对事实及法律一并进行审查，而进一步向撤销法院提起的上诉，通常仅限于法律错误，而非对事实的重新审查。",
+p1:"家事事务的上诉窗口期较短，错过期限通常意味着丧失对判决提出异议的权利，因此在收到不利判决后应尽快联系上诉律师。",
+p2:"成功的上诉通常需要指出具体的错误——无论是法律适用方式、证据权衡方式，还是程序上的不规范之处——而非仅仅重新陈述一审时提出的论点。",
+p3:"我们代表就不利家事法庭判决提起上诉的客户，以及在判决被上诉时进行答辩的客户，在适用期限内工作，并构建上诉法院所要求的具体法律论点。",
+h2_how:"我们如何处理家事上诉事务",
+step1_t:"判决及上诉理由审查",step1_d:"我们详细审查原判决，以确定是否存在真实的上诉理由，并评估切实可行的胜诉前景。",
+step2_t:"期限及程序合规",step2_d:"我们计算适用的上诉期限，并确保满足所有程序要求，以保留上诉权利。",
+step3_t:"上诉准备",step3_d:"我们准备上诉状，阐明原判决中的具体法律或事实错误及所寻求的救济。",
+step4_t:"上诉法院代理",step4_d:"我们在上诉法院代表客户，按此阶段允许的方式提出论点及证据。",
+step5_t:"撤销申请评估及提交",step5_d:"若进一步向撤销法院提起上诉可能适当，我们将评估可用的法律理由，并在合理情况下提交申请。",
+step6_t:"上诉后判决执行",step6_d:"上诉程序结束后，我们协助执行最终判决。",
+h2_when:"何时需要家事上诉律师",
+sc1:"您收到了不利的家事法庭判决，希望了解是否存在上诉理由。",
+sc2:"由于您案件的上诉期限即将届满，您需要迅速采取行动。",
+sc3:"您认为法院在裁定您的离婚、监护权或抚养费案件时存在法律或事实错误。",
+sc4:"您正就对方提起的上诉，为对您有利的判决进行答辩。",
+sc5:"您已用尽上诉法院的救济途径，正考虑撤销程序是否适用于您的案件。",
+sc6:"在决定进行上诉之前，您需要就切实可行的胜诉前景获得建议。",
+h2_services:"我们提供的服务",
+sv1:"家事法庭判决上诉理由评估",
+sv2:"上诉期限计算及程序合规",
+sv3:"上诉准备及提交",
+sv4:"上诉法院代理",
+sv5:"撤销上诉评估及提交",
+sv6:"判决上诉答辩",
+sv7:"上诉后判决执行",
+h2_faq:"常见问题",
+faq1_q:"我有多长时间可以对家事法庭判决提起上诉？",faq1_a:"家事事务的上诉期限通常较短且严格执行，因此在收到不利判决后应尽快寻求法律建议。",
+faq2_q:"我能否仅因不认同判决结果而提起上诉？",faq2_a:"不能，成功的上诉通常需要指出原判决中的具体法律或事实错误，而非仅仅是对结果的不认同。",
+faq3_q:"上诉法院与撤销法院有何区别？",faq3_a:"上诉法院通常可对案件的事实及法律一并进行审查，而撤销法院通常仅审查法律问题，不重新审查基础事实。",
+faq4_q:"提起上诉是否会暂停原判决的执行？",faq4_a:"执行是否在上诉期间暂停取决于判决类型及适用的具体程序规则，因此应在上诉程序早期予以评估。",
+faq5_q:"我的上诉胜诉几率有多大？",faq5_a:"前景很大程度上取决于能否在原判决中识别出真实的法律或事实错误，我们将在审查判决及案件档案后提供切实可行的评估。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",family_cat:"Семейное право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по семейным апелляциям в Дубае",
+lead:"Решения семейного суда — по разводу, опеке или содержанию — могут быть обжалованы, но применяются строгие сроки, и апелляция удовлетворяется только там, где может быть доказана подлинная правовая или фактическая ошибка в первоначальном решении, а не просто потому, что одна из сторон не согласна с результатом.",
+box:"Апелляции на решения Суда по делам личного статуса проходят через определённые этапы, при этом Апелляционный суд, как правило, может пересматривать как факты, так и право, тогда как дальнейшая апелляция в Кассационный суд обычно ограничивается правовой ошибкой, а не новым рассмотрением фактов.",
+p1:"Срок подачи апелляции по семейным делам короткий, и пропуск срока, как правило, лишает права оспорить решение, поэтому важно своевременно обратиться к адвокату по апелляциям сразу после получения неблагоприятного решения.",
+p2:"Успешные апелляции обычно выявляют конкретную ошибку — будь то в применении права, оценке доказательств или процессуальном нарушении — а не просто повторяют аргументы, представленные в суде первой инстанции.",
+p3:"Мы представляем клиентов, обжалующих неблагоприятные решения семейного суда, и тех, кто защищает решения от апелляции, работая в рамках применимых сроков и выстраивая конкретные правовые аргументы, требуемые апелляционными судами.",
+h2_how:"Как мы работаем с семейными апелляциями",
+step1_t:"Анализ решения и оснований",step1_d:"Мы подробно изучаем первоначальное решение, чтобы определить, существуют ли подлинные основания для апелляции, и оценить реальные перспективы успеха.",
+step2_t:"Соблюдение сроков и процедур",step2_d:"Мы рассчитываем применимый срок подачи апелляции и обеспечиваем соблюдение всех процессуальных требований для сохранения права на апелляцию.",
+step3_t:"Подготовка апелляции",step3_d:"Мы готовим апелляцию, излагая конкретные правовые или фактические ошибки в первоначальном решении и запрашиваемое средство правовой защиты.",
+step4_t:"Представительство в Апелляционном суде",step4_d:"Мы представляем клиентов в Апелляционном суде, представляя аргументы и доказательства в объёме, допустимом на этом этапе.",
+step5_t:"Оценка и подача кассационной жалобы",step5_d:"Если дальнейшая апелляция в Кассационный суд может быть уместна, мы оцениваем доступные правовые основания и подаём жалобу, когда это оправдано.",
+step6_t:"Исполнение решения после апелляции",step6_d:"Мы помогаем в исполнении окончательного решения после завершения апелляционного процесса.",
+h2_when:"Когда обращаться к юристу по семейным апелляциям",
+sc1:"Вы получили неблагоприятное решение семейного суда и хотите понять, существуют ли основания для апелляции.",
+sc2:"Вам необходимо действовать быстро, поскольку срок подачи апелляции по вашему делу истекает.",
+sc3:"Вы считаете, что суд допустил правовую или фактическую ошибку при рассмотрении вашего дела о разводе, опеке или содержании.",
+sc4:"Вы защищаете решение в свою пользу от апелляции, поданной другой стороной.",
+sc5:"Вы исчерпали возможности Апелляционного суда и рассматриваете, уместна ли кассация для вашего дела.",
+sc6:"Вам нужна консультация о реальных перспективах апелляции, прежде чем приступать к этому процессу.",
+h2_services:"Наши услуги",
+sv1:"Оценка оснований для апелляции на решения семейного суда",
+sv2:"Расчёт сроков подачи апелляции и соблюдение процессуальных требований",
+sv3:"Подготовка и подача апелляции",
+sv4:"Представительство в Апелляционном суде",
+sv5:"Оценка и подача кассационной жалобы",
+sv6:"Защита решений от апелляции",
+sv7:"Исполнение решения после апелляции",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Сколько времени у меня есть на подачу апелляции на решение семейного суда?",faq1_a:"Сроки подачи апелляции по семейным делам, как правило, короткие и строго соблюдаются, поэтому важно обратиться за консультацией как можно скорее после получения неблагоприятного решения.",
+faq2_q:"Могу ли я подать апелляцию просто потому, что не согласен(на) с результатом?",faq2_a:"Нет, успешная апелляция, как правило, требует выявления конкретной правовой или фактической ошибки в первоначальном решении, а не просто несогласия с результатом.",
+faq3_q:"В чём разница между Апелляционным судом и Кассационным судом?",faq3_a:"Апелляционный суд, как правило, может пересматривать как факты, так и право дела, тогда как Кассационный суд обычно рассматривает только вопросы права, без повторного изучения основных фактов.",
+faq4_q:"Приостанавливает ли подача апелляции исполнение первоначального решения?",faq4_a:"Приостанавливается ли исполнение во время апелляции, зависит от типа решения и конкретных применимых процессуальных норм, поэтому это следует оценить на раннем этапе апелляционного процесса.",
+faq5_q:"Каковы мои шансы на успех в апелляции?",faq5_a:"Перспективы во многом зависят от того, можно ли выявить подлинную правовую или фактическую ошибку в первоначальном решении, и мы предоставляем реалистичную оценку после изучения решения и материалов дела."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",family_cat:"Familienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für familienrechtliche Berufung in Dubai",
+lead:"Familiengerichtliche Urteile — zu Scheidung, Sorgerecht oder Unterhalt — können angefochten werden, aber es gelten strenge Fristen, und eine Berufung ist nur dann erfolgreich, wenn ein tatsächlicher Rechts- oder Tatsachenfehler im ursprünglichen Urteil nachgewiesen werden kann, nicht einfach, weil eine Partei mit dem Ergebnis nicht einverstanden ist.",
+box:"Berufungen gegen Urteile des Personenstandsgerichts durchlaufen festgelegte Stufen, wobei das Berufungsgericht im Allgemeinen sowohl Tatsachen als auch Recht überprüfen kann, während eine weitere Berufung beim Kassationsgericht typischerweise auf Rechtsfehler beschränkt ist, statt einer erneuten Prüfung der Tatsachen.",
+p1:"Das Berufungsfenster in familienrechtlichen Angelegenheiten ist kurz, und das Versäumen der Frist schließt im Allgemeinen das Recht aus, das Urteil anzufechten, weshalb ein zügiges Handeln mit einem Berufungsanwalt wichtig ist, sobald ein ungünstiges Urteil erhalten wird.",
+p2:"Erfolgreiche Berufungen identifizieren typischerweise einen spezifischen Fehler — sei es in der Rechtsanwendung, der Gewichtung der Beweise oder einer verfahrensrechtlichen Unregelmäßigkeit — statt den Fall lediglich erneut so vorzutragen, wie er in erster Instanz präsentiert wurde.",
+p3:"Wir vertreten Mandanten, die gegen ungünstige familiengerichtliche Urteile Berufung einlegen, sowie solche, die Urteile gegen eine Berufung verteidigen, und arbeiten innerhalb der geltenden Fristen und entwickeln die spezifischen rechtlichen Argumente, die die Berufungsgerichte verlangen.",
+h2_how:"Wie wir familienrechtliche Berufungsangelegenheiten bearbeiten",
+step1_t:"Prüfung des Urteils und der Gründe",step1_d:"Wir prüfen das ursprüngliche Urteil im Detail, um festzustellen, ob echte Berufungsgründe bestehen, und bewerten die realistischen Erfolgsaussichten.",
+step2_t:"Einhaltung von Fristen und Verfahren",step2_d:"Wir berechnen die geltende Berufungsfrist und stellen sicher, dass alle Verfahrensanforderungen erfüllt werden, um das Berufungsrecht zu wahren.",
+step3_t:"Vorbereitung der Berufung",step3_d:"Wir bereiten die Berufung vor und legen die spezifischen Rechts- oder Tatsachenfehler im ursprünglichen Urteil sowie die angestrebte Abhilfe dar.",
+step4_t:"Vertretung vor dem Berufungsgericht",step4_d:"Wir vertreten Mandanten vor dem Berufungsgericht und legen Argumente und Beweise vor, soweit in dieser Phase zulässig.",
+step5_t:"Bewertung und Einreichung der Kassation",step5_d:"Wo eine weitere Berufung beim Kassationsgericht angemessen sein könnte, bewerten wir die verfügbaren Rechtsgründe und reichen ein, wenn dies gerechtfertigt ist.",
+step6_t:"Urteilsvollstreckung nach der Berufung",step6_d:"Wir unterstützen bei der Vollstreckung des endgültigen Urteils nach Abschluss des Berufungsverfahrens.",
+h2_when:"Wann Sie einen Anwalt für familienrechtliche Berufung hinzuziehen sollten",
+sc1:"Sie haben ein ungünstiges familiengerichtliches Urteil erhalten und möchten verstehen, ob Berufungsgründe bestehen.",
+sc2:"Sie müssen schnell handeln, weil die Berufungsfrist für Ihren Fall naht.",
+sc3:"Sie glauben, dass das Gericht bei der Entscheidung über Ihren Scheidungs-, Sorgerechts- oder Unterhaltsfall einen Rechts- oder Tatsachenfehler gemacht hat.",
+sc4:"Sie verteidigen ein zu Ihren Gunsten ergangenes Urteil gegen eine von der Gegenpartei eingelegte Berufung.",
+sc5:"Sie haben das Berufungsgericht ausgeschöpft und erwägen, ob eine Kassation für Ihren Fall angemessen ist.",
+sc6:"Sie benötigen Beratung zu den realistischen Erfolgsaussichten einer Berufung, bevor Sie sich auf das Verfahren festlegen.",
+h2_services:"Unsere Leistungen",
+sv1:"Bewertung von Berufungsgründen für familiengerichtliche Urteile",
+sv2:"Berechnung von Berufungsfristen und Einhaltung von Verfahrensvorschriften",
+sv3:"Vorbereitung und Einreichung der Berufung",
+sv4:"Vertretung vor dem Berufungsgericht",
+sv5:"Bewertung und Einreichung von Kassationsberufungen",
+sv6:"Verteidigung von Urteilen gegen Berufung",
+sv7:"Urteilsvollstreckung nach der Berufung",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Wie viel Zeit habe ich, um gegen ein familiengerichtliches Urteil Berufung einzulegen?",faq1_a:"Berufungsfristen in familienrechtlichen Angelegenheiten sind im Allgemeinen kurz und werden streng durchgesetzt, weshalb es wichtig ist, so schnell wie möglich nach Erhalt eines ungünstigen Urteils Rechtsberatung einzuholen.",
+faq2_q:"Kann ich Berufung einlegen, nur weil ich mit dem Ergebnis nicht einverstanden bin?",faq2_a:"Nein, eine erfolgreiche Berufung erfordert im Allgemeinen die Identifizierung eines spezifischen Rechts- oder Tatsachenfehlers im ursprünglichen Urteil, nicht lediglich Uneinigkeit mit dem Ergebnis.",
+faq3_q:"Was ist der Unterschied zwischen dem Berufungsgericht und dem Kassationsgericht?",faq3_a:"Das Berufungsgericht kann im Allgemeinen sowohl die Tatsachen als auch das Recht eines Falls überprüfen, während das Kassationsgericht typischerweise nur Rechtsfragen prüft, ohne die zugrunde liegenden Tatsachen erneut zu untersuchen.",
+faq4_q:"Setzt die Einlegung einer Berufung die Vollstreckung des ursprünglichen Urteils aus?",faq4_a:"Ob die Vollstreckung während einer Berufung ausgesetzt wird, hängt von der Art des Urteils und den spezifischen geltenden Verfahrensregeln ab, weshalb dies frühzeitig im Berufungsverfahren bewertet werden sollte.",
+faq5_q:"Wie stehen meine Erfolgsaussichten bei der Berufung?",faq5_a:"Die Aussichten hängen maßgeblich davon ab, ob ein echter Rechts- oder Tatsachenfehler im ursprünglichen Urteil identifiziert werden kann, und wir geben nach Prüfung des Urteils und der Fallakte eine realistische Einschätzung ab."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>

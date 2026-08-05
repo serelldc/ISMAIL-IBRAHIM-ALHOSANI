@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Expat Family Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Expatriate families often need advice that accounts for both UAE law and the family's home country law.">
+<meta name="description" content="Family law representation for expatriates in Dubai — applicable law questions, cross-border custody, foreign marriage recognition, and relocation matters.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="family-law.html">Family Law</a> &rsaquo; Expat Family Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="family-law.html" data-i18n="family_cat">Family Law</a> &rsaquo; <span data-i18n="page_title">Expat Family Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Expat Family Lawyer in Dubai</h1>
-  <p class="lead">Expatriate families often need advice that accounts for both UAE law and the family's home country law.</p>
-  <div class="box">This covers divorce, custody, and inheritance matters where one or both spouses are foreign nationals residing in the UAE.</div>
-  <p class="body-p">The firm advises on how UAE personal status law applies to expatriates and coordinates with foreign counsel where a matter touches another jurisdiction.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Expat Family Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Family law matters for expatriates in the UAE carry an added layer most local family disputes don't — questions about which country's law applies, how foreign marriages and documents are recognized, and what happens if a family relocates across borders.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">Foreign nationals in the UAE may in certain circumstances request that their home country's law apply to specific aspects of a family matter, but this isn't automatic, and how the request is framed and evidenced significantly affects whether it succeeds.</div>
+
+<p class="body-p" data-i18n="p1">Cross-border elements appear throughout expatriate family cases — a marriage contract executed abroad, assets held in multiple jurisdictions, children who hold different nationalities than one or both parents, or a parent planning to relocate after a divorce or custody decision.</p>
+<p class="body-p" data-i18n="p2">Recognition of foreign judgments, documents, and marriage contracts within the UAE system follows specific legal processes, and getting this right early often prevents significant complications later, particularly where enforcement or recognition abroad will also be needed.</p>
+<p class="body-p" data-i18n="p3">We advise and represent expatriate clients across the full range of family law matters, bringing particular attention to the applicable law questions, cross-border recognition issues, and relocation considerations that are distinctive to non-national families.</p>
+
+<h2 data-i18n="h2_how">How We Handle Expat Family Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Nationality and Applicable Law Assessment</strong><span data-i18n="step1_d">We assess the nationality and residency factors relevant to the case and advise on which legal framework is likely to apply and what options exist.</span></li>
+<li><strong data-i18n="step2_t">Foreign Document Review</strong><span data-i18n="step2_d">We review foreign marriage contracts, prior judgments, and other documents to determine how they'll be treated within the UAE system.</span></li>
+<li><strong data-i18n="step3_t">Case Strategy for Cross-Border Elements</strong><span data-i18n="step3_d">We build case strategy around the cross-border elements specific to the family's situation, including assets, children's nationalities, and potential relocation.</span></li>
+<li><strong data-i18n="step4_t">Court Representation</strong><span data-i18n="step4_d">We represent clients before the Personal Status Court, presenting the case with appropriate attention to any applicable foreign law considerations.</span></li>
+<li><strong data-i18n="step5_t">Cross-Border Recognition and Enforcement</strong><span data-i18n="step5_d">Where a judgment needs to be recognized or enforced across borders, we advise on and assist with the relevant recognition process.</span></li>
+<li><strong data-i18n="step6_t">Relocation Planning</strong><span data-i18n="step6_d">Where a parent is considering or facing relocation, we address the custody, travel, and enforcement implications as part of the broader case.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in an Expat Family Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You're a foreign national facing a divorce, custody, or other family matter in the UAE and unsure which country's law applies.</li>
+<li data-i18n="sc2">You have a foreign marriage contract or prenuptial agreement and want to understand how it will be treated here.</li>
+<li data-i18n="sc3">You're considering relocating with your children and need to understand the legal implications.</li>
+<li data-i18n="sc4">You need a foreign judgment or document recognized within the UAE, or a UAE judgment recognized abroad.</li>
+<li data-i18n="sc5">Your family has assets or connections spanning multiple jurisdictions relevant to a divorce or custody matter.</li>
+<li data-i18n="sc6">You need advice on how your children's nationality affects custody or guardianship questions.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Applicable law assessment for expatriate family matters</li>
+<li data-i18n="sv2">Foreign marriage contract and document review</li>
+<li data-i18n="sv3">Cross-border custody and relocation advice</li>
+<li data-i18n="sv4">Representation before the Personal Status Court</li>
+<li data-i18n="sv5">Foreign judgment recognition and enforcement assistance</li>
+<li data-i18n="sv6">Full-service divorce, custody, and maintenance representation</li>
+<li data-i18n="sv7">Guidance on multi-jurisdiction asset and nationality considerations</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Can I request that my home country's law apply to my family case in the UAE?</summary>
+<p data-i18n="faq1_a">In certain circumstances foreign nationals can request this, though it isn't automatic and depends on the specifics of the case and how the request is presented.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Will my foreign marriage contract be recognized in a UAE divorce?</summary>
+<p data-i18n="faq2_a">Foreign marriage contracts are generally reviewed and can influence proceedings, though how they're treated depends on the contract's terms and the applicable legal framework.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Can I relocate abroad with my children after a divorce?</summary>
+<p data-i18n="faq3_a">Relocation with children typically requires either the other parent's consent or court approval, and the legal implications should be addressed before any move takes place.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Will a UAE custody or divorce order be recognized in my home country?</summary>
+<p data-i18n="faq4_a">This depends on your home country's legal framework for recognizing foreign judgments, and it's important to address this question with counsel in both jurisdictions where possible.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Does my child's nationality affect custody decisions?</summary>
+<p data-i18n="faq5_a">A child's nationality can be a relevant factor in certain custody and guardianship considerations, though it's evaluated alongside other factors relevant to the child's welfare.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",family_cat:"Family Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Expat Family Lawyer in Dubai",
+lead:"Family law matters for expatriates in the UAE carry an added layer most local family disputes don't — questions about which country's law applies, how foreign marriages and documents are recognized, and what happens if a family relocates across borders.",
+box:"Foreign nationals in the UAE may in certain circumstances request that their home country's law apply to specific aspects of a family matter, but this isn't automatic, and how the request is framed and evidenced significantly affects whether it succeeds.",
+p1:"Cross-border elements appear throughout expatriate family cases — a marriage contract executed abroad, assets held in multiple jurisdictions, children who hold different nationalities than one or both parents, or a parent planning to relocate after a divorce or custody decision.",
+p2:"Recognition of foreign judgments, documents, and marriage contracts within the UAE system follows specific legal processes, and getting this right early often prevents significant complications later, particularly where enforcement or recognition abroad will also be needed.",
+p3:"We advise and represent expatriate clients across the full range of family law matters, bringing particular attention to the applicable law questions, cross-border recognition issues, and relocation considerations that are distinctive to non-national families.",
+h2_how:"How We Handle Expat Family Matters",
+step1_t:"Nationality and Applicable Law Assessment",step1_d:"We assess the nationality and residency factors relevant to the case and advise on which legal framework is likely to apply and what options exist.",
+step2_t:"Foreign Document Review",step2_d:"We review foreign marriage contracts, prior judgments, and other documents to determine how they'll be treated within the UAE system.",
+step3_t:"Case Strategy for Cross-Border Elements",step3_d:"We build case strategy around the cross-border elements specific to the family's situation, including assets, children's nationalities, and potential relocation.",
+step4_t:"Court Representation",step4_d:"We represent clients before the Personal Status Court, presenting the case with appropriate attention to any applicable foreign law considerations.",
+step5_t:"Cross-Border Recognition and Enforcement",step5_d:"Where a judgment needs to be recognized or enforced across borders, we advise on and assist with the relevant recognition process.",
+step6_t:"Relocation Planning",step6_d:"Where a parent is considering or facing relocation, we address the custody, travel, and enforcement implications as part of the broader case.",
+h2_when:"When to Bring in an Expat Family Lawyer",
+sc1:"You're a foreign national facing a divorce, custody, or other family matter in the UAE and unsure which country's law applies.",
+sc2:"You have a foreign marriage contract or prenuptial agreement and want to understand how it will be treated here.",
+sc3:"You're considering relocating with your children and need to understand the legal implications.",
+sc4:"You need a foreign judgment or document recognized within the UAE, or a UAE judgment recognized abroad.",
+sc5:"Your family has assets or connections spanning multiple jurisdictions relevant to a divorce or custody matter.",
+sc6:"You need advice on how your children's nationality affects custody or guardianship questions.",
+h2_services:"Services We Provide",
+sv1:"Applicable law assessment for expatriate family matters",
+sv2:"Foreign marriage contract and document review",
+sv3:"Cross-border custody and relocation advice",
+sv4:"Representation before the Personal Status Court",
+sv5:"Foreign judgment recognition and enforcement assistance",
+sv6:"Full-service divorce, custody, and maintenance representation",
+sv7:"Guidance on multi-jurisdiction asset and nationality considerations",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Can I request that my home country's law apply to my family case in the UAE?",faq1_a:"In certain circumstances foreign nationals can request this, though it isn't automatic and depends on the specifics of the case and how the request is presented.",
+faq2_q:"Will my foreign marriage contract be recognized in a UAE divorce?",faq2_a:"Foreign marriage contracts are generally reviewed and can influence proceedings, though how they're treated depends on the contract's terms and the applicable legal framework.",
+faq3_q:"Can I relocate abroad with my children after a divorce?",faq3_a:"Relocation with children typically requires either the other parent's consent or court approval, and the legal implications should be addressed before any move takes place.",
+faq4_q:"Will a UAE custody or divorce order be recognized in my home country?",faq4_a:"This depends on your home country's legal framework for recognizing foreign judgments, and it's important to address this question with counsel in both jurisdictions where possible.",
+faq5_q:"Does my child's nationality affect custody decisions?",faq5_a:"A child's nationality can be a relevant factor in certain custody and guardianship considerations, though it's evaluated alongside other factors relevant to the child's welfare."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",family_cat:"قانون الأسرة",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي شؤون الأسرة للأجانب في دبي",
+lead:"تحمل مسائل قانون الأسرة للأجانب في الإمارات طبقة إضافية لا تحملها معظم النزاعات الأسرية المحلية — أسئلة حول قانون أي بلد ينطبق، وكيفية الاعتراف بالزيجات والوثائق الأجنبية، وماذا يحدث إذا انتقلت الأسرة عبر الحدود.",
+box:"يمكن للأجانب في الإمارات في ظروف معينة طلب تطبيق قانون بلدهم الأصلي على جوانب محددة من مسألة أسرية، لكن هذا ليس تلقائيًا، وكيفية صياغة الطلب وإثباته تؤثر بشكل كبير على نجاحه.",
+p1:"تظهر العناصر عبر الحدود في جميع قضايا الأسرة للأجانب — عقد زواج مُبرم في الخارج، أصول محتفظ بها في ولايات قضائية متعددة، أطفال يحملون جنسيات مختلفة عن أحد الوالدين أو كليهما، أو والد يخطط للانتقال بعد قرار طلاق أو حضانة.",
+p2:"يتبع الاعتراف بالأحكام والوثائق وعقود الزواج الأجنبية ضمن النظام الإماراتي عمليات قانونية محددة، والقيام بذلك بشكل صحيح مبكرًا غالبًا ما يمنع تعقيدات كبيرة لاحقًا، خاصة حيثما سيكون التنفيذ أو الاعتراف في الخارج مطلوبًا أيضًا.",
+p3:"نقدم المشورة ونمثل العملاء الأجانب عبر النطاق الكامل لمسائل قانون الأسرة، مع اهتمام خاص بأسئلة القانون المنطبق ومسائل الاعتراف عبر الحدود واعتبارات الانتقال المميزة للأسر غير المواطنة.",
+h2_how:"كيف نتعامل مع مسائل الأسرة للأجانب",
+step1_t:"تقييم الجنسية والقانون المنطبق",step1_d:"نقيّم عوامل الجنسية والإقامة ذات الصلة بالقضية ونقدم المشورة بشأن الإطار القانوني المرجح أن ينطبق والخيارات القائمة.",
+step2_t:"مراجعة الوثائق الأجنبية",step2_d:"نراجع عقود الزواج الأجنبية والأحكام السابقة والوثائق الأخرى لتحديد كيفية التعامل معها ضمن النظام الإماراتي.",
+step3_t:"استراتيجية القضية للعناصر عبر الحدود",step3_d:"نبني استراتيجية القضية حول العناصر عبر الحدود المحددة لوضع الأسرة، بما في ذلك الأصول وجنسيات الأطفال والانتقال المحتمل.",
+step4_t:"التمثيل أمام المحكمة",step4_d:"نمثل العملاء أمام محكمة الأحوال الشخصية، ونعرض القضية مع اهتمام مناسب بأي اعتبارات قانون أجنبي منطبقة.",
+step5_t:"الاعتراف والتنفيذ عبر الحدود",step5_d:"حيثما يحتاج حكم إلى الاعتراف به أو تنفيذه عبر الحدود، نقدم المشورة ونساعد في عملية الاعتراف ذات الصلة.",
+step6_t:"التخطيط للانتقال",step6_d:"حيثما يفكر أحد الوالدين في الانتقال أو يواجهه، نعالج آثار الحضانة والسفر والتنفيذ كجزء من القضية الأوسع.",
+h2_when:"متى تحتاج إلى محامي شؤون أسرة للأجانب",
+sc1:"أنت أجنبي تواجه طلاقًا أو حضانة أو مسألة أسرية أخرى في الإمارات وغير متأكد من قانون أي بلد ينطبق.",
+sc2:"لديك عقد زواج أجنبي أو اتفاقية ما قبل الزواج وتريد فهم كيفية التعامل معها هنا.",
+sc3:"تفكر في الانتقال مع أطفالك وتحتاج إلى فهم الآثار القانونية.",
+sc4:"تحتاج إلى الاعتراف بحكم أو وثيقة أجنبية ضمن الإمارات، أو الاعتراف بحكم إماراتي في الخارج.",
+sc5:"لدى أسرتك أصول أو صلات تمتد عبر ولايات قضائية متعددة ذات صلة بمسألة طلاق أو حضانة.",
+sc6:"تحتاج إلى مشورة بشأن كيفية تأثير جنسية أطفالك على أسئلة الحضانة أو الولاية.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تقييم القانون المنطبق لمسائل الأسرة للأجانب",
+sv2:"مراجعة عقد الزواج الأجنبي والوثائق",
+sv3:"المشورة بشأن الحضانة عبر الحدود والانتقال",
+sv4:"التمثيل أمام محكمة الأحوال الشخصية",
+sv5:"مساعدة الاعتراف بالحكم الأجنبي وتنفيذه",
+sv6:"التمثيل الكامل في الطلاق والحضانة والنفقة",
+sv7:"الإرشاد بشأن اعتبارات الأصول والجنسية متعددة الولايات القضائية",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل يمكنني طلب تطبيق قانون بلدي الأصلي على قضيتي الأسرية في الإمارات؟",faq1_a:"في ظروف معينة يمكن للأجانب طلب ذلك، رغم أنه ليس تلقائيًا ويعتمد على تفاصيل القضية وكيفية تقديم الطلب.",
+faq2_q:"هل سيُعترف بعقد زواجي الأجنبي في طلاق إماراتي؟",faq2_a:"تُراجع عقود الزواج الأجنبية عمومًا ويمكن أن تؤثر على الإجراءات، رغم أن كيفية التعامل معها تعتمد على شروط العقد والإطار القانوني المنطبق.",
+faq3_q:"هل يمكنني الانتقال إلى الخارج مع أطفالي بعد الطلاق؟",faq3_a:"يتطلب الانتقال مع الأطفال عادةً موافقة الوالد الآخر أو موافقة المحكمة، ويجب معالجة الآثار القانونية قبل حدوث أي انتقال.",
+faq4_q:"هل سيُعترف بأمر حضانة أو طلاق إماراتي في بلدي الأصلي؟",faq4_a:"يعتمد ذلك على الإطار القانوني لبلدك الأصلي للاعتراف بالأحكام الأجنبية، ومن المهم معالجة هذا السؤال مع محامٍ في كلتا الولايتين القضائيتين حيثما أمكن.",
+faq5_q:"هل تؤثر جنسية طفلي على قرارات الحضانة؟",faq5_a:"يمكن أن تكون جنسية الطفل عاملاً ذا صلة في اعتبارات معينة للحضانة والولاية، رغم أنها تُقيَّم إلى جانب عوامل أخرى ذات صلة برفاهية الطفل."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",family_cat:"家庭法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜外籍人士家庭法律师",
+lead:"对外籍人士而言，阿联酋的家庭法事务往往比大多数本地家庭纠纷多一层复杂性——涉及适用哪国法律、外国婚姻及文件如何被承认，以及若家庭跨境迁移将发生何种情况等问题。",
+box:"在特定情形下，外籍人士可申请将其本国法律适用于家庭事务的特定方面，但这并非自动适用，申请的表述方式及证据支持将显著影响其成功与否。",
+p1:"跨境因素贯穿于外籍人士的家庭案件中——在境外签订的婚姻合同、分布于多个司法辖区的资产、国籍与父母一方或双方不同的子女，或计划在离婚或监护裁定后迁居的一方父母。",
+p2:"外国判决、文件及婚姻合同在阿联酋体系内的承认遵循特定的法律程序，及早妥善处理往往能避免日后重大的复杂问题，尤其是在日后还需要在境外获得承认或执行的情况下。",
+p3:"我们为外籍客户提供全方位家庭法事务的咨询与代理，特别关注非本国籍家庭所特有的适用法律问题、跨境承认事宜及迁居相关考量。",
+h2_how:"我们如何处理外籍人士家庭事务",
+step1_t:"国籍及适用法律评估",step1_d:"我们评估与案件相关的国籍及居留因素，并就可能适用的法律框架及现有选择提供建议。",
+step2_t:"境外文件审查",step2_d:"我们审查境外婚姻合同、既往判决及其他文件，以确定其在阿联酋体系内将如何被对待。",
+step3_t:"跨境要素案件策略",step3_d:"我们围绕家庭具体情况所特有的跨境要素构建案件策略，包括资产、子女国籍及潜在迁居事宜。",
+step4_t:"法庭代理",step4_d:"我们在属人身份法院代表客户，在提出案件时妥善考虑任何适用的外国法律因素。",
+step5_t:"跨境承认与执行",step5_d:"若判决需要跨境承认或执行，我们就相关承认程序提供建议并给予协助。",
+step6_t:"迁居规划",step6_d:"若父母一方正在考虑或面临迁居，我们将其对监护权、旅行及执行方面的影响纳入更广泛的案件一并处理。",
+h2_when:"何时需要外籍人士家庭法律师",
+sc1:"您是外籍人士，在阿联酋面临离婚、监护权或其他家庭事务，不确定适用哪国法律。",
+sc2:"您持有境外婚姻合同或婚前协议，希望了解其在此地将如何被对待。",
+sc3:"您正考虑携子女迁居，需要了解相关法律影响。",
+sc4:"您需要在阿联酋境内获得境外判决或文件的承认，或需要阿联酋判决在境外获得承认。",
+sc5:"您的家庭拥有跨越多个司法辖区、与离婚或监护事务相关的资产或联系。",
+sc6:"您需要就子女国籍如何影响监护权或监护人身份问题获得建议。",
+h2_services:"我们提供的服务",
+sv1:"外籍人士家庭事务适用法律评估",
+sv2:"境外婚姻合同及文件审查",
+sv3:"跨境监护及迁居建议",
+sv4:"属人身份法院代理",
+sv5:"境外判决承认及执行协助",
+sv6:"全方位离婚、监护及扶养费代理",
+sv7:"跨司法辖区资产及国籍相关事宜指导",
+h2_faq:"常见问题",
+faq1_q:"我能否要求将本国法律适用于我在阿联酋的家庭案件？",faq1_a:"在特定情形下外籍人士可提出此类申请，但这并非自动适用，取决于案件具体情况及申请的呈现方式。",
+faq2_q:"我的境外婚姻合同能否在阿联酋离婚案件中获得承认？",faq2_a:"境外婚姻合同通常会被审查并可能影响诉讼进程，但其被对待的方式取决于合同条款及适用的法律框架。",
+faq3_q:"离婚后我能否携子女迁居海外？",faq3_a:"携子女迁居通常需要另一方父母的同意或法院批准，相关法律影响应在任何迁居行动发生前予以处理。",
+faq4_q:"阿联酋的监护权或离婚令能否在我本国获得承认？",faq4_a:"这取决于您本国承认外国判决的法律框架，尽可能就此问题在两个司法辖区分别咨询律师十分重要。",
+faq5_q:"子女的国籍是否会影响监护权裁定？",faq5_a:"子女的国籍在某些监护权及监护人身份的考量中可能是相关因素，但会与其他关乎子女福祉的因素一并评估。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",family_cat:"Семейное право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по семейному праву для экспатов в Дубае",
+lead:"Вопросы семейного права для иностранцев в ОАЭ содержат дополнительный слой сложности, отсутствующий в большинстве местных семейных споров — вопросы о том, право какой страны применяется, как признаются иностранные браки и документы, и что происходит при переезде семьи через границы.",
+box:"Иностранные граждане в ОАЭ могут в определённых обстоятельствах ходатайствовать о применении законодательства своей родной страны к конкретным аспектам семейного дела, но это не происходит автоматически, и то, как сформулировано и подтверждено ходатайство, существенно влияет на его успех.",
+p1:"Трансграничные элементы присутствуют во всех делах экспатов, связанных с семейным правом — брачный контракт, заключённый за рубежом, активы, находящиеся в нескольких юрисдикциях, дети, имеющие иное гражданство, чем один или оба родителя, или родитель, планирующий переезд после развода или решения об опеке.",
+p2:"Признание иностранных судебных решений, документов и брачных контрактов в системе ОАЭ следует определённым правовым процедурам, и правильное решение этого вопроса на раннем этапе часто предотвращает значительные осложнения впоследствии, особенно там, где также потребуется исполнение или признание за рубежом.",
+p3:"Мы консультируем и представляем клиентов-экспатов по всему спектру вопросов семейного права, уделяя особое внимание вопросам применимого права, вопросам трансграничного признания и соображениям переезда, характерным для семей неграждан.",
+h2_how:"Как мы работаем с семейными делами экспатов",
+step1_t:"Оценка гражданства и применимого права",step1_d:"Мы оцениваем факторы гражданства и проживания, относящиеся к делу, и консультируем о том, какая правовая система, вероятно, будет применяться, и какие варианты существуют.",
+step2_t:"Проверка иностранных документов",step2_d:"Мы изучаем иностранные брачные контракты, предыдущие судебные решения и другие документы, чтобы определить, как они будут рассматриваться в системе ОАЭ.",
+step3_t:"Стратегия дела с учётом трансграничных элементов",step3_d:"Мы выстраиваем стратегию дела с учётом трансграничных элементов, специфичных для ситуации семьи, включая активы, гражданство детей и возможный переезд.",
+step4_t:"Представительство в суде",step4_d:"Мы представляем клиентов в Суде по делам личного статуса, представляя дело с должным вниманием к любым применимым соображениям иностранного права.",
+step5_t:"Трансграничное признание и исполнение",step5_d:"Если решение необходимо признать или исполнить в другой стране, мы консультируем и помогаем с соответствующим процессом признания.",
+step6_t:"Планирование переезда",step6_d:"Если родитель рассматривает или сталкивается с переездом, мы решаем вопросы опеки, поездок и исполнения решений в рамках более широкого дела.",
+h2_when:"Когда обращаться к юристу по семейному праву для экспатов",
+sc1:"Вы иностранный гражданин, столкнувшийся с разводом, опекой или другим семейным делом в ОАЭ, и не уверены, право какой страны применяется.",
+sc2:"У вас есть иностранный брачный контракт или брачный договор, и вы хотите понять, как он будет рассматриваться здесь.",
+sc3:"Вы рассматриваете возможность переезда с детьми и вам необходимо понять юридические последствия.",
+sc4:"Вам необходимо признание иностранного судебного решения или документа в ОАЭ, либо признание решения ОАЭ за рубежом.",
+sc5:"У вашей семьи есть активы или связи в нескольких юрисдикциях, относящиеся к делу о разводе или опеке.",
+sc6:"Вам нужна консультация о том, как гражданство ваших детей влияет на вопросы опеки или попечительства.",
+h2_services:"Наши услуги",
+sv1:"Оценка применимого права для семейных дел экспатов",
+sv2:"Проверка иностранных брачных контрактов и документов",
+sv3:"Консультации по трансграничной опеке и переезду",
+sv4:"Представительство в Суде по делам личного статуса",
+sv5:"Помощь в признании и исполнении иностранных судебных решений",
+sv6:"Полное представительство по делам о разводе, опеке и содержании",
+sv7:"Консультации по вопросам активов и гражданства в нескольких юрисдикциях",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Могу ли я потребовать применения законодательства моей родной страны к моему семейному делу в ОАЭ?",faq1_a:"В определённых обстоятельствах иностранные граждане могут ходатайствовать об этом, хотя это не происходит автоматически и зависит от специфики дела и того, как представлено ходатайство.",
+faq2_q:"Будет ли мой иностранный брачный контракт признан при разводе в ОАЭ?",faq2_a:"Иностранные брачные контракты, как правило, рассматриваются и могут влиять на разбирательство, хотя то, как они рассматриваются, зависит от условий контракта и применимой правовой базы.",
+faq3_q:"Могу ли я переехать за границу с детьми после развода?",faq3_a:"Переезд с детьми обычно требует либо согласия другого родителя, либо разрешения суда, и юридические последствия следует рассмотреть до совершения переезда.",
+faq4_q:"Будет ли решение ОАЭ об опеке или разводе признано в моей родной стране?",faq4_a:"Это зависит от правовой базы вашей родной страны в отношении признания иностранных судебных решений, и важно рассмотреть этот вопрос с юристами в обеих юрисдикциях, если это возможно.",
+faq5_q:"Влияет ли гражданство моего ребёнка на решения об опеке?",faq5_a:"Гражданство ребёнка может быть значимым фактором в определённых вопросах опеки и попечительства, хотя оно оценивается наряду с другими факторами, относящимися к благополучию ребёнка."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",family_cat:"Familienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Familienrecht für Expats in Dubai",
+lead:"Familienrechtliche Angelegenheiten für Ausländer in den VAE tragen eine zusätzliche Ebene, die die meisten lokalen Familienstreitigkeiten nicht haben — Fragen dazu, welches Landesrecht gilt, wie ausländische Ehen und Dokumente anerkannt werden, und was geschieht, wenn eine Familie über Grenzen hinweg umzieht.",
+box:"Ausländische Staatsangehörige in den VAE können unter bestimmten Umständen beantragen, dass das Recht ihres Heimatlandes auf bestimmte Aspekte einer familiären Angelegenheit angewendet wird, dies ist jedoch nicht automatisch, und wie der Antrag formuliert und belegt wird, beeinflusst erheblich, ob er erfolgreich ist.",
+p1:"Grenzüberschreitende Elemente treten in Familienfällen von Ausländern durchgängig auf — ein im Ausland geschlossener Ehevertrag, Vermögenswerte in mehreren Rechtsordnungen, Kinder mit anderer Staatsangehörigkeit als ein oder beide Elternteile, oder ein Elternteil, der nach einer Scheidungs- oder Sorgerechtsentscheidung einen Umzug plant.",
+p2:"Die Anerkennung ausländischer Urteile, Dokumente und Eheverträge innerhalb des VAE-Systems folgt spezifischen rechtlichen Verfahren, und dies frühzeitig richtig anzugehen, verhindert oft erhebliche Komplikationen später, insbesondere dort, wo auch eine Vollstreckung oder Anerkennung im Ausland erforderlich sein wird.",
+p3:"Wir beraten und vertreten ausländische Mandanten im gesamten Spektrum familienrechtlicher Angelegenheiten und legen besonderes Augenmerk auf die Fragen des anwendbaren Rechts, grenzüberschreitende Anerkennungsfragen und Umzugsüberlegungen, die für nicht-emiratische Familien charakteristisch sind.",
+h2_how:"Wie wir familienrechtliche Angelegenheiten für Expats bearbeiten",
+step1_t:"Bewertung von Staatsangehörigkeit und anwendbarem Recht",step1_d:"Wir bewerten die für den Fall relevanten Staatsangehörigkeits- und Aufenthaltsfaktoren und beraten dazu, welcher rechtliche Rahmen wahrscheinlich gilt und welche Optionen bestehen.",
+step2_t:"Prüfung ausländischer Dokumente",step2_d:"Wir prüfen ausländische Eheverträge, frühere Urteile und andere Dokumente, um festzustellen, wie sie innerhalb des VAE-Systems behandelt werden.",
+step3_t:"Fallstrategie für grenzüberschreitende Elemente",step3_d:"Wir entwickeln die Fallstrategie um die grenzüberschreitenden Elemente, die für die Situation der Familie spezifisch sind, einschließlich Vermögenswerte, Staatsangehörigkeit der Kinder und möglichen Umzug.",
+step4_t:"Vertretung vor Gericht",step4_d:"Wir vertreten Mandanten vor dem Personenstandsgericht und legen den Fall mit angemessener Aufmerksamkeit für etwaige anwendbare ausländische Rechtsüberlegungen dar.",
+step5_t:"Grenzüberschreitende Anerkennung und Vollstreckung",step5_d:"Muss ein Urteil grenzüberschreitend anerkannt oder vollstreckt werden, beraten und unterstützen wir bei dem entsprechenden Anerkennungsverfahren.",
+step6_t:"Umzugsplanung",step6_d:"Erwägt ein Elternteil einen Umzug oder steht vor einem solchen, behandeln wir die Auswirkungen auf Sorgerecht, Reisen und Durchsetzung als Teil des umfassenderen Falls.",
+h2_when:"Wann Sie einen Anwalt für Familienrecht für Expats hinzuziehen sollten",
+sc1:"Sie sind ausländischer Staatsangehöriger und stehen vor einer Scheidung, einem Sorgerechts- oder anderen familienrechtlichen Fall in den VAE und sind unsicher, welches Landesrecht gilt.",
+sc2:"Sie haben einen ausländischen Ehevertrag oder Ehevereinbarung und möchten verstehen, wie dieser hier behandelt wird.",
+sc3:"Sie erwägen einen Umzug mit Ihren Kindern und müssen die rechtlichen Auswirkungen verstehen.",
+sc4:"Sie benötigen die Anerkennung eines ausländischen Urteils oder Dokuments innerhalb der VAE, oder ein VAE-Urteil muss im Ausland anerkannt werden.",
+sc5:"Ihre Familie hat Vermögenswerte oder Verbindungen, die sich über mehrere Rechtsordnungen erstrecken und für eine Scheidungs- oder Sorgerechtsangelegenheit relevant sind.",
+sc6:"Sie benötigen Beratung dazu, wie sich die Staatsangehörigkeit Ihrer Kinder auf Sorgerechts- oder Vormundschaftsfragen auswirkt.",
+h2_services:"Unsere Leistungen",
+sv1:"Bewertung des anwendbaren Rechts für familienrechtliche Angelegenheiten von Ausländern",
+sv2:"Prüfung ausländischer Eheverträge und Dokumente",
+sv3:"Beratung zu grenzüberschreitendem Sorgerecht und Umzug",
+sv4:"Vertretung vor dem Personenstandsgericht",
+sv5:"Unterstützung bei Anerkennung und Vollstreckung ausländischer Urteile",
+sv6:"Umfassende Vertretung bei Scheidung, Sorgerecht und Unterhalt",
+sv7:"Beratung zu Vermögens- und Staatsangehörigkeitsüberlegungen in mehreren Rechtsordnungen",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Kann ich beantragen, dass das Recht meines Heimatlandes auf meinen Familienfall in den VAE angewendet wird?",faq1_a:"Unter bestimmten Umständen können ausländische Staatsangehörige dies beantragen, dies ist jedoch nicht automatisch und hängt von den Einzelheiten des Falls und der Art der Antragstellung ab.",
+faq2_q:"Wird mein ausländischer Ehevertrag bei einer Scheidung in den VAE anerkannt?",faq2_a:"Ausländische Eheverträge werden im Allgemeinen geprüft und können das Verfahren beeinflussen, wobei die Behandlung von den Vertragsbedingungen und dem anwendbaren rechtlichen Rahmen abhängt.",
+faq3_q:"Kann ich nach einer Scheidung mit meinen Kindern ins Ausland ziehen?",faq3_a:"Ein Umzug mit Kindern erfordert typischerweise entweder die Zustimmung des anderen Elternteils oder eine gerichtliche Genehmigung, und die rechtlichen Auswirkungen sollten vor jedem Umzug geklärt werden.",
+faq4_q:"Wird eine VAE-Sorgerechts- oder Scheidungsentscheidung in meinem Heimatland anerkannt?",faq4_a:"Dies hängt vom rechtlichen Rahmen Ihres Heimatlandes zur Anerkennung ausländischer Urteile ab, und es ist wichtig, diese Frage nach Möglichkeit mit Rechtsberatern in beiden Rechtsordnungen zu klären.",
+faq5_q:"Beeinflusst die Staatsangehörigkeit meines Kindes Sorgerechtsentscheidungen?",faq5_a:"Die Staatsangehörigkeit eines Kindes kann bei bestimmten Sorgerechts- und Vormundschaftsüberlegungen ein relevanter Faktor sein, wird jedoch zusammen mit anderen für das Wohl des Kindes relevanten Faktoren bewertet."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
