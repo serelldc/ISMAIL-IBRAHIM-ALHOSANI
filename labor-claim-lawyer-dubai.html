@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Labor Claim Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Labor claims in the UAE move through a structured process starting with the Ministry of Human Resources.">
+<meta name="description" content="Labor claim lawyer in Dubai — filing and defending claims through MOHRE and the labor court, from complaint registration to judgment enforcement.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="labor-employment-law.html">Labor & Employment Law</a> &rsaquo; Labor Claim Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="labor-employment-law.html" data-i18n="labor_cat">Labor &amp; Employment Law</a> &rsaquo; <span data-i18n="page_title">Labor Claim Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Labor Claim Lawyer in Dubai</h1>
-  <p class="lead">Labor claims in the UAE move through a structured process starting with the Ministry of Human Resources.</p>
-  <div class="box">A labor claim lawyer in Dubai handles disputes over wages, benefits, and working conditions for employees in the private sector.</div>
-  <p class="body-p">The firm represents workers and employers through the labor complaint and court process.</p>
-  <p class="body-p">Claims are assessed against the employment contract, UAE labor law, and any applicable company policy.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Labor Claim Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Filing a labor claim in the UAE follows a specific procedural path, and understanding what each stage requires — from the initial MOHRE complaint through to court judgment — affects how efficiently a claim actually gets resolved.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A labor claim generally begins with registering a complaint with the Ministry of Human Resources and Emiratisation, which will attempt to mediate before referring unresolved matters to the labor court for formal adjudication.</div>
+
+<p class="body-p" data-i18n="p1">The initial complaint needs to accurately set out the claim's basis and supporting facts, since the framing established at this stage carries through if the matter is later referred to court.</p>
+<p class="body-p" data-i18n="p2">Once a matter reaches the labor court, the claim proceeds through the standard litigation process, requiring evidence, potentially witness testimony, and a judgment that then needs to be enforced.</p>
+<p class="body-p" data-i18n="p3">We handle labor claims from initial MOHRE registration through mediation, court referral where necessary, litigation, and enforcement of the resulting judgment.</p>
+
+<h2 data-i18n="h2_how">How We Handle Labor Claims</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Claim Assessment</strong><span data-i18n="step1_d">We assess the merits of the claim and the evidence available to support it before proceeding.</span></li>
+<li><strong data-i18n="step2_t">MOHRE Complaint Registration</strong><span data-i18n="step2_d">We register the formal complaint with the Ministry of Human Resources and Emiratisation, framing the claim accurately from the outset.</span></li>
+<li><strong data-i18n="step3_t">Mediation Participation</strong><span data-i18n="step3_d">We represent the client through MOHRE's mediation process, seeking resolution without the need for court proceedings.</span></li>
+<li><strong data-i18n="step4_t">Court Referral and Filing</strong><span data-i18n="step4_d">Where mediation doesn't resolve the matter, we handle the referral and filing of the claim with the labor court.</span></li>
+<li><strong data-i18n="step5_t">Litigation Representation</strong><span data-i18n="step5_d">We represent the client's position throughout the court proceedings, including evidence submission and hearings.</span></li>
+<li><strong data-i18n="step6_t">Judgment Enforcement</strong><span data-i18n="step6_d">Once judgment is obtained, we pursue its enforcement to ensure the awarded amounts are actually recovered.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a Labor Claim Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You need to file a claim against an employer for unpaid wages, benefits, or other entitlements.</li>
+<li data-i18n="sc2">A labor claim has been filed against your business and you need representation.</li>
+<li data-i18n="sc3">You've registered a MOHRE complaint and mediation hasn't resolved the matter.</li>
+<li data-i18n="sc4">You've obtained a judgment in your favor but the other party hasn't complied, and you need enforcement assistance.</li>
+<li data-i18n="sc5">You want an assessment of your claim's strength before deciding whether to proceed.</li>
+<li data-i18n="sc6">You need guidance on the procedural steps and likely timeline for a labor claim.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Labor claim merit assessment</li>
+<li data-i18n="sv2">MOHRE complaint registration</li>
+<li data-i18n="sv3">Mediation representation</li>
+<li data-i18n="sv4">Labor court claim filing</li>
+<li data-i18n="sv5">Labor court litigation representation</li>
+<li data-i18n="sv6">Judgment enforcement</li>
+<li data-i18n="sv7">Defense against labor claims</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What's the first step in filing a labor claim in the UAE?</summary>
+<p data-i18n="faq1_a">Most labor claims begin with registering a formal complaint with the Ministry of Human Resources and Emiratisation, which will attempt mediation before the matter can proceed to court.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">What happens during MOHRE mediation?</summary>
+<p data-i18n="faq2_a">The ministry facilitates discussion between the parties to try to reach a resolution without formal litigation, and both sides typically present their position for consideration.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What happens if mediation doesn't resolve the labor claim?</summary>
+<p data-i18n="faq3_a">The matter is generally referred to the labor court, where the claim proceeds through formal litigation with evidence submission and, where relevant, hearings.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">How long does a labor claim typically take to resolve?</summary>
+<p data-i18n="faq4_a">Timing varies based on whether the matter resolves at mediation or requires full court proceedings, and we can give a clearer estimate once we understand the specifics of your claim.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What if the other party doesn't comply with a labor court judgment?</summary>
+<p data-i18n="faq5_a">We can pursue formal enforcement action to ensure a judgment is actually complied with, which is a distinct process from obtaining the judgment itself.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",labor_cat:"Labor & Employment Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Labor Claim Lawyer in Dubai",
+lead:"Filing a labor claim in the UAE follows a specific procedural path, and understanding what each stage requires — from the initial MOHRE complaint through to court judgment — affects how efficiently a claim actually gets resolved.",
+box:"A labor claim generally begins with registering a complaint with the Ministry of Human Resources and Emiratisation, which will attempt to mediate before referring unresolved matters to the labor court for formal adjudication.",
+p1:"The initial complaint needs to accurately set out the claim's basis and supporting facts, since the framing established at this stage carries through if the matter is later referred to court.",
+p2:"Once a matter reaches the labor court, the claim proceeds through the standard litigation process, requiring evidence, potentially witness testimony, and a judgment that then needs to be enforced.",
+p3:"We handle labor claims from initial MOHRE registration through mediation, court referral where necessary, litigation, and enforcement of the resulting judgment.",
+h2_how:"How We Handle Labor Claims",
+step1_t:"Claim Assessment",step1_d:"We assess the merits of the claim and the evidence available to support it before proceeding.",
+step2_t:"MOHRE Complaint Registration",step2_d:"We register the formal complaint with the Ministry of Human Resources and Emiratisation, framing the claim accurately from the outset.",
+step3_t:"Mediation Participation",step3_d:"We represent the client through MOHRE's mediation process, seeking resolution without the need for court proceedings.",
+step4_t:"Court Referral and Filing",step4_d:"Where mediation doesn't resolve the matter, we handle the referral and filing of the claim with the labor court.",
+step5_t:"Litigation Representation",step5_d:"We represent the client's position throughout the court proceedings, including evidence submission and hearings.",
+step6_t:"Judgment Enforcement",step6_d:"Once judgment is obtained, we pursue its enforcement to ensure the awarded amounts are actually recovered.",
+h2_when:"When to Bring in a Labor Claim Lawyer",
+sc1:"You need to file a claim against an employer for unpaid wages, benefits, or other entitlements.",
+sc2:"A labor claim has been filed against your business and you need representation.",
+sc3:"You've registered a MOHRE complaint and mediation hasn't resolved the matter.",
+sc4:"You've obtained a judgment in your favor but the other party hasn't complied, and you need enforcement assistance.",
+sc5:"You want an assessment of your claim's strength before deciding whether to proceed.",
+sc6:"You need guidance on the procedural steps and likely timeline for a labor claim.",
+h2_services:"Services We Provide",
+sv1:"Labor claim merit assessment",
+sv2:"MOHRE complaint registration",
+sv3:"Mediation representation",
+sv4:"Labor court claim filing",
+sv5:"Labor court litigation representation",
+sv6:"Judgment enforcement",
+sv7:"Defense against labor claims",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What's the first step in filing a labor claim in the UAE?",faq1_a:"Most labor claims begin with registering a formal complaint with the Ministry of Human Resources and Emiratisation, which will attempt mediation before the matter can proceed to court.",
+faq2_q:"What happens during MOHRE mediation?",faq2_a:"The ministry facilitates discussion between the parties to try to reach a resolution without formal litigation, and both sides typically present their position for consideration.",
+faq3_q:"What happens if mediation doesn't resolve the labor claim?",faq3_a:"The matter is generally referred to the labor court, where the claim proceeds through formal litigation with evidence submission and, where relevant, hearings.",
+faq4_q:"How long does a labor claim typically take to resolve?",faq4_a:"Timing varies based on whether the matter resolves at mediation or requires full court proceedings, and we can give a clearer estimate once we understand the specifics of your claim.",
+faq5_q:"What if the other party doesn't comply with a labor court judgment?",faq5_a:"We can pursue formal enforcement action to ensure a judgment is actually complied with, which is a distinct process from obtaining the judgment itself."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",labor_cat:"قانون العمل والتوظيف",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي المطالبات العمالية في دبي",
+lead:"يتبع تقديم مطالبة عمالية في الإمارات مسارًا إجرائيًا محددًا، وفهم ما تتطلبه كل مرحلة — من شكوى وزارة الموارد البشرية الأولية وحتى حكم المحكمة — يؤثر على مدى كفاءة حل المطالبة فعليًا.",
+box:"تبدأ المطالبة العمالية عمومًا بتسجيل شكوى لدى وزارة الموارد البشرية والتوطين، التي ستحاول الوساطة قبل إحالة المسائل غير المحلولة إلى محكمة العمل للفصل الرسمي.",
+p1:"تحتاج الشكوى الأولية إلى تحديد أساس المطالبة والوقائع الداعمة بدقة، حيث أن الصياغة المحددة في هذه المرحلة تستمر إذا أُحيلت المسألة لاحقًا إلى المحكمة.",
+p2:"بمجرد وصول مسألة إلى محكمة العمل، تمضي المطالبة عبر عملية التقاضي القياسية، وتتطلب أدلة وربما شهادة شهود وحكمًا يحتاج بعد ذلك إلى التنفيذ.",
+p3:"نتعامل مع المطالبات العمالية من التسجيل الأولي لدى وزارة الموارد البشرية وحتى الوساطة والإحالة إلى المحكمة عند الضرورة والتقاضي وتنفيذ الحكم الناتج.",
+h2_how:"كيف نتعامل مع المطالبات العمالية",
+step1_t:"تقييم المطالبة",step1_d:"نقيّم وجاهة المطالبة والأدلة المتاحة لدعمها قبل المضي قدمًا.",
+step2_t:"تسجيل شكوى وزارة الموارد البشرية",step2_d:"نسجل الشكوى الرسمية لدى وزارة الموارد البشرية والتوطين، ونصيغ المطالبة بدقة منذ البداية.",
+step3_t:"المشاركة في الوساطة",step3_d:"نمثل العميل خلال عملية وساطة وزارة الموارد البشرية، ونسعى للحل دون الحاجة لإجراءات المحكمة.",
+step4_t:"الإحالة إلى المحكمة والتقديم",step4_d:"حيثما لا تحل الوساطة المسألة، نتعامل مع إحالة وتقديم المطالبة إلى محكمة العمل.",
+step5_t:"التمثيل في التقاضي",step5_d:"نمثل موقف العميل طوال إجراءات المحكمة، بما في ذلك تقديم الأدلة وجلسات الاستماع.",
+step6_t:"تنفيذ الحكم",step6_d:"بمجرد الحصول على الحكم، نتابع تنفيذه لضمان استرداد المبالغ الممنوحة فعليًا.",
+h2_when:"متى تحتاج إلى محامي مطالبات عمالية",
+sc1:"تحتاج إلى تقديم مطالبة ضد صاحب عمل بشأن أجور غير مدفوعة أو مزايا أو استحقاقات أخرى.",
+sc2:"تم تقديم مطالبة عمالية ضد شركتك وتحتاج إلى تمثيل.",
+sc3:"سجلت شكوى وزارة موارد بشرية ولم تحل الوساطة المسألة.",
+sc4:"حصلت على حكم لصالحك لكن الطرف الآخر لم يمتثل، وتحتاج إلى مساعدة في التنفيذ.",
+sc5:"تريد تقييمًا لقوة مطالبتك قبل تقرير ما إذا كنت ستمضي قدمًا.",
+sc6:"تحتاج إلى إرشاد بشأن الخطوات الإجرائية والجدول الزمني المرجح لمطالبة عمالية.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تقييم وجاهة المطالبات العمالية",
+sv2:"تسجيل شكاوى وزارة الموارد البشرية",
+sv3:"التمثيل في الوساطة",
+sv4:"تقديم المطالبات لمحكمة العمل",
+sv5:"التمثيل في التقاضي أمام محكمة العمل",
+sv6:"تنفيذ الأحكام",
+sv7:"الدفاع ضد المطالبات العمالية",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما الخطوة الأولى في تقديم مطالبة عمالية في الإمارات؟",faq1_a:"تبدأ معظم المطالبات العمالية بتسجيل شكوى رسمية لدى وزارة الموارد البشرية والتوطين، التي ستحاول الوساطة قبل أن تتمكن المسألة من المضي إلى المحكمة.",
+faq2_q:"ماذا يحدث أثناء وساطة وزارة الموارد البشرية؟",faq2_a:"تسهّل الوزارة النقاش بين الطرفين لمحاولة التوصل إلى حل دون تقاضٍ رسمي، ويعرض الطرفان عادة موقفهما للنظر فيه.",
+faq3_q:"ماذا يحدث إذا لم تحل الوساطة المطالبة العمالية؟",faq3_a:"تُحال المسألة عمومًا إلى محكمة العمل، حيث تمضي المطالبة عبر التقاضي الرسمي مع تقديم الأدلة، وحيثما كان ذا صلة، جلسات الاستماع.",
+faq4_q:"كم من الوقت تستغرق المطالبة العمالية عادة للحل؟",faq4_a:"يختلف التوقيت بناءً على ما إذا كانت المسألة تُحل في الوساطة أو تتطلب إجراءات قضائية كاملة، ويمكننا تقديم تقدير أوضح بمجرد فهمنا لتفاصيل مطالبتك.",
+faq5_q:"ماذا لو لم يمتثل الطرف الآخر لحكم محكمة العمل؟",faq5_a:"يمكننا متابعة إجراءات التنفيذ الرسمية لضمان الامتثال الفعلي للحكم، وهي عملية متميزة عن الحصول على الحكم نفسه."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",labor_cat:"劳动与雇佣法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜劳动索赔律师",
+lead:"在阿联酋提出劳动索赔遵循特定的程序路径，了解每一阶段的要求——从最初的人力资源部投诉到法院判决——直接影响索赔实际得到解决的效率。",
+box:"劳动索赔通常始于向人力资源和阿联酋化部登记投诉，该部门将尝试调解，若未能解决则将案件移交劳动法庭进行正式裁决。",
+p1:"最初的投诉需要准确阐明索赔依据及支持事实，因为该阶段确立的表述若日后移交法院，将延续下去。",
+p2:"案件一旦进入劳动法庭，索赔便进入标准诉讼流程，需要提供证据、可能的证人证言，以及随后需要执行的判决。",
+p3:"我们处理从最初人力资源部登记到调解、必要时移交法院、诉讼以及最终判决执行的整个劳动索赔流程。",
+h2_how:"我们如何处理劳动索赔",
+step1_t:"索赔评估",step1_d:"我们在推进之前评估索赔的成立依据及可用于支持它的证据。",
+step2_t:"人力资源部投诉登记",step2_d:"我们向人力资源和阿联酋化部登记正式投诉，从一开始就准确阐明索赔内容。",
+step3_t:"调解参与",step3_d:"我们代理客户参与人力资源部的调解程序，力求在无需法院程序的情况下达成解决方案。",
+step4_t:"移交法院及提交",step4_d:"若调解未能解决问题，我们负责将索赔移交并提交至劳动法庭。",
+step5_t:"诉讼代理",step5_d:"我们在整个法院程序中代表客户的立场，包括提交证据及出席听证会。",
+step6_t:"判决执行",step6_d:"一旦获得判决，我们推动其执行，以确保裁定金额实际得以追回。",
+h2_when:"何时需要劳动索赔律师",
+sc1:"您需要就未付工资、福利或其他应得权益对雇主提出索赔。",
+sc2:"有劳动索赔已针对您的企业提出，您需要代理。",
+sc3:"您已登记人力资源部投诉，但调解未能解决问题。",
+sc4:"您已获得有利判决，但对方未予遵守，需要协助执行。",
+sc5:"在决定是否推进之前，您希望评估自己索赔的力度。",
+sc6:"您需要就劳动索赔的程序步骤及可能的时间表获得指导。",
+h2_services:"我们提供的服务",
+sv1:"劳动索赔成立依据评估",
+sv2:"人力资源部投诉登记",
+sv3:"调解代理",
+sv4:"劳动法庭索赔提交",
+sv5:"劳动法庭诉讼代理",
+sv6:"判决执行",
+sv7:"劳动索赔抗辩",
+h2_faq:"常见问题",
+faq1_q:"在阿联酋提出劳动索赔的第一步是什么？",faq1_a:"大多数劳动索赔始于向人力资源和阿联酋化部登记正式投诉，该部门将尝试调解，之后案件才能进入法院程序。",
+faq2_q:"人力资源部调解期间会发生什么？",faq2_a:"该部门促成双方之间的讨论，力求在无需正式诉讼的情况下达成解决方案，双方通常均会陈述各自立场以供考虑。",
+faq3_q:"如果调解未能解决劳动索赔会怎样？",faq3_a:"案件通常会移交劳动法庭，索赔随后进入正式诉讼程序，包括提交证据及在相关情况下举行听证会。",
+faq4_q:"劳动索赔通常需要多长时间解决？",faq4_a:"时间因案件是在调解阶段解决还是需要完整法院程序而异，了解您索赔的具体情况后我们可以提供更明确的估计。",
+faq5_q:"如果对方不遵守劳动法庭判决会怎样？",faq5_a:"我们可以采取正式执行行动以确保判决得到实际遵守，这是与获得判决本身不同的一个流程。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",labor_cat:"Трудовое право и занятость",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по трудовым искам в Дубае",
+lead:"Подача трудового иска в ОАЭ следует определённому процедурному пути, и понимание требований каждого этапа — от первоначальной жалобы в Министерство трудовых ресурсов до судебного решения — влияет на то, насколько эффективно иск фактически разрешается.",
+box:"Трудовой иск обычно начинается с регистрации жалобы в Министерстве трудовых ресурсов и эмиратизации, которое попытается провести посредничество, прежде чем направить неурегулированные вопросы в трудовой суд для формального рассмотрения.",
+p1:"Первоначальная жалоба должна точно излагать основание иска и подтверждающие факты, поскольку формулировка, установленная на этом этапе, сохраняется, если дело позже передаётся в суд.",
+p2:"Как только дело достигает трудового суда, иск проходит через стандартный судебный процесс, требующий доказательств, возможных свидетельских показаний и решения, которое затем необходимо исполнить.",
+p3:"Мы занимаемся трудовыми исками от первоначальной регистрации в Министерстве трудовых ресурсов через посредничество, передачу в суд при необходимости, судебное разбирательство и исполнение вынесенного решения.",
+h2_how:"Как мы работаем с трудовыми исками",
+step1_t:"Оценка иска",step1_d:"Мы оцениваем обоснованность иска и доступные доказательства для его поддержки, прежде чем продолжить.",
+step2_t:"Регистрация жалобы в Министерстве трудовых ресурсов",step2_d:"Мы регистрируем официальную жалобу в Министерстве трудовых ресурсов и эмиратизации, точно формулируя иск с самого начала.",
+step3_t:"Участие в посредничестве",step3_d:"Мы представляем клиента в процессе посредничества Министерства трудовых ресурсов, добиваясь урегулирования без необходимости судебного разбирательства.",
+step4_t:"Передача в суд и подача иска",step4_d:"Там, где посредничество не разрешает вопрос, мы занимаемся передачей и подачей иска в трудовой суд.",
+step5_t:"Представительство в судебном разбирательстве",step5_d:"Мы представляем позицию клиента на протяжении всего судебного процесса, включая подачу доказательств и слушания.",
+step6_t:"Исполнение решения",step6_d:"После получения решения мы добиваемся его исполнения, чтобы обеспечить фактическое взыскание присуждённых сумм.",
+h2_when:"Когда обращаться к юристу по трудовым искам",
+sc1:"Вам нужно подать иск против работодателя о невыплаченной заработной плате, льготах или иных причитающихся выплатах.",
+sc2:"Против вашего бизнеса подан трудовой иск, и вам нужно представительство.",
+sc3:"Вы зарегистрировали жалобу в Министерстве трудовых ресурсов, и посредничество не разрешило вопрос.",
+sc4:"Вы получили решение в свою пользу, но другая сторона не выполнила его, и вам нужна помощь в исполнении.",
+sc5:"Вы хотите получить оценку силы вашего иска перед принятием решения о дальнейших действиях.",
+sc6:"Вам нужны рекомендации по процедурным шагам и вероятным срокам трудового иска.",
+h2_services:"Наши услуги",
+sv1:"Оценка обоснованности трудового иска",
+sv2:"Регистрация жалобы в Министерстве трудовых ресурсов",
+sv3:"Представительство в посредничестве",
+sv4:"Подача иска в трудовой суд",
+sv5:"Представительство в судебном разбирательстве в трудовом суде",
+sv6:"Исполнение решения",
+sv7:"Защита от трудовых исков",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Каков первый шаг в подаче трудового иска в ОАЭ?",faq1_a:"Большинство трудовых исков начинается с регистрации официальной жалобы в Министерстве трудовых ресурсов и эмиратизации, которое попытается провести посредничество, прежде чем дело сможет перейти в суд.",
+faq2_q:"Что происходит во время посредничества Министерства трудовых ресурсов?",faq2_a:"Министерство способствует обсуждению между сторонами, чтобы попытаться достичь урегулирования без формального судебного разбирательства, и обе стороны обычно представляют свою позицию для рассмотрения.",
+faq3_q:"Что происходит, если посредничество не разрешает трудовой иск?",faq3_a:"Дело, как правило, передаётся в трудовой суд, где иск проходит через формальное судебное разбирательство с подачей доказательств и, где уместно, слушаниями.",
+faq4_q:"Сколько времени обычно занимает разрешение трудового иска?",faq4_a:"Сроки варьируются в зависимости от того, разрешается ли дело на этапе посредничества или требует полного судебного разбирательства, и мы можем дать более чёткую оценку, как только разберёмся в специфике вашего иска.",
+faq5_q:"Что если другая сторона не выполняет решение трудового суда?",faq5_a:"Мы можем предпринять формальные меры по исполнению, чтобы обеспечить фактическое соблюдение решения, что является отдельным процессом от получения самого решения."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",labor_cat:"Arbeits- und Beschäftigungsrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Arbeitsansprüche in Dubai",
+lead:"Die Einreichung eines Arbeitsanspruchs in den VAE folgt einem spezifischen Verfahrensweg, und das Verständnis dessen, was jede Phase erfordert — von der ursprünglichen MOHRE-Beschwerde bis zum Gerichtsurteil —, beeinflusst, wie effizient ein Anspruch tatsächlich gelöst wird.",
+box:"Ein Arbeitsanspruch beginnt im Allgemeinen mit der Registrierung einer Beschwerde beim Ministerium für Humanressourcen und Emiratisierung, das versuchen wird zu vermitteln, bevor ungelöste Angelegenheiten zur formellen Entscheidung an das Arbeitsgericht verwiesen werden.",
+p1:"Die ursprüngliche Beschwerde muss die Grundlage des Anspruchs und die stützenden Fakten genau darlegen, da die in dieser Phase festgelegte Formulierung fortbesteht, wenn die Angelegenheit später an das Gericht verwiesen wird.",
+p2:"Sobald eine Angelegenheit das Arbeitsgericht erreicht, durchläuft der Anspruch den standardmäßigen Prozessverlauf, der Beweise, möglicherweise Zeugenaussagen und ein Urteil erfordert, das dann durchgesetzt werden muss.",
+p3:"Wir bearbeiten Arbeitsansprüche von der ursprünglichen MOHRE-Registrierung über die Vermittlung, die Verweisung an das Gericht, wo erforderlich, den Rechtsstreit und die Durchsetzung des resultierenden Urteils.",
+h2_how:"Wie wir Arbeitsansprüche handhaben",
+step1_t:"Anspruchsbewertung",step1_d:"Wir bewerten die Begründetheit des Anspruchs und die verfügbaren Beweise zu dessen Unterstützung, bevor wir fortfahren.",
+step2_t:"MOHRE-Beschwerderegistrierung",step2_d:"Wir registrieren die förmliche Beschwerde beim Ministerium für Humanressourcen und Emiratisierung und formulieren den Anspruch von Anfang an genau.",
+step3_t:"Teilnahme an der Vermittlung",step3_d:"Wir vertreten den Mandanten im Vermittlungsverfahren des MOHRE und streben eine Lösung ohne die Notwendigkeit von Gerichtsverfahren an.",
+step4_t:"Gerichtsverweisung und Einreichung",step4_d:"Wo die Vermittlung die Angelegenheit nicht löst, kümmern wir uns um die Verweisung und Einreichung des Anspruchs beim Arbeitsgericht.",
+step5_t:"Prozessvertretung",step5_d:"Wir vertreten die Position des Mandanten während des gesamten Gerichtsverfahrens, einschließlich Beweisvorlage und Verhandlungen.",
+step6_t:"Urteilsdurchsetzung",step6_d:"Sobald ein Urteil erlangt wurde, verfolgen wir dessen Durchsetzung, um sicherzustellen, dass die zugesprochenen Beträge tatsächlich eingezogen werden.",
+h2_when:"Wann Sie einen Anwalt für Arbeitsansprüche hinzuziehen sollten",
+sc1:"Sie müssen einen Anspruch gegen einen Arbeitgeber wegen unbezahlter Löhne, Leistungen oder anderer Ansprüche geltend machen.",
+sc2:"Ein Arbeitsanspruch wurde gegen Ihr Unternehmen eingereicht, und Sie benötigen Vertretung.",
+sc3:"Sie haben eine MOHRE-Beschwerde registriert, und die Vermittlung hat die Angelegenheit nicht gelöst.",
+sc4:"Sie haben ein Urteil zu Ihren Gunsten erhalten, aber die andere Partei ist dem nicht nachgekommen, und Sie benötigen Unterstützung bei der Durchsetzung.",
+sc5:"Sie möchten eine Einschätzung der Stärke Ihres Anspruchs, bevor Sie entscheiden, ob Sie fortfahren.",
+sc6:"Sie benötigen Beratung zu den Verfahrensschritten und dem wahrscheinlichen Zeitrahmen für einen Arbeitsanspruch.",
+h2_services:"Unsere Leistungen",
+sv1:"Bewertung der Begründetheit von Arbeitsansprüchen",
+sv2:"MOHRE-Beschwerderegistrierung",
+sv3:"Vermittlungsvertretung",
+sv4:"Einreichung von Ansprüchen beim Arbeitsgericht",
+sv5:"Prozessvertretung vor dem Arbeitsgericht",
+sv6:"Urteilsdurchsetzung",
+sv7:"Verteidigung gegen Arbeitsansprüche",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist der erste Schritt bei der Einreichung eines Arbeitsanspruchs in den VAE?",faq1_a:"Die meisten Arbeitsansprüche beginnen mit der Registrierung einer förmlichen Beschwerde beim Ministerium für Humanressourcen und Emiratisierung, das eine Vermittlung versuchen wird, bevor die Angelegenheit vor Gericht gehen kann.",
+faq2_q:"Was geschieht während der MOHRE-Vermittlung?",faq2_a:"Das Ministerium erleichtert die Diskussion zwischen den Parteien, um zu versuchen, eine Lösung ohne formellen Rechtsstreit zu erreichen, und beide Seiten legen typischerweise ihre Position zur Prüfung dar.",
+faq3_q:"Was geschieht, wenn die Vermittlung den Arbeitsanspruch nicht löst?",faq3_a:"Die Angelegenheit wird im Allgemeinen an das Arbeitsgericht verwiesen, wo der Anspruch durch formellen Rechtsstreit mit Beweisvorlage und, wo relevant, Verhandlungen fortschreitet.",
+faq4_q:"Wie lange dauert es in der Regel, einen Arbeitsanspruch zu lösen?",faq4_a:"Die Zeitspanne variiert je nachdem, ob die Angelegenheit bei der Vermittlung gelöst wird oder ein vollständiges Gerichtsverfahren erfordert, und wir können eine klarere Schätzung abgeben, sobald wir die Einzelheiten Ihres Anspruchs verstehen.",
+faq5_q:"Was, wenn die andere Partei einem Urteil des Arbeitsgerichts nicht nachkommt?",faq5_a:"Wir können förmliche Durchsetzungsmaßnahmen verfolgen, um sicherzustellen, dass einem Urteil tatsächlich Folge geleistet wird, was ein eigenständiger Prozess ist, der sich von der Erlangung des Urteils selbst unterscheidet."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
