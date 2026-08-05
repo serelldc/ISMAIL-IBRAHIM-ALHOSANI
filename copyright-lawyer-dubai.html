@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Copyright Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Copyright protection in the UAE covers a wide range of creative and commercial works.">
+<meta name="description" content="Copyright lawyer in Dubai — protecting original creative, literary, and software works and pursuing action against unauthorized use under UAE law.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="intellectual-property-law.html">Intellectual Property Law</a> &rsaquo; Copyright Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="intellectual-property-law.html" data-i18n="ip_cat">Intellectual Property Law</a> &rsaquo; <span data-i18n="page_title">Copyright Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Copyright Lawyer in Dubai</h1>
-  <p class="lead">Copyright protection in the UAE covers a wide range of creative and commercial works.</p>
-  <div class="box">This covers protecting and enforcing copyright in written, artistic, and digital works.</div>
-  <p class="body-p">The firm advises on copyright ownership and pursues claims where a client's copyrighted work is used without permission.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Copyright Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Copyright protection in the UAE arises automatically upon the creation of an original work, but proving ownership, authorship, and the scope of protection often becomes important once a dispute or infringement arises.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">Copyright covers a broad range of original works — literary, artistic, musical, and software — and protection is not conditional on registration, though formal deposit can provide useful evidentiary support for ownership claims.</div>
+
+<p class="body-p" data-i18n="p1">Establishing clear ownership becomes particularly important for commissioned works, employee-created works, and collaborative projects, where the default ownership rules may not match what the parties actually intended.</p>
+<p class="body-p" data-i18n="p2">Software and digital content present distinct copyright questions, including how source code, user interfaces, and databases are protected and how licensing terms should be structured.</p>
+<p class="body-p" data-i18n="p3">We advise on copyright ownership and protection strategy, assist with formal deposit where useful, and represent rights holders in enforcement action against unauthorized use.</p>
+
+<h2 data-i18n="h2_how">How We Handle Copyright Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Ownership Assessment</strong><span data-i18n="step1_d">We assess who holds copyright in a given work, particularly for commissioned, employee-created, or collaborative works.</span></li>
+<li><strong data-i18n="step2_t">Protection Strategy</strong><span data-i18n="step2_d">We advise on the appropriate protection strategy for the type of work involved, including whether formal deposit is beneficial.</span></li>
+<li><strong data-i18n="step3_t">Formal Deposit</strong><span data-i18n="step3_d">Where useful, we handle formal copyright deposit to strengthen the evidentiary basis for an ownership claim.</span></li>
+<li><strong data-i18n="step4_t">Licensing Structuring</strong><span data-i18n="step4_d">We structure licensing terms that clearly define how a copyrighted work may be used, distributed, or adapted.</span></li>
+<li><strong data-i18n="step5_t">Infringement Investigation</strong><span data-i18n="step5_d">Where unauthorized use is suspected, we investigate the scope of the infringement and the evidence available.</span></li>
+<li><strong data-i18n="step6_t">Enforcement Action</strong><span data-i18n="step6_d">We pursue enforcement action against unauthorized use, from formal notices through to litigation where necessary.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a Copyright Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You've created an original work and want to understand how to protect and formally establish your ownership of it.</li>
+<li data-i18n="sc2">You've commissioned work from a third party and need clarity on who actually owns the resulting copyright.</li>
+<li data-i18n="sc3">You've discovered unauthorized use or copying of your creative, literary, or software work.</li>
+<li data-i18n="sc4">You need licensing terms drafted for how your copyrighted work can be used by others.</li>
+<li data-i18n="sc5">You're a business owner needing to clarify copyright ownership over work created by employees or contractors.</li>
+<li data-i18n="sc6">You want to understand what protections and limitations apply to software or digital content specifically.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Copyright ownership assessment</li>
+<li data-i18n="sv2">Formal copyright deposit</li>
+<li data-i18n="sv3">Copyright licensing agreement drafting</li>
+<li data-i18n="sv4">Infringement investigation</li>
+<li data-i18n="sv5">Copyright enforcement action</li>
+<li data-i18n="sv6">Employee and contractor work ownership clarification</li>
+<li data-i18n="sv7">Software and digital content copyright advice</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Do I need to register my copyright for it to be protected?</summary>
+<p data-i18n="faq1_a">Copyright protection generally arises automatically upon creation of an original work, though formal deposit can provide useful evidence of ownership and creation date if a dispute arises.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Who owns the copyright in work I commissioned from a freelancer?</summary>
+<p data-i18n="faq2_a">This depends on the terms of the engagement and applicable default rules, which is why clear contractual provisions on ownership are important when commissioning creative or technical work.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What can be done if someone is using my copyrighted work without permission?</summary>
+<p data-i18n="faq3_a">Options range from a formal cease-and-desist notice to litigation, depending on the scope of the infringement and the response received, and we can advise on the most appropriate approach.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Is software protected by copyright in the UAE?</summary>
+<p data-i18n="faq4_a">Yes, software generally falls within copyright protection, though specific questions can arise around source code, interfaces, and how licensing terms should be structured.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Who owns copyright in work created by an employee?</summary>
+<p data-i18n="faq5_a">This is often addressed by employment contract terms, and we advise businesses on structuring these provisions clearly to avoid later ownership disputes.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",ip_cat:"Intellectual Property Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Copyright Lawyer in Dubai",
+lead:"Copyright protection in the UAE arises automatically upon the creation of an original work, but proving ownership, authorship, and the scope of protection often becomes important once a dispute or infringement arises.",
+box:"Copyright covers a broad range of original works — literary, artistic, musical, and software — and protection is not conditional on registration, though formal deposit can provide useful evidentiary support for ownership claims.",
+p1:"Establishing clear ownership becomes particularly important for commissioned works, employee-created works, and collaborative projects, where the default ownership rules may not match what the parties actually intended.",
+p2:"Software and digital content present distinct copyright questions, including how source code, user interfaces, and databases are protected and how licensing terms should be structured.",
+p3:"We advise on copyright ownership and protection strategy, assist with formal deposit where useful, and represent rights holders in enforcement action against unauthorized use.",
+h2_how:"How We Handle Copyright Matters",
+step1_t:"Ownership Assessment",step1_d:"We assess who holds copyright in a given work, particularly for commissioned, employee-created, or collaborative works.",
+step2_t:"Protection Strategy",step2_d:"We advise on the appropriate protection strategy for the type of work involved, including whether formal deposit is beneficial.",
+step3_t:"Formal Deposit",step3_d:"Where useful, we handle formal copyright deposit to strengthen the evidentiary basis for an ownership claim.",
+step4_t:"Licensing Structuring",step4_d:"We structure licensing terms that clearly define how a copyrighted work may be used, distributed, or adapted.",
+step5_t:"Infringement Investigation",step5_d:"Where unauthorized use is suspected, we investigate the scope of the infringement and the evidence available.",
+step6_t:"Enforcement Action",step6_d:"We pursue enforcement action against unauthorized use, from formal notices through to litigation where necessary.",
+h2_when:"When to Bring in a Copyright Lawyer",
+sc1:"You've created an original work and want to understand how to protect and formally establish your ownership of it.",
+sc2:"You've commissioned work from a third party and need clarity on who actually owns the resulting copyright.",
+sc3:"You've discovered unauthorized use or copying of your creative, literary, or software work.",
+sc4:"You need licensing terms drafted for how your copyrighted work can be used by others.",
+sc5:"You're a business owner needing to clarify copyright ownership over work created by employees or contractors.",
+sc6:"You want to understand what protections and limitations apply to software or digital content specifically.",
+h2_services:"Services We Provide",
+sv1:"Copyright ownership assessment",
+sv2:"Formal copyright deposit",
+sv3:"Copyright licensing agreement drafting",
+sv4:"Infringement investigation",
+sv5:"Copyright enforcement action",
+sv6:"Employee and contractor work ownership clarification",
+sv7:"Software and digital content copyright advice",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Do I need to register my copyright for it to be protected?",faq1_a:"Copyright protection generally arises automatically upon creation of an original work, though formal deposit can provide useful evidence of ownership and creation date if a dispute arises.",
+faq2_q:"Who owns the copyright in work I commissioned from a freelancer?",faq2_a:"This depends on the terms of the engagement and applicable default rules, which is why clear contractual provisions on ownership are important when commissioning creative or technical work.",
+faq3_q:"What can be done if someone is using my copyrighted work without permission?",faq3_a:"Options range from a formal cease-and-desist notice to litigation, depending on the scope of the infringement and the response received, and we can advise on the most appropriate approach.",
+faq4_q:"Is software protected by copyright in the UAE?",faq4_a:"Yes, software generally falls within copyright protection, though specific questions can arise around source code, interfaces, and how licensing terms should be structured.",
+faq5_q:"Who owns copyright in work created by an employee?",faq5_a:"This is often addressed by employment contract terms, and we advise businesses on structuring these provisions clearly to avoid later ownership disputes."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",ip_cat:"الملكية الفكرية",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي حقوق النشر في دبي",
+lead:"تنشأ حماية حقوق النشر في الإمارات تلقائيًا عند إنشاء عمل أصلي، لكن إثبات الملكية والتأليف ونطاق الحماية غالبًا ما يصبح مهمًا بمجرد نشوء نزاع أو انتهاك.",
+box:"تغطي حقوق النشر نطاقًا واسعًا من الأعمال الأصلية — الأدبية والفنية والموسيقية والبرمجيات — والحماية ليست مشروطة بالتسجيل، رغم أن الإيداع الرسمي يمكن أن يوفر دعمًا إثباتيًا مفيدًا لمطالبات الملكية.",
+p1:"يصبح تحديد الملكية الواضحة مهمًا بشكل خاص للأعمال المُكلَّف بها والأعمال التي ينشئها الموظفون والمشاريع التعاونية، حيث قد لا تتطابق قواعد الملكية الافتراضية مع ما قصده الأطراف فعليًا.",
+p2:"تطرح البرمجيات والمحتوى الرقمي أسئلة متميزة بشأن حقوق النشر، بما في ذلك كيفية حماية الشفرة المصدرية وواجهات المستخدم وقواعد البيانات وكيفية هيكلة شروط الترخيص.",
+p3:"نقدم المشورة بشأن ملكية حقوق النشر واستراتيجية الحماية، ونساعد في الإيداع الرسمي حيثما كان مفيدًا، ونمثل أصحاب الحقوق في إجراءات الإنفاذ ضد الاستخدام غير المصرح به.",
+h2_how:"كيف نتعامل مع مسائل حقوق النشر",
+step1_t:"تقييم الملكية",step1_d:"نقيّم من يملك حقوق النشر في عمل معين، خاصة للأعمال المُكلَّف بها أو التي ينشئها الموظفون أو التعاونية.",
+step2_t:"استراتيجية الحماية",step2_d:"نقدم المشورة بشأن استراتيجية الحماية المناسبة لنوع العمل المعني، بما في ذلك ما إذا كان الإيداع الرسمي مفيدًا.",
+step3_t:"الإيداع الرسمي",step3_d:"حيثما كان مفيدًا، نتعامل مع إيداع حقوق النشر الرسمي لتعزيز الأساس الإثباتي لمطالبة الملكية.",
+step4_t:"هيكلة الترخيص",step4_d:"نهيكل شروط الترخيص التي تحدد بوضوح كيفية استخدام العمل المحمي بحقوق النشر أو توزيعه أو تعديله.",
+step5_t:"التحقيق في الانتهاك",step5_d:"حيثما يُشتبه في استخدام غير مصرح به، نحقق في نطاق الانتهاك والأدلة المتاحة.",
+step6_t:"إجراءات الإنفاذ",step6_d:"نتابع إجراءات الإنفاذ ضد الاستخدام غير المصرح به، من الإخطارات الرسمية وحتى التقاضي عند الضرورة.",
+h2_when:"متى تحتاج إلى محامي حقوق نشر",
+sc1:"أنشأت عملاً أصليًا وتريد فهم كيفية حماية وإثبات ملكيتك له رسميًا.",
+sc2:"كلّفت طرفًا ثالثًا بعمل وتحتاج إلى وضوح حول من يملك فعليًا حقوق النشر الناتجة.",
+sc3:"اكتشفت استخدامًا أو نسخًا غير مصرح به لعملك الإبداعي أو الأدبي أو البرمجي.",
+sc4:"تحتاج إلى صياغة شروط ترخيص لكيفية استخدام الآخرين لعملك المحمي بحقوق النشر.",
+sc5:"أنت صاحب عمل تحتاج إلى توضيح ملكية حقوق النشر على عمل أنشأه الموظفون أو المقاولون.",
+sc6:"تريد فهم الحماية والقيود التي تنطبق على البرمجيات أو المحتوى الرقمي تحديدًا.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تقييم ملكية حقوق النشر",
+sv2:"الإيداع الرسمي لحقوق النشر",
+sv3:"صياغة اتفاقيات ترخيص حقوق النشر",
+sv4:"التحقيق في الانتهاكات",
+sv5:"إجراءات إنفاذ حقوق النشر",
+sv6:"توضيح ملكية عمل الموظفين والمقاولين",
+sv7:"استشارات حقوق النشر للبرمجيات والمحتوى الرقمي",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل أحتاج إلى تسجيل حقوق النشر الخاصة بي حتى تكون محمية؟",faq1_a:"تنشأ حماية حقوق النشر عمومًا تلقائيًا عند إنشاء عمل أصلي، رغم أن الإيداع الرسمي يمكن أن يوفر دليلاً مفيدًا على الملكية وتاريخ الإنشاء إذا نشأ نزاع.",
+faq2_q:"من يملك حقوق النشر في عمل كلّفت به مستقلاً؟",faq2_a:"يعتمد هذا على شروط التعاقد والقواعد الافتراضية المعمول بها، ولهذا فإن الأحكام التعاقدية الواضحة بشأن الملكية مهمة عند تكليف عمل إبداعي أو تقني.",
+faq3_q:"ماذا يمكن فعله إذا كان شخص ما يستخدم عملي المحمي بحقوق النشر دون إذن؟",faq3_a:"تتراوح الخيارات من إخطار رسمي بالتوقف والامتناع إلى التقاضي، حسب نطاق الانتهاك والرد المستلم، ويمكننا تقديم المشورة بشأن النهج الأنسب.",
+faq4_q:"هل البرمجيات محمية بحقوق النشر في الإمارات؟",faq4_a:"نعم، تندرج البرمجيات عمومًا ضمن حماية حقوق النشر، رغم أنه قد تنشأ أسئلة محددة حول الشفرة المصدرية والواجهات وكيفية هيكلة شروط الترخيص.",
+faq5_q:"من يملك حقوق النشر في عمل أنشأه موظف؟",faq5_a:"غالبًا ما يُعالج هذا بشروط عقد العمل، ونقدم المشورة للشركات بشأن هيكلة هذه الأحكام بوضوح لتجنب نزاعات الملكية لاحقًا."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",ip_cat:"知识产权法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜版权律师",
+lead:"在阿联酋，版权保护自原创作品创作完成之时自动产生，但一旦出现纠纷或侵权，证明所有权、作者身份及保护范围往往变得至关重要。",
+box:"版权涵盖广泛的原创作品——文学、艺术、音乐及软件作品——保护并不以登记为前提条件，尽管正式存档可为所有权主张提供有用的证据支持。",
+p1:"对于委托创作作品、雇员创作作品及协作项目而言，明确所有权变得尤为重要，因为默认的所有权规则可能与各方实际意图并不一致。",
+p2:"软件及数字内容带来了独特的版权问题，包括源代码、用户界面及数据库应如何受保护，以及许可条款应如何构建。",
+p3:"我们就版权所有权及保护策略提供咨询，在有益时协助办理正式存档，并代表权利人针对未经授权的使用采取维权行动。",
+h2_how:"我们如何处理版权事务",
+step1_t:"所有权评估",step1_d:"我们评估特定作品的版权归属，尤其是委托创作、雇员创作或协作创作的作品。",
+step2_t:"保护策略",step2_d:"我们就所涉作品类型的适当保护策略提供建议，包括正式存档是否有益。",
+step3_t:"正式存档",step3_d:"在有益的情况下，我们办理正式版权存档，以加强所有权主张的证据基础。",
+step4_t:"许可条款构建",step4_d:"我们构建明确界定受版权保护作品可如何被使用、分发或改编的许可条款。",
+step5_t:"侵权调查",step5_d:"在怀疑存在未经授权使用的情况下，我们调查侵权范围及可获得的证据。",
+step6_t:"维权行动",step6_d:"我们针对未经授权的使用采取维权行动，从正式通知直至必要时的诉讼。",
+h2_when:"何时需要版权律师",
+sc1:"您已创作了一部原创作品，希望了解如何保护并正式确立您对其的所有权。",
+sc2:"您委托第三方创作作品，需要明确最终版权究竟归谁所有。",
+sc3:"您发现自己的创意、文学或软件作品遭到未经授权的使用或复制。",
+sc4:"您需要就他人如何使用您受版权保护的作品起草许可条款。",
+sc5:"您是企业主，需要就雇员或承包商创作作品的版权归属予以明确。",
+sc6:"您希望了解软件或数字内容specifically适用哪些保护及限制。",
+h2_services:"我们提供的服务",
+sv1:"版权所有权评估",
+sv2:"正式版权存档",
+sv3:"版权许可协议起草",
+sv4:"侵权调查",
+sv5:"版权维权行动",
+sv6:"雇员及承包商作品所有权明确",
+sv7:"软件及数字内容版权咨询",
+h2_faq:"常见问题",
+faq1_q:"我需要登记版权才能获得保护吗？",faq1_a:"版权保护通常在原创作品创作完成时自动产生，但若发生纠纷，正式存档可为所有权及创作日期提供有用的证据。",
+faq2_q:"我委托自由职业者创作的作品版权归谁所有？",faq2_a:"这取决于委托条款及适用的默认规则，因此在委托创意或技术工作时，就所有权作出明确的合同规定十分重要。",
+faq3_q:"如果有人未经许可使用我受版权保护的作品，可以采取什么措施？",faq3_a:"可选方案从正式的停止侵权通知到诉讼不等，取决于侵权范围及所获回应，我们可就最合适的应对方式提供建议。",
+faq4_q:"软件在阿联酋受版权保护吗？",faq4_a:"是的，软件通常属于版权保护范畴，尽管围绕源代码、界面以及许可条款应如何构建可能出现具体问题。",
+faq5_q:"雇员创作的作品版权归谁所有？",faq5_a:"这通常由雇佣合同条款处理，我们为企业就如何明确构建这些条款提供建议，以避免日后的所有权纠纷。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",ip_cat:"Право интеллектуальной собственности",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по авторскому праву в Дубае",
+lead:"Защита авторских прав в ОАЭ возникает автоматически с момента создания оригинального произведения, но доказывание права собственности, авторства и объёма защиты часто становится важным при возникновении спора или нарушения.",
+box:"Авторское право охватывает широкий спектр оригинальных произведений — литературных, художественных, музыкальных и программных, — и защита не обусловлена регистрацией, хотя официальное депонирование может обеспечить полезную доказательную поддержку требований о праве собственности.",
+p1:"Установление чёткого права собственности становится особенно важным для заказных произведений, произведений, созданных сотрудниками, и совместных проектов, где стандартные правила собственности могут не соответствовать тому, что стороны фактически имели в виду.",
+p2:"Программное обеспечение и цифровой контент поднимают особые вопросы авторского права, включая то, как защищаются исходный код, пользовательские интерфейсы и базы данных, и как должны быть структурированы условия лицензирования.",
+p3:"Мы консультируем по вопросам права собственности на авторские произведения и стратегии защиты, помогаем с официальным депонированием там, где это полезно, и представляем правообладателей в мерах по защите от несанкционированного использования.",
+h2_how:"Как мы работаем с вопросами авторского права",
+step1_t:"Оценка права собственности",step1_d:"Мы оцениваем, кто владеет авторским правом на конкретное произведение, особенно для заказных, созданных сотрудниками или совместных произведений.",
+step2_t:"Стратегия защиты",step2_d:"Мы консультируем по подходящей стратегии защиты для конкретного типа произведения, включая вопрос о том, полезно ли официальное депонирование.",
+step3_t:"Официальное депонирование",step3_d:"Там, где это полезно, мы занимаемся официальным депонированием авторских прав для укрепления доказательной базы требования о праве собственности.",
+step4_t:"Структурирование лицензирования",step4_d:"Мы структурируем условия лицензирования, которые чётко определяют, как произведение, охраняемое авторским правом, может использоваться, распространяться или адаптироваться.",
+step5_t:"Расследование нарушения",step5_d:"Там, где подозревается несанкционированное использование, мы расследуем масштаб нарушения и доступные доказательства.",
+step6_t:"Меры по защите прав",step6_d:"Мы предпринимаем меры по защите от несанкционированного использования, от официальных уведомлений до судебного разбирательства при необходимости.",
+h2_when:"Когда обращаться к юристу по авторскому праву",
+sc1:"Вы создали оригинальное произведение и хотите понять, как защитить и официально установить своё право собственности на него.",
+sc2:"Вы заказали работу у третьей стороны и вам нужна ясность относительно того, кому фактически принадлежит возникающее авторское право.",
+sc3:"Вы обнаружили несанкционированное использование или копирование вашего творческого, литературного или программного произведения.",
+sc4:"Вам нужны условия лицензирования, регулирующие использование вашего охраняемого авторским правом произведения другими лицами.",
+sc5:"Вы владелец бизнеса, которому необходимо прояснить право собственности на авторские произведения, созданные сотрудниками или подрядчиками.",
+sc6:"Вы хотите понять, какие меры защиты и ограничения применяются конкретно к программному обеспечению или цифровому контенту.",
+h2_services:"Наши услуги",
+sv1:"Оценка права собственности на авторские произведения",
+sv2:"Официальное депонирование авторских прав",
+sv3:"Составление лицензионных соглашений на авторские права",
+sv4:"Расследование нарушений",
+sv5:"Меры по защите авторских прав",
+sv6:"Прояснение права собственности на произведения сотрудников и подрядчиков",
+sv7:"Консультации по авторскому праву на программное обеспечение и цифровой контент",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Нужно ли мне регистрировать своё авторское право, чтобы оно было защищено?",faq1_a:"Защита авторского права, как правило, возникает автоматически при создании оригинального произведения, хотя официальное депонирование может предоставить полезное доказательство права собственности и даты создания в случае возникновения спора.",
+faq2_q:"Кому принадлежит авторское право на работу, заказанную у фрилансера?",faq2_a:"Это зависит от условий договора и применимых стандартных правил, поэтому при заказе творческой или технической работы важны чёткие договорные положения о праве собственности.",
+faq3_q:"Что можно сделать, если кто-то использует моё произведение, охраняемое авторским правом, без разрешения?",faq3_a:"Варианты варьируются от официального уведомления о прекращении нарушения до судебного разбирательства, в зависимости от масштаба нарушения и полученного ответа, и мы можем проконсультировать по наиболее подходящему подходу.",
+faq4_q:"Защищено ли программное обеспечение авторским правом в ОАЭ?",faq4_a:"Да, программное обеспечение, как правило, подпадает под защиту авторского права, хотя могут возникать конкретные вопросы относительно исходного кода, интерфейсов и того, как должны быть структурированы условия лицензирования.",
+faq5_q:"Кому принадлежит авторское право на произведение, созданное сотрудником?",faq5_a:"Это часто регулируется условиями трудового договора, и мы консультируем компании по чёткому структурированию этих положений во избежание последующих споров о праве собственности."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",ip_cat:"Recht des geistigen Eigentums",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Urheberrecht in Dubai",
+lead:"Urheberrechtlicher Schutz in den VAE entsteht automatisch mit der Schaffung eines Originalwerks, aber der Nachweis von Eigentum, Urheberschaft und Schutzumfang wird oft wichtig, sobald ein Streit oder eine Verletzung auftritt.",
+box:"Das Urheberrecht deckt ein breites Spektrum origineller Werke ab — literarische, künstlerische, musikalische und Software-Werke —, und der Schutz ist nicht an eine Registrierung gebunden, obwohl eine förmliche Hinterlegung nützliche Beweisunterstützung für Eigentumsansprüche bieten kann.",
+p1:"Die Feststellung klarer Eigentumsverhältnisse wird besonders wichtig für Auftragswerke, von Mitarbeitern geschaffene Werke und gemeinschaftliche Projekte, bei denen die Standard-Eigentumsregeln möglicherweise nicht dem entsprechen, was die Parteien tatsächlich beabsichtigt haben.",
+p2:"Software und digitale Inhalte werfen eigene urheberrechtliche Fragen auf, einschließlich wie Quellcode, Benutzeroberflächen und Datenbanken geschützt werden und wie Lizenzbedingungen strukturiert werden sollten.",
+p3:"Wir beraten zu Urheberrechtseigentum und Schutzstrategie, unterstützen bei der förmlichen Hinterlegung, wo sinnvoll, und vertreten Rechteinhaber bei Durchsetzungsmaßnahmen gegen unbefugte Nutzung.",
+h2_how:"Wie wir Urheberrechtsangelegenheiten handhaben",
+step1_t:"Eigentumsbewertung",step1_d:"Wir bewerten, wer das Urheberrecht an einem bestimmten Werk hält, insbesondere bei Auftrags-, Mitarbeiter- oder Gemeinschaftswerken.",
+step2_t:"Schutzstrategie",step2_d:"Wir beraten zur geeigneten Schutzstrategie für die betroffene Werkart, einschließlich der Frage, ob eine förmliche Hinterlegung sinnvoll ist.",
+step3_t:"Förmliche Hinterlegung",step3_d:"Wo sinnvoll, kümmern wir uns um die förmliche Urheberrechtshinterlegung, um die Beweisgrundlage für einen Eigentumsanspruch zu stärken.",
+step4_t:"Lizenzstrukturierung",step4_d:"Wir strukturieren Lizenzbedingungen, die klar definieren, wie ein urheberrechtlich geschütztes Werk genutzt, verbreitet oder bearbeitet werden darf.",
+step5_t:"Verletzungsuntersuchung",step5_d:"Wo unbefugte Nutzung vermutet wird, untersuchen wir den Umfang der Verletzung und die verfügbaren Beweise.",
+step6_t:"Durchsetzungsmaßnahmen",step6_d:"Wir verfolgen Durchsetzungsmaßnahmen gegen unbefugte Nutzung, von förmlichen Mitteilungen bis hin zu Rechtsstreitigkeiten, wo erforderlich.",
+h2_when:"Wann Sie einen Anwalt für Urheberrecht hinzuziehen sollten",
+sc1:"Sie haben ein Originalwerk geschaffen und möchten verstehen, wie Sie Ihr Eigentum daran schützen und förmlich feststellen können.",
+sc2:"Sie haben eine Arbeit bei einem Dritten in Auftrag gegeben und benötigen Klarheit darüber, wem das entstehende Urheberrecht tatsächlich gehört.",
+sc3:"Sie haben die unbefugte Nutzung oder Vervielfältigung Ihres kreativen, literarischen oder Software-Werks entdeckt.",
+sc4:"Sie benötigen Lizenzbedingungen für die Nutzung Ihres urheberrechtlich geschützten Werks durch andere.",
+sc5:"Sie sind Unternehmer und müssen das Urheberrechtseigentum an von Mitarbeitern oder Auftragnehmern geschaffenen Werken klären.",
+sc6:"Sie möchten verstehen, welche Schutzmaßnahmen und Einschränkungen speziell für Software oder digitale Inhalte gelten.",
+h2_services:"Unsere Leistungen",
+sv1:"Bewertung des Urheberrechtseigentums",
+sv2:"Förmliche Urheberrechtshinterlegung",
+sv3:"Erstellung von Urheberrechts-Lizenzvereinbarungen",
+sv4:"Verletzungsuntersuchung",
+sv5:"Urheberrechtsdurchsetzungsmaßnahmen",
+sv6:"Klärung des Werkeigentums von Mitarbeitern und Auftragnehmern",
+sv7:"Beratung zum Urheberrecht bei Software und digitalen Inhalten",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Muss ich mein Urheberrecht registrieren lassen, damit es geschützt ist?",faq1_a:"Urheberrechtlicher Schutz entsteht im Allgemeinen automatisch mit der Schaffung eines Originalwerks, obwohl eine förmliche Hinterlegung nützliche Beweise für Eigentum und Erstellungsdatum liefern kann, falls ein Streit entsteht.",
+faq2_q:"Wem gehört das Urheberrecht an einer Arbeit, die ich bei einem Freelancer in Auftrag gegeben habe?",faq2_a:"Dies hängt von den Bedingungen der Beauftragung und den anwendbaren Standardregeln ab, weshalb klare vertragliche Bestimmungen zum Eigentum bei der Beauftragung kreativer oder technischer Arbeit wichtig sind.",
+faq3_q:"Was kann getan werden, wenn jemand mein urheberrechtlich geschütztes Werk ohne Erlaubnis nutzt?",faq3_a:"Die Optionen reichen von einer förmlichen Unterlassungsaufforderung bis zum Rechtsstreit, abhängig vom Umfang der Verletzung und der erhaltenen Reaktion, und wir können zum geeignetsten Vorgehen beraten.",
+faq4_q:"Ist Software in den VAE urheberrechtlich geschützt?",faq4_a:"Ja, Software fällt im Allgemeinen unter den urheberrechtlichen Schutz, obwohl spezifische Fragen bezüglich Quellcode, Schnittstellen und der Strukturierung von Lizenzbedingungen auftreten können.",
+faq5_q:"Wem gehört das Urheberrecht an einem von einem Mitarbeiter geschaffenen Werk?",faq5_a:"Dies wird oft durch Arbeitsvertragsbedingungen geregelt, und wir beraten Unternehmen bei der klaren Strukturierung dieser Bestimmungen, um spätere Eigentumsstreitigkeiten zu vermeiden."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>

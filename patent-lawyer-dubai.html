@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Patent Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Patent protection gives an inventor exclusive rights in exchange for public disclosure of the invention.">
+<meta name="description" content="Patent lawyer in Dubai — novelty assessment, application drafting, and prosecution before the UAE patent office for inventions and technical processes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="intellectual-property-law.html">Intellectual Property Law</a> &rsaquo; Patent Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="intellectual-property-law.html" data-i18n="ip_cat">Intellectual Property Law</a> &rsaquo; <span data-i18n="page_title">Patent Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Patent Lawyer in Dubai</h1>
-  <p class="lead">Patent protection gives an inventor exclusive rights in exchange for public disclosure of the invention.</p>
-  <div class="box">This covers patent filing strategy and enforcement of patent rights under UAE law.</div>
-  <p class="body-p">The firm advises on patent protection strategy and represents clients in patent enforcement matters.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Patent Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Patent protection requires demonstrating that an invention is genuinely novel, involves an inventive step, and is capable of industrial application — a higher bar than trademark or copyright protection, with its own technical drafting demands.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A patent application has to describe the invention with enough technical precision that a person skilled in the field could reproduce it, while the claims define the precise legal boundaries of what's protected.</div>
+
+<p class="body-p" data-i18n="p1">Before filing, a novelty assessment reviews existing patents and technical literature to gauge whether the invention is likely to meet the patentability requirements and to identify prior art that could pose obstacles.</p>
+<p class="body-p" data-i18n="p2">Claims drafting is one of the most technically demanding aspects of patent work, since claims that are too broad risk rejection while claims that are too narrow leave the protection with limited practical value.</p>
+<p class="body-p" data-i18n="p3">We guide inventors and businesses through the patent process from novelty assessment through application drafting, prosecution before the patent office, and eventual grant.</p>
+
+<h2 data-i18n="h2_how">How We Handle Patent Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Novelty Assessment</strong><span data-i18n="step1_d">We review existing patents and technical literature to assess whether an invention is likely to meet patentability requirements.</span></li>
+<li><strong data-i18n="step2_t">Application Drafting</strong><span data-i18n="step2_d">We draft the technical description and claims with the precision needed to define the invention and its legal boundaries clearly.</span></li>
+<li><strong data-i18n="step3_t">Application Filing</strong><span data-i18n="step3_d">We file the patent application with the appropriate patent office, ensuring all technical and formal requirements are met.</span></li>
+<li><strong data-i18n="step4_t">Examination Response</strong><span data-i18n="step4_d">Where the patent office raises objections during examination, we prepare technical and legal responses addressing the specific concerns.</span></li>
+<li><strong data-i18n="step5_t">Grant Procurement</strong><span data-i18n="step5_d">We follow the application through to grant, securing the formal patent protection for the invention.</span></li>
+<li><strong data-i18n="step6_t">Post-Grant Management</strong><span data-i18n="step6_d">We assist with maintenance requirements and monitoring for potential infringement once the patent is granted.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a Patent Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You've developed an invention and want to assess whether it's likely to meet patentability requirements before filing.</li>
+<li data-i18n="sc2">You need a patent application drafted with claims that provide meaningful, enforceable protection.</li>
+<li data-i18n="sc3">The patent office has raised objections during examination that require a technical and legal response.</li>
+<li data-i18n="sc4">You believe a competitor may be infringing on a patent you hold.</li>
+<li data-i18n="sc5">You want to understand what patent protection actually covers and where its limits lie for your specific invention.</li>
+<li data-i18n="sc6">You need ongoing management of patent maintenance requirements across a portfolio.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Patent novelty assessment</li>
+<li data-i18n="sv2">Patent application drafting</li>
+<li data-i18n="sv3">Patent claims drafting</li>
+<li data-i18n="sv4">Patent office examination responses</li>
+<li data-i18n="sv5">Patent grant procurement</li>
+<li data-i18n="sv6">Patent maintenance management</li>
+<li data-i18n="sv7">Patent infringement assessment</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What does an invention need to meet to be patentable?</summary>
+<p data-i18n="faq1_a">Generally, an invention must be novel, involve an inventive step beyond what would be obvious, and be capable of industrial application, and we assess these factors before recommending an application be filed.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Why does claims drafting matter so much in a patent application?</summary>
+<p data-i18n="faq2_a">Claims define the precise legal scope of what's protected — claims drafted too broadly risk rejection, while claims drafted too narrowly may leave the protection with limited practical value.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">What happens if the patent office objects to my application during examination?</summary>
+<p data-i18n="faq3_a">We review the technical and legal basis for the objection and prepare a response addressing the specific concerns, which is a common part of the patent prosecution process.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Do patents need to be maintained after they're granted?</summary>
+<p data-i18n="faq4_a">Yes, patents typically require periodic maintenance fees or actions to remain in force, and we help track and manage these requirements.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What can I do if I believe someone is infringing my patent?</summary>
+<p data-i18n="faq5_a">We first assess the scope of your patent claims against the suspected infringing activity, then advise on appropriate next steps, which can range from a formal notice to litigation.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",ip_cat:"Intellectual Property Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Patent Lawyer in Dubai",
+lead:"Patent protection requires demonstrating that an invention is genuinely novel, involves an inventive step, and is capable of industrial application — a higher bar than trademark or copyright protection, with its own technical drafting demands.",
+box:"A patent application has to describe the invention with enough technical precision that a person skilled in the field could reproduce it, while the claims define the precise legal boundaries of what's protected.",
+p1:"Before filing, a novelty assessment reviews existing patents and technical literature to gauge whether the invention is likely to meet the patentability requirements and to identify prior art that could pose obstacles.",
+p2:"Claims drafting is one of the most technically demanding aspects of patent work, since claims that are too broad risk rejection while claims that are too narrow leave the protection with limited practical value.",
+p3:"We guide inventors and businesses through the patent process from novelty assessment through application drafting, prosecution before the patent office, and eventual grant.",
+h2_how:"How We Handle Patent Matters",
+step1_t:"Novelty Assessment",step1_d:"We review existing patents and technical literature to assess whether an invention is likely to meet patentability requirements.",
+step2_t:"Application Drafting",step2_d:"We draft the technical description and claims with the precision needed to define the invention and its legal boundaries clearly.",
+step3_t:"Application Filing",step3_d:"We file the patent application with the appropriate patent office, ensuring all technical and formal requirements are met.",
+step4_t:"Examination Response",step4_d:"Where the patent office raises objections during examination, we prepare technical and legal responses addressing the specific concerns.",
+step5_t:"Grant Procurement",step5_d:"We follow the application through to grant, securing the formal patent protection for the invention.",
+step6_t:"Post-Grant Management",step6_d:"We assist with maintenance requirements and monitoring for potential infringement once the patent is granted.",
+h2_when:"When to Bring in a Patent Lawyer",
+sc1:"You've developed an invention and want to assess whether it's likely to meet patentability requirements before filing.",
+sc2:"You need a patent application drafted with claims that provide meaningful, enforceable protection.",
+sc3:"The patent office has raised objections during examination that require a technical and legal response.",
+sc4:"You believe a competitor may be infringing on a patent you hold.",
+sc5:"You want to understand what patent protection actually covers and where its limits lie for your specific invention.",
+sc6:"You need ongoing management of patent maintenance requirements across a portfolio.",
+h2_services:"Services We Provide",
+sv1:"Patent novelty assessment",
+sv2:"Patent application drafting",
+sv3:"Patent claims drafting",
+sv4:"Patent office examination responses",
+sv5:"Patent grant procurement",
+sv6:"Patent maintenance management",
+sv7:"Patent infringement assessment",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What does an invention need to meet to be patentable?",faq1_a:"Generally, an invention must be novel, involve an inventive step beyond what would be obvious, and be capable of industrial application, and we assess these factors before recommending an application be filed.",
+faq2_q:"Why does claims drafting matter so much in a patent application?",faq2_a:"Claims define the precise legal scope of what's protected — claims drafted too broadly risk rejection, while claims drafted too narrowly may leave the protection with limited practical value.",
+faq3_q:"What happens if the patent office objects to my application during examination?",faq3_a:"We review the technical and legal basis for the objection and prepare a response addressing the specific concerns, which is a common part of the patent prosecution process.",
+faq4_q:"Do patents need to be maintained after they're granted?",faq4_a:"Yes, patents typically require periodic maintenance fees or actions to remain in force, and we help track and manage these requirements.",
+faq5_q:"What can I do if I believe someone is infringing my patent?",faq5_a:"We first assess the scope of your patent claims against the suspected infringing activity, then advise on appropriate next steps, which can range from a formal notice to litigation."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",ip_cat:"الملكية الفكرية",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي براءات الاختراع في دبي",
+lead:"تتطلب حماية براءة الاختراع إثبات أن الاختراع جديد بالفعل وينطوي على خطوة ابتكارية وقابل للتطبيق الصناعي — وهو معيار أعلى من حماية العلامة التجارية أو حقوق النشر، مع متطلبات صياغة تقنية خاصة به.",
+box:"يجب أن يصف طلب براءة الاختراع الاختراع بدقة تقنية كافية بحيث يمكن لشخص ماهر في المجال إعادة إنتاجه، بينما تحدد المطالبات الحدود القانونية الدقيقة لما هو محمي.",
+p1:"قبل التقديم، يراجع تقييم الجدة براءات الاختراع القائمة والأدبيات التقنية لتقدير ما إذا كان الاختراع من المرجح أن يستوفي متطلبات القابلية لبراءة الاختراع وتحديد الأسبقية التقنية التي قد تشكل عقبات.",
+p2:"صياغة المطالبات هي أحد الجوانب الأكثر تطلبًا من الناحية التقنية في عمل براءات الاختراع، حيث إن المطالبات الواسعة جدًا تخاطر بالرفض بينما المطالبات الضيقة جدًا تترك الحماية بقيمة عملية محدودة.",
+p3:"نرشد المخترعين والشركات خلال عملية براءة الاختراع من تقييم الجدة إلى صياغة الطلب والملاحقة أمام مكتب براءات الاختراع والمنح النهائي.",
+h2_how:"كيف نتعامل مع مسائل براءات الاختراع",
+step1_t:"تقييم الجدة",step1_d:"نراجع براءات الاختراع القائمة والأدبيات التقنية لتقييم ما إذا كان الاختراع من المرجح أن يستوفي متطلبات القابلية لبراءة الاختراع.",
+step2_t:"صياغة الطلب",step2_d:"نصيغ الوصف التقني والمطالبات بالدقة اللازمة لتحديد الاختراع وحدوده القانونية بوضوح.",
+step3_t:"تقديم الطلب",step3_d:"نقدم طلب براءة الاختراع إلى مكتب براءات الاختراع المختص، مع التأكد من استيفاء جميع المتطلبات التقنية والرسمية.",
+step4_t:"الرد على الفحص",step4_d:"حيثما يثير مكتب براءات الاختراع اعتراضات أثناء الفحص، نُعد ردودًا تقنية وقانونية تعالج المخاوف المحددة.",
+step5_t:"الحصول على المنح",step5_d:"نتابع الطلب حتى المنح، ونؤمّن حماية براءة الاختراع الرسمية للاختراع.",
+step6_t:"إدارة ما بعد المنح",step6_d:"نساعد في متطلبات الصيانة والمراقبة للانتهاك المحتمل بمجرد منح براءة الاختراع.",
+h2_when:"متى تحتاج إلى محامي براءات اختراع",
+sc1:"طورت اختراعًا وتريد تقييم ما إذا كان من المرجح أن يستوفي متطلبات القابلية لبراءة الاختراع قبل التقديم.",
+sc2:"تحتاج إلى صياغة طلب براءة اختراع بمطالبات توفر حماية فعالة وقابلة للتنفيذ.",
+sc3:"أثار مكتب براءات الاختراع اعتراضات أثناء الفحص تتطلب ردًا تقنيًا وقانونيًا.",
+sc4:"تعتقد أن منافسًا قد ينتهك براءة اختراع تملكها.",
+sc5:"تريد فهم ما تغطيه حماية براءة الاختراع فعليًا وأين تكمن حدودها لاختراعك المحدد.",
+sc6:"تحتاج إلى إدارة مستمرة لمتطلبات صيانة براءات الاختراع عبر محفظة.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تقييم جدة براءات الاختراع",
+sv2:"صياغة طلبات براءات الاختراع",
+sv3:"صياغة مطالبات براءات الاختراع",
+sv4:"الرد على فحص مكتب براءات الاختراع",
+sv5:"الحصول على منح براءات الاختراع",
+sv6:"إدارة صيانة براءات الاختراع",
+sv7:"تقييم انتهاك براءات الاختراع",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما الذي يحتاج الاختراع لاستيفائه ليكون قابلاً لبراءة الاختراع؟",faq1_a:"بشكل عام، يجب أن يكون الاختراع جديدًا وينطوي على خطوة ابتكارية تتجاوز ما سيكون بديهيًا وقابلاً للتطبيق الصناعي، ونقيّم هذه العوامل قبل التوصية بتقديم طلب.",
+faq2_q:"لماذا تهم صياغة المطالبات كثيرًا في طلب براءة الاختراع؟",faq2_a:"تحدد المطالبات النطاق القانوني الدقيق لما هو محمي — المطالبات المصاغة بشكل واسع جدًا تخاطر بالرفض، بينما المطالبات المصاغة بشكل ضيق جدًا قد تترك الحماية بقيمة عملية محدودة.",
+faq3_q:"ماذا يحدث إذا اعترض مكتب براءات الاختراع على طلبي أثناء الفحص؟",faq3_a:"نراجع الأساس التقني والقانوني للاعتراض ونُعد ردًا يعالج المخاوف المحددة، وهو جزء شائع من عملية ملاحقة براءة الاختراع.",
+faq4_q:"هل تحتاج براءات الاختراع إلى صيانة بعد منحها؟",faq4_a:"نعم، تتطلب براءات الاختراع عادة رسوم أو إجراءات صيانة دورية للبقاء سارية المفعول، ونساعد في تتبع وإدارة هذه المتطلبات.",
+faq5_q:"ماذا يمكنني أن أفعل إذا اعتقدت أن شخصًا ما ينتهك براءة اختراعي؟",faq5_a:"نقيّم أولاً نطاق مطالبات براءة اختراعك مقابل النشاط المشتبه بانتهاكه، ثم نقدم المشورة بشأن الخطوات التالية المناسبة، والتي يمكن أن تتراوح من إخطار رسمي إلى التقاضي."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",ip_cat:"知识产权法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜专利律师",
+lead:"专利保护要求证明发明具有真正的新颖性、包含创造性步骤且能够工业应用——这一门槛高于商标或版权保护，并有其自身的技术撰写要求。",
+box:"专利申请必须以足够的技术精确度描述发明，使该领域的技术人员能够复现它，而权利要求则界定了受保护内容的精确法律边界。",
+p1:"提交申请前，新颖性评估会审查现有专利及技术文献，以评估该发明是否可能满足可专利性要求，并识别可能构成障碍的现有技术。",
+p2:"权利要求撰写是专利工作中技术要求最高的方面之一，因为权利要求范围过宽有被驳回的风险，而范围过窄则可能使保护的实际价值有限。",
+p3:"我们指导发明人及企业完成从新颖性评估到申请撰写、在专利局的审查程序，直至最终授权的整个专利流程。",
+h2_how:"我们如何处理专利事务",
+step1_t:"新颖性评估",step1_d:"我们审查现有专利及技术文献，评估发明是否可能满足可专利性要求。",
+step2_t:"申请撰写",step2_d:"我们以清晰界定发明及其法律边界所需的精确度撰写技术说明及权利要求。",
+step3_t:"申请提交",step3_d:"我们向相应专利局提交专利申请，确保满足所有技术及形式要求。",
+step4_t:"审查意见回应",step4_d:"若专利局在审查过程中提出异议，我们准备针对具体问题的技术及法律回应。",
+step5_t:"授权取得",step5_d:"我们跟进申请直至获得授权，为发明取得正式的专利保护。",
+step6_t:"授权后管理",step6_d:"专利获得授权后，我们协助维持要求的履行并监测潜在侵权。",
+h2_when:"何时需要专利律师",
+sc1:"您已开发出一项发明，希望在提交申请前评估其是否可能满足可专利性要求。",
+sc2:"您需要撰写具有实质、可执行保护效力的权利要求的专利申请。",
+sc3:"专利局在审查过程中提出异议，需要技术及法律回应。",
+sc4:"您认为竞争对手可能侵犯了您持有的专利。",
+sc5:"您希望了解专利保护实际涵盖的范围以及针对您特定发明的限制所在。",
+sc6:"您需要持续管理整个专利组合的维持要求。",
+h2_services:"我们提供的服务",
+sv1:"专利新颖性评估",
+sv2:"专利申请撰写",
+sv3:"专利权利要求撰写",
+sv4:"专利局审查回应",
+sv5:"专利授权取得",
+sv6:"专利维持管理",
+sv7:"专利侵权评估",
+h2_faq:"常见问题",
+faq1_q:"发明需要满足什么条件才具有可专利性？",faq1_a:"一般而言，发明必须具有新颖性、包含超出显而易见程度的创造性步骤，并能够工业应用，我们在建议提交申请前会评估这些因素。",
+faq2_q:"为什么权利要求撰写在专利申请中如此重要？",faq2_a:"权利要求界定了受保护内容的精确法律范围——撰写过宽的权利要求有被驳回的风险，而撰写过窄的权利要求可能使保护的实际价值有限。",
+faq3_q:"如果专利局在审查过程中对我的申请提出异议会怎样？",faq3_a:"我们审查异议的技术及法律依据，并准备针对具体问题的回应，这是专利审查程序中的常见环节。",
+faq4_q:"专利获得授权后需要维持吗？",faq4_a:"需要，专利通常需要定期缴纳维持费用或采取维持行动方能维持效力，我们协助跟踪并管理这些要求。",
+faq5_q:"如果我认为有人侵犯了我的专利，可以采取什么措施？",faq5_a:"我们首先将您的专利权利要求范围与涉嫌侵权行为进行比对评估，然后就适当的后续步骤提供建议，可能从正式通知到诉讼不等。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",ip_cat:"Право интеллектуальной собственности",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по патентам в Дубае",
+lead:"Патентная защита требует демонстрации того, что изобретение действительно ново, включает изобретательский шаг и способно к промышленному применению — более высокая планка, чем защита товарного знака или авторского права, со своими собственными требованиями к техническому составлению.",
+box:"Патентная заявка должна описывать изобретение с достаточной технической точностью, чтобы специалист в данной области мог воспроизвести его, в то время как формула изобретения определяет точные правовые границы того, что защищено.",
+p1:"Перед подачей заявки оценка новизны рассматривает существующие патенты и техническую литературу, чтобы оценить, вероятно ли изобретение соответствует требованиям патентоспособности, и выявить предшествующий уровень техники, который может создать препятствия.",
+p2:"Составление формулы изобретения — один из наиболее технически сложных аспектов патентной работы, поскольку слишком широкая формула рискует быть отклонённой, а слишком узкая формула оставляет защиту с ограниченной практической ценностью.",
+p3:"Мы сопровождаем изобретателей и компании через патентный процесс от оценки новизны до составления заявки, делопроизводства в патентном ведомстве и последующей выдачи патента.",
+h2_how:"Как мы работаем с патентными вопросами",
+step1_t:"Оценка новизны",step1_d:"Мы рассматриваем существующие патенты и техническую литературу, чтобы оценить, вероятно ли изобретение соответствует требованиям патентоспособности.",
+step2_t:"Составление заявки",step2_d:"Мы составляем техническое описание и формулу изобретения с точностью, необходимой для чёткого определения изобретения и его правовых границ.",
+step3_t:"Подача заявки",step3_d:"Мы подаём патентную заявку в соответствующее патентное ведомство, обеспечивая соблюдение всех технических и формальных требований.",
+step4_t:"Ответ на экспертизу",step4_d:"Там, где патентное ведомство выдвигает возражения в ходе экспертизы, мы готовим технические и правовые ответы, учитывающие конкретные замечания.",
+step5_t:"Получение патента",step5_d:"Мы сопровождаем заявку вплоть до выдачи патента, обеспечивая официальную патентную защиту изобретения.",
+step6_t:"Управление после выдачи патента",step6_d:"Мы помогаем с требованиями по поддержанию патента в силе и отслеживанием потенциальных нарушений после выдачи патента.",
+h2_when:"Когда обращаться к юристу по патентам",
+sc1:"Вы разработали изобретение и хотите оценить, вероятно ли оно соответствует требованиям патентоспособности, прежде чем подавать заявку.",
+sc2:"Вам нужна составленная патентная заявка с формулой, обеспечивающей значимую, подлежащую принудительному исполнению защиту.",
+sc3:"Патентное ведомство выдвинуло возражения в ходе экспертизы, требующие технического и правового ответа.",
+sc4:"Вы считаете, что конкурент может нарушать принадлежащий вам патент.",
+sc5:"Вы хотите понять, что именно охватывает патентная защита и где её пределы для вашего конкретного изобретения.",
+sc6:"Вам нужно текущее управление требованиями по поддержанию патентов в силе в рамках портфеля.",
+h2_services:"Наши услуги",
+sv1:"Оценка новизны патента",
+sv2:"Составление патентной заявки",
+sv3:"Составление формулы изобретения",
+sv4:"Ответы на экспертизу патентного ведомства",
+sv5:"Получение выдачи патента",
+sv6:"Управление поддержанием патентов в силе",
+sv7:"Оценка нарушения патентных прав",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Каким требованиям должно соответствовать изобретение, чтобы быть патентоспособным?",faq1_a:"Как правило, изобретение должно быть новым, включать изобретательский шаг, выходящий за рамки очевидного, и быть способным к промышленному применению, и мы оцениваем эти факторы перед тем, как рекомендовать подачу заявки.",
+faq2_q:"Почему составление формулы изобретения так важно в патентной заявке?",faq2_a:"Формула изобретения определяет точный правовой объём того, что защищено — слишком широко составленная формула рискует быть отклонённой, а слишком узко составленная формула может оставить защиту с ограниченной практической ценностью.",
+faq3_q:"Что происходит, если патентное ведомство возражает против моей заявки в ходе экспертизы?",faq3_a:"Мы рассматриваем техническое и правовое основание для возражения и готовим ответ, учитывающий конкретные замечания, что является обычной частью процесса патентного делопроизводства.",
+faq4_q:"Нужно ли поддерживать патенты после их выдачи?",faq4_a:"Да, патенты обычно требуют периодической уплаты пошлин за поддержание или действий для сохранения силы, и мы помогаем отслеживать и управлять этими требованиями.",
+faq5_q:"Что я могу сделать, если считаю, что кто-то нарушает мой патент?",faq5_a:"Мы сначала оцениваем объём вашей формулы изобретения относительно предполагаемой нарушающей деятельности, затем консультируем о подходящих дальнейших шагах, которые могут варьироваться от официального уведомления до судебного разбирательства."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",ip_cat:"Recht des geistigen Eigentums",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Patentrecht in Dubai",
+lead:"Patentschutz erfordert den Nachweis, dass eine Erfindung tatsächlich neu ist, einen erfinderischen Schritt beinhaltet und gewerblich anwendbar ist — eine höhere Hürde als Marken- oder Urheberrechtsschutz, mit eigenen technischen Anforderungen an die Abfassung.",
+box:"Eine Patentanmeldung muss die Erfindung mit ausreichender technischer Präzision beschreiben, sodass eine fachkundige Person sie nachbilden könnte, während die Ansprüche die genauen rechtlichen Grenzen dessen definieren, was geschützt ist.",
+p1:"Vor der Anmeldung überprüft eine Neuheitsbewertung bestehende Patente und technische Literatur, um zu beurteilen, ob die Erfindung wahrscheinlich die Patentierbarkeitsanforderungen erfüllt, und identifiziert Stand der Technik, der Hindernisse darstellen könnte.",
+p2:"Die Anspruchsformulierung ist einer der technisch anspruchsvollsten Aspekte der Patentarbeit, da zu breit formulierte Ansprüche eine Ablehnung riskieren, während zu eng formulierte Ansprüche den Schutz mit begrenztem praktischem Wert belassen.",
+p3:"Wir begleiten Erfinder und Unternehmen durch den Patentprozess von der Neuheitsbewertung über die Anmeldeabfassung und das Verfahren vor dem Patentamt bis zur endgültigen Erteilung.",
+h2_how:"Wie wir Patentangelegenheiten handhaben",
+step1_t:"Neuheitsbewertung",step1_d:"Wir überprüfen bestehende Patente und technische Literatur, um zu beurteilen, ob eine Erfindung wahrscheinlich die Patentierbarkeitsanforderungen erfüllt.",
+step2_t:"Anmeldeabfassung",step2_d:"Wir verfassen die technische Beschreibung und die Ansprüche mit der Präzision, die erforderlich ist, um die Erfindung und ihre rechtlichen Grenzen klar zu definieren.",
+step3_t:"Anmeldeeinreichung",step3_d:"Wir reichen die Patentanmeldung beim zuständigen Patentamt ein und stellen sicher, dass alle technischen und formalen Anforderungen erfüllt sind.",
+step4_t:"Prüfungsbescheid-Reaktion",step4_d:"Wo das Patentamt während der Prüfung Einwände erhebt, bereiten wir technische und rechtliche Antworten vor, die die spezifischen Bedenken behandeln.",
+step5_t:"Erteilungsbeschaffung",step5_d:"Wir begleiten die Anmeldung bis zur Erteilung und sichern den formellen Patentschutz für die Erfindung.",
+step6_t:"Verwaltung nach Erteilung",step6_d:"Wir unterstützen bei Aufrechterhaltungsanforderungen und der Überwachung potenzieller Verletzungen, sobald das Patent erteilt ist.",
+h2_when:"Wann Sie einen Anwalt für Patentrecht hinzuziehen sollten",
+sc1:"Sie haben eine Erfindung entwickelt und möchten vor der Anmeldung beurteilen, ob sie wahrscheinlich die Patentierbarkeitsanforderungen erfüllt.",
+sc2:"Sie benötigen eine Patentanmeldung mit Ansprüchen, die einen bedeutsamen, durchsetzbaren Schutz bieten.",
+sc3:"Das Patentamt hat während der Prüfung Einwände erhoben, die eine technische und rechtliche Antwort erfordern.",
+sc4:"Sie glauben, dass ein Wettbewerber möglicherweise ein von Ihnen gehaltenes Patent verletzt.",
+sc5:"Sie möchten verstehen, was Patentschutz tatsächlich abdeckt und wo seine Grenzen für Ihre spezifische Erfindung liegen.",
+sc6:"Sie benötigen eine laufende Verwaltung der Aufrechterhaltungsanforderungen über ein Portfolio hinweg.",
+h2_services:"Unsere Leistungen",
+sv1:"Patentneuheitsbewertung",
+sv2:"Patentanmeldungsabfassung",
+sv3:"Patentanspruchsabfassung",
+sv4:"Antworten auf Prüfungsbescheide des Patentamts",
+sv5:"Beschaffung der Patenterteilung",
+sv6:"Verwaltung der Patentaufrechterhaltung",
+sv7:"Bewertung von Patentverletzungen",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was muss eine Erfindung erfüllen, um patentierbar zu sein?",faq1_a:"Im Allgemeinen muss eine Erfindung neu sein, einen erfinderischen Schritt über das Naheliegende hinaus beinhalten und gewerblich anwendbar sein, und wir bewerten diese Faktoren, bevor wir eine Anmeldung empfehlen.",
+faq2_q:"Warum ist die Anspruchsformulierung in einer Patentanmeldung so wichtig?",faq2_a:"Ansprüche definieren den genauen rechtlichen Umfang dessen, was geschützt ist — zu breit formulierte Ansprüche riskieren eine Ablehnung, während zu eng formulierte Ansprüche den Schutz mit begrenztem praktischem Wert belassen können.",
+faq3_q:"Was geschieht, wenn das Patentamt während der Prüfung Einwände gegen meine Anmeldung erhebt?",faq3_a:"Wir prüfen die technische und rechtliche Grundlage des Einwands und bereiten eine Antwort vor, die die spezifischen Bedenken behandelt, was ein üblicher Teil des Patentprüfungsverfahrens ist.",
+faq4_q:"Müssen Patente nach ihrer Erteilung aufrechterhalten werden?",faq4_a:"Ja, Patente erfordern typischerweise periodische Aufrechterhaltungsgebühren oder Maßnahmen, um in Kraft zu bleiben, und wir helfen dabei, diese Anforderungen zu verfolgen und zu verwalten.",
+faq5_q:"Was kann ich tun, wenn ich glaube, dass jemand mein Patent verletzt?",faq5_a:"Wir bewerten zunächst den Umfang Ihrer Patentansprüche im Vergleich zur mutmaßlich verletzenden Tätigkeit und beraten dann zu geeigneten nächsten Schritten, die von einer förmlichen Mitteilung bis zum Rechtsstreit reichen können."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>

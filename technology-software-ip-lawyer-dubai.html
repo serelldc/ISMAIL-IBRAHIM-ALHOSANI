@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Technology & Software Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Software and technology assets raise IP questions that don't map neatly onto traditional categories.">
+<title>Technology &amp; Software Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
+<meta name="description" content="Technology and software IP lawyer in Dubai — protecting source code, algorithms, and data assets, and structuring technology licensing and development agreements.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,78 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="intellectual-property-law.html">Intellectual Property Law</a> &rsaquo; Technology & Software Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="intellectual-property-law.html" data-i18n="ip_cat">Intellectual Property Law</a> &rsaquo; <span data-i18n="page_title">Technology &amp; Software Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Technology & Software Lawyer in Dubai</h1>
-  <p class="lead">Software and technology assets raise IP questions that don't map neatly onto traditional categories.</p>
-  <div class="box">This covers protecting and licensing software, data, and other technology-related IP assets.</div>
-  <p class="body-p">The firm advises technology companies on protecting and commercializing their software and data assets.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Technology &amp; Software Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Software and technology assets raise intellectual property questions that don't map neatly onto traditional categories — a single product can involve copyright in code, potential patent protection for underlying processes, and trade secret considerations for proprietary algorithms.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">Technology IP protection typically combines several tools simultaneously: copyright protects source code as written, trade secret protection can cover algorithms and processes kept confidential, and patents may be available for sufficiently inventive technical processes.</div>
+
+<p class="body-p" data-i18n="p1">Development agreements need clear provisions on who owns the resulting IP, particularly where a client commissions custom software or where a founding team's contributions need to be formally assigned to a company.</p>
+<p class="body-p" data-i18n="p2">Open source components used within proprietary software raise licensing compliance questions that need to be addressed to avoid inadvertently exposing proprietary code to open source license obligations.</p>
+<p class="body-p" data-i18n="p3">We advise on protecting technology and software assets through the appropriate combination of copyright, trade secret, and patent strategies, and structure development and licensing agreements that reflect actual ownership intentions.</p>
+
+<h2 data-i18n="h2_how">How We Handle Technology &amp; Software IP</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">IP Asset Identification</strong><span data-i18n="step1_d">We identify the specific IP assets within a technology product — code, algorithms, processes, and data — and the protection each requires.</span></li>
+<li><strong data-i18n="step2_t">Protection Strategy</strong><span data-i18n="step2_d">We advise on the appropriate combination of copyright, trade secret, and patent protection for the specific technology involved.</span></li>
+<li><strong data-i18n="step3_t">Development Agreement Drafting</strong><span data-i18n="step3_d">We draft development agreements with clear IP ownership provisions for commissioned software and collaborative technical work.</span></li>
+<li><strong data-i18n="step4_t">Open Source Compliance Review</strong><span data-i18n="step4_d">We review open source components used within a product to assess licensing compliance and potential exposure.</span></li>
+<li><strong data-i18n="step5_t">Founder and Team IP Assignment</strong><span data-i18n="step5_d">We handle formal assignment of IP contributed by founders or team members to ensure the company holds clear ownership.</span></li>
+<li><strong data-i18n="step6_t">Licensing Structuring</strong><span data-i18n="step6_d">We structure technology licensing agreements for software, platforms, or technical processes being licensed to or from third parties.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a Technology &amp; Software Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You're developing software and need clarity on how to protect the code, algorithms, and underlying processes.</li>
+<li data-i18n="sc2">You're commissioning custom software development and need the agreement to clearly assign resulting IP ownership to you.</li>
+<li data-i18n="sc3">Your product uses open source components and you need to assess licensing compliance risk.</li>
+<li data-i18n="sc4">You need to formally assign IP contributed by founders or early team members to your company.</li>
+<li data-i18n="sc5">You're licensing your technology to another business or acquiring a license to use someone else's.</li>
+<li data-i18n="sc6">You want to understand what combination of copyright, patent, and trade secret protection applies to your specific technology.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Technology IP asset identification</li>
+<li data-i18n="sv2">Software protection strategy advice</li>
+<li data-i18n="sv3">Development agreement drafting</li>
+<li data-i18n="sv4">Open source licensing compliance review</li>
+<li data-i18n="sv5">Founder and team IP assignment</li>
+<li data-i18n="sv6">Technology licensing agreement drafting</li>
+<li data-i18n="sv7">Trade secret protection advice</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">How is software actually protected under intellectual property law?</summary>
+<p data-i18n="faq1_a">Software typically involves multiple forms of protection simultaneously — copyright protects the code as written, trade secret protection can cover confidential algorithms, and patents may be available for sufficiently inventive technical processes.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Who owns the IP in software I commission from a development agency?</summary>
+<p data-i18n="faq2_a">This depends entirely on the terms of the development agreement, which is why clear ownership assignment provisions are essential when commissioning custom software.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Does using open source code in my product create legal risk?</summary>
+<p data-i18n="faq3_a">It can, depending on the specific open source licenses involved and how the components are integrated, which is why a compliance review is important before shipping a product with open source dependencies.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Do I need to formally assign IP from my company's founders to the company itself?</summary>
+<p data-i18n="faq4_a">Yes, this is an important step to ensure the company actually owns the technology it was founded on, rather than relying on informal understanding among founders.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What's the difference between protecting an algorithm as a trade secret versus patenting it?</summary>
+<p data-i18n="faq5_a">Trade secret protection relies on confidentiality and lasts as long as secrecy is maintained, while a patent provides defined-term exclusive rights but requires public disclosure of how the invention works — the right choice depends on the specific circumstances.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",ip_cat:"Intellectual Property Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Technology & Software Lawyer in Dubai",
+lead:"Software and technology assets raise intellectual property questions that don't map neatly onto traditional categories — a single product can involve copyright in code, potential patent protection for underlying processes, and trade secret considerations for proprietary algorithms.",
+box:"Technology IP protection typically combines several tools simultaneously: copyright protects source code as written, trade secret protection can cover algorithms and processes kept confidential, and patents may be available for sufficiently inventive technical processes.",
+p1:"Development agreements need clear provisions on who owns the resulting IP, particularly where a client commissions custom software or where a founding team's contributions need to be formally assigned to a company.",
+p2:"Open source components used within proprietary software raise licensing compliance questions that need to be addressed to avoid inadvertently exposing proprietary code to open source license obligations.",
+p3:"We advise on protecting technology and software assets through the appropriate combination of copyright, trade secret, and patent strategies, and structure development and licensing agreements that reflect actual ownership intentions.",
+h2_how:"How We Handle Technology & Software IP",
+step1_t:"IP Asset Identification",step1_d:"We identify the specific IP assets within a technology product — code, algorithms, processes, and data — and the protection each requires.",
+step2_t:"Protection Strategy",step2_d:"We advise on the appropriate combination of copyright, trade secret, and patent protection for the specific technology involved.",
+step3_t:"Development Agreement Drafting",step3_d:"We draft development agreements with clear IP ownership provisions for commissioned software and collaborative technical work.",
+step4_t:"Open Source Compliance Review",step4_d:"We review open source components used within a product to assess licensing compliance and potential exposure.",
+step5_t:"Founder and Team IP Assignment",step5_d:"We handle formal assignment of IP contributed by founders or team members to ensure the company holds clear ownership.",
+step6_t:"Licensing Structuring",step6_d:"We structure technology licensing agreements for software, platforms, or technical processes being licensed to or from third parties.",
+h2_when:"When to Bring in a Technology & Software Lawyer",
+sc1:"You're developing software and need clarity on how to protect the code, algorithms, and underlying processes.",
+sc2:"You're commissioning custom software development and need the agreement to clearly assign resulting IP ownership to you.",
+sc3:"Your product uses open source components and you need to assess licensing compliance risk.",
+sc4:"You need to formally assign IP contributed by founders or early team members to your company.",
+sc5:"You're licensing your technology to another business or acquiring a license to use someone else's.",
+sc6:"You want to understand what combination of copyright, patent, and trade secret protection applies to your specific technology.",
+h2_services:"Services We Provide",
+sv1:"Technology IP asset identification",
+sv2:"Software protection strategy advice",
+sv3:"Development agreement drafting",
+sv4:"Open source licensing compliance review",
+sv5:"Founder and team IP assignment",
+sv6:"Technology licensing agreement drafting",
+sv7:"Trade secret protection advice",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"How is software actually protected under intellectual property law?",faq1_a:"Software typically involves multiple forms of protection simultaneously — copyright protects the code as written, trade secret protection can cover confidential algorithms, and patents may be available for sufficiently inventive technical processes.",
+faq2_q:"Who owns the IP in software I commission from a development agency?",faq2_a:"This depends entirely on the terms of the development agreement, which is why clear ownership assignment provisions are essential when commissioning custom software.",
+faq3_q:"Does using open source code in my product create legal risk?",faq3_a:"It can, depending on the specific open source licenses involved and how the components are integrated, which is why a compliance review is important before shipping a product with open source dependencies.",
+faq4_q:"Do I need to formally assign IP from my company's founders to the company itself?",faq4_a:"Yes, this is an important step to ensure the company actually owns the technology it was founded on, rather than relying on informal understanding among founders.",
+faq5_q:"What's the difference between protecting an algorithm as a trade secret versus patenting it?",faq5_a:"Trade secret protection relies on confidentiality and lasts as long as secrecy is maintained, while a patent provides defined-term exclusive rights but requires public disclosure of how the invention works — the right choice depends on the specific circumstances."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",ip_cat:"الملكية الفكرية",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي التكنولوجيا والبرمجيات في دبي",
+lead:"تثير أصول البرمجيات والتكنولوجيا أسئلة بشأن الملكية الفكرية لا تتناسب بدقة مع الفئات التقليدية — يمكن أن ينطوي منتج واحد على حقوق نشر في الشفرة، وحماية براءة اختراع محتملة للعمليات الأساسية، واعتبارات الأسرار التجارية للخوارزميات الخاصة.",
+box:"عادة ما تجمع حماية ملكية التكنولوجيا الفكرية بين عدة أدوات في وقت واحد: تحمي حقوق النشر الشفرة المصدرية كما هي مكتوبة، ويمكن أن تغطي حماية الأسرار التجارية الخوارزميات والعمليات التي تُبقى سرية، وقد تتوفر براءات الاختراع للعمليات التقنية المبتكرة بما فيه الكفاية.",
+p1:"تحتاج اتفاقيات التطوير إلى أحكام واضحة بشأن من يملك الملكية الفكرية الناتجة، خاصة حيثما يُكلّف عميل بتطوير برمجيات مخصصة أو حيثما تحتاج مساهمات فريق مؤسس إلى أن تُخصص رسميًا لشركة.",
+p2:"تثير مكونات المصدر المفتوح المستخدمة داخل برمجيات خاصة أسئلة امتثال الترخيص التي تحتاج إلى معالجة لتجنب تعريض الشفرة الخاصة عن غير قصد لالتزامات ترخيص المصدر المفتوح.",
+p3:"نقدم المشورة بشأن حماية أصول التكنولوجيا والبرمجيات من خلال المزيج المناسب من استراتيجيات حقوق النشر والأسرار التجارية وبراءات الاختراع، ونهيكل اتفاقيات التطوير والترخيص التي تعكس نوايا الملكية الفعلية.",
+h2_how:"كيف نتعامل مع ملكية التكنولوجيا والبرمجيات الفكرية",
+step1_t:"تحديد أصول الملكية الفكرية",step1_d:"نحدد أصول الملكية الفكرية المحددة داخل منتج تكنولوجي — الشفرة والخوارزميات والعمليات والبيانات — والحماية التي يتطلبها كل منها.",
+step2_t:"استراتيجية الحماية",step2_d:"نقدم المشورة بشأن المزيج المناسب من حماية حقوق النشر والأسرار التجارية وبراءات الاختراع للتكنولوجيا المحددة المعنية.",
+step3_t:"صياغة اتفاقية التطوير",step3_d:"نصيغ اتفاقيات التطوير بأحكام ملكية فكرية واضحة للبرمجيات المُكلّف بها والعمل التقني التعاوني.",
+step4_t:"مراجعة امتثال المصدر المفتوح",step4_d:"نراجع مكونات المصدر المفتوح المستخدمة داخل منتج لتقييم امتثال الترخيص والتعرض المحتمل.",
+step5_t:"تخصيص ملكية فكرية المؤسسين والفريق",step5_d:"نتعامل مع التخصيص الرسمي للملكية الفكرية المُساهم بها من المؤسسين أو أعضاء الفريق لضمان امتلاك الشركة لملكية واضحة.",
+step6_t:"هيكلة الترخيص",step6_d:"نهيكل اتفاقيات ترخيص التكنولوجيا للبرمجيات أو المنصات أو العمليات التقنية المرخصة لأطراف ثالثة أو منها.",
+h2_when:"متى تحتاج إلى محامي تكنولوجيا وبرمجيات",
+sc1:"تطور برمجيات وتحتاج إلى وضوح حول كيفية حماية الشفرة والخوارزميات والعمليات الأساسية.",
+sc2:"تُكلّف بتطوير برمجيات مخصصة وتحتاج إلى أن تُخصص الاتفاقية بوضوح ملكية الملكية الفكرية الناتجة لك.",
+sc3:"يستخدم منتجك مكونات مصدر مفتوح وتحتاج إلى تقييم مخاطر امتثال الترخيص.",
+sc4:"تحتاج إلى تخصيص رسمي للملكية الفكرية المُساهم بها من المؤسسين أو أعضاء الفريق الأوائل لشركتك.",
+sc5:"ترخص تكنولوجيتك لشركة أخرى أو تحصل على ترخيص لاستخدام تكنولوجيا شخص آخر.",
+sc6:"تريد فهم مزيج حماية حقوق النشر وبراءات الاختراع والأسرار التجارية الذي ينطبق على تكنولوجيتك المحددة.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تحديد أصول ملكية التكنولوجيا الفكرية",
+sv2:"استشارات استراتيجية حماية البرمجيات",
+sv3:"صياغة اتفاقيات التطوير",
+sv4:"مراجعة امتثال ترخيص المصدر المفتوح",
+sv5:"تخصيص ملكية فكرية المؤسسين والفريق",
+sv6:"صياغة اتفاقيات ترخيص التكنولوجيا",
+sv7:"استشارات حماية الأسرار التجارية",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"كيف تُحمى البرمجيات فعليًا بموجب قانون الملكية الفكرية؟",faq1_a:"عادة ما تنطوي البرمجيات على أشكال متعددة من الحماية في وقت واحد — تحمي حقوق النشر الشفرة كما هي مكتوبة، ويمكن أن تغطي حماية الأسرار التجارية الخوارزميات السرية، وقد تتوفر براءات الاختراع للعمليات التقنية المبتكرة بما فيه الكفاية.",
+faq2_q:"من يملك الملكية الفكرية في برمجيات أُكلّف بها من وكالة تطوير؟",faq2_a:"يعتمد هذا كليًا على شروط اتفاقية التطوير، ولهذا فإن أحكام تخصيص الملكية الواضحة ضرورية عند تكليف تطوير برمجيات مخصصة.",
+faq3_q:"هل يخلق استخدام شفرة مصدر مفتوح في منتجي مخاطر قانونية؟",faq3_a:"يمكن ذلك، حسب تراخيص المصدر المفتوح المحددة المعنية وكيفية دمج المكونات، ولهذا فإن مراجعة الامتثال مهمة قبل إطلاق منتج به تبعيات مصدر مفتوح.",
+faq4_q:"هل أحتاج إلى تخصيص الملكية الفكرية رسميًا من مؤسسي شركتي إلى الشركة نفسها؟",faq4_a:"نعم، هذه خطوة مهمة لضمان أن الشركة تملك فعليًا التكنولوجيا التي تأسست عليها، بدلاً من الاعتماد على تفاهم غير رسمي بين المؤسسين.",
+faq5_q:"ما الفرق بين حماية خوارزمية كسر تجاري مقابل الحصول على براءة اختراع لها؟",faq5_a:"تعتمد حماية السر التجاري على السرية وتستمر طالما تم الحفاظ على السرية، بينما توفر براءة الاختراع حقوقًا حصرية محددة المدة لكنها تتطلب الكشف العلني عن كيفية عمل الاختراع — يعتمد الاختيار الصحيح على الظروف المحددة."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",ip_cat:"知识产权法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜科技与软件律师",
+lead:"软件及科技资产引发的知识产权问题往往无法简单归入传统类别——单一产品可能同时涉及代码的版权、底层流程的潜在专利保护，以及专有算法的商业秘密考量。",
+box:"科技知识产权保护通常同时结合多种工具：版权保护书面形式的源代码，商业秘密保护可涵盖保密的算法及流程，而对于具有足够创造性的技术流程，则可能获得专利保护。",
+p1:"开发协议需要就产生的知识产权归属作出明确规定，尤其是在客户委托定制软件开发，或创始团队的贡献需要正式转让给公司的情况下。",
+p2:"在专有软件中使用的开源组件会引发许可合规问题，需妥善处理，以避免专有代码在不经意间受到开源许可义务的约束。",
+p3:"我们就通过适当组合版权、商业秘密及专利策略来保护科技及软件资产提供咨询，并构建反映实际所有权意图的开发及许可协议。",
+h2_how:"我们如何处理科技与软件知识产权事务",
+step1_t:"知识产权资产识别",step1_d:"我们识别科技产品中的具体知识产权资产——代码、算法、流程及数据——以及各自所需的保护。",
+step2_t:"保护策略",step2_d:"我们就所涉具体科技适当组合版权、商业秘密及专利保护提供建议。",
+step3_t:"开发协议起草",step3_d:"我们为委托软件开发及协作技术工作起草具有明确知识产权归属条款的开发协议。",
+step4_t:"开源合规审查",step4_d:"我们审查产品中使用的开源组件，评估许可合规性及潜在风险。",
+step5_t:"创始人及团队知识产权转让",step5_d:"我们办理创始人或团队成员所贡献知识产权的正式转让，确保公司拥有明确的所有权。",
+step6_t:"许可结构安排",step6_d:"我们为授予第三方或从第三方获取许可的软件、平台或技术流程构建技术许可协议。",
+h2_when:"何时需要科技与软件律师",
+sc1:"您正在开发软件，需要明确如何保护代码、算法及底层流程。",
+sc2:"您正委托定制软件开发，需要协议明确将由此产生的知识产权归属于您。",
+sc3:"您的产品使用了开源组件，需要评估许可合规风险。",
+sc4:"您需要将创始人或早期团队成员所贡献的知识产权正式转让给公司。",
+sc5:"您正将自己的科技许可给其他企业，或正获取使用他人科技的许可。",
+sc6:"您希望了解版权、专利及商业秘密保护的哪种组合适用于您的具体科技。",
+h2_services:"我们提供的服务",
+sv1:"科技知识产权资产识别",
+sv2:"软件保护策略咨询",
+sv3:"开发协议起草",
+sv4:"开源许可合规审查",
+sv5:"创始人及团队知识产权转让",
+sv6:"技术许可协议起草",
+sv7:"商业秘密保护咨询",
+h2_faq:"常见问题",
+faq1_q:"软件在知识产权法下究竟是如何受到保护的？",faq1_a:"软件通常同时涉及多种保护形式——版权保护书面形式的代码，商业秘密保护可涵盖保密算法，而对于具有足够创造性的技术流程，则可能获得专利保护。",
+faq2_q:"我委托开发机构开发的软件知识产权归谁所有？",faq2_a:"这完全取决于开发协议的条款，因此在委托定制软件开发时，明确的所有权转让条款至关重要。",
+faq3_q:"在我的产品中使用开源代码是否会产生法律风险？",faq3_a:"有可能，这取决于所涉及的具体开源许可及组件的集成方式，因此在发布带有开源依赖项的产品前进行合规审查十分重要。",
+faq4_q:"我是否需要将知识产权从公司创始人正式转让给公司本身？",faq4_a:"是的，这是确保公司真正拥有其赖以成立的科技的重要步骤，而不是依赖创始人之间的非正式默契。",
+faq5_q:"将算法作为商业秘密保护与申请专利有何区别？",faq5_a:"商业秘密保护依赖于保密性，只要保密状态得以维持便可持续，而专利提供有期限的独占权，但需要公开披露发明的运作方式——正确的选择取决于具体情况。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",ip_cat:"Право интеллектуальной собственности",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по технологиям и программному обеспечению в Дубае",
+lead:"Программные и технологические активы поднимают вопросы интеллектуальной собственности, которые не вписываются чётко в традиционные категории — один продукт может включать авторское право на код, потенциальную патентную защиту базовых процессов и соображения коммерческой тайны для проприетарных алгоритмов.",
+box:"Защита технологической ИС обычно сочетает несколько инструментов одновременно: авторское право защищает исходный код в том виде, в каком он написан, защита коммерческой тайны может охватывать алгоритмы и процессы, сохраняемые конфиденциальными, а патенты могут быть доступны для достаточно изобретательных технических процессов.",
+p1:"Соглашения о разработке требуют чётких положений о том, кому принадлежит возникающая ИС, особенно там, где клиент заказывает индивидуальное программное обеспечение или где вклад учредительской команды должен быть формально передан компании.",
+p2:"Компоненты с открытым исходным кодом, используемые в проприетарном программном обеспечении, поднимают вопросы соответствия лицензированию, которые необходимо решить, чтобы избежать непреднамеренного распространения обязательств лицензии открытого кода на проприетарный код.",
+p3:"Мы консультируем по защите технологических и программных активов через подходящее сочетание стратегий авторского права, коммерческой тайны и патентов, а также структурируем соглашения о разработке и лицензировании, отражающие фактические намерения относительно права собственности.",
+h2_how:"Как мы работаем с ИС в сфере технологий и программного обеспечения",
+step1_t:"Идентификация активов ИС",step1_d:"Мы определяем конкретные активы ИС в технологическом продукте — код, алгоритмы, процессы и данные — и защиту, которую требует каждый из них.",
+step2_t:"Стратегия защиты",step2_d:"Мы консультируем по подходящему сочетанию защиты авторским правом, коммерческой тайной и патентами для конкретной задействованной технологии.",
+step3_t:"Составление соглашения о разработке",step3_d:"Мы составляем соглашения о разработке с чёткими положениями о праве собственности на ИС для заказного программного обеспечения и совместной технической работы.",
+step4_t:"Проверка соответствия открытому исходному коду",step4_d:"Мы проверяем компоненты с открытым исходным кодом, используемые в продукте, чтобы оценить соответствие лицензированию и потенциальные риски.",
+step5_t:"Передача ИС учредителей и команды",step5_d:"Мы занимаемся формальной передачей ИС, внесённой учредителями или членами команды, чтобы обеспечить компании чёткое право собственности.",
+step6_t:"Структурирование лицензирования",step6_d:"Мы структурируем соглашения о лицензировании технологий для программного обеспечения, платформ или технических процессов, лицензируемых третьим сторонам или от них.",
+h2_when:"Когда обращаться к юристу по технологиям и программному обеспечению",
+sc1:"Вы разрабатываете программное обеспечение и нуждаетесь в ясности относительно того, как защитить код, алгоритмы и базовые процессы.",
+sc2:"Вы заказываете разработку индивидуального программного обеспечения, и вам нужно, чтобы соглашение чётко закрепляло за вами право собственности на возникающую ИС.",
+sc3:"Ваш продукт использует компоненты с открытым исходным кодом, и вам нужно оценить риск соответствия лицензированию.",
+sc4:"Вам нужно формально передать вашей компании ИС, внесённую учредителями или ранними членами команды.",
+sc5:"Вы лицензируете свою технологию другому бизнесу или приобретаете лицензию на использование чужой.",
+sc6:"Вы хотите понять, какое сочетание защиты авторским правом, патентом и коммерческой тайной применимо к вашей конкретной технологии.",
+h2_services:"Наши услуги",
+sv1:"Идентификация активов технологической ИС",
+sv2:"Консультации по стратегии защиты программного обеспечения",
+sv3:"Составление соглашений о разработке",
+sv4:"Проверка соответствия лицензированию открытого исходного кода",
+sv5:"Передача ИС учредителей и команды",
+sv6:"Составление соглашений о лицензировании технологий",
+sv7:"Консультации по защите коммерческой тайны",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Как программное обеспечение фактически защищено законом об интеллектуальной собственности?",faq1_a:"Программное обеспечение обычно предполагает одновременно несколько форм защиты — авторское право защищает код в написанном виде, защита коммерческой тайны может охватывать конфиденциальные алгоритмы, а патенты могут быть доступны для достаточно изобретательных технических процессов.",
+faq2_q:"Кому принадлежит ИС в программном обеспечении, которое я заказываю у агентства-разработчика?",faq2_a:"Это полностью зависит от условий соглашения о разработке, поэтому чёткие положения о передаче права собственности необходимы при заказе индивидуального программного обеспечения.",
+faq3_q:"Создаёт ли использование кода с открытым исходным кодом в моём продукте юридический риск?",faq3_a:"Может создавать, в зависимости от конкретных задействованных лицензий с открытым исходным кодом и того, как компоненты интегрированы, поэтому проверка соответствия важна перед выпуском продукта с зависимостями от открытого кода.",
+faq4_q:"Нужно ли мне формально передавать ИС от учредителей моей компании самой компании?",faq4_a:"Да, это важный шаг для обеспечения того, чтобы компания действительно владела технологией, на которой она была основана, вместо того чтобы полагаться на неформальное понимание между учредителями.",
+faq5_q:"В чём разница между защитой алгоритма как коммерческой тайны и его патентованием?",faq5_a:"Защита коммерческой тайны опирается на конфиденциальность и длится столько, сколько сохраняется секретность, тогда как патент предоставляет исключительные права на определённый срок, но требует публичного раскрытия принципа работы изобретения — правильный выбор зависит от конкретных обстоятельств."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",ip_cat:"Recht des geistigen Eigentums",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Technologie und Software in Dubai",
+lead:"Software- und Technologievermögenswerte werfen Fragen des geistigen Eigentums auf, die sich nicht ordentlich in traditionelle Kategorien einordnen lassen — ein einzelnes Produkt kann Urheberrecht am Code, potenziellen Patentschutz für zugrunde liegende Prozesse und Geschäftsgeheimniserwägungen für proprietäre Algorithmen umfassen.",
+box:"Der Schutz von Technologie-IP kombiniert typischerweise mehrere Instrumente gleichzeitig: Das Urheberrecht schützt den Quellcode wie geschrieben, der Geschäftsgeheimnisschutz kann Algorithmen und Prozesse abdecken, die vertraulich gehalten werden, und Patente können für hinreichend erfinderische technische Prozesse verfügbar sein.",
+p1:"Entwicklungsvereinbarungen benötigen klare Bestimmungen darüber, wem das resultierende IP gehört, insbesondere wenn ein Kunde individuelle Software in Auftrag gibt oder wenn die Beiträge eines Gründerteams formell auf ein Unternehmen übertragen werden müssen.",
+p2:"In proprietärer Software verwendete Open-Source-Komponenten werfen Fragen der Lizenz-Compliance auf, die behandelt werden müssen, um zu vermeiden, dass proprietärer Code unbeabsichtigt Open-Source-Lizenzverpflichtungen ausgesetzt wird.",
+p3:"Wir beraten zum Schutz von Technologie- und Softwarevermögenswerten durch die geeignete Kombination von Urheberrechts-, Geschäftsgeheimnis- und Patentstrategien und strukturieren Entwicklungs- und Lizenzvereinbarungen, die die tatsächlichen Eigentumsabsichten widerspiegeln.",
+h2_how:"Wie wir Technologie- und Software-IP handhaben",
+step1_t:"Identifizierung von IP-Vermögenswerten",step1_d:"Wir identifizieren die spezifischen IP-Vermögenswerte innerhalb eines Technologieprodukts — Code, Algorithmen, Prozesse und Daten — und den Schutz, den jeder erfordert.",
+step2_t:"Schutzstrategie",step2_d:"Wir beraten zur geeigneten Kombination von Urheberrechts-, Geschäftsgeheimnis- und Patentschutz für die betreffende spezifische Technologie.",
+step3_t:"Entwicklungsvereinbarungsabfassung",step3_d:"Wir verfassen Entwicklungsvereinbarungen mit klaren IP-Eigentumsbestimmungen für beauftragte Software und gemeinschaftliche technische Arbeit.",
+step4_t:"Open-Source-Compliance-Prüfung",step4_d:"Wir überprüfen in einem Produkt verwendete Open-Source-Komponenten, um Lizenz-Compliance und potenzielle Risiken zu bewerten.",
+step5_t:"IP-Übertragung von Gründern und Team",step5_d:"Wir kümmern uns um die formelle Übertragung von IP, das von Gründern oder Teammitgliedern beigetragen wurde, um sicherzustellen, dass das Unternehmen klares Eigentum hält.",
+step6_t:"Lizenzstrukturierung",step6_d:"Wir strukturieren Technologielizenzvereinbarungen für Software, Plattformen oder technische Prozesse, die an oder von Dritten lizenziert werden.",
+h2_when:"Wann Sie einen Anwalt für Technologie und Software hinzuziehen sollten",
+sc1:"Sie entwickeln Software und benötigen Klarheit darüber, wie Sie den Code, die Algorithmen und die zugrunde liegenden Prozesse schützen können.",
+sc2:"Sie beauftragen individuelle Softwareentwicklung und benötigen eine Vereinbarung, die das resultierende IP-Eigentum klar Ihnen zuweist.",
+sc3:"Ihr Produkt verwendet Open-Source-Komponenten, und Sie müssen das Risiko der Lizenz-Compliance bewerten.",
+sc4:"Sie müssen von Gründern oder frühen Teammitgliedern beigetragenes IP formell auf Ihr Unternehmen übertragen.",
+sc5:"Sie lizenzieren Ihre Technologie an ein anderes Unternehmen oder erwerben eine Lizenz zur Nutzung der Technologie eines anderen.",
+sc6:"Sie möchten verstehen, welche Kombination aus Urheberrechts-, Patent- und Geschäftsgeheimnisschutz für Ihre spezifische Technologie gilt.",
+h2_services:"Unsere Leistungen",
+sv1:"Identifizierung von Technologie-IP-Vermögenswerten",
+sv2:"Beratung zur Softwareschutzstrategie",
+sv3:"Entwicklungsvereinbarungsabfassung",
+sv4:"Prüfung der Open-Source-Lizenz-Compliance",
+sv5:"IP-Übertragung von Gründern und Team",
+sv6:"Abfassung von Technologielizenzvereinbarungen",
+sv7:"Beratung zum Geschäftsgeheimnisschutz",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Wie wird Software tatsächlich nach dem Recht des geistigen Eigentums geschützt?",faq1_a:"Software umfasst typischerweise mehrere Schutzformen gleichzeitig — das Urheberrecht schützt den Code wie geschrieben, der Geschäftsgeheimnisschutz kann vertrauliche Algorithmen abdecken, und Patente können für hinreichend erfinderische technische Prozesse verfügbar sein.",
+faq2_q:"Wem gehört das IP an Software, die ich bei einer Entwicklungsagentur in Auftrag gebe?",faq2_a:"Dies hängt vollständig von den Bedingungen der Entwicklungsvereinbarung ab, weshalb klare Eigentumsübertragungsbestimmungen bei der Beauftragung individueller Software unerlässlich sind.",
+faq3_q:"Schafft die Verwendung von Open-Source-Code in meinem Produkt ein rechtliches Risiko?",faq3_a:"Das kann sein, abhängig von den spezifischen beteiligten Open-Source-Lizenzen und wie die Komponenten integriert werden, weshalb eine Compliance-Prüfung wichtig ist, bevor ein Produkt mit Open-Source-Abhängigkeiten ausgeliefert wird.",
+faq4_q:"Muss ich IP von den Gründern meines Unternehmens formell auf das Unternehmen selbst übertragen?",faq4_a:"Ja, dies ist ein wichtiger Schritt, um sicherzustellen, dass das Unternehmen die Technologie, auf der es gegründet wurde, tatsächlich besitzt, statt sich auf informelles Einvernehmen zwischen Gründern zu verlassen.",
+faq5_q:"Was ist der Unterschied zwischen dem Schutz eines Algorithmus als Geschäftsgeheimnis und dessen Patentierung?",faq5_a:"Der Geschäftsgeheimnisschutz beruht auf Vertraulichkeit und hält an, solange die Geheimhaltung gewahrt bleibt, während ein Patent zeitlich begrenzte exklusive Rechte bietet, aber die öffentliche Offenlegung der Funktionsweise der Erfindung erfordert — die richtige Wahl hängt von den spezifischen Umständen ab."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
