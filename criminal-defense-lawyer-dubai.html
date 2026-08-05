@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Criminal Defense Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Criminal proceedings in the UAE move quickly, and early legal representation materially affects the options available to you.">
+<meta name="description" content="Criminal defense representation in Dubai — from police interview through trial before the Public Prosecution and Dubai Courts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,387 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="criminal-law.html">Criminal Law</a> &rsaquo; Criminal Defense Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="criminal-law.html" data-i18n="criminal_cat">Criminal Law</a> &rsaquo; <span data-i18n="page_title">Criminal Defense Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Criminal Defense Lawyer in Dubai</h1>
-  <p class="lead">Criminal proceedings in the UAE move quickly, and early legal representation materially affects the options available to you.</p>
-  <div class="box">A criminal defense lawyer in Dubai represents individuals under investigation or facing charges before the UAE public prosecution and courts.</div>
-  <p class="body-p">The firm represents clients from the investigation stage through trial and, where applicable, appeal, across a range of criminal matters.</p>
-  <p class="body-p">Because UAE criminal law incorporates elements of Shariah-derived provisions alongside civil code provisions, informed local representation is essential from the outset.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Criminal Defense Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">A criminal accusation in the UAE moves quickly — police referral to the Public Prosecution can happen within days, and what you say or fail to say at that stage often shapes the entire case. Early, informed representation changes outcomes.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">UAE criminal procedure gives the accused the right to legal representation from the police interrogation stage onward, but that right is only useful if exercised — statements given without counsel present are frequently the evidence a case turns on.</div>
+
+<p class="body-p" data-i18n="p1">Criminal cases in Dubai typically proceed through three stages: police investigation, referral to and investigation by the Public Prosecution, and — if charges are filed — trial before the Court of First Instance, with rights of appeal to the Court of Appeal and, in some cases, the Court of Cassation. Each stage has distinct procedural rights and deadlines.</p>
+<p class="body-p" data-i18n="p2">The Public Prosecution in the UAE holds significant investigative authority, including the power to order detention pending investigation. Securing release, or at minimum limiting detention, often depends on how quickly a defense lawyer engages and what representations are made at the prosecutorial stage, before the matter ever reaches a courtroom.</p>
+<p class="body-p" data-i18n="p3">We represent individuals accused of criminal offences at every stage — police interview, Public Prosecution investigation, trial, and appeal — working to protect procedural rights, challenge the evidence against the accused, and pursue the most favourable outcome available on the facts.</p>
+
+<h2 data-i18n="h2_how">How We Handle Criminal Defense Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Immediate Case Assessment</strong><span data-i18n="step1_d">We review the allegation, the stage the matter has reached, and any detention status to determine the most urgent next steps.</span></li>
+<li><strong data-i18n="step2_t">Police and Prosecution Representation</strong><span data-i18n="step2_d">We attend interviews and prosecutorial sessions with the client, ensuring statements are accurate and procedural rights are respected throughout.</span></li>
+<li><strong data-i18n="step3_t">Evidence and Case File Review</strong><span data-i18n="step3_d">We review the case file, witness statements, and any physical or documentary evidence to identify weaknesses in the prosecution's case.</span></li>
+<li><strong data-i18n="step4_t">Detention and Bail Applications</strong><span data-i18n="step4_d">Where the accused is detained, we pursue release applications and travel ban lifts at the earliest opportunity the procedure allows.</span></li>
+<li><strong data-i18n="step5_t">Trial Representation</strong><span data-i18n="step5_d">We represent the accused before the Court of First Instance, presenting the defense case and challenging the prosecution's evidence and legal characterization of the offence.</span></li>
+<li><strong data-i18n="step6_t">Appeal Strategy</strong><span data-i18n="step6_d">Where a conviction results, we assess grounds for appeal and represent the client before the Court of Appeal and, where applicable, the Court of Cassation.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When to Bring in a Criminal Defense Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You have been summoned for a police interview or notified of a criminal complaint against you.</li>
+<li data-i18n="sc2">You or a family member has been detained pending investigation and needs representation urgently.</li>
+<li data-i18n="sc3">The Public Prosecution has referred your case to trial and you need to prepare a defense.</li>
+<li data-i18n="sc4">You've been convicted at first instance and are considering an appeal.</li>
+<li data-i18n="sc5">You are concerned about a pending travel ban connected to a criminal matter.</li>
+<li data-i18n="sc6">You need advice on your rights and exposure before deciding whether to respond to a police or prosecutorial summons.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Representation during police interviews and interrogation</li>
+<li data-i18n="sv2">Representation before the Public Prosecution</li>
+<li data-i18n="sv3">Detention release and bail applications</li>
+<li data-i18n="sv4">Trial defense before the Court of First Instance</li>
+<li data-i18n="sv5">Appeal representation before the Court of Appeal and Court of Cassation</li>
+<li data-i18n="sv6">Case file and evidence review</li>
+<li data-i18n="sv7">Advice on rights, exposure, and procedural strategy at every stage</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Can I have a lawyer present during a police interview in the UAE?</summary>
+<p data-i18n="faq1_a">Yes — the accused has the right to legal representation from the police stage onward, and exercising that right early can materially affect how the case develops.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">What happens after the Public Prosecution investigates my case?</summary>
+<p data-i18n="faq2_a">The prosecution can dismiss the case, refer it to trial, or in some cases pursue a settlement, depending on the offence and the evidence gathered during its investigation.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Can I be prevented from leaving the UAE during a criminal case?</summary>
+<p data-i18n="faq3_a">Yes — a travel ban can be imposed while a criminal matter is pending, and lifting it typically requires a specific application addressing the circumstances of the case.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">How long does a criminal case take from investigation to trial?</summary>
+<p data-i18n="faq4_a">Timelines vary significantly depending on the offence and complexity, but straightforward matters can move from complaint to first hearing within a matter of weeks, while more complex cases take considerably longer.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Can a criminal conviction be appealed in Dubai?</summary>
+<p data-i18n="faq5_a">Yes — convictions from the Court of First Instance can generally be appealed to the Court of Appeal, and in certain circumstances further to the Court of Cassation on points of law.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",criminal_cat:"Criminal Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Criminal Defense Lawyer in Dubai",
+lead:"A criminal accusation in the UAE moves quickly — police referral to the Public Prosecution can happen within days, and what you say or fail to say at that stage often shapes the entire case. Early, informed representation changes outcomes.",
+box:"UAE criminal procedure gives the accused the right to legal representation from the police interrogation stage onward, but that right is only useful if exercised — statements given without counsel present are frequently the evidence a case turns on.",
+p1:"Criminal cases in Dubai typically proceed through three stages: police investigation, referral to and investigation by the Public Prosecution, and — if charges are filed — trial before the Court of First Instance, with rights of appeal to the Court of Appeal and, in some cases, the Court of Cassation. Each stage has distinct procedural rights and deadlines.",
+p2:"The Public Prosecution in the UAE holds significant investigative authority, including the power to order detention pending investigation. Securing release, or at minimum limiting detention, often depends on how quickly a defense lawyer engages and what representations are made at the prosecutorial stage, before the matter ever reaches a courtroom.",
+p3:"We represent individuals accused of criminal offences at every stage — police interview, Public Prosecution investigation, trial, and appeal — working to protect procedural rights, challenge the evidence against the accused, and pursue the most favourable outcome available on the facts.",
+h2_how:"How We Handle Criminal Defense Matters",
+step1_t:"Immediate Case Assessment",step1_d:"We review the allegation, the stage the matter has reached, and any detention status to determine the most urgent next steps.",
+step2_t:"Police and Prosecution Representation",step2_d:"We attend interviews and prosecutorial sessions with the client, ensuring statements are accurate and procedural rights are respected throughout.",
+step3_t:"Evidence and Case File Review",step3_d:"We review the case file, witness statements, and any physical or documentary evidence to identify weaknesses in the prosecution's case.",
+step4_t:"Detention and Bail Applications",step4_d:"Where the accused is detained, we pursue release applications and travel ban lifts at the earliest opportunity the procedure allows.",
+step5_t:"Trial Representation",step5_d:"We represent the accused before the Court of First Instance, presenting the defense case and challenging the prosecution's evidence and legal characterization of the offence.",
+step6_t:"Appeal Strategy",step6_d:"Where a conviction results, we assess grounds for appeal and represent the client before the Court of Appeal and, where applicable, the Court of Cassation.",
+h2_when:"When to Bring in a Criminal Defense Lawyer",
+sc1:"You have been summoned for a police interview or notified of a criminal complaint against you.",
+sc2:"You or a family member has been detained pending investigation and needs representation urgently.",
+sc3:"The Public Prosecution has referred your case to trial and you need to prepare a defense.",
+sc4:"You've been convicted at first instance and are considering an appeal.",
+sc5:"You are concerned about a pending travel ban connected to a criminal matter.",
+sc6:"You need advice on your rights and exposure before deciding whether to respond to a police or prosecutorial summons.",
+h2_services:"Services We Provide",
+sv1:"Representation during police interviews and interrogation",
+sv2:"Representation before the Public Prosecution",
+sv3:"Detention release and bail applications",
+sv4:"Trial defense before the Court of First Instance",
+sv5:"Appeal representation before the Court of Appeal and Court of Cassation",
+sv6:"Case file and evidence review",
+sv7:"Advice on rights, exposure, and procedural strategy at every stage",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Can I have a lawyer present during a police interview in the UAE?",faq1_a:"Yes — the accused has the right to legal representation from the police stage onward, and exercising that right early can materially affect how the case develops.",
+faq2_q:"What happens after the Public Prosecution investigates my case?",faq2_a:"The prosecution can dismiss the case, refer it to trial, or in some cases pursue a settlement, depending on the offence and the evidence gathered during its investigation.",
+faq3_q:"Can I be prevented from leaving the UAE during a criminal case?",faq3_a:"Yes — a travel ban can be imposed while a criminal matter is pending, and lifting it typically requires a specific application addressing the circumstances of the case.",
+faq4_q:"How long does a criminal case take from investigation to trial?",faq4_a:"Timelines vary significantly depending on the offence and complexity, but straightforward matters can move from complaint to first hearing within a matter of weeks, while more complex cases take considerably longer.",
+faq5_q:"Can a criminal conviction be appealed in Dubai?",faq5_a:"Yes — convictions from the Court of First Instance can generally be appealed to the Court of Appeal, and in certain circumstances further to the Court of Cassation on points of law."
+},
+ar:{
+dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",criminal_cat:"القانون الجنائي",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي الدفاع الجنائي في دبي",
+lead:"تتحرك الاتهامات الجنائية في دولة الإمارات بسرعة — يمكن أن تتم إحالة الشرطة إلى النيابة العامة خلال أيام، وما تقوله أو تمتنع عن قوله في تلك المرحلة غالبًا ما يشكل مسار القضية بأكملها. التمثيل المبكر والمستنير يغيّر النتائج.",
+box:"يمنح الإجراء الجنائي الإماراتي المتهم الحق في التمثيل القانوني من مرحلة استجواب الشرطة فصاعدًا، لكن هذا الحق مفيد فقط إذا تمت ممارسته — فالأقوال المدلى بها دون حضور محامٍ كثيرًا ما تكون الدليل الذي تُبنى عليه القضية.",
+p1:"تمر القضايا الجنائية في دبي عادة بثلاث مراحل: التحقيق الشرطي، والإحالة إلى النيابة العامة والتحقيق من قبلها، والمحاكمة أمام محكمة الدرجة الأولى إذا وُجهت الاتهامات — مع حقوق استئناف أمام محكمة الاستئناف، وفي بعض الحالات، محكمة النقض. لكل مرحلة حقوق إجرائية ومواعيد نهائية مختلفة.",
+p2:"تتمتع النيابة العامة في دولة الإمارات بسلطة تحقيق واسعة، بما في ذلك سلطة الأمر بالحبس على ذمة التحقيق. غالبًا ما يعتمد تأمين الإفراج، أو على الأقل الحد من مدة الاحتجاز، على مدى سرعة تدخل محامي الدفاع وما يُقدَّم من مرافعات في مرحلة النيابة العامة، قبل أن تصل القضية إلى قاعة المحكمة على الإطلاق.",
+p3:"نمثل الأفراد المتهمين بجرائم جنائية في كل مرحلة — استجواب الشرطة، وتحقيق النيابة العامة، والمحاكمة، والاستئناف — ساعين إلى حماية الحقوق الإجرائية، والطعن في الأدلة ضد المتهم، والسعي إلى تحقيق أفضل نتيجة ممكنة بناءً على الوقائع.",
+h2_how:"كيف نتعامل مع مسائل الدفاع الجنائي",
+step1_t:"التقييم الفوري للقضية",step1_d:"نراجع الاتهام، والمرحلة التي وصلت إليها القضية، وأي وضع احتجاز لتحديد الخطوات التالية الأكثر إلحاحًا.",
+step2_t:"التمثيل أمام الشرطة والنيابة",step2_d:"نحضر المقابلات والجلسات مع النيابة رفقة الموكل، لضمان دقة الأقوال واحترام الحقوق الإجرائية طوال الوقت.",
+step3_t:"مراجعة الأدلة وملف القضية",step3_d:"نراجع ملف القضية، وأقوال الشهود، وأي أدلة مادية أو وثائقية لتحديد نقاط ضعف قضية الادعاء.",
+step4_t:"طلبات الإفراج والكفالة",step4_d:"حيثما يكون المتهم محتجزًا، نسعى لتقديم طلبات الإفراج ورفع حظر السفر في أقرب فرصة يتيحها الإجراء.",
+step5_t:"التمثيل في المحاكمة",step5_d:"نمثل المتهم أمام محكمة الدرجة الأولى، ونقدم قضية الدفاع، ونطعن في أدلة الادعاء والتكييف القانوني للجريمة.",
+step6_t:"استراتيجية الاستئناف",step6_d:"في حال صدور إدانة، نقيّم أسس الاستئناف ونمثل الموكل أمام محكمة الاستئناف، وعند الاقتضاء، محكمة النقض.",
+h2_when:"متى تحتاج إلى محامي دفاع جنائي",
+sc1:"تلقيت استدعاءً لمقابلة شرطية أو أُخطرت بشكوى جنائية ضدك.",
+sc2:"احتُجزت أنت أو أحد أفراد عائلتك على ذمة التحقيق وتحتاج إلى تمثيل عاجل.",
+sc3:"أحالت النيابة العامة قضيتك إلى المحاكمة وتحتاج إلى إعداد دفاع.",
+sc4:"أُدنت في محكمة الدرجة الأولى وتفكر في الاستئناف.",
+sc5:"تشعر بالقلق بشأن حظر سفر معلق مرتبط بمسألة جنائية.",
+sc6:"تحتاج إلى مشورة بشأن حقوقك وتعرضك قبل تقرير ما إذا كنت ستستجيب لاستدعاء شرطي أو من النيابة.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"التمثيل أثناء مقابلات الشرطة والاستجواب",
+sv2:"التمثيل أمام النيابة العامة",
+sv3:"طلبات الإفراج عن المحتجزين والكفالة",
+sv4:"الدفاع في المحاكمة أمام محكمة الدرجة الأولى",
+sv5:"التمثيل في الاستئناف أمام محكمة الاستئناف ومحكمة النقض",
+sv6:"مراجعة ملف القضية والأدلة",
+sv7:"المشورة بشأن الحقوق والتعرض والاستراتيجية الإجرائية في كل مرحلة",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل يمكنني إحضار محامٍ أثناء مقابلة الشرطة في الإمارات؟",faq1_a:"نعم — يتمتع المتهم بالحق في التمثيل القانوني من مرحلة الشرطة فصاعدًا، وممارسة هذا الحق مبكرًا يمكن أن تؤثر بشكل جوهري على كيفية تطور القضية.",
+faq2_q:"ماذا يحدث بعد تحقيق النيابة العامة في قضيتي؟",faq2_a:"يمكن للنيابة حفظ القضية، أو إحالتها إلى المحاكمة، أو في بعض الحالات السعي إلى تسوية، حسب الجريمة والأدلة التي جُمعت أثناء تحقيقها.",
+faq3_q:"هل يمكن منعي من مغادرة الإمارات أثناء قضية جنائية؟",faq3_a:"نعم — يمكن فرض حظر سفر أثناء وجود مسألة جنائية معلقة، ورفعه عادة ما يتطلب طلبًا محددًا يتناول ظروف القضية.",
+faq4_q:"كم من الوقت تستغرق القضية الجنائية من التحقيق إلى المحاكمة؟",faq4_a:"تختلف الجداول الزمنية بشكل كبير حسب الجريمة والتعقيد، لكن المسائل البسيطة يمكن أن تنتقل من الشكوى إلى الجلسة الأولى خلال أسابيع قليلة، بينما تستغرق القضايا الأكثر تعقيدًا وقتًا أطول بكثير.",
+faq5_q:"هل يمكن استئناف إدانة جنائية في دبي؟",faq5_a:"نعم — يمكن عمومًا استئناف الإدانات الصادرة عن محكمة الدرجة الأولى أمام محكمة الاستئناف، وفي ظروف معينة، أبعد من ذلك أمام محكمة النقض بشأن نقاط قانونية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",criminal_cat:"刑法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜刑事辩护律师",
+lead:"阿联酋的刑事指控进展迅速——警方可能在数日内将案件移交检察院，而您在这一阶段所说或未说的内容往往决定整个案件的走向。及早获得专业代理能够改变结果。",
+box:"阿联酋刑事诉讼程序赋予被告人自警方讯问阶段起即享有法律代理的权利，但该权利只有在被行使时才有意义——在没有律师在场的情况下作出的陈述，往往成为案件定罪的关键证据。",
+p1:"迪拜的刑事案件通常经历三个阶段：警方侦查、移交检察院并由其侦查，以及在提起公诉后于初审法院进行的审判，此后可上诉至上诉法院，在某些情况下还可上诉至最高法院。每个阶段都有各自不同的程序性权利和期限。",
+p2:"阿联酋检察院拥有相当大的侦查权力，包括下令羁押候审的权力。能否获得释放，或至少限制羁押期限，往往取决于辩护律师介入的速度以及在检察阶段所作的陈述——这一切都发生在案件进入法庭之前。",
+p3:"我们在刑事案件的每一个阶段——警方讯问、检察院侦查、审判及上诉——为被控刑事罪行的个人提供代理，致力于保护程序性权利、对不利于被告人的证据提出质疑，并基于案件事实争取尽可能有利的结果。",
+h2_how:"我们如何处理刑事辩护事务",
+step1_t:"即时案情评估",step1_d:"我们审查指控内容、案件所处阶段以及任何羁押状态，以确定最紧迫的下一步行动。",
+step2_t:"警方与检察院阶段代理",step2_d:"我们陪同当事人出席讯问及检察院会议，确保陈述准确，并在全程保障其程序性权利。",
+step3_t:"证据及案卷审查",step3_d:"我们审查案卷、证人陈述以及任何实物或书面证据，以查明控方案件中的薄弱环节。",
+step4_t:"羁押及保释申请",step4_d:"若被告人处于羁押状态，我们会在程序允许的最早时机提出释放及解除旅行禁令的申请。",
+step5_t:"审判代理",step5_d:"我们在初审法院代表被告人出庭，提出辩护意见，并对控方证据及罪名的法律定性提出质疑。",
+step6_t:"上诉策略",step6_d:"如作出有罪判决，我们评估上诉理由，并在上诉法院乃至适用情形下的最高法院代表当事人。",
+h2_when:"何时需要刑事辩护律师",
+sc1:"您已被传唤接受警方讯问，或已收到针对您的刑事投诉通知。",
+sc2:"您本人或家庭成员因侦查需要被羁押，急需代理。",
+sc3:"检察院已将您的案件移交审判，您需要准备辩护。",
+sc4:"您已在初审中被定罪，正考虑提起上诉。",
+sc5:"您担心与刑事案件相关的旅行禁令待决问题。",
+sc6:"在决定是否回应警方或检察院传唤之前，您需要就自身权利及风险获得建议。",
+h2_services:"我们提供的服务",
+sv1:"警方讯问及审讯阶段的代理",
+sv2:"检察院阶段的代理",
+sv3:"羁押释放及保释申请",
+sv4:"初审法院的审判辩护",
+sv5:"上诉法院及最高法院的上诉代理",
+sv6:"案卷及证据审查",
+sv7:"就各阶段权利、风险及程序策略提供建议",
+h2_faq:"常见问题",
+faq1_q:"在阿联酋接受警方讯问时，我能否有律师在场？",faq1_a:"可以——被告人自警方阶段起即享有法律代理的权利，及早行使这一权利可能对案件的走向产生实质性影响。",
+faq2_q:"检察院侦查我的案件后会发生什么？",faq2_a:"根据罪行性质及侦查所获证据，检察院可以撤销案件、移交审判，或在某些情况下寻求和解。",
+faq3_q:"在刑事案件期间，我是否可能被禁止离开阿联酋？",faq3_a:"可能——在刑事案件待决期间可能被施加旅行禁令，解除该禁令通常需要针对案件具体情况提出专门申请。",
+faq4_q:"从侦查到审判，一起刑事案件通常需要多长时间？",faq4_a:"时间跨度因罪行及复杂程度而异，简单案件可能在数周内从投诉进展到首次庭审，而更复杂的案件则需要长得多的时间。",
+faq5_q:"迪拜的刑事定罪能否上诉？",faq5_a:"可以——初审法院的定罪一般可上诉至上诉法院，在特定情形下还可就法律问题进一步上诉至最高法院。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",criminal_cat:"Уголовное право",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по уголовной защите в Дубае",
+lead:"Уголовное обвинение в ОАЭ развивается быстро — передача дела полицией в прокуратуру может произойти в течение нескольких дней, и то, что вы скажете или не скажете на этом этапе, часто определяет исход всего дела. Раннее и грамотное представительство меняет результат.",
+box:"Уголовно-процессуальное законодательство ОАЭ предоставляет обвиняемому право на юридическое представительство начиная с этапа полицейского допроса, но это право полезно лишь тогда, когда им пользуются — показания, данные без присутствия адвоката, часто становятся именно тем доказательством, на котором строится дело.",
+p1:"Уголовные дела в Дубае обычно проходят через три этапа: полицейское расследование, передача дела в прокуратуру и расследование прокуратурой, а также — в случае предъявления обвинения — судебное разбирательство в суде первой инстанции с правом обжалования в апелляционном суде и, в некоторых случаях, в кассационном суде. Каждый этап имеет свои процессуальные права и сроки.",
+p2:"Прокуратура ОАЭ обладает значительными следственными полномочиями, включая право распорядиться о заключении под стражу на период расследования. Обеспечение освобождения или, по крайней мере, ограничение срока содержания под стражей часто зависит от того, насколько быстро вступит в дело адвокат защиты и какие представления будут сделаны на прокурорской стадии — до того, как дело вообще дойдёт до зала суда.",
+p3:"Мы представляем лиц, обвиняемых в совершении уголовных преступлений, на каждом этапе — полицейский допрос, расследование прокуратурой, судебное разбирательство и обжалование, — стремясь защитить процессуальные права, оспорить доказательства против обвиняемого и добиться наиболее благоприятного исхода, возможного с учётом фактов дела.",
+h2_how:"Как мы работаем с вопросами уголовной защиты",
+step1_t:"Немедленная оценка дела",step1_d:"Мы изучаем обвинение, этап, на котором находится дело, и статус содержания под стражей, чтобы определить наиболее неотложные следующие шаги.",
+step2_t:"Представительство в полиции и прокуратуре",step2_d:"Мы присутствуем на допросах и заседаниях прокуратуры вместе с клиентом, обеспечивая точность показаний и соблюдение процессуальных прав на всех этапах.",
+step3_t:"Анализ доказательств и материалов дела",step3_d:"Мы изучаем материалы дела, показания свидетелей и любые вещественные или документальные доказательства, чтобы выявить слабые места в позиции обвинения.",
+step4_t:"Заявления об освобождении и залоге",step4_d:"Если обвиняемый содержится под стражей, мы добиваемся его освобождения и снятия запрета на выезд при первой возможности, предусмотренной процедурой.",
+step5_t:"Представительство в суде",step5_d:"Мы представляем обвиняемого в суде первой инстанции, излагая позицию защиты и оспаривая доказательства и правовую квалификацию преступления со стороны обвинения.",
+step6_t:"Стратегия обжалования",step6_d:"В случае вынесения обвинительного приговора мы оцениваем основания для обжалования и представляем клиента в апелляционном суде и, при необходимости, в кассационном суде.",
+h2_when:"Когда обращаться к юристу по уголовной защите",
+sc1:"Вас вызвали на допрос в полицию или уведомили об уголовной жалобе против вас.",
+sc2:"Вы или член вашей семьи задержаны на период расследования и срочно нуждаетесь в представительстве.",
+sc3:"Прокуратура передала ваше дело в суд, и вам необходимо подготовить защиту.",
+sc4:"Вы были осуждены судом первой инстанции и рассматриваете возможность обжалования.",
+sc5:"Вас беспокоит запрет на выезд, связанный с уголовным делом.",
+sc6:"Вам нужна консультация о ваших правах и рисках, прежде чем принять решение о реакции на вызов полиции или прокуратуры.",
+h2_services:"Наши услуги",
+sv1:"Представительство во время полицейских допросов",
+sv2:"Представительство в прокуратуре",
+sv3:"Заявления об освобождении из-под стражи и о залоге",
+sv4:"Защита в суде первой инстанции",
+sv5:"Представительство при обжаловании в апелляционном и кассационном судах",
+sv6:"Анализ материалов дела и доказательств",
+sv7:"Консультации по правам, рискам и процессуальной стратегии на каждом этапе",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Могу ли я иметь адвоката во время допроса в полиции в ОАЭ?",faq1_a:"Да — обвиняемый имеет право на юридическое представительство начиная с этапа взаимодействия с полицией, и раннее использование этого права может существенно повлиять на развитие дела.",
+faq2_q:"Что происходит после того, как прокуратура расследует моё дело?",faq2_a:"Прокуратура может прекратить дело, передать его в суд или в некоторых случаях добиваться урегулирования — в зависимости от характера преступления и доказательств, собранных в ходе расследования.",
+faq3_q:"Могут ли меня лишить возможности покинуть ОАЭ во время уголовного дела?",faq3_a:"Да — на время рассмотрения уголовного дела может быть наложен запрет на выезд, и для его снятия обычно требуется отдельное заявление с учётом обстоятельств дела.",
+faq4_q:"Сколько времени занимает уголовное дело от расследования до суда?",faq4_a:"Сроки существенно различаются в зависимости от характера преступления и сложности дела, но простые дела могут пройти путь от жалобы до первого слушания за несколько недель, тогда как более сложные дела занимают значительно больше времени.",
+faq5_q:"Можно ли обжаловать обвинительный приговор в Дубае?",faq5_a:"Да — приговоры суда первой инстанции, как правило, можно обжаловать в апелляционном суде, а в определённых случаях — далее в кассационном суде по вопросам права."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",criminal_cat:"Strafrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Strafverteidigung in Dubai",
+lead:"Ein strafrechtlicher Vorwurf in den VAE entwickelt sich schnell — die Weiterleitung durch die Polizei an die Staatsanwaltschaft kann innerhalb weniger Tage erfolgen, und das, was Sie in dieser Phase sagen oder nicht sagen, prägt oft den gesamten Fallverlauf. Frühzeitige, fundierte Vertretung verändert Ergebnisse.",
+box:"Das VAE-Strafverfahrensrecht gewährt dem Beschuldigten ab der polizeilichen Vernehmung das Recht auf rechtlichen Beistand, doch dieses Recht ist nur dann nützlich, wenn es auch wahrgenommen wird — Aussagen ohne anwaltlichen Beistand sind häufig genau die Beweise, auf denen ein Fall beruht.",
+p1:"Strafverfahren in Dubai durchlaufen in der Regel drei Phasen: polizeiliche Ermittlung, Weiterleitung an und Untersuchung durch die Staatsanwaltschaft sowie — bei Anklageerhebung — die Hauptverhandlung vor dem Gericht erster Instanz, mit Berufungsrechten vor dem Berufungsgericht und in manchen Fällen dem Kassationsgericht. Jede Phase bringt eigene Verfahrensrechte und Fristen mit sich.",
+p2:"Die Staatsanwaltschaft der VAE verfügt über weitreichende Ermittlungsbefugnisse, einschließlich der Befugnis, Untersuchungshaft anzuordnen. Die Erwirkung einer Freilassung oder zumindest die Begrenzung der Haftdauer hängt oft davon ab, wie schnell ein Verteidiger eingeschaltet wird und welche Vorbringen bereits auf staatsanwaltschaftlicher Ebene gemacht werden — noch bevor die Sache überhaupt vor Gericht kommt.",
+p3:"Wir vertreten Personen, denen Straftaten vorgeworfen werden, in jeder Phase — polizeiliche Vernehmung, staatsanwaltschaftliche Ermittlung, Hauptverhandlung und Berufung — und arbeiten daran, Verfahrensrechte zu schützen, die Beweise gegen den Beschuldigten anzufechten und das nach Aktenlage bestmögliche Ergebnis zu erzielen.",
+h2_how:"Wie wir Angelegenheiten der Strafverteidigung bearbeiten",
+step1_t:"Sofortige Fallbewertung",step1_d:"Wir prüfen den Vorwurf, die Phase, in der sich die Angelegenheit befindet, sowie einen etwaigen Haftstatus, um die dringendsten nächsten Schritte zu bestimmen.",
+step2_t:"Vertretung bei Polizei und Staatsanwaltschaft",step2_d:"Wir begleiten den Mandanten zu Vernehmungen und staatsanwaltschaftlichen Terminen und stellen sicher, dass Aussagen korrekt sind und Verfahrensrechte durchgehend gewahrt werden.",
+step3_t:"Prüfung von Beweisen und Ermittlungsakte",step3_d:"Wir prüfen die Ermittlungsakte, Zeugenaussagen sowie jegliche physische oder dokumentarische Beweise, um Schwachstellen in der Anklage zu identifizieren.",
+step4_t:"Haft- und Kautionsanträge",step4_d:"Befindet sich der Beschuldigte in Haft, betreiben wir zum frühestmöglichen, verfahrensrechtlich zulässigen Zeitpunkt Freilassungsanträge und die Aufhebung von Ausreiseverboten.",
+step5_t:"Vertretung in der Hauptverhandlung",step5_d:"Wir vertreten den Beschuldigten vor dem Gericht erster Instanz, tragen die Verteidigung vor und fechten die Beweise sowie die rechtliche Einordnung der Tat durch die Anklage an.",
+step6_t:"Berufungsstrategie",step6_d:"Kommt es zu einer Verurteilung, prüfen wir Berufungsgründe und vertreten den Mandanten vor dem Berufungsgericht sowie, soweit einschlägig, dem Kassationsgericht.",
+h2_when:"Wann Sie einen Strafverteidiger hinzuziehen sollten",
+sc1:"Sie wurden zu einer polizeilichen Vernehmung vorgeladen oder über eine Strafanzeige gegen Sie informiert.",
+sc2:"Sie oder ein Familienmitglied wurden zur Untersuchung in Haft genommen und benötigen dringend Vertretung.",
+sc3:"Die Staatsanwaltschaft hat Ihren Fall zur Hauptverhandlung verwiesen und Sie müssen eine Verteidigung vorbereiten.",
+sc4:"Sie wurden erstinstanzlich verurteilt und erwägen eine Berufung.",
+sc5:"Sie sind besorgt über ein anhängiges Ausreiseverbot im Zusammenhang mit einer Strafsache.",
+sc6:"Sie benötigen Beratung zu Ihren Rechten und Ihrem Risiko, bevor Sie entscheiden, ob Sie auf eine polizeiliche oder staatsanwaltschaftliche Vorladung reagieren.",
+h2_services:"Unsere Leistungen",
+sv1:"Vertretung bei polizeilichen Vernehmungen und Verhören",
+sv2:"Vertretung vor der Staatsanwaltschaft",
+sv3:"Anträge auf Haftentlassung und Kaution",
+sv4:"Verteidigung in der Hauptverhandlung vor dem Gericht erster Instanz",
+sv5:"Vertretung bei Berufungen vor dem Berufungsgericht und dem Kassationsgericht",
+sv6:"Prüfung der Ermittlungsakte und Beweise",
+sv7:"Beratung zu Rechten, Risiken und Verfahrensstrategie in jeder Phase",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Kann ich bei einer polizeilichen Vernehmung in den VAE einen Anwalt hinzuziehen?",faq1_a:"Ja — der Beschuldigte hat ab der polizeilichen Phase das Recht auf rechtlichen Beistand, und die frühzeitige Wahrnehmung dieses Rechts kann den weiteren Verlauf des Falls maßgeblich beeinflussen.",
+faq2_q:"Was geschieht, nachdem die Staatsanwaltschaft meinen Fall untersucht hat?",faq2_a:"Die Staatsanwaltschaft kann das Verfahren einstellen, zur Hauptverhandlung verweisen oder in manchen Fällen eine Einigung anstreben — abhängig von der Straftat und den während der Ermittlung gesammelten Beweisen.",
+faq3_q:"Kann mir während eines Strafverfahrens die Ausreise aus den VAE untersagt werden?",faq3_a:"Ja — während ein Strafverfahren anhängig ist, kann ein Ausreiseverbot verhängt werden, und dessen Aufhebung erfordert in der Regel einen gesonderten Antrag, der auf die Umstände des Falls eingeht.",
+faq4_q:"Wie lange dauert ein Strafverfahren von der Ermittlung bis zur Hauptverhandlung?",faq4_a:"Die Zeitrahmen variieren erheblich je nach Straftat und Komplexität, doch einfache Angelegenheiten können innerhalb weniger Wochen von der Anzeige zur ersten Verhandlung gelangen, während komplexere Fälle erheblich länger dauern.",
+faq5_q:"Kann eine strafrechtliche Verurteilung in Dubai angefochten werden?",faq5_a:"Ja — Verurteilungen des Gerichts erster Instanz können in der Regel vor dem Berufungsgericht angefochten werden, und unter bestimmten Umständen weiter vor dem Kassationsgericht in Rechtsfragen."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
 </body>
