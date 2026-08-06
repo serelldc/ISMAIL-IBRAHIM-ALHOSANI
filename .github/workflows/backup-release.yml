@@ -1,0 +1,33 @@
+name: Weekly Backup Release
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # every Sunday 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set backup tag name
+        id: vars
+        run: echo "tag=backup-$(date +'%Y-%m-%d')" >> "$GITHUB_OUTPUT"
+
+      - name: Create tag
+        run: |
+          git tag ${{ steps.vars.outputs.tag }}
+          git push origin ${{ steps.vars.outputs.tag }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.vars.outputs.tag }}
+          name: "Backup ${{ steps.vars.outputs.tag }}"
+          body: "Automated weekly backup snapshot of the repository. Restore by downloading the Source code (zip) asset below."
+          make_latest: false
