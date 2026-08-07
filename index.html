@@ -178,6 +178,12 @@ h2{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);color:var(--gold-li
 html[dir="rtl"] .contact-form input[type="tel"]{direction:rtl;text-align:right;}.contact-form select{-webkit-appearance:none;appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9a24b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:16px;padding-inline-end:40px;}.contact-form input,.contact-form select,.contact-form textarea{background:var(--black);border:1px solid rgba(201,162,75,0.3);color:var(--cream);padding:13px 16px;border-radius:4px;font-family:inherit;font-size:14px;}
 .contact-form textarea{resize:vertical;}
 .contact-form button{cursor:pointer;border:none;}
+.map-link-card{display:flex;align-items:center;gap:14px;background:var(--black);border:1px solid rgba(201,162,75,0.3);border-radius:6px;padding:16px 18px;margin-top:16px;transition:.2s;}
+.map-link-card:hover{border-color:var(--gold);background:rgba(201,162,75,0.08);}
+.map-link-icon{font-size:22px;flex-shrink:0;}
+.map-link-text{display:flex;flex-direction:column;gap:2px;}
+.map-link-text strong{color:var(--gold-light);font-size:14px;font-weight:600;}
+.map-link-text span{color:var(--grey);font-size:12.5px;}
 .form-status{padding:12px 16px;border-radius:4px;font-size:13.5px;display:none;}
 .form-status.success{display:block;background:rgba(76,175,125,0.15);border:1px solid #4caf7d;color:#8fd9b0;}
 .form-status.error{display:block;background:rgba(209,73,91,0.15);border:1px solid var(--red);color:#f0a3ac;}
@@ -490,7 +496,7 @@ html[dir="rtl"] .contact-form input[type="tel"]{direction:rtl;text-align:right;}
       <p><strong data-i18n="contact_phone_label">Phone:</strong> <a href="tel:+971503389154">+971 50 338 9154</a></p>
       <p><strong data-i18n="contact_email_label">Email:</strong> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a></p>
       <p><strong data-i18n="contact_hours_label">Office Hours:</strong> <span data-i18n="ph_days_hours">Sunday–Thursday, 9:00 AM – 6:00 PM</span></p>
-      <iframe src="https://www.google.com/maps?q=25.251750,55.341917&z=17&output=embed" width="100%" height="280" style="border:0;border-radius:6px;margin-top:16px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office location map"></iframe>
+      <a href="https://www.google.com/maps?q=25.251750,55.341917" target="_blank" rel="noopener" class="map-link-card"><span class="map-link-icon">📍</span><span class="map-link-text"><strong>View our office on Google Maps</strong><span>Salem Building, Al Garhoud, Dubai</span></span></a>
     </div>
     <form class="contact-form" id="contactForm">
       <input type="text" name="name" data-i18n-placeholder="form_name" placeholder="Full Name" required>
