@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Tenancy Dispute Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Tenancy disputes are usually resolved quickly once the lease terms and payment history are clearly established.">
+<meta name="description" content="Representing landlords and tenants before Dubai's Rental Disputes Center in disputes over rent, deposits, maintenance, and eviction.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,80 +31,388 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="real-estate-law.html">Real Estate Law</a> &rsaquo; Tenancy Dispute Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="real-estate-law.html" data-i18n="real_estate">Real Estate Law</a> &rsaquo; <span data-i18n="page_title">Tenancy Dispute Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Tenancy Dispute Lawyer in Dubai</h1>
-  <p class="lead">Tenancy disputes are usually resolved quickly once the lease terms and payment history are clearly established.</p>
-  <div class="box">A tenancy dispute lawyer in Dubai handles eviction, rent, and maintenance disputes between landlords and tenants.</div>
-  <p class="body-p">The firm represents both landlords and tenants before the Rental Dispute Settlement Centre in Dubai.</p>
-  <p class="body-p">Advice covers notice requirements, permissible grounds for eviction, and rent increase disputes under Dubai's rental laws.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Tenancy Dispute Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Rental disputes in Dubai are decided by a dedicated tribunal, not the ordinary courts — knowing how the Rental Disputes Center works matters as much as the merits of the underlying disagreement.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A tenancy dispute lawyer in Dubai represents landlords and tenants before the Rental Disputes Center (RDC) in disputes over rent, deposits, maintenance obligations, and lease termination.</div>
+
+<p class="body-p" data-i18n="p1">Rental disputes in Dubai fall under the exclusive jurisdiction of the Rental Disputes Center, established under Decree No. 26 of 2013, which hears claims between landlords and tenants of real property in the Emirate, including urgent applications for interim relief such as eviction pending final judgment.</p>
+<p class="body-p" data-i18n="p2">The firm represents both landlords and tenants — pursuing or defending claims for unpaid rent, disputed maintenance responsibilities, unlawful rent increases outside the RERA rental index bands, and disputes over the return of security deposits at the end of a tenancy.</p>
+<p class="body-p" data-i18n="p3">Because RDC proceedings move on a relatively compressed timeline compared to ordinary litigation, early preparation of the tenancy contract, Ejari registration, and payment records materially affects the strength and speed of a claim.</p>
+
+<h2 data-i18n="h2_how">How a Tenancy Dispute Is Resolved</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Contract and Ejari Review</strong><span data-i18n="step1_d">The lawyer reviews the tenancy contract and Ejari registration to confirm the parties' rights and obligations.</span></li>
+<li><strong data-i18n="step2_t">Demand or Notice</strong><span data-i18n="step2_d">A formal payment demand or contractual notice is issued where required before a claim can proceed.</span></li>
+<li><strong data-i18n="step3_t">RDC Filing</strong><span data-i18n="step3_d">The claim is filed with the Rental Disputes Center, including any request for urgent interim relief.</span></li>
+<li><strong data-i18n="step4_t">Hearing</strong><span data-i18n="step4_d">The RDC hears the parties and reviews the supporting evidence.</span></li>
+<li><strong data-i18n="step5_t">Judgment</strong><span data-i18n="step5_d">The RDC issues a decision on the claim, which may include eviction, payment orders, or dismissal.</span></li>
+<li><strong data-i18n="step6_t">Enforcement or Appeal</strong><span data-i18n="step6_d">The judgment is enforced, or, where available, appealed to the relevant appellate tribunal.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Tenancy Dispute Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">Your tenant has stopped paying rent and you need to pursue eviction.</li>
+<li data-i18n="sc2">Your landlord has increased your rent beyond what the RERA rental index permits.</li>
+<li data-i18n="sc3">A dispute has arisen over the return of your security deposit.</li>
+<li data-i18n="sc4">You need to terminate a tenancy early and are unsure of your contractual position.</li>
+<li data-i18n="sc5">Maintenance obligations under the tenancy contract are disputed.</li>
+<li data-i18n="sc6">You need urgent interim relief from the Rental Disputes Center before a final hearing.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Eviction proceedings for non-payment or other contractual grounds</li>
+<li data-i18n="sv2">Defence against unlawful or excessive rent increase claims</li>
+<li data-i18n="sv3">Security deposit dispute representation</li>
+<li data-i18n="sv4">Maintenance and repair obligation disputes</li>
+<li data-i18n="sv5">Urgent interim relief applications before the RDC</li>
+<li data-i18n="sv6">Lease termination and early exit advice</li>
+<li data-i18n="sv7">Representation at RDC hearings for landlords and tenants</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What is the Rental Disputes Center?</summary>
+<p data-i18n="faq1_a">It is the specialized tribunal established under Decree No. 26 of 2013 with exclusive jurisdiction over landlord-tenant disputes concerning real property in Dubai.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">How much can my landlord increase my rent?</summary>
+<p data-i18n="faq2_a">Increases are capped under Decree No. 43 of 2013 based on how far current rent sits below the RERA rental index average for comparable units — the greater the gap, the higher the permitted increase.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">How much notice do I need to give to end a tenancy?</summary>
+<p data-i18n="faq3_a">Non-renewal generally requires 90 days' notice before the contract's expiry, though certain grounds, such as a landlord's wish to sell or use the property personally, require 12 months' notice served through a notary or registered mail.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Can I be evicted for late rent payment?</summary>
+<p data-i18n="faq4_a">Non-payment can be grounds for eviction if rent remains unpaid a set period after a written payment demand, subject to the terms of the specific tenancy contract.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Do I need Ejari registration to file an RDC claim?</summary>
+<p data-i18n="faq5_a">Ejari registration is standard evidence of the tenancy relationship and strongly recommended before any dispute arises, as it substantially simplifies proving the terms of the tenancy before the RDC.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",real_estate:"Real Estate Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Tenancy Dispute Lawyer in Dubai",
+lead:"Rental disputes in Dubai are decided by a dedicated tribunal, not the ordinary courts — knowing how the Rental Disputes Center works matters as much as the merits of the underlying disagreement.",
+box:"A tenancy dispute lawyer in Dubai represents landlords and tenants before the Rental Disputes Center (RDC) in disputes over rent, deposits, maintenance obligations, and lease termination.",
+p1:"Rental disputes in Dubai fall under the exclusive jurisdiction of the Rental Disputes Center, established under Decree No. 26 of 2013, which hears claims between landlords and tenants of real property in the Emirate, including urgent applications for interim relief such as eviction pending final judgment.",
+p2:"The firm represents both landlords and tenants — pursuing or defending claims for unpaid rent, disputed maintenance responsibilities, unlawful rent increases outside the RERA rental index bands, and disputes over the return of security deposits at the end of a tenancy.",
+p3:"Because RDC proceedings move on a relatively compressed timeline compared to ordinary litigation, early preparation of the tenancy contract, Ejari registration, and payment records materially affects the strength and speed of a claim.",
+h2_how:"How a Tenancy Dispute Is Resolved",
+step1_t:"Contract and Ejari Review",step1_d:"The lawyer reviews the tenancy contract and Ejari registration to confirm the parties' rights and obligations.",
+step2_t:"Demand or Notice",step2_d:"A formal payment demand or contractual notice is issued where required before a claim can proceed.",
+step3_t:"RDC Filing",step3_d:"The claim is filed with the Rental Disputes Center, including any request for urgent interim relief.",
+step4_t:"Hearing",step4_d:"The RDC hears the parties and reviews the supporting evidence.",
+step5_t:"Judgment",step5_d:"The RDC issues a decision on the claim, which may include eviction, payment orders, or dismissal.",
+step6_t:"Enforcement or Appeal",step6_d:"The judgment is enforced, or, where available, appealed to the relevant appellate tribunal.",
+h2_when:"When You Need a Tenancy Dispute Lawyer",
+sc1:"Your tenant has stopped paying rent and you need to pursue eviction.",
+sc2:"Your landlord has increased your rent beyond what the RERA rental index permits.",
+sc3:"A dispute has arisen over the return of your security deposit.",
+sc4:"You need to terminate a tenancy early and are unsure of your contractual position.",
+sc5:"Maintenance obligations under the tenancy contract are disputed.",
+sc6:"You need urgent interim relief from the Rental Disputes Center before a final hearing.",
+h2_services:"Services We Provide",
+sv1:"Eviction proceedings for non-payment or other contractual grounds",
+sv2:"Defence against unlawful or excessive rent increase claims",
+sv3:"Security deposit dispute representation",
+sv4:"Maintenance and repair obligation disputes",
+sv5:"Urgent interim relief applications before the RDC",
+sv6:"Lease termination and early exit advice",
+sv7:"Representation at RDC hearings for landlords and tenants",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What is the Rental Disputes Center?",faq1_a:"It is the specialized tribunal established under Decree No. 26 of 2013 with exclusive jurisdiction over landlord-tenant disputes concerning real property in Dubai.",
+faq2_q:"How much can my landlord increase my rent?",faq2_a:"Increases are capped under Decree No. 43 of 2013 based on how far current rent sits below the RERA rental index average for comparable units — the greater the gap, the higher the permitted increase.",
+faq3_q:"How much notice do I need to give to end a tenancy?",faq3_a:"Non-renewal generally requires 90 days' notice before the contract's expiry, though certain grounds, such as a landlord's wish to sell or use the property personally, require 12 months' notice served through a notary or registered mail.",
+faq4_q:"Can I be evicted for late rent payment?",faq4_a:"Non-payment can be grounds for eviction if rent remains unpaid a set period after a written payment demand, subject to the terms of the specific tenancy contract.",
+faq5_q:"Do I need Ejari registration to file an RDC claim?",faq5_a:"Ejari registration is standard evidence of the tenancy relationship and strongly recommended before any dispute arises, as it substantially simplifies proving the terms of the tenancy before the RDC."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",real_estate:"القانون العقاري",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي نزاعات الإيجار في دبي",
+lead:"تُفصل النزاعات الإيجارية في دبي أمام هيئة قضائية متخصصة، لا أمام المحاكم العادية — ومعرفة كيفية عمل مركز فض المنازعات الإيجارية لا تقل أهمية عن أسس الخلاف نفسه.",
+box:"يمثل محامي نزاعات الإيجار في دبي الملاك والمستأجرين أمام مركز فض المنازعات الإيجارية في النزاعات المتعلقة بالإيجار والتأمينات والتزامات الصيانة وإنهاء عقد الإيجار.",
+p1:"تندرج النزاعات الإيجارية في دبي ضمن الاختصاص الحصري لمركز فض المنازعات الإيجارية، الذي أُنشئ بموجب المرسوم رقم 26 لسنة 2013، وينظر في المطالبات بين الملاك والمستأجرين للعقارات في الإمارة، بما في ذلك الطلبات العاجلة للحماية المؤقتة مثل الإخلاء لحين صدور الحكم النهائي.",
+p2:"يمثل المكتب كلًا من الملاك والمستأجرين — من خلال رفع أو الدفاع عن مطالبات الإيجار غير المسدد، والتزامات الصيانة المتنازع عليها، وزيادات الإيجار غير المشروعة الخارجة عن نطاقات مؤشر الإيجارات الصادر عن مؤسسة التنظيم العقاري، والنزاعات المتعلقة برد التأمين عند انتهاء عقد الإيجار.",
+p3:"نظرًا لأن إجراءات مركز فض المنازعات الإيجارية تسير وفق جدول زمني مختصر نسبيًا مقارنةً بالتقاضي العادي، فإن الإعداد المبكر لعقد الإيجار وتسجيل الإيجاري وسجلات الدفع يؤثر بشكل جوهري في قوة المطالبة وسرعة البت فيها.",
+h2_how:"كيف يُحل نزاع الإيجار",
+step1_t:"مراجعة العقد والتسجيل في الإيجاري",step1_d:"يراجع المحامي عقد الإيجار وتسجيل الإيجاري للتأكد من حقوق والتزامات الطرفين.",
+step2_t:"الإنذار أو الإخطار",step2_d:"يُصدر إنذار رسمي بالدفع أو إخطار تعاقدي حيثما يلزم ذلك قبل السير في المطالبة.",
+step3_t:"التقديم لمركز فض المنازعات الإيجارية",step3_d:"تُقدَّم المطالبة إلى مركز فض المنازعات الإيجارية، بما في ذلك أي طلب للحماية المؤقتة العاجلة.",
+step4_t:"الجلسة",step4_d:"يستمع المركز إلى الطرفين ويراجع الأدلة الداعمة.",
+step5_t:"الحكم",step5_d:"يصدر المركز قرارًا بشأن المطالبة، قد يشمل الإخلاء أو أوامر الدفع أو الرفض.",
+step6_t:"التنفيذ أو الاستئناف",step6_d:"يُنفَّذ الحكم، أو يُستأنف حيثما أمكن ذلك أمام الهيئة الاستئنافية المختصة.",
+h2_when:"متى تحتاج إلى محامي نزاعات إيجار",
+sc1:"توقف مستأجرك عن دفع الإيجار وتحتاج إلى المضي في إجراءات الإخلاء.",
+sc2:"قام مالكك برفع الإيجار بما يتجاوز ما يسمح به مؤشر الإيجارات الصادر عن مؤسسة التنظيم العقاري.",
+sc3:"نشأ نزاع بشأن رد مبلغ التأمين الخاص بك.",
+sc4:"تحتاج إلى إنهاء عقد الإيجار مبكرًا ولست متأكدًا من موقفك التعاقدي.",
+sc5:"هناك نزاع حول التزامات الصيانة بموجب عقد الإيجار.",
+sc6:"تحتاج إلى حماية مؤقتة عاجلة من مركز فض المنازعات الإيجارية قبل الجلسة النهائية.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"إجراءات الإخلاء بسبب عدم السداد أو أسباب تعاقدية أخرى",
+sv2:"الدفاع ضد مطالبات زيادة الإيجار غير المشروعة أو المفرطة",
+sv3:"التمثيل في نزاعات مبلغ التأمين",
+sv4:"نزاعات التزامات الصيانة والإصلاح",
+sv5:"طلبات الحماية المؤقتة العاجلة أمام مركز فض المنازعات الإيجارية",
+sv6:"إنهاء عقد الإيجار والاستشارة بشأن الخروج المبكر",
+sv7:"التمثيل في جلسات مركز فض المنازعات الإيجارية للملاك والمستأجرين",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما هو مركز فض المنازعات الإيجارية؟",faq1_a:"هو الهيئة القضائية المتخصصة التي أُنشئت بموجب المرسوم رقم 26 لسنة 2013 وتتمتع بالاختصاص الحصري في النزاعات بين الملاك والمستأجرين المتعلقة بالعقارات في دبي.",
+faq2_q:"كم يمكن لمالكي أن يرفع إيجاري؟",faq2_a:"تخضع الزيادات لسقف بموجب المرسوم رقم 43 لسنة 2013 استنادًا إلى مدى انخفاض الإيجار الحالي عن متوسط مؤشر الإيجارات الصادر عن مؤسسة التنظيم العقاري للوحدات المماثلة — وكلما اتسعت الفجوة، ارتفعت نسبة الزيادة المسموح بها.",
+faq3_q:"كم مدة الإخطار المطلوبة لإنهاء عقد الإيجار؟",faq3_a:"يتطلب عدم التجديد عادةً إخطارًا مدته 90 يومًا قبل انتهاء العقد، إلا أن بعض الأسباب، مثل رغبة المالك في البيع أو استخدام العقار شخصيًا، تتطلب إخطارًا مدته 12 شهرًا يُرسَل عبر كاتب العدل أو بريد مسجل.",
+faq4_q:"هل يمكن إخلائي بسبب تأخر دفع الإيجار؟",faq4_a:"يمكن أن يكون عدم السداد سببًا للإخلاء إذا بقي الإيجار غير مسدد لمدة محددة بعد إنذار كتابي بالدفع، وذلك وفقًا لشروط عقد الإيجار المحدد.",
+faq5_q:"هل أحتاج إلى تسجيل الإيجاري لتقديم مطالبة أمام مركز فض المنازعات الإيجارية؟",faq5_a:"يُعد تسجيل الإيجاري دليلًا معياريًا على علاقة الإيجار ويُنصح بشدة بإتمامه قبل نشوء أي نزاع، إذ يُسهّل بشكل كبير إثبات شروط الإيجار أمام مركز فض المنازعات الإيجارية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",real_estate:"房地产法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜租赁纠纷律师",
+lead:"迪拜的租赁纠纷由专门的仲裁机构裁定，而非普通法院——了解租赁纠纷中心的运作方式，与争议本身的是非曲直同样重要。",
+box:"迪拜租赁纠纷律师代表房东和租户在租赁纠纷中心（RDC）处理有关租金、押金、维修义务及租约终止的纠纷。",
+p1:"迪拜的租赁纠纷属于租赁纠纷中心的专属管辖范围，该中心根据2013年第26号法令设立，审理该酋长国内房东与租户之间的索赔，包括诸如判决作出前的驱逐等紧急临时救济申请。",
+p2:"本所同时代表房东和租户——就未付租金、有争议的维修责任、超出RERA租金指数区间的非法加租，以及租期结束时押金退还纠纷提起或抗辩索赔。",
+p3:"由于与普通诉讼相比，RDC程序的时间线相对紧凑，及早准备租赁合同、Ejari登记及付款记录，会对索赔的力度和速度产生实质性影响。",
+h2_how:"租赁纠纷如何解决",
+step1_t:"合同与Ejari登记审查",step1_d:"律师审查租赁合同及Ejari登记，以确认双方的权利与义务。",
+step2_t:"催告或通知",step2_d:"在提出索赔之前，如有需要，将发出正式的付款催告或合同通知。",
+step3_t:"提交RDC申请",step3_d:"向租赁纠纷中心提交索赔，包括任何紧急临时救济请求。",
+step4_t:"听证",step4_d:"RDC听取双方陈述并审查支持性证据。",
+step5_t:"裁决",step5_d:"RDC就索赔作出裁决，可能包括驱逐令、付款令或驳回。",
+step6_t:"执行或上诉",step6_d:"裁决将被执行，或在可上诉的情况下向相关上诉仲裁机构提起上诉。",
+h2_when:"何时需要租赁纠纷律师",
+sc1:"您的租户已停止支付租金，您需要提起驱逐程序。",
+sc2:"您的房东将租金上调至超出RERA租金指数所允许的幅度。",
+sc3:"就退还押金产生了纠纷。",
+sc4:"您需要提前终止租约，但不确定自己的合同地位。",
+sc5:"租赁合同项下的维修义务存在争议。",
+sc6:"您需要在最终听证前从租赁纠纷中心获得紧急临时救济。",
+h2_services:"我们提供的服务",
+sv1:"因未付款或其他合同事由提起的驱逐程序",
+sv2:"针对非法或过度加租主张的抗辩",
+sv3:"押金纠纷代理",
+sv4:"维修及修缮义务纠纷",
+sv5:"在RDC提出紧急临时救济申请",
+sv6:"租约终止及提前退租咨询",
+sv7:"在RDC听证中为房东及租户提供代理",
+h2_faq:"常见问题",
+faq1_q:"什么是租赁纠纷中心？",faq1_a:"这是根据2013年第26号法令设立的专门仲裁机构，对涉及迪拜房地产的房东与租户纠纷拥有专属管辖权。",
+faq2_q:"我的房东最多可以将租金上调多少？",faq2_a:"根据2013年第43号法令，加租幅度设有上限，具体取决于当前租金低于同类单位RERA租金指数平均值的程度——差距越大，允许的加租幅度就越高。",
+faq3_q:"终止租约需要提前多久通知？",faq3_a:"不续约通常需要在合同到期前90天发出通知，但某些情形，例如房东希望出售或自用该物业，则需要通过公证人或挂号信提前12个月发出通知。",
+faq4_q:"我会因逾期支付租金而被驱逐吗？",faq4_a:"若在书面付款催告后的规定期限内租金仍未支付，未付款可构成驱逐的理由，具体则取决于相应租赁合同的条款。",
+faq5_q:"我是否需要Ejari登记才能向RDC提出索赔？",faq5_a:"Ejari登记是租赁关系的标准证明，强烈建议在任何纠纷发生之前完成登记，因为这将大大简化在RDC面前证明租赁条款的过程。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",real_estate:"Право недвижимости",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по арендным спорам в Дубае",
+lead:"Арендные споры в Дубае рассматриваются специализированным трибуналом, а не обычными судами — знание того, как работает Центр по разрешению арендных споров, важно не меньше, чем существо самого разногласия.",
+box:"Адвокат по арендным спорам в Дубае представляет арендодателей и арендаторов в Центре по разрешению арендных споров (RDC) по вопросам аренды, депозитов, обязательств по обслуживанию и расторжения договора аренды.",
+p1:"Арендные споры в Дубае относятся к исключительной компетенции Центра по разрешению арендных споров, учреждённого Указом № 26 от 2013 года, который рассматривает требования между арендодателями и арендаторами недвижимого имущества в эмирате, включая срочные заявления о временных мерах, таких как выселение до вынесения окончательного решения.",
+p2:"Фирма представляет как арендодателей, так и арендаторов — заявляя или оспаривая требования о невыплаченной арендной плате, спорных обязательствах по обслуживанию, незаконном повышении арендной платы за пределами диапазонов индекса аренды RERA, а также в спорах о возврате гарантийного депозита по окончании срока аренды.",
+p3:"Поскольку разбирательства в RDC проходят по относительно сжатому графику по сравнению с обычным судопроизводством, заблаговременная подготовка договора аренды, регистрации Ejari и платёжных документов существенно влияет на силу и скорость рассмотрения требования.",
+h2_how:"Как разрешается арендный спор",
+step1_t:"Проверка договора и регистрации Ejari",step1_d:"Адвокат проверяет договор аренды и регистрацию Ejari, чтобы подтвердить права и обязанности сторон.",
+step2_t:"Требование или уведомление",step2_d:"При необходимости перед подачей требования направляется официальное требование об оплате или договорное уведомление.",
+step3_t:"Подача в RDC",step3_d:"Требование подаётся в Центр по разрешению арендных споров, включая любой запрос о срочных временных мерах.",
+step4_t:"Слушание",step4_d:"RDC заслушивает стороны и рассматривает подтверждающие доказательства.",
+step5_t:"Решение",step5_d:"RDC выносит решение по требованию, которое может включать выселение, приказ об оплате или отказ в удовлетворении требования.",
+step6_t:"Исполнение или обжалование",step6_d:"Решение приводится в исполнение либо, где это возможно, обжалуется в соответствующем апелляционном органе.",
+h2_when:"Когда вам нужен адвокат по арендным спорам",
+sc1:"Ваш арендатор перестал платить арендную плату, и вам необходимо инициировать выселение.",
+sc2:"Ваш арендодатель повысил арендную плату сверх допустимого по индексу аренды RERA.",
+sc3:"Возник спор о возврате вашего гарантийного депозита.",
+sc4:"Вам необходимо досрочно расторгнуть договор аренды, и вы не уверены в своей договорной позиции.",
+sc5:"Оспариваются обязательства по обслуживанию согласно договору аренды.",
+sc6:"Вам необходимы срочные временные меры со стороны Центра по разрешению арендных споров до итогового слушания.",
+h2_services:"Наши услуги",
+sv1:"Процедуры выселения за неуплату или по иным договорным основаниям",
+sv2:"Защита от требований о незаконном или чрезмерном повышении арендной платы",
+sv3:"Представительство в спорах о гарантийном депозите",
+sv4:"Споры об обязательствах по обслуживанию и ремонту",
+sv5:"Заявления о срочных временных мерах в RDC",
+sv6:"Консультации по расторжению договора аренды и досрочному выходу",
+sv7:"Представительство на слушаниях RDC для арендодателей и арендаторов",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Что такое Центр по разрешению арендных споров?",faq1_a:"Это специализированный трибунал, учреждённый Указом № 26 от 2013 года, обладающий исключительной юрисдикцией по спорам между арендодателями и арендаторами в отношении недвижимого имущества в Дубае.",
+faq2_q:"Насколько мой арендодатель может повысить арендную плату?",faq2_a:"Повышение ограничено согласно Указу № 43 от 2013 года в зависимости от того, насколько текущая арендная плата ниже среднего значения индекса аренды RERA для сопоставимых объектов — чем больше разрыв, тем выше допустимое повышение.",
+faq3_q:"За сколько времени я должен уведомить о прекращении аренды?",faq3_a:"Непродление обычно требует уведомления за 90 дней до истечения срока договора, однако некоторые основания, такие как намерение арендодателя продать или использовать объект лично, требуют уведомления за 12 месяцев, вручённого через нотариуса или заказным письмом.",
+faq4_q:"Могу ли я быть выселен за просрочку арендной платы?",faq4_a:"Неуплата может служить основанием для выселения, если арендная плата остаётся невыплаченной в течение установленного срока после письменного требования об оплате, в соответствии с условиями конкретного договора аренды.",
+faq5_q:"Нужна ли мне регистрация Ejari для подачи требования в RDC?",faq5_a:"Регистрация Ejari является стандартным доказательством арендных отношений и настоятельно рекомендуется до возникновения какого-либо спора, поскольку она существенно упрощает доказывание условий аренды перед RDC."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",real_estate:"Immobilienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Mietstreitigkeiten in Dubai",
+lead:"Mietstreitigkeiten in Dubai werden von einem eigenen Schiedsgericht entschieden, nicht von den ordentlichen Gerichten — zu wissen, wie das Rental Disputes Center arbeitet, ist ebenso wichtig wie die inhaltliche Berechtigung des zugrunde liegenden Streits.",
+box:"Ein Anwalt für Mietstreitigkeiten in Dubai vertritt Vermieter und Mieter vor dem Rental Disputes Center (RDC) in Streitigkeiten über Miete, Kautionen, Instandhaltungspflichten und die Beendigung von Mietverhältnissen.",
+p1:"Mietstreitigkeiten in Dubai fallen in die ausschließliche Zuständigkeit des Rental Disputes Center, das durch Dekret Nr. 26 von 2013 eingerichtet wurde und Ansprüche zwischen Vermietern und Mietern von Immobilien im Emirat verhandelt, einschließlich dringender Anträge auf vorläufigen Rechtsschutz wie eine Räumung bis zur endgültigen Entscheidung.",
+p2:"Die Kanzlei vertritt sowohl Vermieter als auch Mieter — bei der Geltendmachung oder Abwehr von Ansprüchen wegen nicht gezahlter Miete, strittiger Instandhaltungspflichten, unrechtmäßiger Mieterhöhungen außerhalb der RERA-Mietindexbandbreiten sowie bei Streitigkeiten über die Rückzahlung der Kaution nach Beendigung eines Mietverhältnisses.",
+p3:"Da RDC-Verfahren im Vergleich zu ordentlichen Gerichtsverfahren einem vergleichsweise gestrafften Zeitplan folgen, wirkt sich die frühzeitige Vorbereitung des Mietvertrags, der Ejari-Registrierung und der Zahlungsnachweise erheblich auf die Stärke und Geschwindigkeit eines Anspruchs aus.",
+h2_how:"So wird ein Mietstreit gelöst",
+step1_t:"Prüfung von Vertrag und Ejari-Registrierung",step1_d:"Der Anwalt prüft den Mietvertrag und die Ejari-Registrierung, um die Rechte und Pflichten der Parteien zu bestätigen.",
+step2_t:"Zahlungsaufforderung oder Kündigung",step2_d:"Sofern erforderlich, wird vor Einleitung eines Anspruchs eine förmliche Zahlungsaufforderung oder vertragliche Mitteilung ausgesprochen.",
+step3_t:"Einreichung beim RDC",step3_d:"Der Anspruch wird beim Rental Disputes Center eingereicht, einschließlich eines etwaigen Antrags auf dringenden vorläufigen Rechtsschutz.",
+step4_t:"Anhörung",step4_d:"Das RDC hört die Parteien an und prüft die vorgelegten Beweise.",
+step5_t:"Entscheidung",step5_d:"Das RDC erlässt eine Entscheidung über den Anspruch, die eine Räumung, Zahlungsanordnungen oder eine Abweisung umfassen kann.",
+step6_t:"Vollstreckung oder Berufung",step6_d:"Die Entscheidung wird vollstreckt oder, sofern möglich, bei der zuständigen Berufungsinstanz angefochten.",
+h2_when:"Wann Sie einen Anwalt für Mietstreitigkeiten brauchen",
+sc1:"Ihr Mieter hat die Mietzahlungen eingestellt, und Sie müssen eine Räumung betreiben.",
+sc2:"Ihr Vermieter hat die Miete über das nach dem RERA-Mietindex zulässige Maß hinaus erhöht.",
+sc3:"Es ist ein Streit über die Rückzahlung Ihrer Kaution entstanden.",
+sc4:"Sie müssen ein Mietverhältnis vorzeitig beenden und sind sich Ihrer vertraglichen Position nicht sicher.",
+sc5:"Instandhaltungspflichten aus dem Mietvertrag sind strittig.",
+sc6:"Sie benötigen dringenden vorläufigen Rechtsschutz durch das Rental Disputes Center vor einer abschließenden Anhörung.",
+h2_services:"Unsere Leistungen",
+sv1:"Räumungsverfahren wegen Zahlungsverzugs oder anderer vertraglicher Gründe",
+sv2:"Abwehr von Ansprüchen wegen unrechtmäßiger oder überhöhter Mieterhöhung",
+sv3:"Vertretung in Kautionsstreitigkeiten",
+sv4:"Streitigkeiten über Instandhaltungs- und Reparaturpflichten",
+sv5:"Anträge auf dringenden vorläufigen Rechtsschutz beim RDC",
+sv6:"Beratung zur Vertragsbeendigung und zum vorzeitigen Auszug",
+sv7:"Vertretung bei RDC-Anhörungen für Vermieter und Mieter",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist das Rental Disputes Center?",faq1_a:"Es handelt sich um das durch Dekret Nr. 26 von 2013 eingerichtete spezialisierte Schiedsgericht mit ausschließlicher Zuständigkeit für Vermieter-Mieter-Streitigkeiten in Bezug auf Immobilien in Dubai.",
+faq2_q:"Um wie viel darf mein Vermieter die Miete erhöhen?",faq2_a:"Erhöhungen sind nach Dekret Nr. 43 von 2013 gedeckelt, abhängig davon, wie weit die aktuelle Miete unter dem RERA-Mietindexdurchschnitt für vergleichbare Einheiten liegt — je größer die Differenz, desto höher die zulässige Erhöhung.",
+faq3_q:"Wie viel Kündigungsfrist muss ich einhalten, um ein Mietverhältnis zu beenden?",faq3_a:"Eine Nichtverlängerung erfordert in der Regel eine Kündigungsfrist von 90 Tagen vor Ablauf des Vertrags, wobei bestimmte Gründe, etwa der Wunsch des Vermieters, die Immobilie zu verkaufen oder selbst zu nutzen, eine 12-monatige Kündigungsfrist erfordern, die über einen Notar oder per Einschreiben zuzustellen ist.",
+faq4_q:"Kann ich wegen verspäteter Mietzahlung geräumt werden?",faq4_a:"Nichtzahlung kann einen Räumungsgrund darstellen, wenn die Miete nach einer schriftlichen Zahlungsaufforderung für einen bestimmten Zeitraum unbezahlt bleibt, vorbehaltlich der Bedingungen des jeweiligen Mietvertrags.",
+faq5_q:"Benötige ich eine Ejari-Registrierung, um einen Anspruch beim RDC geltend zu machen?",faq5_a:"Die Ejari-Registrierung ist der übliche Nachweis des Mietverhältnisses und wird dringend empfohlen, bevor ein Streit entsteht, da sie den Nachweis der Mietbedingungen vor dem RDC erheblich vereinfacht."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
+
 </body>
 </html>

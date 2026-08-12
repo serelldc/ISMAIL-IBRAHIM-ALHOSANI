@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Mortgage & Financing Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Financing a property purchase adds another layer of documentation to review before signing.">
+<title>Mortgage &amp; Financing Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
+<meta name="description" content="Advising borrowers, lenders, and developers on structuring, registering, and enforcing real estate mortgages in Dubai.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,388 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="real-estate-law.html">Real Estate Law</a> &rsaquo; Mortgage & Financing Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="real-estate-law.html" data-i18n="real_estate">Real Estate Law</a> &rsaquo; <span data-i18n="page_title">Mortgage &amp; Financing Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Mortgage & Financing Lawyer in Dubai</h1>
-  <p class="lead">Financing a property purchase adds another layer of documentation to review before signing.</p>
-  <div class="box">This covers mortgage agreements and financing arrangements tied to Dubai real estate purchases.</div>
-  <p class="body-p">The firm reviews mortgage documentation and advises on financing disputes with lenders.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Mortgage &amp; Financing Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">A mortgage over Dubai real estate only has legal force once it is properly registered — the financing agreement between borrower and lender is only half of what actually secures the debt.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A mortgage and financing lawyer in Dubai advises borrowers, lenders, and developers on structuring, registering, and enforcing real estate mortgages under Dubai's mortgage legislation.</div>
+
+<p class="body-p" data-i18n="p1">Real estate mortgages in Dubai are governed by Law No. 14 of 2008, which requires registration with the Dubai Land Department for a mortgage to have legal effect — an unregistered mortgage, however clearly documented between the parties, does not bind third parties or give the lender the registered security it was meant to provide.</p>
+<p class="body-p" data-i18n="p2">The firm advises borrowers on reviewing financing terms and mortgage documentation before signing, lenders on structuring and registering mortgage security correctly, and both sides on the notice and procedural requirements that apply if a mortgage moves toward default and foreclosure.</p>
+<p class="body-p" data-i18n="p3">Foreclosure under Dubai's mortgage law requires proper notice to the debtor and any occupant before enforcement proceedings can begin, and errors in that process can delay or derail a lender's ability to recover the secured debt — making procedural accuracy as important as the underlying financial position.</p>
+
+<h2 data-i18n="h2_how">How We Handle Mortgage and Financing Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Instruction</strong><span data-i18n="step1_d">The lawyer reviews the financing terms, whether advising a borrower, lender, or developer.</span></li>
+<li><strong data-i18n="step2_t">Document Review</strong><span data-i18n="step2_d">Mortgage documentation and loan agreements are reviewed for compliance and risk.</span></li>
+<li><strong data-i18n="step3_t">Registration</strong><span data-i18n="step3_d">The mortgage is registered with the Dubai Land Department to secure its legal effect.</span></li>
+<li><strong data-i18n="step4_t">Ongoing Advisory</strong><span data-i18n="step4_d">The lawyer advises on amendments, releases, or refinancing as the mortgage progresses.</span></li>
+<li><strong data-i18n="step5_t">Default Response</strong><span data-i18n="step5_d">Where default occurs, notice requirements and options are assessed for both borrower and lender.</span></li>
+<li><strong data-i18n="step6_t">Enforcement or Resolution</strong><span data-i18n="step6_d">Foreclosure proceedings are pursued, or a resolution such as restructuring is negotiated.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Mortgage &amp; Financing Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You are taking out a mortgage to purchase property and want the documentation reviewed.</li>
+<li data-i18n="sc2">You are a lender structuring real estate-secured financing and need it properly registered.</li>
+<li data-i18n="sc3">You have fallen behind on mortgage payments and want to understand your options.</li>
+<li data-i18n="sc4">You need to release a mortgage after repaying the underlying loan.</li>
+<li data-i18n="sc5">You are refinancing an existing property and need the new mortgage registered correctly.</li>
+<li data-i18n="sc6">A foreclosure notice has been issued and you need to respond.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Mortgage documentation review for borrowers</li>
+<li data-i18n="sv2">Mortgage structuring and registration for lenders</li>
+<li data-i18n="sv3">Mortgage release and discharge coordination</li>
+<li data-i18n="sv4">Refinancing advice and registration</li>
+<li data-i18n="sv5">Default and foreclosure notice response</li>
+<li data-i18n="sv6">Foreclosure proceedings representation</li>
+<li data-i18n="sv7">Developer financing structure advice</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Is a mortgage valid before it is registered?</summary>
+<p data-i18n="faq1_a">No — under Law No. 14 of 2008, a mortgage over Dubai real estate has no legal effect as security until it is registered with the Dubai Land Department, regardless of what the loan agreement between the parties says.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">What notice is required before foreclosure?</summary>
+<p data-i18n="faq2_a">The debtor and any occupant of the property must generally be served notice through a notary public before foreclosure proceedings can begin, with a minimum notice period that must be observed.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Can I refinance my property with a different lender?</summary>
+<p data-i18n="faq3_a">Yes, though the existing mortgage generally needs to be released and the new one registered, and the timing of these steps needs to be coordinated carefully to avoid a gap in registered security.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">What happens to my mortgage if I sell my property?</summary>
+<p data-i18n="faq4_a">The mortgage typically must be settled and released before or as part of the sale transfer, since the Dubai Land Department will not usually process a transfer while an unresolved mortgage remains registered against the property.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Do I need a lawyer to register a mortgage?</summary>
+<p data-i18n="faq5_a">It isn't a strict legal requirement, but mortgage registration involves fee calculations, document requirements, and coordination with the lender and the Dubai Land Department that a lawyer can materially streamline, particularly for non-standard financing structures.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",real_estate:"Real Estate Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Mortgage & Financing Lawyer in Dubai",
+lead:"A mortgage over Dubai real estate only has legal force once it is properly registered — the financing agreement between borrower and lender is only half of what actually secures the debt.",
+box:"A mortgage and financing lawyer in Dubai advises borrowers, lenders, and developers on structuring, registering, and enforcing real estate mortgages under Dubai's mortgage legislation.",
+p1:"Real estate mortgages in Dubai are governed by Law No. 14 of 2008, which requires registration with the Dubai Land Department for a mortgage to have legal effect — an unregistered mortgage, however clearly documented between the parties, does not bind third parties or give the lender the registered security it was meant to provide.",
+p2:"The firm advises borrowers on reviewing financing terms and mortgage documentation before signing, lenders on structuring and registering mortgage security correctly, and both sides on the notice and procedural requirements that apply if a mortgage moves toward default and foreclosure.",
+p3:"Foreclosure under Dubai's mortgage law requires proper notice to the debtor and any occupant before enforcement proceedings can begin, and errors in that process can delay or derail a lender's ability to recover the secured debt — making procedural accuracy as important as the underlying financial position.",
+h2_how:"How We Handle Mortgage and Financing Matters",
+step1_t:"Instruction",step1_d:"The lawyer reviews the financing terms, whether advising a borrower, lender, or developer.",
+step2_t:"Document Review",step2_d:"Mortgage documentation and loan agreements are reviewed for compliance and risk.",
+step3_t:"Registration",step3_d:"The mortgage is registered with the Dubai Land Department to secure its legal effect.",
+step4_t:"Ongoing Advisory",step4_d:"The lawyer advises on amendments, releases, or refinancing as the mortgage progresses.",
+step5_t:"Default Response",step5_d:"Where default occurs, notice requirements and options are assessed for both borrower and lender.",
+step6_t:"Enforcement or Resolution",step6_d:"Foreclosure proceedings are pursued, or a resolution such as restructuring is negotiated.",
+h2_when:"When You Need a Mortgage & Financing Lawyer",
+sc1:"You are taking out a mortgage to purchase property and want the documentation reviewed.",
+sc2:"You are a lender structuring real estate-secured financing and need it properly registered.",
+sc3:"You have fallen behind on mortgage payments and want to understand your options.",
+sc4:"You need to release a mortgage after repaying the underlying loan.",
+sc5:"You are refinancing an existing property and need the new mortgage registered correctly.",
+sc6:"A foreclosure notice has been issued and you need to respond.",
+h2_services:"Services We Provide",
+sv1:"Mortgage documentation review for borrowers",
+sv2:"Mortgage structuring and registration for lenders",
+sv3:"Mortgage release and discharge coordination",
+sv4:"Refinancing advice and registration",
+sv5:"Default and foreclosure notice response",
+sv6:"Foreclosure proceedings representation",
+sv7:"Developer financing structure advice",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Is a mortgage valid before it is registered?",faq1_a:"No — under Law No. 14 of 2008, a mortgage over Dubai real estate has no legal effect as security until it is registered with the Dubai Land Department, regardless of what the loan agreement between the parties says.",
+faq2_q:"What notice is required before foreclosure?",faq2_a:"The debtor and any occupant of the property must generally be served notice through a notary public before foreclosure proceedings can begin, with a minimum notice period that must be observed.",
+faq3_q:"Can I refinance my property with a different lender?",faq3_a:"Yes, though the existing mortgage generally needs to be released and the new one registered, and the timing of these steps needs to be coordinated carefully to avoid a gap in registered security.",
+faq4_q:"What happens to my mortgage if I sell my property?",faq4_a:"The mortgage typically must be settled and released before or as part of the sale transfer, since the Dubai Land Department will not usually process a transfer while an unresolved mortgage remains registered against the property.",
+faq5_q:"Do I need a lawyer to register a mortgage?",faq5_a:"It isn't a strict legal requirement, but mortgage registration involves fee calculations, document requirements, and coordination with the lender and the Dubai Land Department that a lawyer can materially streamline, particularly for non-standard financing structures."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",real_estate:"القانون العقاري",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي الرهن العقاري والتمويل في دبي",
+lead:"لا يكتسب الرهن العقاري على عقار في دبي قوته القانونية إلا بعد تسجيله بشكل صحيح — فاتفاقية التمويل بين المقترض والمُقرض لا تمثل سوى نصف ما يؤمّن الدين فعليًا.",
+box:"يقدم محامي الرهن العقاري والتمويل في دبي الاستشارة للمقترضين والمقرضين والمطورين بشأن هيكلة الرهون العقارية وتسجيلها وإنفاذها بموجب تشريعات الرهن العقاري في دبي.",
+p1:"تخضع الرهون العقارية في دبي للقانون رقم 14 لسنة 2008، الذي يشترط التسجيل لدى دائرة الأراضي والأملاك في دبي حتى يكون للرهن أثر قانوني — فالرهن غير المسجل، مهما كان موثقًا بوضوح بين الطرفين، لا يُلزم الغير ولا يمنح المُقرض الضمان المسجل الذي كان يُقصد منه.",
+p2:"يقدم المكتب الاستشارة للمقترضين بشأن مراجعة شروط التمويل ووثائق الرهن قبل التوقيع، وللمقرضين بشأن هيكلة وتسجيل ضمان الرهن بالشكل الصحيح، وللطرفين معًا بشأن متطلبات الإخطار والإجراءات التي تنطبق في حال تعثر الرهن وتوجهه نحو التخلف عن السداد وحبس الرهن.",
+p3:"يستلزم حبس الرهن بموجب قانون الرهن العقاري في دبي إخطارًا صحيحًا للمدين ولأي شاغل للعقار قبل بدء إجراءات الإنفاذ، ويمكن أن تؤدي الأخطاء في هذه العملية إلى تأخير أو تعطيل قدرة المُقرض على استرداد الدين المضمون — ما يجعل الدقة الإجرائية بأهمية الوضع المالي الأساسي ذاته.",
+h2_how:"كيف نتعامل مع مسائل الرهن العقاري والتمويل",
+step1_t:"التكليف",step1_d:"يراجع المحامي شروط التمويل، سواء كان يقدم الاستشارة لمقترض أو مُقرض أو مطور.",
+step2_t:"مراجعة المستندات",step2_d:"تُراجع وثائق الرهن واتفاقيات القرض من حيث الامتثال والمخاطر.",
+step3_t:"التسجيل",step3_d:"يُسجَّل الرهن لدى دائرة الأراضي والأملاك في دبي لضمان أثره القانوني.",
+step4_t:"الاستشارة المستمرة",step4_d:"يقدم المحامي المشورة بشأن التعديلات أو الإبراء أو إعادة التمويل مع تطور الرهن.",
+step5_t:"الاستجابة للتعثر",step5_d:"عند حدوث التعثر، تُقيَّم متطلبات الإخطار والخيارات المتاحة لكل من المقترض والمُقرض.",
+step6_t:"الإنفاذ أو التسوية",step6_d:"تُتابع إجراءات حبس الرهن، أو يُتفاوض على تسوية مثل إعادة الهيكلة.",
+h2_when:"متى تحتاج إلى محامي رهن عقاري وتمويل",
+sc1:"أنت بصدد الحصول على رهن عقاري لشراء عقار وتريد مراجعة المستندات.",
+sc2:"أنت مُقرض بصدد هيكلة تمويل مضمون بعقار وتحتاج إلى تسجيله بالشكل الصحيح.",
+sc3:"تأخرت في سداد أقساط الرهن العقاري وتريد فهم الخيارات المتاحة أمامك.",
+sc4:"تحتاج إلى إبراء رهن عقاري بعد سداد القرض الأساسي.",
+sc5:"تعيد تمويل عقار قائم وتحتاج إلى تسجيل الرهن الجديد بشكل صحيح.",
+sc6:"صدر إخطار بحبس الرهن وتحتاج إلى الرد عليه.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"مراجعة وثائق الرهن العقاري للمقترضين",
+sv2:"هيكلة وتسجيل الرهن العقاري للمقرضين",
+sv3:"تنسيق إبراء الرهن العقاري وفكه",
+sv4:"استشارات إعادة التمويل والتسجيل",
+sv5:"الرد على إخطارات التعثر وحبس الرهن",
+sv6:"التمثيل في إجراءات حبس الرهن",
+sv7:"استشارات هيكلة تمويل المطورين",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل الرهن العقاري صالح قبل تسجيله؟",faq1_a:"لا — بموجب القانون رقم 14 لسنة 2008، لا يكون للرهن العقاري على عقار في دبي أي أثر قانوني كضمان إلا بعد تسجيله لدى دائرة الأراضي والأملاك في دبي، بصرف النظر عمّا ينص عليه اتفاق القرض بين الطرفين.",
+faq2_q:"ما الإخطار المطلوب قبل حبس الرهن؟",faq2_a:"يجب عمومًا إخطار المدين وأي شاغل للعقار عبر الكاتب العدل قبل بدء إجراءات حبس الرهن، مع وجوب مراعاة حد أدنى لمدة الإخطار.",
+faq3_q:"هل يمكنني إعادة تمويل عقاري لدى مُقرض مختلف؟",faq3_a:"نعم، وإن كان يلزم عمومًا إبراء الرهن القائم وتسجيل الرهن الجديد، ويجب تنسيق توقيت هذه الخطوات بعناية لتجنب أي فجوة في الضمان المسجل.",
+faq4_q:"ماذا يحدث لرهني العقاري إذا بعت عقاري؟",faq4_a:"يجب عادةً تسوية الرهن العقاري وإبراؤه قبل نقل الملكية أو كجزء منه، إذ لا تقوم دائرة الأراضي والأملاك في دبي عادةً بمعالجة نقل الملكية في ظل بقاء رهن غير مسوّى مسجلًا على العقار.",
+faq5_q:"هل أحتاج إلى محامٍ لتسجيل رهن عقاري؟",faq5_a:"ليس ذلك شرطًا قانونيًا صارمًا، إلا أن تسجيل الرهن العقاري يتضمن حسابات للرسوم ومتطلبات مستندية وتنسيقًا مع المُقرض ودائرة الأراضي والأملاك في دبي يمكن للمحامي أن يُسهّلها بشكل ملموس، لا سيما في هياكل التمويل غير القياسية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",real_estate:"房地产法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜抵押贷款与融资律师",
+lead:"迪拜房地产抵押只有在正式登记后才具有法律效力——借款人与贷款人之间的融资协议只是真正保障债务的一半。",
+box:"迪拜抵押贷款与融资律师就抵押的架构、登记及执行，依据迪拜抵押立法为借款人、贷款人及开发商提供咨询。",
+p1:"迪拜的房地产抵押受2008年第14号法律管辖，该法要求在迪拜土地局办理登记方能使抵押具有法律效力——未经登记的抵押，无论双方之间的文件记录多么清晰，都不能约束第三方，也无法为贷款人提供其本应获得的已登记担保。",
+p2:"本所为借款人在签署前审查融资条款及抵押文件提供咨询，为贷款人在正确架构和登记抵押担保方面提供咨询，并就抵押在走向违约及止赎时适用的通知与程序要求为双方提供咨询。",
+p3:"根据迪拜抵押法律，止赎程序开始前须向债务人及任何占用人发出适当通知，而该程序中的失误可能延误或破坏贷款人追偿担保债务的能力——这使程序上的准确性与基础财务状况同样重要。",
+h2_how:"我们如何处理抵押与融资事务",
+step1_t:"接受委托",step1_d:"无论是为借款人、贷款人还是开发商提供咨询，律师均会审查融资条款。",
+step2_t:"文件审查",step2_d:"对抵押文件及贷款协议进行合规性与风险审查。",
+step3_t:"登记",step3_d:"在迪拜土地局办理抵押登记以确保其法律效力。",
+step4_t:"持续咨询",step4_d:"随着抵押进展，律师就变更、解除或再融资提供咨询。",
+step5_t:"违约应对",step5_d:"一旦发生违约，将为借款人和贷款人评估通知要求及可选方案。",
+step6_t:"执行或解决",step6_d:"推进止赎程序，或就重组等解决方案进行协商。",
+h2_when:"何时需要抵押贷款与融资律师",
+sc1:"您正在申请抵押贷款购买房产，希望对文件进行审查。",
+sc2:"您是贷款人，正在架构以房地产为担保的融资，需要妥善登记。",
+sc3:"您的抵押贷款还款已经逾期，希望了解自己的应对选择。",
+sc4:"您需要在偿还相关贷款后解除抵押。",
+sc5:"您正在为现有房产再融资，需要正确登记新的抵押。",
+sc6:"您已收到止赎通知，需要作出回应。",
+h2_services:"我们提供的服务",
+sv1:"为借款人审查抵押文件",
+sv2:"为贷款人架构并登记抵押",
+sv3:"协调抵押的解除与注销",
+sv4:"再融资咨询与登记",
+sv5:"违约及止赎通知应对",
+sv6:"止赎程序代理",
+sv7:"开发商融资架构咨询",
+h2_faq:"常见问题",
+faq1_q:"抵押在登记前是否有效？",faq1_a:"无效——根据2008年第14号法律，无论双方之间的贷款协议如何约定，迪拜房地产抵押在向迪拜土地局登记之前，作为担保不具有任何法律效力。",
+faq2_q:"止赎前需要发出什么通知？",faq2_a:"在止赎程序开始前，通常必须通过公证人向债务人及房产的任何占用人送达通知，并须遵守最低通知期限。",
+faq3_q:"我可以更换贷款人进行再融资吗？",faq3_a:"可以，但通常需要解除现有抵押并登记新的抵押，且这些步骤的时间安排需要仔细协调，以避免已登记担保出现空档期。",
+faq4_q:"如果我出售房产，我的抵押会怎样？",faq4_a:"抵押通常必须在出售过户之前或作为过户的一部分予以结清并解除，因为在房产上仍登记有未解决抵押的情况下，迪拜土地局通常不会处理过户。",
+faq5_q:"登记抵押是否需要律师？",faq5_a:"这并非严格的法律要求，但抵押登记涉及费用计算、文件要求以及与贷款人及迪拜土地局的协调，律师能够切实简化这些流程，对于非标准的融资结构尤其如此。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",real_estate:"Право недвижимости",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по ипотеке и финансированию в Дубае",
+lead:"Ипотека на недвижимость в Дубае приобретает юридическую силу только после надлежащей регистрации — соглашение о финансировании между заёмщиком и кредитором обеспечивает лишь половину того, что действительно защищает долг.",
+box:"Адвокат по ипотеке и финансированию в Дубае консультирует заёмщиков, кредиторов и застройщиков по вопросам структурирования, регистрации и обращения взыскания на ипотеку недвижимости в соответствии с ипотечным законодательством Дубая.",
+p1:"Ипотека недвижимости в Дубае регулируется Законом № 14 от 2008 года, который требует регистрации в Земельном департаменте Дубая для придания ипотеке юридической силы — незарегистрированная ипотека, как бы чётко она ни была оформлена между сторонами, не связывает третьих лиц и не предоставляет кредитору того зарегистрированного обеспечения, ради которого она создавалась.",
+p2:"Фирма консультирует заёмщиков по вопросам проверки условий финансирования и ипотечной документации перед подписанием, кредиторов — по вопросам правильного структурирования и регистрации ипотечного обеспечения, а обе стороны — по требованиям об уведомлении и процедурным требованиям, применимым при переходе ипотеки к дефолту и обращению взыскания.",
+p3:"Обращение взыскания по ипотечному законодательству Дубая требует надлежащего уведомления должника и любого лица, занимающего недвижимость, до начала исполнительного производства, а ошибки в этом процессе могут задержать или сорвать возможность кредитора взыскать обеспеченный долг — что делает процедурную точность не менее важной, чем само финансовое положение.",
+h2_how:"Как мы ведём дела по ипотеке и финансированию",
+step1_t:"Обращение",step1_d:"Адвокат анализирует условия финансирования, консультируя заёмщика, кредитора или застройщика.",
+step2_t:"Анализ документации",step2_d:"Ипотечная документация и кредитные соглашения проверяются на соответствие требованиям и риски.",
+step3_t:"Регистрация",step3_d:"Ипотека регистрируется в Земельном департаменте Дубая для обеспечения её юридической силы.",
+step4_t:"Текущее консультирование",step4_d:"По мере развития ипотечных отношений адвокат консультирует по вопросам изменений, снятия обременения или рефинансирования.",
+step5_t:"Реагирование на дефолт",step5_d:"При наступлении дефолта для заёмщика и кредитора оцениваются требования об уведомлении и доступные варианты действий.",
+step6_t:"Взыскание или урегулирование",step6_d:"Проводится процедура обращения взыскания либо согласовывается урегулирование, например реструктуризация.",
+h2_when:"Когда вам нужен адвокат по ипотеке и финансированию",
+sc1:"Вы оформляете ипотеку для приобретения недвижимости и хотите, чтобы документация была проверена.",
+sc2:"Вы кредитор, структурирующий финансирование под залог недвижимости, и вам необходима его надлежащая регистрация.",
+sc3:"Вы отстаёте по ипотечным платежам и хотите понять доступные вам варианты.",
+sc4:"Вам необходимо снять обременение по ипотеке после погашения соответствующего кредита.",
+sc5:"Вы рефинансируете имеющуюся недвижимость, и новую ипотеку необходимо правильно зарегистрировать.",
+sc6:"Вам направлено уведомление об обращении взыскания, и вам необходимо отреагировать.",
+h2_services:"Наши услуги",
+sv1:"Проверка ипотечной документации для заёмщиков",
+sv2:"Структурирование и регистрация ипотеки для кредиторов",
+sv3:"Координация снятия и погашения ипотечного обременения",
+sv4:"Консультирование по рефинансированию и регистрация",
+sv5:"Реагирование на уведомления о дефолте и обращении взыскания",
+sv6:"Представительство в процедурах обращения взыскания",
+sv7:"Консультирование по структурам финансирования застройщиков",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Действительна ли ипотека до её регистрации?",faq1_a:"Нет — согласно Закону № 14 от 2008 года, ипотека на недвижимость в Дубае не имеет юридической силы в качестве обеспечения до её регистрации в Земельном департаменте Дубая, независимо от того, что указано в кредитном соглашении между сторонами.",
+faq2_q:"Какое уведомление требуется перед обращением взыскания?",faq2_a:"Как правило, должнику и любому лицу, занимающему недвижимость, необходимо вручить уведомление через нотариуса до начала процедуры обращения взыскания, с соблюдением минимального срока уведомления.",
+faq3_q:"Могу ли я рефинансировать недвижимость у другого кредитора?",faq3_a:"Да, хотя, как правило, необходимо снять обременение по существующей ипотеке и зарегистрировать новую, а сроки этих этапов нужно тщательно согласовать, чтобы избежать разрыва в зарегистрированном обеспечении.",
+faq4_q:"Что происходит с моей ипотекой при продаже недвижимости?",faq4_a:"Ипотека обычно должна быть погашена и снята до или в рамках сделки по продаже, поскольку Земельный департамент Дубая, как правило, не оформляет передачу права собственности, пока в отношении объекта остаётся зарегистрированная неурегулированная ипотека.",
+faq5_q:"Нужен ли мне адвокат для регистрации ипотеки?",faq5_a:"Строгого юридического требования на этот счёт нет, однако регистрация ипотеки предполагает расчёт сборов, соблюдение документарных требований и взаимодействие с кредитором и Земельным департаментом Дубая, которые адвокат способен существенно упростить, особенно при нестандартных структурах финансирования."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",real_estate:"Immobilienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Hypotheken und Finanzierung in Dubai",
+lead:"Eine Hypothek auf Immobilien in Dubai entfaltet erst dann Rechtswirkung, wenn sie ordnungsgemäß eingetragen ist — die Finanzierungsvereinbarung zwischen Kreditnehmer und Kreditgeber ist nur die halbe Miete dessen, was die Schuld tatsächlich absichert.",
+box:"Ein Anwalt für Hypotheken und Finanzierung in Dubai berät Kreditnehmer, Kreditgeber und Bauträger bei der Strukturierung, Eintragung und Durchsetzung von Immobilienhypotheken nach dem Hypothekenrecht Dubais.",
+p1:"Immobilienhypotheken in Dubai unterliegen dem Gesetz Nr. 14 von 2008, das für die Rechtswirksamkeit einer Hypothek die Eintragung beim Dubai Land Department verlangt — eine nicht eingetragene Hypothek bindet Dritte nicht und verschafft dem Kreditgeber nicht die eingetragene Sicherheit, die sie eigentlich bieten sollte, ganz gleich, wie eindeutig sie zwischen den Parteien dokumentiert wurde.",
+p2:"Die Kanzlei berät Kreditnehmer bei der Prüfung von Finanzierungsbedingungen und Hypothekenunterlagen vor der Unterzeichnung, Kreditgeber bei der korrekten Strukturierung und Eintragung der Hypothekensicherheit sowie beide Seiten hinsichtlich der Benachrichtigungs- und Verfahrensanforderungen, die gelten, wenn eine Hypothek in Richtung Zahlungsverzug und Zwangsvollstreckung geht.",
+p3:"Die Zwangsvollstreckung nach dem Hypothekenrecht Dubais erfordert eine ordnungsgemäße Benachrichtigung des Schuldners und etwaiger Nutzer der Immobilie, bevor Vollstreckungsmaßnahmen beginnen können, und Fehler in diesem Verfahren können die Fähigkeit des Kreditgebers, die besicherte Forderung einzutreiben, verzögern oder gefährden — wodurch die Verfahrensgenauigkeit ebenso wichtig ist wie die zugrunde liegende finanzielle Lage.",
+h2_how:"Wie wir Hypotheken- und Finanzierungsangelegenheiten bearbeiten",
+step1_t:"Mandatsannahme",step1_d:"Der Anwalt prüft die Finanzierungsbedingungen, unabhängig davon, ob ein Kreditnehmer, Kreditgeber oder Bauträger beraten wird.",
+step2_t:"Dokumentenprüfung",step2_d:"Hypothekenunterlagen und Darlehensverträge werden auf Compliance und Risiken geprüft.",
+step3_t:"Eintragung",step3_d:"Die Hypothek wird beim Dubai Land Department eingetragen, um ihre Rechtswirkung zu sichern.",
+step4_t:"Laufende Beratung",step4_d:"Der Anwalt berät im Verlauf der Hypothek zu Änderungen, Löschungen oder Umfinanzierungen.",
+step5_t:"Reaktion auf Zahlungsverzug",step5_d:"Bei Zahlungsverzug werden die Benachrichtigungspflichten und Optionen für beide Seiten, Kreditnehmer und Kreditgeber, geprüft.",
+step6_t:"Vollstreckung oder Einigung",step6_d:"Es wird entweder ein Zwangsvollstreckungsverfahren betrieben oder eine Einigung, etwa eine Umschuldung, ausgehandelt.",
+h2_when:"Wann Sie einen Anwalt für Hypotheken & Finanzierung brauchen",
+sc1:"Sie nehmen eine Hypothek zum Immobilienkauf auf und möchten die Unterlagen prüfen lassen.",
+sc2:"Sie sind Kreditgeber, strukturieren eine immobilienbesicherte Finanzierung und benötigen deren ordnungsgemäße Eintragung.",
+sc3:"Sie sind mit Ihren Hypothekenzahlungen in Rückstand geraten und möchten Ihre Möglichkeiten verstehen.",
+sc4:"Sie müssen eine Hypothek nach Rückzahlung des zugrunde liegenden Darlehens löschen lassen.",
+sc5:"Sie finanzieren eine bestehende Immobilie um und benötigen die korrekte Eintragung der neuen Hypothek.",
+sc6:"Ein Zwangsvollstreckungsbescheid wurde zugestellt, und Sie müssen darauf reagieren.",
+h2_services:"Unsere Leistungen",
+sv1:"Prüfung von Hypothekenunterlagen für Kreditnehmer",
+sv2:"Strukturierung und Eintragung von Hypotheken für Kreditgeber",
+sv3:"Koordination von Hypothekenlöschung und -freigabe",
+sv4:"Beratung und Eintragung bei Umfinanzierungen",
+sv5:"Reaktion auf Zahlungsverzugs- und Zwangsvollstreckungsbescheide",
+sv6:"Vertretung in Zwangsvollstreckungsverfahren",
+sv7:"Beratung zu Finanzierungsstrukturen für Bauträger",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Ist eine Hypothek vor ihrer Eintragung wirksam?",faq1_a:"Nein — nach Gesetz Nr. 14 von 2008 hat eine Hypothek auf Immobilien in Dubai als Sicherheit keine Rechtswirkung, bis sie beim Dubai Land Department eingetragen ist, unabhängig davon, was der Darlehensvertrag zwischen den Parteien vorsieht.",
+faq2_q:"Welche Benachrichtigung ist vor einer Zwangsvollstreckung erforderlich?",faq2_a:"Dem Schuldner und jedem Nutzer der Immobilie muss vor Beginn des Zwangsvollstreckungsverfahrens grundsätzlich über einen Notar eine Benachrichtigung zugestellt werden, wobei eine Mindestfrist einzuhalten ist.",
+faq3_q:"Kann ich meine Immobilie bei einem anderen Kreditgeber umfinanzieren?",faq3_a:"Ja, allerdings muss die bestehende Hypothek in der Regel gelöscht und die neue eingetragen werden, wobei der zeitliche Ablauf dieser Schritte sorgfältig abgestimmt werden muss, um eine Lücke in der eingetragenen Sicherheit zu vermeiden.",
+faq4_q:"Was geschieht mit meiner Hypothek, wenn ich meine Immobilie verkaufe?",faq4_a:"Die Hypothek muss in der Regel vor oder im Rahmen der Verkaufsübertragung beglichen und gelöscht werden, da das Dubai Land Department eine Übertragung gewöhnlich nicht bearbeitet, solange eine ungelöste Hypothek auf der Immobilie eingetragen bleibt.",
+faq5_q:"Brauche ich einen Anwalt, um eine Hypothek einzutragen?",faq5_a:"Es besteht keine strikte rechtliche Verpflichtung, doch die Eintragung einer Hypothek umfasst Gebührenberechnungen, Dokumentationsanforderungen und die Abstimmung mit dem Kreditgeber und dem Dubai Land Department, die ein Anwalt insbesondere bei nicht standardisierten Finanzierungsstrukturen erheblich vereinfachen kann."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
+
 </body>
 </html>

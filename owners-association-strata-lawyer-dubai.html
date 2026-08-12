@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Owners Association & Strata Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Jointly owned properties bring their own set of disputes between owners and the owners association.">
+<title>Owners Association &amp; Strata Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
+<meta name="description" content="Advising owners, owners associations, and management entities on jointly owned property matters, service charges, and governance in Dubai.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,388 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="real-estate-law.html">Real Estate Law</a> &rsaquo; Owners Association & Strata Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="real-estate-law.html" data-i18n="real_estate">Real Estate Law</a> &rsaquo; <span data-i18n="page_title">Owners Association &amp; Strata Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Owners Association & Strata Lawyer in Dubai</h1>
-  <p class="lead">Jointly owned properties bring their own set of disputes between owners and the owners association.</p>
-  <div class="box">This covers disputes involving service charges, common area management, and owners association decisions.</div>
-  <p class="body-p">The firm represents owners in disputes with owners associations over charges and building management decisions.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Owners Association &amp; Strata Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Owning a unit in a Dubai building means being bound by decisions made collectively through the owners association — service charge budgets, management appointments, and community rules that apply whether or not an individual owner agreed with them.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">An owners association and strata lawyer in Dubai advises owners, owners associations, and management entities on jointly owned property matters under Law No. 6 of 2019, including service charges, governance, and disputes.</div>
+
+<p class="body-p" data-i18n="p1">Jointly owned properties in Dubai — buildings and communities with multiple individual owners sharing common facilities — are governed by Law No. 6 of 2019, which requires each such development to have an Owners Association and a Management Entity responsible for service charges, maintenance, and community governance.</p>
+<p class="body-p" data-i18n="p2">The firm advises individual owners on disputed service charges and their obligations under the jointly owned property framework, and advises owners associations and management entities on governance, service charge budget compliance with RERA's benchmarking index, and enforcement action against owners in arrears.</p>
+<p class="body-p" data-i18n="p3">Because service charge liability under Law No. 6 of 2019 attaches to the owner regardless of a tenant's non-payment, and because arrears can block a resale NOC, disputes in this area often carry consequences well beyond the immediate sum in dispute.</p>
+
+<h2 data-i18n="h2_how">How We Handle Owners Association Matters</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Position Review</strong><span data-i18n="step1_d">The lawyer reviews the owner's or association's specific dispute or governance question.</span></li>
+<li><strong data-i18n="step2_t">Charge or Budget Analysis</strong><span data-i18n="step2_d">Disputed service charges or a proposed budget are checked against the governing documents and RERA's index.</span></li>
+<li><strong data-i18n="step3_t">Correspondence</strong><span data-i18n="step3_d">Formal correspondence is issued to the owners association, management entity, or individual owner as required.</span></li>
+<li><strong data-i18n="step4_t">Negotiation</strong><span data-i18n="step4_d">Many service charge and governance disputes are resolved through direct engagement with the management entity.</span></li>
+<li><strong data-i18n="step5_t">Regulatory or Tribunal Escalation</strong><span data-i18n="step5_d">Unresolved disputes are escalated through the appropriate regulatory or dispute resolution channel.</span></li>
+<li><strong data-i18n="step6_t">Resolution and Compliance</strong><span data-i18n="step6_d">A resolution is implemented and ongoing compliance is confirmed.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need an Owners Association &amp; Strata Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You disagree with a service charge amount levied against your unit.</li>
+<li data-i18n="sc2">You are an owners association or management entity dealing with an owner in arrears.</li>
+<li data-i18n="sc3">You want to understand your voting rights or obligations within your owners association.</li>
+<li data-i18n="sc4">Service charge arrears are blocking your ability to sell your unit.</li>
+<li data-i18n="sc5">You believe a proposed service charge budget is unreasonable or non-compliant.</li>
+<li data-i18n="sc6">A governance dispute has arisen within your owners association.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Service charge dispute representation for owners</li>
+<li data-i18n="sv2">Owners association governance advice</li>
+<li data-i18n="sv3">Service charge budget compliance review</li>
+<li data-i18n="sv4">Arrears recovery advice for management entities</li>
+<li data-i18n="sv5">NOC-blocking arrears resolution before resale</li>
+<li data-i18n="sv6">Owner rights and voting advice</li>
+<li data-i18n="sv7">Community rule and governance dispute resolution</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">Am I liable for service charges if my tenant doesn't pay?</summary>
+<p data-i18n="faq1_a">Yes — under Law No. 6 of 2019, the registered owner remains liable for service charges regardless of any separate arrangement with a tenant to cover them.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Can service charge arrears stop me from selling my property?</summary>
+<p data-i18n="faq2_a">Yes — outstanding service charges typically prevent the developer or management entity from issuing the NOC required for a resale transfer to proceed.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Who approves the service charge budget for my building?</summary>
+<p data-i18n="faq3_a">The owners association or management entity proposes the budget, which RERA reviews against its published Service Charge Index to assess reasonableness before it takes effect.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Can the developer still collect service charges directly?</summary>
+<p data-i18n="faq4_a">Generally no — under the current framework, service charge collection sits with the owners association or its appointed management entity, not the developer directly.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What can I do if I think my service charges are unreasonable?</summary>
+<p data-i18n="faq5_a">An owner can challenge a service charge through the appropriate channels, and a review against the RERA Service Charge Index and the specific governing documents is usually the first step in assessing whether a challenge has merit.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",real_estate:"Real Estate Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Owners Association & Strata Lawyer in Dubai",
+lead:"Owning a unit in a Dubai building means being bound by decisions made collectively through the owners association — service charge budgets, management appointments, and community rules that apply whether or not an individual owner agreed with them.",
+box:"An owners association and strata lawyer in Dubai advises owners, owners associations, and management entities on jointly owned property matters under Law No. 6 of 2019, including service charges, governance, and disputes.",
+p1:"Jointly owned properties in Dubai — buildings and communities with multiple individual owners sharing common facilities — are governed by Law No. 6 of 2019, which requires each such development to have an Owners Association and a Management Entity responsible for service charges, maintenance, and community governance.",
+p2:"The firm advises individual owners on disputed service charges and their obligations under the jointly owned property framework, and advises owners associations and management entities on governance, service charge budget compliance with RERA's benchmarking index, and enforcement action against owners in arrears.",
+p3:"Because service charge liability under Law No. 6 of 2019 attaches to the owner regardless of a tenant's non-payment, and because arrears can block a resale NOC, disputes in this area often carry consequences well beyond the immediate sum in dispute.",
+h2_how:"How We Handle Owners Association Matters",
+step1_t:"Position Review",step1_d:"The lawyer reviews the owner's or association's specific dispute or governance question.",
+step2_t:"Charge or Budget Analysis",step2_d:"Disputed service charges or a proposed budget are checked against the governing documents and RERA's index.",
+step3_t:"Correspondence",step3_d:"Formal correspondence is issued to the owners association, management entity, or individual owner as required.",
+step4_t:"Negotiation",step4_d:"Many service charge and governance disputes are resolved through direct engagement with the management entity.",
+step5_t:"Regulatory or Tribunal Escalation",step5_d:"Unresolved disputes are escalated through the appropriate regulatory or dispute resolution channel.",
+step6_t:"Resolution and Compliance",step6_d:"A resolution is implemented and ongoing compliance is confirmed.",
+h2_when:"When You Need an Owners Association & Strata Lawyer",
+sc1:"You disagree with a service charge amount levied against your unit.",
+sc2:"You are an owners association or management entity dealing with an owner in arrears.",
+sc3:"You want to understand your voting rights or obligations within your owners association.",
+sc4:"Service charge arrears are blocking your ability to sell your unit.",
+sc5:"You believe a proposed service charge budget is unreasonable or non-compliant.",
+sc6:"A governance dispute has arisen within your owners association.",
+h2_services:"Services We Provide",
+sv1:"Service charge dispute representation for owners",
+sv2:"Owners association governance advice",
+sv3:"Service charge budget compliance review",
+sv4:"Arrears recovery advice for management entities",
+sv5:"NOC-blocking arrears resolution before resale",
+sv6:"Owner rights and voting advice",
+sv7:"Community rule and governance dispute resolution",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"Am I liable for service charges if my tenant doesn't pay?",faq1_a:"Yes — under Law No. 6 of 2019, the registered owner remains liable for service charges regardless of any separate arrangement with a tenant to cover them.",
+faq2_q:"Can service charge arrears stop me from selling my property?",faq2_a:"Yes — outstanding service charges typically prevent the developer or management entity from issuing the NOC required for a resale transfer to proceed.",
+faq3_q:"Who approves the service charge budget for my building?",faq3_a:"The owners association or management entity proposes the budget, which RERA reviews against its published Service Charge Index to assess reasonableness before it takes effect.",
+faq4_q:"Can the developer still collect service charges directly?",faq4_a:"Generally no — under the current framework, service charge collection sits with the owners association or its appointed management entity, not the developer directly.",
+faq5_q:"What can I do if I think my service charges are unreasonable?",faq5_a:"An owner can challenge a service charge through the appropriate channels, and a review against the RERA Service Charge Index and the specific governing documents is usually the first step in assessing whether a challenge has merit."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",real_estate:"القانون العقاري",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي جمعيات الملاك والملكية المشتركة في دبي",
+lead:"امتلاك وحدة في مبنى بدبي يعني الالتزام بالقرارات المتخذة جماعيًا من خلال جمعية الملاك — ميزانيات رسوم الخدمة، وتعيينات جهة الإدارة، وقواعد المجتمع العقاري التي تسري سواء وافق عليها المالك الفردي أم لا.",
+box:"يقدم محامي جمعيات الملاك والملكية المشتركة في دبي الاستشارة للملاك وجمعيات الملاك وجهات الإدارة بشأن مسائل الملكية المشتركة بموجب القانون رقم 6 لسنة 2019، بما في ذلك رسوم الخدمة والحوكمة والمنازعات.",
+p1:"تخضع العقارات المملوكة ملكية مشتركة في دبي — المباني والمجتمعات العقارية التي يشترك فيها عدة ملاك أفراد في المرافق المشتركة — للقانون رقم 6 لسنة 2019، الذي يشترط أن يكون لكل مشروع من هذا النوع جمعية ملاك وجهة إدارة مسؤولة عن رسوم الخدمة والصيانة وحوكمة المجتمع العقاري.",
+p2:"يقدم المكتب الاستشارة للملاك الأفراد بشأن رسوم الخدمة المتنازع عليها والتزاماتهم بموجب إطار الملكية المشتركة، كما يقدم الاستشارة لجمعيات الملاك وجهات الإدارة بشأن الحوكمة، ومدى امتثال ميزانية رسوم الخدمة لمؤشر مؤسسة التنظيم العقاري (RERA) المرجعي، وإجراءات التنفيذ ضد الملاك المتأخرين في السداد.",
+p3:"نظرًا لأن المسؤولية عن رسوم الخدمة بموجب القانون رقم 6 لسنة 2019 تلزم المالك بغض النظر عن عدم سداد المستأجر، ولأن المتأخرات يمكن أن تعرقل الحصول على شهادة عدم ممانعة لإعادة البيع، فإن المنازعات في هذا المجال غالبًا ما تحمل تبعات تتجاوز بكثير المبلغ المتنازع عليه مباشرة.",
+h2_how:"كيف نتعامل مع مسائل جمعيات الملاك",
+step1_t:"مراجعة الموقف",step1_d:"يراجع المحامي النزاع المحدد أو مسألة الحوكمة الخاصة بالمالك أو الجمعية.",
+step2_t:"تحليل الرسوم أو الميزانية",step2_d:"تُراجع رسوم الخدمة المتنازع عليها أو الميزانية المقترحة مقارنةً بالوثائق الحاكمة ومؤشر مؤسسة التنظيم العقاري.",
+step3_t:"المراسلات",step3_d:"تُوجَّه المراسلات الرسمية إلى جمعية الملاك أو جهة الإدارة أو المالك الفردي حسب الاقتضاء.",
+step4_t:"التفاوض",step4_d:"تُحل العديد من منازعات رسوم الخدمة والحوكمة من خلال التواصل المباشر مع جهة الإدارة.",
+step5_t:"التصعيد التنظيمي أو القضائي",step5_d:"تُصعَّد المنازعات غير المحلولة عبر الجهة التنظيمية أو آلية تسوية المنازعات المختصة.",
+step6_t:"التسوية والامتثال",step6_d:"تُنفَّذ التسوية ويُتأكد من استمرار الامتثال.",
+h2_when:"متى تحتاج إلى محامي جمعيات الملاك والملكية المشتركة",
+sc1:"لا توافق على قيمة رسوم الخدمة المفروضة على وحدتك.",
+sc2:"أنت جمعية ملاك أو جهة إدارة تتعامل مع مالك متأخر عن السداد.",
+sc3:"تريد فهم حقوقك في التصويت أو التزاماتك ضمن جمعية الملاك الخاصة بك.",
+sc4:"تعيق متأخرات رسوم الخدمة قدرتك على بيع وحدتك.",
+sc5:"تعتقد أن ميزانية رسوم الخدمة المقترحة غير معقولة أو غير ممتثلة.",
+sc6:"نشأ نزاع حوكمة داخل جمعية الملاك الخاصة بك.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"تمثيل الملاك في منازعات رسوم الخدمة",
+sv2:"استشارات حوكمة جمعيات الملاك",
+sv3:"مراجعة امتثال ميزانية رسوم الخدمة",
+sv4:"استشارات تحصيل المتأخرات لجهات الإدارة",
+sv5:"تسوية المتأخرات المعرقلة لشهادة عدم الممانعة قبل إعادة البيع",
+sv6:"استشارات حقوق الملاك والتصويت",
+sv7:"تسوية منازعات قواعد المجتمع العقاري والحوكمة",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"هل أنا مسؤول عن رسوم الخدمة إذا لم يسدد مستأجري؟",faq1_a:"نعم — بموجب القانون رقم 6 لسنة 2019، يبقى المالك المسجل مسؤولاً عن رسوم الخدمة بصرف النظر عن أي ترتيب منفصل مع المستأجر لتغطيتها.",
+faq2_q:"هل يمكن أن تمنعني متأخرات رسوم الخدمة من بيع عقاري؟",faq2_a:"نعم — عادةً ما تمنع رسوم الخدمة المستحقة المطور أو جهة الإدارة من إصدار شهادة عدم الممانعة اللازمة لإتمام نقل ملكية إعادة البيع.",
+faq3_q:"من يعتمد ميزانية رسوم الخدمة لمبناي؟",faq3_a:"تقترح جمعية الملاك أو جهة الإدارة الميزانية، وتراجعها مؤسسة التنظيم العقاري (RERA) مقارنةً بمؤشر رسوم الخدمة المنشور لتقييم معقوليتها قبل دخولها حيز التنفيذ.",
+faq4_q:"هل يمكن للمطور أن يحصّل رسوم الخدمة مباشرة؟",faq4_a:"لا بشكل عام — بموجب الإطار الحالي، يقع تحصيل رسوم الخدمة على عاتق جمعية الملاك أو جهة الإدارة المعينة من قبلها، وليس المطور مباشرة.",
+faq5_q:"ماذا يمكنني أن أفعل إذا اعتقدت أن رسوم الخدمة الخاصة بي غير معقولة؟",faq5_a:"يمكن للمالك الطعن في رسوم الخدمة عبر القنوات المناسبة، وعادةً ما تكون المراجعة مقارنةً بمؤشر رسوم الخدمة الصادر عن مؤسسة التنظيم العقاري (RERA) والوثائق الحاكمة المحددة هي الخطوة الأولى في تقييم مدى وجاهة الطعن."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",real_estate:"房地产法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜业主协会与分层地产律师",
+lead:"在迪拜的建筑物中拥有一套单元，意味着必须遵守通过业主协会集体作出的决定——无论个别业主是否同意，服务费预算、物业管理任命及社区规则均对其适用。",
+box:"迪拜业主协会与分层地产律师依据2019年第6号法律，就共有产权物业事务为业主、业主协会及管理实体提供咨询，涵盖服务费、治理及争议事项。",
+p1:"迪拜的共有产权物业——由多名个人业主共享公共设施的建筑物及社区——受2019年第6号法律管辖，该法要求每个此类项目均须设立业主协会及负责服务费、维护和社区治理的管理实体。",
+p2:"本所就有争议的服务费及业主在共有产权框架下的义务为个人业主提供咨询，并就治理事宜、服务费预算是否符合迪拜房地产监管局（RERA）基准指数以及对拖欠业主采取的执行行动，为业主协会及管理实体提供咨询。",
+p3:"由于根据2019年第6号法律，服务费责任无论租户是否支付均由业主承担，且拖欠费用可能阻碍转售无异议证明（NOC）的取得，此类争议往往带来远超争议金额本身的后果。",
+h2_how:"我们如何处理业主协会事务",
+step1_t:"情况审查",step1_d:"律师审查业主或协会的具体争议或治理问题。",
+step2_t:"费用或预算分析",step2_d:"对照管理文件及RERA指数审查有争议的服务费或拟议预算。",
+step3_t:"函件往来",step3_d:"根据需要向业主协会、管理实体或个人业主发出正式函件。",
+step4_t:"协商",step4_d:"许多服务费及治理争议通过与管理实体的直接沟通得以解决。",
+step5_t:"监管或仲裁升级",step5_d:"未获解决的争议通过适当的监管或争议解决渠道升级处理。",
+step6_t:"解决与合规",step6_d:"落实解决方案并确认持续合规。",
+h2_when:"何时需要业主协会与分层地产律师",
+sc1:"您对向您单元收取的服务费金额存在异议。",
+sc2:"您是业主协会或管理实体，正在处理拖欠费用的业主问题。",
+sc3:"您希望了解自己在业主协会中的投票权或义务。",
+sc4:"服务费拖欠正阻碍您出售单元。",
+sc5:"您认为拟议的服务费预算不合理或不合规。",
+sc6:"您的业主协会内部出现了治理争议。",
+h2_services:"我们提供的服务",
+sv1:"为业主提供服务费争议代理",
+sv2:"业主协会治理咨询",
+sv3:"服务费预算合规审查",
+sv4:"为管理实体提供欠费追讨咨询",
+sv5:"转售前解决阻碍NOC的欠费问题",
+sv6:"业主权利及投票咨询",
+sv7:"社区规则及治理争议解决",
+h2_faq:"常见问题",
+faq1_q:"如果我的租户不付款，我是否需要承担服务费？",faq1_a:"是的——根据2019年第6号法律，无论业主与租户之间是否存在由租户承担费用的另行约定，登记在册的业主仍须承担服务费责任。",
+faq2_q:"服务费欠款会阻止我出售房产吗？",faq2_a:"会——未结清的服务费通常会导致开发商或管理实体无法出具转售过户所需的无异议证明（NOC）。",
+faq3_q:"谁批准我所在建筑物的服务费预算？",faq3_a:"由业主协会或管理实体提出预算，RERA将对照其公布的服务费指数进行审查以评估其合理性，然后该预算方可生效。",
+faq4_q:"开发商是否仍可直接收取服务费？",faq4_a:"一般不可以——在现行框架下，服务费的收取由业主协会或其委任的管理实体负责，而非开发商直接负责。",
+faq5_q:"如果我认为我的服务费不合理，我该怎么办？",faq5_a:"业主可通过适当渠道对服务费提出异议，而对照RERA服务费指数及具体管理文件进行审查，通常是评估异议是否成立的第一步。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",real_estate:"Право недвижимости",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по делам ассоциаций собственников и совместной собственности в Дубае",
+lead:"Владение юнитом в здании в Дубае означает подчинение решениям, принимаемым коллективно через ассоциацию собственников, — бюджетам эксплуатационных сборов, назначениям управляющей компании и правилам сообщества, которые действуют независимо от того, согласен ли с ними отдельный собственник.",
+box:"Адвокат по делам ассоциаций собственников и совместной собственности в Дубае консультирует собственников, ассоциации собственников и управляющие организации по вопросам совместной собственности в соответствии с Законом № 6 от 2019 года, включая эксплуатационные сборы, управление и споры.",
+p1:"Объекты совместной собственности в Дубае — здания и жилые комплексы, где несколько отдельных собственников совместно используют общие объекты, — регулируются Законом № 6 от 2019 года, который требует, чтобы в каждом таком комплексе действовали ассоциация собственников и управляющая организация, отвечающие за эксплуатационные сборы, техническое обслуживание и управление сообществом.",
+p2:"Фирма консультирует отдельных собственников по спорным эксплуатационным сборам и их обязательствам в рамках режима совместной собственности, а также консультирует ассоциации собственников и управляющие организации по вопросам управления, соответствия бюджета эксплуатационных сборов эталонному индексу RERA и принудительных мер в отношении собственников с задолженностью.",
+p3:"Поскольку ответственность за эксплуатационные сборы по Закону № 6 от 2019 года лежит на собственнике независимо от неуплаты со стороны арендатора, а задолженность может заблокировать получение справки об отсутствии возражений (NOC) при перепродаже, споры в этой сфере нередко влекут последствия, значительно превышающие саму спорную сумму.",
+h2_how:"Как мы ведём дела ассоциаций собственников",
+step1_t:"Анализ ситуации",step1_d:"Адвокат изучает конкретный спор или вопрос управления, заявленный собственником или ассоциацией.",
+step2_t:"Анализ сборов или бюджета",step2_d:"Спорные эксплуатационные сборы или предложенный бюджет проверяются на соответствие регулирующим документам и индексу RERA.",
+step3_t:"Переписка",step3_d:"При необходимости направляется официальная переписка ассоциации собственников, управляющей организации или отдельному собственнику.",
+step4_t:"Переговоры",step4_d:"Многие споры по эксплуатационным сборам и вопросам управления разрешаются путём прямого взаимодействия с управляющей организацией.",
+step5_t:"Обращение в регулирующий орган или трибунал",step5_d:"Неурегулированные споры передаются в соответствующий регулирующий орган или орган по разрешению споров.",
+step6_t:"Урегулирование и соблюдение требований",step6_d:"Реализуется решение, и подтверждается дальнейшее соблюдение требований.",
+h2_when:"Когда вам нужен адвокат по делам ассоциаций собственников",
+sc1:"Вы не согласны с суммой эксплуатационного сбора, начисленного за ваш юнит.",
+sc2:"Вы представляете ассоциацию собственников или управляющую организацию и имеете дело с собственником-должником.",
+sc3:"Вы хотите разобраться в своих правах голоса или обязательствах в рамках вашей ассоциации собственников.",
+sc4:"Задолженность по эксплуатационным сборам блокирует возможность продажи вашего юнита.",
+sc5:"Вы считаете предложенный бюджет эксплуатационных сборов необоснованным или не соответствующим требованиям.",
+sc6:"В вашей ассоциации собственников возник спор по вопросам управления.",
+h2_services:"Наши услуги",
+sv1:"Представительство собственников в спорах по эксплуатационным сборам",
+sv2:"Консультирование по вопросам управления ассоциацией собственников",
+sv3:"Проверка соответствия бюджета эксплуатационных сборов установленным требованиям",
+sv4:"Консультирование управляющих организаций по взысканию задолженности",
+sv5:"Урегулирование задолженности, блокирующей NOC, перед перепродажей",
+sv6:"Консультирование по правам собственников и праву голоса",
+sv7:"Разрешение споров по правилам сообщества и вопросам управления",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Несу ли я ответственность за эксплуатационные сборы, если мой арендатор не платит?",faq1_a:"Да — согласно Закону № 6 от 2019 года, зарегистрированный собственник остаётся ответственным за эксплуатационные сборы независимо от каких-либо отдельных договорённостей с арендатором об их покрытии.",
+faq2_q:"Может ли задолженность по эксплуатационным сборам помешать продаже моей недвижимости?",faq2_a:"Да — непогашенные эксплуатационные сборы обычно не позволяют застройщику или управляющей организации выдать справку об отсутствии возражений (NOC), необходимую для оформления перепродажи.",
+faq3_q:"Кто утверждает бюджет эксплуатационных сборов для моего здания?",faq3_a:"Бюджет предлагает ассоциация собственников или управляющая организация, а RERA проверяет его на соответствие опубликованному индексу эксплуатационных сборов для оценки обоснованности до вступления в силу.",
+faq4_q:"Может ли застройщик по-прежнему напрямую взимать эксплуатационные сборы?",faq4_a:"Как правило, нет — в рамках действующей системы сбор эксплуатационных платежей находится в ведении ассоциации собственников или назначенной ею управляющей организации, а не непосредственно застройщика.",
+faq5_q:"Что я могу сделать, если считаю свои эксплуатационные сборы необоснованными?",faq5_a:"Собственник может оспорить эксплуатационный сбор через соответствующие каналы, и первым шагом при оценке обоснованности такого оспаривания обычно служит проверка на соответствие индексу эксплуатационных сборов RERA и конкретным регулирующим документам."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",real_estate:"Immobilienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Eigentümergemeinschaften und Wohnungseigentum in Dubai",
+lead:"Der Besitz einer Einheit in einem Gebäude in Dubai bedeutet, an Entscheidungen gebunden zu sein, die gemeinschaftlich über die Eigentümergemeinschaft getroffen werden — Budgets für Servicegebühren, Bestellungen der Verwaltung und Gemeinschaftsregeln, die unabhängig davon gelten, ob ein einzelner Eigentümer ihnen zugestimmt hat.",
+box:"Ein Anwalt für Eigentümergemeinschaften und Wohnungseigentum in Dubai berät Eigentümer, Eigentümergemeinschaften und Verwaltungsgesellschaften bei Angelegenheiten des Gemeinschaftseigentums nach Gesetz Nr. 6 von 2019, einschließlich Servicegebühren, Verwaltung und Streitigkeiten.",
+p1:"Gemeinschaftlich gehaltenes Eigentum in Dubai — Gebäude und Wohnanlagen mit mehreren einzelnen Eigentümern, die sich gemeinsame Einrichtungen teilen — unterliegt dem Gesetz Nr. 6 von 2019, das für jede solche Anlage eine Eigentümergemeinschaft und eine Verwaltungsgesellschaft vorschreibt, die für Servicegebühren, Instandhaltung und die Verwaltung der Gemeinschaft verantwortlich ist.",
+p2:"Die Kanzlei berät einzelne Eigentümer bei strittigen Servicegebühren und ihren Pflichten im Rahmen des Regelwerks für Gemeinschaftseigentum sowie Eigentümergemeinschaften und Verwaltungsgesellschaften in Fragen der Verwaltung, der Übereinstimmung des Servicegebührenbudgets mit dem Referenzindex der RERA und bei Vollstreckungsmaßnahmen gegen säumige Eigentümer.",
+p3:"Da die Haftung für Servicegebühren nach Gesetz Nr. 6 von 2019 unabhängig von der Nichtzahlung durch einen Mieter beim Eigentümer verbleibt und da Zahlungsrückstände ein NOC für den Weiterverkauf blockieren können, haben Streitigkeiten in diesem Bereich häufig Folgen, die weit über den unmittelbar strittigen Betrag hinausgehen.",
+h2_how:"Wie wir Angelegenheiten der Eigentümergemeinschaft bearbeiten",
+step1_t:"Prüfung der Ausgangslage",step1_d:"Der Anwalt prüft die konkrete Streitfrage oder Verwaltungsfrage des Eigentümers oder der Gemeinschaft.",
+step2_t:"Gebühren- oder Budgetanalyse",step2_d:"Strittige Servicegebühren oder ein vorgeschlagenes Budget werden anhand der maßgeblichen Dokumente und des RERA-Index geprüft.",
+step3_t:"Korrespondenz",step3_d:"Bei Bedarf wird formelle Korrespondenz an die Eigentümergemeinschaft, die Verwaltungsgesellschaft oder den einzelnen Eigentümer gerichtet.",
+step4_t:"Verhandlung",step4_d:"Viele Streitigkeiten über Servicegebühren und Verwaltung werden durch direkten Kontakt mit der Verwaltungsgesellschaft gelöst.",
+step5_t:"Eskalation an Behörde oder Schiedsstelle",step5_d:"Ungelöste Streitigkeiten werden über den zuständigen behördlichen oder Streitbeilegungsweg eskaliert.",
+step6_t:"Einigung und Compliance",step6_d:"Eine Lösung wird umgesetzt, und die fortlaufende Einhaltung wird bestätigt.",
+h2_when:"Wann Sie einen Anwalt für Eigentümergemeinschaften & Wohnungseigentum brauchen",
+sc1:"Sie sind mit der für Ihre Einheit erhobenen Höhe der Servicegebühr nicht einverstanden.",
+sc2:"Sie sind eine Eigentümergemeinschaft oder Verwaltungsgesellschaft und haben es mit einem säumigen Eigentümer zu tun.",
+sc3:"Sie möchten Ihre Stimmrechte oder Pflichten innerhalb Ihrer Eigentümergemeinschaft verstehen.",
+sc4:"Rückständige Servicegebühren blockieren den Verkauf Ihrer Einheit.",
+sc5:"Sie halten ein vorgeschlagenes Servicegebührenbudget für unangemessen oder nicht regelkonform.",
+sc6:"In Ihrer Eigentümergemeinschaft ist ein Verwaltungsstreit entstanden.",
+h2_services:"Unsere Leistungen",
+sv1:"Vertretung von Eigentümern in Servicegebührenstreitigkeiten",
+sv2:"Beratung zur Verwaltung von Eigentümergemeinschaften",
+sv3:"Prüfung der Compliance von Servicegebührenbudgets",
+sv4:"Beratung zur Beitreibung von Rückständen für Verwaltungsgesellschaften",
+sv5:"Lösung NOC-blockierender Rückstände vor einem Weiterverkauf",
+sv6:"Beratung zu Eigentümerrechten und Stimmrechten",
+sv7:"Beilegung von Streitigkeiten über Gemeinschaftsregeln und Verwaltung",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Hafte ich für Servicegebühren, wenn mein Mieter nicht zahlt?",faq1_a:"Ja — nach Gesetz Nr. 6 von 2019 bleibt der eingetragene Eigentümer für Servicegebühren haftbar, unabhängig von einer separaten Vereinbarung mit einem Mieter, diese zu übernehmen.",
+faq2_q:"Können rückständige Servicegebühren mich am Verkauf meiner Immobilie hindern?",faq2_a:"Ja — ausstehende Servicegebühren hindern den Bauträger oder die Verwaltungsgesellschaft in der Regel daran, das für eine Weiterverkaufsübertragung erforderliche NOC auszustellen.",
+faq3_q:"Wer genehmigt das Servicegebührenbudget für mein Gebäude?",faq3_a:"Die Eigentümergemeinschaft oder die Verwaltungsgesellschaft schlägt das Budget vor, das die RERA anhand ihres veröffentlichten Service Charge Index auf Angemessenheit prüft, bevor es in Kraft tritt.",
+faq4_q:"Kann der Bauträger weiterhin Servicegebühren direkt einziehen?",faq4_a:"In der Regel nicht — nach dem geltenden Rahmenwerk liegt die Einziehung der Servicegebühren bei der Eigentümergemeinschaft oder der von ihr bestellten Verwaltungsgesellschaft, nicht direkt beim Bauträger.",
+faq5_q:"Was kann ich tun, wenn ich meine Servicegebühren für unangemessen halte?",faq5_a:"Ein Eigentümer kann eine Servicegebühr über die zuständigen Kanäle anfechten, wobei eine Prüfung anhand des RERA Service Charge Index und der spezifischen maßgeblichen Dokumente üblicherweise der erste Schritt bei der Beurteilung ist, ob eine Anfechtung Aussicht auf Erfolg hat."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
+
 </body>
 </html>

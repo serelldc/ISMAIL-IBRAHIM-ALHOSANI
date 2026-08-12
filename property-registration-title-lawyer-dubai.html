@@ -4,15 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Property Registration & Title Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Clear title registration is the foundation of a secure property purchase in Dubai.">
+<title>Property Registration &amp; Title Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
+<meta name="description" content="Advising on registering ownership, mortgages, and interests with the Dubai Land Department, and resolving title irregularities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,388 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="real-estate-law.html">Real Estate Law</a> &rsaquo; Property Registration & Title Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="real-estate-law.html" data-i18n="real_estate">Real Estate Law</a> &rsaquo; <span data-i18n="page_title">Property Registration &amp; Title Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Property Registration & Title Lawyer in Dubai</h1>
-  <p class="lead">Clear title registration is the foundation of a secure property purchase in Dubai.</p>
-  <div class="box">This covers registration of ownership and resolution of title disputes with the Dubai Land Department.</div>
-  <p class="body-p">The firm assists clients with registration matters and advises where a title dispute has arisen.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Property Registration &amp; Title Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Ownership of Dubai real estate exists only once it is properly registered — a signed sale contract alone does not transfer legal title, and errors in the registration process can leave a buyer's ownership exposed.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A property registration and title lawyer in Dubai advises buyers, sellers, and owners on registering ownership, mortgages, and interests in real estate with the Dubai Land Department, and resolving registration or title irregularities.</div>
+
+<p class="body-p" data-i18n="p1">Ownership of real estate in Dubai is confirmed through registration with the Dubai Land Department — for off-plan units, this begins with provisional registration, commonly known as Oqood, under the interim real property register established by Law No. 13 of 2008, converting into a full Title Deed once the project is complete and handed over.</p>
+<p class="body-p" data-i18n="p2">The firm advises on the full registration lifecycle — verifying that an off-plan purchase has been correctly registered to protect the buyer against double-selling, checking a title for existing mortgages or other registered interests before a purchase, and resolving disputes where a registration has been delayed, refused, or appears to contain an error.</p>
+<p class="body-p" data-i18n="p3">A mortgage over Dubai real estate has no legal effect unless registered with the Dubai Land Department under Law No. 14 of 2008, which means confirming a property's registered status is essential before relying on it as security or purchasing it as apparently unencumbered.</p>
+
+<h2 data-i18n="h2_how">How Property Registration Is Handled</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Status Check</strong><span data-i18n="step1_d">The lawyer checks the property's current registration status with the Dubai Land Department, including any registered mortgages or interests.</span></li>
+<li><strong data-i18n="step2_t">Document Review</strong><span data-i18n="step2_d">Sale contracts, NOCs, and supporting documents are reviewed for registration readiness.</span></li>
+<li><strong data-i18n="step3_t">Registration Filing</strong><span data-i18n="step3_d">The relevant application — Oqood, transfer, or mortgage registration — is filed with the Dubai Land Department.</span></li>
+<li><strong data-i18n="step4_t">Fee and NOC Coordination</strong><span data-i18n="step4_d">Registration fees are calculated and any required developer NOC is obtained.</span></li>
+<li><strong data-i18n="step5_t">Trustee Office Attendance</strong><span data-i18n="step5_d">For resale transfers, the transaction is completed at a DLD-authorized trustee office.</span></li>
+<li><strong data-i18n="step6_t">Title Deed Confirmation</strong><span data-i18n="step6_d">The final registration or Title Deed is confirmed and reviewed for accuracy.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Property Registration &amp; Title Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You are buying a resale property and want to verify its registered title before committing.</li>
+<li data-i18n="sc2">You purchased an off-plan unit and want to confirm your Oqood registration is correctly recorded.</li>
+<li data-i18n="sc3">A mortgage or other interest appears on a title you are buying and you need it resolved before completion.</li>
+<li data-i18n="sc4">Your final Title Deed has been delayed or you have found an error in it.</li>
+<li data-i18n="sc5">You need to register a mortgage or have one released after repayment.</li>
+<li data-i18n="sc6">You are structuring a transfer between family members or related parties and need it properly registered.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Title verification and pre-purchase registration checks</li>
+<li data-i18n="sv2">Off-plan Oqood registration advice</li>
+<li data-i18n="sv3">Mortgage registration and release coordination</li>
+<li data-i18n="sv4">Title Deed error correction and dispute resolution</li>
+<li data-i18n="sv5">NOC coordination with developers for resale transfers</li>
+<li data-i18n="sv6">Trustee office transaction support</li>
+<li data-i18n="sv7">Advice on transfers between related parties</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What is the difference between Oqood and a Title Deed?</summary>
+<p data-i18n="faq1_a">Oqood is the provisional registration recorded during the off-plan construction period, protecting the buyer's interest and preventing the same unit being sold twice; the Title Deed is the final, permanent ownership document issued once the project is complete and the unit is handed over.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">Is a mortgage valid if it isn't registered with the Dubai Land Department?</summary>
+<p data-i18n="faq2_a">No — under Law No. 14 of 2008, a mortgage over Dubai real estate only has legal effect once it is registered with the Dubai Land Department.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">How do I check if a property has a clean title before buying?</summary>
+<p data-i18n="faq3_a">A title check through the Dubai Land Department will show the registered owner, any registered mortgages, and other recorded interests, and should be completed before signing a binding purchase agreement.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">What if there's an error on my Title Deed?</summary>
+<p data-i18n="faq4_a">Errors in a Title Deed can generally be corrected through an application to the Dubai Land Department, though the process and supporting documents required depend on the nature of the error.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Do I need an NOC to sell my property?</summary>
+<p data-i18n="faq5_a">Yes — a No Objection Certificate from the developer, confirming that service charges and other dues are settled, is generally required before the Dubai Land Department will process a resale transfer.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",real_estate:"Real Estate Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Property Registration & Title Lawyer in Dubai",
+lead:"Ownership of Dubai real estate exists only once it is properly registered — a signed sale contract alone does not transfer legal title, and errors in the registration process can leave a buyer's ownership exposed.",
+box:"A property registration and title lawyer in Dubai advises buyers, sellers, and owners on registering ownership, mortgages, and interests in real estate with the Dubai Land Department, and resolving registration or title irregularities.",
+p1:"Ownership of real estate in Dubai is confirmed through registration with the Dubai Land Department — for off-plan units, this begins with provisional registration, commonly known as Oqood, under the interim real property register established by Law No. 13 of 2008, converting into a full Title Deed once the project is complete and handed over.",
+p2:"The firm advises on the full registration lifecycle — verifying that an off-plan purchase has been correctly registered to protect the buyer against double-selling, checking a title for existing mortgages or other registered interests before a purchase, and resolving disputes where a registration has been delayed, refused, or appears to contain an error.",
+p3:"A mortgage over Dubai real estate has no legal effect unless registered with the Dubai Land Department under Law No. 14 of 2008, which means confirming a property's registered status is essential before relying on it as security or purchasing it as apparently unencumbered.",
+h2_how:"How Property Registration Is Handled",
+step1_t:"Status Check",step1_d:"The lawyer checks the property's current registration status with the Dubai Land Department, including any registered mortgages or interests.",
+step2_t:"Document Review",step2_d:"Sale contracts, NOCs, and supporting documents are reviewed for registration readiness.",
+step3_t:"Registration Filing",step3_d:"The relevant application — Oqood, transfer, or mortgage registration — is filed with the Dubai Land Department.",
+step4_t:"Fee and NOC Coordination",step4_d:"Registration fees are calculated and any required developer NOC is obtained.",
+step5_t:"Trustee Office Attendance",step5_d:"For resale transfers, the transaction is completed at a DLD-authorized trustee office.",
+step6_t:"Title Deed Confirmation",step6_d:"The final registration or Title Deed is confirmed and reviewed for accuracy.",
+h2_when:"When You Need a Property Registration & Title Lawyer",
+sc1:"You are buying a resale property and want to verify its registered title before committing.",
+sc2:"You purchased an off-plan unit and want to confirm your Oqood registration is correctly recorded.",
+sc3:"A mortgage or other interest appears on a title you are buying and you need it resolved before completion.",
+sc4:"Your final Title Deed has been delayed or you have found an error in it.",
+sc5:"You need to register a mortgage or have one released after repayment.",
+sc6:"You are structuring a transfer between family members or related parties and need it properly registered.",
+h2_services:"Services We Provide",
+sv1:"Title verification and pre-purchase registration checks",
+sv2:"Off-plan Oqood registration advice",
+sv3:"Mortgage registration and release coordination",
+sv4:"Title Deed error correction and dispute resolution",
+sv5:"NOC coordination with developers for resale transfers",
+sv6:"Trustee office transaction support",
+sv7:"Advice on transfers between related parties",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What is the difference between Oqood and a Title Deed?",faq1_a:"Oqood is the provisional registration recorded during the off-plan construction period, protecting the buyer's interest and preventing the same unit being sold twice; the Title Deed is the final, permanent ownership document issued once the project is complete and the unit is handed over.",
+faq2_q:"Is a mortgage valid if it isn't registered with the Dubai Land Department?",faq2_a:"No — under Law No. 14 of 2008, a mortgage over Dubai real estate only has legal effect once it is registered with the Dubai Land Department.",
+faq3_q:"How do I check if a property has a clean title before buying?",faq3_a:"A title check through the Dubai Land Department will show the registered owner, any registered mortgages, and other recorded interests, and should be completed before signing a binding purchase agreement.",
+faq4_q:"What if there's an error on my Title Deed?",faq4_a:"Errors in a Title Deed can generally be corrected through an application to the Dubai Land Department, though the process and supporting documents required depend on the nature of the error.",
+faq5_q:"Do I need an NOC to sell my property?",faq5_a:"Yes — a No Objection Certificate from the developer, confirming that service charges and other dues are settled, is generally required before the Dubai Land Department will process a resale transfer."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",real_estate:"القانون العقاري",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي تسجيل الملكية العقارية في دبي",
+lead:"لا تنشأ ملكية العقار في دبي إلا بعد تسجيلها بشكل صحيح — فعقد البيع الموقّع وحده لا ينقل الملكية القانونية، والأخطاء في عملية التسجيل قد تترك ملكية المشتري عرضة للخطر.",
+box:"يقدم محامي تسجيل الملكية العقارية في دبي المشورة للمشترين والبائعين والملاك بشأن تسجيل الملكية والرهون والحقوق العقارية لدى دائرة الأراضي والأملاك في دبي، وحل المخالفات المتعلقة بالتسجيل أو سند الملكية.",
+p1:"تُثبت ملكية العقار في دبي عبر التسجيل لدى دائرة الأراضي والأملاك — وبالنسبة للوحدات على الخارطة، تبدأ هذه العملية بالتسجيل المبدئي، المعروف باسم عقود، بموجب السجل العقاري المؤقت الذي أنشأه القانون رقم 13 لسنة 2008، ثم يتحول إلى سند ملكية كامل بمجرد اكتمال المشروع وتسليمه.",
+p2:"يقدم المكتب المشورة عبر دورة التسجيل الكاملة — من التحقق من صحة تسجيل عملية شراء على الخارطة لحماية المشتري من إعادة البيع المزدوج، إلى فحص سند الملكية بحثًا عن رهون قائمة أو حقوق مسجلة أخرى قبل الشراء، وحل النزاعات في حال تأخر التسجيل أو رفضه أو احتوائه على خطأ.",
+p3:"لا يكون للرهن العقاري على عقار في دبي أثر قانوني ما لم يُسجَّل لدى دائرة الأراضي والأملاك بموجب القانون رقم 14 لسنة 2008، ما يعني أن التحقق من الوضع التسجيلي للعقار أمر ضروري قبل الاعتماد عليه كضمان أو شرائه على أساس أنه خالٍ من الأعباء ظاهريًا.",
+h2_how:"كيفية التعامل مع تسجيل الملكية",
+step1_t:"التحقق من الحالة",step1_d:"يتحقق المحامي من الحالة التسجيلية الحالية للعقار لدى دائرة الأراضي والأملاك، بما في ذلك أي رهون أو حقوق مسجلة.",
+step2_t:"مراجعة المستندات",step2_d:"تُراجَع عقود البيع وشهادات عدم الممانعة والمستندات الداعمة للتأكد من جاهزيتها للتسجيل.",
+step3_t:"تقديم طلب التسجيل",step3_d:"يُقدَّم الطلب المعني — عقود، أو نقل ملكية، أو تسجيل رهن — إلى دائرة الأراضي والأملاك.",
+step4_t:"تنسيق الرسوم وشهادة عدم الممانعة",step4_d:"تُحسب رسوم التسجيل ويتم الحصول على شهادة عدم الممانعة المطلوبة من المطور إن وجدت.",
+step5_t:"الحضور إلى مكتب الأمانة العقارية",step5_d:"بالنسبة لعمليات نقل الملكية في السوق الثانوية، تُستكمل المعاملة في مكتب أمانة عقارية معتمد من دائرة الأراضي والأملاك.",
+step6_t:"تأكيد سند الملكية",step6_d:"يتم تأكيد التسجيل النهائي أو سند الملكية ومراجعته للتحقق من دقته.",
+h2_when:"متى تحتاج إلى محامي تسجيل الملكية العقارية",
+sc1:"أنت بصدد شراء عقار في السوق الثانوية وتريد التحقق من سند ملكيته المسجل قبل الالتزام.",
+sc2:"اشتريت وحدة على الخارطة وتريد التأكد من صحة تسجيل عقود الخاص بك.",
+sc3:"يظهر رهن أو حق آخر على سند الملكية الذي تشتريه، وتحتاج إلى حل هذا الأمر قبل إتمام الصفقة.",
+sc4:"تأخر إصدار سند ملكيتك النهائي أو اكتشفت خطأً فيه.",
+sc5:"تحتاج إلى تسجيل رهن عقاري أو إلغاء رهن قائم بعد سداده.",
+sc6:"أنت بصدد تنظيم نقل ملكية بين أفراد الأسرة أو أطراف ذات علاقة وتحتاج إلى تسجيله بشكل صحيح.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"التحقق من سند الملكية وفحوصات التسجيل قبل الشراء",
+sv2:"استشارات تسجيل عقود للوحدات على الخارطة",
+sv3:"تنسيق تسجيل الرهن العقاري وإلغائه",
+sv4:"تصحيح الأخطاء في سند الملكية وحل النزاعات",
+sv5:"تنسيق شهادات عدم الممانعة مع المطورين لعمليات نقل الملكية في السوق الثانوية",
+sv6:"دعم المعاملات في مكتب الأمانة العقارية",
+sv7:"استشارات بشأن عمليات نقل الملكية بين الأطراف ذات العلاقة",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما الفرق بين عقود وسند الملكية؟",faq1_a:"عقود هو التسجيل المبدئي المسجل خلال فترة البناء على الخارطة، ويحمي مصلحة المشتري ويمنع بيع الوحدة نفسها مرتين؛ أما سند الملكية فهو المستند النهائي والدائم للملكية، ويصدر بمجرد اكتمال المشروع وتسليم الوحدة.",
+faq2_q:"هل يكون الرهن العقاري صحيحًا إذا لم يُسجَّل لدى دائرة الأراضي والأملاك؟",faq2_a:"لا — فبموجب القانون رقم 14 لسنة 2008، لا يكون للرهن العقاري على عقار في دبي أثر قانوني إلا بعد تسجيله لدى دائرة الأراضي والأملاك.",
+faq3_q:"كيف أتحقق مما إذا كان العقار خاليًا من الأعباء قبل الشراء؟",faq3_a:"يُظهر فحص سند الملكية عبر دائرة الأراضي والأملاك المالك المسجل وأي رهون مسجلة وحقوق أخرى مسجلة، وينبغي إجراؤه قبل توقيع اتفاقية شراء ملزمة.",
+faq4_q:"ماذا لو كان هناك خطأ في سند ملكيتي؟",faq4_a:"يمكن عادةً تصحيح الأخطاء الواردة في سند الملكية من خلال تقديم طلب إلى دائرة الأراضي والأملاك، وإن كانت الإجراءات والمستندات الداعمة المطلوبة تعتمد على طبيعة الخطأ.",
+faq5_q:"هل أحتاج إلى شهادة عدم ممانعة لبيع عقاري؟",faq5_a:"نعم — تُشترط عادةً شهادة عدم ممانعة من المطور، تؤكد سداد رسوم الخدمة والمستحقات الأخرى، قبل أن تباشر دائرة الأراضي والأملاك إجراءات نقل الملكية في السوق الثانوية."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",real_estate:"房地产法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜产权登记律师",
+lead:"在迪拜，房地产所有权只有在完成正确登记后才真正成立——仅凭一份已签署的买卖合同并不能转移法定产权，登记过程中的任何错误都可能使买方的所有权处于风险之中。",
+box:"迪拜产权登记律师为买方、卖方及业主提供咨询，协助其在迪拜土地局办理所有权、抵押权及其他房地产权益的登记，并解决登记或产权方面出现的问题。",
+p1:"在迪拜，房地产所有权须通过在迪拜土地局登记方可确认——对于期房单元，这一过程始于依据2008年第13号法律设立的临时不动产登记簿所进行的临时登记，通常称为Oqood，待项目竣工交付后，该登记将转为完整的产权契据（Title Deed）。",
+p2:"本所就整个登记流程提供咨询——核实期房购买是否已正确登记，以保护买方免受重复出售之害；在购买前核查产权是否存在既有抵押或其他已登记权益；并在登记延误、被拒或疑似存在错误时协助解决相关争议。",
+p3:"对迪拜房地产设立的抵押权，除非依据2008年第14号法律在迪拜土地局登记，否则不具有法律效力，这意味着在将某处房产作为担保依赖之前，或在以其看似无负担为由购买之前，确认该房产的登记状态至关重要。",
+h2_how:"房产登记如何办理",
+step1_t:"状态核查",step1_d:"律师在迪拜土地局核查房产目前的登记状态，包括任何已登记的抵押权或权益。",
+step2_t:"文件审查",step2_d:"对买卖合同、无异议证明（NOC）及相关支持文件进行审查，以确认是否具备登记条件。",
+step3_t:"提交登记申请",step3_d:"向迪拜土地局提交相关申请——Oqood登记、产权转让或抵押登记。",
+step4_t:"费用及无异议证明协调",step4_d:"计算登记费用，并获取开发商出具的任何所需无异议证明。",
+step5_t:"受托登记处办理",step5_d:"对于二手房转让，交易将在迪拜土地局授权的受托登记处（Trustee Office）完成。",
+step6_t:"产权契据确认",step6_d:"对最终登记结果或产权契据进行确认并审查其准确性。",
+h2_when:"何时需要产权登记律师",
+sc1:"您正在购买一处二手房产，并希望在做出承诺前核实其登记产权。",
+sc2:"您购买了一套期房单元，并希望确认您的Oqood登记已被正确记录。",
+sc3:"您正在购买的产权上出现了抵押权或其他权益，您需要在交易完成前解决该问题。",
+sc4:"您的最终产权契据被延迟发放，或您在其中发现了错误。",
+sc5:"您需要办理抵押权登记，或在还清贷款后解除既有抵押。",
+sc6:"您正在筹划家庭成员或关联方之间的产权转让，需要对其进行妥善登记。",
+h2_services:"我们提供的服务",
+sv1:"产权核实及购前登记核查",
+sv2:"期房Oqood登记咨询",
+sv3:"抵押权登记及解除协调",
+sv4:"产权契据错误更正及争议解决",
+sv5:"为二手房转让与开发商协调无异议证明",
+sv6:"受托登记处交易协助",
+sv7:"关联方之间产权转让咨询",
+h2_faq:"常见问题",
+faq1_q:"Oqood与产权契据有何区别？",faq1_a:"Oqood是在期房建设期间记录的临时登记，用以保护买方权益并防止同一单元被重复出售；产权契据则是最终、永久的所有权文件，在项目竣工且单元交付后签发。",
+faq2_q:"如果抵押权未在迪拜土地局登记，是否仍然有效？",faq2_a:"不然——根据2008年第14号法律，对迪拜房地产设立的抵押权只有在迪拜土地局登记后方具有法律效力。",
+faq3_q:"购买前我如何核实房产是否产权清晰？",faq3_a:"通过迪拜土地局进行的产权核查将显示登记业主、任何已登记的抵押权及其他已记录的权益，此项核查应在签署具有约束力的购买协议之前完成。",
+faq4_q:"如果我的产权契据上出现错误怎么办？",faq4_a:"产权契据中的错误通常可以通过向迪拜土地局提交申请予以更正，但所需程序及支持文件取决于错误的性质。",
+faq5_q:"出售房产是否需要无异议证明？",faq5_a:"是的——通常需要开发商出具的无异议证明，以确认服务费及其他应付款项已结清，之后迪拜土地局才会受理二手房转让手续。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",real_estate:"Право недвижимости",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по регистрации недвижимости и прав собственности в Дубае",
+lead:"Право собственности на недвижимость в Дубае возникает только после её надлежащей регистрации — один лишь подписанный договор купли-продажи не передаёт юридический титул, а ошибки в процессе регистрации могут поставить право собственности покупателя под угрозу.",
+box:"Юрист по регистрации недвижимости и прав собственности в Дубае консультирует покупателей, продавцов и собственников по вопросам регистрации права собственности, ипотеки и иных прав на недвижимость в Земельном департаменте Дубая, а также по устранению нарушений при регистрации или в правоустанавливающих документах.",
+p1:"Право собственности на недвижимость в Дубае подтверждается регистрацией в Земельном департаменте Дубая — для объектов на этапе строительства этот процесс начинается с предварительной регистрации, широко известной как Oqood, в рамках временного реестра недвижимости, учреждённого Законом № 13 от 2008 года, которая преобразуется в полноценное свидетельство о праве собственности (Title Deed) после завершения проекта и его передачи покупателю.",
+p2:"Фирма консультирует по всему циклу регистрации — проверяет, что покупка недвижимости на этапе строительства была правильно зарегистрирована для защиты покупателя от повторной продажи, проверяет наличие существующих ипотек или иных зарегистрированных прав на объект перед покупкой, а также разрешает споры в случаях задержки, отказа в регистрации или предполагаемой ошибки.",
+p3:"Ипотека на недвижимость в Дубае не имеет юридической силы, если она не зарегистрирована в Земельном департаменте Дубая в соответствии с Законом № 14 от 2008 года, а значит, прежде чем полагаться на объект как на обеспечение или приобретать его как якобы не обременённый, необходимо подтвердить его зарегистрированный статус.",
+h2_how:"Как осуществляется регистрация недвижимости",
+step1_t:"Проверка статуса",step1_d:"Юрист проверяет текущий регистрационный статус объекта в Земельном департаменте Дубая, включая любые зарегистрированные ипотеки или права.",
+step2_t:"Проверка документов",step2_d:"Договоры купли-продажи, справки об отсутствии возражений (NOC) и подтверждающие документы проверяются на готовность к регистрации.",
+step3_t:"Подача заявления на регистрацию",step3_d:"Соответствующее заявление — на регистрацию Oqood, передачу права собственности или регистрацию ипотеки — подаётся в Земельный департамент Дубая.",
+step4_t:"Согласование сборов и NOC",step4_d:"Рассчитываются регистрационные сборы и при необходимости получается справка об отсутствии возражений от застройщика.",
+step5_t:"Посещение офиса доверительного управляющего",step5_d:"При передаче прав собственности на вторичном рынке сделка завершается в офисе доверительного управляющего, уполномоченном DLD.",
+step6_t:"Подтверждение свидетельства о праве собственности",step6_d:"Окончательная регистрация или свидетельство о праве собственности подтверждается и проверяется на точность.",
+h2_when:"Когда вам нужен юрист по регистрации недвижимости и прав собственности",
+sc1:"Вы покупаете недвижимость на вторичном рынке и хотите проверить её зарегистрированный титул до заключения сделки.",
+sc2:"Вы приобрели объект на этапе строительства и хотите убедиться, что ваша регистрация Oqood оформлена корректно.",
+sc3:"На приобретаемом вами титуле обнаружена ипотека или иное право, и вам необходимо урегулировать этот вопрос до завершения сделки.",
+sc4:"Выдача вашего окончательного свидетельства о праве собственности задерживается, либо вы обнаружили в нём ошибку.",
+sc5:"Вам необходимо зарегистрировать ипотеку или снять её после погашения задолженности.",
+sc6:"Вы оформляете передачу права собственности между членами семьи или связанными сторонами и вам необходимо, чтобы она была должным образом зарегистрирована.",
+h2_services:"Наши услуги",
+sv1:"Проверка правового титула и регистрационные проверки перед покупкой",
+sv2:"Консультации по регистрации Oqood для объектов на этапе строительства",
+sv3:"Координация регистрации и снятия ипотеки",
+sv4:"Исправление ошибок в свидетельстве о праве собственности и разрешение споров",
+sv5:"Согласование справок об отсутствии возражений с застройщиками при передаче прав на вторичном рынке",
+sv6:"Сопровождение сделок в офисе доверительного управляющего",
+sv7:"Консультации по передаче прав собственности между связанными сторонами",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"В чём разница между Oqood и свидетельством о праве собственности (Title Deed)?",faq1_a:"Oqood — это предварительная регистрация, оформляемая в период строительства на этапе off-plan, которая защищает интерес покупателя и предотвращает повторную продажу одного и того же объекта; Title Deed — это окончательный, постоянный документ о праве собственности, выдаваемый после завершения проекта и передачи объекта покупателю.",
+faq2_q:"Действительна ли ипотека, если она не зарегистрирована в Земельном департаменте Дубая?",faq2_a:"Нет — согласно Закону № 14 от 2008 года, ипотека на недвижимость в Дубае имеет юридическую силу только после регистрации в Земельном департаменте Дубая.",
+faq3_q:"Как проверить, что у объекта недвижимости чистый титул перед покупкой?",faq3_a:"Проверка титула через Земельный департамент Дубая покажет зарегистрированного собственника, любые зарегистрированные ипотеки и иные учтённые права; такую проверку следует завершить до подписания обязывающего договора купли-продажи.",
+faq4_q:"Что делать, если в моём свидетельстве о праве собственности есть ошибка?",faq4_a:"Ошибки в свидетельстве о праве собственности, как правило, можно исправить путём подачи заявления в Земельный департамент Дубая, при этом процедура и необходимые подтверждающие документы зависят от характера ошибки.",
+faq5_q:"Нужна ли мне справка об отсутствии возражений (NOC) для продажи моей недвижимости?",faq5_a:"Да — как правило, требуется справка об отсутствии возражений от застройщика, подтверждающая, что сервисные сборы и иные платежи урегулированы, прежде чем Земельный департамент Дубая обработает передачу права собственности на вторичном рынке."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",real_estate:"Immobilienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Immobilienregistrierung und Eigentumsrecht in Dubai",
+lead:"Eigentum an Immobilien in Dubai besteht erst, wenn es ordnungsgemäß registriert ist — ein unterzeichneter Kaufvertrag allein überträgt kein rechtliches Eigentum, und Fehler im Registrierungsprozess können das Eigentum eines Käufers gefährden.",
+box:"Ein Anwalt für Immobilienregistrierung und Eigentumsrecht in Dubai berät Käufer, Verkäufer und Eigentümer bei der Registrierung von Eigentum, Hypotheken und sonstigen Rechten an Immobilien beim Dubai Land Department sowie bei der Behebung von Registrierungs- oder Eigentumsunregelmäßigkeiten.",
+p1:"Das Eigentum an Immobilien in Dubai wird durch die Registrierung beim Dubai Land Department bestätigt — bei Off-Plan-Einheiten beginnt dies mit der vorläufigen Registrierung, gemeinhin als Oqood bekannt, im Rahmen des durch Gesetz Nr. 13 von 2008 eingerichteten vorläufigen Immobilienregisters, die sich nach Fertigstellung und Übergabe des Projekts in eine vollständige Eigentumsurkunde (Title Deed) umwandelt.",
+p2:"Die Kanzlei berät über den gesamten Registrierungszyklus hinweg — sie prüft, ob ein Off-Plan-Kauf korrekt registriert wurde, um den Käufer vor einem Doppelverkauf zu schützen, überprüft vor einem Kauf, ob auf einem Titel bestehende Hypotheken oder andere eingetragene Rechte lasten, und löst Streitigkeiten, wenn eine Registrierung verzögert, abgelehnt wurde oder einen Fehler zu enthalten scheint.",
+p3:"Eine Hypothek auf eine Immobilie in Dubai hat keine Rechtswirkung, sofern sie nicht beim Dubai Land Department gemäß Gesetz Nr. 14 von 2008 registriert ist — daher ist es unerlässlich, den Registrierungsstatus einer Immobilie zu bestätigen, bevor man sich auf sie als Sicherheit verlässt oder sie als scheinbar unbelastet erwirbt.",
+h2_how:"Wie die Immobilienregistrierung abgewickelt wird",
+step1_t:"Statusprüfung",step1_d:"Der Anwalt prüft den aktuellen Registrierungsstatus der Immobilie beim Dubai Land Department, einschließlich etwaiger eingetragener Hypotheken oder Rechte.",
+step2_t:"Dokumentenprüfung",step2_d:"Kaufverträge, NOCs (Unbedenklichkeitsbescheinigungen) und Belegdokumente werden auf ihre Registrierungsbereitschaft geprüft.",
+step3_t:"Registrierungsantrag",step3_d:"Der entsprechende Antrag — Oqood, Eigentumsübertragung oder Hypothekenregistrierung — wird beim Dubai Land Department eingereicht.",
+step4_t:"Gebühren- und NOC-Koordination",step4_d:"Registrierungsgebühren werden berechnet und eine erforderliche NOC des Bauträgers eingeholt.",
+step5_t:"Termin im Trustee Office",step5_d:"Bei Weiterverkaufsübertragungen wird die Transaktion in einem vom DLD zugelassenen Trustee Office abgeschlossen.",
+step6_t:"Bestätigung der Eigentumsurkunde",step6_d:"Die endgültige Registrierung bzw. die Eigentumsurkunde wird bestätigt und auf Richtigkeit geprüft.",
+h2_when:"Wann Sie einen Anwalt für Immobilienregistrierung und Eigentumsrecht benötigen",
+sc1:"Sie kaufen eine Bestandsimmobilie und möchten deren eingetragenen Titel vor Vertragsabschluss überprüfen.",
+sc2:"Sie haben eine Off-Plan-Einheit erworben und möchten bestätigen, dass Ihre Oqood-Registrierung korrekt erfasst ist.",
+sc3:"Auf einem von Ihnen erworbenen Titel ist eine Hypothek oder ein anderes Recht eingetragen, das vor Abschluss der Transaktion geklärt werden muss.",
+sc4:"Ihre endgültige Eigentumsurkunde wurde verzögert oder Sie haben darin einen Fehler entdeckt.",
+sc5:"Sie müssen eine Hypothek registrieren lassen oder eine bestehende Hypothek nach Rückzahlung löschen lassen.",
+sc6:"Sie strukturieren eine Übertragung zwischen Familienangehörigen oder verbundenen Parteien und benötigen eine ordnungsgemäße Registrierung.",
+h2_services:"Unsere Leistungen",
+sv1:"Titelverifizierung und Registrierungsprüfungen vor dem Kauf",
+sv2:"Beratung zur Oqood-Registrierung bei Off-Plan-Immobilien",
+sv3:"Koordination der Hypothekenregistrierung und -löschung",
+sv4:"Korrektur von Fehlern in der Eigentumsurkunde und Streitbeilegung",
+sv5:"Koordination der NOC mit Bauträgern bei Weiterverkaufsübertragungen",
+sv6:"Unterstützung bei Transaktionen im Trustee Office",
+sv7:"Beratung zu Übertragungen zwischen verbundenen Parteien",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was ist der Unterschied zwischen Oqood und einer Eigentumsurkunde (Title Deed)?",faq1_a:"Oqood ist die vorläufige Registrierung, die während der Off-Plan-Bauphase erfasst wird, das Interesse des Käufers schützt und verhindert, dass dieselbe Einheit zweimal verkauft wird; die Eigentumsurkunde ist das endgültige, dauerhafte Eigentumsdokument, das nach Fertigstellung des Projekts und Übergabe der Einheit ausgestellt wird.",
+faq2_q:"Ist eine Hypothek gültig, wenn sie nicht beim Dubai Land Department registriert ist?",faq2_a:"Nein — gemäß Gesetz Nr. 14 von 2008 entfaltet eine Hypothek auf eine Immobilie in Dubai nur dann Rechtswirkung, wenn sie beim Dubai Land Department registriert ist.",
+faq3_q:"Wie kann ich vor dem Kauf prüfen, ob eine Immobilie einen unbelasteten Titel hat?",faq3_a:"Eine Titelprüfung über das Dubai Land Department zeigt den eingetragenen Eigentümer, etwaige eingetragene Hypotheken und andere erfasste Rechte an und sollte vor Unterzeichnung eines verbindlichen Kaufvertrags abgeschlossen sein.",
+faq4_q:"Was ist, wenn sich ein Fehler in meiner Eigentumsurkunde befindet?",faq4_a:"Fehler in einer Eigentumsurkunde können in der Regel durch einen Antrag beim Dubai Land Department korrigiert werden, wobei das Verfahren und die erforderlichen Belegdokumente von der Art des Fehlers abhängen.",
+faq5_q:"Benötige ich eine NOC, um meine Immobilie zu verkaufen?",faq5_a:"Ja — in der Regel ist eine Unbedenklichkeitsbescheinigung (NOC) des Bauträgers erforderlich, die bestätigt, dass Servicegebühren und andere Verbindlichkeiten beglichen sind, bevor das Dubai Land Department eine Weiterverkaufsübertragung bearbeitet."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
+
 </body>
 </html>

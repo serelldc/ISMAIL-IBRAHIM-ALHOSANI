@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Real Estate Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Real estate transactions in Dubai involve regulatory steps beyond the sale contract itself.">
+<meta name="description" content="Advising individuals, investors, and businesses across the full range of Dubai property matters — purchases, leasing, registration, and disputes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,79 +31,388 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="real-estate-law.html">Real Estate Law</a> &rsaquo; Real Estate Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="real-estate-law.html" data-i18n="real_estate">Real Estate Law</a> &rsaquo; <span data-i18n="page_title">Real Estate Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Real Estate Lawyer in Dubai</h1>
-  <p class="lead">Real estate transactions in Dubai involve regulatory steps beyond the sale contract itself.</p>
-  <div class="box">This covers general real estate legal support across purchase, sale, and ownership matters.</div>
-  <p class="body-p">The firm advises individuals and investors across the range of real estate matters that arise in Dubai.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Real Estate Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">Dubai's real estate market runs on a distinct regulatory framework — RERA, the Dubai Land Department, the Rental Disputes Center — and matters that look straightforward on the surface often turn on how that framework applies to the specific transaction.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A real estate lawyer in Dubai advises individuals, investors, and businesses across the full range of property matters — purchases and sales, leasing, registration, disputes, and regulatory compliance under Dubai's real estate legislation.</div>
+
+<p class="body-p" data-i18n="p1">Real estate legal work in Dubai spans several distinct regulatory frameworks depending on what stage a matter has reached: escrow-protected off-plan purchases under Law No. 8 of 2007, jointly owned property and service charge matters under Law No. 6 of 2019, mortgage registration under Law No. 14 of 2008, and tenancy relationships under Law No. 26 of 2007 as amended — a client's matter often touches more than one of these at once.</p>
+<p class="body-p" data-i18n="p2">The firm advises clients across the property lifecycle — from reviewing a purchase agreement before signing, through registration and financing, to resolving disputes that arise after completion — providing continuity that a client would otherwise have to rebuild with a new adviser at each stage.</p>
+<p class="body-p" data-i18n="p3">Because Dubai real estate disputes are frequently decided by specialized bodies — RERA, the Real Estate Disputes Centre, the Rental Disputes Center — rather than the ordinary courts, effective representation depends on understanding which body has jurisdiction over a given matter and how its process actually works in practice.</p>
+
+<h2 data-i18n="h2_how">How We Approach a Real Estate Matter</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Initial Consultation</strong><span data-i18n="step1_d">The lawyer reviews the matter and identifies which regulatory framework and forum apply.</span></li>
+<li><strong data-i18n="step2_t">Document Review</strong><span data-i18n="step2_d">Relevant contracts, registrations, and correspondence are reviewed to establish the legal position.</span></li>
+<li><strong data-i18n="step3_t">Strategy</strong><span data-i18n="step3_d">A course of action is set, whether that is negotiation, a regulatory complaint, or litigation.</span></li>
+<li><strong data-i18n="step4_t">Regulatory or Contractual Steps</strong><span data-i18n="step4_d">Filings, notices, or registrations are completed as the matter requires.</span></li>
+<li><strong data-i18n="step5_t">Resolution</strong><span data-i18n="step5_d">The matter proceeds to negotiated resolution, regulatory decision, or judgment as applicable.</span></li>
+<li><strong data-i18n="step6_t">Follow-Through</strong><span data-i18n="step6_d">Registration, enforcement, or compliance steps are completed to close out the matter.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Real Estate Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">You are entering into a property purchase, sale, or lease and want legal review before committing.</li>
+<li data-i18n="sc2">You are unsure which regulatory body has jurisdiction over a real estate issue you're facing.</li>
+<li data-i18n="sc3">You need ongoing legal support across multiple stages of a property transaction.</li>
+<li data-i18n="sc4">A real estate matter involves more than one area — for example, both a mortgage and a tenancy dispute.</li>
+<li data-i18n="sc5">You are an investor or business entering the Dubai real estate market for the first time.</li>
+<li data-i18n="sc6">You need a second opinion on advice already received regarding a property matter.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Property purchase and sale legal support</li>
+<li data-i18n="sv2">Tenancy and landlord-tenant advisory</li>
+<li data-i18n="sv3">Registration and title matters with the Dubai Land Department</li>
+<li data-i18n="sv4">Mortgage and real estate financing advice</li>
+<li data-i18n="sv5">Real estate dispute resolution across RERA, the Real Estate Disputes Centre, and the courts</li>
+<li data-i18n="sv6">Ongoing advisory for property investors and businesses</li>
+<li data-i18n="sv7">Jointly owned property and owners association matters</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What areas of real estate law does the firm handle?</summary>
+<p data-i18n="faq1_a">The firm covers the full range of Dubai real estate matters, including purchases and sales, off-plan transactions, tenancy and landlord-tenant disputes, mortgage and registration matters, and owners association issues.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">How do I know if my issue goes to RERA, the Real Estate Disputes Centre, or the courts?</summary>
+<p data-i18n="faq2_a">It depends on the nature of the dispute and the parties involved — a lawyer familiar with the jurisdictional boundaries between these bodies can assess this quickly at the outset of a matter.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Do you advise both individuals and companies?</summary>
+<p data-i18n="faq3_a">Yes — the firm advises private individuals, investors, and companies on real estate matters across the Emirate.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">I'm new to the Dubai property market — do you advise first-time buyers?</summary>
+<p data-i18n="faq4_a">Yes — first-time buyers and investors benefit particularly from early advice, since Dubai's registration, escrow, and regulatory framework differs meaningfully from many other jurisdictions.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">Can you handle a matter that touches more than one area, like a mortgage and a tenancy issue together?</summary>
+<p data-i18n="faq5_a">Yes — real estate matters frequently overlap across these areas, and having one adviser across the full matter avoids the inefficiency of coordinating between separate specialists.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",real_estate:"Real Estate Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Real Estate Lawyer in Dubai",
+lead:"Dubai's real estate market runs on a distinct regulatory framework — RERA, the Dubai Land Department, the Rental Disputes Center — and matters that look straightforward on the surface often turn on how that framework applies to the specific transaction.",
+box:"A real estate lawyer in Dubai advises individuals, investors, and businesses across the full range of property matters — purchases and sales, leasing, registration, disputes, and regulatory compliance under Dubai's real estate legislation.",
+p1:"Real estate legal work in Dubai spans several distinct regulatory frameworks depending on what stage a matter has reached: escrow-protected off-plan purchases under Law No. 8 of 2007, jointly owned property and service charge matters under Law No. 6 of 2019, mortgage registration under Law No. 14 of 2008, and tenancy relationships under Law No. 26 of 2007 as amended — a client's matter often touches more than one of these at once.",
+p2:"The firm advises clients across the property lifecycle — from reviewing a purchase agreement before signing, through registration and financing, to resolving disputes that arise after completion — providing continuity that a client would otherwise have to rebuild with a new adviser at each stage.",
+p3:"Because Dubai real estate disputes are frequently decided by specialized bodies — RERA, the Real Estate Disputes Centre, the Rental Disputes Center — rather than the ordinary courts, effective representation depends on understanding which body has jurisdiction over a given matter and how its process actually works in practice.",
+h2_how:"How We Approach a Real Estate Matter",
+step1_t:"Initial Consultation",step1_d:"The lawyer reviews the matter and identifies which regulatory framework and forum apply.",
+step2_t:"Document Review",step2_d:"Relevant contracts, registrations, and correspondence are reviewed to establish the legal position.",
+step3_t:"Strategy",step3_d:"A course of action is set, whether that is negotiation, a regulatory complaint, or litigation.",
+step4_t:"Regulatory or Contractual Steps",step4_d:"Filings, notices, or registrations are completed as the matter requires.",
+step5_t:"Resolution",step5_d:"The matter proceeds to negotiated resolution, regulatory decision, or judgment as applicable.",
+step6_t:"Follow-Through",step6_d:"Registration, enforcement, or compliance steps are completed to close out the matter.",
+h2_when:"When You Need a Real Estate Lawyer",
+sc1:"You are entering into a property purchase, sale, or lease and want legal review before committing.",
+sc2:"You are unsure which regulatory body has jurisdiction over a real estate issue you're facing.",
+sc3:"You need ongoing legal support across multiple stages of a property transaction.",
+sc4:"A real estate matter involves more than one area — for example, both a mortgage and a tenancy dispute.",
+sc5:"You are an investor or business entering the Dubai real estate market for the first time.",
+sc6:"You need a second opinion on advice already received regarding a property matter.",
+h2_services:"Services We Provide",
+sv1:"Property purchase and sale legal support",
+sv2:"Tenancy and landlord-tenant advisory",
+sv3:"Registration and title matters with the Dubai Land Department",
+sv4:"Mortgage and real estate financing advice",
+sv5:"Real estate dispute resolution across RERA, the Real Estate Disputes Centre, and the courts",
+sv6:"Ongoing advisory for property investors and businesses",
+sv7:"Jointly owned property and owners association matters",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What areas of real estate law does the firm handle?",faq1_a:"The firm covers the full range of Dubai real estate matters, including purchases and sales, off-plan transactions, tenancy and landlord-tenant disputes, mortgage and registration matters, and owners association issues.",
+faq2_q:"How do I know if my issue goes to RERA, the Real Estate Disputes Centre, or the courts?",faq2_a:"It depends on the nature of the dispute and the parties involved — a lawyer familiar with the jurisdictional boundaries between these bodies can assess this quickly at the outset of a matter.",
+faq3_q:"Do you advise both individuals and companies?",faq3_a:"Yes — the firm advises private individuals, investors, and companies on real estate matters across the Emirate.",
+faq4_q:"I'm new to the Dubai property market — do you advise first-time buyers?",faq4_a:"Yes — first-time buyers and investors benefit particularly from early advice, since Dubai's registration, escrow, and regulatory framework differs meaningfully from many other jurisdictions.",
+faq5_q:"Can you handle a matter that touches more than one area, like a mortgage and a tenancy issue together?",faq5_a:"Yes — real estate matters frequently overlap across these areas, and having one adviser across the full matter avoids the inefficiency of coordinating between separate specialists."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",real_estate:"القانون العقاري",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي عقاري في دبي",
+lead:"يعمل سوق العقارات في دبي وفق إطار تنظيمي مميز — مؤسسة التنظيم العقاري، ودائرة الأراضي والأملاك في دبي، ومركز فض المنازعات الإيجارية — وغالبًا ما تتوقف المسائل التي تبدو بسيطة ظاهريًا على كيفية تطبيق ذلك الإطار على الصفقة المحددة.",
+box:"يقدم المحامي العقاري في دبي الاستشارات للأفراد والمستثمرين والشركات في كامل نطاق المسائل العقارية — البيع والشراء، التأجير، التسجيل، المنازعات، والامتثال التنظيمي بموجب التشريعات العقارية في دبي.",
+p1:"يمتد العمل القانوني العقاري في دبي عبر عدة أطر تنظيمية متمايزة تبعًا للمرحلة التي بلغتها المسألة: عمليات الشراء على الخارطة المحمية بحساب الضمان بموجب القانون رقم 8 لسنة 2007، ومسائل الملكية المشتركة ورسوم الخدمات بموجب القانون رقم 6 لسنة 2019، وتسجيل الرهون العقارية بموجب القانون رقم 14 لسنة 2008، والعلاقات الإيجارية بموجب القانون رقم 26 لسنة 2007 وتعديلاته — وغالبًا ما تمس مسألة العميل أكثر من إطار واحد من هذه الأطر في آن واحد.",
+p2:"يقدم المكتب الاستشارات للعملاء عبر دورة حياة العقار بأكملها — من مراجعة اتفاقية الشراء قبل التوقيع، مرورًا بالتسجيل والتمويل، وصولًا إلى حل المنازعات التي قد تنشأ بعد إتمام الصفقة — بما يوفر استمرارية كان على العميل لولاها أن يعيد بناءها مع مستشار جديد في كل مرحلة.",
+p3:"نظرًا لأن المنازعات العقارية في دبي كثيرًا ما تُحسم أمام جهات متخصصة — مؤسسة التنظيم العقاري، ومركز فض المنازعات العقارية، ومركز فض المنازعات الإيجارية — بدلًا من المحاكم العادية، فإن التمثيل الفعّال يتوقف على فهم الجهة المختصة بنظر مسألة معينة وكيفية سير إجراءاتها عمليًا.",
+h2_how:"كيف نتعامل مع المسائل العقارية",
+step1_t:"الاستشارة الأولية",step1_d:"يراجع المحامي المسألة ويحدد الإطار التنظيمي والجهة المختصة المنطبقة.",
+step2_t:"مراجعة المستندات",step2_d:"تُراجع العقود والتسجيلات والمراسلات ذات الصلة لتحديد الموقف القانوني.",
+step3_t:"وضع الاستراتيجية",step3_d:"يُحدَّد مسار العمل، سواء كان تفاوضًا أو شكوى تنظيمية أو تقاضيًا.",
+step4_t:"الإجراءات التنظيمية أو التعاقدية",step4_d:"تُستكمل الإيداعات أو الإخطارات أو التسجيلات حسبما تتطلبه المسألة.",
+step5_t:"التسوية",step5_d:"تنتهي المسألة إلى تسوية بالتفاوض أو قرار تنظيمي أو حكم قضائي بحسب الحال.",
+step6_t:"المتابعة والتنفيذ",step6_d:"تُستكمل إجراءات التسجيل أو التنفيذ أو الامتثال لإغلاق المسألة.",
+h2_when:"متى تحتاج إلى محامٍ عقاري",
+sc1:"أنت مقبل على شراء عقار أو بيعه أو استئجاره وترغب في مراجعة قانونية قبل الالتزام.",
+sc2:"لست متأكدًا من الجهة التنظيمية المختصة بنظر مسألة عقارية تواجهها.",
+sc3:"تحتاج إلى دعم قانوني مستمر عبر مراحل متعددة من صفقة عقارية.",
+sc4:"تتضمن مسألتك العقارية أكثر من مجال واحد — على سبيل المثال، رهن عقاري ومنازعة إيجارية في آن واحد.",
+sc5:"أنت مستثمر أو شركة تدخل سوق العقارات في دبي لأول مرة.",
+sc6:"تحتاج إلى رأي ثانٍ بشأن استشارة سبق أن تلقيتها حول مسألة عقارية.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"الدعم القانوني لعمليات بيع وشراء العقارات",
+sv2:"الاستشارات الإيجارية وعلاقات المالك والمستأجر",
+sv3:"مسائل التسجيل وسند الملكية لدى دائرة الأراضي والأملاك في دبي",
+sv4:"استشارات الرهن العقاري والتمويل العقاري",
+sv5:"حل المنازعات العقارية أمام مؤسسة التنظيم العقاري، ومركز فض المنازعات العقارية، والمحاكم",
+sv6:"استشارات مستمرة للمستثمرين والشركات العقارية",
+sv7:"مسائل الملكية المشتركة وجمعيات الملاك",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ما هي مجالات القانون العقاري التي يتعامل معها المكتب؟",faq1_a:"يغطي المكتب كامل نطاق المسائل العقارية في دبي، بما في ذلك عمليات البيع والشراء، والصفقات على الخارطة، ومنازعات الإيجار والعلاقة بين المالك والمستأجر، ومسائل الرهن والتسجيل، وقضايا جمعيات الملاك.",
+faq2_q:"كيف أعرف ما إذا كانت مسألتي تُعرض على مؤسسة التنظيم العقاري، أو مركز فض المنازعات العقارية، أو المحاكم؟",faq2_a:"يعتمد ذلك على طبيعة النزاع والأطراف المعنية — ويستطيع المحامي المُلمّ بحدود الاختصاص بين هذه الجهات تقييم ذلك بسرعة منذ بداية المسألة.",
+faq3_q:"هل تقدمون الاستشارات للأفراد والشركات على حد سواء؟",faq3_a:"نعم — يقدم المكتب الاستشارات للأفراد والمستثمرين والشركات في المسائل العقارية في جميع أنحاء الإمارة.",
+faq4_q:"أنا جديد على سوق العقارات في دبي — هل تقدمون الاستشارة للمشترين لأول مرة؟",faq4_a:"نعم — يستفيد المشترون والمستثمرون الجدد بشكل خاص من الحصول على استشارة مبكرة، نظرًا لأن نظام التسجيل وحساب الضمان والإطار التنظيمي في دبي يختلف بشكل ملموس عن كثير من الولايات القضائية الأخرى.",
+faq5_q:"هل يمكنكم التعامل مع مسألة تمس أكثر من مجال واحد، مثل رهن عقاري ومسألة إيجارية معًا؟",faq5_a:"نعم — كثيرًا ما تتداخل المسائل العقارية بين هذه المجالات، ووجود مستشار واحد يتولى المسألة بكاملها يجنّب عدم الكفاءة الناتجة عن التنسيق بين متخصصين منفصلين."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",real_estate:"房地产法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜房地产律师",
+lead:"迪拜的房地产市场运行在一套独特的监管框架之下——房地产监管局（RERA）、迪拜土地局、租赁纠纷中心——表面上看似简单的事项，往往取决于该框架如何适用于具体交易。",
+box:"迪拜房地产律师为个人、投资者及企业就房地产各类事务提供咨询——买卖、租赁、登记、争议以及迪拜房地产法规下的合规事宜。",
+p1:"迪拜的房地产法律事务涉及多个不同的监管框架，具体取决于事项所处的阶段：受2007年第8号法律保护的期房托管购买、2019年第6号法律下的共有产权及服务费事宜、2008年第14号法律下的抵押登记，以及经修订的2007年第26号法律下的租赁关系——客户所涉事项往往同时触及其中不止一个框架。",
+p2:"本所在物业交易的整个生命周期内为客户提供咨询——从签约前审阅购买协议，到登记与融资，再到解决成交后可能出现的争议——提供连续性服务，避免客户在每个阶段都需要与新的顾问重新建立了解。",
+p3:"由于迪拜的房地产争议往往由专门机构裁决——RERA、房地产纠纷中心、租赁纠纷中心——而非普通法院，因此有效的代理取决于了解特定事项由哪一机构管辖，以及该机构的程序在实践中如何实际运作。",
+h2_how:"我们处理房地产事务的方式",
+step1_t:"初步咨询",step1_d:"律师审阅事项并确定适用的监管框架及管辖机构。",
+step2_t:"文件审阅",step2_d:"审阅相关合同、登记文件及往来函件，以确立法律立场。",
+step3_t:"策略制定",step3_d:"确定行动方案，无论是谈判、监管投诉还是诉讼。",
+step4_t:"监管或合同层面的步骤",step4_d:"根据事项需要完成申报、通知或登记手续。",
+step5_t:"解决",step5_d:"事项通过协商解决、监管裁决或判决等相应方式推进解决。",
+step6_t:"后续跟进",step6_d:"完成登记、执行或合规相关步骤，以结束该事项。",
+h2_when:"何时需要房地产律师",
+sc1:"您即将进行物业买卖或租赁，希望在承诺之前进行法律审查。",
+sc2:"您不确定哪个监管机构对您所面临的房地产问题拥有管辖权。",
+sc3:"您需要在物业交易的多个阶段获得持续的法律支持。",
+sc4:"您的房地产事项涉及不止一个领域——例如同时涉及抵押贷款和租赁纠纷。",
+sc5:"您是首次进入迪拜房地产市场的投资者或企业。",
+sc6:"您希望就已收到的房地产事项建议获取第二意见。",
+h2_services:"我们提供的服务",
+sv1:"物业买卖法律支持",
+sv2:"租赁及房东与租户关系咨询",
+sv3:"迪拜土地局登记及产权事宜",
+sv4:"抵押贷款及房地产融资咨询",
+sv5:"在RERA、房地产纠纷中心及法院进行房地产争议解决",
+sv6:"为物业投资者及企业提供持续咨询",
+sv7:"共有产权及业主协会相关事宜",
+h2_faq:"常见问题",
+faq1_q:"本所处理哪些房地产法律领域？",faq1_a:"本所涵盖迪拜房地产事务的全部范围，包括买卖交易、期房交易、租赁及房东与租户纠纷、抵押及登记事宜，以及业主协会相关问题。",
+faq2_q:"我怎么知道我的问题应提交给RERA、房地产纠纷中心还是法院？",faq2_a:"这取决于争议的性质及所涉当事方——熟悉这些机构之间管辖权界限的律师可以在事项一开始就迅速作出判断。",
+faq3_q:"贵所是否同时为个人和公司提供咨询？",faq3_a:"是的——本所为私人个人、投资者及公司提供关于整个酋长国房地产事务的咨询。",
+faq4_q:"我对迪拜房地产市场还不熟悉——你们是否为首次购房者提供咨询？",faq4_a:"是的——首次购房者及投资者尤其能从早期咨询中受益，因为迪拜的登记、托管账户及监管框架与许多其他司法辖区存在显著差异。",
+faq5_q:"如果一个事项同时涉及多个领域，例如抵押贷款和租赁问题，你们能否处理？",faq5_a:"可以——房地产事项经常在这些领域之间存在交叉，由一位顾问统筹处理整个事项，可以避免在不同专业人士之间协调所带来的低效。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",real_estate:"Право недвижимости",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Юрист по недвижимости в Дубае",
+lead:"Рынок недвижимости Дубая функционирует в рамках особой нормативной системы — RERA, Земельный департамент Дубая, Центр по разрешению арендных споров — и вопросы, которые на первый взгляд кажутся простыми, часто зависят от того, как эта система применяется к конкретной сделке.",
+box:"Юрист по недвижимости в Дубае консультирует частных лиц, инвесторов и компании по всему спектру вопросов недвижимости — купля-продажа, аренда, регистрация, споры и соблюдение нормативных требований согласно законодательству Дубая о недвижимости.",
+p1:"Юридическая работа с недвижимостью в Дубае охватывает несколько различных нормативных режимов в зависимости от того, на какой стадии находится вопрос: защищённые эскроу-счётом покупки на этапе строительства согласно Закону № 8 от 2007 года, вопросы совместной собственности и эксплуатационных сборов согласно Закону № 6 от 2019 года, регистрация ипотеки согласно Закону № 14 от 2008 года и арендные отношения согласно Закону № 26 от 2007 года с изменениями — вопрос клиента часто затрагивает сразу несколько из этих режимов.",
+p2:"Фирма консультирует клиентов на протяжении всего жизненного цикла сделки с недвижимостью — от рассмотрения договора купли-продажи перед подписанием, через регистрацию и финансирование, до разрешения споров, возникающих после завершения сделки, — обеспечивая непрерывность, которую клиенту иначе пришлось бы выстраивать заново с новым консультантом на каждом этапе.",
+p3:"Поскольку споры, связанные с недвижимостью в Дубае, часто рассматриваются специализированными органами — RERA, Центром по разрешению споров о недвижимости, Центром по разрешению арендных споров — а не обычными судами, эффективное представительство зависит от понимания того, какой орган обладает юрисдикцией в конкретном вопросе и как на практике фактически работает его процедура.",
+h2_how:"Как мы подходим к вопросам недвижимости",
+step1_t:"Первичная консультация",step1_d:"Юрист рассматривает вопрос и определяет применимый нормативный режим и компетентный орган.",
+step2_t:"Анализ документов",step2_d:"Рассматриваются соответствующие договоры, регистрационные документы и переписка для установления правовой позиции.",
+step3_t:"Стратегия",step3_d:"Определяется порядок действий — будь то переговоры, обращение в регулирующий орган или судебное разбирательство.",
+step4_t:"Регуляторные или договорные действия",step4_d:"В зависимости от требований дела осуществляются подачи, уведомления или регистрации.",
+step5_t:"Разрешение вопроса",step5_d:"Дело переходит к урегулированию путём переговоров, решению регулирующего органа или судебному решению — в зависимости от обстоятельств.",
+step6_t:"Дальнейшее сопровождение",step6_d:"Для завершения дела выполняются шаги по регистрации, исполнению решения или обеспечению соблюдения требований.",
+h2_when:"Когда вам нужен юрист по недвижимости",
+sc1:"Вы собираетесь заключить сделку купли-продажи или аренды недвижимости и хотите получить юридическую проверку до принятия обязательств.",
+sc2:"Вы не уверены, какой регулирующий орган обладает юрисдикцией по вопросу недвижимости, с которым вы столкнулись.",
+sc3:"Вам необходима постоянная юридическая поддержка на нескольких этапах сделки с недвижимостью.",
+sc4:"Ваш вопрос, связанный с недвижимостью, затрагивает несколько областей одновременно — например, ипотеку и арендный спор.",
+sc5:"Вы инвестор или компания, впервые выходящие на рынок недвижимости Дубая.",
+sc6:"Вам необходимо второе мнение относительно уже полученной консультации по вопросу недвижимости.",
+h2_services:"Наши услуги",
+sv1:"Юридическое сопровождение купли-продажи недвижимости",
+sv2:"Консультирование по вопросам аренды и отношений арендодателя и арендатора",
+sv3:"Вопросы регистрации и права собственности в Земельном департаменте Дубая",
+sv4:"Консультирование по ипотеке и финансированию недвижимости",
+sv5:"Разрешение споров, связанных с недвижимостью, в RERA, Центре по разрешению споров о недвижимости и судах",
+sv6:"Постоянное консультирование инвесторов и компаний в сфере недвижимости",
+sv7:"Вопросы совместной собственности и ассоциаций владельцев",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Какими областями права недвижимости занимается фирма?",faq1_a:"Фирма охватывает весь спектр вопросов недвижимости в Дубае, включая куплю-продажу, сделки на этапе строительства, споры по аренде и отношениям арендодателя и арендатора, вопросы ипотеки и регистрации, а также проблемы ассоциаций владельцев.",
+faq2_q:"Как узнать, куда следует обращаться по моему вопросу — в RERA, Центр по разрешению споров о недвижимости или суд?",faq2_a:"Это зависит от характера спора и участвующих сторон — юрист, знакомый с границами юрисдикции между этими органами, может быстро определить это в самом начале рассмотрения дела.",
+faq3_q:"Вы консультируете как частных лиц, так и компании?",faq3_a:"Да — фирма консультирует частных лиц, инвесторов и компании по вопросам недвижимости на территории всего эмирата.",
+faq4_q:"Я впервые выхожу на рынок недвижимости Дубая — консультируете ли вы покупателей, совершающих первую сделку?",faq4_a:"Да — покупатели и инвесторы, впервые выходящие на рынок, особенно выигрывают от получения консультации на раннем этапе, поскольку система регистрации, эскроу-счетов и нормативная база Дубая существенно отличаются от многих других юрисдикций.",
+faq5_q:"Можете ли вы вести дело, которое затрагивает несколько областей одновременно, например ипотеку и вопрос аренды?",faq5_a:"Да — вопросы недвижимости часто пересекаются между этими областями, и наличие одного консультанта, ведущего дело целиком, позволяет избежать неэффективности, связанной с координацией между разными специалистами."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",real_estate:"Immobilienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Immobilienanwalt in Dubai",
+lead:"Der Immobilienmarkt in Dubai basiert auf einem eigenständigen Regelwerk — RERA, das Dubai Land Department, das Rental Disputes Center — und Angelegenheiten, die auf den ersten Blick einfach erscheinen, hängen häufig davon ab, wie dieses Regelwerk auf die konkrete Transaktion angewendet wird.",
+box:"Ein Immobilienanwalt in Dubai berät Privatpersonen, Investoren und Unternehmen im gesamten Spektrum von Immobilienangelegenheiten — Kauf und Verkauf, Vermietung, Registrierung, Streitigkeiten und die Einhaltung der Immobiliengesetzgebung Dubais.",
+p1:"Die rechtliche Immobilienarbeit in Dubai umfasst je nach Stadium der Angelegenheit mehrere unterschiedliche Regelwerke: durch Treuhandkonten geschützte Off-Plan-Käufe nach Gesetz Nr. 8 von 2007, Angelegenheiten des gemeinschaftlichen Eigentums und der Servicegebühren nach Gesetz Nr. 6 von 2019, die Eintragung von Hypotheken nach Gesetz Nr. 14 von 2008 sowie Mietverhältnisse nach dem geänderten Gesetz Nr. 26 von 2007 — die Angelegenheit eines Mandanten berührt häufig mehr als eines dieser Regelwerke gleichzeitig.",
+p2:"Die Kanzlei berät Mandanten über den gesamten Lebenszyklus einer Immobilie hinweg — von der Prüfung eines Kaufvertrags vor der Unterzeichnung über Registrierung und Finanzierung bis zur Beilegung von Streitigkeiten, die nach Abschluss entstehen — und sorgt so für eine Kontinuität, die ein Mandant sonst bei jeder Phase mit einem neuen Berater neu aufbauen müsste.",
+p3:"Da Immobilienstreitigkeiten in Dubai häufig von spezialisierten Stellen entschieden werden — RERA, dem Real Estate Disputes Centre, dem Rental Disputes Center — und nicht von den ordentlichen Gerichten, hängt eine wirksame Vertretung davon ab, zu verstehen, welche Stelle für eine bestimmte Angelegenheit zuständig ist und wie ihr Verfahren in der Praxis tatsächlich abläuft.",
+h2_how:"Unser Vorgehen bei Immobilienangelegenheiten",
+step1_t:"Erstberatung",step1_d:"Der Anwalt prüft die Angelegenheit und bestimmt, welches Regelwerk und welches Forum anwendbar sind.",
+step2_t:"Dokumentenprüfung",step2_d:"Relevante Verträge, Registrierungen und Korrespondenz werden geprüft, um die Rechtsposition festzustellen.",
+step3_t:"Strategie",step3_d:"Es wird ein Vorgehen festgelegt, sei es eine Verhandlung, eine aufsichtsrechtliche Beschwerde oder ein Gerichtsverfahren.",
+step4_t:"Regulatorische oder vertragliche Schritte",step4_d:"Je nach Erfordernis der Angelegenheit werden Einreichungen, Mitteilungen oder Registrierungen vorgenommen.",
+step5_t:"Lösung",step5_d:"Die Angelegenheit mündet je nach Fall in eine einvernehmliche Einigung, eine behördliche Entscheidung oder ein Urteil.",
+step6_t:"Nachbereitung",step6_d:"Registrierungs-, Vollstreckungs- oder Compliance-Schritte werden abgeschlossen, um die Angelegenheit zu beenden.",
+h2_when:"Wann Sie einen Immobilienanwalt brauchen",
+sc1:"Sie stehen vor einem Immobilienkauf, -verkauf oder einer Vermietung und möchten vor der Verpflichtung eine rechtliche Prüfung.",
+sc2:"Sie sind sich nicht sicher, welche Aufsichtsbehörde für ein Immobilienproblem zuständig ist, mit dem Sie konfrontiert sind.",
+sc3:"Sie benötigen fortlaufende rechtliche Unterstützung über mehrere Phasen einer Immobilientransaktion hinweg.",
+sc4:"Eine Immobilienangelegenheit betrifft mehr als einen Bereich — zum Beispiel sowohl eine Hypothek als auch einen Mietstreit.",
+sc5:"Sie sind ein Investor oder Unternehmen, das erstmals in den Immobilienmarkt Dubais einsteigt.",
+sc6:"Sie benötigen eine Zweitmeinung zu einer bereits erhaltenen Beratung in einer Immobilienangelegenheit.",
+h2_services:"Unsere Leistungen",
+sv1:"Rechtliche Unterstützung bei Immobilienkauf und -verkauf",
+sv2:"Beratung zu Mietverhältnissen und Vermieter-Mieter-Fragen",
+sv3:"Registrierungs- und Eigentumsangelegenheiten beim Dubai Land Department",
+sv4:"Beratung zu Hypotheken und Immobilienfinanzierung",
+sv5:"Beilegung von Immobilienstreitigkeiten bei RERA, dem Real Estate Disputes Centre und vor Gericht",
+sv6:"Fortlaufende Beratung für Immobilieninvestoren und Unternehmen",
+sv7:"Angelegenheiten des gemeinschaftlichen Eigentums und der Eigentümergemeinschaften",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Welche Bereiche des Immobilienrechts deckt die Kanzlei ab?",faq1_a:"Die Kanzlei deckt das gesamte Spektrum der Immobilienangelegenheiten in Dubai ab, einschließlich Käufen und Verkäufen, Off-Plan-Transaktionen, Mietstreitigkeiten und Vermieter-Mieter-Konflikten, Hypotheken- und Registrierungsangelegenheiten sowie Fragen der Eigentümergemeinschaften.",
+faq2_q:"Woher weiß ich, ob meine Angelegenheit vor RERA, das Real Estate Disputes Centre oder die Gerichte gehört?",faq2_a:"Das hängt von der Art des Streits und den beteiligten Parteien ab — ein mit den Zuständigkeitsgrenzen zwischen diesen Stellen vertrauter Anwalt kann dies zu Beginn einer Angelegenheit rasch einschätzen.",
+faq3_q:"Beraten Sie sowohl Privatpersonen als auch Unternehmen?",faq3_a:"Ja — die Kanzlei berät Privatpersonen, Investoren und Unternehmen in Immobilienangelegenheiten im gesamten Emirat.",
+faq4_q:"Ich bin neu auf dem Dubaier Immobilienmarkt — beraten Sie Erstkäufer?",faq4_a:"Ja — Erstkäufer und Investoren profitieren besonders von einer frühzeitigen Beratung, da sich Dubais Registrierungs-, Treuhandkonto- und Regulierungsrahmen deutlich von vielen anderen Rechtsordnungen unterscheidet.",
+faq5_q:"Können Sie eine Angelegenheit bearbeiten, die mehrere Bereiche betrifft, etwa eine Hypothek und ein Mietproblem zusammen?",faq5_a:"Ja — Immobilienangelegenheiten überschneiden sich häufig zwischen diesen Bereichen, und ein einziger Berater für die gesamte Angelegenheit vermeidet die Ineffizienz, verschiedene Spezialisten koordinieren zu müssen."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
+
 </body>
 </html>

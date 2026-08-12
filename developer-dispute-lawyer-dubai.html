@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>(function(){try{var t=localStorage.getItem('alhosani_theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Developer Dispute Lawyer in Dubai | Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants</title>
-<meta name="description" content="Disputes with developers often involve project delays, specification changes, or withheld handover.">
+<meta name="description" content="Advising buyers and developers on off-plan disputes — delayed handover, project cancellation, and claims before the Real Estate Disputes Centre.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;700&family=Noto+Sans+SC:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{--black:#0c0c0d;--black2:#151517;--navy:#12213a;--gold:#c9a24b;--gold-light:#e8cd82;--cream:#f5f1e8;--grey:#a9a6a0;--ink:#0c0c0d;--text-strong:#f5f1e8;--text-muted-strong:#b9b6af;}
 :root[data-theme="light"]{--black:#ffffff;--black2:#f2efe6;--cream:#1c1a17;--grey:#5c584f;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.7;}
+body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
+body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:820px;margin:0 auto;padding:0 24px;}
 header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);padding:16px 24px;position:sticky;top:0;z-index:50;}
@@ -29,80 +31,388 @@ header{background:var(--black2);border-bottom:1px solid rgba(201,162,75,0.25);pa
 .breadcrumb a:hover{color:var(--gold-light);}
 article{padding:24px 24px 70px;}
 h1{font-family:'Cinzel',serif;font-size:clamp(24px,4vw,34px);color:var(--gold-light);margin:14px 0 20px;line-height:1.3;}
+h2{font-family:'Cinzel',serif;font-size:clamp(19px,3vw,23px);color:var(--gold-light);margin:38px 0 16px;line-height:1.3;}
 .lead{font-size:16.5px;color:var(--cream);margin-bottom:24px;}
 .box{background:var(--black2);border-inline-start:3px solid var(--gold);padding:18px 22px;border-radius:4px;color:var(--grey);font-size:14.5px;margin-bottom:26px;}
 article p.body-p{color:var(--grey);font-size:15px;margin-bottom:16px;}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;}
+.cta-row.top{margin-top:0;margin-bottom:34px;}
 .btn-outline{display:inline-block;padding:11px 22px;border:1px solid var(--gold);color:var(--gold-light);border-radius:2px;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase;}
 .btn-outline:hover{background:var(--gold);color:var(--ink);}
+.steps{list-style:none;counter-reset:step;margin-bottom:8px;}
+.steps li{position:relative;padding-inline-start:46px;margin-bottom:20px;color:var(--grey);font-size:14.5px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;inset-inline-start:0;top:-2px;width:30px;height:30px;background:var(--black2);border:1px solid var(--gold);color:var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13.5px;}
+.steps li strong{color:var(--cream);display:block;margin-bottom:3px;font-size:15.5px;font-weight:600;}
+.scenario-list,.service-list{list-style:none;margin-bottom:8px;}
+.scenario-list li,.service-list li{position:relative;padding-inline-start:26px;margin-bottom:13px;color:var(--grey);font-size:15px;}
+.scenario-list li::before{content:'\25B8';position:absolute;inset-inline-start:0;color:var(--gold);}
+.service-list li::before{content:'\2713';position:absolute;inset-inline-start:0;color:var(--gold);font-weight:700;}
+.faq-list{margin-bottom:8px;}
+.faq-list details{background:var(--black2);border:1px solid rgba(201,162,75,0.2);border-radius:6px;margin-bottom:12px;padding:16px 20px;}
+.faq-list summary{cursor:pointer;font-size:15px;color:var(--gold-light);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.faq-list summary::-webkit-details-marker{display:none;}
+.faq-list summary::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;}
+.faq-list details[open] summary::after{content:'\2212';}
+.faq-list details p{color:var(--grey);font-size:14px;margin-top:12px;}
 footer{border-top:1px solid rgba(201,162,75,0.2);padding:28px 24px;text-align:center;color:var(--grey);font-size:12.5px;}
 .chat-widget{position:fixed;left:20px;bottom:20px;z-index:200;}
 .chat-bubble{width:52px;height:52px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.4);}
 .theme-toggle{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);width:27px;height:27px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;}
 .theme-toggle:hover{border-color:var(--gold);color:var(--gold-light);}
+.lang-switch{display:flex;gap:4px;flex-wrap:wrap;text-transform:none;letter-spacing:0;}
+.lang-switch button{background:transparent;border:1px solid rgba(201,162,75,0.3);color:var(--grey);padding:4px 9px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:4px;}
+.lang-switch button.active,.lang-switch button:hover{border-color:var(--gold);color:var(--gold-light);}
+.flag{font-size:13px;}
 </style>
 </head>
-<body>
+<body data-lang="en">
 
 <div class="chat-widget">
-  <a class="chat-bubble" href="https://wa.me/971547125676" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
-  </a>
+<a class="chat-bubble" href="https://wa.me/971503389154" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32" width="26" height="26" fill="#fff"><path d="M16 3C9 3 3 9 3 16c0 2.4.7 4.7 1.9 6.7L3 29l6.5-1.8c1.9 1 4.1 1.6 6.5 1.6 7 0 13-6 13-13S23 3 16 3zm0 23.8c-2.1 0-4.1-.6-5.8-1.6l-.4-.2-4 1.1 1.1-3.9-.3-.5C4.9 19.5 4.3 17.8 4.3 16c0-6.5 5.3-11.7 11.7-11.7S27.7 9.5 27.7 16 22.5 26.8 16 26.8zm6.4-8.8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.8 12 13.3 10.7 13 10.2c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
 </div>
 
 <header>
-  <div class="headwrap">
-    <a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
-    <div class="headlinks">
-      <a href="index.html#expertise">All Practice Areas</a>
-      <a href="tel:+971547125676">+971 54 712 5676</a>
-      <a href="index.html#contact" class="btn-primary">Contact</a>
-      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
-    </div>
-  </div>
+<div class="headwrap">
+<a href="index.html" class="logo">Alhosani<span>Advocates</span></a>
+<div class="headlinks">
+<a href="index.html#expertise" data-i18n="all_practice">All Practice Areas</a>
+<a href="tel:+971503389154">+971 50 338 9154</a>
+<a href="index.html#contact" class="btn-primary" data-i18n="contact">Contact</a>
+<div class="lang-switch" id="langSwitch">
+<button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
+<button type="button" data-lang-btn="ar"><span class="flag">🇦🇪</span> AR</button>
+<button type="button" data-lang-btn="zh"><span class="flag">🇨🇳</span> 中文</button>
+<button type="button" data-lang-btn="ru"><span class="flag">🇷🇺</span> RU</button>
+<button type="button" data-lang-btn="de"><span class="flag">🇩🇪</span> DE</button>
+</div>
+<button type="button" id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
+</div>
+</div>
 </header>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> &rsaquo; <a href="index.html#expertise">Practice Areas</a> &rsaquo; <a href="real-estate-law.html">Real Estate Law</a> &rsaquo; Developer Dispute Lawyer in Dubai
+<a href="index.html" data-i18n="home">Home</a> &rsaquo; <a href="index.html#expertise" data-i18n="practice_areas">Practice Areas</a> &rsaquo; <a href="real-estate-law.html" data-i18n="real_estate">Real Estate Law</a> &rsaquo; <span data-i18n="page_title">Developer Dispute Lawyer in Dubai</span>
 </div>
 
 <article class="container">
-  <h1>Developer Dispute Lawyer in Dubai</h1>
-  <p class="lead">Disputes with developers often involve project delays, specification changes, or withheld handover.</p>
-  <div class="box">A developer dispute lawyer in Dubai represents buyers in claims against developers over delivery delays and contract breaches.</div>
-  <p class="body-p">The firm reviews the sale and purchase agreement alongside project completion records before advising on a claim.</p>
-  <p class="body-p">Where applicable, claims are pursued before the Dubai Land Department and the courts.</p>
-  <div class="cta-row">
-    <a href="index.html#contact" class="btn-primary">Book a Consultation</a>
-    <a href="https://wa.me/971547125676" target="_blank" rel="noopener" class="btn-outline">Message on WhatsApp</a>
-  </div>
+<h1 data-i18n="page_title">Developer Dispute Lawyer in Dubai</h1>
+<p class="lead" data-i18n="lead">A dispute with a developer usually starts the same way — a missed handover date, a cancelled project, or a change to what was promised in the sale contract — but the path to resolving it runs through a specific regulatory and tribunal system unique to Dubai real estate.</p>
+
+<div class="cta-row top">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
+
+<div class="box" data-i18n="box">A developer dispute lawyer in Dubai represents buyers and developers in disputes over off-plan sale agreements, including delayed handover, project cancellation, specification changes, and escrow account compliance.</div>
+
+<p class="body-p" data-i18n="p1">Off-plan sales in Dubai are structured around escrow protections under Law No. 8 of 2007, which require developers to hold buyer payments in a project-specific escrow account released only against verified construction progress — a framework that shapes how delay and cancellation disputes are actually resolved, since remedies often depend on why the project stalled and what escrow funds remain.</p>
+<p class="body-p" data-i18n="p2">The firm advises buyers pursuing claims over delayed or cancelled off-plan projects, and developers responding to buyer complaints, RERA mediation requests, or claims before the Real Estate Disputes Centre — a dedicated tribunal within the Dubai Land Department for buyer-developer disputes that could not be resolved through RERA mediation.</p>
+<p class="body-p" data-i18n="p3">Because remedies for delay and cancellation differ significantly depending on whether the developer or the buyer is treated as being in default, an early, accurate assessment of the underlying escrow position and project status is central to advising either side.</p>
+
+<h2 data-i18n="h2_how">How a Developer Dispute Is Resolved</h2>
+<ol class="steps">
+<li><strong data-i18n="step1_t">Contract and Escrow Review</strong><span data-i18n="step1_d">The lawyer reviews the sale and purchase agreement and available information on the project's escrow account and construction progress.</span></li>
+<li><strong data-i18n="step2_t">RERA Complaint</strong><span data-i18n="step2_d">A complaint is filed with RERA, which can mediate and, in serious cases, take regulatory action against the developer or project.</span></li>
+<li><strong data-i18n="step3_t">Evidence Gathering</strong><span data-i18n="step3_d">Handover notices, payment records, and construction status reports are compiled to establish the facts.</span></li>
+<li><strong data-i18n="step4_t">Real Estate Disputes Centre</strong><span data-i18n="step4_d">Where RERA mediation does not resolve the matter, the claim proceeds to the Dubai Land Department's dedicated real estate tribunal.</span></li>
+<li><strong data-i18n="step5_t">Court Litigation</strong><span data-i18n="step5_d">Unresolved disputes proceed to the Dubai Courts' Real Estate Court for final adjudication.</span></li>
+<li><strong data-i18n="step6_t">Recovery</strong><span data-i18n="step6_d">A refund, damages award, or specific performance order is pursued and enforced as appropriate.</span></li>
+</ol>
+
+<h2 data-i18n="h2_when">When You Need a Developer Dispute Lawyer</h2>
+<ul class="scenario-list">
+<li data-i18n="sc1">Your off-plan project's handover date has passed without delivery.</li>
+<li data-i18n="sc2">Your developer has cancelled or is at risk of cancelling your project.</li>
+<li data-i18n="sc3">The delivered unit differs materially from what was specified in your sale contract.</li>
+<li data-i18n="sc4">You are a developer facing a buyer complaint or RERA mediation request.</li>
+<li data-i18n="sc5">You need to understand your refund entitlement after a project delay or cancellation.</li>
+<li data-i18n="sc6">A dispute has reached the Real Estate Disputes Centre and you need representation.</li>
+</ul>
+
+<h2 data-i18n="h2_services">Services We Provide</h2>
+<ul class="service-list">
+<li data-i18n="sv1">Delayed handover claims and refund advice</li>
+<li data-i18n="sv2">Project cancellation and escrow position assessment</li>
+<li data-i18n="sv3">Specification and quality variance disputes</li>
+<li data-i18n="sv4">RERA complaint filing and mediation representation</li>
+<li data-i18n="sv5">Representation before the Real Estate Disputes Centre</li>
+<li data-i18n="sv6">Developer-side defence of buyer complaints</li>
+<li data-i18n="sv7">Litigation before the Dubai Courts' Real Estate Court</li>
+</ul>
+
+<h2 data-i18n="h2_faq">Frequently Asked Questions</h2>
+<div class="faq-list">
+<details>
+<summary data-i18n="faq1_q">What happens if my developer cancels my off-plan project?</summary>
+<p data-i18n="faq1_a">If RERA cancels a project due to developer default, buyers are generally entitled to a full refund of payments made; the specific mechanism depends on how much of the escrow funds remain and the reason for cancellation.</p>
+</details>
+<details>
+<summary data-i18n="faq2_q">How late can a handover be before I have a claim?</summary>
+<p data-i18n="faq2_a">Most sale and purchase agreements specify a handover date and a grace period; once that grace period passes without delivery, a buyer typically has grounds to raise a formal complaint, though the exact remedy depends on the contract's specific delay provisions.</p>
+</details>
+<details>
+<summary data-i18n="faq3_q">Do I have to go through RERA before filing a court case?</summary>
+<p data-i18n="faq3_a">Many developer disputes are expected to go through RERA mediation and, where unresolved, the Real Estate Disputes Centre before reaching the Dubai Courts, though the exact required path depends on the nature of the claim.</p>
+</details>
+<details>
+<summary data-i18n="faq4_q">Can I get my deposit back if I want to cancel my own off-plan purchase?</summary>
+<p data-i18n="faq4_a">Where the buyer initiates cancellation rather than the developer, refund entitlement is typically reduced according to how much of the project has been completed, with the developer permitted to retain a portion of payments made.</p>
+</details>
+<details>
+<summary data-i18n="faq5_q">What if my finished unit doesn't match what I was sold?</summary>
+<p data-i18n="faq5_a">Material deviations from the sale contract's specifications can support a claim for damages or rectification, though minor variations permitted under the contract's tolerance clauses generally will not.</p>
+</details>
+</div>
+
+<div class="cta-row">
+<a href="index.html#contact" class="btn-primary" data-i18n="book">Book a Consultation</a>
+<a href="https://wa.me/971503389154" target="_blank" rel="noopener" class="btn-outline" data-i18n="whatsapp">Message on WhatsApp</a>
+</div>
 </article>
 
 <footer>
-  Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE. <a href="index.html">Back to homepage</a>
+<span data-i18n="footer_firm">Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants — Dubai, UAE | DET License No. 1210668.</span> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a> &middot; <a href="index.html" data-i18n="footer_back">Back to homepage</a>
 </footer>
 
 <script>
+var I18N = {
+en:{
+home:"Home",practice_areas:"Practice Areas",real_estate:"Real Estate Law",all_practice:"All Practice Areas",contact:"Contact",book:"Book a Consultation",whatsapp:"Message on WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, UAE | DET License No. 1210668.",footer_back:"Back to homepage",
+page_title:"Developer Dispute Lawyer in Dubai",
+lead:"A dispute with a developer usually starts the same way — a missed handover date, a cancelled project, or a change to what was promised in the sale contract — but the path to resolving it runs through a specific regulatory and tribunal system unique to Dubai real estate.",
+box:"A developer dispute lawyer in Dubai represents buyers and developers in disputes over off-plan sale agreements, including delayed handover, project cancellation, specification changes, and escrow account compliance.",
+p1:"Off-plan sales in Dubai are structured around escrow protections under Law No. 8 of 2007, which require developers to hold buyer payments in a project-specific escrow account released only against verified construction progress — a framework that shapes how delay and cancellation disputes are actually resolved, since remedies often depend on why the project stalled and what escrow funds remain.",
+p2:"The firm advises buyers pursuing claims over delayed or cancelled off-plan projects, and developers responding to buyer complaints, RERA mediation requests, or claims before the Real Estate Disputes Centre — a dedicated tribunal within the Dubai Land Department for buyer-developer disputes that could not be resolved through RERA mediation.",
+p3:"Because remedies for delay and cancellation differ significantly depending on whether the developer or the buyer is treated as being in default, an early, accurate assessment of the underlying escrow position and project status is central to advising either side.",
+h2_how:"How a Developer Dispute Is Resolved",
+step1_t:"Contract and Escrow Review",step1_d:"The lawyer reviews the sale and purchase agreement and available information on the project's escrow account and construction progress.",
+step2_t:"RERA Complaint",step2_d:"A complaint is filed with RERA, which can mediate and, in serious cases, take regulatory action against the developer or project.",
+step3_t:"Evidence Gathering",step3_d:"Handover notices, payment records, and construction status reports are compiled to establish the facts.",
+step4_t:"Real Estate Disputes Centre",step4_d:"Where RERA mediation does not resolve the matter, the claim proceeds to the Dubai Land Department's dedicated real estate tribunal.",
+step5_t:"Court Litigation",step5_d:"Unresolved disputes proceed to the Dubai Courts' Real Estate Court for final adjudication.",
+step6_t:"Recovery",step6_d:"A refund, damages award, or specific performance order is pursued and enforced as appropriate.",
+h2_when:"When You Need a Developer Dispute Lawyer",
+sc1:"Your off-plan project's handover date has passed without delivery.",
+sc2:"Your developer has cancelled or is at risk of cancelling your project.",
+sc3:"The delivered unit differs materially from what was specified in your sale contract.",
+sc4:"You are a developer facing a buyer complaint or RERA mediation request.",
+sc5:"You need to understand your refund entitlement after a project delay or cancellation.",
+sc6:"A dispute has reached the Real Estate Disputes Centre and you need representation.",
+h2_services:"Services We Provide",
+sv1:"Delayed handover claims and refund advice",
+sv2:"Project cancellation and escrow position assessment",
+sv3:"Specification and quality variance disputes",
+sv4:"RERA complaint filing and mediation representation",
+sv5:"Representation before the Real Estate Disputes Centre",
+sv6:"Developer-side defence of buyer complaints",
+sv7:"Litigation before the Dubai Courts' Real Estate Court",
+h2_faq:"Frequently Asked Questions",
+faq1_q:"What happens if my developer cancels my off-plan project?",faq1_a:"If RERA cancels a project due to developer default, buyers are generally entitled to a full refund of payments made; the specific mechanism depends on how much of the escrow funds remain and the reason for cancellation.",
+faq2_q:"How late can a handover be before I have a claim?",faq2_a:"Most sale and purchase agreements specify a handover date and a grace period; once that grace period passes without delivery, a buyer typically has grounds to raise a formal complaint, though the exact remedy depends on the contract's specific delay provisions.",
+faq3_q:"Do I have to go through RERA before filing a court case?",faq3_a:"Many developer disputes are expected to go through RERA mediation and, where unresolved, the Real Estate Disputes Centre before reaching the Dubai Courts, though the exact required path depends on the nature of the claim.",
+faq4_q:"Can I get my deposit back if I want to cancel my own off-plan purchase?",faq4_a:"Where the buyer initiates cancellation rather than the developer, refund entitlement is typically reduced according to how much of the project has been completed, with the developer permitted to retain a portion of payments made.",
+faq5_q:"What if my finished unit doesn't match what I was sold?",faq5_a:"Material deviations from the sale contract's specifications can support a claim for damages or rectification, though minor variations permitted under the contract's tolerance clauses generally will not."
+},
+ar:{dir:"rtl",
+home:"الرئيسية",practice_areas:"مجالات العمل",real_estate:"القانون العقاري",all_practice:"جميع مجالات العمل",contact:"اتصل بنا",book:"احجز استشارة",whatsapp:"راسلنا عبر واتساب",footer_firm:"إسماعيل إبراهيم الحوسني للمحاماة والاستشارات القانونية — دبي، الإمارات العربية المتحدة | رخصة DET رقم 1210668.",footer_back:"العودة إلى الصفحة الرئيسية",
+page_title:"محامي نزاعات المطورين في دبي",
+lead:"يبدأ النزاع مع المطور عادةً بالطريقة نفسها — موعد تسليم فائت، أو مشروع مُلغى، أو تغيير فيما وُعد به في عقد البيع — إلا أن مسار حل النزاع يمر عبر نظام تنظيمي وقضائي محدد وفريد لقطاع العقارات في دبي.",
+box:"يمثل محامي نزاعات المطورين في دبي المشترين والمطورين في النزاعات المتعلقة بعقود البيع على الخارطة، بما في ذلك تأخر التسليم، وإلغاء المشروع، والتغييرات في المواصفات، والامتثال لحساب الضمان.",
+p1:"تُبنى المبيعات على الخارطة في دبي حول حمايات حساب الضمان بموجب القانون رقم 8 لسنة 2007، الذي يُلزم المطورين بإيداع مدفوعات المشترين في حساب ضمان خاص بالمشروع لا يُفرج عنه إلا مقابل تقدم بناء مُتحقق منه — وهو إطار يحدد كيفية حل نزاعات التأخير والإلغاء فعليًا، إذ غالبًا ما تعتمد سبل الانتصاف على سبب توقف المشروع وما تبقى من أموال الضمان.",
+p2:"يقدم المكتب المشورة للمشترين الذين يسعون إلى المطالبة بشأن مشاريع على الخارطة متأخرة أو ملغاة، وللمطورين الذين يردون على شكاوى المشترين، أو طلبات الوساطة من مؤسسة التنظيم العقاري، أو المطالبات أمام مركز فض المنازعات العقارية — وهو هيئة قضائية متخصصة تابعة لدائرة الأراضي والأملاك في دبي للنزاعات بين المشتري والمطور التي تعذر حلها عبر وساطة مؤسسة التنظيم العقاري.",
+p3:"نظرًا لأن سبل الانتصاف من التأخير والإلغاء تختلف اختلافًا كبيرًا بحسب ما إذا كان المطور أو المشتري هو الطرف المُخِل، فإن التقييم المبكر والدقيق لوضع حساب الضمان وحالة المشروع أمر أساسي لتقديم المشورة لأي من الطرفين.",
+h2_how:"كيف يُحل نزاع المطور",
+step1_t:"مراجعة العقد وحساب الضمان",step1_d:"يراجع المحامي عقد البيع والشراء والمعلومات المتاحة عن حساب الضمان الخاص بالمشروع وتقدم أعمال البناء.",
+step2_t:"شكوى إلى مؤسسة التنظيم العقاري",step2_d:"تُقدَّم شكوى إلى مؤسسة التنظيم العقاري، التي يمكنها القيام بالوساطة، وفي الحالات الجسيمة، اتخاذ إجراء تنظيمي ضد المطور أو المشروع.",
+step3_t:"جمع الأدلة",step3_d:"تُجمَع إشعارات التسليم وسجلات الدفع وتقارير حالة البناء لإثبات الوقائع.",
+step4_t:"مركز فض المنازعات العقارية",step4_d:"عندما لا تحل وساطة مؤسسة التنظيم العقاري المسألة، تنتقل المطالبة إلى الهيئة القضائية العقارية المتخصصة التابعة لدائرة الأراضي والأملاك في دبي.",
+step5_t:"التقاضي أمام المحكمة",step5_d:"تنتقل النزاعات غير المحلولة إلى المحكمة العقارية بمحاكم دبي للفصل النهائي فيها.",
+step6_t:"الاسترداد",step6_d:"تُتابَع مطالبة استرداد المبالغ، أو تعويض الأضرار، أو أمر التنفيذ العيني وتُنفَّذ حسب الاقتضاء.",
+h2_when:"متى تحتاج إلى محامي نزاعات مطورين",
+sc1:"مر موعد تسليم مشروعك المباع على الخارطة دون أن يتم التسليم.",
+sc2:"ألغى مطورك مشروعك أو أنه معرض لخطر الإلغاء.",
+sc3:"تختلف الوحدة المُسلَّمة اختلافًا جوهريًا عما ورد في عقد البيع الخاص بك.",
+sc4:"أنت مطوّر تواجه شكوى من مشترٍ أو طلب وساطة من مؤسسة التنظيم العقاري.",
+sc5:"تحتاج إلى فهم استحقاقك لاسترداد المبالغ بعد تأخر المشروع أو إلغائه.",
+sc6:"وصل نزاع إلى مركز فض المنازعات العقارية وتحتاج إلى من يمثلك.",
+h2_services:"الخدمات التي نقدمها",
+sv1:"استشارات مطالبات التأخر في التسليم والاسترداد",
+sv2:"تقييم إلغاء المشروع ووضع حساب الضمان",
+sv3:"نزاعات المواصفات والتفاوت في الجودة",
+sv4:"تقديم الشكاوى إلى مؤسسة التنظيم العقاري والتمثيل في الوساطة",
+sv5:"التمثيل أمام مركز فض المنازعات العقارية",
+sv6:"الدفاع لصالح المطورين في شكاوى المشترين",
+sv7:"التقاضي أمام المحكمة العقارية بمحاكم دبي",
+h2_faq:"الأسئلة الشائعة",
+faq1_q:"ماذا يحدث إذا ألغى مطوري مشروعي المباع على الخارطة؟",faq1_a:"إذا ألغت مؤسسة التنظيم العقاري مشروعًا بسبب إخلال المطور، يحق للمشترين عادةً استرداد كامل المبالغ المدفوعة؛ وتعتمد الآلية المحددة على مقدار ما تبقى من أموال الضمان وسبب الإلغاء.",
+faq2_q:"إلى أي مدى يمكن أن يتأخر التسليم قبل أن يحق لي المطالبة؟",faq2_a:"تحدد معظم عقود البيع والشراء موعد تسليم وفترة سماح؛ وبمجرد انقضاء فترة السماح دون تسليم، عادةً ما يكون للمشتري أساس لتقديم شكوى رسمية، إلا أن سبيل الانتصاف الدقيق يعتمد على أحكام التأخير المحددة في العقد.",
+faq3_q:"هل يجب أن أمر عبر مؤسسة التنظيم العقاري قبل رفع دعوى قضائية؟",faq3_a:"يُتوقع أن تمر العديد من نزاعات المطورين عبر وساطة مؤسسة التنظيم العقاري، وفي حال عدم حلها، عبر مركز فض المنازعات العقارية قبل الوصول إلى محاكم دبي، إلا أن المسار المطلوب بالتحديد يعتمد على طبيعة المطالبة.",
+faq4_q:"هل يمكنني استرداد دفعتي المقدمة إذا أردت إلغاء شرائي الخاص على الخارطة؟",faq4_a:"عندما يبادر المشتري بالإلغاء بدلًا من المطور، عادةً ما يُخفَّض استحقاق الاسترداد وفقًا لنسبة إنجاز المشروع، مع السماح للمطور بالاحتفاظ بجزء من المبالغ المدفوعة.",
+faq5_q:"ماذا لو كانت وحدتي المكتملة لا تطابق ما بيع لي؟",faq5_a:"يمكن أن تدعم الانحرافات الجوهرية عن مواصفات عقد البيع مطالبة بالتعويض أو التصحيح، إلا أن الاختلافات الطفيفة المسموح بها بموجب بنود التفاوت في العقد لا تدعم ذلك عادةً."
+},
+zh:{
+home:"首页",practice_areas:"业务领域",real_estate:"房地产法",all_practice:"所有业务领域",contact:"联系我们",book:"预约咨询",whatsapp:"通过WhatsApp联系",footer_firm:"Ismail Ibrahim Alhosani律师事务所 — 阿联酋迪拜 | DET许可证号1210668。",footer_back:"返回首页",
+page_title:"迪拜开发商纠纷律师",
+lead:"与开发商的纠纷通常以同样的方式开始——错过的交付日期、被取消的项目，或买卖合同中承诺内容的变更——但解决这类纠纷的途径需经过迪拜房地产特有的一套监管及仲裁体系。",
+box:"迪拜开发商纠纷律师代表买方及开发商处理有关期房买卖合同的纠纷，包括延迟交付、项目取消、规格变更及信托账户合规事宜。",
+p1:"迪拜的期房销售围绕2007年第8号法律下的信托账户保护制度构建，该法律要求开发商将买方的付款存入专属于该项目的信托账户，只有在核实施工进度后方可放款——这一框架决定了延迟及取消纠纷实际上如何解决，因为救济方式往往取决于项目停滞的原因以及信托账户中剩余的资金。",
+p2:"本所为就延迟或取消的期房项目提出索赔的买方，以及应对买方投诉、RERA调解请求或房地产纠纷解决中心索赔的开发商提供咨询——该中心是迪拜土地局下设的专门仲裁机构，用于处理未能通过RERA调解解决的买方与开发商纠纷。",
+p3:"由于延迟及取消的救济方式因开发商或买方被视为违约方而有显著差异，及早、准确地评估基础信托账户状况及项目进展，对于为任何一方提供咨询都至关重要。",
+h2_how:"开发商纠纷如何解决",
+step1_t:"合同与信托账户审查",step1_d:"律师审查买卖合同以及有关项目信托账户及施工进度的可用信息。",
+step2_t:"向RERA投诉",step2_d:"向RERA提交投诉，RERA可进行调解，在严重情形下还可对开发商或项目采取监管行动。",
+step3_t:"收集证据",step3_d:"汇编交付通知、付款记录及施工状态报告，以确认事实。",
+step4_t:"房地产纠纷解决中心",step4_d:"若RERA调解未能解决问题，索赔将提交至迪拜土地局下设的专门房地产仲裁机构。",
+step5_t:"法院诉讼",step5_d:"未获解决的纠纷将提交至迪拜法院房地产法庭作最终裁决。",
+step6_t:"追偿",step6_d:"视情况寻求并执行退款、损害赔偿裁决或实际履行令。",
+h2_when:"何时需要开发商纠纷律师",
+sc1:"您的期房项目的交付日期已过，但尚未交付。",
+sc2:"您的开发商已取消或有取消您的项目的风险。",
+sc3:"交付的单位与您买卖合同中规定的规格存在实质性差异。",
+sc4:"您是开发商，正面临买方投诉或RERA调解请求。",
+sc5:"您需要了解在项目延迟或取消后自己的退款权利。",
+sc6:"纠纷已提交至房地产纠纷解决中心，您需要代理。",
+h2_services:"我们提供的服务",
+sv1:"延迟交付索赔及退款咨询",
+sv2:"项目取消及信托账户状况评估",
+sv3:"规格与质量差异纠纷",
+sv4:"RERA投诉提交及调解代理",
+sv5:"在房地产纠纷解决中心的代理",
+sv6:"代表开发商一方抗辩买方投诉",
+sv7:"在迪拜法院房地产法庭提起诉讼",
+h2_faq:"常见问题",
+faq1_q:"如果我的开发商取消了我的期房项目会怎样？",faq1_a:"若RERA因开发商违约而取消项目，买方通常有权获得已付款项的全额退款；具体机制取决于信托账户中剩余资金的多少及取消原因。",
+faq2_q:"交付延迟多久后我才能提出索赔？",faq2_a:"大多数买卖合同规定了交付日期及宽限期；一旦宽限期届满仍未交付，买方通常即有理由提出正式投诉，但具体的救济方式取决于合同中关于延迟的具体条款。",
+faq3_q:"我必须先经过RERA才能提起诉讼吗？",faq3_a:"许多开发商纠纷通常需要先经过RERA调解，若未能解决，再经过房地产纠纷解决中心，之后方可诉诸迪拜法院，但具体所需路径取决于索赔的性质。",
+faq4_q:"如果我想取消自己的期房购买，能拿回押金吗？",faq4_a:"若由买方而非开发商发起取消，退款权利通常会根据项目已完成的比例相应减少，开发商可保留已付款项的一部分。",
+faq5_q:"如果我交付的单位与我购买时的约定不符怎么办？",faq5_a:"对买卖合同规格的实质性偏离可支持提出损害赔偿或整改的索赔，但合同容差条款允许范围内的轻微差异通常不能。"
+},
+ru:{
+home:"Главная",practice_areas:"Практика",real_estate:"Право недвижимости",all_practice:"Все направления практики",contact:"Контакты",book:"Записаться на консультацию",whatsapp:"Написать в WhatsApp",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Дубай, ОАЭ | Лицензия DET № 1210668.",footer_back:"Вернуться на главную",
+page_title:"Адвокат по спорам с застройщиками в Дубае",
+lead:"Спор с застройщиком обычно начинается одинаково — пропущенная дата передачи объекта, отменённый проект или изменение условий, обещанных в договоре купли-продажи, — но путь к его разрешению проходит через особую регуляторную и трибунальную систему, характерную именно для рынка недвижимости Дубая.",
+box:"Адвокат по спорам с застройщиками в Дубае представляет покупателей и застройщиков в спорах по договорам купли-продажи строящейся недвижимости, включая задержку передачи объекта, отмену проекта, изменения спецификаций и соблюдение требований к эскроу-счетам.",
+p1:"Продажи строящейся недвижимости в Дубае строятся вокруг защиты эскроу-счетов согласно Закону № 8 от 2007 года, который обязывает застройщиков хранить платежи покупателей на специальном для конкретного проекта эскроу-счёте, средства с которого высвобождаются только при подтверждённом прогрессе строительства, — эта структура определяет, как именно разрешаются споры о задержке и отмене, поскольку средства защиты часто зависят от причины остановки проекта и оставшихся средств на эскроу-счёте.",
+p2:"Фирма консультирует покупателей, заявляющих требования по задержанным или отменённым строящимся проектам, а также застройщиков, отвечающих на жалобы покупателей, запросы на посредничество RERA или требования, поданные в Центр по разрешению споров о недвижимости — специализированный трибунал в структуре Земельного департамента Дубая для споров между покупателями и застройщиками, которые не удалось урегулировать посредством посредничества RERA.",
+p3:"Поскольку средства правовой защиты при задержке и отмене существенно различаются в зависимости от того, кто считается нарушившей стороной — застройщик или покупатель, — раннее и точное определение положения дел с эскроу-счётом и статуса проекта играет ключевую роль в консультировании любой из сторон.",
+h2_how:"Как разрешается спор с застройщиком",
+step1_t:"Проверка договора и эскроу-счёта",step1_d:"Адвокат изучает договор купли-продажи и доступную информацию об эскроу-счёте проекта и ходе строительства.",
+step2_t:"Жалоба в RERA",step2_d:"Подаётся жалоба в RERA, которая может выступить посредником, а в серьёзных случаях — принять регуляторные меры в отношении застройщика или проекта.",
+step3_t:"Сбор доказательств",step3_d:"Собираются уведомления о передаче объекта, платёжные записи и отчёты о ходе строительства для установления фактов.",
+step4_t:"Центр по разрешению споров о недвижимости",step4_d:"Если посредничество RERA не разрешает вопрос, требование передаётся в специализированный трибунал по недвижимости при Земельном департаменте Дубая.",
+step5_t:"Судебное разбирательство",step5_d:"Неурегулированные споры передаются в Суд по недвижимости судов Дубая для окончательного разрешения.",
+step6_t:"Взыскание",step6_d:"В зависимости от обстоятельств добиваются возврата средств, возмещения убытков или исполнения обязательства в натуре и обеспечивают их исполнение.",
+h2_when:"Когда вам нужен адвокат по спорам с застройщиками",
+sc1:"Дата передачи вашего строящегося проекта прошла, а объект не передан.",
+sc2:"Ваш застройщик отменил или рискует отменить ваш проект.",
+sc3:"Переданный объект существенно отличается от того, что было указано в вашем договоре купли-продажи.",
+sc4:"Вы застройщик, столкнувшийся с жалобой покупателя или запросом на посредничество RERA.",
+sc5:"Вам необходимо понять своё право на возврат средств после задержки или отмены проекта.",
+sc6:"Спор дошёл до Центра по разрешению споров о недвижимости, и вам необходимо представительство.",
+h2_services:"Наши услуги",
+sv1:"Требования о задержке передачи объекта и консультации по возврату средств",
+sv2:"Оценка отмены проекта и состояния эскроу-счёта",
+sv3:"Споры о расхождениях в спецификации и качестве",
+sv4:"Подача жалоб в RERA и представительство в посредничестве",
+sv5:"Представительство в Центре по разрешению споров о недвижимости",
+sv6:"Защита застройщиков от жалоб покупателей",
+sv7:"Судебное разбирательство в Суде по недвижимости судов Дубая",
+h2_faq:"Часто задаваемые вопросы",
+faq1_q:"Что произойдёт, если мой застройщик отменит мой строящийся проект?",faq1_a:"Если RERA отменяет проект из-за нарушения обязательств застройщиком, покупатели, как правило, имеют право на полный возврат уплаченных средств; конкретный механизм зависит от того, сколько средств осталось на эскроу-счёте, и от причины отмены.",
+faq2_q:"Насколько может задержаться передача объекта, прежде чем у меня появится основание для требования?",faq2_a:"В большинстве договоров купли-продажи указана дата передачи объекта и льготный период; как только этот период истекает без передачи, у покупателя, как правило, появляются основания для подачи официальной жалобы, хотя точный способ защиты зависит от конкретных положений договора о задержке.",
+faq3_q:"Обязан ли я обращаться в RERA до подачи иска в суд?",faq3_a:"Ожидается, что многие споры с застройщиками пройдут через посредничество RERA и, если не будут урегулированы, через Центр по разрешению споров о недвижимости, прежде чем попасть в суды Дубая, хотя точный необходимый путь зависит от характера требования.",
+faq4_q:"Могу ли я вернуть свой депозит, если хочу отменить собственную покупку строящейся недвижимости?",faq4_a:"Если инициатором отмены выступает покупатель, а не застройщик, право на возврат средств обычно уменьшается в зависимости от степени завершённости проекта, при этом застройщику разрешается удержать часть уплаченных средств.",
+faq5_q:"Что делать, если моя готовая недвижимость не соответствует тому, что мне продали?",faq5_a:"Существенные отклонения от спецификаций договора купли-продажи могут служить основанием для требования о возмещении убытков или устранении недостатков, тогда как незначительные отклонения, допустимые согласно положениям договора о допусках, как правило, нет."
+},
+de:{
+home:"Startseite",practice_areas:"Rechtsgebiete",real_estate:"Immobilienrecht",all_practice:"Alle Rechtsgebiete",contact:"Kontakt",book:"Beratung vereinbaren",whatsapp:"Über WhatsApp schreiben",footer_firm:"Ismail Ibrahim Alhosani Advocates & Legal Consultants — Dubai, VAE | DET-Lizenznummer 1210668.",footer_back:"Zurück zur Startseite",
+page_title:"Anwalt für Bauträgerstreitigkeiten in Dubai",
+lead:"Ein Streit mit einem Bauträger beginnt meist auf dieselbe Weise — ein verpasster Übergabetermin, ein storniertes Projekt oder eine Änderung dessen, was im Kaufvertrag zugesagt wurde — doch der Weg zur Lösung führt über ein spezifisches, für den Dubaier Immobilienmarkt einzigartiges Regulierungs- und Schiedssystem.",
+box:"Ein Anwalt für Bauträgerstreitigkeiten in Dubai vertritt Käufer und Bauträger in Streitigkeiten über Off-Plan-Kaufverträge, einschließlich verzögerter Übergabe, Projektstornierung, Änderungen der Spezifikationen und Einhaltung der Treuhandkontovorgaben.",
+p1:"Off-Plan-Verkäufe in Dubai sind um den Treuhandschutz nach Gesetz Nr. 8 von 2007 herum strukturiert, der Bauträger verpflichtet, Käuferzahlungen auf einem projektspezifischen Treuhandkonto zu halten, das nur gegen nachgewiesenen Baufortschritt freigegeben wird — ein Rahmen, der maßgeblich bestimmt, wie Verzögerungs- und Stornierungsstreitigkeiten tatsächlich gelöst werden, da die Rechtsbehelfe häufig davon abhängen, warum das Projekt ins Stocken geraten ist und welche Treuhandmittel noch vorhanden sind.",
+p2:"Die Kanzlei berät Käufer, die Ansprüche wegen verzögerter oder stornierter Off-Plan-Projekte geltend machen, sowie Bauträger, die auf Käuferbeschwerden, RERA-Mediationsanträge oder Ansprüche vor dem Real Estate Disputes Centre reagieren — ein spezialisiertes Schiedsgericht innerhalb des Dubai Land Department für Käufer-Bauträger-Streitigkeiten, die nicht durch RERA-Mediation gelöst werden konnten.",
+p3:"Da sich die Rechtsbehelfe bei Verzögerung und Stornierung erheblich danach unterscheiden, ob der Bauträger oder der Käufer als vertragsbrüchig gilt, ist eine frühzeitige, genaue Bewertung der zugrunde liegenden Treuhandposition und des Projektstatus für die Beratung beider Seiten von zentraler Bedeutung.",
+h2_how:"So wird ein Bauträgerstreit gelöst",
+step1_t:"Prüfung von Vertrag und Treuhandkonto",step1_d:"Der Anwalt prüft den Kaufvertrag sowie die verfügbaren Informationen zum Treuhandkonto des Projekts und zum Baufortschritt.",
+step2_t:"RERA-Beschwerde",step2_d:"Es wird eine Beschwerde bei der RERA eingereicht, die vermitteln und in schwerwiegenden Fällen regulatorische Maßnahmen gegen den Bauträger oder das Projekt ergreifen kann.",
+step3_t:"Beweissammlung",step3_d:"Übergabemitteilungen, Zahlungsnachweise und Berichte zum Baustatus werden zusammengestellt, um den Sachverhalt festzustellen.",
+step4_t:"Real Estate Disputes Centre",step4_d:"Löst die RERA-Mediation die Angelegenheit nicht, geht der Anspruch an das spezialisierte Immobilienschiedsgericht des Dubai Land Department.",
+step5_t:"Gerichtsverfahren",step5_d:"Ungelöste Streitigkeiten gehen zur endgültigen Entscheidung an den Real Estate Court der Gerichte Dubais.",
+step6_t:"Durchsetzung",step6_d:"Eine Rückerstattung, ein Schadensersatzanspruch oder eine Anordnung zur Vertragserfüllung wird je nach Sachlage verfolgt und durchgesetzt.",
+h2_when:"Wann Sie einen Anwalt für Bauträgerstreitigkeiten brauchen",
+sc1:"Der Übergabetermin Ihres Off-Plan-Projekts ist verstrichen, ohne dass eine Übergabe erfolgt ist.",
+sc2:"Ihr Bauträger hat Ihr Projekt storniert oder es besteht die Gefahr einer Stornierung.",
+sc3:"Die übergebene Einheit weicht wesentlich von den Angaben in Ihrem Kaufvertrag ab.",
+sc4:"Sie sind ein Bauträger und sehen sich mit einer Käuferbeschwerde oder einem RERA-Mediationsantrag konfrontiert.",
+sc5:"Sie müssen Ihren Anspruch auf Rückerstattung nach einer Projektverzögerung oder -stornierung verstehen.",
+sc6:"Ein Streit ist beim Real Estate Disputes Centre anhängig, und Sie benötigen eine Vertretung.",
+h2_services:"Unsere Leistungen",
+sv1:"Ansprüche wegen verzögerter Übergabe und Beratung zur Rückerstattung",
+sv2:"Bewertung von Projektstornierung und Treuhandposition",
+sv3:"Streitigkeiten über Spezifikations- und Qualitätsabweichungen",
+sv4:"Einreichung von RERA-Beschwerden und Vertretung in der Mediation",
+sv5:"Vertretung vor dem Real Estate Disputes Centre",
+sv6:"Verteidigung von Bauträgern gegen Käuferbeschwerden",
+sv7:"Prozessführung vor dem Real Estate Court der Gerichte Dubais",
+h2_faq:"Häufig gestellte Fragen",
+faq1_q:"Was passiert, wenn mein Bauträger mein Off-Plan-Projekt storniert?",faq1_a:"Storniert die RERA ein Projekt wegen eines Vertragsbruchs des Bauträgers, haben Käufer in der Regel Anspruch auf vollständige Rückerstattung der geleisteten Zahlungen; der genaue Mechanismus hängt davon ab, wie viele Treuhandmittel verbleiben und aus welchem Grund storniert wurde.",
+faq2_q:"Wie verspätet darf eine Übergabe sein, bevor ich einen Anspruch habe?",faq2_a:"Die meisten Kaufverträge legen einen Übergabetermin und eine Nachfrist fest; sobald diese Nachfrist ohne Übergabe verstreicht, hat ein Käufer in der Regel Grund für eine förmliche Beschwerde, wobei der genaue Rechtsbehelf von den spezifischen Verzugsklauseln des Vertrags abhängt.",
+faq3_q:"Muss ich zuerst die RERA einschalten, bevor ich Klage erhebe?",faq3_a:"Bei vielen Bauträgerstreitigkeiten wird erwartet, dass zunächst die RERA-Mediation und – falls ungelöst – das Real Estate Disputes Centre durchlaufen werden, bevor die Sache vor die Gerichte Dubais gelangt, wobei der genau erforderliche Weg von der Art des Anspruchs abhängt.",
+faq4_q:"Bekomme ich meine Anzahlung zurück, wenn ich meinen eigenen Off-Plan-Kauf stornieren möchte?",faq4_a:"Initiiert der Käufer die Stornierung und nicht der Bauträger, wird der Rückerstattungsanspruch in der Regel entsprechend dem Fertigstellungsgrad des Projekts reduziert, wobei der Bauträger einen Teil der geleisteten Zahlungen einbehalten darf.",
+faq5_q:"Was, wenn meine fertiggestellte Einheit nicht dem entspricht, was mir verkauft wurde?",faq5_a:"Wesentliche Abweichungen von den Spezifikationen des Kaufvertrags können einen Anspruch auf Schadensersatz oder Nachbesserung begründen, geringfügige, durch die Toleranzklauseln des Vertrags gedeckte Abweichungen in der Regel jedoch nicht."
+}
+};
+function applyLanguage(lang){
+var dict = I18N[lang] || I18N.en;
+document.querySelectorAll('[data-i18n]').forEach(function(el){
+var key = el.getAttribute('data-i18n');
+if(dict[key] !== undefined) el.textContent = dict[key];
+});
+document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+var key = el.getAttribute('data-i18n-placeholder');
+if(dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+});
+document.body.setAttribute('data-lang', lang);
+document.documentElement.setAttribute('dir', dict.dir || 'ltr');
+document.documentElement.setAttribute('lang', lang);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.classList.toggle('active', btn.getAttribute('data-lang-btn') === lang);
+});
+try{ localStorage.setItem('alhosani_lang', lang); }catch(e){}
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'en';
+try{ saved = localStorage.getItem('alhosani_lang') || 'en'; }catch(e){}
+applyLanguage(saved);
+document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+btn.addEventListener('click', function(){ applyLanguage(btn.getAttribute('data-lang-btn')); });
+});
+});
+</script>
+<script>
 (function(){
-  function applyTheme(theme){
-    document.documentElement.setAttribute('data-theme', theme);
-    try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
-    var btn = document.getElementById('themeToggle');
-    if(btn) btn.textContent = theme === 'light' ? '\uD83C\uDF19' : '\u2600\uFE0F';
-  }
-  document.addEventListener('DOMContentLoaded', function(){
-    var saved = 'dark';
-    try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
-    applyTheme(saved);
-    var btn = document.getElementById('themeToggle');
-    if(btn){
-      btn.addEventListener('click', function(){
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'light' ? 'dark' : 'light');
-      });
-    }
-  });
+function applyTheme(theme){
+document.documentElement.setAttribute('data-theme', theme);
+try{ localStorage.setItem('alhosani_theme', theme); }catch(e){}
+var btn = document.getElementById('themeToggle');
+if(btn) btn.textContent = theme === 'light' ? '🌙' : '☀️';
+}
+document.addEventListener('DOMContentLoaded', function(){
+var saved = 'dark';
+try{ saved = localStorage.getItem('alhosani_theme') || 'dark'; }catch(e){}
+applyTheme(saved);
+var btn = document.getElementById('themeToggle');
+if(btn){
+btn.addEventListener('click', function(){
+var current = document.documentElement.getAttribute('data-theme') || 'dark';
+applyTheme(current === 'light' ? 'dark' : 'light');
+});
+}
+});
 })();
 </script>
+
 </body>
 </html>
