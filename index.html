@@ -20,7 +20,7 @@
   --black:#ffffff; --black2:#f2efe6; --cream:#1c1a17; --grey:#5c584f;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;}html[dir="rtl"]{overflow-x:hidden;}
 body{background:var(--black);color:var(--cream);font-family:'Montserrat',sans-serif;line-height:1.6;overflow-x:hidden;}
 body[data-lang="ar"]{font-family:'Noto Naskh Arabic','Montserrat',sans-serif;}
 body[data-lang="zh"]{font-family:'Noto Sans SC','Montserrat',sans-serif;}
@@ -286,7 +286,7 @@ html[dir="rtl"] .contact-form input[type="tel"]{direction:rtl;text-align:right;}
     <div class="topbar-right">
       <div class="topbar-contact">
         <span data-i18n="tb_contact_label">Contact us now:</span>
-        <a href="tel:+971503389154">Dubai: +971 50 338 9154</a>
+        <a href="tel:+971503389154" dir="ltr">Dubai: +971 50 338 9154</a>
       </div>
       <div class="lang-switch" id="langSwitch">
         <button type="button" data-lang-btn="en" class="active"><span class="flag">🇬🇧</span> EN</button>
@@ -529,7 +529,7 @@ html[dir="rtl"] .contact-form input[type="tel"]{direction:rtl;text-align:right;}
       <h2 data-i18n="contact_title">Get in Touch</h2>
       <div class="divider"></div>
       <p>Ismail Ibrahim Alhosani Advocates &amp; Legal Consultants<br><span data-i18n="ph_street_address">Salem Building, Al Garhoud</span><br><span data-i18n="office_city">Office 317, 3rd Floor, Dubai, UAE</span></p>
-      <p><strong data-i18n="contact_phone_label">Phone:</strong> <a href="tel:+971503389154">+971 50 338 9154</a></p>
+      <p><strong data-i18n="contact_phone_label">Phone:</strong> <a href="tel:+971503389154" dir="ltr">+971 50 338 9154</a></p>
       <p><strong data-i18n="contact_email_label">Email:</strong> <a href="mailto:advo@ismailibrahimalhos.com">advo@ismailibrahimalhos.com</a></p>
       <p><strong data-i18n="contact_hours_label">Office Hours:</strong> <span data-i18n="ph_days_hours">Sunday–Thursday, 9:00 AM – 6:00 PM</span></p>
       <a href="https://www.google.com/maps?q=25.251750,55.341917" target="_blank" rel="noopener" class="map-link-card"><span class="map-link-icon">📍</span><span class="map-link-text"><strong>View our office on Google Maps</strong><span>Salem Building, Al Garhoud, Dubai</span></span></a>
