@@ -1563,7 +1563,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   var saved = 'ar';
-  try{ saved = localStorage.getItem('alhosani_lang') || 'ar'; }catch(e){}
   applyLanguage(saved);wrapStatLetters('.stats-grid .stat-label');renderStatNumbers(saved);initReveal();initExpertiseMarquee();initTestimonialSlider();
 
   document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
